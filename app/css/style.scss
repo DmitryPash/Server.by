@@ -1,0 +1,81 @@
+@import "grid";
+@import "UI";
+@import "media";
+@import "header";
+
+$ffMontserrat: "Montserrat", sans-serif;
+$colorBlack: #191919;
+$colorSilver: #647b98;
+$colorBlue: #2963cb;
+$colorCyan: #398aea;
+$colorWhite: #f4f9ff;
+$colorGradient: linear-gradient(
+  92.42deg,
+  #398aea 14.1%,
+  #39a3ea 31.59%,
+  #39c0ea 46.36%,
+  #39c0ea 61.13%,
+  #27a6dd 74.74%,
+  #398aea 88.73%
+);
+// Mixin fucntion
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  //   $remSize: #{math.div($size, 16px)};
+  @return #{$remSize}rem;
+}
+
+@mixin fontSize($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  font-family: $ffMontserrat;
+  font-weight: 400;
+  @include fontSize(14px);
+  color: $colorBlack;
+  background-color: $colorWhite;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  min-height: 100%;
+  min-width: 100%;
+}
+#middle {
+  -webkit-box-flex: 1;
+  flex: 1 0 auto;
+}
+
+#footer {
+  -webkit-box-flex: 0;
+  flex: 0 0 auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+// Main
+.middle {
+  background-color: #ffffff;
+}
