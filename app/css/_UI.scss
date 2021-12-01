@@ -13,16 +13,13 @@ $colorGradient: linear-gradient(
   #27a6dd 74.74%,
   #398aea 88.73%
 );
-// Mixin fucntion
-@function calculateRem($size) {
-  $remSize: $size / 16px;
-  //   $remSize: #{math.div($size, 16px)};
-  @return #{$remSize}rem;
+// Mixin
+$html-font-size: 16px;
+@function stripUnit($value) {
+  @return $value / ($value * 0 + 1);
 }
-
-@mixin fontSize($size) {
-  font-size: $size;
-  font-size: calculateRem($size);
+@function rem($pxValue) {
+  @return #{stripUnit($pxValue) / stripUnit($html-font-size)}rem;
 }
 
 h1,
@@ -41,80 +38,80 @@ img {
 [class*="-p"] {
   font-family: $ffMontserrat;
   font-weight: 400;
-  @include fontSize(15px);
+  font-size: rem(15px);
   color: $colorBlack;
 }
 p,
 .p {
   font-family: $ffMontserrat;
   font-weight: 400;
-  @include fontSize(15px);
+  font-size: rem(15px);
   color: $colorBlack;
 }
 [class*="-h1"] {
   font-family: $ffMontserrat;
   font-weight: 600;
-  @include fontSize(36px);
+  font-size: rem(36px);
   color: $colorBlack;
 }
 h1,
 .h1 {
   font-family: $ffMontserrat;
   font-weight: 600;
-  @include fontSize(36px);
+  font-size: rem(36px);
   color: $colorBlack;
 }
 [class*="-h2"] {
   font-family: $ffMontserrat;
   font-weight: 600;
-  @include fontSize(24px);
+  font-size: rem(24px);
   color: $colorBlack;
 }
 h2,
 .h2 {
   font-family: $ffMontserrat;
   font-weight: 600;
-  @include fontSize(24px);
+  font-size: rem(24px);
   color: $colorBlack;
 }
 [class*="-h3"] {
   font-family: $ffMontserrat;
   font-weight: 600;
-  @include fontSize(22px);
+  font-size: rem(22px);
   color: $colorBlack;
 }
 h3,
 .h3 {
   font-family: $ffMontserrat;
   font-weight: 600;
-  @include fontSize(22px);
+  font-size: rem(22px);
   color: $colorBlack;
 }
 
 [class*="-h4"] {
   font-family: $ffMontserrat;
   font-weight: 400;
-  @include fontSize(20px);
+  font-size: rem(20px);
   color: $colorBlack;
 }
 h4,
 .h4 {
   font-family: $ffMontserrat;
   font-weight: 400;
-  @include fontSize(20px);
+  font-size: rem(20px);
   color: $colorBlack;
 }
 [class*="-h5"] {
   font-family: $ffMontserrat;
   font-weight: 400;
-  @include fontSize(18px);
+  font-size: rem(18px);
   color: $colorBlack;
 }
 h5,
 .h5 {
   font-family: $ffMontserrat;
   font-weight: 400;
-  @include fontSize(18px);
+  font-size: rem(18px);
   color: $colorBlack;
 }
 
@@ -139,23 +136,20 @@ button {
   cursor: pointer;
 }
 // Example of Btn
-.ui-btn-white {
+.ui-btn {
   display: inline-block;
-  height: 70px;
-  width: 355px;
-  line-height: 70px;
-  background-color: #fff;
-  border: 1px solid #1c379b;
-  font-weight: 700;
-  font-style: 18px;
-  color: #1c379b;
+  height: 36px;
+  line-height: 36px;
+  background: $colorGradient;
+  font-weight: 600;
+  font-size: rem(11px);
+  color: #ffffff;
   text-align: center;
+  text-transform: uppercase;
   transition: 0.5s ease;
   margin: 10px;
+  border-radius: 4px;
   &:hover {
-    background-color: #1c379b;
-    color: #fff;
-    border: 1px solid transparent;
   }
 }
 
@@ -164,7 +158,7 @@ button {
   text-align: center;
   margin-top: 25px;
   a {
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 600;
     color: #fff;
     display: inline-block;

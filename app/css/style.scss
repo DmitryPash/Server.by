@@ -3,6 +3,7 @@
 @import "media";
 @import "header";
 
+// $fontSize: 16px;
 $ffMontserrat: "Montserrat", sans-serif;
 $colorBlack: #191919;
 $colorSilver: #647b98;
@@ -18,16 +19,13 @@ $colorGradient: linear-gradient(
   #27a6dd 74.74%,
   #398aea 88.73%
 );
-// Mixin fucntion
-@function calculateRem($size) {
-  $remSize: $size / 16px;
-  //   $remSize: #{math.div($size, 16px)};
-  @return #{$remSize}rem;
+// Mixin
+$html-font-size: 16px;
+@function stripUnit($value) {
+  @return $value / ($value * 0 + 1);
 }
-
-@mixin fontSize($size) {
-  font-size: $size;
-  font-size: calculateRem($size);
+@function rem($pxValue) {
+  @return #{stripUnit($pxValue) / stripUnit($html-font-size)}rem;
 }
 
 * {
@@ -42,7 +40,6 @@ body {
   min-height: 100%;
   font-family: $ffMontserrat;
   font-weight: 400;
-  @include fontSize(14px);
   color: $colorBlack;
   background-color: $colorWhite;
 }
