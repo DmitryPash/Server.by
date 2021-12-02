@@ -756,6 +756,158 @@ input:focus:-ms-input-placeholder {
   max-height: 40px;
 }
 
+.footer {
+  background-color: #f4f9ff;
+}
+
+.footer-info {
+  padding-top: 65px;
+  padding-bottom: 55px;
+  border-bottom: 1px solid #dae7f9;
+}
+
+.footer-info-title {
+  color: #647b98;
+  padding-bottom: 45px;
+}
+
+.footer-info ul li {
+  padding-bottom: 15px;
+}
+
+.footer-pay {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #dae7f9;
+}
+
+.footer-pay-icons a {
+  padding-right: 7px;
+}
+
+.footer-pay-txt {
+  display: inline-block;
+}
+
+.footer-pay-title {
+  display: inline-block;
+  font-size: 0.6875rem;
+  line-height: 0.8125rem;
+  font-weight: 700;
+  color: #191919;
+}
+
+.footer-pay-info {
+  font-size: 0.6875rem;
+  line-height: 0.8125rem;
+}
+
+.footer-pay-img {
+  position: relative;
+  display: inline-block;
+  vertical-align: initial;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 15px;
+  background-color: #fdc300;
+}
+
+.footer-pay-img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-height: 0.8125rem;
+}
+
+.footer-pay-adress {
+  display: inline-block;
+  padding-right: 30px;
+}
+
+.footer-pay-schedule {
+  display: inline-block;
+  padding-right: 30px;
+}
+
+.footer-pay-contacts {
+  display: inline-block;
+}
+
+.footer-pay-messengers {
+  padding-left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  padding-top: 35px;
+}
+
+.footer-logo-txt:first-child {
+  padding-top: 22px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  font-weight: 300;
+  font-size: 0.6875rem;
+  line-height: 0.8125rem;
+  color: #647b98;
+}
+
+.footer-logo-txt {
+  padding-left: 15px;
+  font-weight: 300;
+  font-size: 0.6875rem;
+  line-height: 0.8125rem;
+  color: #647b98;
+}
+
+.footer-logo-txt a {
+  color: #398aea;
+}
+
+.footer-logo-txt a :hover {
+  color: #398aea;
+}
+
+.footer-logo-img {
+  font-size: 0.8125rem;
+}
+
+.footer-logo-img img {
+  padding-bottom: 15px;
+}
+
+.footer-logo-button {
+  width: 270px;
+  height: 48px;
+  padding: 15px 30px;
+  line-height: 50px;
+  font-size: 0.6875rem;
+  color: #398aea;
+  border: 1px solid #d6e3f2;
+}
+
+.footer-logo-button:hover {
+  color: #f4f9ff;
+  background-color: #398aea;
+  text-decoration: none;
+}
+
+.footer-logo-manufacturer {
+  text-align: right;
+}
+
 * {
   margin: 0;
   padding: 0;
