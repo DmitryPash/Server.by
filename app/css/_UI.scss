@@ -117,13 +117,7 @@ h5,
 
 a {
   text-decoration: none;
-  color: #000000;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: #1c379b;
-  cursor: pointer;
+  color: $colorBlack;
 }
 
 ul,
@@ -134,6 +128,10 @@ li {
 
 button {
   cursor: pointer;
+}
+
+.span-blue {
+  color: $colorCyan;
 }
 // Example of Btn
 .ui-btn {
@@ -147,10 +145,8 @@ button {
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
-  transition: 0.5s ease;
+  cursor: pointer;
   border-radius: 4px;
-  &:hover {
-  }
 }
 
 // Breadcrumbs example
@@ -180,17 +176,51 @@ button {
 .ui-card-product {
   padding: 20px;
   border: 1px solid #d6e3f2;
+  margin: 0 -8px;
+  transition: 0.3s ease;
+  &:hover {
+    border: 1px solid $colorCyan;
+  }
+  .ui-btn {
+    background: $colorBlue;
+    width: 124px;
+    &-img {
+      height: 20px;
+      img {
+        display: block;
+        max-height: 20px;
+      }
+    }
+    &-text {
+      padding: 0px 5px;
+    }
+  }
   &-img {
+    position: relative;
     height: 212px;
     margin-bottom: 15px;
+    text-align: center;
     img {
       max-height: 212px;
     }
+  }
+  &-hits {
+    position: absolute;
+    width: 93px;
+    height: 24px;
+    text-transform: uppercase;
+    background-color: #ea3939;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 24px;
   }
   &-title {
     font-weight: 300;
     font-size: rem(15px);
     margin-bottom: 10px;
+    cursor: pointer;
   }
   &-articule {
     font-weight: 300;
@@ -199,6 +229,7 @@ button {
   }
   &-text {
     margin-bottom: 20px;
+    height: 80px;
   }
   &-price {
     padding-left: 8px;
