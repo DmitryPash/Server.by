@@ -3,7 +3,6 @@
 @import "media";
 @import "header";
 
-// $fontSize: 16px;
 $ffMontserrat: "Montserrat", sans-serif;
 $colorBlack: #191919;
 $colorSilver: #647b98;
@@ -68,11 +67,66 @@ body {
   width: 100%;
   max-width: 1360px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 // Main
 .middle {
   background-color: #ffffff;
+
+  &-banner {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    img {
+    }
+  }
+  &-categories {
+    margin-bottom: 85px;
+    &-cards {
+      display: flex;
+      background-color: $colorWhite;
+      height: 125px;
+      margin-bottom: 16px;
+      &-img {
+        display: inline-block;
+        padding: 10px 10px;
+        height: 80px;
+        width: 100px;
+        flex-shrink: 0;
+        img {
+          max-height: 80px;
+        }
+      }
+      &-text {
+        display: inline-block;
+        padding: 0px 10px;
+        flex-grow: 1;
+        .categories-cards-text-title {
+          text-transform: uppercase;
+          color: #111111;
+          font-size: rem(18px);
+          font-weight: 600;
+          margin-bottom: 5px;
+        }
+        .categories-cards-text-price {
+          font-size: rem(11px);
+        }
+      }
+    }
+  }
+  &-offer {
+    &-title {
+    }
+    &-arrow {
+    }
+    .ui-btn {
+      background: $colorBlue;
+      width: 124px;
+    }
+  }
+  &-sale {
+  }
+  &-hits {
+  }
 }

@@ -80,7 +80,6 @@ function js() {
 
 function images() {
   return src(path.src.images)
-    .pipe(fileinclude())
     .pipe(dest(path.build.images))
     .pipe(browsersync.stream());
 }
@@ -102,10 +101,10 @@ gulp.task("svgSprite", function () {
 });
 
 function watchFiles() {
-  gulp.watch([path.watch.images], images);
   gulp.watch([path.watch.html], html);
   gulp.watch([path.watch.css], css);
   gulp.watch([path.watch.js], js);
+  gulp.watch([path.watch.images], images);
 }
 
 let build = gulp.series(gulp.parallel(js, css, html, images));

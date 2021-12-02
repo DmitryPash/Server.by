@@ -1,3 +1,18 @@
+$ffMontserrat: "Montserrat", sans-serif;
+$colorBlack: #191919;
+$colorSilver: #647b98;
+$colorBlue: #2963cb;
+$colorCyan: #398aea;
+$colorWhite: #f4f9ff;
+$colorGradient: linear-gradient(
+  92.42deg,
+  #398aea 14.1%,
+  #39a3ea 31.59%,
+  #39c0ea 46.36%,
+  #39c0ea 61.13%,
+  #27a6dd 74.74%,
+  #398aea 88.73%
+);
 // Mixin
 $html-font-size: 16px;
 @function stripUnit($value) {
@@ -13,10 +28,110 @@ $html-font-size: 16px;
     padding: 18px 0px;
     &-btn {
       width: 196px;
+      position: relative;
+
+      &-icon {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 56%;
+        left: 12%;
+      }
+      &-arrow {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 85%;
+      }
     }
-    &-list ul li {
-      display: inline-block;
-      font-size: rem(14px);
+    &-list {
+      ul li {
+        display: inline-block;
+        font-size: rem(14px);
+        position: relative;
+        a {
+          margin-right: 20px;
+          color: $colorSilver;
+          font-weight: 500;
+        }
+        .header-menu-list-sale {
+          position: absolute;
+          transform: translate(-50%, -50%);
+          top: 0%;
+          right: 0%;
+        }
+      }
+    }
+    &-time {
+      text-align: right;
+
+      &-work {
+        text-align: center;
+        font-size: rem(11px);
+        padding-left: 15px;
+        padding-right: 15px;
+        .time-work-bold {
+          font-weight: 700;
+        }
+      }
+      &-tel {
+        font-size: rem(14px);
+        font-weight: 600;
+        padding-left: 15px;
+        padding-right: 15px;
+        .time-tel-big {
+          font-size: rem(24px);
+        }
+      }
+    }
+  }
+  &-nav {
+    position: relative;
+    z-index: 999;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 20px #d6e3f2;
+    padding: 24px 0px;
+    &-logo {
+    }
+    &-search {
+      position: relative;
+      &-input {
+        border: none;
+        border: 1px solid #d6e3f2;
+        border-radius: 4px;
+        width: 100%;
+        height: 60px;
+        outline: none;
+        padding: 0px 30px;
+      }
+
+      ::placeholder {
+        font-size: rem(15px);
+        font-weight: 300;
+        color: #a8c0dd;
+      }
+      &-btn {
+        position: absolute;
+        text-align: center;
+        line-height: 60px;
+        font-size: rem(22px);
+        height: 100%;
+        width: 60px;
+        right: 0%;
+      }
+    }
+    &-menu {
+      text-align: center;
+      &-services {
+        color: $colorSilver;
+        font-size: rem(11px);
+        .menu-services-img {
+          height: 40px;
+          margin-bottom: 5px;
+          img {
+            max-height: 40px;
+          }
+        }
+      }
     }
   }
 }

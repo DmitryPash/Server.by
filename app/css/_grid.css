@@ -13,8 +13,21 @@
   flex-flow: row wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  display: -ms-flex;
+  display: -ms-inline-flexbox;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
 }
 .valign-center {
   -webkit-box-align: center;
@@ -30,10 +43,14 @@
   justify-content: center;
 }
 
+.space-between {
+  justify-content: space-between;
+}
+
 [class*="col-"] {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 /*  12-column */
