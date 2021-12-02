@@ -1,12 +1,17 @@
 <header class="header" id="header">
   <div class="header-menu">
     <div class="container">
-      <div class="row walign-center">
+      <div class="row valign-center">
         <div class="col-2">
-          <div class="header-menu-btn ui-btn">
+          <a class="header-menu-btn ui-btn">
+            <div class="header-menu-btn-icon">
+              <img src="./images/icons/icon-catalog.png" alt="" />
+            </div>
             Каталог товаров
-            <i class="fas fa-angle-down"></i>
-          </div>
+            <div class="header-menu-btn-arrow">
+              <i class="fas fa-angle-down"></i>
+            </div>
+          </a>
         </div>
         <div class="col-6">
           <div class="header-menu-list">
@@ -15,15 +20,96 @@
               <li><a href="#">Доставка и оплата</a></li>
               <li><a href="#">Кредит и рассрочка</a></li>
               <li><a href="#">Гарантия</a></li>
-              <li><a href="#">Акции</a></li>
+              <li>
+                <a href="#">Акции</a>
+                <div class="header-menu-list-sale">
+                  <img src="./images/icons/Star 7.png" alt="" />
+                </div>
+              </li>
             </ul>
           </div>
         </div>
         <div class="col-4">
-          <div class="header-menu-time">123 123</div>
+          <div class="header-menu-time">
+            <div class="row valign-center space-between">
+              <div class="header-menu-time-work">
+                Время работы:<br />с
+                <span class="time-work-bold">09:00 </span>
+                до
+                <span class="time-work-bold">21:00</span>
+              </div>
+              <div class="header-menu-time-tel">
+                (29)<span class="time-tel-big">115-15-41</span>(33)
+                <span class="time-tel-big">365-75-00</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="header-nav">2</div>
+  <div class="header-nav">
+    <div class="container">
+      <div class="row valign-center">
+        <div class="col-3">
+          <a href="#" class="header-nav-logo">
+            <img src="./images/icons/Logo-header.png" alt="" />
+          </a>
+        </div>
+        <div class="col-6">
+          <div class="header-nav-search">
+            <form action="">
+              <input
+                class="header-nav-search-input"
+                type="text"
+                placeholder="Искать Huawei MateBook"
+              />
+              <a class="header-nav-search-btn ui-btn">
+                <i class="fas fa-search"></i>
+              </a>
+            </form>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="header-nav-menu">
+            <div class="row">
+              <div class="col-3">
+                <a class="header-nav-menu-services">
+                  <div class="menu-services-img">
+                    <img src="./images/icons/user-header.png" alt="" />
+                  </div>
+                  Войти
+                </a>
+              </div>
+              <div class="col-3">
+                <a class="header-nav-menu-services">
+                  <div class="menu-services-img">
+                    <img src="./images/icons/equ-header.png" alt="" />
+                  </div>
+                  Сравнение
+                </a>
+              </div>
+              <div class="col-3">
+                <a class="header-nav-menu-services">
+                  <div class="menu-services-img">
+                    <img src="./images/icons/heart-header.png" alt="" />
+                  </div>
+
+                  Избранное
+                </a>
+              </div>
+              <div class="col-3">
+                <a class="header-nav-menu-services">
+                  <div class="menu-services-img">
+                    <img src="./images/icons/cart-header.png" alt="" />
+                  </div>
+                  Корзина
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </header>

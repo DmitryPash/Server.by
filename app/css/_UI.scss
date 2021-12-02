@@ -138,6 +138,7 @@ button {
 // Example of Btn
 .ui-btn {
   display: inline-block;
+  position: relative;
   height: 36px;
   line-height: 36px;
   background: $colorGradient;
@@ -172,6 +173,73 @@ button {
   i {
     margin-left: 15px;
     margin-right: 15px;
+  }
+}
+
+// Card product
+.ui-card-product {
+  padding: 20px;
+  border: 1px solid #d6e3f2;
+  &-img {
+    height: 212px;
+    margin-bottom: 15px;
+    img {
+      max-height: 212px;
+    }
+  }
+  &-title {
+    font-weight: 300;
+    font-size: rem(15px);
+    margin-bottom: 10px;
+  }
+  &-articule {
+    font-weight: 300;
+    font-size: rem(10px);
+    color: #758da9;
+  }
+  &-text {
+    margin-bottom: 20px;
+  }
+  &-price {
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 15px;
+  }
+  &-sale {
+    font-size: rem(20px);
+    font-weight: 600;
+  }
+  &-normal {
+    font-size: rem(16px);
+    font-weight: 400;
+    text-decoration: line-through;
+  }
+  .card-price-units {
+    font-size: rem(10px);
+  }
+}
+// Card buttons
+.ui-card-btns {
+  .ui-btn-img {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+  }
+  .ui-btn-text {
+    display: inline-block;
+  }
+  .ui-btn-favorite,
+  .ui-btn-compare {
+    position: relative;
+    padding: 18px;
+    border: 1px solid #d6e3f2;
+    border-radius: 4px;
+    img {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+    }
   }
 }
 

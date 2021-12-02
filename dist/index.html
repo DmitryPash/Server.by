@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Server.by</title>
-    <meta name="keywords" content="Server.by" />
-    <meta name="description" content="Server.by" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="format-detection" content="telephone=no" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="wrapper" id="wrapper">
-      <header class="header" id="header">
+<head>
+  <meta charset="utf-8" />
+  <title>Server.by</title>
+  <meta name="keywords" content="Server.by" />
+  <meta name="description" content="Server.by" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="wrapper" id="wrapper">
+    <header class="header" id="header">
   <div class="header-menu">
     <div class="container">
-      <div class="row walign-center">
+      <div class="row valign-center">
         <div class="col-2">
-          <div class="header-menu-btn ui-btn">
+          <a class="header-menu-btn ui-btn">
+            <div class="header-menu-btn-icon">
+              <img src="./images/icons/icon-catalog.png" alt="" />
+            </div>
             Каталог товаров
-            <i class="fas fa-angle-down"></i>
-          </div>
+            <div class="header-menu-btn-arrow">
+              <i class="fas fa-angle-down"></i>
+            </div>
+          </a>
         </div>
         <div class="col-6">
           <div class="header-menu-list">
@@ -42,24 +44,265 @@
               <li><a href="#">Доставка и оплата</a></li>
               <li><a href="#">Кредит и рассрочка</a></li>
               <li><a href="#">Гарантия</a></li>
-              <li><a href="#">Акции</a></li>
+              <li>
+                <a href="#">Акции</a>
+                <div class="header-menu-list-sale">
+                  <img src="./images/icons/Star 7.png" alt="" />
+                </div>
+              </li>
             </ul>
           </div>
         </div>
         <div class="col-4">
-          <div class="header-menu-time">123 123</div>
+          <div class="header-menu-time">
+            <div class="row valign-center space-between">
+              <div class="header-menu-time-work">
+                Время работы:<br />с
+                <span class="time-work-bold">09:00 </span>
+                до
+                <span class="time-work-bold">21:00</span>
+              </div>
+              <div class="header-menu-time-tel">
+                (29)<span class="time-tel-big">115-15-41</span>(33)
+                <span class="time-tel-big">365-75-00</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="header-nav">2</div>
+  <div class="header-nav">
+    <div class="container">
+      <div class="row valign-center">
+        <div class="col-3">
+          <a href="#" class="header-nav-logo">
+            <img src="./images/icons/Logo-header.png" alt="" />
+          </a>
+        </div>
+        <div class="col-6">
+          <div class="header-nav-search">
+            <form action="">
+              <input
+                class="header-nav-search-input"
+                type="text"
+                placeholder="Искать Huawei MateBook"
+              />
+              <a class="header-nav-search-btn ui-btn">
+                <i class="fas fa-search"></i>
+              </a>
+            </form>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="header-nav-menu">
+            <div class="row">
+              <div class="col-3">
+                <a class="header-nav-menu-services">
+                  <div class="menu-services-img">
+                    <img src="./images/icons/user-header.png" alt="" />
+                  </div>
+                  Войти
+                </a>
+              </div>
+              <div class="col-3">
+                <a class="header-nav-menu-services">
+                  <div class="menu-services-img">
+                    <img src="./images/icons/equ-header.png" alt="" />
+                  </div>
+                  Сравнение
+                </a>
+              </div>
+              <div class="col-3">
+                <a class="header-nav-menu-services">
+                  <div class="menu-services-img">
+                    <img src="./images/icons/heart-header.png" alt="" />
+                  </div>
+
+                  Избранное
+                </a>
+              </div>
+              <div class="col-3">
+                <a class="header-nav-menu-services">
+                  <div class="menu-services-img">
+                    <img src="./images/icons/cart-header.png" alt="" />
+                  </div>
+                  Корзина
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </header>
 
-      <div class="middle" id="middle"></div>
+    <div class="middle" id="middle">
+      <div class="middle-banner">
+        <div class="container">
+          <div class="row">
+            <img src="./images/examples/Slider(DELETE).png" alt="" />
+            <img src="./images/examples/middle-banner.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="middle-categories">
+        <div class="container">
+          <div class="row">
+            <div class="col-3 col-l-4 col-lg-4 col-md-6 col-xs-12">
+              <div class="middle-categories-cards valign-center">
+                <div class="middle-categories-cards-img">
+                  <img src="./images/icons/cat-cards 1.png" alt="" />
+                </div>
+                <div class="middle-categories-cards-text">
+                  <div class="categories-cards-text-title">Ноутбуки</div>
+                  <div class="categories-cards-text-price">от 1200 РУБ.</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 col-l-4 col-lg-4 col-md-6 col-xs-12">
+              <div class="middle-categories-cards valign-center">
+                <div class="middle-categories-cards-img">
+                  <img src="./images/icons/cat-cards 2.png" alt="" />
+                </div>
+                <div class="middle-categories-cards-text">
+                  <div class="categories-cards-text-title">ПЕРИФЕРИЯ</div>
+                  <div class="categories-cards-text-price">от 40 РУБ.</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 col-l-4 col-lg-4 col-md-6 col-xs-12">
+              <div class="middle-categories-cards valign-center">
+                <div class="middle-categories-cards-img">
+                  <img src="./images/icons/cat-cards 3.png" alt="" />
+                </div>
+                <div class="middle-categories-cards-text">
+                  <div class="categories-cards-text-title">
+                    МФУ И ПРИНТЕРЫ
+                  </div>
+                  <div class="categories-cards-text-price">от 190 РУБ.</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 col-l-4 col-lg-4 col-md-6 col-xs-12">
+              <div class="middle-categories-cards valign-center">
+                <div class="middle-categories-cards-img">
+                  <img src="./images/icons/cat-cards 2.png" alt="" />
+                </div>
+                <div class="middle-categories-cards-text">
+                  <div class="categories-cards-text-title">ВИДЕОКАРТЫ</div>
+                  <div class="categories-cards-text-price">от 115 РУБ.</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 col-l-4 col-lg-4 col-md-6 col-xs-12">
+              <div class="middle-categories-cards valign-center">
+                <div class="middle-categories-cards-img">
+                  <img src="./images/icons/cat-cards 2.png" alt="" />
+                </div>
+                <div class="middle-categories-cards-text">
+                  <div class="categories-cards-text-title">МОНОБЛОКИ</div>
+                  <div class="categories-cards-text-price">от 2600 РУБ.</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 col-l-4 col-lg-4 col-md-6 col-xs-12">
+              <div class="middle-categories-cards valign-center">
+                <div class="middle-categories-cards-img">
+                  <img src="./images/icons/cat-cards 3.png" alt="" />
+                </div>
+                <div class="middle-categories-cards-text">
+                  <div class="categories-cards-text-title">КОМПЛЕКТУЮЩИЕ</div>
+                  <div class="categories-cards-text-price">от 410 РУБ.</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 col-l-4 col-lg-4 col-md-6 col-xs-12">
+              <div class="middle-categories-cards valign-center">
+                <div class="middle-categories-cards-img">
+                  <img src="./images/icons/cat-cards 2.png" alt="" />
+                </div>
+                <div class="middle-categories-cards-text">
+                  <div class="categories-cards-text-title">
+                    ИГРОВЫЕ, ОФИСНЫЕ КРЕСЛА И СТУЛЬЯ
+                  </div>
+                  <div class="categories-cards-text-price">от 160 РУБ.</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 col-l-4 col-lg-4 col-md-6 col-xs-12">
+              <div class="middle-categories-cards valign-center">
+                <div class="middle-categories-cards-img">
+                  <img src="./images/icons/cat-cards 1.png" alt="" />
+                </div>
+                <div class="middle-categories-cards-text">
+                  <div class="categories-cards-text-title">МОНИТОРЫ</div>
+                  <div class="categories-cards-text-price">от 300 РУБ.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="middle-offer">
+        <div class="container">
+          <div class="row space-between">
+            <div class="middle-offer-title">ГОРЯЧИЕ ПРЕДЛОЖЕНИЯ</div>
+            <div class="middle-offer-arrow">
+              <div class="middle-offer-arrow left">1</div>
+              <div class="middle-offer-arrow right">2</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-2">
+              <div class="ui-card-product">
+                <div class="ui-card-product-img">
+                  <a href="#">
+                    <img src="./images/examples/cards-mouse-1.png" alt="alt">
+                  </a>
+                </div>
+                <div class="ui-card-product-text">
+                  <div class="ui-card-product-title">Игровая мышь HIPER GMUS-2000</div>
+                  <div class="ui-card-product-articule">Код: QD0095719</div>
+                </div>
+                <div class="ui-card-product-price">
+                  <div class="row space-between valign-center">
+                    <div class="ui-card-product-sale">
+                      340.00 <span class="card-price-units">руб.</span>
+                    </div>
+                    <div class="ui-card-product-normal">
+                      340.00 <span class="card-price-units">руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="ui-card-btns flex valign-center space-between">
+                  <div class="ui-btn">
+                    <div class="ui-btn-img">
+                      <img src="./images/icons/ui-cart-logo.png" alt="">
+                    </div>
+                    <div class="ui-btn-text">В корзину</div>
+                  </div>
+                  <a href="" class="ui-btn-favorite">
+                    <img src="./images/icons/heart.png" alt="">
+                  </a>
+                  <a href="" class="ui-btn-compare">
+                    <img src="./images/icons/equ.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" middle-sale">
+      </div>
+      <div class="middle-hits"></div>
       <footer class="footer" id="footer">footer</footer>
 
     </div>
 
     <script src="./js/main.js"></script>
-  </body>
+</body>
+
 </html>
