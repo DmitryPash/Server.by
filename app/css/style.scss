@@ -2,6 +2,7 @@
 @import "UI";
 @import "media";
 @import "header";
+@import "footer";
 
 $ffMontserrat: "Montserrat", sans-serif;
 $colorBlack: #191919;
@@ -39,6 +40,7 @@ body {
   min-height: 100%;
   font-family: $ffMontserrat;
   font-weight: 400;
+  font-size: rem(16px);
   color: $colorBlack;
   background-color: $colorWhite;
 }
