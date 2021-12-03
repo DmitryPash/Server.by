@@ -27,9 +27,8 @@ $html-font-size: 16px;
   &-menu {
     padding: 18px 0px;
     &-btn {
-      width: 196px;
       cursor: pointer;
-      margin-right: 20px;
+      width: 100%;
       &:hover {
         background: #398aea;
       }
@@ -46,7 +45,11 @@ $html-font-size: 16px;
         left: 85%;
       }
     }
+    &-burger {
+      display: none;
+    }
     &-list {
+      line-height: rem(25px);
       ul li {
         display: inline-block;
         font-size: rem(14px);

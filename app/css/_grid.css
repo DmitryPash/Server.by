@@ -17,23 +17,6 @@
   margin-right: -8px;
 }
 
-.row-zero {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  display: -ms-flex;
-  display: -ms-inline-flexbox;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-}
-
 .flex {
   display: -webkit-box;
   display: -webkit-flex;
