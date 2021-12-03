@@ -417,6 +417,7 @@ button {
 
 .ui-card-product-img img {
   max-height: 212px;
+  margin: 0 auto;
 }
 
 .ui-card-product-hits {
@@ -961,6 +962,10 @@ body {
   margin-bottom: 60px;
 }
 
+.middle-banner-img {
+  background-color: #f5f5f6;
+}
+
 .middle-banner .middle-banner-slider {
   height: 400px;
   background-color: #f5f5f6;
@@ -1420,6 +1425,11 @@ body {
     flex: 0 0 100%;
     max-width: 100%;
   }
+
+  .header-nav-logo,
+  .header-nav-menu {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1591,6 +1601,23 @@ body {
     -webkit-box-flex: 0;
     flex: 0 0 100%;
     max-width: 100%;
+  }
+
+  .middle-banner-img {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .middle-banner-slider .slick-arrow {
+    display: none;
+  }
+
+  .slider-offer-left,
+  .slider-offer-right,
+  .slider-hits-left,
+  .slider-hits-right {
+    display: none;
   }
 }
 
