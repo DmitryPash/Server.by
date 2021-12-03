@@ -34,6 +34,10 @@
 @media (max-width: 992px) {
   //Global
   // Header
+  .header-nav-logo,
+  .header-nav-menu {
+    display: none;
+  }
   // Main
   // Footer
 }
@@ -49,6 +53,18 @@
   //Global
   // Headaer
   // Main
+  .middle-banner-img {
+    order: 2;
+  }
+  .middle-banner-slider .slick-arrow {
+    display: none;
+  }
+  .slider-offer-left,
+  .slider-offer-right,
+  .slider-hits-left,
+  .slider-hits-right {
+    display: none;
+  }
   // Footer
 }
 
