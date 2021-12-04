@@ -1,9 +1,9 @@
 <header class="header" id="header">
   <div class="header-menu">
     <div class="container">
-      <div class="row valign-center">
-        <div class="col-2 col-lg-1">
-          <a class="header-menu-btn ui-btn">
+      <div class="row valign-center space-between">
+        <div class="col-2 col-lg-2">
+          <a href="#" class="header-menu-btn ui-btn">
             <div class="header-menu-btn-icon">
               <img src="./images/icons/icon-catalog.png" alt="" />
             </div>
@@ -12,11 +12,8 @@
               <i class="fas fa-angle-down"></i>
             </div>
           </a>
-          <a href="" class="header-menu-burger">
-            <img src="./images/icons/Иконка меню.png" alt="">
-          </a>
         </div>
-        <div class="col-6 col-lg-6">
+        <div class="col-6 col-lg-7">
           <div class="header-menu-list">
             <ul>
               <li><a href="#">О компании</a></li>
@@ -32,9 +29,9 @@
             </ul>
           </div>
         </div>
-        <div class="col-4 col-lg-5">
+        <div class="col-4 col-lg-3">
           <div class="header-menu-time">
-            <div class="row valign-center space-between">
+            <div class="row valign-center">
               <div class="header-menu-time-work">
                 Время работы:<br />с
                 <span class="time-work-bold">09:00 </span>
@@ -51,27 +48,38 @@
           </div>
         </div>
       </div>
+
     </div>
   </div>
   <div class="header-nav">
     <div class="container">
       <div class="row valign-center">
-        <div class="col-3">
+        <div class="header-nav-burger col-md-2">
+          <!-- <div class="burger-menu"></div> -->
+          <a href="#" class="header-menu-btn ui-btn">
+            <div class="header-menu-btn-icon">
+              <img src="./images/icons/icon-catalog.png" alt="" />
+            </div>
+            Каталог товаров
+            <div class="header-menu-btn-arrow">
+              <i class="fas fa-angle-down"></i>
+            </div>
+          </a>
+        </div>
+        <div class="header-nav-mobile-logo col-3 col-md-8">
           <a href="#" class="header-nav-logo">
             <img src="./images/icons/Logo-header.png" alt="" />
           </a>
         </div>
-        <div class="col-6 col-md-12">
-          <div class="header-nav-search">
-            <form action="">
-              <input class="header-nav-search-input" type="text" placeholder="Искать Huawei MateBook" />
-              <a class="header-nav-search-btn ui-btn">
-                <i class="fas fa-search"></i>
-              </a>
-            </form>
-          </div>
+        <div class="header-nav-search col-6">
+          <form action="">
+            <input class="header-nav-search-input" type="text" placeholder="Искать Huawei MateBook" />
+            <a class="header-nav-search-btn ui-btn">
+              <i class="fas fa-search"></i>
+            </a>
+          </form>
         </div>
-        <div class="col-3">
+        <div class="col-3 col-md-2">
           <div class="header-nav-menu">
             <div class="row">
               <div class="col-3">
@@ -108,6 +116,9 @@
                 </a>
               </div>
             </div>
+          </div>
+          <div class="header-nav-mob-tel">
+            <i class="fas fa-phone"></i>
           </div>
         </div>
       </div>

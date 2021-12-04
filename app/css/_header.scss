@@ -45,9 +45,7 @@ $html-font-size: 16px;
         left: 85%;
       }
     }
-    &-burger {
-      display: none;
-    }
+
     &-list {
       line-height: rem(25px);
       ul li {
@@ -72,7 +70,7 @@ $html-font-size: 16px;
       }
     }
     &-time {
-      text-align: right;
+      //
 
       &-work {
         text-align: center;
@@ -106,10 +104,43 @@ $html-font-size: 16px;
     box-shadow: 0px 4px 20px #d6e3f2;
     padding: 24px 0px;
     &-logo {
+      height: 84px;
+      img {
+        max-height: 84px;
+      }
+    }
+    &-burger {
+      display: none;
+      // .burger-menu {
+      //   content: "";
+      //   position: relative;
+      //   background-color: black;
+      //   height: 2.4px;
+      //   width: 16px;
+      //   margin-bottom: 2px;
+      //   &:after {
+      //     content: "";
+      //     position: absolute;
+      //     background-color: black;
+      //     height: 2.4px;
+      //     width: 16px;
+      //     top: 3.6px;
+      //     margin-top: 2px;
+      //   }
+      //   &:before {
+      //     content: "";
+      //     position: absolute;
+      //     background-color: black;
+      //     height: 2.4px;
+      //     width: 16px;
+      //     bottom: 3.6px;
+      //     margin-bottom: 2px;
+      //   }
+      // }
     }
     &-search {
       position: relative;
-      margin-left: 5%;
+
       &-input {
         border: none;
         border: 1px solid #d6e3f2;
@@ -138,6 +169,9 @@ $html-font-size: 16px;
         right: 0%;
       }
     }
+    &-mob-tel {
+      display: none;
+    }
     &-menu {
       text-align: center;
       &-services {
@@ -157,6 +191,9 @@ $html-font-size: 16px;
           }
         }
       }
+    }
+    &-mobile-logo {
+      text-align: center;
     }
   }
 }
