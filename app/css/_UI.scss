@@ -177,12 +177,14 @@ button {
   padding: 20px;
   border: 1px solid #d6e3f2;
   transition: 0.3s ease;
+  width: 275px;
   &:hover {
     border: 1px solid $colorCyan;
   }
   .ui-btn {
     background: $colorBlue;
-    width: 124px;
+    width: 100%;
+    margin-right: 10px;
     &-img {
       height: 20px;
       img {
@@ -265,6 +267,7 @@ button {
     padding: 18px;
     border: 1px solid #d6e3f2;
     border-radius: 4px;
+    margin-left: 5px;
     img {
       position: absolute;
       transform: translate(-50%, -50%);

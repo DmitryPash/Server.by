@@ -24,6 +24,7 @@ $html-font-size: 16px;
 
 .header {
   background-color: #f4f9ff;
+  margin-bottom: 60px;
   &-menu {
     padding: 18px 0px;
     &-btn {
@@ -111,32 +112,33 @@ $html-font-size: 16px;
     }
     &-burger {
       display: none;
-      // .burger-menu {
-      //   content: "";
-      //   position: relative;
-      //   background-color: black;
-      //   height: 2.4px;
-      //   width: 16px;
-      //   margin-bottom: 2px;
-      //   &:after {
-      //     content: "";
-      //     position: absolute;
-      //     background-color: black;
-      //     height: 2.4px;
-      //     width: 16px;
-      //     top: 3.6px;
-      //     margin-top: 2px;
-      //   }
-      //   &:before {
-      //     content: "";
-      //     position: absolute;
-      //     background-color: black;
-      //     height: 2.4px;
-      //     width: 16px;
-      //     bottom: 3.6px;
-      //     margin-bottom: 2px;
-      //   }
-      // }
+      .burger-menu {
+        content: "";
+        position: relative;
+        background-color: #d6e3f2;
+        left: 50%;
+        height: 4.4px;
+        width: 26px;
+        margin-bottom: 5px;
+        &:after {
+          content: "";
+          position: absolute;
+          background-color: #d6e3f2;
+          height: 4.4px;
+          width: 26px;
+          top: 3.6px;
+          margin-top: 5px;
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          background-color: #d6e3f2;
+          height: 4.4px;
+          width: 26px;
+          bottom: 3.6px;
+          margin-bottom: 5px;
+        }
+      }
     }
     &-search {
       position: relative;
@@ -181,7 +183,7 @@ $html-font-size: 16px;
         cursor: pointer;
         &:hover {
           color: $colorBlack;
-          font-weight: 600;
+          // font-weight: 600;
         }
         .menu-services-img {
           height: 40px;
