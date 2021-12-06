@@ -583,10 +583,6 @@ input:focus:-ms-input-placeholder {
   left: 85%;
 }
 
-.header-menu-burger {
-  display: none;
-}
-
 .header-menu-list {
   line-height: 1.5625rem;
 }
@@ -617,10 +613,6 @@ input:focus:-ms-input-placeholder {
   transform: translate(-50%, -50%);
   top: 0%;
   right: 0%;
-}
-
-.header-menu-time {
-  text-align: right;
 }
 
 .header-menu-time-work {
@@ -662,9 +654,20 @@ input:focus:-ms-input-placeholder {
   padding: 24px 0px;
 }
 
+.header-nav-logo {
+  height: 84px;
+}
+
+.header-nav-logo img {
+  max-height: 84px;
+}
+
+.header-nav-burger {
+  display: none;
+}
+
 .header-nav-search {
   position: relative;
-  margin-left: 5%;
 }
 
 .header-nav-search-input {
@@ -720,6 +723,10 @@ input:focus:-ms-input-placeholder {
   right: 0%;
 }
 
+.header-nav-mob-tel {
+  display: none;
+}
+
 .header-nav-menu {
   text-align: center;
 }
@@ -745,6 +752,10 @@ input:focus:-ms-input-placeholder {
 
 .header-nav-menu-services .menu-services-img img {
   max-height: 40px;
+}
+
+.header-nav-mobile-logo {
+  text-align: center;
 }
 
 .footer {
@@ -1254,6 +1265,10 @@ body {
     max-width: 100%;
   }
 
+  .header-menu-list {
+    text-align: center;
+  }
+
   .header-menu-list ul li a {
     margin-right: 10px;
   }
@@ -1263,10 +1278,6 @@ body {
     padding-right: 0;
   }
 
-  .header-menu-btn-arrow {
-    display: none;
-  }
-
   .footer-pay-messengers {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1274,6 +1285,12 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+}
+
+@media (max-width: 1250px) {
+  .header-menu-time-work br {
+    display: none;
   }
 }
 
@@ -1362,14 +1379,22 @@ body {
     max-width: 100%;
   }
 
-  .header-menu-btn {
-    width: 50%;
-    font-size: 0;
+  .header-menu-btn-icon {
+    left: 6%;
   }
 
-  .header-menu-btn-icon {
-    top: 67%;
-    left: 50%;
+  .header-menu-btn-arrow {
+    left: 94%;
+  }
+
+  .header-menu-time-tel .time-tel-big {
+    font-size: 1.2rem;
+  }
+
+  .header-menu-time-work {
+    width: 100%;
+    margin-bottom: 5px;
+    text-decoration: underline;
   }
 }
 
@@ -1458,8 +1483,28 @@ body {
     max-width: 100%;
   }
 
-  .header-nav-logo,
+  .header-nav {
+    -webkit-box-shadow: 0px 4px 20px #d6e3f200;
+    box-shadow: 0px 4px 20px #d6e3f200;
+  }
+
+  .header-nav-burger {
+    display: block;
+  }
+
+  .header-nav-mob-tel {
+    display: block;
+  }
+
   .header-nav-menu {
+    display: none;
+  }
+
+  .header-nav-search {
+    display: none;
+  }
+
+  .header-menu {
     display: none;
   }
 }
