@@ -773,7 +773,24 @@ input:focus:-ms-input-placeholder {
   padding-bottom: 45px;
 }
 
+.footer-info ul {
+  padding-bottom: 20px;
+}
+
 .footer-info ul li {
+  padding-bottom: 15px;
+}
+
+.footer-info a:hover {
+  text-decoration: underline;
+}
+
+.footer-toggle-title {
+  color: #647b98;
+  padding-bottom: 45px;
+}
+
+.footer-toggle-title-ul .li {
   padding-bottom: 15px;
 }
 
@@ -910,6 +927,10 @@ input:focus:-ms-input-placeholder {
 
 .footer-logo-manufacturer {
   text-align: right;
+}
+
+.footer-toggle-ul {
+  display: none;
 }
 
 * {
@@ -1488,6 +1509,12 @@ body {
   }
 }
 
+@media (max-width: 890px) {
+  .footer-pay-messengers {
+    padding-left: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .col-sm-1 {
     -ms-flex: 0 0 8.33333%;
@@ -1575,10 +1602,12 @@ body {
 
   .footer-pay-adress {
     display: block;
+    padding-bottom: 15px;
   }
 
   .footer-pay-schedule {
     display: block;
+    padding-bottom: 15px;
   }
 
   .footer-pay-contacts {
@@ -1590,6 +1619,10 @@ body {
     padding-left: 0;
   }
 
+  .footer-pay-icons {
+    padding-bottom: 40px;
+  }
+
   .footer-logo-manufacturer {
     padding-top: 30px;
     text-align: center;
@@ -1599,18 +1632,6 @@ body {
     margin: 0 auto;
     display: block;
     padding-top: 30px;
-  }
-
-  .footer-pay-icons {
-    padding-bottom: 40px;
-  }
-
-  .footer-pay-adress {
-    padding-bottom: 15px;
-  }
-
-  .footer-pay-schedule {
-    padding-bottom: 15px;
   }
 }
 
