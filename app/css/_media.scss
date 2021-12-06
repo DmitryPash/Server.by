@@ -73,6 +73,11 @@
     display: none;
   }
   // Main
+
+  .middle-categories-cards {
+    flex-direction: column;
+    align-items: flex-start;
+  }
   // Footer
 }
 

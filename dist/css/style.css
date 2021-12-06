@@ -384,6 +384,7 @@ button {
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
+  width: 275px;
 }
 
 .ui-card-product:hover {
@@ -392,7 +393,8 @@ button {
 
 .ui-card-product .ui-btn {
   background: #2963cb;
-  width: 124px;
+  width: 100%;
+  margin-right: 10px;
 }
 
 .ui-card-product .ui-btn-img {
@@ -488,6 +490,7 @@ button {
   padding: 18px;
   border: 1px solid #d6e3f2;
   border-radius: 4px;
+  margin-left: 5px;
 }
 
 .ui-card-btns .ui-btn-favorite img,
@@ -550,6 +553,7 @@ input:focus:-ms-input-placeholder {
 
 .header {
   background-color: #f4f9ff;
+  margin-bottom: 60px;
 }
 
 .header-menu {
@@ -664,6 +668,36 @@ input:focus:-ms-input-placeholder {
 
 .header-nav-burger {
   display: none;
+}
+
+.header-nav-burger .burger-menu {
+  content: "";
+  position: relative;
+  background-color: #d6e3f2;
+  left: 50%;
+  height: 4.4px;
+  width: 26px;
+  margin-bottom: 5px;
+}
+
+.header-nav-burger .burger-menu:after {
+  content: "";
+  position: absolute;
+  background-color: #d6e3f2;
+  height: 4.4px;
+  width: 26px;
+  top: 3.6px;
+  margin-top: 5px;
+}
+
+.header-nav-burger .burger-menu:before {
+  content: "";
+  position: absolute;
+  background-color: #d6e3f2;
+  height: 4.4px;
+  width: 26px;
+  bottom: 3.6px;
+  margin-bottom: 5px;
 }
 
 .header-nav-search {
@@ -927,7 +961,7 @@ body {
   font-weight: 400;
   font-size: 1rem;
   color: #191919;
-  background-color: #f4f9ff;
+  background-color: #ffffff;
 }
 
 #wrapper {
@@ -971,7 +1005,6 @@ body {
 }
 
 .middle-banner {
-  margin-top: 60px;
   margin-bottom: 60px;
 }
 
@@ -980,8 +1013,12 @@ body {
 }
 
 .middle-banner .middle-banner-slider {
-  height: 400px;
+  height: 100%;
   background-color: #f5f5f6;
+}
+
+.middle-banner .middle-banner-slider:hover .slick-arrow {
+  opacity: 1;
 }
 
 .middle-banner .middle-banner-slider .slider-item {
@@ -998,6 +1035,7 @@ body {
 }
 
 .middle-banner .middle-banner-slider .slick-arrow {
+  opacity: 0;
   border: none;
   position: absolute;
   top: 50%;
@@ -1008,6 +1046,9 @@ body {
   border: 1px solid #2963cb;
   border-radius: 55px;
   margin: 0 50px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .middle-banner .middle-banner-slider .slick-prev {
@@ -1018,6 +1059,7 @@ body {
   transform: rotate(180deg);
   background-size: 20px 20px;
   background-position: center;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .middle-banner .middle-banner-slider .slick-next {
@@ -1025,6 +1067,7 @@ body {
   background: url(../images/icons/arrow-blue-slider.png) no-repeat;
   background-size: 20px 20px;
   background-position: center;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .middle-banner .middle-banner-slider .slick-dots {
@@ -1056,9 +1099,6 @@ body {
 }
 
 .middle-categories-cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background-color: #f4f9ff;
   height: 125px;
   margin-bottom: 16px;
@@ -1066,6 +1106,7 @@ body {
   -webkit-transition: 0.2s ease;
   -o-transition: 0.2s ease;
   transition: 0.2s ease;
+  padding: 0px 30px;
 }
 
 .middle-categories-cards:hover {
@@ -1109,10 +1150,15 @@ body {
   margin-bottom: 60px;
 }
 
+.middle-offer-header {
+  margin-bottom: 30px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
 .middle-offer-title {
   font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 38px;
 }
 
 .middle-offer-arrow {
@@ -1138,10 +1184,15 @@ body {
   margin-bottom: 100px;
 }
 
+.middle-hits-header {
+  margin-bottom: 30px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
 .middle-hits-title {
   font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 38px;
 }
 
 .middle-hits-arrow {
@@ -1153,6 +1204,8 @@ body {
   margin: 0 8px;
   text-align: center;
   line-height: 48px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .middle-hits .right {
@@ -1485,6 +1538,16 @@ body {
 
   .header-menu {
     display: none;
+  }
+
+  .middle-categories-cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
 }
 
