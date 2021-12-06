@@ -1,6 +1,9 @@
 @media (max-width: 1330px) {
   //Global
   // Header
+  .header-menu-list {
+    text-align: center;
+  }
   .header-menu-list ul li a {
     margin-right: 10px;
   }
@@ -8,10 +11,16 @@
     padding-left: 0;
     padding-right: 0;
   }
-  .header-menu-btn-arrow {
+
+  // Main
+  // Footer
+}
+@media (max-width: 1250px) {
+  //Global
+  // Header
+  .header-menu-time-work br {
     display: none;
   }
-
   // Main
   // Footer
 }
@@ -20,12 +29,22 @@
   //Global
   // Header
   .header-menu-btn {
-    width: 50%;
-    font-size: 0;
+    // width: 50%;
+    // font-size: 0;
   }
   .header-menu-btn-icon {
-    top: 67%;
-    left: 50%;
+    left: 6%;
+  }
+  .header-menu-btn-arrow {
+    left: 94%;
+  }
+  .header-menu-time-tel .time-tel-big {
+    font-size: 1.2rem;
+  }
+  .header-menu-time-work {
+    width: 100%;
+    margin-bottom: 5px;
+    text-decoration: underline;
   }
   // Main
   // Footer
@@ -34,8 +53,23 @@
 @media (max-width: 992px) {
   //Global
   // Header
-  .header-nav-logo,
-  .header-nav-menu {
+  .header-nav {
+    box-shadow: 0px 4px 20px #d6e3f200;
+    &-burger {
+      display: block;
+    }
+    &-mob-tel {
+      display: block;
+    }
+    &-menu {
+      display: none;
+    }
+    &-search {
+      display: none;
+    }
+  }
+
+  .header-menu {
     display: none;
   }
   // Main
