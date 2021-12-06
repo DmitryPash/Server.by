@@ -32,8 +32,27 @@ $html-font-size: 16px;
       color: $colorSilver;
       padding-bottom: 45px;
     }
+    ul {
+      padding-bottom: 20px;
+    }
     ul li {
       padding-bottom: 15px;
+    }
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &-toggle {
+    &-title {
+      color: $colorSilver;
+      padding-bottom: 45px;
+      &-ul {
+        .li {
+          padding-bottom: 15px;
+        }
+      }
     }
   }
   &-pay {
@@ -153,36 +172,38 @@ $html-font-size: 16px;
 @media (max-width: 576px) {
 }
 @media (max-width: 768px) {
-  .footer-pay-adress {
-    display: block;
-  }
-  .footer-pay-schedule {
-    display: block;
-  }
-  .footer-pay-contacts {
-    display: block;
-  }
-  .footer-pay-messengers {
-    padding-top: 30px;
-    padding-left: 0;
-  }
-  .footer-logo-manufacturer {
-    padding-top: 30px;
-    text-align: center;
-    img {
-      margin: 0 auto;
-      display: block;
-      padding-top: 30px;
+  .footer {
+    &-pay {
+      &-adress {
+        display: block;
+        padding-bottom: 15px;
+      }
+      &-schedule {
+        display: block;
+        padding-bottom: 15px;
+      }
+      &-contacts {
+        display: block;
+      }
+      &-messengers {
+        padding-top: 30px;
+        padding-left: 0;
+      }
+      &-icons {
+        padding-bottom: 40px;
+      }
     }
-  }
-  .footer-pay-icons {
-    padding-bottom: 40px;
-  }
-  .footer-pay-adress {
-    padding-bottom: 15px;
-  }
-  .footer-pay-schedule {
-    padding-bottom: 15px;
+    &-logo {
+      &-manufacturer {
+        padding-top: 30px;
+        text-align: center;
+        img {
+          margin: 0 auto;
+          display: block;
+          padding-top: 30px;
+        }
+      }
+    }
   }
 }
 @media (max-width: 1330px) {
@@ -190,4 +211,12 @@ $html-font-size: 16px;
     display: flex;
     align-items: center;
   }
+}
+@media (max-width: 890px) {
+  .footer-pay-messengers {
+    padding-left: 0;
+  }
+}
+.footer-toggle-ul {
+  display: none;
 }
