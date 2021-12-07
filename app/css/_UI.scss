@@ -35,12 +35,6 @@ img {
   height: auto;
 }
 
-[class*="-p"] {
-  font-family: $ffMontserrat;
-  font-weight: 400;
-  font-size: rem(15px);
-  color: $colorBlack;
-}
 p,
 .p {
   font-family: $ffMontserrat;
@@ -151,24 +145,25 @@ button {
 
 // Breadcrumbs example
 [class*="-breadcrumbs"] {
-  text-align: center;
-  margin-top: 25px;
+  text-align: start;
   a {
-    font-size: rem(14px);
-    font-weight: 600;
-    color: #fff;
+    font-size: rem(13px);
+    font-weight: 400;
+    color: $colorSilver;
     display: inline-block;
-    opacity: 0.4;
+    text-decoration: underline;
   }
   :last-child {
-    opacity: 1;
+    color: #95a4b8;
+    text-decoration: none;
     i {
       display: none;
     }
   }
   i {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 10px;
   }
 }
 
@@ -176,11 +171,9 @@ button {
 .ui-card-product {
   padding: 20px;
   border: 1px solid #d6e3f2;
-  transition: 0.3s ease;
   width: 275px;
-  &:hover {
-    border: 1px solid $colorCyan;
-  }
+  border-right: 0px;
+
   .ui-btn {
     background: $colorBlue;
     width: 100%;
@@ -246,6 +239,7 @@ button {
     font-size: rem(16px);
     font-weight: 400;
     text-decoration: line-through;
+    margin-left: 10px;
   }
   .card-price-units {
     font-size: rem(10px);
