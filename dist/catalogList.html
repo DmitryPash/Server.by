@@ -34,43 +34,45 @@
       <header class="header" id="header">
   <div class="menu">
     <div class="container">
-      <div class="menu-btn">
-        <a href="#" class="ui-btn">
-          <div class="menu-btn-icon">
-            <img src="./images/icons/icon-catalog.png" alt="alt" />
-          </div>
-          каталог товаров
-          <div class="menu-btn-arrow">
-            <i class="fas fa-angle-down"></i>
-          </div>
-        </a>
-      </div>
-      <div class="menu-list">
-        <ul>
-          <li><a href="#">О компании</a></li>
-          <li><a href="#">Доставка и оплата</a></li>
-          <li><a href="#">Кредит и рассрочка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li>
-            <a href="#">Акции</a>
-            <div class="menu-list-sale">
-              <img src="./images/icons/Star 7.png" alt="alt" />
+      <div class="row valign-center space-between">
+        <div class="menu-btn">
+          <a href="#" class="ui-btn">
+            <div class="menu-btn-icon">
+              <img src="./images/icons/icon-catalog.png" alt="alt" />
             </div>
-          </li>
-        </ul>
-      </div>
-      <div class="menu-time">
-        <div class="menu-time-work">
-          Время работы:<br />с
-          <span class="time-work-bold">09:00 </span>
-          до
-          <span class="time-work-bold">21:00</span>
+            каталог товаров
+            <div class="menu-btn-arrow">
+              <i class="fas fa-angle-down"></i>
+            </div>
+          </a>
         </div>
-        <div class="menu-time-tel">
-          <div class="time-tel-top">(29)</div>
-          <span class="time-tel-big">115-15-41</span>
-          <div class="time-tel-top">(33)</div>
-          <span class="time-tel-big">365-75-00</span>
+        <div class="menu-list">
+          <ul>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">Кредит и рассрочка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li>
+              <a href="#">Акции</a>
+              <div class="menu-list-sale">
+                <img src="./images/icons/Star 7.png" alt="alt" />
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-time">
+          <div class="menu-time-work">
+            Время работы:<br />с
+            <span class="time-work-bold">09:00 </span>
+            до
+            <span class="time-work-bold">21:00</span>
+          </div>
+          <div class="menu-time-tel">
+            <div class="time-tel-top">(29)</div>
+            <span class="time-tel-big">115-15-41</span>
+            <div class="time-tel-top">(33)</div>
+            <span class="time-tel-big">365-75-00</span>
+          </div>
         </div>
       </div>
     </div>
@@ -123,12 +125,56 @@
         </div>
       </div> -->
   </div>
-  </div>
+
   <div class="main">
     <div class="container">
-      <div class="main-logo">
-        <img src="./images/icons/Logo-header.png" alt="">
+      <div class="row valign-center space-between">
+        <div class="col-logo col-lg-3">
+          <div class="main-logo">
+            <img src="./images/icons/Logo-header.png" alt="">
+          </div>
+        </div>
+        <div class="col-search col-l-6 col-lg-6">
+          <div class="main-search">
+            <form action="" class="main-search-form">
+              <input class="main-search-input" type="text" placeholder="Искать Huawei MateBook" />
+              <button class="main-search-btn ui-btn">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="col-menu col-lg-3">
+          <div class="main-menu space-between">
+            <a class="main-menu-services">
+              <div class="main-menu-services-img">
+                <img src="./images/icons/user-header.png" alt="alt">
+              </div>
+              <div class="main-menu-services-text">Войти</div>
+            </a>
+            <a class="main-menu-services">
+              <div class="main-menu-services-img">
+                <img src="./images/icons/equ-header.png" alt="alt">
+              </div>
+              <div class="main-menu-services-text">Сравнение</div>
+            </a>
+            <a class="main-menu-services">
+              <div class="main-menu-services-img">
+                <img src="./images/icons/heart-header.png" alt="alt">
+              </div>
+              <div class="main-menu-services-text">Избранное</div>
+            </a>
+            <a class="main-menu-services">
+              <div class="main-menu-services-img">
+                <img src="./images/icons/cart-header.png" alt="alt">
+              </div>
+              <div class="main-menu-services-text">Корзина</div>
+            </a>
+          </div>
+        </div>
+
       </div>
+
       <!-- <div class="row valign-center">
         <div class="main-burger col-md-2">
           <div class="burger-menu"></div>
@@ -192,7 +238,81 @@
     </div>
   </div>
 </header>
+<<<<<<< HEAD
       <div class="middle" id="middle"></div>
+=======
+      <div class="middle" id="middle">
+        <div class="container">
+          <div class="middle-title-h1">Ноутбуки</div>
+          <div class="row">
+            <div class="col-filter-22">
+              <div class="filter">
+                <div class="filter-title-h2">Фильтры</div>
+                <div class="filter-price">
+                  <div class="filter-title">Цена, бел.руб.</div>
+                  <input class="filter-price-from" placeholder="от" />
+                  <input class="filter-price-to" placeholder="до" />
+                </div>
+                <div class="filter-producer">
+                  <div class="filter-title">Производители</div>
+                  <ul>
+                    <li>
+                      <input type="checkbox" class="filter-checkbox" />
+                      <span class="filter-span">Acer</span>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="filter-checkbox" />
+                      <span class="filter-span">Asus</span>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="filter-checkbox" />
+                      <span class="filter-span">HP</span>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="filter-checkbox" />
+                      <span class="filter-span">Lenovo</span>
+                    </li>
+                  </ul>
+                  <a href="#" class="filter-producer-more"
+                    >Показать всех (еще 5)</a
+                  >
+                </div>
+                <div class="filter-type">
+                  <div class="filter-title">Тип</div>
+                  <ul>
+                    <li>
+                      <input type="checkbox" class="filter-checkbox" />
+                      <span class="filter-span">Игровой</span>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="filter-checkbox" />
+                      <span class="filter-span">Классический</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="filter-diagonal">
+                  <div class="filter-title">Диагональ экрана</div>
+                  <ul>
+                    <li>
+                      <input type="checkbox" class="filter-checkbox" />
+                      <span class="filter-span">15.6</span>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="filter-checkbox" />
+                      <span class="filter-span">17.3</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="filter-button">
+                  <a href="#" class="filter-button-show ui-btn">ПОКАЗАТЬ</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-8"></div>
+          </div>
+        </div>
+      </div>
+>>>>>>> catalogList
 
       <footer class="footer" id="footer">
   <div class="container">
