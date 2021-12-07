@@ -81,8 +81,8 @@ $(document).ready(function () {
     focusOnSelect: true,
   });
 });
-// drop for footer info
-let menu = document.querySelectorAll(".footer-info-toggle");
+// drop for footer top
+let menu = document.querySelectorAll(".footer-top-toggle");
 
 menu.forEach((element) => {
   element.addEventListener("click", () => {

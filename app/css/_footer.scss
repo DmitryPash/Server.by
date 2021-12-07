@@ -24,10 +24,10 @@ $html-font-size: 16px;
 
 .footer {
   background-color: $colorWhite;
-  &-info {
+  &-top {
     padding-top: 65px;
     padding-bottom: 55px;
-    border-bottom: 1px solid #dae7f9;
+    // border-bottom: 1px solid #dae7f9;
     &-title {
       color: $colorSilver;
       padding-bottom: 45px;
@@ -55,10 +55,11 @@ $html-font-size: 16px;
       }
     }
   }
-  &-pay {
+  &-middle {
     padding-top: 50px;
     padding-bottom: 50px;
     border-bottom: 1px solid #dae7f9;
+    border-top: 1px solid #dae7f9;
     &-icons {
       a {
         padding-right: 7px;
@@ -105,6 +106,11 @@ $html-font-size: 16px;
     }
     &-contacts {
       display: inline-block;
+      a {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
     &-messengers {
       padding-left: 40px;
@@ -117,8 +123,9 @@ $html-font-size: 16px;
       }
     }
   }
-  &-logo {
+  &-bottom {
     padding-top: 35px;
+    margin-bottom: 45px;
 
     &-txt:first-child {
       padding-top: 22px;
@@ -138,8 +145,8 @@ $html-font-size: 16px;
 
       a {
         color: #398aea;
-        :hover {
-          color: #398aea;
+        &:hover {
+          text-decoration: underline;
         }
       }
     }
@@ -169,11 +176,10 @@ $html-font-size: 16px;
     }
   }
 }
-@media (max-width: 576px) {
-}
+
 @media (max-width: 768px) {
   .footer {
-    &-pay {
+    &-middle {
       &-adress {
         display: block;
         padding-bottom: 15px;
@@ -193,7 +199,8 @@ $html-font-size: 16px;
         padding-bottom: 40px;
       }
     }
-    &-logo {
+    &-bottom {
+      margin-bottom: 30px;
       &-manufacturer {
         padding-top: 30px;
         text-align: center;
@@ -207,22 +214,22 @@ $html-font-size: 16px;
   }
 }
 @media (max-width: 1330px) {
-  .footer-pay-messengers {
+  .footer-middle-messengers {
     display: flex;
     align-items: center;
   }
 }
 @media (max-width: 890px) {
-  .footer-pay-messengers {
+  .footer-middle-messengers {
     padding-left: 0;
   }
 }
 @media (max-width: 576px) {
   .footer {
-    &-pay {
+    &-middle {
       padding-left: 15px;
     }
-    &-info {
+    &-top {
       padding-left: 15px;
       &-toggle {
         ul {
@@ -251,10 +258,10 @@ $html-font-size: 16px;
     }
   }
 
-  .footer-info-toggle.open .title-after::after {
+  .footer-top-toggle.open .title-after::after {
     content: url("../images/icons/toggle-up.png");
   }
-  .footer-info-toggle.open ul {
+  .footer-top-toggle.open ul {
     display: block;
   }
 }
