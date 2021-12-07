@@ -24,22 +24,63 @@
 <body>
   <div class="wrapper" id="wrapper">
     <header class="header" id="header">
-  <div class="header-menu">
+  <div class="menu">
     <div class="container">
-      <div class="row valign-center space-between">
+      <div class="menu-btn">
+        <a href="#" class="ui-btn">
+          <div class="menu-btn-icon">
+            <img src="./images/icons/icon-catalog.png" alt="alt" />
+          </div>
+          каталог товаров
+          <div class="menu-btn-arrow">
+            <i class="fas fa-angle-down"></i>
+          </div>
+        </a>
+      </div>
+      <div class="menu-list">
+        <ul>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">Кредит и рассрочка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li>
+            <a href="#">Акции</a>
+            <div class="menu-list-sale">
+              <img src="./images/icons/Star 7.png" alt="alt" />
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="menu-time">
+        <div class="menu-time-work">
+          Время работы:<br />с
+          <span class="time-work-bold">09:00 </span>
+          до
+          <span class="time-work-bold">21:00</span>
+        </div>
+        <div class="menu-time-tel">
+          <div class="time-tel-top">(29)</div>
+          <span class="time-tel-big">115-15-41</span>
+          <div class="time-tel-top">(33)</div>
+          <span class="time-tel-big">365-75-00</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="row valign-center space-between">
         <div class="col-2 col-lg-2">
-          <a href="#" class="header-menu-btn ui-btn">
-            <div class="header-menu-btn-icon">
+          <a href="#" class="menu-btn ui-btn">
+            <div class="menu-btn-icon">
               <img src="./images/icons/icon-catalog.png" alt="alt" />
             </div>
             Каталог товаров
-            <div class="header-menu-btn-arrow">
+            <div class="menu-btn-arrow">
               <i class="fas fa-angle-down"></i>
             </div>
           </a>
         </div>
         <div class="col-6 col-lg-7">
-          <div class="header-menu-list">
+          <div class="menu-list">
             <ul>
               <li><a href="#">О компании</a></li>
               <li><a href="#">Доставка и оплата</a></li>
@@ -47,7 +88,7 @@
               <li><a href="#">Гарантия</a></li>
               <li>
                 <a href="#">Акции</a>
-                <div class="header-menu-list-sale">
+                <div class="menu-list-sale">
                   <img src="./images/icons/Star 7.png" alt="alt" />
                 </div>
               </li>
@@ -55,15 +96,15 @@
           </div>
         </div>
         <div class="col-4 col-lg-3">
-          <div class="header-menu-time">
+          <div class="menu-time">
             <div class="row valign-center">
-              <div class="header-menu-time-work">
+              <div class="menu-time-work">
                 Время работы:<br />с
                 <span class="time-work-bold">09:00 </span>
                 до
                 <span class="time-work-bold">21:00</span>
               </div>
-              <div class="header-menu-time-tel">
+              <div class="menu-time-tel">
                 <div class="time-tel-top">(29)</div>
                 <span class="time-tel-big">115-15-41</span>
                 <div class="time-tel-top">(33)</div>
@@ -72,34 +113,36 @@
             </div>
           </div>
         </div>
-      </div>
-
-    </div>
+      </div> -->
   </div>
-  <div class="header-nav">
+  </div>
+  <div class="main">
     <div class="container">
-      <div class="row valign-center">
-        <div class="header-nav-burger col-md-2">
+      <div class="main-logo">
+        <img src="./images/icons/Logo-header.png" alt="">
+      </div>
+      <!-- <div class="row valign-center">
+        <div class="main-burger col-md-2">
           <div class="burger-menu"></div>
         </div>
-        <div class="header-nav-mobile-logo col-3 col-md-8">
-          <a href="#" class="header-nav-logo">
+        <div class="main-mobile-logo col-3 col-md-8">
+          <a href="#" class="main-logo">
             <img src="./images/icons/Logo-header.png" alt="alt" />
           </a>
         </div>
-        <div class="header-nav-search col-6">
-          <form action="">
-            <input class="header-nav-search-input" type="text" placeholder="Искать Huawei MateBook" />
-            <a class="header-nav-search-btn ui-btn">
+        <div class="main-search col-6">
+          <form action="" class="main-search-form">
+            <input class="main-search-input" type="text" placeholder="Искать Huawei MateBook" />
+            <button class="main-search-btn ui-btn">
               <i class="fas fa-search"></i>
-            </a>
+            </button>
           </form>
         </div>
         <div class="col-3 col-md-2">
-          <div class="header-nav-menu">
+          <div class="main-menu">
             <div class="row">
               <div class="col-3">
-                <a class="header-nav-menu-services">
+                <a class="main-menu-services">
                   <div class="menu-services-img">
                     <img src="./images/icons/user-header.png" alt="alt" />
                   </div>
@@ -107,7 +150,7 @@
                 </a>
               </div>
               <div class="col-3">
-                <a class="header-nav-menu-services">
+                <a class="main-menu-services">
                   <div class="menu-services-img">
                     <img src="./images/icons/equ-header.png" alt="alt" />
                   </div>
@@ -115,7 +158,7 @@
                 </a>
               </div>
               <div class="col-3">
-                <a class="header-nav-menu-services">
+                <a class="main-menu-services">
                   <div class="menu-services-img">
                     <img src="./images/icons/heart-header.png" alt="alt" />
                   </div>
@@ -124,7 +167,7 @@
                 </a>
               </div>
               <div class="col-3">
-                <a class="header-nav-menu-services">
+                <a class="main-menu-services">
                   <div class="menu-services-img">
                     <img src="./images/icons/cart-header.png" alt="alt" />
                   </div>
@@ -133,11 +176,11 @@
               </div>
             </div>
           </div>
-          <div class="header-nav-mob-tel">
+          <div class="main-mob-tel">
             <img src="./images/icons/phone-burger.svg" alt="">
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </header>
@@ -165,7 +208,7 @@
             </div>
             <div class="col-3 col-xs-12">
               <div class="banner-img flex justify-center">
-                <img src="./images/examples/banner.png" alt="alt">
+                <img src="./images/examples/middle-banner.png" alt="alt">
               </div>
             </div>
           </div>
@@ -174,94 +217,94 @@
         <div class="categories">
           <div class="row">
             <div class="col-3 col-lg-4 col-md-6 col-xs-6">
-              <a href="#" class="categories-cards flex valign-center">
-                <div class="categories-cards-img">
+              <a href="#" class="categories-card flex valign-center">
+                <div class="categories-card-img">
                   <img src="./images/icons/cat-cards 1.png" alt="alt" />
                 </div>
-                <div class="categories-cards-text">
-                  <div class="categories-cards-text-title">Ноутбуки</div>
-                  <div class="categories-cards-text-price">от 1200 РУБ.</div>
+                <div class="categories-card-text">
+                  <div class="categories-card-text-title">Ноутбуки</div>
+                  <div class="categories-card-text-price">от 1200 РУБ.</div>
                 </div>
               </a>
             </div>
             <div class="col-3 col-lg-4 col-md-6 col-xs-6">
-              <a href="#" class="categories-cards flex valign-center">
-                <div class="categories-cards-img">
+              <a href="#" class="categories-card flex valign-center">
+                <div class="categories-card-img">
                   <img src="./images/icons/cat-cards 2.png" alt="alt" />
                 </div>
-                <div class="categories-cards-text">
-                  <div class="categories-cards-text-title">ПЕРИФЕРИЯ</div>
-                  <div class="categories-cards-text-price">от 40 РУБ.</div>
+                <div class="categories-card-text">
+                  <div class="categories-card-text-title">ПЕРИФЕРИЯ</div>
+                  <div class="categories-card-text-price">от 40 РУБ.</div>
                 </div>
               </a>
             </div>
             <div class="col-3 col-lg-4 col-md-6 col-xs-6">
-              <a href="#" class="categories-cards flex valign-center">
-                <div class="categories-cards-img">
+              <a href="#" class="categories-card flex valign-center">
+                <div class="categories-card-img">
                   <img src="./images/icons/cat-cards 3.png" alt="alt" />
                 </div>
-                <div class="categories-cards-text">
-                  <div class="categories-cards-text-title">
+                <div class="categories-card-text">
+                  <div class="categories-card-text-title">
                     МФУ И ПРИНТЕРЫ
                   </div>
-                  <div class="categories-cards-text-price">от 190 РУБ.</div>
+                  <div class="categories-card-text-price">от 190 РУБ.</div>
                 </div>
               </a>
             </div>
             <div class="col-3 col-lg-4 col-md-6 col-xs-6">
-              <a href="#" class="categories-cards flex valign-center">
-                <div class="categories-cards-img">
+              <a href="#" class="categories-card flex valign-center">
+                <div class="categories-card-img">
                   <img src="./images/icons/cat-cards 2.png" alt="alt" />
                 </div>
-                <div class="categories-cards-text">
-                  <div class="categories-cards-text-title">ВИДЕОКАРТЫ</div>
-                  <div class="categories-cards-text-price">от 115 РУБ.</div>
+                <div class="categories-card-text">
+                  <div class="categories-card-text-title">ВИДЕОКАРТЫ</div>
+                  <div class="categories-card-text-price">от 115 РУБ.</div>
                 </div>
               </a>
             </div>
             <div class="col-3 col-lg-4 col-md-6 col-xs-6">
-              <a href="#" class="categories-cards flex valign-center">
-                <div class="categories-cards-img">
+              <a href="#" class="categories-card flex valign-center">
+                <div class="categories-card-img">
                   <img src="./images/icons/cat-cards 2.png" alt="alt" />
                 </div>
-                <div class="categories-cards-text">
-                  <div class="categories-cards-text-title">МОНОБЛОКИ</div>
-                  <div class="categories-cards-text-price">от 2600 РУБ.</div>
+                <div class="categories-card-text">
+                  <div class="categories-card-text-title">МОНОБЛОКИ</div>
+                  <div class="categories-card-text-price">от 2600 РУБ.</div>
                 </div>
               </a>
             </div>
             <div class="col-3 col-lg-4 col-md-6 col-xs-6">
-              <a href="#" class="categories-cards flex valign-center">
-                <div class="categories-cards-img">
+              <a href="#" class="categories-card flex valign-center">
+                <div class="categories-card-img">
                   <img src="./images/icons/cat-cards 3.png" alt="alt" />
                 </div>
-                <div class="categories-cards-text">
-                  <div class="categories-cards-text-title">КОМПЛЕКТУЮЩИЕ</div>
-                  <div class="categories-cards-text-price">от 410 РУБ.</div>
+                <div class="categories-card-text">
+                  <div class="categories-card-text-title">КОМПЛЕКТУЮЩИЕ</div>
+                  <div class="categories-card-text-price">от 410 РУБ.</div>
                 </div>
               </a>
             </div>
             <div class="col-3 col-lg-4 col-md-6 col-xs-6">
-              <a href="#" class="categories-cards flex valign-center">
-                <div class="categories-cards-img">
+              <a href="#" class="categories-card flex valign-center">
+                <div class="categories-card-img">
                   <img src="./images/icons/cat-cards 2.png" alt="alt" />
                 </div>
-                <div class="categories-cards-text">
-                  <div class="categories-cards-text-title">
+                <div class="categories-card-text">
+                  <div class="categories-card-text-title">
                     ИГРОВЫЕ, ОФИСНЫЕ КРЕСЛА И СТУЛЬЯ
                   </div>
-                  <div class="categories-cards-text-price">от 160 РУБ.</div>
+                  <div class="categories-card-text-price">от 160 РУБ.</div>
                 </div>
               </a>
             </div>
             <div class="col-3 col-lg-4 col-md-6 col-xs-6">
-              <a href="#" class="categories-cards flex valign-center">
-                <div class="categories-cards-img">
+              <a href="#" class="categories-card flex valign-center">
+                <div class="categories-card-img">
                   <img src="./images/icons/cat-cards 1.png" alt="alt" />
                 </div>
-                <div class="categories-cards-text">
-                  <div class="categories-cards-text-title">МОНИТОРЫ</div>
-                  <div class="categories-cards-text-price">от 300 РУБ.</div>
+                <div class="categories-card-text">
+                  <div class="categories-card-text-title">МОНИТОРЫ</div>
+                  <div class="categories-card-text-price">от 300 РУБ.</div>
                 </div>
               </a>
             </div>

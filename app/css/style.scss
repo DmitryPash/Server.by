@@ -34,13 +34,17 @@ $html-font-size: 16px;
   box-sizing: border-box;
 }
 
-html,
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
   height: 100%;
   min-height: 100%;
   font-family: $ffMontserrat;
   font-weight: 400;
-  font-size: 16px;
+  font-size: rem(16px);
   color: $colorBlack;
   background-color: #ffffff;
 }
@@ -67,10 +71,10 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1360px;
+  max-width: 1390px;
   margin: 0 auto;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .sticker {
@@ -176,7 +180,7 @@ body {
   }
   .categories {
     margin-bottom: 85px;
-    &-cards {
+    &-card {
       background-color: $colorWhite;
       min-height: calc(100% - 16px);
       margin-bottom: 16px;
@@ -198,14 +202,14 @@ body {
         display: inline-block;
         padding: 0px 10px;
         flex-grow: 1;
-        .categories-cards-text-title {
+        .categories-card-text-title {
           text-transform: uppercase;
           color: #111111;
           font-size: rem(18px);
           font-weight: 600;
           margin-bottom: 5px;
         }
-        .categories-cards-text-price {
+        .categories-card-text-price {
           font-size: rem(11px);
         }
       }
