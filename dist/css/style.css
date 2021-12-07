@@ -963,10 +963,6 @@ input:focus:-ms-input-placeholder {
   text-align: right;
 }
 
-.footer-toggle-ul {
-  display: none;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -1798,6 +1794,50 @@ body {
   .slider-hits-left,
   .slider-hits-right {
     display: none;
+  }
+
+  .footer-pay {
+    padding-left: 15px;
+  }
+
+  .footer-info {
+    padding-left: 15px;
+  }
+
+  .footer-info-toggle ul {
+    margin: 0;
+    display: none;
+  }
+
+  .footer-info-title {
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 15px;
+  }
+
+  .footer-info-title .title-after {
+    display: inline-block;
+    position: relative;
+  }
+
+  .footer-info-title .title-after::after {
+    position: absolute;
+    top: 39%;
+    margin-left: 15px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    content: url("../images/icons/toggle-down.png");
+    width: 20px;
+    height: 20px;
+  }
+
+  .footer-info-toggle.open .title-after::after {
+    content: url("../images/icons/toggle-up.png");
+  }
+
+  .footer-info-toggle.open ul {
+    display: block;
   }
 }
 
