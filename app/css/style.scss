@@ -360,3 +360,103 @@ body {
     }
   }
 }
+// start catalogList
+
+.middle {
+  &-title {
+    &-h1 {
+      margin-bottom: 75px;
+    }
+  }
+}
+.filter {
+  background-color: $colorWhite;
+  margin-bottom: 40px;
+  &-title {
+    font-weight: 700;
+    padding-bottom: 15px;
+    &-h2 {
+      padding-top: 45px;
+      padding-bottom: 40px;
+      padding-left: 20px;
+      border-bottom: 1px solid #e5edf7;
+    }
+  }
+  &-price {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    border-bottom: 1px solid #e5edf7;
+    &-title {
+      font-weight: 700;
+      padding-bottom: 15px;
+    }
+    input {
+      width: 100px;
+      height: 40px;
+      padding-left: 10px;
+    }
+  }
+  &-producer {
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    border-bottom: 1px solid #e5edf7;
+
+    &-more {
+      margin-left: -20px;
+      font-size: rem(12px);
+      line-height: rem(15px);
+      color: $colorCyan;
+      border-bottom: 1px dashed $colorCyan;
+      &:hover {
+        border-bottom: none;
+      }
+    }
+  }
+  &-type {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    border-bottom: 1px solid #e5edf7;
+  }
+  &-checkbox {
+    width: 24px;
+    height: 24px;
+    margin-right: 9px;
+  }
+  &-span {
+    display: inline-block;
+    vertical-align: super;
+    font-weight: 300;
+    line-height: rem(17px);
+  }
+  &-diagonal {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    border-bottom: 1px solid #e5edf7;
+  }
+  &-button {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    &-show {
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      font-size: 14px;
+      &:hover {
+        background: #398aea;
+      }
+    }
+  }
+  ul li {
+    padding-bottom: 10px;
+    text-align: left;
+  }
+}
+// END cataloglist
