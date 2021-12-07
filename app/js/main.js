@@ -81,3 +81,12 @@ $(document).ready(function () {
     focusOnSelect: true,
   });
 });
+// drop for footer info
+let menu = document.querySelectorAll(".footer-info-toggle");
+
+menu.forEach((element) => {
+  element.addEventListener("click", () => {
+    // console.log("Done");
+    element.classList.toggle("open");
+  });
+});
