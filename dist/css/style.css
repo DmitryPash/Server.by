@@ -70,6 +70,13 @@
   max-width: 46.617647%;
 }
 
+.col-filter-22 {
+  -ms-flex: 0 0 22%;
+  -webkit-box-flex: 0;
+  flex: 0 0 22%;
+  max-width: 22%;
+}
+
 /*  12-column */
 
 .col-1 {
@@ -1326,6 +1333,116 @@ body {
   height: 140px;
   margin-right: 15px;
   overflow: hidden;
+}
+
+.middle-title-h1 {
+  margin-bottom: 75px;
+}
+
+.filter {
+  background-color: #f4f9ff;
+  margin-bottom: 40px;
+}
+
+.filter-title {
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+
+.filter-title-h2 {
+  padding-top: 45px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  border-bottom: 1px solid #e5edf7;
+}
+
+.filter-price {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  border-bottom: 1px solid #e5edf7;
+}
+
+.filter-price-title {
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+
+.filter-price input {
+  width: 100px;
+  height: 40px;
+  padding-left: 10px;
+}
+
+.filter-producer {
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  border-bottom: 1px solid #e5edf7;
+}
+
+.filter-producer-more {
+  margin-left: -20px;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  color: #398aea;
+  border-bottom: 1px dashed #398aea;
+}
+
+.filter-producer-more:hover {
+  border-bottom: none;
+}
+
+.filter-type {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  border-bottom: 1px solid #e5edf7;
+}
+
+.filter-checkbox {
+  width: 24px;
+  height: 24px;
+  margin-right: 9px;
+}
+
+.filter-span {
+  display: inline-block;
+  vertical-align: super;
+  font-weight: 300;
+  line-height: 1.0625rem;
+}
+
+.filter-diagonal {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  border-bottom: 1px solid #e5edf7;
+}
+
+.filter-button {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+}
+
+.filter-button-show {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+}
+
+.filter-button-show:hover {
+  background: #398aea;
+}
+
+.filter ul li {
+  padding-bottom: 10px;
+  text-align: left;
 }
 
 @media (max-width: 1330px) {
