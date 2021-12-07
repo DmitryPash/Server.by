@@ -27,6 +27,10 @@ $html-font-size: 16px;
   &-top {
     padding-top: 65px;
     padding-bottom: 55px;
+<<<<<<< HEAD
+=======
+    // border-bottom: 1px solid #dae7f9;
+>>>>>>> 59413cd2954a2bf94db0b1d2db7406e31262dcc0
     &-title {
       color: $colorSilver;
       padding-bottom: 45px;
@@ -223,7 +227,6 @@ $html-font-size: 16px;
     padding-left: 0;
   }
 }
-
 @media (max-width: 576px) {
   .footer {
     &-middle {

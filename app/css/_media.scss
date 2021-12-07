@@ -1,13 +1,13 @@
 @media (max-width: 1330px) {
   //Global
   // Header
-  .header-menu-list {
+  .menu-list {
     text-align: center;
   }
-  .header-menu-list ul li a {
+  .menu-list ul li a {
     margin-right: 10px;
   }
-  .header-menu-time-tel {
+  .menu-time-tel {
     padding-left: 0;
     padding-right: 0;
   }
@@ -18,7 +18,7 @@
 @media (max-width: 1250px) {
   //Global
   // Header
-  .header-menu-time-work br {
+  .menu-time-work br {
     display: none;
   }
   // Main
@@ -28,16 +28,16 @@
 @media (max-width: 1170px) {
   //Global
   // Header
-  .header-menu-btn-icon {
+  .menu-btn-icon {
     left: 6%;
   }
-  .header-menu-btn-arrow {
+  .menu-btn-arrow {
     left: 94%;
   }
-  .header-menu-time-tel .time-tel-big {
+  .menu-time-tel .time-tel-big {
     font-size: 1.2rem;
   }
-  .header-menu-time-work {
+  .menu-time-work {
     width: 100%;
     margin-bottom: 5px;
     text-decoration: underline;
@@ -49,7 +49,7 @@
 @media (max-width: 992px) {
   //Global
   // Header
-  .header-nav {
+  .main {
     box-shadow: 0px 4px 20px #d6e3f200;
     &-burger {
       display: block;
@@ -65,12 +65,12 @@
     }
   }
 
-  .header-menu {
+  .menu {
     display: none;
   }
   // Main
 
-  .middle-categories-cards {
+  .categories-cards {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -88,10 +88,10 @@
   //Global
   // Headaer
   // Main
-  .middle-banner-img {
+  .banner-img {
     order: 2;
   }
-  .middle-banner-slider .slick-arrow {
+  .banner-slider .slick-arrow {
     display: none;
   }
   .slider-offer-left,
