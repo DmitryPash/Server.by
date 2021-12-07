@@ -4,8 +4,8 @@
   .menu-list {
     text-align: center;
   }
-  .menu-list ul li a {
-    margin-right: 10px;
+  .header .menu-list ul li a {
+    margin-right: 14px;
   }
   .menu-time-tel {
     padding-left: 0;
@@ -21,6 +21,15 @@
   .menu-time-work br {
     display: none;
   }
+  .header .menu-time-work {
+    display: block;
+    margin-right: 10px;
+    text-align: start;
+    br {
+      display: none;
+    }
+  }
+  
   // Main
   // Footer
 }
@@ -28,13 +37,16 @@
 @media (max-width: 1170px) {
   //Global
   // Header
-  .menu-btn-icon {
-    left: 6%;
+  .header .menu-btn-icon {
+    left: 7%;
   }
-  .menu-btn-arrow {
-    left: 94%;
+  .header .menu-btn-arrow {
+    left: 93%;
   }
-  .menu-time-tel .time-tel-big {
+  .header .menu-btn {
+    width: 156px;
+  }
+ .header .menu-time-tel .time-tel-big {
     font-size: 1.2rem;
   }
   .menu-time-work {
