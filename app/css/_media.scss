@@ -29,7 +29,7 @@
       display: none;
     }
   }
-  
+
   // Main
   // Footer
 }
@@ -46,7 +46,7 @@
   .header .menu-btn {
     width: 156px;
   }
- .header .menu-time-tel .time-tel-big {
+  .header .menu-time-tel .time-tel-big {
     font-size: 1.2rem;
   }
   .menu-time-work {
@@ -61,19 +61,36 @@
 @media (max-width: 992px) {
   //Global
   // Header
-  .main {
-    box-shadow: 0px 4px 20px #d6e3f200;
-    &-burger {
-      display: block;
-    }
-    &-mob-tel {
-      display: block;
-    }
-    &-menu {
-      display: none;
-    }
-    &-search {
-      display: none;
+  .header {
+    .main {
+      box-shadow: 0px 4px 20px #d6e3f200;
+      &-burger {
+        display: block;
+      }
+      &-mob-tel {
+        display: block;
+      }
+      &-menu {
+        display: none;
+      }
+      &-search {
+        display: none;
+      }
+      .col-search {
+        display: none;
+      }
+      .col-menu {
+        display: none;
+      }
+      &-mobile-burger {
+        display: inline-block;
+      }
+      &-mobile-tel {
+        display: inline-block;
+      }
+      &-logo {
+        text-align: center;
+      }
     }
   }
 
