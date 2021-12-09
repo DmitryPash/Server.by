@@ -77,6 +77,13 @@
   max-width: 22%;
 }
 
+.col-filter-78 {
+  -ms-flex: 0 0 78%;
+  -webkit-box-flex: 0;
+  flex: 0 0 78%;
+  max-width: 78%;
+}
+
 /*  12-column */
 
 .col-1 {
@@ -1368,6 +1375,11 @@ body {
   padding-bottom: 15px;
 }
 
+.filter-price-line {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
 .filter-price input {
   width: 100px;
   height: 40px;
@@ -1501,6 +1513,137 @@ body {
 .installments img {
   display: block;
   margin-left: auto;
+}
+
+.catalog {
+  position: relative;
+  border: 1px solid #d6e3f2;
+}
+
+.catalog-item {
+  display: inline-block;
+  padding-left: 30px;
+  border-right: 1px solid #d6e3f2;
+}
+
+.catalog-item-features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.catalog-item-features img {
+  padding-right: 5px;
+}
+
+.catalog-item-features-compare {
+  padding-right: 10px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+  color: #6d829f;
+}
+
+.catalog-item-features-compare:hover {
+  text-decoration: underline;
+}
+
+.catalog-item-img {
+  display: inline-block;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.catalog-item-img img {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.catalog-item-description {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 45px;
+  padding-right: 30px;
+}
+
+.catalog-item-description-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.catalog-item-description-articule {
+  padding-bottom: 35px;
+}
+
+.catalog-item-description table tbody tr td {
+  padding-bottom: 10px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #191919;
+  overflow: hidden;
+}
+
+.catalog-marker {
+  position: absolute;
+  top: 4%;
+  left: 1.5%;
+  height: 24px;
+  line-height: 24px;
+  font-weight: 600;
+  padding-right: 9px;
+  padding-left: 9px;
+  font-size: 11px;
+  background-color: #ea3939;
+  color: #ffffff;
+}
+
+.catalog-pay {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+.catalog-pay-first_price {
+  font-size: 13px;
+}
+
+.articule {
+  display: inline-block;
+  padding-right: 10px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+  text-transform: uppercase;
+  color: #6d829f;
+}
+
+.in_stock {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+  text-transform: uppercase;
+  color: #37ab00;
+}
+
+.in_stock img {
+  padding-right: 5px;
+}
+
+.pay {
+  display: inline-block;
+  vertical-align: top;
 }
 
 @media (max-width: 1330px) {
