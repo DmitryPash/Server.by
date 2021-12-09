@@ -11,42 +11,6 @@ $(document).ready(function () {
     prevArrow: ".slider-offer-left",
     nextArrow: ".slider-offer-right",
     variableWidth: true,
-    // responsive: [
-    //   {
-    //     breakpoint: 1271,
-    //     settings: {
-    //       slidesToShow: 4,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 971,
-    //     settings: {
-    //       slidesToShow: 3,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 771,
-    //     settings: {
-    //       slidesToShow: 2,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 576,
-    //     settings: {
-    //       slidesToShow: 2,
-    //       prevArrow: false,
-    //       nextArrow: false,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 500,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       prevArrow: false,
-    //       nextArrow: false,
-    //     },
-    //   },
-    // ],
   });
 });
 
@@ -77,16 +41,27 @@ $(document).ready(function () {
     asNavFor: ".slider-for",
     dots: false,
     arrows: true,
-    // centerMode: true,
     focusOnSelect: true,
   });
 });
 // drop for footer top
 let menu = document.querySelectorAll(".footer-top-toggle");
-
 menu.forEach((element) => {
   element.addEventListener("click", () => {
     // console.log("Done");
     element.classList.toggle("open");
+  });
+});
+
+// burger drop function
+// $(document).ready(function () {
+//   $(".main-mobile-burger").click(function () {
+//     $(this).toggleClass("active"), $(".mob-menu").slideToggle(300);
+//   });
+// });
+let burger = document.querySelectorAll(".mob-menu-catalog");
+burger.forEach((element) => {
+  element.addEventListener("click", () => {
+    element.classList.toggle("activ");
   });
 });
