@@ -1567,7 +1567,7 @@ body {
   vertical-align: top;
   padding-top: 40px;
   padding-bottom: 40px;
-  padding-left: 45px;
+  padding-left: 35px;
   padding-right: 30px;
 }
 
@@ -1610,7 +1610,6 @@ body {
   vertical-align: top;
   padding-top: 40px;
   padding-bottom: 40px;
-  padding-right: 35px;
   padding-left: 35px;
 }
 
@@ -1742,6 +1741,10 @@ body {
   .menu-time-tel {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .catalog-item {
+    border-right: none;
   }
 
   .footer-middle-messengers {
