@@ -139,7 +139,7 @@ $html-font-size: 16px;
         left: 18px;
         right: 18px;
         height: 5px;
-        background: black;
+        background: #D6E3F2;
         &::before,
         &::after {
           position: absolute;
@@ -147,7 +147,7 @@ $html-font-size: 16px;
           left: 0;
           width: 100%;
           height: 5px;
-          background-color: black;
+          background-color: #D6E3F2;
           content: "";
           transition-duration: 0.3s, 0.3s;
           transition-delay: 0.3s, 0s;
@@ -168,60 +168,6 @@ $html-font-size: 16px;
       left: 0;
       top: 100%;
     }
-
-    // &-menu-burger {
-    //   display: block;
-    //   position: absolute;
-    //   background-color: #ffffff;
-    //   width: 100%;
-    //   left: 0;
-    //   top: 100%;
-    //   &-elements {
-    //     ul {
-    //       display: none;
-    //     }
-    //     ul li {
-    //       padding: 15px 75px;
-    //       font-weight: 400;
-    //     }
-    //     &.active {
-    //       ul {
-    //         display: block;
-    //       }
-    //     }
-    //   }
-    //   &-element {
-    //     position: relative;
-    //     border-top: 1px solid #e5edf7;
-    //     border-bottom: 1px solid #e5edf7;
-    //     padding: 9px 10px;
-    //     color: $colorSilver;
-    //     font-weight: 600;
-    //     .element-logo {
-    //       display: inline-block;
-    //       vertical-align: middle;
-    //       width: 61px;
-    //       text-align: center;
-    //       height: 20px;
-    //       img {
-    //         max-height: 20px;
-    //       }
-    //     }
-    //     &::after {
-    //       position: absolute;
-    //       top: 39%;
-    //       right: 0;
-    //       margin-left: 15px;
-    //       transform: translate(-50%, -50%);
-    //       content: url("../images/icons/toggle-down.png");
-    //       width: 20px;
-    //       height: 20px;
-    //     }
-    //     &.active::after {
-    //       content: url("../images/icons/toggle-up.png");
-    //     }
-    //   }
-    // }
     &-logo {
       // при адаптиве получается лучше без стилей(????)
       height: 84px;
@@ -285,31 +231,4 @@ $html-font-size: 16px;
   }
 }
 
-// Style for ul>li .menu-element
 
-// .menu-element li {
-//   padding: 15px 75px;
-//   font-weight: 400;
-// }
-// .header .main-menu-burger-element.active::after {
-//   content: url("../images/icons/toggle-up.png");
-// }
-
-// .header .main-menu-burger-elements ul {
-//   display: none;
-// }
-
-// .header .main-menu-burger-elements.activ ul {
-//   display: block;
-// }
-
-// .main-mobile-burger.activ ul {
-//   display: block;
-// }
-
-.zxc-a ul {
-  display: none;
-}
-.zxc-a.activ ul {
-  display: block;
-}
