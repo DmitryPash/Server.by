@@ -103,6 +103,17 @@ body {
     margin-right: 7px;
   }
 }
+
+.dots {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: url("../images/icons/dots.svg");
+  background-repeat: repeat-x;
+  bottom: 34%;
+  margin-left: 10px;
+}
 // Main
 .middle {
   background-color: #ffffff;
@@ -223,6 +234,7 @@ body {
     padding-right: 8px;
   }
   &-title {
+    text-transform: uppercase;
     font-size: rem(24px);
     font-weight: 600;
   }
@@ -263,6 +275,7 @@ body {
     padding-right: 8px;
   }
   &-title {
+    text-transform: uppercase;
     font-size: rem(24px);
     font-weight: 600;
   }
@@ -309,7 +322,7 @@ body {
   }
 }
 .product {
-  margin-bottom: 140px;
+  margin-bottom: 121px;
   &-slider {
     border: 1px solid #d6e3f2;
     padding: 17px;
@@ -452,8 +465,10 @@ body {
         tr {
           width: 100%;
           td {
+            position: relative;
             width: 50%;
             padding: 8px 0px;
+            overflow: hidden;
           }
         }
       }
@@ -487,7 +502,9 @@ body {
   }
 }
 .description {
+  margin-bottom: 98px;
   &-text {
+    margin-bottom: 37px;
     &-title {
       font-size: rem(20px);
       font-weight: 600;
@@ -535,19 +552,21 @@ body {
     }
   }
   &-delivery {
+    padding-left: 81px;
     &-title {
       font-size: rem(18px);
       text-transform: uppercase;
       font-weight: 600;
+      margin-bottom: 48px;
     }
   }
   &-card {
     background-color: #ffffff;
-    min-height: calc(100% - 16px);
-    margin-bottom: 16px;
+    min-height: calc(100% - 11px);
+    margin-bottom: 11px;
     border: 1px solid #ffffff00;
     transition: 0.2s ease;
-    padding: 22px 10px;
+    padding: 23px 5px 26px 30px;
     box-shadow: 0px 4px 20px #d6e3f2;
     &:hover {
       border: 1px solid $colorCyan;
@@ -564,15 +583,17 @@ body {
       display: inline-block;
       padding: 0px 10px;
       flex-grow: 1;
+
       &-title {
         text-transform: uppercase;
         color: $colorCyan;
         font-size: rem(14px);
         font-weight: 700;
-        margin-bottom: 5px;
+        margin-bottom: 20px;
       }
       &-price {
         font-size: rem(14px);
+        margin-bottom: 5px;
         span {
           font-weight: 700;
           font-size: rem(14px);
@@ -596,7 +617,6 @@ body {
 .cyan {
   color: $colorCyan;
 }
-
 .bolt {
   font-weight: 600;
 }
@@ -867,3 +887,43 @@ body {
 // END cataloglist
 
 // Mobile menu
+
+// Mobile nav 
+
+.mobile-nav {
+  display: none;
+  width: 100%;
+  height: 64px;
+  overflow: hidden;
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  padding: 0px 16px;
+  &-menu {
+    white-space: nowrap;
+    display: flex;
+
+    &-services {
+      display: inline-block;
+      text-align: center;
+      
+
+      &-img {
+        text-align: center;
+        display: inline-block;
+        height: 25px;
+        margin-bottom: 5px;
+        
+        img {
+          max-height: 25px;
+          vertical-align: middle;
+        }
+      }
+      &-text {
+        color: $colorSilver;
+        font-size: rem(11px);
+      }
+    }
+  }
+
+}
