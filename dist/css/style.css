@@ -3330,4 +3330,21 @@ body {
     -ms-flex-align: center;
     align-items: center;
   }
+
+  .info {
+    display: none;
+  }
+
+  .installments {
+    display: none;
+  }
+
+  .news-card {
+    display: block;
+  }
+
+  .news-card-img {
+    display: block;
+    margin-bottom: 20px;
+  }
 }
