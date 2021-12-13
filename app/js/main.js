@@ -59,10 +59,18 @@ menu.forEach((element) => {
 //     $(this).toggleClass("active"), $(".mob-menu").slideToggle(300);
 //   });
 // });
-let burger = document.querySelectorAll(".mob-menu-catalog");
-burger.forEach((element) => {
-  element.addEventListener("click", () => {
-    element.classList.toggle("activ");
+// let burger = document.querySelectorAll(".mob-menu-catalog");
+// burger.forEach((element) => {
+//   element.addEventListener("click", () => {
+//     element.classList.toggle("activ");
+//   });
+// });
+
+$(document).ready(function () {
+  $(".dropdown-submenu a.dropdown-submenu-link").on("click", function (e) {
+    $(this).next("ul").toggleClass("active");
+    e.stopPropagation();
+    e.preventDefault();
   });
 });
 
