@@ -2237,7 +2237,6 @@ body {
 .contact-info-details {
   margin-bottom: 8px;
   position: relative;
-  padding-left: 20px;
 }
 
 .contact-info-details-img {
@@ -2249,7 +2248,16 @@ body {
 .contact-info-details-adress {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 20px;
+}
+
+.contact-info-details-location {
+  position: relative;
+  padding-left: 40px;
+}
+
+.contact-info-losation {
+  padding-left: 20px;
 }
 
 .contact-about {
@@ -2864,6 +2872,18 @@ body {
     width: 100%;
     margin-bottom: 5px;
     text-decoration: underline;
+  }
+
+  .contact-info-adress {
+    padding-left: 0px;
+  }
+
+  .contact-info-details-location {
+    padding-left: 20px;
+  }
+
+  .contact-info-details-adress {
+    left: 0;
   }
 }
 

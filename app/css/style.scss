@@ -988,7 +988,7 @@ body {
     &-details {
       margin-bottom: 8px;
       position: relative;
-      padding-left: 20px;
+      // padding-left: 20px;
       &-img {
         display: inline-block;
         vertical-align: middle;
@@ -997,8 +997,15 @@ body {
       &-adress {
         position: absolute;
         top: 0;
-        left: 0;
+        left: 20px;
       }
+      &-location {
+        position: relative;
+        padding-left: 40px;
+      }
+    }
+    &-losation {
+      padding-left: 20px;
     }
   }
 
