@@ -1,6 +1,7 @@
 $(document).ready(function () {
   $(".banner-slider").slick({
     dots: true,
+    adaptiveHeight: true,
   });
 });
 
@@ -8,9 +9,20 @@ $(document).ready(function () {
   $(".offer-slider").slick({
     slidesToShow: 5,
     infinite: true,
+    arrows: false,
     prevArrow: ".slider-offer-left",
     nextArrow: ".slider-offer-right",
     variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 568,
+        settings: {
+          arrows: false,
+          prevArrow: false,
+          nextArrow: false,
+        },
+      },
+    ],
   });
 });
 
@@ -21,6 +33,16 @@ $(document).ready(function () {
     prevArrow: ".slider-hits-left",
     nextArrow: ".slider-hits-right",
     variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 568,
+        settings: {
+          arrows: false,
+          prevArrow: false,
+          nextArrow: false,
+        },
+      },
+    ],
   });
 });
 
@@ -48,24 +70,11 @@ $(document).ready(function () {
 let menu = document.querySelectorAll(".footer-top-toggle");
 menu.forEach((element) => {
   element.addEventListener("click", () => {
-    // console.log("Done");
     element.classList.toggle("open");
   });
 });
 
-// burger drop function
-// $(document).ready(function () {
-//   $(".main-mobile-burger").click(function () {
-//     $(this).toggleClass("active"), $(".mob-menu").slideToggle(300);
-//   });
-// });
-// let burger = document.querySelectorAll(".mob-menu-catalog");
-// burger.forEach((element) => {
-//   element.addEventListener("click", () => {
-//     element.classList.toggle("activ");
-//   });
-// });
-
+// burger-menu
 $(document).ready(function () {
   $(".dropdown-submenu a.dropdown-submenu-link").on("click", function (e) {
     $(this).next("ul").toggleClass("active");
@@ -78,5 +87,4 @@ let filterBtn = document.querySelector(".filter-btn");
 let filter = document.querySelector(".filter");
 filterBtn.addEventListener("click", () => {
   filter.style.display = "block";
-  console.log("Done");
 });

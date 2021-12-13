@@ -815,6 +815,10 @@ input:focus:-ms-input-placeholder {
   max-width: 20px;
 }
 
+.col-mobile-burger {
+  display: none;
+}
+
 .burger {
   position: absolute;
   content: "";
@@ -1208,12 +1212,18 @@ body {
 }
 
 .banner-img {
+  height: 100%;
   background-color: #f5f5f6;
+}
+
+.banner picture img {
+  margin: 0 auto;
 }
 
 .banner-slider {
   height: 100%;
   background-color: #f5f5f6;
+  margin-bottom: 40px;
 }
 
 .banner-slider:hover .slick-arrow {
@@ -1306,6 +1316,7 @@ body {
   -o-transition: 0.2s ease;
   transition: 0.2s ease;
   padding: 22px 10px;
+  overflow: hidden;
 }
 
 .categories-card:hover {
@@ -1384,6 +1395,10 @@ body {
 
 .sale {
   margin-bottom: 70px;
+}
+
+.sale-img {
+  text-align: center;
 }
 
 .hits {
@@ -1588,6 +1603,10 @@ body {
   background-repeat: no-repeat;
   background-position: center right;
   margin-bottom: 59px;
+}
+
+.product-description .installments a:hover {
+  border-bottom: 1px solid #3989ea00;
 }
 
 .product-description .installments-img {
@@ -2292,6 +2311,65 @@ body {
     max-width: 100%;
   }
 
+  .menu-list {
+    text-align: center;
+  }
+
+  .header .menu-list ul li a {
+    margin-right: 14px;
+  }
+
+  .menu-time-tel {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .filter {
+    display: none;
+  }
+
+  .catalog-item {
+    border-right: none;
+  }
+
+  .catalog-item-img {
+    padding-top: 55px;
+    padding-bottom: 0;
+    text-align: center;
+    display: block;
+  }
+
+  .catalog-item-features {
+    display: none;
+  }
+
+  .catalog-item-description {
+    padding-top: 0;
+    margin: auto;
+  }
+
+  .catalog-description {
+    padding-top: 0;
+    padding-left: 70px;
+  }
+
+  .catalog-description-first_price {
+    display: inline-block;
+    padding-right: 29px;
+  }
+
+  .catalog-description-second_price {
+    display: inline-block;
+  }
+
+  .catalog-marker {
+    top: 1%;
+  }
+
+  .catalog .dots {
+    display: none;
+  }
+
   .footer-middle-messengers {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2555,6 +2633,14 @@ body {
     text-align: center;
   }
 
+  .col-mobile-burger {
+    display: block;
+  }
+
+  .col-mobile-tel {
+    text-align: center;
+  }
+
   .menu {
     display: none;
   }
@@ -2708,9 +2794,6 @@ body {
 
 @media (max-width: 668px) {
   .categories-card-img {
-    -ms-flex: 0 0 45px;
-    -webkit-box-flex: 0;
-    flex: 0 0 45px;
     height: 45px;
     margin-bottom: 10px;
     padding: 0px 10px;
@@ -2847,6 +2930,12 @@ body {
 
   .catalog-description-price span {
     font-size: 0.5625rem;
+  }
+
+  .categories-card-img {
+    -ms-flex: 0 0 45px;
+    -webkit-box-flex: 0;
+    flex: 0 0 45px;
   }
 
   .footer-middle {
