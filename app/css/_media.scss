@@ -20,7 +20,7 @@
     display: none;
   }
   .installments {
-    // display: none;
+    display: none;
   }
 
   .catalog {
@@ -158,6 +158,12 @@
 
   .mobile-nav {
     display: flex;
+  }
+  .info {
+    display: none;
+  }
+  .news-list-installments {
+    display: none;
   }
   // Footer
 }
