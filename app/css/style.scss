@@ -439,6 +439,11 @@ body {
       background-repeat: no-repeat;
       background-position: center right;
       margin-bottom: 59px;
+      a {
+        &:hover {
+          border-bottom: 1px solid #3989ea00;
+        }
+      }
       &-img {
         display: inline-block;
         margin-bottom: 0;
@@ -888,7 +893,7 @@ body {
 
 // Mobile menu
 
-// Mobile nav 
+// Mobile nav
 
 .mobile-nav {
   display: none;
@@ -906,14 +911,13 @@ body {
     &-services {
       display: inline-block;
       text-align: center;
-      
 
       &-img {
         text-align: center;
         display: inline-block;
         height: 25px;
         margin-bottom: 5px;
-        
+
         img {
           max-height: 25px;
           vertical-align: middle;
@@ -925,7 +929,4 @@ body {
       }
     }
   }
-
 }
-
-

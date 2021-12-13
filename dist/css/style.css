@@ -801,6 +801,10 @@ input:focus:-ms-input-placeholder {
   max-width: 20px;
 }
 
+.col-mobile-burger {
+  display: none;
+}
+
 .burger {
   position: absolute;
   content: "";
@@ -1574,6 +1578,10 @@ body {
   background-repeat: no-repeat;
   background-position: center right;
   margin-bottom: 59px;
+}
+
+.product-description .installments a:hover {
+  border-bottom: 1px solid #3989ea00;
 }
 
 .product-description .installments-img {
@@ -2487,6 +2495,14 @@ body {
   }
 
   .header .main-logo {
+    text-align: center;
+  }
+
+  .col-mobile-burger {
+    display: block;
+  }
+
+  .col-mobile-tel {
     text-align: center;
   }
 
