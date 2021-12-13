@@ -373,6 +373,21 @@
     flex: 0 0 100;
     align-items: center;
   }
+  .info {
+    display: none;
+  }
+  .installments {
+    display: none;
+  }
+  .news {
+    &-card {
+      display: block;
+      &-img {
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+  }
   // Main
   // Footer
 }
