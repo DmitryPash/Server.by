@@ -2567,6 +2567,24 @@ body {
   cursor: pointer;
 }
 
+.article-title-h1 {
+  padding-bottom: 30px;
+}
+
+.article h4 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.article img {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.article p {
+  padding-bottom: 30px;
+}
+
 @media (max-width: 1330px) {
   .col-l-1 {
     -ms-flex: 0 0 8.33333%;

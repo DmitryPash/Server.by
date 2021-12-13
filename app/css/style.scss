@@ -1285,3 +1285,23 @@ body {
 }
 
 // end news list
+// start news-page.html
+.article {
+  &-title {
+    &-h1 {
+      padding-bottom: 30px;
+    }
+  }
+  h4 {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  img {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  p {
+    padding-bottom: 30px;
+  }
+}
+// end news-page.html
