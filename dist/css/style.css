@@ -2548,6 +2548,21 @@ body {
   left: -10px;
 }
 
+.news-pagination-btn {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  width: 160px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 4px;
+  font-size: 0.6875rem;
+  color: #ffffff;
+  background-color: #398aea;
+}
+
 .news-pagination img {
   cursor: pointer;
 }
@@ -2996,6 +3011,10 @@ body {
   }
 
   .news-list-installments {
+    display: none;
+  }
+
+  .news-pagination a:nth-child(n+5):nth-child(-n+9) {
     display: none;
   }
 }
