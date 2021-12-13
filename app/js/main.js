@@ -65,3 +65,10 @@ burger.forEach((element) => {
     element.classList.toggle("activ");
   });
 });
+
+let filterBtn = document.querySelector(".filter-btn");
+let filter = document.querySelector(".filter");
+filterBtn.addEventListener("click", () => {
+  filter.style.display = "block";
+  console.log("Done");
+});
