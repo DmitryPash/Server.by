@@ -2207,6 +2207,81 @@ body {
   font-size: 0.6875rem;
 }
 
+.info > * {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  background-color: #f4f9ff;
+}
+
+.info-title {
+  padding-bottom: 15px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.info ul li {
+  padding-bottom: 10px;
+  color: #6d829f;
+  font-size: 0.8125rem;
+}
+
+.info ul li:hover {
+  text-decoration: underline;
+}
+
+.news-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.news-card-description {
+  position: relative;
+}
+
+.news-card-img {
+  margin-right: 10px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 332px;
+  flex: 0 0 332px;
+}
+
+.news-card-title {
+  padding-bottom: 20px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.news-card-txt {
+  padding-bottom: 50px;
+  padding-right: 20px;
+}
+
+.news-card-more {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-decoration: underline;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.news-card-more:hover {
+  text-decoration: none;
+}
+
+.news-card-data {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #6d829f;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
 @media (max-width: 1330px) {
   .col-l-1 {
     -ms-flex: 0 0 8.33333%;
@@ -2290,6 +2365,65 @@ body {
     -webkit-box-flex: 0;
     flex: 0 0 100%;
     max-width: 100%;
+  }
+
+  .menu-list {
+    text-align: center;
+  }
+
+  .header .menu-list ul li a {
+    margin-right: 14px;
+  }
+
+  .menu-time-tel {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .filter {
+    display: none;
+  }
+
+  .catalog-item {
+    border-right: none;
+  }
+
+  .catalog-item-img {
+    padding-top: 55px;
+    padding-bottom: 0;
+    text-align: center;
+    display: block;
+  }
+
+  .catalog-item-features {
+    display: none;
+  }
+
+  .catalog-item-description {
+    padding-top: 0;
+    margin: auto;
+  }
+
+  .catalog-description {
+    padding-top: 0;
+    padding-left: 70px;
+  }
+
+  .catalog-description-first_price {
+    display: inline-block;
+    padding-right: 29px;
+  }
+
+  .catalog-description-second_price {
+    display: inline-block;
+  }
+
+  .catalog-marker {
+    top: 1%;
+  }
+
+  .catalog .dots {
+    display: none;
   }
 
   .footer-middle-messengers {

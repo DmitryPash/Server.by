@@ -1,66 +1,66 @@
-// @media (max-width: 1330px) {
-//   //Global
-//   // Header
-//   .menu-list {
-//     text-align: center;
-//   }
+@media (max-width: 1330px) {
+  //Global
+  // Header
+  .menu-list {
+    text-align: center;
+  }
 
-//   .header .menu-list ul li a {
-//     margin-right: 14px;
-//   }
-//   .menu-time-tel {
-//     padding-left: 0;
-//     padding-right: 0;
-//   }
+  .header .menu-list ul li a {
+    margin-right: 14px;
+  }
+  .menu-time-tel {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
-//   // Main
-//   // Footer
-//   // caralogList start
-//   .filter {
-//     display: none;
-//   }
-//   .installments {
-//     // display: none;
-//   }
+  // Main
+  // Footer
+  // caralogList start
+  .filter {
+    display: none;
+  }
+  .installments {
+    // display: none;
+  }
 
-//   .catalog {
-//     &-item {
-//       border-right: none;
-//       &-img {
-//         padding-top: 55px;
-//         padding-bottom: 0;
-//         text-align: center;
-//         display: block;
-//       }
-//       &-features {
-//         display: none;
-//       }
-//       &-description {
-//         padding-top: 0;
-//         margin: auto;
-//       }
-//     }
-//     &-description {
-//       padding-top: 0;
-//       padding-left: 70px;
-//       &-first_price {
-//         display: inline-block;
-//         // padding-left: 35px;
-//         padding-right: 29px;
-//       }
-//       &-second_price {
-//         display: inline-block;
-//       }
-//     }
-//     &-marker {
-//       top: 1%;
-//     }
-//     .dots {
-//       display: none;
-//     }
-//   }
-//   // ctalogList end
-// }
+  .catalog {
+    &-item {
+      border-right: none;
+      &-img {
+        padding-top: 55px;
+        padding-bottom: 0;
+        text-align: center;
+        display: block;
+      }
+      &-features {
+        display: none;
+      }
+      &-description {
+        padding-top: 0;
+        margin: auto;
+      }
+    }
+    &-description {
+      padding-top: 0;
+      padding-left: 70px;
+      &-first_price {
+        display: inline-block;
+        // padding-left: 35px;
+        padding-right: 29px;
+      }
+      &-second_price {
+        display: inline-block;
+      }
+    }
+    &-marker {
+      top: 1%;
+    }
+    .dots {
+      display: none;
+    }
+  }
+  // ctalogList end
+}
 @media (max-width: 1250px) {
   //Global
   // Header
