@@ -815,6 +815,10 @@ input:focus:-ms-input-placeholder {
   max-width: 20px;
 }
 
+.col-mobile-burger {
+  display: none;
+}
+
 .burger {
   position: absolute;
   content: "";
@@ -1208,12 +1212,18 @@ body {
 }
 
 .banner-img {
+  height: 100%;
   background-color: #f5f5f6;
+}
+
+.banner picture img {
+  margin: 0 auto;
 }
 
 .banner-slider {
   height: 100%;
   background-color: #f5f5f6;
+  margin-bottom: 40px;
 }
 
 .banner-slider:hover .slick-arrow {
@@ -1306,6 +1316,7 @@ body {
   -o-transition: 0.2s ease;
   transition: 0.2s ease;
   padding: 22px 10px;
+  overflow: hidden;
 }
 
 .categories-card:hover {
@@ -1384,6 +1395,10 @@ body {
 
 .sale {
   margin-bottom: 70px;
+}
+
+.sale-img {
+  text-align: center;
 }
 
 .hits {
@@ -1588,6 +1603,10 @@ body {
   background-repeat: no-repeat;
   background-position: center right;
   margin-bottom: 59px;
+}
+
+.product-description .installments a:hover {
+  border-bottom: 1px solid #3989ea00;
 }
 
 .product-description .installments-img {
@@ -2689,6 +2708,14 @@ body {
     text-align: center;
   }
 
+  .col-mobile-burger {
+    display: block;
+  }
+
+  .col-mobile-tel {
+    text-align: center;
+  }
+
   .menu {
     display: none;
   }
@@ -2842,9 +2869,6 @@ body {
 
 @media (max-width: 668px) {
   .categories-card-img {
-    -ms-flex: 0 0 45px;
-    -webkit-box-flex: 0;
-    flex: 0 0 45px;
     height: 45px;
     margin-bottom: 10px;
     padding: 0px 10px;
@@ -2981,6 +3005,12 @@ body {
 
   .catalog-description-price span {
     font-size: 0.5625rem;
+  }
+
+  .categories-card-img {
+    -ms-flex: 0 0 45px;
+    -webkit-box-flex: 0;
+    flex: 0 0 45px;
   }
 
   .footer-middle {

@@ -140,7 +140,12 @@
       }
     }
   }
-
+  .col-mobile-burger {
+    display: block;
+  }
+  .col-mobile-tel {
+    text-align: center;
+  }
   .menu {
     display: none;
   }
@@ -168,8 +173,6 @@
   // Headaer
   // Main
   .categories-card-img {
-    -ms-flex: 0 0 45px;
-    flex: 0 0 45px;
     height: 45px;
     margin-bottom: 10px;
     padding: 0px 10px;
@@ -216,6 +219,10 @@
         }
       }
     }
+  }
+  .categories-card-img {
+    -ms-flex: 0 0 45px;
+    flex: 0 0 45px;
   }
 
   // Footer
