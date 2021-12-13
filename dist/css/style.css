@@ -2979,7 +2979,6 @@ body {
     max-width: 100%;
   }
 
-<<<<<<< HEAD
   .catalog-item {
     padding-left: 10px;
     padding-right: 10px;
@@ -3154,7 +3153,8 @@ body {
   .footer-top {
     padding-top: 40px;
     padding-bottom: 40px;
-=======
+  }
+
   .header .main-logo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3165,6 +3165,5 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
->>>>>>> 6ee2687e11729bba599690f06a177047c5fd214d
   }
 }
