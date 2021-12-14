@@ -119,6 +119,7 @@
   //Global
   // Header
   .header {
+    margin-bottom: 0; 
     .main {
       box-shadow: 0px 4px 20px #d6e3f200;
       &-burger {
@@ -185,6 +186,21 @@
     margin-bottom: 30px;
   }
 
+  // page-product.html
+  .product-description {
+    padding-left: 0;
+  }
+.product-description-price {
+  display: flex;
+  justify-content: space-between;
+}
+.product-description-btns .flex {
+  justify-content: space-between;
+}
+.product-description-price .price-block {
+  margin-right: 0;
+}
+  
   // Footer
 }
 
@@ -192,6 +208,12 @@
   //Global
   // Headaer
   // Main
+
+
+  // page-product.html 
+  .description-delivery {
+    padding-left: 0;
+  }
   // Footer
 }
 @media (max-width: 668px) {
@@ -225,6 +247,9 @@
   .slider-hits-right {
     display: none;
   }
+  .categories {
+    margin-bottom: 40px;
+  }
   .categories-card {
     flex-direction: column;
     align-items: flex-start;
@@ -249,6 +274,20 @@
   .categories-card-img {
     -ms-flex: 0 0 45px;
     flex: 0 0 45px;
+  }
+
+
+  // page-product.html
+  .banner-img {
+    display: none;
+  }
+  .banner-img-mobile {
+    display: block;
+    margin-bottom: 40px;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
   }
 
   // Footer
@@ -415,5 +454,20 @@
     }
   }
   // Main
+
+  // catalog-product.html 
+  .product-description {
+    padding-left: 0;
+  }
+
+  .product-description-price .price-block-title {
+    font-size: rem(9px);
+  }
+  .product-description-price .price-block-cena {
+    font-size: rem(20px);
+  }
+  .product-description-container {
+    width: 300px;
+  }
   // Footer
 }

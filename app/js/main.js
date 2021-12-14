@@ -1,3 +1,5 @@
+
+
 $(document).ready(function () {
   $(".banner-slider").slick({
     dots: true,
@@ -9,7 +11,7 @@ $(document).ready(function () {
   $(".offer-slider").slick({
     slidesToShow: 5,
     infinite: true,
-    arrows: false,
+    // arrows: false,
     prevArrow: ".slider-offer-left",
     nextArrow: ".slider-offer-right",
     variableWidth: true,
@@ -48,24 +50,34 @@ $(document).ready(function () {
 
 // SLider page-product.html
 
-$(document).ready(function () {
-  $(".slider-for").slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    dots: false,
-    asNavFor: ".slider-nav",
-  });
-  $(".slider-nav").slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    asNavFor: ".slider-for",
-    dots: false,
-    arrows: true,
-    focusOnSelect: true,
-  });
+
+$('.fotorama').fotorama({
+  ratio: 16/9, 
+  nav: 'thumbs',
+  thumbwidth: 140,
+  thumbheight: 140,
+  // arrowPrev:false,
+  // arrowNext:true,
 });
+
+// $(document).ready(function () {
+//   $(".slider-for").slick({
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     arrows: false,
+//     fade: true,
+//     dots: false,
+//     asNavFor: ".slider-nav",
+//   });
+//   $(".slider-nav").slick({
+//     slidesToShow: 4,
+//     slidesToScroll: 1,
+//     asNavFor: ".slider-for",
+//     dots: false,
+//     arrows: true,
+//     focusOnSelect: true,
+//   });
+// });
 // drop for footer top
 let menu = document.querySelectorAll(".footer-top-toggle");
 menu.forEach((element) => {

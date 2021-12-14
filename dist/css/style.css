@@ -716,6 +716,15 @@ input:focus:-ms-input-placeholder {
 }
 
 .header .main-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 84px;
 }
 
@@ -1213,7 +1222,6 @@ body {
 
 .banner-img {
   height: 100%;
-  background-color: #f5f5f6;
 }
 
 .banner picture img {
@@ -1354,6 +1362,10 @@ body {
   font-size: 0.6875rem;
 }
 
+.banner-img-mobile {
+  display: none;
+}
+
 .offer {
   margin-bottom: 60px;
 }
@@ -1471,64 +1483,22 @@ body {
   padding: 17px;
 }
 
-.product-slider .slider-for {
+.product-slider .fotorama__stage {
+  overflow: inherit;
+}
+
+.product-slider .fotorama__wrap {
   margin: 0 auto;
-}
-
-.product-slider .slider-for-img {
-  height: 556px;
-}
-
-.product-slider .slider-for-img img {
-  max-height: 556px;
-  margin: 0 auto;
-}
-
-.product-slider .slider-nav {
-  width: 576px;
-  margin: 0 auto;
-}
-
-.product-slider .slider-nav .slick-arrow {
-  border: none;
-  position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  top: 50%;
-  z-index: 5;
-  font-size: 0;
-  width: 55px;
-  height: 55px;
-}
-
-.product-slider .slider-nav .slick-prev {
-  left: -10%;
-  background: url(../images/icons/arrow-blue-slider.png) no-repeat;
-  -webkit-transform: translate(-50%, -50%) rotate(180deg);
-  -ms-transform: translate(-50%, -50%) rotate(180deg);
-  transform: translate(-50%, -50%) rotate(180deg);
-  background-size: 20px 20px;
-  background-position: center;
-}
-
-.product-slider .slider-nav .slick-next {
-  right: -15%;
-  background: url(../images/icons/arrow-blue-slider.png) no-repeat;
-  background-size: 20px 20px;
-  background-position: center;
-}
-
-.product-slider .slider-nav .item {
-  width: 140px;
-  height: 140px;
-  margin-right: 15px;
-  overflow: hidden;
 }
 
 .product-description {
   padding-left: 76px;
   padding-top: 26px;
+}
+
+.product-description-container {
+  width: 380px;
+  margin: 0 auto;
 }
 
 .product-description-price {
@@ -1647,6 +1617,7 @@ body {
   position: relative;
   width: 50%;
   padding: 8px 0px;
+  padding-right: 5px;
   overflow: hidden;
 }
 
@@ -2343,6 +2314,7 @@ body {
 }
 
 .mobile-nav {
+  z-index: 999;
   display: none;
   width: 100%;
   height: 64px;
@@ -2954,6 +2926,10 @@ body {
     max-width: 100%;
   }
 
+  .header {
+    margin-bottom: 0;
+  }
+
   .header .main {
     -webkit-box-shadow: 0px 4px 20px #d6e3f200;
     box-shadow: 0px 4px 20px #d6e3f200;
@@ -3040,6 +3016,29 @@ body {
 
   .middle-title-h1 {
     margin-bottom: 30px;
+  }
+
+  .product-description {
+    padding-left: 0;
+  }
+
+  .product-description-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .product-description-btns .flex {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .product-description-price .price-block {
+    margin-right: 0;
   }
 }
 
@@ -3132,6 +3131,10 @@ body {
     -webkit-box-flex: 0;
     flex: 0 0 100%;
     max-width: 100%;
+  }
+
+  .description-delivery {
+    padding-left: 0;
   }
 
   .footer-middle-adress {
@@ -3287,6 +3290,10 @@ body {
     display: none;
   }
 
+  .categories {
+    margin-bottom: 40px;
+  }
+
   .categories-card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3317,6 +3324,20 @@ body {
     -ms-flex: 0 0 45px;
     -webkit-box-flex: 0;
     flex: 0 0 45px;
+  }
+
+  .banner-img {
+    display: none;
+  }
+
+  .banner-img-mobile {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .banner-img-mobile img {
+    display: block;
+    margin: 0 auto;
   }
 
   .footer-middle {
@@ -3652,5 +3673,21 @@ body {
   .news-card-img {
     display: block;
     margin-bottom: 20px;
+  }
+
+  .product-description {
+    padding-left: 0;
+  }
+
+  .product-description-price .price-block-title {
+    font-size: 0.5625rem;
+  }
+
+  .product-description-price .price-block-cena {
+    font-size: 1.25rem;
+  }
+
+  .product-description-container {
+    width: 300px;
   }
 }
