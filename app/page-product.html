@@ -10,6 +10,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
 
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -42,8 +44,8 @@
         </div>
         <div class="product">
           <div class="row">
-            <div class="col-product-53">
-              <div class="product-slider">
+            <div class="col-product-53 col-md-12">
+              <!-- <div class="product-slider">
                 <div class="slider-for">
                   <div class="slider-for-img">
                     <img src="./images/examples/Основное фото.svg" alt="" />
@@ -70,43 +72,51 @@
                     <img src="./images/examples/Фото 1.svg" alt="" />
                   </div>
                 </div>
+              </div> -->
+              <div class="product-slider">
+                <div class="fotorama">
+                  <img src="./images/examples/Основное фото.svg">
+                  <img src="./images/examples/Основное фото.svg">
+                </div>
               </div>
             </div>
-            <div class="col-product-46">
+            <div class="col-product-46 col-md-12">
               <div class="product-description">
-                <div class="product-description-price">
-                  <div class="price-block cyan">
-                    <div class="price-block-title">
-                      С КАРТОЙ «СЕРВЕР»
-                      <span class="help"><i class="far fa-question-circle"></i></span>
-                    </div>
-                    <div class="price-block-cena">
-                      2 480.00 <span>РУБ.</span>
-                    </div>
-                  </div>
-                  <div class="price-block">
-                    <div class="price-block-title">
-                      БЕЗ КАРТЫ «СЕРВЕР»
-                    </div>
-                    <div class="price-block-cena">
-                      2 545.00 <span>РУБ.</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-description-btns">
-                  <div class="flex valign-center">
-                    <div class="product-description-btn ui-btn">
-                      <div class="product-description-img">
-                        <img src="./images/icons/cart-btn.svg" alt="">
+                <div class="product-description-container">
+                  <div class="product-description-price">
+                    <div class="price-block cyan">
+                      <div class="price-block-title">
+                        С КАРТОЙ «СЕРВЕР»
+                        <span class="help"><i class="far fa-question-circle"></i></span>
                       </div>
-                      В корзину
+                      <div class="price-block-cena">
+                        2 480.00 <span>РУБ.</span>
+                      </div>
                     </div>
-                    <a href="#" class="product-description-compare">
-                      <img src="./images/icons/product-equ.svg" alt="alt">
-                    </a>
-                    <a href="#" class="product-description-favorite">
-                      <img src="./images/icons/product-heart.svg" alt="alt">
-                    </a>
+                    <div class="price-block">
+                      <div class="price-block-title">
+                        БЕЗ КАРТЫ «СЕРВЕР»
+                      </div>
+                      <div class="price-block-cena">
+                        2 545.00 <span>РУБ.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-description-btns">
+                    <div class="flex valign-center">
+                      <div class="product-description-btn ui-btn">
+                        <div class="product-description-img">
+                          <img src="./images/icons/cart-btn.svg" alt="">
+                        </div>
+                        В корзину
+                      </div>
+                      <a href="#" class="product-description-compare">
+                        <img src="./images/icons/product-equ.svg" alt="alt">
+                      </a>
+                      <a href="#" class="product-description-favorite">
+                        <img src="./images/icons/product-heart.svg" alt="alt">
+                      </a>
+                    </div>
                   </div>
                 </div>
                 <div class="installments">
@@ -171,7 +181,7 @@
         </div>
         <div class="description">
           <div class="row">
-            <div class="col-product-53">
+            <div class="col-product-53 col-sm-12">
               <div class="description-text">
                 <div class="description-text-title">Описание</div>
                 <div class="description-text-describtion">
@@ -260,7 +270,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-product-46">
+            <div class="col-product-46 col-sm-12">
               <div class="description-delivery">
                 <div class="description-delivery-title">ОПЛАТА И ДОСТАВКА</div>
                 <div class="description-card flex valign-center">
@@ -592,8 +602,9 @@
 
     @@include('inc-footer.html')
   </div>
-
+  @@include('mobile-nav.html')
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="./js/main.js"></script>
 </body>

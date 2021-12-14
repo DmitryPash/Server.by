@@ -19,9 +19,6 @@
   .filter {
     display: none;
   }
-  .installments {
-    display: none;
-  }
 
   .catalog {
     &-item {
@@ -119,6 +116,7 @@
   //Global
   // Header
   .header {
+    margin-bottom: 0;
     .main {
       box-shadow: 0px 4px 20px #d6e3f200;
       &-burger {
@@ -185,6 +183,30 @@
     margin-bottom: 30px;
   }
 
+  // page-product.html
+  .product-description {
+    padding-left: 0;
+  }
+  .product-description-price {
+    display: flex;
+    justify-content: space-between;
+  }
+  .product-description-btns .flex {
+    justify-content: space-between;
+  }
+  .product-description-price .price-block {
+    margin-right: 0;
+  }
+
+  .article {
+    p:nth-of-type(7) {
+      padding-bottom: 40px;
+    }
+  }
+  .news-page-installments {
+    display: block;
+    margin-bottom: 40px;
+  }
   // Footer
 }
 
@@ -192,6 +214,11 @@
   //Global
   // Headaer
   // Main
+
+  // page-product.html
+  .description-delivery {
+    padding-left: 0;
+  }
   // Footer
 }
 @media (max-width: 668px) {
@@ -225,6 +252,9 @@
   .slider-hits-right {
     display: none;
   }
+  .categories {
+    margin-bottom: 40px;
+  }
   .categories-card {
     flex-direction: column;
     align-items: flex-start;
@@ -251,7 +281,41 @@
     flex: 0 0 45px;
   }
 
+  // page-product.html
+  .banner-img {
+    display: none;
+  }
+  .banner-img-mobile {
+    display: block;
+    margin-bottom: 40px;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
   // Footer
+  .article {
+    &-bar {
+      padding-left: 8px;
+      &-data {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        font-size: rem(11px);
+        padding-right: 10px;
+        border-right: 0.5px solid #dae7f9;
+      }
+      span {
+        font-size: rem(11px);
+        padding-left: 8px;
+        padding-right: 3px;
+      }
+      img {
+        margin-right: 2px;
+      }
+    }
+  }
 }
 
 @media (max-width: 400px) {
@@ -402,9 +466,6 @@
   .info {
     display: none;
   }
-  .installments {
-    display: none;
-  }
   .news {
     &-card {
       display: block;
@@ -415,5 +476,20 @@
     }
   }
   // Main
+
+  // catalog-product.html
+  .product-description {
+    padding-left: 0;
+  }
+
+  .product-description-price .price-block-title {
+    font-size: rem(9px);
+  }
+  .product-description-price .price-block-cena {
+    font-size: rem(20px);
+  }
+  .product-description-container {
+    width: 300px;
+  }
   // Footer
 }

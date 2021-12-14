@@ -122,7 +122,9 @@ $html-font-size: 16px;
     padding: 24px 0px;
 
     &-logo {
-      // при адаптиве получается лучше без стилей(????)
+     display: flex;
+     align-items: center;
+     justify-content: center;
       height: 84px;
       img {
         max-height: 84px;
