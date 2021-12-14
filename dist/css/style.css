@@ -3599,16 +3599,15 @@ body {
     margin: 0 auto;
   }
 
-<<<<<<< HEAD
   .news-pagination-first,
   .news-pagination a {
     width: 30px;
     height: 30px;
     line-height: 30px;
-=======
+  }
+
   .contact-info-container {
     margin-bottom: 25px;
->>>>>>> 1dc85bd63b39ae7d66901fc72eca588e100428c6
   }
 
   .article-bar {
