@@ -2609,8 +2609,8 @@ body {
 
 .article-bar-data {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 37.5%;
-  flex: 0 0 37.5%;
+  -ms-flex: 0 0 39.5%;
+  flex: 0 0 39.5%;
   color: #6d829f;
   font-size: 0.8125rem;
   font-weight: 300;
@@ -2656,6 +2656,10 @@ body {
 }
 
 .news-page-installments {
+  display: none;
+}
+
+.news-list-installments-mob {
   display: none;
 }
 
@@ -3121,7 +3125,7 @@ body {
     display: none;
   }
 
-  .news-pagination a:nth-child(n+5):nth-child(-n+9) {
+  .news-pagination a:nth-child(n+5):nth-child(-n+11) {
     display: none;
   }
 
@@ -3476,8 +3480,21 @@ body {
     margin: 0 auto;
   }
 
+  .news-pagination-first,
+  .news-pagination a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+
   .article-bar {
     padding-left: 8px;
+  }
+
+  .article-bar-social {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 67%;
+    flex: 0 0 67%;
   }
 
   .article-bar-data {
@@ -3500,7 +3517,7 @@ body {
   }
 
   .article-bar img {
-    margin-right: 2px;
+    margin-right: 0;
   }
 
   .footer-middle {
@@ -3853,6 +3870,7 @@ body {
   .news-card-img {
     display: block;
     margin-bottom: 20px;
+    margin-right: 0;
   }
 
   .categories-card-img {

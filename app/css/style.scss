@@ -1335,8 +1335,10 @@ body {
     padding-left: 20px;
     margin-bottom: 40px;
     background-color: $colorWhite;
+    &-social {
+    }
     &-data {
-      flex: 0 0 37.5%;
+      flex: 0 0 39.5%;
       color: #6d829f;
       font-size: rem(13px);
       font-weight: 300;
@@ -1380,12 +1382,10 @@ body {
 .news-page-installments {
   display: none;
 }
+.news-list-installments-mob {
+  display: none;
+}
 // end news-page.html
-
-
-
-
-
 
 // УДАЛИТЬ!
 
@@ -1397,10 +1397,8 @@ body {
     margin-bottom: 20px;
   }
   a {
-    
     color: $colorBlue;
     margin-right: 10px;
-    
   }
   a:hover {
     color: $colorCyan;
