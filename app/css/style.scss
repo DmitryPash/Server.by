@@ -271,10 +271,11 @@ body {
   }
 }
 .sale {
+  text-align: center;
   margin-bottom: 70px;
-  &-img {
-    text-align: center;
-  }
+  // &-img {
+  //   text-align: center;
+  // }
 }
 .hits {
   margin-bottom: 100px;
@@ -1006,9 +1007,14 @@ body {
       margin-bottom: 20px;
     }
     &-details {
+      display: block;
       margin-bottom: 8px;
       position: relative;
+      font-size: rem(14px);
       // padding-left: 20px;
+      &:hover {
+        text-decoration: underline;
+      }
       &-img {
         display: inline-block;
         vertical-align: middle;
@@ -1021,7 +1027,8 @@ body {
       }
       &-location {
         position: relative;
-        padding-left: 40px;
+        padding-left: 45px;
+        font-size: rem(14px);
       }
     }
     &-losation {
@@ -1088,7 +1095,18 @@ body {
         width: 160px;
         margin: 0 auto;
         background: $colorCyan;
+        border: 1px solid rgba(255, 255, 255, 0)fff;
+        transition: .3s ease;
+        &:hover {
+          background: #ffffff;
+          color: $colorCyan;
+          border: 1px solid $colorCyan;
+        }
       }
+    }
+    &-map {
+      min-height: 427px;
+      height: 100%;
     }
   }
   &-photo {
@@ -1097,6 +1115,10 @@ body {
       max-height: 226px;
     }
   }
+}
+
+.contact-photo-mob {
+  display: none;
 }
 
 // Mobile nav
@@ -1125,11 +1147,72 @@ body {
         text-align: center;
         display: inline-block;
         height: 25px;
+        width: 25px;
         margin-bottom: 5px;
 
         img {
           max-height: 25px;
           vertical-align: middle;
+        }
+      }
+      .user-mob {
+        background: url(../images/icons/user-header.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat; 
+        &:hover {
+          background: url(../images/icons/login-hover.svg);
+          background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        }
+      }
+      .search-mob {
+        background: url(../images/icons/search-mob.svg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat; 
+        &:hover {
+          background: url(../images/icons/search-header.svg);
+          background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        }
+      }
+      .heart-mob {
+        background: url(../images/icons/heart-header.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat; 
+        &:hover {
+          background: url(../images/icons/heart-header.svg);
+          background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        }
+      }
+      .cart-mob {
+        background: url(../images/icons/cart-header.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat; 
+        &:hover {
+          background: url(../images/icons/cart-header.svg);
+          background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        }
+      }
+      .catalog-mob {
+        background: url(../images/icons/icon-mob.svg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat; 
+        &:hover {
+          background: url(../images/icons/catalog-header.svg);
+          background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
         }
       }
       &-text {
