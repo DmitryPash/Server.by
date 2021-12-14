@@ -123,6 +123,9 @@ li {
 button {
   cursor: pointer;
 }
+input,textarea {
+  outline:none;
+}
 
 .span-blue {
   color: $colorCyan;

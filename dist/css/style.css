@@ -369,6 +369,11 @@ button {
   cursor: pointer;
 }
 
+input,
+textarea {
+  outline: none;
+}
+
 .span-blue {
   color: #398aea;
 }
@@ -1432,11 +1437,8 @@ body {
 }
 
 .sale {
-  margin-bottom: 70px;
-}
-
-.sale-img {
   text-align: center;
+  margin-bottom: 70px;
 }
 
 .hits {
@@ -2244,8 +2246,14 @@ body {
 }
 
 .contact-info-details {
+  display: block;
   margin-bottom: 8px;
   position: relative;
+  font-size: 0.875rem;
+}
+
+.contact-info-details:hover {
+  text-decoration: underline;
 }
 
 .contact-info-details-img {
@@ -2262,7 +2270,8 @@ body {
 
 .contact-info-details-location {
   position: relative;
-  padding-left: 40px;
+  padding-left: 45px;
+  font-size: 0.875rem;
 }
 
 .contact-info-losation {
@@ -2341,6 +2350,21 @@ body {
   width: 160px;
   margin: 0 auto;
   background: #398aea;
+  border: 1px solid rgba(255, 255, 255, 0) fff;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.contact-about-form-btn:hover {
+  background: #ffffff;
+  color: #398aea;
+  border: 1px solid #398aea;
+}
+
+.contact-about-map {
+  min-height: 427px;
+  height: 100%;
 }
 
 .contact-photo {
@@ -2349,6 +2373,10 @@ body {
 
 .contact-photo img {
   max-height: 226px;
+}
+
+.contact-photo-mob {
+  display: none;
 }
 
 .mobile-nav {
@@ -2379,12 +2407,83 @@ body {
   text-align: center;
   display: inline-block;
   height: 25px;
+  width: 25px;
   margin-bottom: 5px;
 }
 
 .mobile-nav-menu-services-img img {
   max-height: 25px;
   vertical-align: middle;
+}
+
+.mobile-nav-menu-services .user-mob {
+  background: url(../images/icons/user-header.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.mobile-nav-menu-services .user-mob:hover {
+  background: url(../images/icons/login-hover.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.mobile-nav-menu-services .search-mob {
+  background: url(../images/icons/search-mob.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.mobile-nav-menu-services .search-mob:hover {
+  background: url(../images/icons/search-header.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.mobile-nav-menu-services .heart-mob {
+  background: url(../images/icons/heart-header.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.mobile-nav-menu-services .heart-mob:hover {
+  background: url(../images/icons/heart-header.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.mobile-nav-menu-services .cart-mob {
+  background: url(../images/icons/cart-header.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.mobile-nav-menu-services .cart-mob:hover {
+  background: url(../images/icons/cart-header.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.mobile-nav-menu-services .catalog-mob {
+  background: url(../images/icons/icon-mob.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.mobile-nav-menu-services .catalog-mob:hover {
+  background: url(../images/icons/catalog-header.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .mobile-nav-menu-services-text {
@@ -3269,6 +3368,21 @@ body {
     padding-left: 0;
   }
 
+  .contact-about-map {
+    height: 191px;
+    min-height: 191px;
+    margin-bottom: 16px;
+  }
+
+  .contact-photo {
+    display: none;
+  }
+
+  .contact-photo-mob {
+    display: block;
+    margin-bottom: 40px;
+  }
+
   .footer-middle-adress {
     display: block;
     padding-bottom: 15px;
@@ -3474,6 +3588,10 @@ body {
   .banner-img-mobile img {
     display: block;
     margin: 0 auto;
+  }
+
+  .contact-info-container {
+    margin-bottom: 25px;
   }
 
   .article-bar {

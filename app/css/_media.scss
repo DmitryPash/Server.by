@@ -261,6 +261,19 @@
   .description-delivery {
     padding-left: 0;
   }
+  // contact.html 
+  .contact-about-map {
+    height: 191px;
+    min-height: 191px;
+    margin-bottom: 16px;
+  }
+  .contact-photo {
+    display: none;
+  }
+  .contact-photo-mob {
+    display: block;
+    margin-bottom: 40px;
+  }
   // Footer
 }
 @media (max-width: 741px) {
@@ -340,6 +353,11 @@
       display: block;
       margin: 0 auto;
     }
+  }
+
+  // contact.html 
+  .contact-info-container {
+    margin-bottom: 25px;
   }
 
   // Footer
