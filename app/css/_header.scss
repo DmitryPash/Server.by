@@ -104,6 +104,9 @@ $html-font-size: 16px;
         .time-tel-big {
           font-size: rem(26px);
           margin-right: 4px;
+          &:hover {
+            border-bottom: 1px solid black;
+          }
         }
         .time-tel-top {
           position: relative;
@@ -167,7 +170,10 @@ $html-font-size: 16px;
       &-services {
         display: inline-block;
         text-align: center;
-
+        border-bottom: 1px solid rgba(0, 0, 0, 0);
+        &:hover {
+          border-bottom: 1px solid #b3c0ce;
+        }
         &-img {
           display: inline-block;
           height: 36px;
