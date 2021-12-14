@@ -1525,8 +1525,8 @@ body {
 }
 
 .product-description-container {
-  width: 380px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
 }
 
 .product-description-price {
@@ -3249,6 +3249,11 @@ body {
 
   .product-description-price .price-block {
     margin-right: 0;
+  }
+
+  .product-description-container {
+    width: 380px;
+    margin: 0 auto;
   }
 
   .article p:nth-of-type(7) {
