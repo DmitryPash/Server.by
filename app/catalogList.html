@@ -1,819 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Server.by</title>
+    <meta name="keywords" content="Server.by" />
+    <meta name="description" content="Server.by" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
 
-<head>
-  <meta charset="utf-8" />
-  <title>Server.by</title>
-  <meta name="keywords" content="Server.by" />
-  <meta name="description" content="Server.by" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="format-detection" content="telephone=no" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-  <div class="wrapper" id="wrapper">
-    @@include('inc-header.html')
-    <div class="middle" id="middle">
-      <div class="container">
-        <div class="page-breadcrumbs">
-          <a href="#">Главная</a><i>/</i> <a href="#">Ноутбуки</a><i>/</i>
-        </div>
-        <div class="middle-title-h1">Ноутбуки</div>
-        <div class="filter-btns">
-          <a href="#filter" class="filter-btn">фильтры</a>
-          <a href="#" class="filter-btn-rectangle">
-            <img src="./images/icons/rectangle.png" alt="alt" />
-          </a>
-        </div>
-        <div class="row">
-          <div class="col-filter-22 col-l-12">
-            <div class="filter" id="filter">
-              <div class="filter-title-h2">Фильтры</div>
-              <div class="filter-price">
-                <div class="filter-title">Цена, бел.руб.</div>
-                <input class="filter-price-from" placeholder="от" />
-                <img src="./images/icons/line.png" alt="alt" class="filter-price-line" />
-                <input class="filter-price-to" placeholder="до" />
-              </div>
-              <div class="filter-producer">
-                <div class="filter-title">Производители</div>
-                <ul>
-                  <li>
-                    <input type="checkbox" class="filter-checkbox" />
-                    <span class="filter-span">Acer</span>
-                  </li>
-                  <li>
-                    <input type="checkbox" class="filter-checkbox" />
-                    <span class="filter-span">Asus</span>
-                  </li>
-                  <li>
-                    <input type="checkbox" class="filter-checkbox" />
-                    <span class="filter-span">HP</span>
-                  </li>
-                  <li>
-                    <input type="checkbox" class="filter-checkbox" />
-                    <span class="filter-span">Lenovo</span>
-                  </li>
-                </ul>
-                <a href="#" class="filter-producer-more">Показать всех (еще 5)</a>
-              </div>
-              <div class="filter-type">
-                <div class="filter-title">Тип</div>
-                <ul>
-                  <li>
-                    <input type="checkbox" class="filter-checkbox" />
-                    <span class="filter-span">Игровой</span>
-                  </li>
-                  <li>
-                    <input type="checkbox" class="filter-checkbox" />
-                    <span class="filter-span">Классический</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="filter-diagonal">
-                <div class="filter-title">Диагональ экрана</div>
-                <ul>
-                  <li>
-                    <input type="checkbox" class="filter-checkbox" />
-                    <span class="filter-span">15.6</span>
-                  </li>
-                  <li>
-                    <input type="checkbox" class="filter-checkbox" />
-                    <span class="filter-span">17.3</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="filter-bottom">
-                <div class="filter-bottom-btns">
-                  <a href="#" class="filter-bottom-show ui-btn">ПОКАЗАТЬ</a>
-                  <a href="#" class="filter-btn-rectangle">
-                    <img src="./images/icons/rectangle.png" alt="alt" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="installments">
-              <div class="installments-img">
-                <img src="./images/icons/data-pay.png" alt="alt" />
-              </div>
-              <a href="#" class="installments-info">В кредит до 8 месяцев</a>
-              <a href="#" class="installments-info">В рассрочку до 12 месяцев</a>
-              <a href="#" class="installments-more">Узнать больше</a>
-              <img src="./images/icons/Pay-cards.png" alt="alt" />
-            </div>
+  <body>
+    <div class="wrapper" id="wrapper">
+      @@include('inc-header.html')
+      <div class="middle" id="middle">
+        <div class="container">
+          <div class="page-breadcrumbs">
+            <a href="#">Главная</a><i>/</i> <a href="#">Ноутбуки</a><i>/</i>
           </div>
-          <div class="col-filter-78 col-l-12">
-            <div class="catalog">
-              <div class="row">
-                <div class="col-catalog-74 col-l-12">
-                  <div class="catalog-marker">ХИТ ПРОДАЖ</div>
-                  <div class="catalog-item">
-                    <div class="catalog-item-img">
-                      <img src="./images/rog strix.png" alt="alt" />
-                      <div class="catalog-item-features">
-                        <img src="./images/icons/Сравнение.png" alt="alt" />
-                        <a href="#" class="catalog-item-features-compare">В сравнение</a>
-                        <img src="./images/icons/like.png" alt="alt" />
-                        <a href="#" class="catalog-item-features-compare">В избранное</a>
+          <div class="middle-title-h1">Ноутбуки</div>
+          <div class="filter-btns">
+            <a href="#filter" class="filter-btn">фильтры</a>
+            <a href="#" class="filter-btn-rectangle">
+              <img src="./images/icons/rectangle.png" alt="alt" />
+            </a>
+          </div>
+          <div class="row">
+            <div class="col-filter-22">
+              <div class="filter" id="filter">
+                <div class="filter-title-h2">Фильтры</div>
+                <div class="filter-price">
+                  <div class="filter-title">Цена, бел.руб.</div>
+                  <input class="filter-price-from" placeholder="от" />
+                  <img
+                    src="./images/icons/line.png"
+                    alt="alt"
+                    class="filter-price-line"
+                  />
+                  <input class="filter-price-to" placeholder="до" />
+                </div>
+                <div class="filter-producer">
+                  <div class="filter-title">Производители</div>
+                  <ul>
+                    <li>
+                      <input type="checkbox" class="filter-checkbox" />
+                      <span class="filter-span">Acer</span>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="filter-checkbox" />
+                      <span class="filter-span">Asus</span>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="filter-checkbox" />
+                      <span class="filter-span">HP</span>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="filter-checkbox" />
+                      <span class="filter-span">Lenovo</span>
+                    </li>
+                  </ul>
+                  <a href="#" class="filter-producer-more"
+                    >Показать всех (еще 5)</a
+                  >
+                </div>
+                <div class="filter-type">
+                  <div class="filter-title">Тип</div>
+                  <ul>
+                    <li>
+                      <input type="checkbox" class="filter-checkbox" />
+                      <span class="filter-span">Игровой</span>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="filter-checkbox" />
+                      <span class="filter-span">Классический</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="filter-diagonal">
+                  <div class="filter-title">Диагональ экрана</div>
+                  <ul>
+                    <li>
+                      <input type="checkbox" class="filter-checkbox" />
+                      <span class="filter-span">15.6</span>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="filter-checkbox" />
+                      <span class="filter-span">17.3</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="filter-bottom">
+                  <div class="filter-bottom-btns">
+                    <a href="#" class="filter-bottom-show ui-btn">ПОКАЗАТЬ</a>
+                    <a href="#" class="filter-btn-rectangle">
+                      <img src="./images/icons/rectangle.png" alt="alt" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="installments">
+                <div class="installments-img">
+                  <img src="./images/icons/data-pay.png" alt="alt" />
+                </div>
+                <a href="#" class="installments-info">В кредит до 8 месяцев</a>
+                <a href="#" class="installments-info"
+                  >В рассрочку до 12 месяцев</a
+                >
+                <a href="#" class="installments-more">Узнать больше</a>
+                <img src="./images/icons/Pay-cards.png" alt="alt" />
+              </div>
+            </div>
+            <div class="col-filter-78">
+              <div class="catalog">
+                <div class="catalog-marker">ХИТ ПРОДАЖ</div>
+                <div class="catalog-item">
+                  <div class="catalog-item-img">
+                    <img src="./images/rog strix.png" alt="alt" />
+                    <div class="catalog-item-features">
+                      <img src="./images/icons/Сравнение.png" alt="alt" />
+                      <a href="#" class="catalog-item-features-compare"
+                        >В сравнение</a
+                      >
+                      <img src="./images/icons/like.png" alt="alt" />
+                      <a href="#" class="catalog-item-features-compare"
+                        >В избранное</a
+                      >
+                    </div>
+                  </div>
+                  <div class="catalog-item-description">
+                    <div class="catalog-item-description-title">
+                      Lenovo IdeaPad L340-15API 81LW0086RK
+                    </div>
+                    <div class="catalog-item-description-articule">
+                      <div class="articule">КОД ТОВАРА: QD0095719</div>
+                      <div class="in_stock">
+                        <img src="./images/icons/accept.png" alt="alt" />
+                        В НАЛИЧИИ
                       </div>
                     </div>
-                    <div class="catalog-item-description">
-                      <div class="catalog-item-description-title">
-                        Lenovo IdeaPad L340-15API 81LW0086RK
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td>
+                            Диагональ/разрешение
+                            <span class="dots"></span>
+                          </td>
+                          <td>17.3"/1920x1080 пикс.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Процессор
+                            <span class="dots"></span>
+                          </td>
+                          <td>AMD Ryzen 9 5900HX 3.3 ГГц</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Оперативная память (RAM)
+                            <spna class="dots"></spna>
+                          </td>
+                          <td>16 ГБ</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Графический контроллер
+                            <span class="dots"></span>
+                          </td>
+                          <td>GeForce RTX 3060 6GB</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Объем SSD
+                            <span class="dots"></span>
+                          </td>
+                          <td>512 ГБ</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="catalog-description">
+                    <div class="catalog-description-first_price">
+                      <div class="catalog-description-title cyan">
+                        С КАРТОЙ «СЕРВЕР»
+                        <span class="help"
+                          ><i class="far fa-question-circle"></i
+                        ></span>
                       </div>
-                      <div class="catalog-item-description-articule">
-                        <div class="articule">КОД ТОВАРА: QD0095719</div>
-                        <div class="in_stock">
-                          <img src="./images/icons/accept.png" alt="alt" />
-                          В НАЛИЧИИ
-                        </div>
+                      <div class="catalog-description-price cyan">
+                        2 480.00 <span>РУБ.</span>
                       </div>
-                      <table>
-                        <tbody>
-                          <tr>
-                            <td>
-                              Диагональ/разрешение
-                              <span class="dots"></span>
-                            </td>
-                            <td>17.3"/1920x1080 пикс.</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              Процессор
-                              <span class="dots"></span>
-                            </td>
-                            <td>AMD Ryzen 9 5900HX 3.3 ГГц</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              Оперативная память (RAM)
-                              <spna class="dots"></spna>
-                            </td>
-                            <td>16 ГБ</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              Графический контроллер
-                              <span class="dots"></span>
-                            </td>
-                            <td>GeForce RTX 3060 6GB</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              Объем SSD
-                              <span class="dots"></span>
-                            </td>
-                            <td>512 ГБ</td>
-                          </tr>
-                        </tbody>
-                      </table>
                     </div>
-                    <div class="catalog-description">
-                      <div class="catalog-description-first_price">
-                        <div class="catalog-description-title cyan">
-                          С КАРТОЙ «СЕРВЕР»
-                          <span class="help"><i class="far fa-question-circle"></i></span>
-                        </div>
-                        <div class="catalog-description-price cyan">
-                          2 480.00 <span>РУБ.</span>
-                        </div>
+                    <div class="catalog-description-second_price">
+                      <div class="catalog-description-title">
+                        С КАРТОЙ «СЕРВЕР»
+                        <span class="help"
+                          ><i class="far fa-question-circle"></i
+                        ></span>
                       </div>
-                      <div class="catalog-description-second_price">
-                        <div class="catalog-description-title">
-                          С КАРТОЙ «СЕРВЕР»
-                          <span class="help"><i class="far fa-question-circle"></i></span>
-                        </div>
-                        <div class="catalog-description-price">
-                          2 480.00 <span>РУБ.</span>
-                        </div>
+                      <div class="catalog-description-price">
+                        2 480.00 <span>РУБ.</span>
                       </div>
+                    </div>
 
-                      <div class="catalog-description-btns">
-                        <a class="catalog-description-btn ui-btn">
-                          <div href="#" class="product-description-img">
-                            <img src="./images/icons/cart-btn.svg" alt="alt" />
-                          </div>
-                          В корзину
-                        </a>
-                        <a href="#" class="catalog-description-compare">
-                          <img src="./images/icons/product-equ.svg" alt="alt" />
-                        </a>
-                        <a href="#" class="catalog-description-favorite">
-                          <img src="./images/icons/product-heart.svg" alt="alt" />
-                        </a>
-                      </div>
+                    <div class="catalog-description-btns">
+                      <a class="catalog-description-btn ui-btn">
+                        <div href="#" class="product-description-img">
+                          <img src="./images/icons/cart-btn.svg" alt="alt" />
+                        </div>
+                        В корзину
+                      </a>
+                      <a href="#" class="catalog-description-compare">
+                        <img src="./images/icons/product-equ.svg" alt="alt" />
+                      </a>
+                      <a href="#" class="catalog-description-favorite">
+                        <img src="./images/icons/product-heart.svg" alt="alt" />
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- <div class="catalog">
-                <div class="row">
-                  <div class="col-catalog-74 col-l-12">
-                    <div class="catalog-marker">ХИТ ПРОДАЖ</div>
-                    <div class="catalog-item">
-                      <div class="catalog-item-img">
-                        <img src="./images/rog strix.png" alt="alt" />
-                        <div class="catalog-item-features">
-                          <img src="./images/icons/Сравнение.png" alt="alt" />
-                          <a href="#" class="catalog-item-features-compare"
-                            >В сравнение</a
-                          >
-                          <img src="./images/icons/like.png" alt="alt" />
-                          <a href="#" class="catalog-item-features-compare"
-                            >В избранное</a
-                          >
-                        </div>
-                      </div>
-                      <div class="catalog-item-description">
-                        <div class="catalog-item-description-title">
-                          Lenovo IdeaPad L340-15API 81LW0086RK
-                        </div>
-                        <div class="catalog-item-description-articule">
-                          <div class="articule">КОД ТОВАРА: QD0095719</div>
-                          <div class="in_stock">
-                            <img src="./images/icons/accept.png" alt="alt" />
-                            В НАЛИЧИИ
-                          </div>
-                        </div>
-                        <table>
-                          <tbody>
-                            <tr>
-                              <td>
-                                Диагональ/разрешение
-                                <span class="dots"></span>
-                              </td>
-                              <td>17.3"/1920x1080 пикс.</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                Процессор
-                                <span class="dots"></span>
-                              </td>
-                              <td>AMD Ryzen 9 5900HX 3.3 ГГц</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                Оперативная память (RAM)
-                                <spna class="dots"></spna>
-                              </td>
-                              <td>16 ГБ</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                Графический контроллер
-                                <span class="dots"></span>
-                              </td>
-                              <td>GeForce RTX 3060 6GB</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                Объем SSD
-                                <span class="dots"></span>
-                              </td>
-                              <td>512 ГБ</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-catalog-26 col-l-12">
-                    <div class="catalog-description">
-                      <div class="catalog-description-first_price">
-                        <div class="catalog-description-title cyan">
-                          С КАРТОЙ «СЕРВЕР»
-                          <span class="help"
-                            ><i class="far fa-question-circle"></i
-                          ></span>
-                        </div>
-                        <div class="catalog-description-price cyan">
-                          2 480.00 <span>РУБ.</span>
-                        </div>
-                      </div>
-                      <div class="catalog-description-second_price">
-                        <div class="catalog-description-title">
-                          С КАРТОЙ «СЕРВЕР»
-                          <span class="help"
-                            ><i class="far fa-question-circle"></i
-                          ></span>
-                        </div>
-                        <div class="catalog-description-price">
-                          2 480.00 <span>РУБ.</span>
-                        </div>
-                      </div>
-
-                      <div class="catalog-description-btns">
-                        <a class="catalog-description-btn ui-btn">
-                          <div href="#" class="product-description-img">
-                            <img src="./images/icons/cart-btn.svg" alt="alt" />
-                          </div>
-                          В корзину
-                        </a>
-                        <a href="#" class="catalog-description-compare">
-                          <img src="./images/icons/product-equ.svg" alt="alt" />
-                        </a>
-                        <a href="#" class="catalog-description-favorite">
-                          <img
-                            src="./images/icons/product-heart.svg"
-                            alt="alt"
-                          />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="catalog">
-                <div class="row">
-                  <div class="col-catalog-74 col-l-12">
-                    <div class="catalog-marker">ХИТ ПРОДАЖ</div>
-                    <div class="catalog-item">
-                      <div class="catalog-item-img">
-                        <img src="./images/rog strix.png" alt="alt" />
-                        <div class="catalog-item-features">
-                          <img src="./images/icons/Сравнение.png" alt="alt" />
-                          <a href="#" class="catalog-item-features-compare"
-                            >В сравнение</a
-                          >
-                          <img src="./images/icons/like.png" alt="alt" />
-                          <a href="#" class="catalog-item-features-compare"
-                            >В избранное</a
-                          >
-                        </div>
-                      </div>
-                      <div class="catalog-item-description">
-                        <div class="catalog-item-description-title">
-                          Lenovo IdeaPad L340-15API 81LW0086RK
-                        </div>
-                        <div class="catalog-item-description-articule">
-                          <div class="articule">КОД ТОВАРА: QD0095719</div>
-                          <div class="in_stock">
-                            <img src="./images/icons/accept.png" alt="alt" />
-                            В НАЛИЧИИ
-                          </div>
-                        </div>
-                        <table>
-                          <tbody>
-                            <tr>
-                              <td>
-                                Диагональ/разрешение
-                                <span class="dots"></span>
-                              </td>
-                              <td>17.3"/1920x1080 пикс.</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                Процессор
-                                <span class="dots"></span>
-                              </td>
-                              <td>AMD Ryzen 9 5900HX 3.3 ГГц</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                Оперативная память (RAM)
-                                <spna class="dots"></spna>
-                              </td>
-                              <td>16 ГБ</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                Графический контроллер
-                                <span class="dots"></span>
-                              </td>
-                              <td>GeForce RTX 3060 6GB</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                Объем SSD
-                                <span class="dots"></span>
-                              </td>
-                              <td>512 ГБ</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-catalog-26 col-l-12">
-                    <div class="catalog-description">
-                      <div class="catalog-description-first_price">
-                        <div class="catalog-description-title cyan">
-                          С КАРТОЙ «СЕРВЕР»
-                          <span class="help"
-                            ><i class="far fa-question-circle"></i
-                          ></span>
-                        </div>
-                        <div class="catalog-description-price cyan">
-                          2 480.00 <span>РУБ.</span>
-                        </div>
-                      </div>
-                      <div class="catalog-description-second_price">
-                        <div class="catalog-description-title">
-                          С КАРТОЙ «СЕРВЕР»
-                          <span class="help"
-                            ><i class="far fa-question-circle"></i
-                          ></span>
-                        </div>
-                        <div class="catalog-description-price">
-                          2 480.00 <span>РУБ.</span>
-                        </div>
-                      </div>
-
-                      <div class="catalog-description-btns">
-                        <a class="catalog-description-btn ui-btn">
-                          <div href="#" class="product-description-img">
-                            <img src="./images/icons/cart-btn.svg" alt="alt" />
-                          </div>
-                          В корзину
-                        </a>
-                        <a href="#" class="catalog-description-compare">
-                          <img src="./images/icons/product-equ.svg" alt="alt" />
-                        </a>
-                        <a href="#" class="catalog-description-favorite">
-                          <img
-                            src="./images/icons/product-heart.svg"
-                            alt="alt"
-                          />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="catalog">
-                <div class="row">
-                  <div class="col-catalog-74 col-l-12">
-                    <div class="catalog-marker">ХИТ ПРОДАЖ</div>
-                    <div class="catalog-item">
-                      <div class="catalog-item-img">
-                        <img src="./images/rog strix.png" alt="alt" />
-                        <div class="catalog-item-features">
-                          <img src="./images/icons/Сравнение.png" alt="alt" />
-                          <a href="#" class="catalog-item-features-compare"
-                            >В сравнение</a
-                          >
-                          <img src="./images/icons/like.png" alt="alt" />
-                          <a href="#" class="catalog-item-features-compare"
-                            >В избранное</a
-                          >
-                        </div>
-                      </div>
-                      <div class="catalog-item-description">
-                        <div class="catalog-item-description-title">
-                          Lenovo IdeaPad L340-15API 81LW0086RK
-                        </div>
-                        <div class="catalog-item-description-articule">
-                          <div class="articule">КОД ТОВАРА: QD0095719</div>
-                          <div class="in_stock">
-                            <img src="./images/icons/accept.png" alt="alt" />
-                            В НАЛИЧИИ
-                          </div>
-                        </div>
-                        <table>
-                          <tbody>
-                            <tr>
-                              <td>
-                                Диагональ/разрешение
-                                <span class="dots"></span>
-                              </td>
-                              <td>17.3"/1920x1080 пикс.</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                Процессор
-                                <span class="dots"></span>
-                              </td>
-                              <td>AMD Ryzen 9 5900HX 3.3 ГГц</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                Оперативная память (RAM)
-                                <spna class="dots"></spna>
-                              </td>
-                              <td>16 ГБ</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                Графический контроллер
-                                <span class="dots"></span>
-                              </td>
-                              <td>GeForce RTX 3060 6GB</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                Объем SSD
-                                <span class="dots"></span>
-                              </td>
-                              <td>512 ГБ</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-catalog-26 col-l-12">
-                    <div class="catalog-description">
-                      <div class="catalog-description-first_price">
-                        <div class="catalog-description-title cyan">
-                          С КАРТОЙ «СЕРВЕР»
-                          <span class="help"
-                            ><i class="far fa-question-circle"></i
-                          ></span>
-                        </div>
-                        <div class="catalog-description-price cyan">
-                          2 480.00 <span>РУБ.</span>
-                        </div>
-                      </div>
-                      <div class="catalog-description-second_price">
-                        <div class="catalog-description-title">
-                          С КАРТОЙ «СЕРВЕР»
-                          <span class="help"
-                            ><i class="far fa-question-circle"></i
-                          ></span>
-                        </div>
-                        <div class="catalog-description-price">
-                          2 480.00 <span>РУБ.</span>
-                        </div>
-                      </div>
-
-                      <div class="catalog-description-btns">
-                        <a class="catalog-description-btn ui-btn">
-                          <div href="#" class="product-description-img">
-                            <img src="./images/icons/cart-btn.svg" alt="alt" />
-                          </div>
-                          В корзину
-                        </a>
-                        <a href="#" class="catalog-description-compare">
-                          <img src="./images/icons/product-equ.svg" alt="alt" />
-                        </a>
-                        <a href="#" class="catalog-description-favorite">
-                          <img
-                            src="./images/icons/product-heart.svg"
-                            alt="alt"
-                          />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="catalog">
-                <div class="row">
-                  <div class="col-catalog-74 col-l-12">
-                    <div class="catalog-marker">ХИТ ПРОДАЖ</div>
-                    <div class="catalog-item">
-                      <div class="catalog-item-img">
-                        <img src="./images/rog strix.png" alt="alt" />
-                        <div class="catalog-item-features">
-                          <img src="./images/icons/Сравнение.png" alt="alt" />
-                          <a href="#" class="catalog-item-features-compare"
-                            >В сравнение</a
-                          >
-                          <img src="./images/icons/like.png" alt="alt" />
-                          <a href="#" class="catalog-item-features-compare"
-                            >В избранное</a
-                          >
-                        </div>
-                      </div>
-                      <div class="catalog-item-description">
-                        <div class="catalog-item-description-title">
-                          Lenovo IdeaPad L340-15API 81LW0086RK
-                        </div>
-                        <div class="catalog-item-description-articule">
-                          <div class="articule">КОД ТОВАРА: QD0095719</div>
-                          <div class="in_stock">
-                            <img src="./images/icons/accept.png" alt="alt" />
-                            В НАЛИЧИИ
-                          </div>
-                        </div>
-                        <table>
-                          <tbody>
-                            <tr>
-                              <td>
-                                Диагональ/разрешение
-                                <span class="dots"></span>
-                              </td>
-                              <td>17.3"/1920x1080 пикс.</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                Процессор
-                                <span class="dots"></span>
-                              </td>
-                              <td>AMD Ryzen 9 5900HX 3.3 ГГц</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                Оперативная память (RAM)
-                                <spna class="dots"></spna>
-                              </td>
-                              <td>16 ГБ</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                Графический контроллер
-                                <span class="dots"></span>
-                              </td>
-                              <td>GeForce RTX 3060 6GB</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                Объем SSD
-                                <span class="dots"></span>
-                              </td>
-                              <td>512 ГБ</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-catalog-26 col-l-12">
-                    <div class="catalog-description">
-                      <div class="catalog-description-first_price">
-                        <div class="catalog-description-title cyan">
-                          С КАРТОЙ «СЕРВЕР»
-                          <span class="help"
-                            ><i class="far fa-question-circle"></i
-                          ></span>
-                        </div>
-                        <div class="catalog-description-price cyan">
-                          2 480.00 <span>РУБ.</span>
-                        </div>
-                      </div>
-                      <div class="catalog-description-second_price">
-                        <div class="catalog-description-title">
-                          С КАРТОЙ «СЕРВЕР»
-                          <span class="help"
-                            ><i class="far fa-question-circle"></i
-                          ></span>
-                        </div>
-                        <div class="catalog-description-price">
-                          2 480.00 <span>РУБ.</span>
-                        </div>
-                      </div>
-
-                      <div class="catalog-description-btns">
-                        <a class="catalog-description-btn ui-btn">
-                          <div href="#" class="product-description-img">
-                            <img src="./images/icons/cart-btn.svg" alt="alt" />
-                          </div>
-                          В корзину
-                        </a>
-                        <a href="#" class="catalog-description-compare">
-                          <img src="./images/icons/product-equ.svg" alt="alt" />
-                        </a>
-                        <a href="#" class="catalog-description-favorite">
-                          <img
-                            src="./images/icons/product-heart.svg"
-                            alt="alt"
-                          />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="catalog">
-                <div class="row">
-                  <div class="col-catalog-74 col-l-12">
-                    <div class="catalog-marker">ХИТ ПРОДАЖ</div>
-                    <div class="catalog-item">
-                      <div class="catalog-item-img">
-                        <img src="./images/rog strix.png" alt="alt" />
-                        <div class="catalog-item-features">
-                          <img src="./images/icons/Сравнение.png" alt="alt" />
-                          <a href="#" class="catalog-item-features-compare"
-                            >В сравнение</a
-                          >
-                          <img src="./images/icons/like.png" alt="alt" />
-                          <a href="#" class="catalog-item-features-compare"
-                            >В избранное</a
-                          >
-                        </div>
-                      </div>
-                      <div class="catalog-item-description">
-                        <div class="catalog-item-description-title">
-                          Lenovo IdeaPad L340-15API 81LW0086RK
-                        </div>
-                        <div class="catalog-item-description-articule">
-                          <div class="articule">КОД ТОВАРА: QD0095719</div>
-                          <div class="in_stock">
-                            <img src="./images/icons/accept.png" alt="alt" />
-                            В НАЛИЧИИ
-                          </div>
-                        </div>
-                        <table>
-                          <tbody>
-                            <tr>
-                              <td>
-                                Диагональ/разрешение
-                                <span class="dots"></span>
-                              </td>
-                              <td>17.3"/1920x1080 пикс.</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                Процессор
-                                <span class="dots"></span>
-                              </td>
-                              <td>AMD Ryzen 9 5900HX 3.3 ГГц</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                Оперативная память (RAM)
-                                <spna class="dots"></spna>
-                              </td>
-                              <td>16 ГБ</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                Графический контроллер
-                                <span class="dots"></span>
-                              </td>
-                              <td>GeForce RTX 3060 6GB</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                Объем SSD
-                                <span class="dots"></span>
-                              </td>
-                              <td>512 ГБ</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-catalog-26 col-l-12">
-                    <div class="catalog-description">
-                      <div class="catalog-description-first_price">
-                        <div class="catalog-description-title cyan">
-                          С КАРТОЙ «СЕРВЕР»
-                          <span class="help"
-                            ><i class="far fa-question-circle"></i
-                          ></span>
-                        </div>
-                        <div class="catalog-description-price cyan">
-                          2 480.00 <span>РУБ.</span>
-                        </div>
-                      </div>
-                      <div class="catalog-description-second_price">
-                        <div class="catalog-description-title">
-                          С КАРТОЙ «СЕРВЕР»
-                          <span class="help"
-                            ><i class="far fa-question-circle"></i
-                          ></span>
-                        </div>
-                        <div class="catalog-description-price">
-                          2 480.00 <span>РУБ.</span>
-                        </div>
-                      </div>
-
-                      <div class="catalog-description-btns">
-                        <a class="catalog-description-btn ui-btn">
-                          <div href="#" class="product-description-img">
-                            <img src="./images/icons/cart-btn.svg" alt="alt" />
-                          </div>
-                          В корзину
-                        </a>
-                        <a href="#" class="catalog-description-compare">
-                          <img src="./images/icons/product-equ.svg" alt="alt" />
-                        </a>
-                        <a href="#" class="catalog-description-favorite">
-                          <img
-                            src="./images/icons/product-heart.svg"
-                            alt="alt"
-                          />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
           </div>
         </div>
       </div>
+      @@include('inc-footer.html')
     </div>
-
-    @@include('inc-footer.html')
-  </div>
-  @@include('mobile-nav.html')
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="./js/main.js"></script>
-</body>
-
+    @@include('mobile-nav.html')
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
