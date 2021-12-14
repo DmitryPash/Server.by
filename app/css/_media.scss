@@ -19,9 +19,6 @@
   .filter {
     display: none;
   }
-  .installments {
-    display: none;
-  }
 
   .catalog {
     &-item {
@@ -184,7 +181,15 @@
   .middle-title-h1 {
     margin-bottom: 30px;
   }
-
+  .article {
+    p:nth-of-type(7) {
+      padding-bottom: 40px;
+    }
+  }
+  .news-page-installments {
+    display: block;
+    margin-bottom: 40px;
+  }
   // Footer
 }
 
@@ -251,7 +256,27 @@
     flex: 0 0 45px;
   }
 
-  // Footer
+  .article {
+    &-bar {
+      padding-left: 8px;
+      &-data {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        font-size: rem(11px);
+        padding-right: 10px;
+        border-right: 0.5px solid #dae7f9;
+      }
+      span {
+        font-size: rem(11px);
+        padding-left: 8px;
+        padding-right: 3px;
+      }
+      img {
+        margin-right: 2px;
+      }
+    }
+  }
 }
 
 @media (max-width: 400px) {
@@ -400,9 +425,6 @@
     align-items: center;
   }
   .info {
-    display: none;
-  }
-  .installments {
     display: none;
   }
   .news {
