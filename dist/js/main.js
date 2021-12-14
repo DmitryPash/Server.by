@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
   $(".banner-slider").slick({
     dots: true,
@@ -50,10 +48,9 @@ $(document).ready(function () {
 
 // SLider page-product.html
 
-
-$('.fotorama').fotorama({
-  ratio: 16/9, 
-  nav: 'thumbs',
+$(".fotorama").fotorama({
+  ratio: 16 / 9,
+  nav: "thumbs",
   thumbwidth: 140,
   thumbheight: 140,
   // arrowPrev:false,
@@ -98,5 +95,6 @@ $(document).ready(function () {
 let filterBtn = document.querySelector(".filter-btn");
 let filter = document.querySelector(".filter");
 filterBtn.addEventListener("click", () => {
+  console.log("Done");
   filter.style.display = "block";
 });
