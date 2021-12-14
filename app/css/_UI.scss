@@ -142,6 +142,7 @@ button {
   text-transform: uppercase;
   cursor: pointer;
   border-radius: 4px;
+  
 }
 
 // Breadcrumbs example
@@ -179,6 +180,7 @@ button {
     background: $colorBlue;
     width: 100%;
     margin-right: 10px;
+    transition: .3s ease;
     &-img {
       height: 20px;
       img {
@@ -188,6 +190,11 @@ button {
     }
     &-text {
       padding: 0px 5px;
+    }
+    &:hover {
+      background: #ffffff;
+      color: $colorBlue;
+      border: 1px solid $colorBlue;
     }
   }
   &-img {
@@ -263,11 +270,15 @@ button {
     border: 1px solid #d6e3f2;
     border-radius: 4px;
     margin-left: 5px;
+    transition: .3s ease;
     img {
       position: absolute;
       transform: translate(-50%, -50%);
       top: 50%;
       left: 50%;
+    }
+    &:hover {
+      border: 1px solid $colorBlue;
     }
   }
 }

@@ -1381,3 +1381,28 @@ body {
   display: none;
 }
 // end news-page.html
+
+
+
+
+
+
+// УДАЛИТЬ!
+
+.pages {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  a {
+    
+    color: $colorBlue;
+    margin-right: 10px;
+    
+  }
+  a:hover {
+    color: $colorCyan;
+  }
+}

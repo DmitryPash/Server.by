@@ -428,6 +428,9 @@ button {
   background: #2963cb;
   width: 100%;
   margin-right: 10px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .ui-card-product .ui-btn-img {
@@ -441,6 +444,12 @@ button {
 
 .ui-card-product .ui-btn-text {
   padding: 0px 5px;
+}
+
+.ui-card-product .ui-btn:hover {
+  background: #ffffff;
+  color: #2963cb;
+  border: 1px solid #2963cb;
 }
 
 .ui-card-product-img {
@@ -525,6 +534,9 @@ button {
   border: 1px solid #d6e3f2;
   border-radius: 4px;
   margin-left: 5px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .ui-card-btns .ui-btn-favorite img,
@@ -535,6 +547,11 @@ button {
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
+}
+
+.ui-card-btns .ui-btn-favorite:hover,
+.ui-card-btns .ui-btn-compare:hover {
+  border: 1px solid #2963cb;
 }
 
 input::-webkit-input-placeholder {
@@ -698,6 +715,10 @@ input:focus:-ms-input-placeholder {
   margin-right: 4px;
 }
 
+.header .menu-time-tel .time-tel-big:hover {
+  border-bottom: 1px solid black;
+}
+
 .header .menu-time-tel .time-tel-top {
   position: relative;
   display: inline-block;
@@ -800,6 +821,11 @@ input:focus:-ms-input-placeholder {
 .header .main-menu-services {
   display: inline-block;
   text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+.header .main-menu-services:hover {
+  border-bottom: 1px solid #b3c0ce;
 }
 
 .header .main-menu-services-img {
@@ -2633,6 +2659,25 @@ body {
   display: none;
 }
 
+.pages {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.pages h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pages a {
+  color: #2963cb;
+  margin-right: 10px;
+}
+
+.pages a:hover {
+  color: #398aea;
+}
+
 @media (max-width: 1337px) {
   .catalog-item-description {
     border-right: 0;
@@ -3808,6 +3853,21 @@ body {
   .news-card-img {
     display: block;
     margin-bottom: 20px;
+  }
+
+  .categories-card-img {
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 0px 10px;
+  }
+
+  .categories-card-img img {
+    max-height: 30px;
+  }
+
+  .offer-title,
+  .hits-title {
+    font-size: 1.25rem;
   }
 
   .product-description {

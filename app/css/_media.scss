@@ -234,6 +234,7 @@
     display: block;
     margin-bottom: 40px;
   }
+
   .filter {
     display: none;
   }
@@ -247,6 +248,7 @@
       }
     }
   }
+
   // Footer
 }
 
@@ -534,6 +536,19 @@
     }
   }
   // Main
+
+  .categories-card-img {
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 0px 10px;
+    img {
+      max-height: 30px;
+    }
+  }
+  .offer-title,
+  .hits-title {
+    font-size: rem(20px);
+  }
 
   // catalog-product.html
   .product-description {
