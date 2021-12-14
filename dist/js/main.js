@@ -47,15 +47,17 @@ $(document).ready(function () {
 });
 
 // SLider page-product.html
+$(document).ready(function () {
+  $(".fotorama").fotorama({
+    ratio: 16 / 9,
+    nav: "thumbs",
+    thumbwidth: 140,
+    thumbheight: 140,
+    // arrowPrev:false,
+    // arrowNext:true,
+  });
+})
 
-$(".fotorama").fotorama({
-  ratio: 16 / 9,
-  nav: "thumbs",
-  thumbwidth: 140,
-  thumbheight: 140,
-  // arrowPrev:false,
-  // arrowNext:true,
-});
 
 // $(document).ready(function () {
 //   $(".slider-for").slick({
