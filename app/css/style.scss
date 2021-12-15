@@ -317,6 +317,8 @@ body {
 .page-breadcrumbs {
   margin-top: 23px;
   margin-bottom: 48px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .title {
   margin-bottom: 39px;
@@ -396,8 +398,8 @@ body {
     padding-left: 76px;
     padding-top: 26px;
     &-container {
-     width: 100%;
-     margin: 0;
+      width: 100%;
+      margin: 0;
     }
     &-price {
       margin-bottom: 30px;
@@ -426,6 +428,10 @@ body {
       height: 52px;
       line-height: 52px;
       font-size: rem(14px);
+
+      &:hover {
+        background: $colorCyan;
+      }
     }
     &-img {
       display: inline-block;
@@ -444,11 +450,15 @@ body {
       border: 1px solid #d6e3f2;
       border-radius: 4px;
       margin-left: 16px;
+      transition: 0.3s ease;
       img {
         position: absolute;
         transform: translate(-50%, -50%);
         top: 50%;
         left: 50%;
+      }
+      &:hover {
+        border: 1px solid #2963cb;
       }
     }
     .installments {
@@ -460,7 +470,7 @@ body {
       margin-bottom: 59px;
       a {
         &:hover {
-          border-bottom: 1px solid #3989ea00;
+          text-decoration: none;
         }
       }
       &-img {
@@ -502,6 +512,9 @@ body {
         color: $colorCyan;
         border-bottom: 1px dashed $colorCyan;
         cursor: pointer;
+        &:hover {
+          color: $colorBlue;
+        }
       }
     }
     &-footer {
@@ -1100,8 +1113,8 @@ body {
         width: 160px;
         margin: 0 auto;
         background: $colorCyan;
-        border: 1px solid rgba(255, 255, 255, 0)fff;
-        transition: .3s ease;
+        border: 1px solid rgba(255, 255, 255, 0) fff;
+        transition: 0.3s ease;
         &:hover {
           background: #ffffff;
           color: $colorCyan;
@@ -1163,60 +1176,60 @@ body {
         background: url(../images/icons/user-header.png);
         background-size: cover;
         background-position: center center;
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
         &:hover {
           background: url(../images/icons/login-hover.svg);
           background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
+          background-position: center center;
+          background-repeat: no-repeat;
         }
       }
       .search-mob {
         background: url(../images/icons/search-mob.svg);
         background-size: cover;
         background-position: center center;
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
         &:hover {
           background: url(../images/icons/search-header.svg);
           background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
+          background-position: center center;
+          background-repeat: no-repeat;
         }
       }
       .heart-mob {
         background: url(../images/icons/heart-header.png);
         background-size: cover;
         background-position: center center;
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
         &:hover {
           background: url(../images/icons/heart-header.svg);
           background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
+          background-position: center center;
+          background-repeat: no-repeat;
         }
       }
       .cart-mob {
         background: url(../images/icons/cart-header.png);
         background-size: cover;
         background-position: center center;
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
         &:hover {
           background: url(../images/icons/cart-header.svg);
           background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
+          background-position: center center;
+          background-repeat: no-repeat;
         }
       }
       .catalog-mob {
         background: url(../images/icons/icon-mob.svg);
         background-size: cover;
         background-position: center center;
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
         &:hover {
           background: url(../images/icons/catalog-header.svg);
           background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
+          background-position: center center;
+          background-repeat: no-repeat;
         }
       }
       &-text {

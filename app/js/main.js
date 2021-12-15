@@ -56,8 +56,7 @@ $(document).ready(function () {
     // arrowPrev:false,
     // arrowNext:true,
   });
-})
-
+});
 
 // $(document).ready(function () {
 //   $(".slider-for").slick({

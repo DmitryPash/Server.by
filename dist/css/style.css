@@ -1485,6 +1485,8 @@ body {
 .page-breadcrumbs {
   margin-top: 23px;
   margin-bottom: 48px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .title {
@@ -1564,6 +1566,10 @@ body {
   font-size: 0.875rem;
 }
 
+.product-description-btn:hover {
+  background: #398aea;
+}
+
 .product-description-img {
   display: inline-block;
   position: relative;
@@ -1582,6 +1588,9 @@ body {
   border: 1px solid #d6e3f2;
   border-radius: 4px;
   margin-left: 16px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .product-description .product-description-compare img,
@@ -1594,6 +1603,11 @@ body {
   left: 50%;
 }
 
+.product-description .product-description-compare:hover,
+.product-description .product-description-favorite:hover {
+  border: 1px solid #2963cb;
+}
+
 .product-description .installments {
   position: relative;
   padding-bottom: 30px;
@@ -1604,7 +1618,7 @@ body {
 }
 
 .product-description .installments a:hover {
-  border-bottom: 1px solid #3989ea00;
+  text-decoration: none;
 }
 
 .product-description .installments-img {
@@ -1654,6 +1668,10 @@ body {
   color: #398aea;
   border-bottom: 1px dashed #398aea;
   cursor: pointer;
+}
+
+.product-description-profile-link:hover {
+  color: #2963cb;
 }
 
 .product-description-footer {
@@ -3140,13 +3158,20 @@ body {
     max-width: 100%;
   }
 
+  .middle {
+    padding-top: 48px;
+  }
+
   .header {
     margin-bottom: 0;
   }
 
   .header .main {
+    position: fixed;
+    width: 100%;
     -webkit-box-shadow: 0px 4px 20px #d6e3f200;
     box-shadow: 0px 4px 20px #d6e3f200;
+    padding-bottom: 0;
   }
 
   .header .main-burger {
