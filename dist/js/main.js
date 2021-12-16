@@ -1,3 +1,19 @@
+// test
+$(document).ready(function () {
+  $(".burgerclick").click(function () {
+    $(this).toggleClass("active");
+    $(".menu-mob").slideToggle(300);
+  });
+  $(".dropdown-submenu a.menu-mob-link").on("click", function (e) {
+    $(this).next("ul").toggle(300);
+    $(this).toggleClass("active");
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+
+// end
+
 $(document).ready(function () {
   $(".banner-slider").slick({
     dots: true,
@@ -53,29 +69,9 @@ $(document).ready(function () {
     nav: "thumbs",
     thumbwidth: 140,
     thumbheight: 140,
-    // arrowPrev:false,
-    // arrowNext:true,
   });
 });
 
-// $(document).ready(function () {
-//   $(".slider-for").slick({
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     arrows: false,
-//     fade: true,
-//     dots: false,
-//     asNavFor: ".slider-nav",
-//   });
-//   $(".slider-nav").slick({
-//     slidesToShow: 4,
-//     slidesToScroll: 1,
-//     asNavFor: ".slider-for",
-//     dots: false,
-//     arrows: true,
-//     focusOnSelect: true,
-//   });
-// });
 // drop for footer top
 let menu = document.querySelectorAll(".footer-top-toggle");
 menu.forEach((element) => {
@@ -99,3 +95,5 @@ filterBtn.addEventListener("click", () => {
   console.log("Done");
   filter.style.display = "block";
 });
+
+// testetsttet

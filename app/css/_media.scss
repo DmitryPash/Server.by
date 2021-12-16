@@ -43,6 +43,9 @@
     padding-left: 0;
     padding-right: 0;
   }
+  .header .menu-list ul .menu-list-sale {
+    right: -1%;
+  }
 
   // Main
   // Footer
@@ -173,6 +176,7 @@
       }
       &-mobile-burger {
         display: inline-block;
+        position: relative;
       }
       &-mobile-tel {
         display: inline-block;
