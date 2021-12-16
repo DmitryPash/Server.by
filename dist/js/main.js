@@ -1,4 +1,4 @@
-// test
+// Mobile-burger
 $(document).ready(function () {
   $(".burgerclick").click(function () {
     $(this).toggleClass("active");
@@ -12,12 +12,28 @@ $(document).ready(function () {
   });
 });
 
+// mobile-nav Search
+$(document).ready(function () {
+  $(".mobile-nav-search").click(function () {
+    $(this).toggleClass("active");
+    $(".main-search").slideToggle(300);
+  });
+});
 // end
 
 $(document).ready(function () {
   $(".banner-slider").slick({
     dots: true,
     adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          dots: false,
+          arrows: false,
+        },
+      },
+    ],
   });
 });
 
@@ -95,5 +111,3 @@ filterBtn.addEventListener("click", () => {
   console.log("Done");
   filter.style.display = "block";
 });
-
-// testetsttet

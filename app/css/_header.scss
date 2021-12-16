@@ -163,6 +163,29 @@ $html-font-size: 16px;
         width: 60px;
         right: 0%;
       }
+      &-form {
+        position: relative;
+      }
+      &-catalog {
+        display: none;
+        max-height: calc(100vh - 162px);
+        overflow-y: auto;
+        a {
+          display: block;
+        }
+        &-title {
+          color: $colorSilver;
+          font-size: rem(14px);
+          font-weight: 600;
+          padding-bottom: 15px;
+        }
+        &-nav {
+          font-weight: 400;
+          font-size: rem(14px);
+          color: #000000;
+          margin-bottom: 10px;
+        }
+      }
     }
     &-menu {
       white-space: nowrap;
@@ -199,9 +222,9 @@ $html-font-size: 16px;
   border: none;
 }
 
-.active {
-  display: block;
-}
+// .active {
+//   display: block;
+// }
 
 // New burger
 .menu-mob {
@@ -211,6 +234,8 @@ $html-font-size: 16px;
   width: 100vw;
   top: 66px;
   left: -15px;
+  max-height: calc(100vh - 162px);
+  overflow-y: auto;
   li > a {
     padding: 20px 17px;
     border-top: 1px solid #e5edf7;
@@ -279,7 +304,7 @@ $html-font-size: 16px;
 }
 
 .burger {
-  display: block;
+  display: none;
   position: absolute;
   content: "";
   width: 30px;
