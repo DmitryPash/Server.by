@@ -123,8 +123,9 @@ li {
 button {
   cursor: pointer;
 }
-input,textarea {
-  outline:none;
+input,
+textarea {
+  outline: none;
 }
 
 .span-blue {
@@ -145,7 +146,9 @@ input,textarea {
   text-transform: uppercase;
   cursor: pointer;
   border-radius: 4px;
-  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 // Breadcrumbs example
@@ -181,9 +184,9 @@ input,textarea {
 
   .ui-btn {
     background: $colorBlue;
-    width: 100%;
-    margin-right: 10px;
-    transition: .3s ease;
+    width: calc(100% - 72px);
+    transition: 0.3s ease;
+    padding: 0px 5px;
     &-img {
       height: 20px;
       img {
@@ -195,9 +198,7 @@ input,textarea {
       padding: 0px 5px;
     }
     &:hover {
-      background: #ffffff;
-      color: $colorBlue;
-      border: 1px solid $colorBlue;
+      background: #2c75fc;
     }
   }
   &-img {
@@ -227,6 +228,9 @@ input,textarea {
     font-size: rem(15px);
     margin-bottom: 10px;
     cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   &-articule {
     font-weight: 300;
@@ -269,11 +273,14 @@ input,textarea {
   .ui-btn-favorite,
   .ui-btn-compare {
     position: relative;
-    padding: 18px;
+    // padding: 18px;
+    width: 36px;
+    height: 36px;
+    line-height: 34px;
     border: 1px solid #d6e3f2;
     border-radius: 4px;
     margin-left: 5px;
-    transition: .3s ease;
+    transition: 0.3s ease;
     img {
       position: absolute;
       transform: translate(-50%, -50%);
