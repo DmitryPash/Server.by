@@ -127,7 +127,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-logo col-lg-3 col-md-8 col-xs-9 col-us-7">
+        <div class="col-logo col-md-8 col-xs-9 col-us-7">
           <a href="./index.html" class="main-logo">
             <img src="./images/icons/Logo-header.png" alt="alt" />
           </a>
@@ -174,7 +174,8 @@
             </a>
             <a href="#" class="main-menu-services">
               <div class="main-menu-services-img">
-                <img src="./images/icons/cart-header.png" alt="alt" />
+                <img src="./images/icons/cart-header.svg" alt="alt" />
+                <span class="cart-counter">2</span>
               </div>
               <div class="main-menu-services-text">Корзина</div>
             </a>
@@ -273,21 +274,21 @@
                       </div>
                     </div>
                   </div>
-                  <div class="product-description-btns">
-                    <div class="flex valign-center">
-                      <div class="product-description-btn ui-btn">
-                        <div class="product-description-img">
-                          <img src="./images/icons/cart-btn.svg" alt="alt">
-                        </div>
-                        В корзину
+                </div>
+                <div class="product-description-btns">
+                  <div class="flex valign-center">
+                    <div class="product-description-btn ui-btn">
+                      <div class="product-description-img">
+                        <img src="./images/icons/cart-btn.svg" alt="alt">
                       </div>
-                      <a href="#" class="product-description-compare">
-                        <img src="./images/icons/product-equ.svg" alt="alt">
-                      </a>
-                      <a href="#" class="product-description-favorite">
-                        <img src="./images/icons/product-heart.svg" alt="alt">
-                      </a>
+                      В корзину
                     </div>
+                    <a href="#" class="product-description-compare">
+                      <img src="./images/icons/product-equ.svg" alt="alt">
+                    </a>
+                    <a href="#" class="product-description-favorite">
+                      <img src="./images/icons/product-heart.svg" alt="alt">
+                    </a>
                   </div>
                 </div>
                 <div class="installments">
@@ -307,28 +308,48 @@
                   <table>
                     <tbody>
                       <tr>
-                        <td>Диагональ/разрешение<span class="dots"></span></td>
+                        <td>
+                          <div class="dots">
+                            <div class="dots-clear">Диагональ/разрешение</div>
+                          </div>
+                        </td>
                         <td>17.3"/1920x1080 пикс.</td>
                       </tr>
                       <tr>
-                        <td>Процессор <span class="dots"></span></td>
+                        <td>
+                          <div class="dots">
+                            <div class="dots-clear"> Процессор</div>
+                          </div>
+                        </td>
                         <td>AMD Ryzen 9 5900HX 3.3 ГГц</td>
                       </tr>
                       <tr>
-                        <td>Оперативная память (RAM) <span class="dots"></span></td>
+                        <td>
+                          <div class="dots">
+                            <div class="dots-clear">Оперативная память (RAM)</div>
+                          </div>
+                        </td>
                         <td>16 ГБ</td>
                       </tr>
                       <tr>
-                        <td>Графический контроллер <span class="dots"></span></td>
+                        <td>
+                          <div class="dots">
+                            <div class="dots-clear"> Графический контроллер</div>
+                          </div>
+                        </td>
                         <td>GeForce RTX 3060 для ноутбуков 6GB</td>
                       </tr>
                       <tr>
-                        <td>Объем SSD <span class="dots"></span></td>
+                        <td>
+                          <div class="dots">
+                            <div class="dots-clear">Объем SSD</div>
+                          </div>
+                        </td>
                         <td>512 ГБ</td>
                       </tr>
                     </tbody>
                   </table>
-                  <a href="#" class="product-description-profile-link">
+                  <a href="#stats" class="product-description-profile-link">
                     Смотреть все характеристики
                   </a>
                 </div>
@@ -356,26 +377,29 @@
               <div class="description-text">
                 <div class="description-text-title">Описание</div>
                 <div class="description-text-describtion">
-                  <div>Линейка портативных игровых машин Asus ROG Strix (аббревиатура от
+                  <p>Линейка портативных игровых машин Asus ROG Strix (аббревиатура от
                     Republic of Gamers) весьма многочисленна, а модели в ней довольно разнообразные. Модели с индексом
                     G713 посвящен отдельный раздел сайта производителя. Вариаций ноутбуков Asus ROG Strix G713 с
                     частотой
                     обновления 17-дюймового экрана 300 Гц мы насчитали восемь, но не уверены, что параметры фильтрации
-                    поискового запроса на сайте были адекватными.</div>
-                  <div>Упомянутое видовое разнообразие моделей на русскоязычном сайте Asus выглядит внушительно и
+                    поискового запроса на сайте были адекватными.</p>
+                  <p>Упомянутое видовое разнообразие моделей на русскоязычном сайте Asus выглядит внушительно и
                     объясняется
                     (как и всегда, впрочем) наличием в конфигурациях разных процессоров, дискретной графики, объемов
-                    оперативной памяти и видеопамяти, емкостей накопителей и т. д.</div>
+                    оперативной памяти и видеопамяти, емкостей накопителей и т. д.</p>
                 </div>
               </div>
-              <div class="description-specs">
+              <div class="description-specs" id="stats">
                 <div class="description-specs-title">ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</div>
                 <div class="description-specs-table">
-                  <div class="table-title">
-                    Аккумулятор и время работы
-                  </div>
+
                   <table>
                     <tbody>
+                      <td colspan="2">
+                        <div class="table-title">
+                          Аккумулятор и время работы
+                        </div>
+                      </td>
                       <tr class="bcg-whitesmoke">
                         <td class="bolt">Запас энергии</td>
                         <td>48</td>
@@ -390,11 +414,14 @@
                       </tr>
                     </tbody>
                   </table>
-                  <div class="table-title">
-                    Возможно, вас заинтересует
-                  </div>
+
                   <table>
                     <tbody>
+                      <td colspan="2">
+                        <div class="table-title">
+                          Возможно, вас заинтересует
+                        </div>
+                      </td>
                       <tr class="bcg-whitesmoke">
                         <td class="bolt">Дополнительные принадлежности</td>
                         <td>сумки и чехлы рюкзаки оперативная
@@ -402,12 +429,13 @@
                       </tr>
                     </tbody>
                   </table>
-                  <div class="table-title">
-                    общая информация
-                  </div>
                   <table>
                     <tbody>
-
+                      <td colspan="2">
+                        <div class="table-title">
+                          общая информация
+                        </div>
+                      </td>
                       <tr class="bcg-whitesmoke">
                         <td class="bolt">Дата выхода на рынок</td>
                         <td>2020</td>
@@ -427,11 +455,14 @@
 
                     </tbody>
                   </table>
-                  <div class="table-title">
-                    Функции
-                  </div>
+
                   <table>
                     <tbody>
+                      <td colspan="2">
+                        <div class="table-title">
+                          Функции
+                        </div>
+                      </td>
                       <tr class="bcg-whitesmoke">
                         <td class="bolt">Функции защиты приватности</td>
                         <td>Нет</td>
@@ -972,6 +1003,7 @@
    </a>
    <a href="#" class="mobile-nav-menu-services">
       <div class="mobile-nav-menu-services-img cart-mob">
+         <span class="cart-counter">2</span>
          <!-- <img src="./images/icons/cart-header.png" alt="alt"> -->
       </div>
       <div class="mobile-nav-menu-services-text">Корзина</div>

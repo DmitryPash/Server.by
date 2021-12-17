@@ -194,15 +194,16 @@ $html-font-size: 16px;
         display: inline-block;
         text-align: center;
         border-bottom: 1px solid rgba(0, 0, 0, 0);
+        img {
+          max-height: 36px;
+        }
         &:hover {
           border-bottom: 1px solid #b3c0ce;
         }
         &-img {
           display: inline-block;
+          position: relative;
           height: 36px;
-          img {
-            max-height: 36px;
-          }
         }
         &-text {
           font-size: rem(11px);
@@ -221,10 +222,20 @@ $html-font-size: 16px;
 .clear {
   border: none;
 }
+.cart-counter {
+  position: absolute;
+  background-color: #fdc300;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  top: -9px;
+  right: -12px;
 
-// .active {
-//   display: block;
-// }
+  font-size: rem(11px);
+  font-weight: 800;
+  color: #172542;
+  line-height: 20px;
+}
 
 // New burger
 .menu-mob {
@@ -302,7 +313,9 @@ $html-font-size: 16px;
     }
   }
 }
-
+.dropdown-menu {
+  display: none;
+}
 .burger {
   display: none;
   position: absolute;

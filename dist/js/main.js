@@ -2,6 +2,7 @@
 $(document).ready(function () {
   $(".burgerclick").click(function () {
     $(this).toggleClass("active");
+    $(".col-search").hide();
     $(".menu-mob").slideToggle(300);
   });
   $(".dropdown-submenu a.menu-mob-link").on("click", function (e) {
@@ -16,7 +17,8 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".mobile-nav-search").click(function () {
     $(this).toggleClass("active");
-    $(".main-search").slideToggle(300);
+    $(".menu-mob").hide();
+    $(".col-search").slideToggle(300);
   });
 });
 // end
