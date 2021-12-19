@@ -73,7 +73,7 @@
 @media (max-width: 992px) {
   //Global
   .middle {
-    padding-top: 88px;
+    padding-top: 56px;
   }
   // Header
   .header {
@@ -709,6 +709,60 @@
   }
   .product-description-container {
     width: 300px;
+  }
+
+  .product-description-profile table tr td {
+    display: block;
+    width: 100%;
+  }
+  .description-specs-table table tr td {
+    width: 100%;
+    display: block;
+    padding: 5px 25px;
+  }
+  .product-description-profile .dots {
+    display: block;
+    bottom: 0;
+    border-bottom: none;
+    border-bottom-style: none;
+    border-color: #ffffff00;
+  }
+  .bolt400 {
+    font-weight: 600;
+  }
+  .title-articul {
+    font-size: rem(11px);
+  }
+  .product-description .installments {
+    padding-bottom: 150px;
+    background-position: bottom right;
+  }
+  .product-description .installments-img {
+    margin-bottom: 18px;
+  }
+  .product-description table {
+    font-size: rem(13px);
+  }
+
+  .title-h1 {
+    font-size: rem(20px);
+  }
+
+  .description-card {
+    flex-direction: column;
+    align-items: start;
+  }
+  .description {
+    margin-bottom: 40px;
+  }
+  .sale {
+    margin-bottom: 40px;
+  }
+  .product {
+    margin-bottom: 40px;
+  }
+  .middle {
+    padding-top: 20px;
   }
   // Footer
 }
