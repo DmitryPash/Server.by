@@ -186,7 +186,53 @@
     display: none;
   }
   // Main
-
+  .filter {
+    &-btns {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-bottom: 30px;
+    }
+    &-btn {
+      flex: 0 0 80%;
+      font-size: rem(11px);
+      height: 48px;
+      line-height: 48px;
+      text-align: center;
+      border: 1px solid #d6e3f2;
+      color: $colorCyan;
+      font-weight: 600;
+      text-transform: uppercase;
+      &:hover {
+        background-color: $colorCyan;
+        color: #ffffff;
+      }
+      &-rectangle {
+        display: inline-block;
+        position: relative;
+        width: 48px;
+        height: 48px;
+        border: 1px solid #d6e3f2;
+        border-radius: 4px;
+        margin-left: 10px;
+        &:hover {
+          background-color: $colorCyan;
+          color: #ffffff;
+        }
+        img {
+          position: absolute;
+          transform: translate(-50%, -50%);
+          top: 50%;
+          left: 50%;
+        }
+      }
+    }
+    &-bottom {
+      &-show {
+        flex: 0 0 77%;
+      }
+    }
+  }
   .categories-cards {
     flex-direction: column;
     align-items: flex-start;
@@ -242,8 +288,14 @@
 
   .filter {
     display: none;
+    &-bar {
+      display: none;
+    }
   }
   .installments-catalog-list {
+    display: none;
+  }
+  .links {
     display: none;
   }
   .catalog {
@@ -266,7 +318,7 @@
   .description-delivery {
     padding-left: 0;
   }
-  // contact.html 
+  // contact.html
   .contact-about-map {
     height: 191px;
     min-height: 191px;
@@ -359,7 +411,6 @@
       margin: 0 auto;
     }
   }
-<<<<<<< HEAD
   //news-list.html
   .news-pagination-first,
   .news-pagination a {
@@ -367,14 +418,12 @@
     height: 30px;
     line-height: 30px;
   }
-=======
 
-  // contact.html 
+  // contact.html
   .contact-info-container {
     margin-bottom: 25px;
   }
 
->>>>>>> 1dc85bd63b39ae7d66901fc72eca588e100428c6
   // Footer
   .article {
     &-bar {
@@ -423,6 +472,7 @@
       }
     }
     &-description {
+      display: block;
       padding-right: 0;
       &-btns {
         display: flex;
@@ -495,53 +545,7 @@
   .dots {
     display: none;
   }
-  .filter {
-    &-btns {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      padding-bottom: 30px;
-    }
-    &-btn {
-      flex: 0 0 80%;
-      font-size: rem(11px);
-      height: 48px;
-      line-height: 48px;
-      text-align: center;
-      border: 1px solid #d6e3f2;
-      color: $colorCyan;
-      font-weight: 600;
-      text-transform: uppercase;
-      &:hover {
-        background-color: $colorCyan;
-        color: #ffffff;
-      }
-      &-rectangle {
-        display: inline-block;
-        position: relative;
-        width: 48px;
-        height: 48px;
-        border: 1px solid #d6e3f2;
-        border-radius: 4px;
-        margin-left: 10px;
-        &:hover {
-          background-color: $colorCyan;
-          color: #ffffff;
-        }
-        img {
-          position: absolute;
-          transform: translate(-50%, -50%);
-          top: 50%;
-          left: 50%;
-        }
-      }
-    }
-    &-bottom {
-      &-show {
-        flex: 0 0 77%;
-      }
-    }
-  }
+
   .footer {
     &-top {
       padding-top: 40px;

@@ -64,6 +64,8 @@ $html-font-size: 16px;
     border-top: 1px solid #dae7f9;
     &-icons {
       a {
+        display: inline-block;
+        vertical-align: middle;
         padding-right: 7px;
       }
     }
@@ -167,6 +169,7 @@ $html-font-size: 16px;
       font-size: rem(11px);
       color: #398aea;
       border: 1px solid #d6e3f2;
+      text-transform: uppercase;
       &:hover {
         color: $colorWhite;
         background-color: #398aea;
