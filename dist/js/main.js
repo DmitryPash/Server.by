@@ -1,16 +1,30 @@
-// Mobile-burger
 $(document).ready(function () {
+  // Click event
   $(".burgerclick").click(function () {
-    $(this).toggleClass("active");
+    $(".burgerclick").toggleClass("active");
     $(".col-search").hide();
     $(".menu-mob").slideToggle(300);
   });
+  // drop mobile menu
   $(".dropdown-submenu a.menu-mob-link").on("click", function (e) {
     $(this).next("ul").toggle(300);
     $(this).toggleClass("active");
     e.stopPropagation();
     e.preventDefault();
   });
+  // Menu dekstop
+  // Click event
+  // $(".btnClick").click(function () {
+  //   $(".btnClick").toggleClass("active");
+  //   $(".menu-dekstop").slideToggle(300);
+  // });
+  // drop mobile menu
+  // $(".dropdown-submenu a.menu-dekstop-link").on("click", function (e) {
+  //   $(this).next("ul").toggle(300);
+  //   $(this).toggleClass("active");
+  //   e.stopPropagation();
+  //   e.preventDefault();
+  // });
 });
 
 // mobile-nav Search
@@ -83,10 +97,11 @@ $(document).ready(function () {
 // SLider page-product.html
 $(document).ready(function () {
   $(".fotorama").fotorama({
-    ratio: 16 / 9,
     nav: "thumbs",
-    thumbwidth: 140,
-    thumbheight: 140,
+    thumbwidth: 120,
+    thumbheight: 120,
+    thumbmargin: 10,
+    arrows: "always",
   });
 });
 
