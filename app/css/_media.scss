@@ -43,6 +43,9 @@
     padding-left: 0;
     padding-right: 0;
   }
+  .header .menu-list ul .menu-list-sale {
+    right: -1%;
+  }
 
   // Main
   // Footer
@@ -88,16 +91,18 @@
 @media (max-width: 1250px) {
   //Global
   // Header
-  .menu-time-work br {
-    display: none;
-  }
-  .header .menu-time-work {
-    display: block;
-    margin-right: 10px;
-    text-align: start;
-    br {
-      display: none;
+
+  .header .menu-btn {
+    width: 52px;
+    a {
+      height: 36px;
+      font-size: 0px;
     }
+  }
+  .header .menu-btn-icon {
+    // transform: translate(-50%, -50%);
+    top: 65%;
+    left: 50%;
   }
 
   // Main
@@ -107,25 +112,20 @@
 @media (max-width: 1170px) {
   //Global
   // Header
-  .header .menu-btn-icon {
-    left: 7%;
-  }
-  .header .menu-btn-arrow {
-    left: 93%;
-  }
-  .header .menu-btn {
-    width: 156px;
-  }
   .header .menu-time-tel .time-tel-big {
     font-size: 1.2rem;
   }
-  .menu-time-work {
+  .header .menu-time-work {
+    margin-right: 10px;
+  }
+  .banner-slider picture img {
     width: 100%;
-    margin-bottom: 5px;
-    text-decoration: underline;
+    margin: 0 auto;
   }
   // Main
-
+  .banner-img {
+    display: none;
+  }
   //contact.html
   .contact-info-adress {
     padding-left: 0px;
@@ -141,14 +141,19 @@
 
 @media (max-width: 992px) {
   //Global
+  .middle {
+    padding-top: 88px;
+  }
   // Header
   .header {
     margin-bottom: 0;
     .main {
-      box-shadow: 0px 4px 20px #d6e3f200;
-      &-burger {
-        display: block;
-      }
+      position: fixed;
+      width: 100%;
+      box-shadow: 0px 4px 20px #d6e3f2;
+      padding: 0;
+      padding-top: 17px;
+      padding-bottom: 10px;
       &-mob-tel {
         display: block;
       }
@@ -156,9 +161,17 @@
         display: none;
       }
       &-search {
-        display: none;
+        display: block;
+        &-catalog {
+          display: block;
+        }
+        &-form {
+          margin-bottom: 26px;
+        }
       }
+
       .col-search {
+        display: none;
         margin-top: 30px;
         order: 2;
       }
@@ -167,6 +180,7 @@
       }
       &-mobile-burger {
         display: inline-block;
+        position: relative;
       }
       &-mobile-tel {
         display: inline-block;
@@ -175,6 +189,24 @@
         text-align: center;
       }
     }
+  }
+  .header .main-logo {
+    height: 61px;
+  }
+  .header .main-logo img {
+    max-height: 61px;
+  }
+  .banner-slider picture img {
+    min-height: 0;
+  }
+  .banner-slider .slider-item {
+    height: auto;
+  }
+  .burger {
+    display: block;
+  }
+  .header .main-mobile-tel {
+    display: inline-block;
   }
   .col-mobile-burger {
     display: block;
@@ -255,7 +287,10 @@
   .middle-title-h1 {
     margin-bottom: 30px;
   }
-
+  .offer-slider {
+    margin-right: -15px;
+    border-right: none;
+  }
   // page-product.html
   .product-description {
     padding-left: 0;
@@ -267,6 +302,9 @@
   .product-description-btns .flex {
     justify-content: space-between;
   }
+  .product-description-btn {
+    width: calc(100% - 104px);
+  }
   .product-description-price .price-block {
     margin-right: 0;
   }
@@ -275,6 +313,7 @@
     width: 380px;
     margin: 0 auto;
   }
+
   // news-page.html
   .article {
     p:nth-of-type(7) {
@@ -307,6 +346,9 @@
   }
 
   // Footer
+  .footer {
+    padding-bottom: 64px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -329,6 +371,12 @@
   }
   .contact-photo-mob {
     display: block;
+    margin-bottom: 40px;
+  }
+  .offer-slider {
+    border: none;
+  }
+  .contact-about-form {
     margin-bottom: 40px;
   }
   // Footer
@@ -359,9 +407,9 @@
   .categories-card-img {
     height: 45px;
     margin-bottom: 10px;
-    padding: 0px 10px;
+
     img {
-      max-height: 45px;
+      max-height: 50px;
     }
   }
   // Footer
@@ -370,6 +418,7 @@
 @media (max-width: 576px) {
   //Global
   // Headaer
+
   // Main
   .banner-img {
     order: 2;
@@ -395,8 +444,8 @@
   }
 
   .categories-card-img {
-    -ms-flex: 0 0 45px;
-    flex: 0 0 45px;
+    -ms-flex: 0 0 50px;
+    flex: 0 0 50px;
   }
 
   // page-product.html
@@ -584,11 +633,12 @@
   // Main
 
   .categories-card-img {
-    height: 30px;
+    height: 40px;
     margin-bottom: 10px;
-    padding: 0px 10px;
+    flex: 0 0 40px;
+    margin-right: 0;
     img {
-      max-height: 30px;
+      max-height: 40px;
     }
   }
   .offer-title,
