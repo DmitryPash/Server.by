@@ -392,6 +392,26 @@ body {
   &-description {
     padding-left: 76px;
     padding-top: 26px;
+    &-footer {
+      position: relative;
+      font-size: rem(14px);
+      &-txt {
+        display: inline-block;
+        margin-right: 15px;
+        color: #6d829f;
+      }
+      &-icon {
+        // position: absolute;
+        // transform: translate(-50%, -50%);
+        // top: 50%;
+        // left: 0;
+        display: inline-block;
+
+        img {
+          vertical-align: middle;
+        }
+      }
+    }
     &-container {
       width: 100%;
       margin: 0;
@@ -459,7 +479,7 @@ body {
     .installments {
       position: relative;
       padding-bottom: 30px;
-      background-image: url(../images/icons/Карты.svg);
+      background-image: url(../images/bgs/paycart.png);
       background-repeat: no-repeat;
       background-position: center right;
       margin-bottom: 59px;
@@ -487,36 +507,6 @@ body {
         text-transform: uppercase;
         margin-bottom: 25px;
       }
-      .dots {
-        position: relative;
-        bottom: 3px;
-        border-bottom: 1px solid;
-        border-bottom-style: dotted;
-        border-color: #d6e3f2;
-        &-clear {
-          position: relative;
-          z-index: 1;
-          background: #ffffff;
-          display: inline-block;
-          bottom: -3px;
-          padding-right: 5px;
-        }
-      }
-      table {
-        width: 100%;
-        font-size: rem(14px);
-        margin-bottom: 41px;
-        tr {
-          width: 100%;
-          td {
-            position: relative;
-            width: 50%;
-            padding: 8px 0px;
-            padding-right: 5px;
-            overflow: hidden;
-          }
-        }
-      }
       &-link {
         font-size: rem(14px);
         color: $colorCyan;
@@ -527,28 +517,24 @@ body {
         }
       }
     }
-    &-footer {
-      position: relative;
+    table {
+      width: 100%;
       font-size: rem(14px);
-      &-txt {
-        display: inline-block;
-        margin-right: 15px;
-        color: #6d829f;
-      }
-      &-icon {
-        // position: absolute;
-        // transform: translate(-50%, -50%);
-        // top: 50%;
-        // left: 0;
-        display: inline-block;
-
-        img {
-          vertical-align: middle;
+      margin-bottom: 41px;
+      tr {
+        width: 100%;
+        td {
+          position: relative;
+          width: 50%;
+          padding: 8px 0px;
+          padding-right: 5px;
+          overflow: hidden;
         }
       }
     }
   }
 }
+
 .description {
   margin-bottom: 98px;
   &-text {
@@ -1572,17 +1558,24 @@ body {
 
 .menu-link {
   display: inline-block;
-  padding: 20px 20px;
-  color: #647b98;
+  width: 300px;
+  padding: 13px 20px;
+  color: #111111;
   font-weight: 600;
   font-size: rem(14px);
   border-top: 1px solid #d6e3f2;
+  transition: 0.3s ease;
+  overflow: hidden;
+  &:hover {
+    color: #647b98;
+  }
 }
 
 .menu-banner {
   position: absolute;
   bottom: 0;
-  left: 21%;
+  left: 27%;
+  z-index: 999;
   // width: 100%;
   // height: 159px;
   // img {
@@ -1594,7 +1587,7 @@ body {
   font-size: rem(11px);
   font-weight: normal;
   color: black;
-  margin-top: 5px;
+  margin-top: 1px;
 }
 
 .container-menu:hover {
@@ -1613,4 +1606,20 @@ body {
 
 .btnClick:hover ~ .menu-dekstop {
   display: block;
+}
+// dots
+.dots {
+  position: relative;
+  bottom: 3px;
+  border-bottom: 1px solid;
+  border-bottom-style: dotted;
+  border-color: #d6e3f2;
+  &-clear {
+    position: relative;
+    z-index: 1;
+    background: #ffffff;
+    display: inline-block;
+    bottom: -3px;
+    padding-right: 5px;
+  }
 }
