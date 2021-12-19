@@ -884,13 +884,14 @@ body {
   }
 }
 .catalog {
-  position: relative;
+  // position: relative;
   border: 1px solid #d6e3f2;
   margin-bottom: 20px;
   &-item {
     display: inline-block;
+    position: relative;
     width: 100%;
-    padding-left: 30px;
+    // padding-left: 30px;
     border-right: 1px solid #d6e3f2;
     &-features {
       display: flex;
@@ -911,8 +912,10 @@ body {
     }
     &-img {
       display: inline-block;
+      width: 27%;
       padding-top: 40px;
       padding-bottom: 40px;
+      padding-left: 30px;
       img {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -920,10 +923,11 @@ body {
     }
     &-description {
       display: inline-block;
+      width: 45%;
       vertical-align: top;
       padding-top: 40px;
       padding-bottom: 40px;
-      padding-left: 35px;
+      padding-left: 30px;
       padding-right: 30px;
       border-right: 1px solid #d6e3f2;
 
@@ -932,6 +936,9 @@ body {
         font-size: 18px;
         line-height: 22px;
         text-transform: uppercase;
+        &:hover {
+          text-decoration: underline;
+        }
       }
       &-articule {
         padding-bottom: 35px;
@@ -949,8 +956,8 @@ body {
   }
   &-marker {
     position: absolute;
-    top: 4%;
-    left: 1.5%;
+    margin-top: 15px;
+    margin-left: 15px;
     height: 24px;
     line-height: 24px;
     font-weight: 600;
@@ -960,23 +967,23 @@ body {
     background-color: #ea3939;
     color: #ffffff;
   }
-  &-pay {
-    display: inline-block;
-    vertical-align: top;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    // padding-right: 35px;
-    padding-left: 35px;
-    &-first_price {
-      font-size: 13px;
-    }
-  }
+  // &-pay {
+  //   display: inline-block;
+  //   vertical-align: top;
+  //   padding-top: 40px;
+  //   padding-bottom: 40px;
+  //   // padding-right: 35px;
+  //   padding-left: 35px;
+  //   &-first_price {
+  //     font-size: 13px;
+  //   }
+  // }
   &-description {
     display: inline-block;
+    width: 26%;
     vertical-align: top;
     padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 35px;
+    padding-left: 30px;
     padding-bottom: 20px;
     &-title {
       padding-bottom: 5px;
@@ -996,7 +1003,7 @@ body {
       }
     }
     &-btn {
-      width: 100%;
+      width: 86%;
       height: 52px;
       margin-top: 7px;
       line-height: 52px;
@@ -1277,22 +1284,8 @@ body {
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
-<<<<<<< HEAD
         &:hover {
           background: url(../images/icons/cart-header.svg);
-=======
-        position: relative;
-        .cart-counter {
-          height: 10px;
-          width: 10px;
-          font-size: rem(6px);
-          line-height: 10px;
-          top: -2px;
-          left: 18px;
-        }
-        &:hover {
-          background: url(../images/icons/cart-nav-gover.svg);
->>>>>>> 921df99a6772d9d957a7c2ab01cc241af61459cf
           background-size: cover;
           background-position: center center;
           background-repeat: no-repeat;
@@ -1569,7 +1562,6 @@ body {
 // end news-page.html
 
 // УДАЛИТЬ!
-<<<<<<< HEAD
 
 .pages {
   margin: 0 auto;
@@ -1622,5 +1614,3 @@ body {
 }
 
 // END catalog-list2.html
-=======
->>>>>>> 921df99a6772d9d957a7c2ab01cc241af61459cf
