@@ -33,6 +33,7 @@ $html-font-size: 16px;
     &-title {
       color: $colorSilver;
       padding-bottom: 45px;
+      font-weight: 600;
     }
     ul {
       padding-bottom: 20px;
@@ -130,7 +131,23 @@ $html-font-size: 16px;
   &-bottom {
     padding-top: 35px;
     margin-bottom: 45px;
-
+    &-farba {
+      display: block;
+      font-size: rem(13px);
+      a {
+        display: inline-block;
+      }
+      img {
+        display: inline-block;
+        position: relative;
+        bottom: -5px;
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
     &-txt:first-child {
       padding-top: 22px;
       padding-bottom: 15px;
@@ -210,9 +227,15 @@ $html-font-size: 16px;
         padding-top: 30px;
         text-align: center;
         img {
-          margin: 0 auto;
-          display: block;
+          // margin: 0 auto;
+          // display: block;
           padding-top: 30px;
+        }
+      }
+      &-img {
+        img {
+          display: block;
+          width: 60%;
         }
       }
     }

@@ -335,6 +335,11 @@
 
   // news-page.html
   .article {
+    &-title {
+      &-h1 {
+        font-size: rem(20px);
+      }
+    }
     p:nth-of-type(7) {
       padding-bottom: 40px;
     }
@@ -362,7 +367,11 @@
     padding-bottom: 64px;
   }
 }
-
+@media (max-width: 838px) {
+  .catalog-description-price {
+    font-size: rem(28px);
+  }
+}
 @media (max-width: 768px) {
   //Global
   // Headaer
@@ -399,6 +408,8 @@
       &-img {
         width: 100%;
         padding-bottom: 0;
+        padding-right: 8px;
+        padding-left: 8px;
         text-align: center;
       }
       &-description {
@@ -406,13 +417,14 @@
         border-right: none;
         padding-top: 20px;
         padding-bottom: 0;
-        .dots {
-          display: none;
-        }
+        padding-right: 8px;
+        padding-left: 8px;
       }
     }
     &-description {
       width: 100%;
+      padding-right: 10px;
+      padding-left: 10px;
       &-first_price {
         display: inline-block;
         padding-right: 10px;
@@ -427,7 +439,8 @@
       }
       &-btn {
         display: inline-block;
-        flex: 0 0 60%;
+        width: calc(100% - 104px);
+        // flex: 0 0 60%;
         height: 40px;
         line-height: 40px;
         font-size: rem(11px);
@@ -472,6 +485,16 @@
       }
     }
   }
+  // .catalog-item-description table tr td {
+  //   display: block;
+  // }
+  // .catalog-item-description .dots {
+  //   display: block;
+  //   bottom: 0;
+  //   border-bottom: none;
+  //   border-bottom-style: none;
+  //   border-color: #ffffff00;
+  // }
   // Footer
 }
 
@@ -596,7 +619,22 @@
     }
   }
 }
-
+@media (max-width: 420px) {
+  .news {
+    &-card {
+      display: block;
+      margin-bottom: 60px;
+      &-txt {
+        padding-bottom: 30px;
+      }
+      &-img {
+        display: block;
+        padding-bottom: 20px;
+        margin-right: 0;
+      }
+    }
+  }
+}
 @media (max-width: 400px) {
   .catalog {
     margin-bottom: 40px;
@@ -641,17 +679,7 @@
   .info {
     display: none;
   }
-  .news {
-    &-card {
-      display: block;
 
-      &-img {
-        display: block;
-        margin-bottom: 20px;
-        margin-right: 0;
-      }
-    }
-  }
   // Main
 
   .categories-card-img {

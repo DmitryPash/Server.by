@@ -487,21 +487,7 @@ body {
         text-transform: uppercase;
         margin-bottom: 25px;
       }
-      .dots {
-        position: relative;
-        bottom: 3px;
-        border-bottom: 1px solid;
-        border-bottom-style: dotted;
-        border-color: #d6e3f2;
-        &-clear {
-          position: relative;
-          z-index: 1;
-          background: #ffffff;
-          display: inline-block;
-          bottom: -3px;
-          padding-right: 5px;
-        }
-      }
+
       table {
         width: 100%;
         font-size: rem(14px);
@@ -735,11 +721,15 @@ body {
       padding-bottom: 15px;
     }
     &-line {
-      padding-right: 5px;
-      padding-left: 5px;
+      display: inline-block;
+      width: 24px;
+      border-top: 1px solid black;
+      margin-right: 5px;
+      margin-left: 5px;
     }
     input {
-      width: 100px;
+      max-width: 100px;
+      width: calc(50% - 24px);
       height: 40px;
       padding-left: 10px;
     }
@@ -884,6 +874,8 @@ body {
         padding-right: 5px;
       }
       &-compare {
+        display: flex;
+        align-items: center;
         padding-right: 10px;
         font-weight: 600;
         font-size: 11px;
@@ -891,6 +883,9 @@ body {
         color: #6d829f;
         &:hover {
           text-decoration: underline;
+        }
+        img {
+          max-width: 100%;
         }
       }
     }
@@ -910,11 +905,12 @@ body {
       width: 45%;
       vertical-align: top;
       padding-top: 40px;
-      padding-bottom: 40px;
+      padding-bottom: 30px;
       padding-left: 30px;
       padding-right: 30px;
       border-right: 1px solid #d6e3f2;
-
+      &-in_stock {
+      }
       &-title {
         font-weight: bold;
         font-size: 18px;
@@ -949,6 +945,7 @@ body {
     padding-left: 9px;
     font-size: 11px;
     background-color: #ea3939;
+    text-transform: uppercase;
     color: #ffffff;
   }
   // &-pay {
@@ -1008,7 +1005,7 @@ body {
   background-color: #37ab00;
 }
 
-.articule {
+.catalog-item-description-number {
   display: inline-block;
   padding-right: 10px;
   font-weight: 600;
@@ -1017,7 +1014,7 @@ body {
   text-transform: uppercase;
   color: #6d829f;
 }
-.in_stock {
+.catalog-item-description-in_stock {
   img {
     padding-right: 5px;
   }
@@ -1340,6 +1337,11 @@ body {
       padding-bottom: 20px;
       font-size: rem(20px);
       font-weight: 600;
+      a {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
     &-txt {
       padding-bottom: 50px;
@@ -1415,13 +1417,6 @@ body {
       height: 48px;
       width: 48px;
       margin-right: 20px;
-      // margin-right: 20px;
-      // img {
-      //   margin-left: 8px;
-      // }
-      // img:first-child {
-      //   margin-left: 0;
-      // }
       .pagination-dots {
         content: "";
         position: absolute;
@@ -1545,24 +1540,23 @@ body {
 }
 // end news-page.html
 
-<<<<<<< HEAD
 // УДАЛИТЬ!
 
-.pages {
-  margin: 0 auto;
-  margin-bottom: 20px;
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  a {
-    color: $colorBlue;
-    margin-right: 10px;
-  }
-  a:hover {
-    color: $colorCyan;
-  }
-}
+// .pages {
+//   margin: 0 auto;
+//   margin-bottom: 20px;
+//   h2 {
+//     text-align: center;
+//     margin-bottom: 20px;
+//   }
+//   a {
+//     color: $colorBlue;
+//     margin-right: 10px;
+//   }
+//   a:hover {
+//     color: $colorCyan;
+//   }
+// }
 
 // START catalog-list2.html
 
@@ -1599,7 +1593,6 @@ body {
 }
 
 // END catalog-list2.html
-=======
 // Menu dekstop
 .container-menu {
   display: none;
@@ -1707,4 +1700,19 @@ body {
 .btnClick:hover ~ .menu-dekstop {
   display: block;
 }
->>>>>>> 6ab174baf06bdb3e10f29e3f51a03216c069487f
+
+.dots {
+  position: relative;
+  bottom: 3px;
+  border-bottom: 1px solid;
+  border-bottom-style: dotted;
+  border-color: #d6e3f2;
+  &-clear {
+    position: relative;
+    z-index: 1;
+    background: #ffffff;
+    display: inline-block;
+    bottom: -3px;
+    padding-right: 5px;
+  }
+}
