@@ -240,11 +240,13 @@ $html-font-size: 16px;
 .burger {
   display: none;
   position: absolute;
+  z-index: 999;
   content: "";
   width: 30px;
   height: 5px;
-  bottom: 100%;
-  left: 0;
+  top: 45px;
+  left: 2%;
+
   background: #d6e3f2;
   font-size: 0;
   padding: 0;
@@ -282,6 +284,7 @@ $html-font-size: 16px;
 
 .burger.active {
   background: none;
+  left: 89%;
 
   &::before {
     top: 0;

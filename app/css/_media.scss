@@ -91,10 +91,12 @@
 @media (max-width: 1250px) {
   //Global
   // Header
-
+  .menu-link {
+    font-size: rem(14px);
+  }
   .header .menu-btn {
     width: 52px;
-    a {
+    .btnClick {
       height: 36px;
       font-size: 0px;
     }
@@ -141,6 +143,26 @@
 
 @media (max-width: 992px) {
   //Global
+  .left-phone {
+    display: block;
+    position: absolute;
+    z-index: 999;
+    content: "";
+    width: 30px;
+    height: 5px;
+    top: 38px;
+    left: 2%;
+  }
+  .main-mobile-tel-active.active-display {
+    display: block;
+    position: absolute;
+    z-index: 999;
+    content: "";
+    width: 30px;
+    height: 5px;
+    top: 45px;
+    left: 2%;
+  }
   .middle {
     padding-top: 56px;
   }
@@ -196,6 +218,9 @@
   .header .main-logo img {
     max-height: 61px;
   }
+  .header .main-mobile-tel.active-display {
+    display: none;
+  }
   .banner-slider picture img {
     min-height: 0;
   }
@@ -228,6 +253,7 @@
     overflow-y: auto;
     z-index: 999;
     li > a {
+      position: relative;
       padding: 20px 17px;
       border-top: 1px solid #e5edf7;
     }
@@ -236,30 +262,43 @@
       color: $colorSilver;
       font-weight: 600;
     }
-    .main-arrow::after {
-      content: url(../images/icons/main-menu.svg);
-      transform: rotate(90deg);
+    .main-arrow {
+      display: inline-block;
       position: absolute;
-      right: 19px;
+      right: 17px;
+      top: 22px;
     }
-    .main-arrow.active::after {
-      content: url(../images/icons/main-menu.svg);
+    .second-arrow {
       position: absolute;
-      transform: rotate(0deg);
-      right: 19px;
+      right: 17px;
+      top: 18px;
     }
-    .second-arrow::after {
-      content: url(../images/icons/main-menu.svg);
-      transform: rotate(-90deg);
-      position: absolute;
-      right: 16px;
-    }
-    .second-arrow.active::after {
-      content: url(../images/icons/main-menu.svg);
-      transform: rotate(90deg);
-      position: absolute;
-      right: 19px;
-    }
+
+    // .main-arrow::after {
+    //   content: url(../images/icons/main-menu.svg);
+    //   transform: rotate(90deg);
+    //   position: absolute;
+    //   right: 19px;
+    // }
+
+    // .main-arrow.active::after {
+    //   content: url(../images/icons/main-menu.svg);
+    //   position: absolute;
+    //   transform: rotate(0deg);
+    //   right: 19px;
+    // }
+    // .second-arrow::after {
+    //   content: url(../images/icons/main-menu.svg);
+    //   transform: rotate(-90deg);
+    //   position: absolute;
+    //   right: 16px;
+    // }
+    // .second-arrow.active::after {
+    //   content: url(../images/icons/main-menu.svg);
+    //   transform: rotate(90deg);
+    //   position: absolute;
+    //   right: 19px;
+    // }
     .complect {
       border-top: 1px solid #e5edf7;
       padding: 20px 19px;
@@ -298,7 +337,9 @@
       }
     }
   }
-
+  .dropdown-submenu {
+    position: relative;
+  }
   .dropdown-menu {
     display: none;
   }
@@ -447,6 +488,10 @@
     img {
       max-height: 50px;
     }
+  }
+  .fotorama__nav-wrap,
+  .fotorama__arr {
+    display: none;
   }
   // Footer
 }
