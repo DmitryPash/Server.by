@@ -916,7 +916,7 @@ input:focus:-ms-input-placeholder {
   width: 30px;
   height: 5px;
   top: 45px;
-  left: 2%;
+  left: 19px;
   background: #d6e3f2;
   font-size: 0;
   padding: 0;
@@ -965,7 +965,7 @@ input:focus:-ms-input-placeholder {
 
 .burger.active {
   background: none;
-  left: 89%;
+  left: calc(100% - 50px);
 }
 
 .burger.active::before {
@@ -1281,6 +1281,8 @@ body {
 }
 
 .banner-slider picture img {
+  -o-object-fit: cover;
+  object-fit: cover;
   min-height: 400px;
 }
 
@@ -3033,6 +3035,7 @@ body {
 }
 
 .pages {
+  padding-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3326,6 +3329,10 @@ body {
     width: 50%;
   }
 
+  .header .main-search-catalog {
+    display: none;
+  }
+
   .banner-img {
     display: none;
   }
@@ -3451,7 +3458,7 @@ body {
   }
 
   .middle {
-    padding-top: 56px;
+    padding-top: 94px;
   }
 
   .header {
@@ -3546,7 +3553,8 @@ body {
   }
 
   .col-mobile-tel {
-    text-align: center;
+    text-align: end;
+    padding-right: 19px;
   }
 
   .menu {

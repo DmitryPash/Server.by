@@ -135,17 +135,14 @@ body {
       min-height: 400px;
     }
   }
-  // picture img {
-  //   margin: 0 auto;
-  // }
+
   &-slider {
     height: 100%;
-    // margin-bottom: 40px;
     picture {
       height: 400px;
       img {
+        object-fit: cover;
         min-height: 400px;
-        // max-width: 400px;
       }
     }
     &:hover {
@@ -192,7 +189,6 @@ body {
     }
 
     .slick-dots {
-      // display: flex;
       position: absolute;
       bottom: 5%;
       right: 0;
@@ -256,7 +252,6 @@ body {
 }
 .banner-img-mobile {
   display: none;
-  // background-color: #f5f5f6;
 }
 .offer {
   margin-bottom: 60px;
@@ -297,9 +292,6 @@ body {
 .sale {
   text-align: center;
   margin-bottom: 70px;
-  // &-img {
-  //   text-align: center;
-  // }
 }
 .hits {
   margin-bottom: 100px;
@@ -366,12 +358,6 @@ body {
     border: 1px solid #d6e3f2;
     padding: 17px;
 
-    .fotorama__stage {
-      // overflow: inherit;
-    }
-    // .fotorama__stage__shaft {
-    //   overflow: hidden;
-    // }
     .fotorama__wrap {
       margin: 0 auto;
     }
@@ -384,16 +370,11 @@ body {
       height: 32px;
       z-index: 99999;
       bottom: -100px;
-      // top: 115%;
       margin-top: -28px;
       background-color: black;
     }
     .fotorama__arr--prev {
       transform: rotate(180deg);
-      // left: -6%;
-    }
-    .fotorama__arr--next {
-      // right: -6%;
     }
     .fotorama__thumb {
       padding: 10px;
@@ -426,12 +407,7 @@ body {
         color: #6d829f;
       }
       &-icon {
-        // position: absolute;
-        // transform: translate(-50%, -50%);
-        // top: 50%;
-        // left: 0;
         display: inline-block;
-
         img {
           vertical-align: middle;
         }
@@ -677,7 +653,6 @@ body {
 .bolt {
   font-weight: 600;
 }
-// start catalogList
 
 .middle {
   &-title {
@@ -816,7 +791,6 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: $colorCyan;
-    // border-bottom: 1px dashed $colorCyan;
     text-decoration: underline;
     text-decoration-style: dotted;
 
@@ -923,7 +897,6 @@ body {
     vertical-align: top;
     padding-top: 40px;
     padding-bottom: 40px;
-    // padding-right: 35px;
     padding-left: 35px;
     &-first_price {
       font-size: 13px;
@@ -995,10 +968,7 @@ body {
   text-transform: uppercase;
   color: #37ab00;
 }
-// .pay {
-//   display: inline-block;
-//   vertical-align: top;
-// }
+
 .installments-catalog-list-mob {
   display: none;
 }
@@ -1048,7 +1018,6 @@ body {
       margin-bottom: 8px;
       position: relative;
       font-size: rem(14px);
-      // padding-left: 20px;
       &:hover {
         text-decoration: underline;
       }
@@ -1346,7 +1315,6 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    // text-align: center;
     padding-bottom: 100px;
     margin: 0 auto;
     a {
@@ -1391,13 +1359,6 @@ body {
       height: 48px;
       width: 48px;
       margin-right: 20px;
-      // margin-right: 20px;
-      // img {
-      //   margin-left: 8px;
-      // }
-      // img:first-child {
-      //   margin-left: 0;
-      // }
       .pagination-dots {
         content: "";
         position: absolute;
@@ -1461,7 +1422,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // padding: 24px 10px 24px 20px;
     height: 70px;
     padding-right: 10px;
     padding-left: 20px;
@@ -1532,8 +1492,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   background-color: #ffffff;
-  // overflow: hidden;
-  // overflow-y: auto;
   box-shadow: 0px 4px 20px #d6e3f2;
   padding-top: 50px;
 }
@@ -1559,7 +1517,6 @@ body {
     left: 300px;
     right: 0;
     font-size: 0;
-    // background-color: rgba(255, 0, 0, 0.219);
     .categories-card {
       background-color: #ffffff;
       border: 1px solid #d6e3f2;
@@ -1671,23 +1628,6 @@ body {
   display: block;
 }
 
-// .container-menu:hover {
-//   display: block;
-// }
-// .btnClick:hover ~ .container-menu {
-//   display: block;
-// }
-
-// .menu-desktop:hover {
-//   display: block;
-// }
-// .menu-desktop > li :hover .menu-desktop-second {
-//   display: block;
-// }
-
-// .btnClick:hover ~ .menu-desktop {
-//   display: block;
-// }
 // dots
 .dots {
   position: relative;
@@ -1707,6 +1647,7 @@ body {
 
 // Pages
 .pages {
+  padding-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;

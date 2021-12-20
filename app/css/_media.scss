@@ -127,6 +127,10 @@
   .menu-desktop-second > li {
     width: 50%;
   }
+  .header .main-search-catalog {
+    display: none;
+  }
+
   // Main
   .banner-img {
     display: none;
@@ -167,7 +171,7 @@
     left: 2%;
   }
   .middle {
-    padding-top: 56px;
+    padding-top: 94px;
   }
   // Header
   .header {
@@ -240,7 +244,8 @@
     display: block;
   }
   .col-mobile-tel {
-    text-align: center;
+    text-align: end;
+    padding-right: 19px;
   }
   .menu {
     display: none;
@@ -340,6 +345,7 @@
   .dropdown-menu {
     display: none;
   }
+
   // Main
 
   .categories-cards {
@@ -728,10 +734,6 @@
     display: block;
     margin-bottom: 40px;
   }
-  // .news-list-installments-mob {
-  //   display: block;
-  //   margin-bottom: 40px;
-  // }
   //Global
   // Header
   .header .main-logo {
