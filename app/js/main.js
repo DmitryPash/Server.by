@@ -2,11 +2,12 @@ $(document).ready(function () {
   // Click event
   $(".burgerclick").click(function () {
     $(".burgerclick").toggleClass("active");
+    $(".main-mobile-tel").toggleClass("active-display");
     $(".col-search").hide();
     $(".menu-mob").slideToggle(300);
   });
   // drop mobile menu
-  $(".dropdown-submenu a.menu-mob-link").on("click", function (e) {
+  $(".dropdown-submenu .clickArrow").on("click", function (e) {
     $(this).next("ul").toggle(300);
     $(this).toggleClass("active");
     e.stopPropagation();
@@ -101,7 +102,16 @@ $(document).ready(function () {
     thumbwidth: 120,
     thumbheight: 120,
     thumbmargin: 10,
+    width: "100%",
     arrows: "always",
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          nav: false,
+        },
+      },
+    ],
   });
 });
 
