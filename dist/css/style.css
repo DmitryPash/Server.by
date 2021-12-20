@@ -2736,6 +2736,7 @@ body {
   -ms-flex: 0 0 31%;
   flex: 0 0 31%;
   min-width: 120px;
+  cursor: pointer;
 }
 
 .news-card-title {
