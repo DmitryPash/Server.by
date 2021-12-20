@@ -1607,7 +1607,7 @@ body {
 // END catalog-list2.html
 // Menu dekstop
 .container-menu {
-  display: block;
+  display: none;
   position: absolute;
   z-index: 999;
   top: 53px;
@@ -1633,7 +1633,7 @@ body {
       margin: 0;
       vertical-align: top;
     }
-    display: block;
+    display: none;
     height: calc(100% - 120px);
     min-height: 350px;
     overflow-y: auto;
