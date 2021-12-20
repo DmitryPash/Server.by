@@ -4485,6 +4485,10 @@ body {
     margin-bottom: 40px;
   }
 
+  .middle {
+    padding-top: 117px;
+  }
+
   .header .main-logo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4609,9 +4613,5 @@ body {
 
   .product {
     margin-bottom: 40px;
-  }
-
-  .middle {
-    padding-top: 20px;
   }
 }
