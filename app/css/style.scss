@@ -1552,24 +1552,6 @@ body {
 }
 // end news-page.html
 
-// УДАЛИТЬ!
-
-// .pages {
-//   margin: 0 auto;
-//   margin-bottom: 20px;
-//   h2 {
-//     text-align: center;
-//     margin-bottom: 20px;
-//   }
-//   a {
-//     color: $colorBlue;
-//     margin-right: 10px;
-//   }
-//   a:hover {
-//     color: $colorCyan;
-//   }
-// }
-
 // START catalog-list2.html
 
 .links {
@@ -1763,7 +1745,6 @@ body {
   display: block;
 }
 
-
 // dots
 .dots {
   position: relative;
@@ -1780,79 +1761,99 @@ body {
     padding-right: 5px;
   }
 
-.menu-dekstop:hover {
-  display: block;
-}
-.menu-dekstop:hover .menu-dekstop-second {
-  display: inline-block;
+  .menu-dekstop:hover {
+    display: block;
+  }
+  .menu-dekstop:hover .menu-dekstop-second {
+    display: inline-block;
+  }
 
-}
+  .btnClick:hover ~ .menu-dekstop {
+    display: block;
+  }
 
-.btnClick:hover ~ .menu-dekstop {
-  display: block;
-}
-
-// .dots {
-//   position: relative;
-//   bottom: 3px;
-//   border-bottom: 1px dotted #d6e3f2;
-//   z-index: 2;
-//   &-clear {
-//     position: relative;
-//     z-index: 1;
-//     background: #ffffff;
-//     display: inline-block;
-//     padding-right: 5px;
-//     top: 2px;
-//   }
-// }
-.checkbox {
-  position: relative;
-  &-input {
-    display: none;
-    &:checked + .checkbox-label::before {
-      background-color: $colorBlue;
+  // .dots {
+  //   position: relative;
+  //   bottom: 3px;
+  //   border-bottom: 1px dotted #d6e3f2;
+  //   z-index: 2;
+  //   &-clear {
+  //     position: relative;
+  //     z-index: 1;
+  //     background: #ffffff;
+  //     display: inline-block;
+  //     padding-right: 5px;
+  //     top: 2px;
+  //   }
+  // }
+  .checkbox {
+    position: relative;
+    &-input {
+      display: none;
+      &:checked + .checkbox-label::before {
+        background-color: $colorBlue;
+      }
+      &:checked + .checkbox-label::after {
+        opacity: 1;
+      }
     }
-    &:checked + .checkbox-label::after {
-      opacity: 1;
+    &-label {
+      display: inline-block;
+      vertical-align: sub;
+      padding-left: 38px;
+      font-weight: 300;
+      cursor: pointer;
+      &::before {
+        content: "";
+        display: block;
+        width: 24px;
+        height: 24px;
+        border: 1px solid #2f3133;
+        background-color: #ffffff;
+        border-radius: 3px;
+        cursor: pointer;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+      &::after {
+        content: "";
+        display: block;
+        width: 24px;
+        height: 24px;
+
+        background: url("../images/icons/ch.svg") no-repeat;
+        background-size: 24px 24px;
+        opacity: 0;
+        cursor: pointer;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+      }
     }
   }
-  &-label {
-    display: inline-block;
-    vertical-align: sub;
-    padding-left: 38px;
-    font-weight: 300;
-    cursor: pointer;
-    &::before {
-      content: "";
-      display: block;
-      width: 24px;
-      height: 24px;
-      border: 1px solid #2f3133;
-      background-color: #ffffff;
-      border-radius: 3px;
-      cursor: pointer;
+}
 
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
-    }
-    &::after {
-      content: "";
-      display: block;
-      width: 24px;
-      height: 24px;
-
-      background: url("../images/icons/ch.svg") no-repeat;
-      background-size: 24px 24px;
-      opacity: 0;
-      cursor: pointer;
-
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 2;
-    }
+.pages {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  a {
+    color: $colorBlue;
+    margin-bottom: 10px;
+  }
+  a:hover {
+    color: $colorCyan;
   }
 }

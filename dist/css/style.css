@@ -3165,42 +3165,50 @@ body {
   display: block;
 }
 
-
 .dots {
   position: relative;
   bottom: 3px;
   border-color: #d6e3f2;
-
-.menu-dekstop:hover {
-  display: block;
-
 }
 
-.menu-dekstop:hover .menu-dekstop-second {
+.dots-clear {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  display: inline-block;
+  bottom: -3px;
+  padding-right: 5px;
+}
+
+.dots .menu-dekstop:hover {
+  display: block;
+}
+
+.dots .menu-dekstop:hover .menu-dekstop-second {
   display: inline-block;
 }
 
-.btnClick:hover ~ .menu-dekstop {
+.dots .btnClick:hover ~ .menu-dekstop {
   display: block;
 }
 
-.checkbox {
+.dots .checkbox {
   position: relative;
 }
 
-.checkbox-input {
+.dots .checkbox-input {
   display: none;
 }
 
-.checkbox-input:checked + .checkbox-label::before {
+.dots .checkbox-input:checked + .checkbox-label::before {
   background-color: #2963cb;
 }
 
-.checkbox-input:checked + .checkbox-label::after {
+.dots .checkbox-input:checked + .checkbox-label::after {
   opacity: 1;
 }
 
-.checkbox-label {
+.dots .checkbox-label {
   display: inline-block;
   vertical-align: sub;
   padding-left: 38px;
@@ -3208,7 +3216,7 @@ body {
   cursor: pointer;
 }
 
-.checkbox-label::before {
+.dots .checkbox-label::before {
   content: "";
   display: block;
   width: 24px;
@@ -3223,7 +3231,7 @@ body {
   z-index: 1;
 }
 
-.checkbox-label::after {
+.dots .checkbox-label::after {
   content: "";
   display: block;
   width: 24px;
@@ -3236,6 +3244,38 @@ body {
   top: 0;
   left: 0;
   z-index: 2;
+}
+
+.pages {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.pages h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pages a {
+  color: #2963cb;
+  margin-bottom: 10px;
+}
+
+.pages a:hover {
+  color: #398aea;
 }
 
 @media (max-width: 1330px) {
