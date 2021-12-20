@@ -3048,6 +3048,7 @@ body {
   -ms-flex: 0 0 33.33%;
   flex: 0 0 33.33%;
   max-width: 33.33%;
+  max-height: 110px;
   padding: 0px 15px 0px;
   margin: 0;
   vertical-align: top;
@@ -3057,7 +3058,6 @@ body {
   background-color: #ffffff;
   border: 1px solid #d6e3f2;
   width: 100%;
-  max-height: 110px;
   min-height: calc(100% - 26px);
   margin-bottom: 26px;
   border-radius: 4px;
