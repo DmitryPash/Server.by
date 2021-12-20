@@ -3165,8 +3165,15 @@ body {
   display: block;
 }
 
+
+.dots {
+  position: relative;
+  bottom: 3px;
+  border-color: #d6e3f2;
+
 .menu-dekstop:hover {
   display: block;
+
 }
 
 .menu-dekstop:hover .menu-dekstop-second {

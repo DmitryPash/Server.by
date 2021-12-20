@@ -1763,11 +1763,29 @@ body {
   display: block;
 }
 
+
+// dots
+.dots {
+  position: relative;
+  bottom: 3px;
+  // border-bottom: 1px solid;
+  // border-bottom-style: dotted;
+  border-color: #d6e3f2;
+  &-clear {
+    position: relative;
+    z-index: 1;
+    background: #ffffff;
+    display: inline-block;
+    bottom: -3px;
+    padding-right: 5px;
+  }
+
 .menu-dekstop:hover {
   display: block;
 }
 .menu-dekstop:hover .menu-dekstop-second {
   display: inline-block;
+
 }
 
 .btnClick:hover ~ .menu-dekstop {
