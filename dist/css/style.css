@@ -910,7 +910,7 @@ input:focus:-ms-input-placeholder {
 
 .burger {
   display: none;
-  position: absolute;
+  position: fixed;
   z-index: 999;
   content: "";
   width: 30px;
@@ -2881,13 +2881,13 @@ body {
   padding-top: 50px;
 }
 
-.menu-dekstop {
+.menu-desktop {
   display: block;
   background-color: #ffffff;
   position: relative;
 }
 
-.menu-dekstop-second {
+.menu-desktop-second {
   display: none;
   height: calc(100% - 120px);
   min-height: 350px;
@@ -2900,7 +2900,7 @@ body {
   font-size: 0;
 }
 
-.menu-dekstop-second > li {
+.menu-desktop-second > li {
   display: inline-block;
   width: 33.33%;
   padding: 0px 15px 30px;
@@ -2908,7 +2908,7 @@ body {
   vertical-align: top;
 }
 
-.menu-dekstop-second .categories-card {
+.menu-desktop-second .categories-card {
   background-color: #ffffff;
   border: 1px solid #d6e3f2;
   width: 100%;
@@ -2920,7 +2920,7 @@ body {
   box-shadow: none;
 }
 
-.menu-dekstop-second .categories-card-img {
+.menu-desktop-second .categories-card-img {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 60px;
   flex: 0 0 60px;
@@ -2928,27 +2928,31 @@ body {
   height: 39px;
 }
 
-.menu-dekstop-second .categories-card-text-title {
+.menu-desktop-second .categories-card-text-title {
   text-align: start;
 }
 
-.menu-dekstop-second .categories-card-text-price {
+.menu-desktop-second .categories-card-text-price {
   text-align: start;
 }
 
-.menu-dekstop > li {
+.menu-desktop > li {
   display: block;
   width: 300px;
 }
 
-.menu-dekstop-second::-webkit-scrollbar {
+.menu-desktop > li:last-child {
+  border-bottom: 1px solid #d6e3f2;
+}
+
+.menu-desktop-second::-webkit-scrollbar {
   width: 9px;
   background-color: transparent;
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(33.3%, rgba(255, 255, 255, 0)), color-stop(33.3%, #d6e3f2), color-stop(66.6%, #d6e3f2), color-stop(66.6%, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 33.3%, #d6e3f2 33.3%, #d6e3f2 66.6%, rgba(255, 255, 255, 0) 66.6%, rgba(255, 255, 255, 0) 100%);
 }
 
-.menu-dekstop-second::-webkit-scrollbar-thumb {
+.menu-desktop-second::-webkit-scrollbar-thumb {
   width: 8px;
   background: linear-gradient(104.95deg, #398aea 6.14%, #39a3ea 28.14%, #39c0ea 46.71%, #39c0ea 65.29%, #27a6dd 82.4%, #398aea 100%);
   border-radius: 4px;
@@ -2991,7 +2995,7 @@ body {
   display: block;
 }
 
-.menu-dekstop-second:hover + .menu-banner {
+.menu-desktop-second:hover + .menu-banner {
   display: block;
 }
 
@@ -3007,7 +3011,7 @@ body {
   display: block;
 }
 
-.menu-dekstop > li:hover .menu-dekstop-second {
+.menu-desktop > li:hover .menu-desktop-second {
   display: block;
 }
 
@@ -3318,6 +3322,10 @@ body {
     margin: 0 auto;
   }
 
+  .menu-desktop-second > li {
+    width: 50%;
+  }
+
   .banner-img {
     display: none;
   }
@@ -3422,7 +3430,7 @@ body {
 
   .left-phone {
     display: block;
-    position: absolute;
+    position: fixed;
     z-index: 999;
     content: "";
     width: 30px;
@@ -3555,6 +3563,7 @@ body {
     max-height: calc(100vh - 162px);
     overflow-y: auto;
     z-index: 999;
+    overflow-x: hidden;
   }
 
   .menu-mob li > a {
@@ -3570,16 +3579,52 @@ body {
   }
 
   .menu-mob .main-arrow {
-    display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     position: absolute;
-    right: 17px;
-    top: 22px;
+    right: 0px;
+    width: 40px;
+    top: 0px;
+    height: 60px;
   }
 
   .menu-mob .second-arrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     position: absolute;
-    right: 17px;
-    top: 18px;
+    right: 0px;
+    width: 40px;
+    top: 0px;
+    height: 49px;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  .menu-mob .main-arrow.active {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  .menu-mob .second-arrow.active {
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
   }
 
   .menu-mob .complect {
