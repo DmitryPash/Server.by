@@ -2905,7 +2905,7 @@ body {
 .menu-desktop-second > li {
   display: inline-block;
   width: 33.33%;
-  padding: 0px 15px 30px;
+  padding: 0px 15px 0px;
   margin: 0;
   vertical-align: top;
 }
@@ -3433,6 +3433,10 @@ body {
     -webkit-box-flex: 0;
     flex: 0 0 100%;
     max-width: 100%;
+  }
+
+  .middle {
+    padding-top: 118px;
   }
 
   .left-phone {
