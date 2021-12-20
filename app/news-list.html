@@ -1,251 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Server.by</title>
-    <meta name="keywords" content="Server.by" />
-    <meta name="description" content="Server.by" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="format-detection" content="telephone=no" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <div class="wrapper" id="wrapper">
-      @@include('inc-header.html')
-      <div class="middle" id="middle">
-        <div class="container">
-          <div class="page-breadcrumbs">
-            <a href="#">Главная</a><i>/</i> <a href="#">Ноутбуки</a><i>/</i>
-          </div>
-          <div class="middle-title-h1">Новости</div>
-          <div class="row">
-            <div class="col-filter-22 col-md-12">
-              <div class="info">
-                <div class="info-block">
-                  <div class="info-title">О компании</div>
-                  <ul>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Контакты</a></li>
-                  </ul>
-                </div>
-                <div class="info-block">
-                  <div class="info-title">Доставка и оплата</div>
-                  <ul>
-                    <li><a href="#">График доставки</a></li>
-                    <li><a href="#">Оплата банковскими карточками</a></li>
-                    <li><a href="#">Безналичный расчет</a></li>
-                    <li><a href="#">Покупка в кредит</a></li>
-                    <li><a href="#">Договор</a></li>
-                  </ul>
-                </div>
-                <div class="info-block">
-                  <div class="info-title">Сервисное обслуживание</div>
-                  <ul>
-                    <li><a href="#">Гарантия</a></li>
-                    <li><a href="#">Не гарантийный ремонт</a></li>
-                  </ul>
-                </div>
-                <div class="info-block">
-                  <div class="info-title">Полезно знать</div>
-                  <ul>
-                    <li><a href="#">Статьи</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Обзоры и тесты</a></li>
-                  </ul>
-                </div>
-                <div class="info-block">
-                  <div class="info-title">Помощь покупателю</div>
-                  <ul>
-                    <li><a href="#">Как купить</a></li>
-                    <li><a href="#">Программа лояльности</a></li>
-                    <li><a href="#">Система скидок</a></li>
-                  </ul>
-                </div>
+<head>
+  <meta charset="utf-8" />
+  <title>Server.by</title>
+  <meta name="keywords" content="Server.by" />
+  <meta name="description" content="Server.by" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="wrapper" id="wrapper">
+    @@include('inc-header.html')
+    <div class="middle" id="middle">
+      <div class="container">
+        <div class="page-breadcrumbs">
+          <a href="#">Главная</a><i>/</i> <a href="#">Ноутбуки</a><i>/</i>
+        </div>
+        <div class="middle-title-h1">Новости</div>
+        <div class="row">
+          <div class="col-filter-22 col-md-12">
+            <div class="info">
+              <div class="info-block">
+                <div class="info-title">О компании</div>
+                <ul>
+                  <li><a href="#">О нас</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
               </div>
-              <div class="installments news-list-installments">
-                <div class="installments-img">
-                  <img src="./images/icons/data-pay.png" alt="alt" />
-                </div>
-                <a href="#" class="installments-info">В кредит до 8 месяцев</a>
-                <a href="#" class="installments-info"
-                  >В рассрочку до 12 месяцев</a
-                >
-                <a href="#" class="installments-more">Узнать больше</a>
-                <img src="./images/icons/Pay-cards.png" alt="alt" />
+              <div class="info-block">
+                <div class="info-title">Доставка и оплата</div>
+                <ul>
+                  <li><a href="#">График доставки</a></li>
+                  <li><a href="#">Оплата банковскими карточками</a></li>
+                  <li><a href="#">Безналичный расчет</a></li>
+                  <li><a href="#">Покупка в кредит</a></li>
+                  <li><a href="#">Договор</a></li>
+                </ul>
+              </div>
+              <div class="info-block">
+                <div class="info-title">Сервисное обслуживание</div>
+                <ul>
+                  <li><a href="#">Гарантия</a></li>
+                  <li><a href="#">Не гарантийный ремонт</a></li>
+                </ul>
+              </div>
+              <div class="info-block">
+                <div class="info-title">Полезно знать</div>
+                <ul>
+                  <li><a href="#">Статьи</a></li>
+                  <li><a href="#">Новости</a></li>
+                  <li><a href="#">Обзоры и тесты</a></li>
+                </ul>
+              </div>
+              <div class="info-block">
+                <div class="info-title">Помощь покупателю</div>
+                <ul>
+                  <li><a href="#">Как купить</a></li>
+                  <li><a href="#">Программа лояльности</a></li>
+                  <li><a href="#">Система скидок</a></li>
+                </ul>
               </div>
             </div>
-            <div class="col-filter-78 col-md-12">
-              <div class="news">
-                <div class="news-card">
-                  <div class="news-card-img">
-                    <a href="#"><img src="./images/news_1.png" alt="alt" /></a>
+            <div class="installments news-list-installments">
+              <div class="installments-img">
+                <img src="./images/icons/data-pay.png" alt="alt" />
+              </div>
+              <a href="#" class="installments-info">В кредит до 8 месяцев</a>
+              <a href="#" class="installments-info">В рассрочку до 12 месяцев</a>
+              <a href="#" class="installments-more">Узнать больше</a>
+              <img src="./images/icons/Pay-cards.png" alt="alt" />
+            </div>
+          </div>
+          <div class="col-filter-78 col-md-12">
+            <div class="news">
+              <div class="news-card">
+                <a class="news-card-img">
+                  <img src="./images/news_1.png" alt="alt" />
+                </a>
+                <div class="news-card-description">
+                  <a href="#" class="news-card-title">
+                    «ОЗУ не менее 6 ГБ». Советы по выбору смартфона от
+                    экспертов
+                  </a>
+                  <div class="news-card-txt">
+                    При выборе нового смартфона покупатель часто сталкивается
+                    с множеством технических параметров, которые усложняют
+                    подбор нужного устройства. О том, на что стоит обратить
+                    внимание при покупке мобильного гаджета, — в материале
+                    «Server.by»
                   </div>
-                  <div class="news-card-description">
-                    <div class="news-card-title">
-                      <a href="#"
-                        >«ОЗУ не менее 6 ГБ». Советы по выбору смартфона от
-                        экспертов</a
-                      >
-                    </div>
-                    <div class="news-card-txt">
-                      При выборе нового смартфона покупатель часто сталкивается
-                      с множеством технических параметров, которые усложняют
-                      подбор нужного устройства. О том, на что стоит обратить
-                      внимание при покупке мобильного гаджета, — в материале
-                      «Server.by»
-                    </div>
-                    <a href="#" class="news-card-more">Подробнее</a>
-                    <div class="news-card-data">13 ноября 2021</div>
-                  </div>
-                </div>
-                <div class="news-card">
-                  <div class="news-card-img">
-                    <img src="./images/news_1.png" alt="alt" />
-                  </div>
-                  <div class="news-card-description">
-                    <div class="news-card-title">
-                      «ОЗУ не менее 6 ГБ». Советы по выбору смартфона от
-                      экспертов
-                    </div>
-                    <div class="news-card-txt">
-                      При выборе нового смартфона покупатель часто сталкивается
-                      с множеством технических параметров, которые усложняют
-                      подбор нужного устройства. О том, на что стоит обратить
-                      внимание при покупке мобильного гаджета, — в материале
-                      «Server.by»
-                    </div>
-                    <a href="#" class="news-card-more">Подробнее</a>
-                    <div class="news-card-data">13 ноября 2021</div>
-                  </div>
-                </div>
-                <div class="news-card">
-                  <div class="news-card-img">
-                    <img src="./images/news_1.png" alt="alt" />
-                  </div>
-
-                  <div class="news-card-description">
-                    <div class="news-card-title">
-                      «ОЗУ не менее 6 ГБ». Советы по выбору смартфона от
-                      экспертов
-                    </div>
-                    <div class="news-card-txt">
-                      При выборе нового смартфона покупатель часто сталкивается
-                      с множеством технических параметров, которые усложняют
-                      подбор нужного устройства. О том, на что стоит обратить
-                      внимание при покупке мобильного гаджета, — в материале
-                      «Server.by»
-                    </div>
-                    <a href="#" class="news-card-more">Подробнее</a>
-                    <div class="news-card-data">13 ноября 2021</div>
-                  </div>
-                </div>
-                <div class="news-card">
-                  <div class="news-card-img">
-                    <img src="./images/news_1.png" alt="alt" />
-                  </div>
-                  <div class="news-card-description">
-                    <div class="news-card-title">
-                      «ОЗУ не менее 6 ГБ». Советы по выбору смартфона от
-                      экспертов
-                    </div>
-                    <div class="news-card-txt">
-                      При выборе нового смартфона покупатель часто сталкивается
-                      с множеством технических параметров, которые усложняют
-                      подбор нужного устройства. О том, на что стоит обратить
-                      внимание при покупке мобильного гаджета, — в материале
-                      «Server.by»
-                    </div>
-                    <a href="#" class="news-card-more">Подробнее</a>
-                    <div class="news-card-data">13 ноября 2021</div>
-                  </div>
-                </div>
-                <div class="news-card">
-                  <div class="news-card-img">
-                    <img src="./images/news_1.png" alt="alt" />
-                  </div>
-                  <div class="news-card-description">
-                    <div class="news-card-title">
-                      «ОЗУ не менее 6 ГБ». Советы по выбору смартфона от
-                      экспертов
-                    </div>
-                    <div class="news-card-txt">
-                      При выборе нового смартфона покупатель часто сталкивается
-                      с множеством технических параметров, которые усложняют
-                      подбор нужного устройства. О том, на что стоит обратить
-                      внимание при покупке мобильного гаджета, — в материале
-                      «Server.by»
-                    </div>
-                    <a href="#" class="news-card-more">Подробнее</a>
-                    <div class="news-card-data">13 ноября 2021</div>
-                  </div>
+                  <a href="#" class="news-card-more">Подробнее</a>
+                  <div class="news-card-data">13 ноября 2021</div>
                 </div>
               </div>
-              <a href="#" class="news-pagination-btn">Показать ещё 24</a>
-              <div class="news-pagination">
-                <img src="./images/icons/pagination-left.png" alt="alt" />
-                <span class="news-pagination-first">1</span>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">6</a>
-                <a href="#">7</a>
-                <a href="#">8</a>
-                <span class="news-pagination-dots">
-                  <div class="pagination-dots"></div>
-                </span>
-                <a href="#">12</a>
-                <a href="#">13</a>
-                <a href="#">14</a>
-                <img src="./images/icons/pagination-right.png" alt="alt" />
-              </div>
-              <div class="sale">
-                <div class="sale-img">
-                  <picture>
-                    <source
-                      media="(max-width: 399px)"
-                      srcset="./images/icons/sale50.svg"
-                    />
-                    <source
-                      media="(max-width: 799px)"
-                      srcset="./images/examples/sale-banner.png"
-                    />
-                    <img src="./images/examples/sale-banner.png" alt="alt" />
-                  </picture>
+              <div class="news-card">
+                <a class="news-card-img">
+                  <img src="./images/news_1.png" alt="alt" />
+                </a>
+                <div class="news-card-description">
+                  <a href="#" class="news-card-title">
+                    «ОЗУ не менее 6 ГБ». Советы по выбору смартфона от
+                    экспертов
+                  </a>
+                  <div class="news-card-txt">
+                    При выборе нового смартфона покупатель часто сталкивается
+                    с множеством технических параметров, которые усложняют
+                    подбор нужного устройства. О том, на что стоит обратить
+                    внимание при покупке мобильного гаджета, — в материале
+                    «Server.by»
+                  </div>
+                  <a href="#" class="news-card-more">Подробнее</a>
+                  <div class="news-card-data">13 ноября 2021</div>
                 </div>
+              </div>
+              <div class="news-card">
+                <a class="news-card-img">
+                  <img src="./images/news_1.png" alt="alt" />
+                </a>
+                <div class="news-card-description">
+                  <a href="#" class="news-card-title">
+                    «ОЗУ не менее 6 ГБ». Советы по выбору смартфона от
+                    экспертов
+                  </a>
+                  <div class="news-card-txt">
+                    При выборе нового смартфона покупатель часто сталкивается
+                    с множеством технических параметров, которые усложняют
+                    подбор нужного устройства. О том, на что стоит обратить
+                    внимание при покупке мобильного гаджета, — в материале
+                    «Server.by»
+                  </div>
+                  <a href="#" class="news-card-more">Подробнее</a>
+                  <div class="news-card-data">13 ноября 2021</div>
+                </div>
+              </div>
+              <div class="news-card">
+                <a class="news-card-img">
+                  <img src="./images/news_1.png" alt="alt" />
+                </a>
+                <div class="news-card-description">
+                  <a href="#" class="news-card-title">
+                    «ОЗУ не менее 6 ГБ». Советы по выбору смартфона от
+                    экспертов
+                  </a>
+                  <div class="news-card-txt">
+                    При выборе нового смартфона покупатель часто сталкивается
+                    с множеством технических параметров, которые усложняют
+                    подбор нужного устройства. О том, на что стоит обратить
+                    внимание при покупке мобильного гаджета, — в материале
+                    «Server.by»
+                  </div>
+                  <a href="#" class="news-card-more">Подробнее</a>
+                  <div class="news-card-data">13 ноября 2021</div>
+                </div>
+              </div>
+              <div class="news-card">
+                <a class="news-card-img">
+                  <img src="./images/news_1.png" alt="alt" />
+                </a>
+                <div class="news-card-description">
+                  <a href="#" class="news-card-title">
+                    «ОЗУ не менее 6 ГБ». Советы по выбору смартфона от
+                    экспертов
+                  </a>
+                  <div class="news-card-txt">
+                    При выборе нового смартфона покупатель часто сталкивается
+                    с множеством технических параметров, которые усложняют
+                    подбор нужного устройства. О том, на что стоит обратить
+                    внимание при покупке мобильного гаджета, — в материале
+                    «Server.by»
+                  </div>
+                  <a href="#" class="news-card-more">Подробнее</a>
+                  <div class="news-card-data">13 ноября 2021</div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="news-pagination-btn">Показать ещё 24</a>
+            <div class="news-pagination">
+              <img src="./images/icons/pagination-left.png" alt="alt" />
+              <span class="news-pagination-first">1</span>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">6</a>
+              <a href="#">7</a>
+              <a href="#">8</a>
+              <span class="news-pagination-dots">
+                <div class="pagination-dots"></div>
+              </span>
+              <a href="#">12</a>
+              <a href="#">13</a>
+              <a href="#">14</a>
+              <img src="./images/icons/pagination-right.png" alt="alt" />
+            </div>
+            <div class="sale">
+              <div class="sale-img">
+                <picture>
+                  <source media="(max-width: 399px)" srcset="./images/icons/sale50.svg" />
+                  <source media="(max-width: 799px)" srcset="./images/examples/sale-banner.png" />
+                  <img src="./images/examples/sale-banner.png" alt="alt" />
+                </picture>
               </div>
             </div>
           </div>
         </div>
-
-        @@include('inc-footer.html')
       </div>
+
+      @@include('inc-footer.html')
     </div>
-    @@include('mobile-nav.html')
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <script src="./js/main.js"></script>
-  </body>
+  </div>
+  @@include('mobile-nav.html')
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
 </html>

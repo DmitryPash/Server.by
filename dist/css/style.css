@@ -1305,7 +1305,8 @@ body {
 }
 
 .banner-img img {
-  min-height: 400px;
+  max-height: 400px;
+  width: 100%;
 }
 
 .banner-slider {
@@ -2738,7 +2739,8 @@ body {
 }
 
 .news-card-title {
-  padding-bottom: 20px;
+  display: block;
+  margin-bottom: 20px;
   font-size: 1.25rem;
   font-weight: 600;
 }
@@ -3028,19 +3030,22 @@ body {
   min-height: 505px;
 }
 
-.menu-desktop-second {
-  display: none;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+.menu-desktop-ul {
+  position: absolute;
   height: 505px;
   min-height: 100%;
   overflow-y: auto;
   padding-left: 63px;
-  position: absolute;
   top: 0;
   left: 300px;
   right: 0;
   font-size: 0;
+}
+
+.menu-desktop-second {
+  display: none;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .menu-desktop-second > li {
@@ -3048,7 +3053,6 @@ body {
   -ms-flex: 0 0 33.33%;
   flex: 0 0 33.33%;
   max-width: 33.33%;
-  max-height: 110px;
   padding: 0px 15px 0px;
   margin: 0;
   vertical-align: top;
@@ -3120,7 +3124,7 @@ body {
 
 .menu-link-img {
   position: absolute;
-  right: 0;
+  right: 6px;
   top: 18px;
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
@@ -3138,6 +3142,15 @@ body {
 }
 
 .menu-banner {
+  display: block;
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.menu-banner img {
+  margin: 0 auto;
   display: block;
 }
 
@@ -3779,6 +3792,8 @@ body {
     overflow-y: auto;
     z-index: 999;
     overflow-x: hidden;
+    -webkit-box-shadow: 0px 12px 20px #d6e3f2;
+    box-shadow: 0px 12px 20px #d6e3f2;
   }
 
   .menu-mob li > a {
@@ -4533,10 +4548,6 @@ body {
   }
 
   .footer-middle {
-    padding-left: 15px;
-  }
-
-  .footer-top {
     padding-left: 15px;
   }
 
