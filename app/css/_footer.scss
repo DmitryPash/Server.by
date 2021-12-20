@@ -33,6 +33,7 @@ $html-font-size: 16px;
     &-title {
       color: $colorSilver;
       padding-bottom: 45px;
+      font-weight: 600;
     }
     ul {
       padding-bottom: 20px;
@@ -64,6 +65,8 @@ $html-font-size: 16px;
     border-top: 1px solid #dae7f9;
     &-icons {
       a {
+        display: inline-block;
+        vertical-align: middle;
         padding-right: 7px;
       }
     }
@@ -128,7 +131,23 @@ $html-font-size: 16px;
   &-bottom {
     padding-top: 35px;
     margin-bottom: 45px;
-
+    &-farba {
+      display: block;
+      font-size: rem(13px);
+      white-space: nowrap;
+      a {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      img {
+        display: inline-block;
+        position: relative;
+        bottom: -5px;
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+    }
     &-txt:first-child {
       padding-top: 22px;
       padding-bottom: 15px;
@@ -167,6 +186,10 @@ $html-font-size: 16px;
       font-size: rem(11px);
       color: #398aea;
       border: 1px solid #d6e3f2;
+      text-transform: uppercase;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
       &:hover {
         color: $colorWhite;
         background-color: #398aea;
@@ -207,9 +230,15 @@ $html-font-size: 16px;
         padding-top: 30px;
         text-align: center;
         img {
-          margin: 0 auto;
-          display: block;
+          // margin: 0 auto;
+          // display: block;
           padding-top: 30px;
+        }
+      }
+      &-img {
+        img {
+          display: block;
+          width: 60%;
         }
       }
     }

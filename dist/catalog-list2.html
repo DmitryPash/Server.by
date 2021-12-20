@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Server.by</title>
@@ -27,6 +27,7 @@
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/filter.js"></script>
   </head>
 
   <body>
@@ -49,7 +50,6 @@
             <ul class="menu-desktop">
               <li>
                 <a href="#" class="menu-link">Компьютерная техника
-                  <div class="menu-link-img"><img src="./images/icons/main-menu.svg" alt=""></div>
                   <div class="sub-info">более 120 товаров</div>
                 </a>
                 <ul class="menu-desktop-second">
@@ -75,124 +75,111 @@
                       </div>
                     </a>
                   </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <a href="#" class="menu-banner">
-                    <img src="./images/examples/mobile-sale-bannew.png" alt="">
-                  </a>
                 </ul>
+                <a href="#" class="menu-banner">
+                  <img src="./images/examples/mobile-sale-bannew.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#" class="menu-link">Оргтехника
+                  <div class="sub-info">более 295 товаров</div>
+                </a>
+                <ul class="menu-desktop-second">
+                  <li>
+                    <a href="#" class="categories-card flex valign-center">
+                      <div class="categories-card-img">
+                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
+                      </div>
+                      <div class="categories-card-text">
+                        <div class="categories-card-text-title">qwdqwd</div>
+                        <div class="categories-card-text-price">qwdqwdqwdqwd</div>
+                      </div>
+                    </a>
+                  </li>
+
+                </ul>
+                <a href="#" class="menu-banner">
+                  <img src="./images/examples/mobile-sale-bannew.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#" class="menu-link">Портативная электроника
+                  <div class="sub-info">более 350 товаров</div>
+                </a>
+                <ul class="menu-desktop-second">
+                  <li>
+                    <a href="#" class="categories-card flex valign-center">
+                      <div class="categories-card-img">
+                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
+                      </div>
+                      <div class="categories-card-text">
+                        <div class="categories-card-text-title">Ноутбуки</div>
+                        <div class="categories-card-text-price">от 1200 РУБ.</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="categories-card flex valign-center">
+                      <div class="categories-card-img">
+                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
+                      </div>
+                      <div class="categories-card-text">
+                        <div class="categories-card-text-title">Ноутбуки</div>
+                        <div class="categories-card-text-price">от 1200 РУБ.</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="categories-card flex valign-center">
+                      <div class="categories-card-img">
+                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
+                      </div>
+                      <div class="categories-card-text">
+                        <div class="categories-card-text-title">Ноутбуки</div>
+                        <div class="categories-card-text-price">от 1200 РУБ.</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="categories-card flex valign-center">
+                      <div class="categories-card-img">
+                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
+                      </div>
+                      <div class="categories-card-text">
+                        <div class="categories-card-text-title">Ноутбуки</div>
+                        <div class="categories-card-text-price">от 1200 РУБ.</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="categories-card flex valign-center">
+                      <div class="categories-card-img">
+                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
+                      </div>
+                      <div class="categories-card-text">
+                        <div class="categories-card-text-title">Ноутбуки</div>
+                        <div class="categories-card-text-price">от 1200 РУБ.</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="categories-card flex valign-center">
+                      <div class="categories-card-img">
+                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
+                      </div>
+                      <div class="categories-card-text">
+                        <div class="categories-card-text-title">Ноутбуки</div>
+                        <div class="categories-card-text-price">от 1200 РУБ.</div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="menu-banner">
+                  <img src="./images/examples/mobile-sale-bannew.png" alt="">
+                </a>
               </li>
               <li>
                 <a href="#" class="menu-link">Компьютерная техника
-                  <div class="menu-link-img"><img src="./images/icons/main-menu.svg" alt=""></div>
                   <div class="sub-info">более 120 товаров</div>
                 </a>
                 <ul class="menu-desktop-second">
@@ -202,7 +189,7 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
@@ -213,7 +200,7 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
@@ -224,7 +211,7 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
@@ -235,7 +222,7 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
@@ -246,7 +233,7 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
@@ -257,7 +244,7 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
@@ -268,7 +255,7 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
@@ -279,7 +266,7 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
@@ -290,7 +277,7 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
@@ -301,7 +288,7 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
@@ -312,7 +299,7 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
@@ -323,20 +310,217 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
                   </li>
-                  <a href="#" class="menu-banner">
-                    <img src="./images/examples/mobile-sale-bannew.png" alt="">
-                  </a>
+                  <li>
+                    <a href="#" class="categories-card flex valign-center">
+                      <div class="categories-card-img">
+                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
+                      </div>
+                      <div class="categories-card-text">
+                        <div class="categories-card-text-title">Ноутбуки</div>
+                        <div class="categories-card-text-price">от 1200 РУБ.</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="categories-card flex valign-center">
+                      <div class="categories-card-img">
+                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
+                      </div>
+                      <div class="categories-card-text">
+                        <div class="categories-card-text-title">Ноутбуки</div>
+                        <div class="categories-card-text-price">от 1200 РУБ.</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="categories-card flex valign-center">
+                      <div class="categories-card-img">
+                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
+                      </div>
+                      <div class="categories-card-text">
+                        <div class="categories-card-text-title">Ноутбуки</div>
+                        <div class="categories-card-text-price">от 1200 РУБ.</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="categories-card flex valign-center">
+                      <div class="categories-card-img">
+                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
+                      </div>
+                      <div class="categories-card-text">
+                        <div class="categories-card-text-title">Ноутбуки</div>
+                        <div class="categories-card-text-price">от 1200 РУБ.</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="categories-card flex valign-center">
+                      <div class="categories-card-img">
+                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
+                      </div>
+                      <div class="categories-card-text">
+                        <div class="categories-card-text-title">Ноутбуки</div>
+                        <div class="categories-card-text-price">от 1200 РУБ.</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="categories-card flex valign-center">
+                      <div class="categories-card-img">
+                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
+                      </div>
+                      <div class="categories-card-text">
+                        <div class="categories-card-text-title">Ноутбуки</div>
+                        <div class="categories-card-text-price">от 1200 РУБ.</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="categories-card flex valign-center">
+                      <div class="categories-card-img">
+                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
+                      </div>
+                      <div class="categories-card-text">
+                        <div class="categories-card-text-title">Ноутбуки</div>
+                        <div class="categories-card-text-price">от 1200 РУБ.</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="categories-card flex valign-center">
+                      <div class="categories-card-img">
+                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
+                      </div>
+                      <div class="categories-card-text">
+                        <div class="categories-card-text-title">Ноутбуки</div>
+                        <div class="categories-card-text-price">от 1200 РУБ.</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="categories-card flex valign-center">
+                      <div class="categories-card-img">
+                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
+                      </div>
+                      <div class="categories-card-text">
+                        <div class="categories-card-text-title">Ноутбуки</div>
+                        <div class="categories-card-text-price">от 1200 РУБ.</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="categories-card flex valign-center">
+                      <div class="categories-card-img">
+                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
+                      </div>
+                      <div class="categories-card-text">
+                        <div class="categories-card-text-title">Ноутбуки</div>
+                        <div class="categories-card-text-price">от 1200 РУБ.</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="categories-card flex valign-center">
+                      <div class="categories-card-img">
+                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
+                      </div>
+                      <div class="categories-card-text">
+                        <div class="categories-card-text-title">Ноутбуки</div>
+                        <div class="categories-card-text-price">от 1200 РУБ.</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="categories-card flex valign-center">
+                      <div class="categories-card-img">
+                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
+                      </div>
+                      <div class="categories-card-text">
+                        <div class="categories-card-text-title">Ноутбуки</div>
+                        <div class="categories-card-text-price">от 1200 РУБ.</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="categories-card flex valign-center">
+                      <div class="categories-card-img">
+                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
+                      </div>
+                      <div class="categories-card-text">
+                        <div class="categories-card-text-title">Ноутбуки</div>
+                        <div class="categories-card-text-price">от 1200 РУБ.</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="categories-card flex valign-center">
+                      <div class="categories-card-img">
+                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
+                      </div>
+                      <div class="categories-card-text">
+                        <div class="categories-card-text-title">Ноутбуки</div>
+                        <div class="categories-card-text-price">от 1200 РУБ.</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="categories-card flex valign-center">
+                      <div class="categories-card-img">
+                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
+                      </div>
+                      <div class="categories-card-text">
+                        <div class="categories-card-text-title">Ноутбуки</div>
+                        <div class="categories-card-text-price">от 1200 РУБ.</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="categories-card flex valign-center">
+                      <div class="categories-card-img">
+                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
+                      </div>
+                      <div class="categories-card-text">
+                        <div class="categories-card-text-title">Ноутбуки</div>
+                        <div class="categories-card-text-price">от 1200 РУБ.</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="categories-card flex valign-center">
+                      <div class="categories-card-img">
+                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
+                      </div>
+                      <div class="categories-card-text">
+                        <div class="categories-card-text-title">Ноутбуки</div>
+                        <div class="categories-card-text-price">от 1200 РУБ.</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="categories-card flex valign-center">
+                      <div class="categories-card-img">
+                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
+                      </div>
+                      <div class="categories-card-text">
+                        <div class="categories-card-text-title">Ноутбуки</div>
+                        <div class="categories-card-text-price">от 1200 РУБ.</div>
+                      </div>
+                    </a>
+                  </li>
                 </ul>
+                <a href="#" class="menu-banner">
+                  <img src="./images/examples/mobile-sale-bannew.png" alt="">
+                </a>
               </li>
               <li>
-                <a href="#" class="menu-link">Компьютерная техника
-                  <div class="menu-link-img"><img src="./images/icons/main-menu.svg" alt=""></div>
-                  <div class="sub-info">более 120 товаров</div>
+                <a href="#" class="menu-link">Оргтехника
+                  <div class="sub-info">более 295 товаров</div>
                 </a>
                 <ul class="menu-desktop-second">
                   <li>
@@ -345,7 +529,7 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
@@ -356,7 +540,7 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
@@ -367,7 +551,7 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
@@ -378,7 +562,7 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
@@ -389,7 +573,7 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
@@ -400,86 +584,19 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
                   </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <a href="#" class="menu-banner">
-                    <img src="./images/examples/mobile-sale-bannew.png" alt="">
-                  </a>
                 </ul>
+                <a href="#" class="menu-banner">
+                  <img src="./images/examples/mobile-sale-bannew.png" alt="">
+                </a>
               </li>
               <li>
-                <a href="#" class="menu-link">Компьютерная техника
-                  <div class="menu-link-img"><img src="./images/icons/main-menu.svg" alt=""></div>
-                  <div class="sub-info">более 120 товаров</div>
+                <a href="#" class="menu-link">Портативная электроника
+                  <div class="sub-info">более 350 товаров</div>
                 </a>
                 <ul class="menu-desktop-second">
                   <li>
@@ -488,7 +605,7 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
@@ -499,7 +616,7 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
@@ -510,7 +627,7 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
@@ -521,7 +638,7 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
@@ -532,7 +649,7 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
@@ -543,86 +660,19 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
                   </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <a href="#" class="menu-banner">
-                    <img src="./images/examples/mobile-sale-bannew.png" alt="">
-                  </a>
                 </ul>
+                <a href="#" class="menu-banner">
+                  <img src="./images/examples/mobile-sale-bannew.png" alt="">
+                </a>
               </li>
               <li>
-                <a href="#" class="menu-link">Компьютерная техника
-                  <div class="menu-link-img"><img src="./images/icons/main-menu.svg" alt=""></div>
-                  <div class="sub-info">более 120 товаров</div>
+                <a href="#" class="menu-link">Оргтехника
+                  <div class="sub-info">более 295 товаров</div>
                 </a>
                 <ul class="menu-desktop-second">
                   <li>
@@ -631,7 +681,7 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
@@ -642,7 +692,7 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
@@ -653,7 +703,7 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
@@ -664,7 +714,7 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
@@ -675,7 +725,7 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
@@ -686,86 +736,19 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
                   </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <a href="#" class="menu-banner">
-                    <img src="./images/examples/mobile-sale-bannew.png" alt="">
-                  </a>
                 </ul>
+                <a href="#" class="menu-banner">
+                  <img src="./images/examples/mobile-sale-bannew.png" alt="">
+                </a>
               </li>
               <li>
-                <a href="#" class="menu-link">Компьютерная техника
-                  <div class="menu-link-img"><img src="./images/icons/main-menu.svg" alt=""></div>
-                  <div class="sub-info">более 120 товаров</div>
+                <a href="#" class="menu-link">Портативная электроника
+                  <div class="sub-info">более 350 товаров</div>
                 </a>
                 <ul class="menu-desktop-second">
                   <li>
@@ -774,7 +757,7 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
@@ -785,7 +768,7 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
@@ -796,7 +779,7 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
@@ -807,7 +790,7 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
@@ -818,7 +801,7 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
@@ -829,510 +812,15 @@
                         <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
                       </div>
                       <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
+                        <div class="categories-card-text-title">Ноутбуки</div>
                         <div class="categories-card-text-price">от 1200 РУБ.</div>
                       </div>
                     </a>
                   </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <a href="#" class="menu-banner">
-                    <img src="./images/examples/mobile-sale-bannew.png" alt="">
-                  </a>
                 </ul>
-              </li>
-              <li>
-                <a href="#" class="menu-link">Компьютерная техника
-                  <div class="menu-link-img"><img src="./images/icons/main-menu.svg" alt=""></div>
-                  <div class="sub-info">более 120 товаров</div>
+                <a href="#" class="menu-banner">
+                  <img src="./images/examples/mobile-sale-bannew.png" alt="">
                 </a>
-                <ul class="menu-desktop-second">
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <a href="#" class="menu-banner">
-                    <img src="./images/examples/mobile-sale-bannew.png" alt="">
-                  </a>
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="menu-link">Компьютерная техника
-                  <div class="menu-link-img"><img src="./images/icons/main-menu.svg" alt=""></div>
-                  <div class="sub-info">более 120 товаров</div>
-                </a>
-                <ul class="menu-desktop-second">
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <a href="#" class="menu-banner">
-                    <img src="./images/examples/mobile-sale-bannew.png" alt="">
-                  </a>
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="menu-link">Компьютерная техника
-                  <div class="menu-link-img"><img src="./images/icons/main-menu.svg" alt=""></div>
-                  <div class="sub-info">более 120 товаров</div>
-                </a>
-                <ul class="menu-desktop-second">
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">МФУ и принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="categories-card flex valign-center">
-                      <div class="categories-card-img">
-                        <img src="./images/icons/icon-desktop-menu.png" alt="alt" />
-                      </div>
-                      <div class="categories-card-text">
-                        <div class="categories-card-text-title">Принтеры</div>
-                        <div class="categories-card-text-price">от 1200 РУБ.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <a href="#" class="menu-banner">
-                    <img src="./images/examples/mobile-sale-bannew.png" alt="">
-                  </a>
-                </ul>
               </li>
             </ul>
           </div>
@@ -1909,560 +1397,1145 @@
     <img src="./images/icons/viber (1) 2.svg" alt="alt" />
   </a>
 </header>
-
-      <div class="pages">
-        <h2>Страницы</h2>
-        <a href="./page-product.html">page-product</a>
-        <a href="./catalog-list.html">cataloglist</a>
-        <a href="./news-list.html">news-list</a>
-        <a href="./contact.html">contact</a>
-        <a href="./news-page.html">news-page</a>
-        <a href="./catalog-list2.html">catalog-list2</a>
-      </div>
-
       <div class="middle" id="middle">
         <div class="container">
-          <div class="banner">
-            <div class="row">
-              <div class="col-9 col-lg-12 col-xs-12">
-                <!-- Slider -->
-                <div class="banner-slider">
-                  <div class="slider-item">
-                    <picture>
-                      <source
-                        media="(max-width: 576px)"
-                        srcset="./images/examples/banner50.svg"
-                      />
-                      <img src="./images/examples/main-banner.svg" alt="alt" />
-                    </picture>
-                  </div>
-                  <div class="slider-item">
-                    <picture>
-                      <source
-                        media="(max-width: 576px)"
-                        srcset="./images/examples/banner50.svg"
-                      />
-                      <img
-                        src="https://via.placeholder.com/1020x400/FF0000
-
-                    C/O https://placeholder.com/C/O https://placeholder.com/"
-                        alt="alt"
-                      />
-                    </picture>
-                  </div>
-                  <div class="slider-item">
-                    <picture>
-                      <source
-                        media="(max-width: 576px)"
-                        srcset="./images/examples/banner50.svg"
-                      />
-                      <img
-                        src="https://via.placeholder.com/1020x400/0000FF
-
-                    C/O https://placeholder.com/C/O https://placeholder.com/"
-                        alt="alt"
-                      />
-                    </picture>
-                  </div>
-                  <div class="slider-item">
-                    <picture>
-                      <source
-                        media="(max-width: 576px)"
-                        srcset="./images/examples/banner50.svg"
-                      />
-                      <img
-                        src="https://via.placeholder.com/1020x400/000000
-
-                    C/O https://placeholder.com/C/O https://placeholder.com/"
-                        alt="alt"
-                      />
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 col-xs-12">
-                <a href="#" class="banner-img">
-                  <img src="./images/examples/middle-banner.png" alt="alt" />
-                </a>
-              </div>
+          <div class="page-breadcrumbs">
+            <a href="#">Главная</a><i>/</i> <a href="#">Ноутбуки</a><i>/</i>
+          </div>
+          <div class="middle-title-h1 links-title">Ноутбуки</div>
+          <div class="links">
+            <a href="#">Для дома</a>
+            <a href="#">для работы</a>
+            <a href="#">для игр </a>
+            <a href="#">Macbook pro 13 M1 2020</a>
+            <a href="#">Asus Rog Zephyrus</a>
+            <a href="#">С диагональю 17"</a>
+            <a href="#">Acer Swift 3</a>
+            <a href="#">мини</a>
+            <a href="#">Macbook pro 13 M1 2020</a>
+            <a href="#">Macbook pro 13 M1 2020</a>
+            <a href="#">Asus Rog Zephyrus</a>
+            <a href="#">Acer Swift 3</a>
+            <a href="#">Macbook pro 13 M1 2020</a>
+            <a href="#">для дома</a>
+            <a href="#">для игр </a>
+            <a href="#">мини</a>
+            <a href="#">для работы</a>
+            <a href="#"> С диагональю 17"</a>
+            <a href="#"
+              >Еще <img src="./images/icons/Vector.png" alt="alt"
+            /></a>
+            <div class="links-bottom">
+              Смотрите также:
+              <a href="#">мыши</a>
+              <a href="#">подставки для ноутбуков</a>
+              <a href="#">програмное обеспечение </a>
+              <a href="#">планшеты</a>
+              <a href="#">компьютеры</a>
             </div>
           </div>
-          <div class="categories">
-            <div class="row">
-              <div class="col-3 col-lg-4 col-md-6 col-xs-6">
-                <a href="#" class="categories-card flex valign-center">
-                  <div class="categories-card-img">
-                    <img src="./images/icons/cat-cards-1.png" alt="alt" />
-                  </div>
-                  <div class="categories-card-text">
-                    <div class="categories-card-text-title">Ноутбуки</div>
-                    <div class="categories-card-text-price">от 1200 РУБ.</div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-3 col-lg-4 col-md-6 col-xs-6">
-                <a href="#" class="categories-card flex valign-center">
-                  <div class="categories-card-img">
-                    <img src="./images/icons/cat-cards-2.png" alt="alt" />
-                  </div>
-                  <div class="categories-card-text">
-                    <div class="categories-card-text-title">ПЕРИФЕРИЯ</div>
-                    <div class="categories-card-text-price">от 40 РУБ.</div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-3 col-lg-4 col-md-6 col-xs-6">
-                <a href="#" class="categories-card flex valign-center">
-                  <div class="categories-card-img">
-                    <img src="./images/icons/cat-cards-3.png" alt="alt" />
-                  </div>
-                  <div class="categories-card-text">
-                    <div class="categories-card-text-title">МФУ И ПРИНТЕРЫ</div>
-                    <div class="categories-card-text-price">от 190 РУБ.</div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-3 col-lg-4 col-md-6 col-xs-6">
-                <a href="#" class="categories-card flex valign-center">
-                  <div class="categories-card-img">
-                    <img src="./images/icons/cat-cards-2.png" alt="alt" />
-                  </div>
-                  <div class="categories-card-text">
-                    <div class="categories-card-text-title">ВИДЕОКАРТЫ</div>
-                    <div class="categories-card-text-price">от 115 РУБ.</div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-3 col-lg-4 col-md-6 col-xs-6">
-                <a href="#" class="categories-card flex valign-center">
-                  <div class="categories-card-img">
-                    <img src="./images/icons/cat-cards-2.png" alt="alt" />
-                  </div>
-                  <div class="categories-card-text">
-                    <div class="categories-card-text-title">МОНОБЛОКИ</div>
-                    <div class="categories-card-text-price">от 2600 РУБ.</div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-3 col-lg-4 col-md-6 col-xs-6">
-                <a href="#" class="categories-card flex valign-center">
-                  <div class="categories-card-img">
-                    <img src="./images/icons/cat-cards-3.png" alt="alt" />
-                  </div>
-                  <div class="categories-card-text">
-                    <div class="categories-card-text-title">КОМПЛЕКТУЮЩИЕ</div>
-                    <div class="categories-card-text-price">от 410 РУБ.</div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-3 col-lg-4 col-md-6 col-xs-6">
-                <a href="#" class="categories-card flex valign-center">
-                  <div class="categories-card-img">
-                    <img src="./images/icons/cat-cards-2.png" alt="alt" />
-                  </div>
-                  <div class="categories-card-text">
-                    <div class="categories-card-text-title">
-                      ИГРОВЫЕ, ОФИСНЫЕ КРЕСЛА И СТУЛЬЯ
-                    </div>
-                    <div class="categories-card-text-price">от 160 РУБ.</div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-3 col-lg-4 col-md-6 col-xs-6">
-                <a href="#" class="categories-card flex valign-center">
-                  <div class="categories-card-img">
-                    <img src="./images/icons/cat-cards-1.png" alt="alt" />
-                  </div>
-                  <div class="categories-card-text">
-                    <div class="categories-card-text-title">МОНИТОРЫ</div>
-                    <div class="categories-card-text-price">от 300 РУБ.</div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-3 col-xs-12">
-            <a href="#" class="banner-img-mobile flex justify-center">
-              <img src="./images/examples/middle-banner.png" alt="alt" />
+          <div class="filter-bar">
+            Сортировать по
+            <a href="#" class="filter-bar-sort">
+              популярности
+              <img src="./images/icons/filter-bar-toggle.png" alt="alt" />
+            </a>
+            <a href="#" class="filter-bar-btn">
+              <img src="./images/icons/filter-bar 1.png" alt="alt" />
+            </a>
+            <a href="#" class="filter-bar-btn">
+              <img src="./images/icons/filter-bar 2.png" alt="alt" />
             </a>
           </div>
-          <div class="offer">
-            <div class="offer-header">
-              <div class="row space-between">
-                <div class="offer-title">
-                  ГОРЯЧИЕ <span class="span-blue">ПРЕДЛОЖЕНИЯ</span>
-                </div>
-                <div class="offer-arrows">
-                  <div class="row">
-                    <div class="offer-arrow slider-offer-left">
-                      <i class="fas fa-arrow-left"></i>
-                    </div>
-                    <div class="offer-arrow slider-offer-right">
-                      <i class="fas fa-arrow-right"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="offer-slider">
-              <div class="slider-item-cards">
-                <div class="slider-item-card">
-                  <div class="ui-card-product">
-                    <div class="ui-card-product-img">
-                      <a href="#">
-                        <img
-                          src="./images/examples/cards-mouse-1.png"
-                          alt="alt"
-                        />
-                      </a>
-                    </div>
-                    <div class="ui-card-product-text">
-                      <a href="#" class="ui-card-product-title"
-                        >Игровая мышь HIPER GMUS-2000</a
-                      >
-                      <div class="ui-card-product-articule">Код: QD0095719</div>
-                    </div>
-                    <div class="ui-card-product-price">
-                      <div class="row valign-center">
-                        <div class="ui-card-product-sale">
-                          340.00 <span class="card-price-units">руб.</span>
-                        </div>
-                        <div class="ui-card-product-normal">
-                          340.00 <span class="card-price-units">руб.</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ui-card-btns">
-                      <div class="flex valign-center space-between">
-                        <div class="ui-btn">
-                          <div class="flex justify-center valign-center">
-                            <div class="ui-btn-img">
-                              <img
-                                src="./images/icons/ui-cart-logo.png"
-                                alt="alt"
-                              />
-                            </div>
-                            <div class="ui-btn-text">в корзину</div>
-                          </div>
-                        </div>
-                        <a href="#" class="ui-btn-favorite">
-                          <img src="./images/icons/heart.png" alt="alt" />
-                        </a>
-                        <a href="#" class="ui-btn-compare">
-                          <img src="./images/icons/equ.png" alt="alt" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slider-item-cards">
-                <div class="slider-item-card">
-                  <div class="ui-card-product">
-                    <div class="ui-card-product-img">
-                      <div class="ui-card-product-hits">ХИТ ПРОДАЖ</div>
-                      <a href="#">
-                        <img src="./images/examples/dekstop-2.png" alt="alt" />
-                      </a>
-                    </div>
-                    <div class="ui-card-product-text">
-                      <a href="#" class="ui-card-product-title"
-                        >Ноутбук Huawei MateBook D 15 BoB-WAI9 8+256GB Space
-                        Grey</a
-                      >
-                      <div class="ui-card-product-articule">Код: QD0095719</div>
-                    </div>
-                    <div class="ui-card-product-price">
-                      <div class="row valign-center">
-                        <div class="ui-card-product-sale">
-                          2 185.00 <span class="card-price-units">руб.</span>
-                        </div>
-                        <div class="ui-card-product-normal">
-                          2 185.00 <span class="card-price-units">руб.</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ui-card-btns flex valign-center space-between">
-                      <div class="ui-btn">
-                        <div class="flex justify-center valign-center">
-                          <div class="ui-btn-img">
-                            <img
-                              src="./images/icons/ui-cart-logo.png"
-                              alt="alt"
-                            />
-                          </div>
-                          <div class="ui-btn-text">в корзину</div>
-                        </div>
-                      </div>
-                      <a href="#" class="ui-btn-favorite">
-                        <img src="./images/icons/heart.png" alt="alt" />
-                      </a>
-                      <a href="#" class="ui-btn-compare">
-                        <img src="./images/icons/equ.png" alt="alt" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slider-item-cards">
-                <div class="slider-item-card">
-                  <div class="ui-card-product">
-                    <div class="ui-card-product-img">
-                      <a href="#">
-                        <img src="./images/examples/printer-3.png" alt="alt" />
-                      </a>
-                    </div>
-                    <div class="ui-card-product-text">
-                      <a href="#" class="ui-card-product-title"
-                        >Ноутбук Huawei MateBook D 15 BoB-WAI9 8+256GB Space
-                        Silver Grey
-                      </a>
-                      <div class="ui-card-product-articule">Код: QD0095719</div>
-                    </div>
-                    <div class="ui-card-product-price">
-                      <div class="row valign-center">
-                        <div class="ui-card-product-sale">
-                          340.00 <span class="card-price-units">руб.</span>
-                        </div>
-                        <div class="ui-card-product-normal">
-                          2 420.00 <span class="card-price-units">руб.</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ui-card-btns flex valign-center space-between">
-                      <div class="ui-btn">
-                        <div class="flex justify-center valign-center">
-                          <div class="ui-btn-img">
-                            <img
-                              src="./images/icons/ui-cart-logo.png"
-                              alt="alt"
-                            />
-                          </div>
-                          <div class="ui-btn-text">в корзину</div>
-                        </div>
-                      </div>
-                      <a href="#" class="ui-btn-favorite">
-                        <img src="./images/icons/heart.png" alt="alt" />
-                      </a>
-                      <a href="#" class="ui-btn-compare">
-                        <img src="./images/icons/equ.png" alt="alt" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slider-item-cards">
-                <div class="slider-item-card">
-                  <div class="ui-card-product">
-                    <div class="ui-card-product-img">
-                      <a href="#">
-                        <img
-                          src="./images/examples/cards-mouse-1.png"
-                          alt="alt"
-                        />
-                      </a>
-                    </div>
-                    <div class="ui-card-product-text">
-                      <a href="#" class="ui-card-product-title"
-                        >Игровая мышь HIPER GMUS-2000</a
-                      >
-                      <div class="ui-card-product-articule">Код: QD0095719</div>
-                    </div>
-                    <div class="ui-card-product-price">
-                      <div class="row valign-center">
-                        <div class="ui-card-product-sale">
-                          340.00 <span class="card-price-units">руб.</span>
-                        </div>
-                        <div class="ui-card-product-normal">
-                          340.00 <span class="card-price-units">руб.</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ui-card-btns">
-                      <div class="flex valign-center space-between">
-                        <div class="ui-btn">
-                          <div class="flex justify-center valign-center">
-                            <div class="ui-btn-img">
-                              <img
-                                src="./images/icons/ui-cart-logo.png"
-                                alt="alt"
-                              />
-                            </div>
-                            <div class="ui-btn-text">в корзину</div>
-                          </div>
-                        </div>
-                        <a href="#" class="ui-btn-favorite">
-                          <img src="./images/icons/heart.png" alt="alt" />
-                        </a>
-                        <a href="#" class="ui-btn-compare">
-                          <img src="./images/icons/equ.png" alt="alt" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slider-item-cards">
-                <div class="slider-item-card">
-                  <div class="ui-card-product">
-                    <div class="ui-card-product-img">
-                      <a href="#">
-                        <img src="./images/examples/mouse-4.png" alt="alt" />
-                      </a>
-                    </div>
-                    <div class="ui-card-product-text">
-                      <a href="#" class="ui-card-product-title"
-                        >Мышь беспроводная Logitech M185 Swift Grey
-                        (910-002238)</a
-                      >
-                      <div class="ui-card-product-articule">Код: QD0095719</div>
-                    </div>
-                    <div class="ui-card-product-price">
-                      <div class="row valign-center">
-                        <div class="ui-card-product-sale">
-                          94.00 <span class="card-price-units">руб.</span>
-                        </div>
-                        <div class="ui-card-product-normal">
-                          340.00 <span class="card-price-units">руб.</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ui-card-btns flex valign-center space-between">
-                      <div class="ui-btn">
-                        <div class="flex justify-center valign-center">
-                          <div class="ui-btn-img">
-                            <img
-                              src="./images/icons/ui-cart-logo.png"
-                              alt="alt"
-                            />
-                          </div>
-                          <div class="ui-btn-text">в корзину</div>
-                        </div>
-                      </div>
-                      <a href="#" class="ui-btn-favorite">
-                        <img src="./images/icons/heart.png" alt="alt" />
-                      </a>
-                      <a href="#" class="ui-btn-compare">
-                        <img src="./images/icons/equ.png" alt="alt" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slider-item-cards">
-                <div class="slider-item-card">
-                  <div class="ui-card-product">
-                    <div class="ui-card-product-img">
-                      <a href="#">
-                        <img
-                          src="./images/examples/headphones-5.png"
-                          alt="alt"
-                        />
-                      </a>
-                    </div>
-                    <div class="ui-card-product-text">
-                      <a href="#" class="ui-card-product-title"
-                        >Компьютерная гарнитура Sven AP-545MV</a
-                      >
-                      <div class="ui-card-product-articule">Код: QD0095719</div>
-                    </div>
-                    <div class="ui-card-product-price">
-                      <div class="row valign-center">
-                        <div class="ui-card-product-sale">
-                          243.20 <span class="card-price-units">руб.</span>
-                        </div>
-                        <div class="ui-card-product-normal">
-                          340.00 <span class="card-price-units">руб.</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ui-card-btns flex valign-center space-between">
-                      <div class="ui-btn">
-                        <div class="flex justify-center valign-center">
-                          <div class="ui-btn-img">
-                            <img
-                              src="./images/icons/ui-cart-logo.png"
-                              alt="alt"
-                            />
-                          </div>
-                          <div class="ui-btn-text">в корзину</div>
-                        </div>
-                      </div>
-                      <a href="#" class="ui-btn-favorite">
-                        <img src="./images/icons/heart.png" alt="alt" />
-                      </a>
-                      <a href="#" class="ui-btn-compare">
-                        <img src="./images/icons/equ.png" alt="alt" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="sale">
-            <a href="#" class="sale-img">
-              <picture>
-                <source
-                  media="(max-width: 399px)"
-                  srcset="./images/icons/sale50.svg"
-                />
-                <source
-                  media="(max-width: 799px)"
-                  srcset="./images/examples/sale-banner.png"
-                />
-                <img src="./images/examples/sale-banner.png" alt="alt" />
-              </picture>
+          <div class="filter-btns">
+            <a href="#filter" class="filter-btn">фильтры</a>
+            <a href="#" class="filter-btn-rectangle">
+              <img src="./images/icons/rectangle.png" alt="alt" />
             </a>
           </div>
-          <div class="hits">
-            <div class="hits-header">
-              <div class="row space-between">
-                <div class="hits-title">
-                  ХИТЫ <span class="span-blue">ПРОДАЖ</span>
+          <div class="row">
+            <div class="col-filter-22 col-md-12">
+              <div class="filter" id="filter">
+                <div class="filter-title-h2">Фильтры</div>
+                <div class="filter-price">
+                  <div class="filter-title">Цена, бел.руб.</div>
+                  <input class="filter-price-from" placeholder="от" />
+                  <img
+                    src="./images/icons/line.png"
+                    alt="alt"
+                    class="filter-price-line"
+                  />
+                  <input class="filter-price-to" placeholder="до" />
                 </div>
-                <div class="hits-arrows">
-                  <div class="row">
-                    <div class="hits-arrow slider-hits-left">
-                      <i class="fas fa-arrow-left"></i>
-                    </div>
-                    <div class="hits-arrow slider-hits-right">
-                      <i class="fas fa-arrow-right"></i>
-                    </div>
+                <div class="filter-producer">
+                  <div class="filter-title">Производители</div>
+                  <ul>
+                    <li>
+                      <input type="checkbox" class="filter-checkbox" />
+                      <span class="filter-span">Acer</span>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="filter-checkbox" />
+                      <span class="filter-span">Asus</span>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="filter-checkbox" />
+                      <span class="filter-span">HP</span>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="filter-checkbox" />
+                      <span class="filter-span">Lenovo</span>
+                    </li>
+                  </ul>
+                  <a href="#" class="filter-producer-more"
+                    >Показать всех (еще 5)</a
+                  >
+                </div>
+                <div class="filter-type">
+                  <div class="filter-title">Тип</div>
+                  <ul>
+                    <li>
+                      <input type="checkbox" class="filter-checkbox" />
+                      <span class="filter-span">Игровой</span>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="filter-checkbox" />
+                      <span class="filter-span">Классический</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="filter-diagonal">
+                  <div class="filter-title">Диагональ экрана</div>
+                  <ul>
+                    <li>
+                      <input type="checkbox" class="filter-checkbox" />
+                      <span class="filter-span">15.6</span>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="filter-checkbox" />
+                      <span class="filter-span">17.3</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="filter-bottom">
+                  <div class="filter-bottom-btns">
+                    <a href="#" class="filter-bottom-show ui-btn">ПОКАЗАТЬ</a>
+                    <a href="#" class="filter-btn-rectangle">
+                      <img src="./images/icons/rectangle.png" alt="alt" />
+                    </a>
                   </div>
                 </div>
+              </div>
+              <div class="installments installments-catalog-list">
+                <div class="installments-img">
+                  <img src="./images/icons/data-pay.png" alt="alt" />
+                </div>
+                <a href="#" class="installments-info">В кредит до 8 месяцев</a>
+                <a href="#" class="installments-info"
+                  >В рассрочку до 12 месяцев</a
+                >
+                <a href="#" class="installments-more">Узнать больше</a>
+                <img src="./images/icons/Pay-cards.png" alt="alt" />
               </div>
             </div>
-            <div class="hits-slider">
-              <div class="slider-item-cards">
-                <div class="slider-item-card">
-                  <div class="ui-card-product">
-                    <div class="ui-card-product-img">
-                      <a href="#">
-                        <img
-                          src="./images/examples/cards-mouse-1.png"
-                          alt="alt"
-                        />
+            <div class="col-filter-78 col-md-12">
+              <div class="catalog">
+                <div class="catalog-marker">ХИТ ПРОДАЖ</div>
+                <div class="catalog-item">
+                  <div class="catalog-item-img">
+                    <img src="./images/rog strix.png" alt="alt" />
+                    <div class="catalog-item-features">
+                      <img src="./images/icons/Сравнение.png" alt="alt" />
+                      <a href="#" class="catalog-item-features-compare"
+                        >В сравнение</a
+                      >
+                      <img src="./images/icons/like.png" alt="alt" />
+                      <a href="#" class="catalog-item-features-compare"
+                        >В избранное</a
+                      >
+                    </div>
+                  </div>
+                  <div class="catalog-item-description">
+                    <div class="catalog-item-description-title">
+                      Lenovo IdeaPad L340-15API 81LW0086RK
+                    </div>
+                    <div class="catalog-item-description-articule">
+                      <div class="articule">КОД ТОВАРА: QD0095719</div>
+                      <div class="in_stock">
+                        <img src="./images/icons/accept.png" alt="alt" />
+                        В НАЛИЧИИ
+                      </div>
+                    </div>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td>
+                            Диагональ/разрешение
+                            <span class="dots"></span>
+                          </td>
+                          <td>17.3"/1920x1080 пикс.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Процессор
+                            <span class="dots"></span>
+                          </td>
+                          <td>AMD Ryzen 9 5900HX 3.3 ГГц</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Оперативная память (RAM)
+                            <spna class="dots"></spna>
+                          </td>
+                          <td>16 ГБ</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Графический контроллер
+                            <span class="dots"></span>
+                          </td>
+                          <td>GeForce RTX 3060 6GB</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Объем SSD
+                            <span class="dots"></span>
+                          </td>
+                          <td>512 ГБ</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="catalog-description">
+                    <div class="catalog-description-first_price">
+                      <div class="catalog-description-title cyan">
+                        С КАРТОЙ «СЕРВЕР»
+                        <span class="help"
+                          ><i class="far fa-question-circle"></i
+                        ></span>
+                      </div>
+                      <div class="catalog-description-price cyan">
+                        2 480.00 <span>РУБ.</span>
+                      </div>
+                    </div>
+                    <div class="catalog-description-second_price">
+                      <div class="catalog-description-title">
+                        С КАРТОЙ «СЕРВЕР»
+                        <span class="help"
+                          ><i class="far fa-question-circle"></i
+                        ></span>
+                      </div>
+                      <div class="catalog-description-price">
+                        2 480.00 <span>РУБ.</span>
+                      </div>
+                    </div>
+
+                    <div class="catalog-description-btns">
+                      <a class="catalog-description-btn ui-btn">
+                        <div href="#" class="product-description-img">
+                          <img src="./images/icons/cart-btn.svg" alt="alt" />
+                        </div>
+                        В корзину
+                      </a>
+                      <a href="#" class="catalog-description-compare">
+                        <img src="./images/icons/mob-compare.png" alt="alt" />
+                      </a>
+                      <a href="#" class="catalog-description-favorite">
+                        <img src="./images/icons/mob-like.png" alt="alt" />
                       </a>
                     </div>
-                    <div class="ui-card-product-text">
-                      <a href="#" class="ui-card-product-title"
-                        >Игровая мышь HIPER GMUS-2000</a
+                  </div>
+                </div>
+              </div>
+              <div class="catalog">
+                <div class="catalog-marker green">НОВИНКА</div>
+                <div class="catalog-item">
+                  <div class="catalog-item-img">
+                    <img src="./images/rog strix.png" alt="alt" />
+                    <div class="catalog-item-features">
+                      <img src="./images/icons/Сравнение.png" alt="alt" />
+                      <a href="#" class="catalog-item-features-compare"
+                        >В сравнение</a
                       >
-                      <div class="ui-card-product-articule">Код: QD0095719</div>
+                      <img src="./images/icons/like.png" alt="alt" />
+                      <a href="#" class="catalog-item-features-compare"
+                        >В избранное</a
+                      >
                     </div>
-                    <div class="ui-card-product-price">
-                      <div class="row valign-center">
-                        <div class="ui-card-product-sale">
-                          340.00 <span class="card-price-units">руб.</span>
+                  </div>
+                  <div class="catalog-item-description">
+                    <div class="catalog-item-description-title">
+                      Lenovo IdeaPad L340-15API 81LW0086RK
+                    </div>
+                    <div class="catalog-item-description-articule">
+                      <div class="articule">КОД ТОВАРА: QD0095719</div>
+                      <div class="in_stock">
+                        <img src="./images/icons/accept.png" alt="alt" />
+                        В НАЛИЧИИ
+                      </div>
+                    </div>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td>
+                            Диагональ/разрешение
+                            <span class="dots"></span>
+                          </td>
+                          <td>17.3"/1920x1080 пикс.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Процессор
+                            <span class="dots"></span>
+                          </td>
+                          <td>AMD Ryzen 9 5900HX 3.3 ГГц</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Оперативная память (RAM)
+                            <spna class="dots"></spna>
+                          </td>
+                          <td>16 ГБ</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Графический контроллер
+                            <span class="dots"></span>
+                          </td>
+                          <td>GeForce RTX 3060 6GB</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Объем SSD
+                            <span class="dots"></span>
+                          </td>
+                          <td>512 ГБ</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="catalog-description">
+                    <div class="catalog-description-first_price">
+                      <div class="catalog-description-title cyan">
+                        С КАРТОЙ «СЕРВЕР»
+                        <span class="help"
+                          ><i class="far fa-question-circle"></i
+                        ></span>
+                      </div>
+                      <div class="catalog-description-price cyan">
+                        2 480.00 <span>РУБ.</span>
+                      </div>
+                    </div>
+                    <div class="catalog-description-second_price">
+                      <div class="catalog-description-title">
+                        С КАРТОЙ «СЕРВЕР»
+                        <span class="help"
+                          ><i class="far fa-question-circle"></i
+                        ></span>
+                      </div>
+                      <div class="catalog-description-price">
+                        2 480.00 <span>РУБ.</span>
+                      </div>
+                    </div>
+
+                    <div class="catalog-description-btns">
+                      <a class="catalog-description-btn ui-btn">
+                        <div href="#" class="product-description-img">
+                          <img src="./images/icons/cart-btn.svg" alt="alt" />
                         </div>
-                        <div class="ui-card-product-normal">
-                          340.00 <span class="card-price-units">руб.</span>
+                        В корзину
+                      </a>
+                      <a href="#" class="catalog-description-compare">
+                        <img src="./images/icons/mob-compare.png" alt="alt" />
+                      </a>
+                      <a href="#" class="catalog-description-favorite">
+                        <img src="./images/icons/mob-like.png" alt="alt" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog">
+                <div class="catalog-marker">ХИТ ПРОДАЖ</div>
+                <div class="catalog-item">
+                  <div class="catalog-item-img">
+                    <img src="./images/rog strix.png" alt="alt" />
+                    <div class="catalog-item-features">
+                      <img src="./images/icons/Сравнение.png" alt="alt" />
+                      <a href="#" class="catalog-item-features-compare"
+                        >В сравнение</a
+                      >
+                      <img src="./images/icons/like.png" alt="alt" />
+                      <a href="#" class="catalog-item-features-compare"
+                        >В избранное</a
+                      >
+                    </div>
+                  </div>
+                  <div class="catalog-item-description">
+                    <div class="catalog-item-description-title">
+                      Lenovo IdeaPad L340-15API 81LW0086RK
+                    </div>
+                    <div class="catalog-item-description-articule">
+                      <div class="articule">КОД ТОВАРА: QD0095719</div>
+                      <div class="in_stock">
+                        <img src="./images/icons/accept.png" alt="alt" />
+                        В НАЛИЧИИ
+                      </div>
+                    </div>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td>
+                            Диагональ/разрешение
+                            <span class="dots"></span>
+                          </td>
+                          <td>17.3"/1920x1080 пикс.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Процессор
+                            <span class="dots"></span>
+                          </td>
+                          <td>AMD Ryzen 9 5900HX 3.3 ГГц</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Оперативная память (RAM)
+                            <spna class="dots"></spna>
+                          </td>
+                          <td>16 ГБ</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Графический контроллер
+                            <span class="dots"></span>
+                          </td>
+                          <td>GeForce RTX 3060 6GB</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Объем SSD
+                            <span class="dots"></span>
+                          </td>
+                          <td>512 ГБ</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="catalog-description">
+                    <div class="catalog-description-first_price">
+                      <div class="catalog-description-title cyan">
+                        С КАРТОЙ «СЕРВЕР»
+                        <span class="help"
+                          ><i class="far fa-question-circle"></i
+                        ></span>
+                      </div>
+                      <div class="catalog-description-price cyan">
+                        2 480.00 <span>РУБ.</span>
+                      </div>
+                    </div>
+                    <div class="catalog-description-second_price">
+                      <div class="catalog-description-title">
+                        С КАРТОЙ «СЕРВЕР»
+                        <span class="help"
+                          ><i class="far fa-question-circle"></i
+                        ></span>
+                      </div>
+                      <div class="catalog-description-price">
+                        2 480.00 <span>РУБ.</span>
+                      </div>
+                    </div>
+
+                    <div class="catalog-description-btns">
+                      <a class="catalog-description-btn ui-btn">
+                        <div href="#" class="product-description-img">
+                          <img src="./images/icons/cart-btn.svg" alt="alt" />
+                        </div>
+                        В корзину
+                      </a>
+                      <a href="#" class="catalog-description-compare">
+                        <img src="./images/icons/mob-compare.png" alt="alt" />
+                      </a>
+                      <a href="#" class="catalog-description-favorite">
+                        <img src="./images/icons/mob-like.png" alt="alt" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog">
+                <div class="catalog-marker">ХИТ ПРОДАЖ</div>
+                <div class="catalog-item">
+                  <div class="catalog-item-img">
+                    <img src="./images/rog strix.png" alt="alt" />
+                    <div class="catalog-item-features">
+                      <img src="./images/icons/Сравнение.png" alt="alt" />
+                      <a href="#" class="catalog-item-features-compare"
+                        >В сравнение</a
+                      >
+                      <img src="./images/icons/like.png" alt="alt" />
+                      <a href="#" class="catalog-item-features-compare"
+                        >В избранное</a
+                      >
+                    </div>
+                  </div>
+                  <div class="catalog-item-description">
+                    <div class="catalog-item-description-title">
+                      Lenovo IdeaPad L340-15API 81LW0086RK
+                    </div>
+                    <div class="catalog-item-description-articule">
+                      <div class="articule">КОД ТОВАРА: QD0095719</div>
+                      <div class="in_stock">
+                        <img src="./images/icons/accept.png" alt="alt" />
+                        В НАЛИЧИИ
+                      </div>
+                    </div>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td>
+                            Диагональ/разрешение
+                            <span class="dots"></span>
+                          </td>
+                          <td>17.3"/1920x1080 пикс.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Процессор
+                            <span class="dots"></span>
+                          </td>
+                          <td>AMD Ryzen 9 5900HX 3.3 ГГц</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Оперативная память (RAM)
+                            <spna class="dots"></spna>
+                          </td>
+                          <td>16 ГБ</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Графический контроллер
+                            <span class="dots"></span>
+                          </td>
+                          <td>GeForce RTX 3060 6GB</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Объем SSD
+                            <span class="dots"></span>
+                          </td>
+                          <td>512 ГБ</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="catalog-description">
+                    <div class="catalog-description-first_price">
+                      <div class="catalog-description-title cyan">
+                        С КАРТОЙ «СЕРВЕР»
+                        <span class="help"
+                          ><i class="far fa-question-circle"></i
+                        ></span>
+                      </div>
+                      <div class="catalog-description-price cyan">
+                        2 480.00 <span>РУБ.</span>
+                      </div>
+                    </div>
+                    <div class="catalog-description-second_price">
+                      <div class="catalog-description-title">
+                        С КАРТОЙ «СЕРВЕР»
+                        <span class="help"
+                          ><i class="far fa-question-circle"></i
+                        ></span>
+                      </div>
+                      <div class="catalog-description-price">
+                        2 480.00 <span>РУБ.</span>
+                      </div>
+                    </div>
+
+                    <div class="catalog-description-btns">
+                      <a class="catalog-description-btn ui-btn">
+                        <div href="#" class="product-description-img">
+                          <img src="./images/icons/cart-btn.svg" alt="alt" />
+                        </div>
+                        В корзину
+                      </a>
+                      <a href="#" class="catalog-description-compare">
+                        <img src="./images/icons/mob-compare.png" alt="alt" />
+                      </a>
+                      <a href="#" class="catalog-description-favorite">
+                        <img src="./images/icons/mob-like.png" alt="alt" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog">
+                <div class="catalog-marker">ХИТ ПРОДАЖ</div>
+                <div class="catalog-item">
+                  <div class="catalog-item-img">
+                    <img src="./images/rog strix.png" alt="alt" />
+                    <div class="catalog-item-features">
+                      <img src="./images/icons/Сравнение.png" alt="alt" />
+                      <a href="#" class="catalog-item-features-compare"
+                        >В сравнение</a
+                      >
+                      <img src="./images/icons/like.png" alt="alt" />
+                      <a href="#" class="catalog-item-features-compare"
+                        >В избранное</a
+                      >
+                    </div>
+                  </div>
+                  <div class="catalog-item-description">
+                    <div class="catalog-item-description-title">
+                      Lenovo IdeaPad L340-15API 81LW0086RK
+                    </div>
+                    <div class="catalog-item-description-articule">
+                      <div class="articule">КОД ТОВАРА: QD0095719</div>
+                      <div class="in_stock">
+                        <img src="./images/icons/accept.png" alt="alt" />
+                        В НАЛИЧИИ
+                      </div>
+                    </div>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td>
+                            Диагональ/разрешение
+                            <span class="dots"></span>
+                          </td>
+                          <td>17.3"/1920x1080 пикс.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Процессор
+                            <span class="dots"></span>
+                          </td>
+                          <td>AMD Ryzen 9 5900HX 3.3 ГГц</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Оперативная память (RAM)
+                            <spna class="dots"></spna>
+                          </td>
+                          <td>16 ГБ</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Графический контроллер
+                            <span class="dots"></span>
+                          </td>
+                          <td>GeForce RTX 3060 6GB</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Объем SSD
+                            <span class="dots"></span>
+                          </td>
+                          <td>512 ГБ</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="catalog-description">
+                    <div class="catalog-description-first_price">
+                      <div class="catalog-description-title cyan">
+                        С КАРТОЙ «СЕРВЕР»
+                        <span class="help"
+                          ><i class="far fa-question-circle"></i
+                        ></span>
+                      </div>
+                      <div class="catalog-description-price cyan">
+                        2 480.00 <span>РУБ.</span>
+                      </div>
+                    </div>
+                    <div class="catalog-description-second_price">
+                      <div class="catalog-description-title">
+                        С КАРТОЙ «СЕРВЕР»
+                        <span class="help"
+                          ><i class="far fa-question-circle"></i
+                        ></span>
+                      </div>
+                      <div class="catalog-description-price">
+                        2 480.00 <span>РУБ.</span>
+                      </div>
+                    </div>
+
+                    <div class="catalog-description-btns">
+                      <a class="catalog-description-btn ui-btn">
+                        <div href="#" class="product-description-img">
+                          <img src="./images/icons/cart-btn.svg" alt="alt" />
+                        </div>
+                        В корзину
+                      </a>
+                      <a href="#" class="catalog-description-compare">
+                        <img src="./images/icons/mob-compare.png" alt="alt" />
+                      </a>
+                      <a href="#" class="catalog-description-favorite">
+                        <img src="./images/icons/mob-like.png" alt="alt" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog">
+                <div class="catalog-marker">ХИТ ПРОДАЖ</div>
+                <div class="catalog-item">
+                  <div class="catalog-item-img">
+                    <img src="./images/rog strix.png" alt="alt" />
+                    <div class="catalog-item-features">
+                      <img src="./images/icons/Сравнение.png" alt="alt" />
+                      <a href="#" class="catalog-item-features-compare"
+                        >В сравнение</a
+                      >
+                      <img src="./images/icons/like.png" alt="alt" />
+                      <a href="#" class="catalog-item-features-compare"
+                        >В избранное</a
+                      >
+                    </div>
+                  </div>
+                  <div class="catalog-item-description">
+                    <div class="catalog-item-description-title">
+                      Lenovo IdeaPad L340-15API 81LW0086RK
+                    </div>
+                    <div class="catalog-item-description-articule">
+                      <div class="articule">КОД ТОВАРА: QD0095719</div>
+                      <div class="in_stock">
+                        <img src="./images/icons/accept.png" alt="alt" />
+                        В НАЛИЧИИ
+                      </div>
+                    </div>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td>
+                            Диагональ/разрешение
+                            <span class="dots"></span>
+                          </td>
+                          <td>17.3"/1920x1080 пикс.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Процессор
+                            <span class="dots"></span>
+                          </td>
+                          <td>AMD Ryzen 9 5900HX 3.3 ГГц</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Оперативная память (RAM)
+                            <spna class="dots"></spna>
+                          </td>
+                          <td>16 ГБ</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Графический контроллер
+                            <span class="dots"></span>
+                          </td>
+                          <td>GeForce RTX 3060 6GB</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Объем SSD
+                            <span class="dots"></span>
+                          </td>
+                          <td>512 ГБ</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="catalog-description">
+                    <div class="catalog-description-first_price">
+                      <div class="catalog-description-title cyan">
+                        С КАРТОЙ «СЕРВЕР»
+                        <span class="help"
+                          ><i class="far fa-question-circle"></i
+                        ></span>
+                      </div>
+                      <div class="catalog-description-price cyan">
+                        2 480.00 <span>РУБ.</span>
+                      </div>
+                    </div>
+                    <div class="catalog-description-second_price">
+                      <div class="catalog-description-title">
+                        С КАРТОЙ «СЕРВЕР»
+                        <span class="help"
+                          ><i class="far fa-question-circle"></i
+                        ></span>
+                      </div>
+                      <div class="catalog-description-price">
+                        2 480.00 <span>РУБ.</span>
+                      </div>
+                    </div>
+
+                    <div class="catalog-description-btns">
+                      <a class="catalog-description-btn ui-btn">
+                        <div href="#" class="product-description-img">
+                          <img src="./images/icons/cart-btn.svg" alt="alt" />
+                        </div>
+                        В корзину
+                      </a>
+                      <a href="#" class="catalog-description-compare">
+                        <img src="./images/icons/mob-compare.png" alt="alt" />
+                      </a>
+                      <a href="#" class="catalog-description-favorite">
+                        <img src="./images/icons/mob-like.png" alt="alt" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog">
+                <div class="catalog-marker">ХИТ ПРОДАЖ</div>
+                <div class="catalog-item">
+                  <div class="catalog-item-img">
+                    <img src="./images/rog strix.png" alt="alt" />
+                    <div class="catalog-item-features">
+                      <img src="./images/icons/Сравнение.png" alt="alt" />
+                      <a href="#" class="catalog-item-features-compare"
+                        >В сравнение</a
+                      >
+                      <img src="./images/icons/like.png" alt="alt" />
+                      <a href="#" class="catalog-item-features-compare"
+                        >В избранное</a
+                      >
+                    </div>
+                  </div>
+                  <div class="catalog-item-description">
+                    <div class="catalog-item-description-title">
+                      Lenovo IdeaPad L340-15API 81LW0086RK
+                    </div>
+                    <div class="catalog-item-description-articule">
+                      <div class="articule">КОД ТОВАРА: QD0095719</div>
+                      <div class="in_stock">
+                        <img src="./images/icons/accept.png" alt="alt" />
+                        В НАЛИЧИИ
+                      </div>
+                    </div>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td>
+                            Диагональ/разрешение
+                            <span class="dots"></span>
+                          </td>
+                          <td>17.3"/1920x1080 пикс.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Процессор
+                            <span class="dots"></span>
+                          </td>
+                          <td>AMD Ryzen 9 5900HX 3.3 ГГц</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Оперативная память (RAM)
+                            <spna class="dots"></spna>
+                          </td>
+                          <td>16 ГБ</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Графический контроллер
+                            <span class="dots"></span>
+                          </td>
+                          <td>GeForce RTX 3060 6GB</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Объем SSD
+                            <span class="dots"></span>
+                          </td>
+                          <td>512 ГБ</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="catalog-description">
+                    <div class="catalog-description-first_price">
+                      <div class="catalog-description-title cyan">
+                        С КАРТОЙ «СЕРВЕР»
+                        <span class="help"
+                          ><i class="far fa-question-circle"></i
+                        ></span>
+                      </div>
+                      <div class="catalog-description-price cyan">
+                        2 480.00 <span>РУБ.</span>
+                      </div>
+                    </div>
+                    <div class="catalog-description-second_price">
+                      <div class="catalog-description-title">
+                        С КАРТОЙ «СЕРВЕР»
+                        <span class="help"
+                          ><i class="far fa-question-circle"></i
+                        ></span>
+                      </div>
+                      <div class="catalog-description-price">
+                        2 480.00 <span>РУБ.</span>
+                      </div>
+                    </div>
+
+                    <div class="catalog-description-btns">
+                      <a class="catalog-description-btn ui-btn">
+                        <div href="#" class="product-description-img">
+                          <img src="./images/icons/cart-btn.svg" alt="alt" />
+                        </div>
+                        В корзину
+                      </a>
+                      <a href="#" class="catalog-description-compare">
+                        <img src="./images/icons/mob-compare.png" alt="alt" />
+                      </a>
+                      <a href="#" class="catalog-description-favorite">
+                        <img src="./images/icons/mob-like.png" alt="alt" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog">
+                <div class="catalog-marker">ХИТ ПРОДАЖ</div>
+                <div class="catalog-item">
+                  <div class="catalog-item-img">
+                    <img src="./images/rog strix.png" alt="alt" />
+                    <div class="catalog-item-features">
+                      <img src="./images/icons/Сравнение.png" alt="alt" />
+                      <a href="#" class="catalog-item-features-compare"
+                        >В сравнение</a
+                      >
+                      <img src="./images/icons/like.png" alt="alt" />
+                      <a href="#" class="catalog-item-features-compare"
+                        >В избранное</a
+                      >
+                    </div>
+                  </div>
+                  <div class="catalog-item-description">
+                    <div class="catalog-item-description-title">
+                      Lenovo IdeaPad L340-15API 81LW0086RK
+                    </div>
+                    <div class="catalog-item-description-articule">
+                      <div class="articule">КОД ТОВАРА: QD0095719</div>
+                      <div class="in_stock">
+                        <img src="./images/icons/accept.png" alt="alt" />
+                        В НАЛИЧИИ
+                      </div>
+                    </div>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td>
+                            Диагональ/разрешение
+                            <span class="dots"></span>
+                          </td>
+                          <td>17.3"/1920x1080 пикс.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Процессор
+                            <span class="dots"></span>
+                          </td>
+                          <td>AMD Ryzen 9 5900HX 3.3 ГГц</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Оперативная память (RAM)
+                            <spna class="dots"></spna>
+                          </td>
+                          <td>16 ГБ</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Графический контроллер
+                            <span class="dots"></span>
+                          </td>
+                          <td>GeForce RTX 3060 6GB</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Объем SSD
+                            <span class="dots"></span>
+                          </td>
+                          <td>512 ГБ</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="catalog-description">
+                    <div class="catalog-description-first_price">
+                      <div class="catalog-description-title cyan">
+                        С КАРТОЙ «СЕРВЕР»
+                        <span class="help"
+                          ><i class="far fa-question-circle"></i
+                        ></span>
+                      </div>
+                      <div class="catalog-description-price cyan">
+                        2 480.00 <span>РУБ.</span>
+                      </div>
+                    </div>
+                    <div class="catalog-description-second_price">
+                      <div class="catalog-description-title">
+                        С КАРТОЙ «СЕРВЕР»
+                        <span class="help"
+                          ><i class="far fa-question-circle"></i
+                        ></span>
+                      </div>
+                      <div class="catalog-description-price">
+                        2 480.00 <span>РУБ.</span>
+                      </div>
+                    </div>
+
+                    <div class="catalog-description-btns">
+                      <a class="catalog-description-btn ui-btn">
+                        <div href="#" class="product-description-img">
+                          <img src="./images/icons/cart-btn.svg" alt="alt" />
+                        </div>
+                        В корзину
+                      </a>
+                      <a href="#" class="catalog-description-compare">
+                        <img src="./images/icons/mob-compare.png" alt="alt" />
+                      </a>
+                      <a href="#" class="catalog-description-favorite">
+                        <img src="./images/icons/mob-like.png" alt="alt" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="installments installments-catalog-list-mob">
+                <div class="installments-img">
+                  <img src="./images/icons/data-pay.png" alt="alt" />
+                </div>
+                <a href="#" class="installments-info">В кредит до 8 месяцев</a>
+                <a href="#" class="installments-info"
+                  >В рассрочку до 12 месяцев</a
+                >
+                <a href="#" class="installments-more">Узнать больше</a>
+                <img src="./images/icons/Pay-cards.png" alt="alt" />
+              </div>
+            </div>
+            <div class="sale">
+              <div class="sale-img">
+                <picture>
+                  <source
+                    media="(max-width: 399px)"
+                    srcset="./images/icons/sale50.svg"
+                  />
+                  <source
+                    media="(max-width: 799px)"
+                    srcset="./images/examples/sale-banner.png"
+                  />
+                  <img src="./images/examples/sale-banner.png" alt="alt" />
+                </picture>
+              </div>
+            </div>
+            <div class="hits">
+              <div class="hits-header">
+                <div class="row space-between">
+                  <div class="hits-title">
+                    ХИТЫ <span class="span-blue">ПРОДАЖ</span>
+                  </div>
+                  <div class="hits-arrows">
+                    <div class="row">
+                      <div class="hits-arrow slider-hits-left">
+                        <i class="fas fa-arrow-left"></i>
+                      </div>
+                      <div class="hits-arrow slider-hits-right">
+                        <i class="fas fa-arrow-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hits-slider">
+                <div class="slider-item-cards">
+                  <div class="slider-item-card">
+                    <div class="ui-card-product">
+                      <div class="ui-card-product-img">
+                        <a href="#">
+                          <img
+                            src="./images/examples/cards-mouse-1.png"
+                            alt="alt"
+                          />
+                        </a>
+                      </div>
+                      <div class="ui-card-product-text">
+                        <a href="#" class="ui-card-product-title"
+                          >Игровая мышь HIPER GMUS-2000</a
+                        >
+                        <div class="ui-card-product-articule">
+                          Код: QD0095719
+                        </div>
+                      </div>
+                      <div class="ui-card-product-price">
+                        <div class="row valign-center">
+                          <div class="ui-card-product-sale">
+                            340.00 <span class="card-price-units">руб.</span>
+                          </div>
+                          <div class="ui-card-product-normal">
+                            340.00 <span class="card-price-units">руб.</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ui-card-btns">
+                        <div class="flex valign-center space-between">
+                          <div class="ui-btn">
+                            <div class="flex justify-center valign-center">
+                              <div class="ui-btn-img">
+                                <img
+                                  src="./images/icons/ui-cart-logo.png"
+                                  alt="alt"
+                                />
+                              </div>
+                              <div class="ui-btn-text">в корзину</div>
+                            </div>
+                          </div>
+                          <a href="#" class="ui-btn-favorite">
+                            <img src="./images/icons/heart.png" alt="alt" />
+                          </a>
+                          <a href="#" class="ui-btn-compare">
+                            <img src="./images/icons/equ.png" alt="alt" />
+                          </a>
                         </div>
                       </div>
                     </div>
-                    <div class="ui-card-btns">
-                      <div class="flex valign-center space-between">
+                  </div>
+                </div>
+                <div class="slider-item-cards">
+                  <div class="slider-item-card">
+                    <div class="ui-card-product">
+                      <div class="ui-card-product-img">
+                        <div class="ui-card-product-hits">ХИТ ПРОДАЖ</div>
+                        <a href="#">
+                          <img
+                            src="./images/examples/dekstop 2.png"
+                            alt="alt"
+                          />
+                        </a>
+                      </div>
+                      <div class="ui-card-product-text">
+                        <a href="#" class="ui-card-product-title"
+                          >Ноутбук Huawei MateBook D 15 BoB-WAI9 8+256GB Space
+                          Grey</a
+                        >
+                        <div class="ui-card-product-articule">
+                          Код: QD0095719
+                        </div>
+                      </div>
+                      <div class="ui-card-product-price">
+                        <div class="row valign-center">
+                          <div class="ui-card-product-sale">
+                            2 185.00 <span class="card-price-units">руб.</span>
+                          </div>
+                          <div class="ui-card-product-normal">
+                            2 185.00 <span class="card-price-units">руб.</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="ui-card-btns flex valign-center space-between"
+                      >
                         <div class="ui-btn">
                           <div class="flex justify-center valign-center">
                             <div class="ui-btn-img">
@@ -2484,131 +2557,39 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="slider-item-cards">
-                <div class="slider-item-card">
-                  <div class="ui-card-product">
-                    <div class="ui-card-product-img">
-                      <div class="ui-card-product-hits">ХИТ ПРОДАЖ</div>
-                      <a href="#">
-                        <img src="./images/examples/dekstop-2.png" alt="alt" />
-                      </a>
-                    </div>
-                    <div class="ui-card-product-text">
-                      <a href="#" class="ui-card-product-title"
-                        >Ноутбук Huawei MateBook D 15 BoB-WAI9 8+256GB Space
-                        Grey</a
-                      >
-                      <div class="ui-card-product-articule">Код: QD0095719</div>
-                    </div>
-                    <div class="ui-card-product-price">
-                      <div class="row valign-center">
-                        <div class="ui-card-product-sale">
-                          2 185.00 <span class="card-price-units">руб.</span>
-                        </div>
-                        <div class="ui-card-product-normal">
-                          2 185.00 <span class="card-price-units">руб.</span>
+                <div class="slider-item-cards">
+                  <div class="slider-item-card">
+                    <div class="ui-card-product">
+                      <div class="ui-card-product-img">
+                        <a href="#">
+                          <img
+                            src="./images/examples/printer 3.png"
+                            alt="alt"
+                          />
+                        </a>
+                      </div>
+                      <div class="ui-card-product-text">
+                        <a href="#" class="ui-card-product-title"
+                          >Ноутбук Huawei MateBook D 15 BoB-WAI9 8+256GB Space
+                          Silver Grey
+                        </a>
+                        <div class="ui-card-product-articule">
+                          Код: QD0095719
                         </div>
                       </div>
-                    </div>
-                    <div class="ui-card-btns flex valign-center space-between">
-                      <div class="ui-btn">
-                        <div class="flex justify-center valign-center">
-                          <div class="ui-btn-img">
-                            <img
-                              src="./images/icons/ui-cart-logo.png"
-                              alt="alt"
-                            />
+                      <div class="ui-card-product-price">
+                        <div class="row valign-center">
+                          <div class="ui-card-product-sale">
+                            340.00 <span class="card-price-units">руб.</span>
                           </div>
-                          <div class="ui-btn-text">в корзину</div>
-                        </div>
-                      </div>
-                      <a href="#" class="ui-btn-favorite">
-                        <img src="./images/icons/heart.png" alt="alt" />
-                      </a>
-                      <a href="#" class="ui-btn-compare">
-                        <img src="./images/icons/equ.png" alt="alt" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slider-item-cards">
-                <div class="slider-item-card">
-                  <div class="ui-card-product">
-                    <div class="ui-card-product-img">
-                      <a href="#">
-                        <img src="./images/examples/printer-3.png" alt="alt" />
-                      </a>
-                    </div>
-                    <div class="ui-card-product-text">
-                      <a href="#" class="ui-card-product-title"
-                        >Ноутбук Huawei MateBook D 15 BoB-WAI9 8+256GB Space
-                        Silver Grey
-                      </a>
-                      <div class="ui-card-product-articule">Код: QD0095719</div>
-                    </div>
-                    <div class="ui-card-product-price">
-                      <div class="row valign-center">
-                        <div class="ui-card-product-sale">
-                          340.00 <span class="card-price-units">руб.</span>
-                        </div>
-                        <div class="ui-card-product-normal">
-                          2 420.00 <span class="card-price-units">руб.</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ui-card-btns flex valign-center space-between">
-                      <div class="ui-btn">
-                        <div class="flex justify-center valign-center">
-                          <div class="ui-btn-img">
-                            <img
-                              src="./images/icons/ui-cart-logo.png"
-                              alt="alt"
-                            />
+                          <div class="ui-card-product-normal">
+                            2 420.00 <span class="card-price-units">руб.</span>
                           </div>
-                          <div class="ui-btn-text">в корзину</div>
                         </div>
                       </div>
-                      <a href="#" class="ui-btn-favorite">
-                        <img src="./images/icons/heart.png" alt="alt" />
-                      </a>
-                      <a href="#" class="ui-btn-compare">
-                        <img src="./images/icons/equ.png" alt="alt" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slider-item-cards">
-                <div class="slider-item-card">
-                  <div class="ui-card-product">
-                    <div class="ui-card-product-img">
-                      <a href="#">
-                        <img
-                          src="./images/examples/cards-mouse-1.png"
-                          alt="alt"
-                        />
-                      </a>
-                    </div>
-                    <div class="ui-card-product-text">
-                      <a href="#" class="ui-card-product-title"
-                        >Игровая мышь HIPER GMUS-2000</a
+                      <div
+                        class="ui-card-btns flex valign-center space-between"
                       >
-                      <div class="ui-card-product-articule">Код: QD0095719</div>
-                    </div>
-                    <div class="ui-card-product-price">
-                      <div class="row valign-center">
-                        <div class="ui-card-product-sale">
-                          340.00 <span class="card-price-units">руб.</span>
-                        </div>
-                        <div class="ui-card-product-normal">
-                          340.00 <span class="card-price-units">руб.</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ui-card-btns">
-                      <div class="flex valign-center space-between">
                         <div class="ui-btn">
                           <div class="flex justify-center valign-center">
                             <div class="ui-btn-img">
@@ -2630,99 +2611,160 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="slider-item-cards">
-                <div class="slider-item-card">
-                  <div class="ui-card-product">
-                    <div class="ui-card-product-img">
-                      <a href="#">
-                        <img src="./images/examples/mouse-4.png" alt="alt" />
-                      </a>
-                    </div>
-                    <div class="ui-card-product-text">
-                      <a href="#" class="ui-card-product-title"
-                        >Мышь беспроводная Logitech M185 Swift Grey
-                        (910-002238)</a
-                      >
-                      <div class="ui-card-product-articule">Код: QD0095719</div>
-                    </div>
-                    <div class="ui-card-product-price">
-                      <div class="row valign-center">
-                        <div class="ui-card-product-sale">
-                          94.00 <span class="card-price-units">руб.</span>
-                        </div>
-                        <div class="ui-card-product-normal">
-                          340.00 <span class="card-price-units">руб.</span>
+                <div class="slider-item-cards">
+                  <div class="slider-item-card">
+                    <div class="ui-card-product">
+                      <div class="ui-card-product-img">
+                        <a href="#">
+                          <img
+                            src="./images/examples/cards-mouse-1.png"
+                            alt="alt"
+                          />
+                        </a>
+                      </div>
+                      <div class="ui-card-product-text">
+                        <a href="#" class="ui-card-product-title"
+                          >Игровая мышь HIPER GMUS-2000</a
+                        >
+                        <div class="ui-card-product-articule">
+                          Код: QD0095719
                         </div>
                       </div>
-                    </div>
-                    <div class="ui-card-btns flex valign-center space-between">
-                      <div class="ui-btn">
-                        <div class="flex justify-center valign-center">
-                          <div class="ui-btn-img">
-                            <img
-                              src="./images/icons/ui-cart-logo.png"
-                              alt="alt"
-                            />
+                      <div class="ui-card-product-price">
+                        <div class="row valign-center">
+                          <div class="ui-card-product-sale">
+                            340.00 <span class="card-price-units">руб.</span>
                           </div>
-                          <div class="ui-btn-text">в корзину</div>
+                          <div class="ui-card-product-normal">
+                            340.00 <span class="card-price-units">руб.</span>
+                          </div>
                         </div>
                       </div>
-                      <a href="#" class="ui-btn-favorite">
-                        <img src="./images/icons/heart.png" alt="alt" />
-                      </a>
-                      <a href="#" class="ui-btn-compare">
-                        <img src="./images/icons/equ.png" alt="alt" />
-                      </a>
+                      <div class="ui-card-btns">
+                        <div class="flex valign-center space-between">
+                          <div class="ui-btn">
+                            <div class="flex justify-center valign-center">
+                              <div class="ui-btn-img">
+                                <img
+                                  src="./images/icons/ui-cart-logo.png"
+                                  alt="alt"
+                                />
+                              </div>
+                              <div class="ui-btn-text">в корзину</div>
+                            </div>
+                          </div>
+                          <a href="#" class="ui-btn-favorite">
+                            <img src="./images/icons/heart.png" alt="alt" />
+                          </a>
+                          <a href="#" class="ui-btn-compare">
+                            <img src="./images/icons/equ.png" alt="alt" />
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="slider-item-cards">
-                <div class="slider-item-card">
-                  <div class="ui-card-product">
-                    <div class="ui-card-product-img">
-                      <a href="#">
-                        <img
-                          src="./images/examples/headphones-5.png"
-                          alt="alt"
-                        />
-                      </a>
-                    </div>
-                    <div class="ui-card-product-text">
-                      <a href="#" class="ui-card-product-title"
-                        >Компьютерная гарнитура Sven AP-545MV</a
-                      >
-                      <div class="ui-card-product-articule">Код: QD0095719</div>
-                    </div>
-                    <div class="ui-card-product-price">
-                      <div class="row valign-center">
-                        <div class="ui-card-product-sale">
-                          243.20 <span class="card-price-units">руб.</span>
-                        </div>
-                        <div class="ui-card-product-normal">
-                          340.00 <span class="card-price-units">руб.</span>
+                <div class="slider-item-cards">
+                  <div class="slider-item-card">
+                    <div class="ui-card-product">
+                      <div class="ui-card-product-img">
+                        <a href="#">
+                          <img src="./images/examples/mouse 4.png" alt="alt" />
+                        </a>
+                      </div>
+                      <div class="ui-card-product-text">
+                        <a href="#" class="ui-card-product-title"
+                          >Мышь беспроводная Logitech M185 Swift Grey
+                          (910-002238)</a
+                        >
+                        <div class="ui-card-product-articule">
+                          Код: QD0095719
                         </div>
                       </div>
-                    </div>
-                    <div class="ui-card-btns flex valign-center space-between">
-                      <div class="ui-btn">
-                        <div class="flex justify-center valign-center">
-                          <div class="ui-btn-img">
-                            <img
-                              src="./images/icons/ui-cart-logo.png"
-                              alt="alt"
-                            />
+                      <div class="ui-card-product-price">
+                        <div class="row valign-center">
+                          <div class="ui-card-product-sale">
+                            94.00 <span class="card-price-units">руб.</span>
                           </div>
-                          <div class="ui-btn-text">в корзину</div>
+                          <div class="ui-card-product-normal">
+                            340.00 <span class="card-price-units">руб.</span>
+                          </div>
                         </div>
                       </div>
-                      <a href="#" class="ui-btn-favorite">
-                        <img src="./images/icons/heart.png" alt="alt" />
-                      </a>
-                      <a href="#" class="ui-btn-compare">
-                        <img src="./images/icons/equ.png" alt="alt" />
-                      </a>
+                      <div
+                        class="ui-card-btns flex valign-center space-between"
+                      >
+                        <div class="ui-btn">
+                          <div class="flex justify-center valign-center">
+                            <div class="ui-btn-img">
+                              <img
+                                src="./images/icons/ui-cart-logo.png"
+                                alt="alt"
+                              />
+                            </div>
+                            <div class="ui-btn-text">в корзину</div>
+                          </div>
+                        </div>
+                        <a href="#" class="ui-btn-favorite">
+                          <img src="./images/icons/heart.png" alt="alt" />
+                        </a>
+                        <a href="#" class="ui-btn-compare">
+                          <img src="./images/icons/equ.png" alt="alt" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-item-cards">
+                  <div class="slider-item-card">
+                    <div class="ui-card-product">
+                      <div class="ui-card-product-img">
+                        <a href="#">
+                          <img
+                            src="./images/examples/headphones 5.png"
+                            alt="alt"
+                          />
+                        </a>
+                      </div>
+                      <div class="ui-card-product-text">
+                        <a href="#" class="ui-card-product-title"
+                          >Компьютерная гарнитура Sven AP-545MV</a
+                        >
+                        <div class="ui-card-product-articule">
+                          Код: QD0095719
+                        </div>
+                      </div>
+                      <div class="ui-card-product-price">
+                        <div class="row valign-center">
+                          <div class="ui-card-product-sale">
+                            243.20 <span class="card-price-units">руб.</span>
+                          </div>
+                          <div class="ui-card-product-normal">
+                            340.00 <span class="card-price-units">руб.</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="ui-card-btns flex valign-center space-between"
+                      >
+                        <div class="ui-btn">
+                          <div class="flex justify-center valign-center">
+                            <div class="ui-btn-img">
+                              <img
+                                src="./images/icons/ui-cart-logo.png"
+                                alt="alt"
+                              />
+                            </div>
+                            <div class="ui-btn-text">в корзину</div>
+                          </div>
+                        </div>
+                        <a href="#" class="ui-btn-favorite">
+                          <img src="./images/icons/heart.png" alt="alt" />
+                        </a>
+                        <a href="#" class="ui-btn-compare">
+                          <img src="./images/icons/equ.png" alt="alt" />
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -2956,7 +2998,10 @@
 
 </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

@@ -160,6 +160,9 @@ textarea {
     color: $colorSilver;
     display: inline-block;
     text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
   }
   :last-child {
     color: #95a4b8;
