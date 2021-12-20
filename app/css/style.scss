@@ -1162,7 +1162,6 @@ body {
 .menu-mob {
   display: none;
 }
-
 .mobile-nav {
   z-index: 999;
 
@@ -1520,7 +1519,7 @@ body {
 }
 // end news-page.html
 
-// Menu dekstop
+// Menu desktop
 .container-menu {
   display: none;
   position: absolute;
@@ -1538,11 +1537,10 @@ body {
   box-shadow: 0px 4px 20px #d6e3f2;
   padding-top: 50px;
 }
-.menu-dekstop {
+.menu-desktop {
   display: block;
   background-color: #ffffff;
   position: relative;
-
   &-second {
     & > li {
       display: inline-block;
@@ -1587,11 +1585,14 @@ body {
     }
   }
 }
-.menu-dekstop > li {
+.menu-desktop > li {
   display: block;
   width: 300px;
 }
-.menu-dekstop-second::-webkit-scrollbar {
+.menu-desktop > li:last-child {
+  border-bottom: 1px solid #d6e3f2;
+}
+.menu-desktop-second::-webkit-scrollbar {
   width: 9px;
   background-color: transparent;
   background: linear-gradient(
@@ -1604,7 +1605,7 @@ body {
     rgba(255, 255, 255, 0) 100%
   );
 }
-.menu-dekstop-second::-webkit-scrollbar-thumb {
+.menu-desktop-second::-webkit-scrollbar-thumb {
   width: 8px;
   background: linear-gradient(
     104.95deg,
@@ -1652,7 +1653,7 @@ body {
 .menu-link:hover ~ .menu-banner {
   display: block;
 }
-.menu-dekstop-second:hover + .menu-banner {
+.menu-desktop-second:hover + .menu-banner {
   display: block;
 }
 .menu-banner:hover {
@@ -1666,7 +1667,7 @@ body {
   display: block;
 }
 
-.menu-dekstop > li:hover .menu-dekstop-second {
+.menu-desktop > li:hover .menu-desktop-second {
   display: block;
 }
 
@@ -1677,14 +1678,14 @@ body {
 //   display: block;
 // }
 
-// .menu-dekstop:hover {
+// .menu-desktop:hover {
 //   display: block;
 // }
-// .menu-dekstop > li :hover .menu-dekstop-second {
+// .menu-desktop > li :hover .menu-desktop-second {
 //   display: block;
 // }
 
-// .btnClick:hover ~ .menu-dekstop {
+// .btnClick:hover ~ .menu-desktop {
 //   display: block;
 // }
 // dots

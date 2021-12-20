@@ -124,6 +124,9 @@
     width: 100%;
     margin: 0 auto;
   }
+  .menu-desktop-second > li {
+    width: 50%;
+  }
   // Main
   .banner-img {
     display: none;
@@ -145,7 +148,7 @@
   //Global
   .left-phone {
     display: block;
-    position: absolute;
+    position: fixed;
     z-index: 999;
     content: "";
     width: 30px;
@@ -252,6 +255,8 @@
     max-height: calc(100vh - 162px);
     overflow-y: auto;
     z-index: 999;
+    overflow-x: hidden;
+
     li > a {
       position: relative;
       padding: 20px 17px;
@@ -263,42 +268,34 @@
       font-weight: 600;
     }
     .main-arrow {
-      display: inline-block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       position: absolute;
-      right: 17px;
-      top: 22px;
+      right: 0px;
+      width: 40px;
+      top: 0px;
+      height: 60px;
     }
     .second-arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       position: absolute;
-      right: 17px;
-      top: 18px;
+      right: 0px;
+      width: 40px;
+      top: 0px;
+      height: 49px;
+      transform: rotate(90deg);
     }
 
-    // .main-arrow::after {
-    //   content: url(../images/icons/main-menu.svg);
-    //   transform: rotate(90deg);
-    //   position: absolute;
-    //   right: 19px;
-    // }
+    .main-arrow.active {
+      transform: rotate(90deg);
+    }
 
-    // .main-arrow.active::after {
-    //   content: url(../images/icons/main-menu.svg);
-    //   position: absolute;
-    //   transform: rotate(0deg);
-    //   right: 19px;
-    // }
-    // .second-arrow::after {
-    //   content: url(../images/icons/main-menu.svg);
-    //   transform: rotate(-90deg);
-    //   position: absolute;
-    //   right: 16px;
-    // }
-    // .second-arrow.active::after {
-    //   content: url(../images/icons/main-menu.svg);
-    //   transform: rotate(90deg);
-    //   position: absolute;
-    //   right: 19px;
-    // }
+    .second-arrow.active {
+      transform: rotate(270deg);
+    }
     .complect {
       border-top: 1px solid #e5edf7;
       padding: 20px 19px;

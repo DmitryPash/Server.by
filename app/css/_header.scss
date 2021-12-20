@@ -239,7 +239,7 @@ $html-font-size: 16px;
 
 .burger {
   display: none;
-  position: absolute;
+  position: fixed;
   z-index: 999;
   content: "";
   width: 30px;
