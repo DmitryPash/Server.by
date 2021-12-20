@@ -3033,8 +3033,6 @@ body {
 .dots {
   position: relative;
   bottom: 3px;
-  border-bottom: 1px solid;
-  border-bottom-style: dotted;
   border-color: #d6e3f2;
 }
 
