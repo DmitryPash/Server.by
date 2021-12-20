@@ -3029,7 +3029,7 @@ body {
 .menu-desktop-second {
   display: none;
   height: calc(100% - 120px);
-  min-height: 350px;
+  min-height: 100%;
   overflow-y: auto;
   padding-left: 63px;
   position: absolute;
@@ -3118,7 +3118,6 @@ body {
 .menu-banner {
   display: block;
   position: absolute;
-  bottom: -200px;
 }
 
 .sub-info {
