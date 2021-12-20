@@ -162,6 +162,9 @@ $html-font-size: 16px;
         height: 100%;
         width: 60px;
         right: 0%;
+        &:hover {
+          background: $colorCyan;
+        }
       }
       &-form {
         position: relative;

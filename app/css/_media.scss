@@ -48,6 +48,7 @@
   .header .menu-time-tel .time-tel-big {
     font-size: 1.2rem;
   }
+
   .header .menu-time-work {
     margin-right: 10px;
   }
@@ -56,7 +57,8 @@
     margin: 0 auto;
   }
   .menu-desktop-second > li {
-    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
   }
   .header .main-search-catalog {
     display: none;
@@ -85,6 +87,10 @@
 }
 @media (max-width: 992px) {
   //Global
+
+  .hits-slider {
+    margin-right: -15px;
+  }
   .middle {
     padding-top: 118px;
   }
@@ -120,7 +126,7 @@
       box-shadow: 0px 4px 20px #d6e3f2;
       padding: 0;
       padding-top: 17px;
-      padding-bottom: 10px;
+      padding-bottom: 17px;
       &-mob-tel {
         display: block;
       }
@@ -193,7 +199,7 @@
     position: absolute;
     background-color: #ffffff;
     width: 100vw;
-    top: 34px;
+    top: 41px;
     left: -15px;
     max-height: calc(100vh - 162px);
     overflow-y: auto;
@@ -691,6 +697,9 @@
   }
 }
 @media (max-width: 400px) {
+  .hits {
+    margin-right: -15px;
+  }
   .catalog {
     margin-bottom: 40px;
     &-item {
