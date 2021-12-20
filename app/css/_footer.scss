@@ -134,8 +134,11 @@ $html-font-size: 16px;
     &-farba {
       display: block;
       font-size: rem(13px);
+      white-space: nowrap;
       a {
-        display: inline-block;
+        &:hover {
+          text-decoration: underline;
+        }
       }
       img {
         display: inline-block;
@@ -143,9 +146,6 @@ $html-font-size: 16px;
         bottom: -5px;
         margin-right: 5px;
         margin-left: 5px;
-      }
-      &:hover {
-        text-decoration: underline;
       }
     }
     &-txt:first-child {
@@ -187,6 +187,9 @@ $html-font-size: 16px;
       color: #398aea;
       border: 1px solid #d6e3f2;
       text-transform: uppercase;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
       &:hover {
         color: $colorWhite;
         background-color: #398aea;
