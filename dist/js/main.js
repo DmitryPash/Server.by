@@ -13,32 +13,15 @@ $(document).ready(function () {
     e.stopPropagation();
     e.preventDefault();
   });
-  // Menu dekstop
-  // Click event
-  // $(".btnClick").click(function () {
-  //   $(".btnClick").toggleClass("active");
-  //   $(".menu-dekstop").slideToggle(300);
-  // });
-  // drop mobile menu
-  // $(".dropdown-submenu a.menu-dekstop-link").on("click", function (e) {
-  //   $(this).next("ul").toggle(300);
-  //   $(this).toggleClass("active");
-  //   e.stopPropagation();
-  //   e.preventDefault();
-  // });
-});
-
-// mobile-nav Search
-$(document).ready(function () {
-  $(".mobile-nav-search").click(function () {
-    $(this).toggleClass("active");
-    $(".menu-mob").hide();
-    $(".col-search").slideToggle(300);
+  // mobile-nav Search
+  $(document).ready(function () {
+    $(".mobile-nav-search").click(function () {
+      $(this).toggleClass("active");
+      $(".menu-mob").hide();
+      $(".col-search").slideToggle(300);
+    });
   });
-});
-// end
-
-$(document).ready(function () {
+  // main slider index.html
   $(".banner-slider").slick({
     dots: true,
     adaptiveHeight: true,
@@ -52,13 +35,10 @@ $(document).ready(function () {
       },
     ],
   });
-});
-
-$(document).ready(function () {
+  // catalog slider
   $(".offer-slider").slick({
     slidesToShow: 5,
     infinite: true,
-    // arrows: false,
     prevArrow: ".slider-offer-left",
     nextArrow: ".slider-offer-right",
     variableWidth: true,
@@ -73,9 +53,6 @@ $(document).ready(function () {
       },
     ],
   });
-});
-
-$(document).ready(function () {
   $(".hits-slider").slick({
     slidesToShow: 5,
     infinite: true,
@@ -93,10 +70,7 @@ $(document).ready(function () {
       },
     ],
   });
-});
-
-// SLider page-product.html
-$(document).ready(function () {
+  // page-product slider
   $(".fotorama").fotorama({
     nav: "thumbs",
     thumbwidth: 120,
@@ -114,21 +88,12 @@ $(document).ready(function () {
     ],
   });
 });
-
 // drop for footer top
+
 let menu = document.querySelectorAll(".footer-top-toggle");
 menu.forEach((element) => {
   element.addEventListener("click", () => {
     element.classList.toggle("open");
-  });
-});
-
-// burger-menu
-$(document).ready(function () {
-  $(".dropdown-submenu a.dropdown-submenu-link").on("click", function (e) {
-    $(this).next("ul").toggleClass("active");
-    e.stopPropagation();
-    e.preventDefault();
   });
 });
 
