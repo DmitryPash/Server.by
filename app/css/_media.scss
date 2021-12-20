@@ -762,6 +762,21 @@
       }
     }
   }
+
+  .header .main-mobile-tel {
+    position: relative;
+    right: 15px;
+  }
+  .burger {
+    width: 16px;
+    left: 12px;
+  }
+  .burger::before {
+    top: -5px;
+  }
+  .burger::after {
+    bottom: -5px;
+  }
   // Main
 
   .categories-card-img {
