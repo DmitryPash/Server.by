@@ -3032,6 +3032,7 @@ body {
 }
 
 .menu-desktop-ul {
+  display: none;
   position: absolute;
   height: 505px;
   min-height: 100%;
@@ -3044,7 +3045,9 @@ body {
 }
 
 .menu-desktop-second {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -3069,6 +3072,10 @@ body {
   margin-right: 26px;
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+.menu-desktop-second .categories-card:hover {
+  border: 1px solid #398aea;
 }
 
 .menu-desktop-second .categories-card-img {
@@ -3096,14 +3103,14 @@ body {
   border-bottom: 1px solid #d6e3f2;
 }
 
-.menu-desktop-second::-webkit-scrollbar {
+.menu-desktop-ul::-webkit-scrollbar {
   width: 8px;
   background-color: transparent;
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(33.3%, rgba(255, 255, 255, 0)), color-stop(33.3%, #d6e3f2), color-stop(66.6%, #d6e3f2), color-stop(66.6%, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 33.3%, #d6e3f2 33.3%, #d6e3f2 66.6%, rgba(255, 255, 255, 0) 66.6%, rgba(255, 255, 255, 0) 100%);
 }
 
-.menu-desktop-second::-webkit-scrollbar-thumb {
+.menu-desktop-ul::-webkit-scrollbar-thumb {
   width: 8px;
   height: 5px;
   background: linear-gradient(104.95deg, #398aea 6.14%, #39a3ea 28.14%, #39c0ea 46.71%, #39c0ea 65.29%, #27a6dd 82.4%, #398aea 100%);
@@ -3170,10 +3177,8 @@ body {
   display: block;
 }
 
-.menu-desktop > li:hover .menu-desktop-second {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.menu-desktop > li:hover .menu-desktop-ul {
+  display: block;
 }
 
 .dots {
@@ -3189,18 +3194,6 @@ body {
   display: inline-block;
   bottom: -3px;
   padding-right: 5px;
-}
-
-.dots .menu-dekstop:hover {
-  display: block;
-}
-
-.dots .menu-dekstop:hover .menu-dekstop-second {
-  display: inline-block;
-}
-
-.dots .btnClick:hover ~ .menu-dekstop {
-  display: block;
 }
 
 .dots .checkbox {

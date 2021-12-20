@@ -1610,6 +1610,7 @@ body {
   min-height: 505px;
 
   &-ul {
+    display: none;
     position: absolute;
     height: 505px;
     min-height: 100%;
@@ -1621,7 +1622,7 @@ body {
     font-size: 0;
   }
   &-second {
-    display: none;
+    display: flex;
     flex-wrap: wrap;
 
     & > li {
@@ -1640,6 +1641,10 @@ body {
       border-radius: 4px;
       margin-right: 26px;
       box-shadow: none;
+
+      &:hover {
+        border: 1px solid $colorCyan;
+      }
       &-img {
         flex: 0 0 60px;
         margin-right: 13px;
@@ -1663,7 +1668,7 @@ body {
 .menu-desktop > li:last-child {
   border-bottom: 1px solid #d6e3f2;
 }
-.menu-desktop-second::-webkit-scrollbar {
+.menu-desktop-ul::-webkit-scrollbar {
   width: 8px;
   background-color: transparent;
   background: linear-gradient(
@@ -1676,7 +1681,7 @@ body {
     rgba(255, 255, 255, 0) 100%
   );
 }
-.menu-desktop-second::-webkit-scrollbar-thumb {
+.menu-desktop-ul::-webkit-scrollbar-thumb {
   width: 8px;
   height: 5px;
   background: linear-gradient(
@@ -1739,8 +1744,19 @@ body {
   display: block;
 }
 
-.menu-desktop > li:hover .menu-desktop-second {
-  display: flex;
+// .menu-desktop > li:hover .menu-desktop-second {
+//   display: flex;
+// }
+
+// .menu-desktop:hover {
+//   display: block;
+// }
+// .menu-desktop li:hover {
+//   background: black;
+// }
+
+.menu-desktop > li:hover .menu-desktop-ul {
+  display: block;
 }
 
 // dots
@@ -1757,17 +1773,6 @@ body {
     display: inline-block;
     bottom: -3px;
     padding-right: 5px;
-  }
-
-  .menu-dekstop:hover {
-    display: block;
-  }
-  .menu-dekstop:hover .menu-dekstop-second {
-    display: inline-block;
-  }
-
-  .btnClick:hover ~ .menu-dekstop {
-    display: block;
   }
 
   // .dots {
