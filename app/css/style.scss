@@ -1507,9 +1507,10 @@ body {
       vertical-align: top;
     }
     display: none;
-    height: calc(100% - 120px);
+    height: 100%;
+    // height: calc(100% - 120px);
     // min-height: 350px;
-    min-height: 100%;
+    // min-height: 100%;
     overflow-y: auto;
     padding-left: 63px;
     position: absolute;
@@ -1517,7 +1518,6 @@ body {
     left: 300px;
     right: 0;
     font-size: 0;
-    margin-bottom: 200px;
     // padding-bottom: 550px;
     .categories-card {
       background-color: #ffffff;
@@ -1581,16 +1581,26 @@ body {
 
 .menu-link {
   display: block;
+  position: relative;
   padding: 13px 20px;
   color: #111111;
   font-weight: 600;
   font-size: rem(14px);
   border-top: 1px solid #d6e3f2;
   transition: 0.3s ease;
-
+  &-img {
+    position: absolute;
+    right: 0;
+    top: 18px;
+    transform: rotate(90deg);
+  }
   &:hover {
     color: #647b98;
   }
+}
+
+.menu-link:hover img {
+  transform: rotate(-90deg);
 }
 
 .menu-banner {
