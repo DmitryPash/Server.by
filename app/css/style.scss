@@ -227,7 +227,6 @@ body {
     transition: 0.2s ease;
     padding: 22px 10px;
     overflow: hidden;
-    box-shadow: 0px 4px 20px #d6e3f2;
     &:hover {
       border: 1px solid $colorCyan;
     }
@@ -1702,5 +1701,24 @@ body {
     display: inline-block;
     bottom: -3px;
     padding-right: 5px;
+  }
+}
+
+// Pages
+.pages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+  h2 {
+    margin-bottom: 20px;
+  }
+  a {
+    color: $colorCyan;
+    margin-bottom: 10px;
+    transition: 0.3s ease;
+    &:hover {
+      color: $colorSilver;
+    }
   }
 }
