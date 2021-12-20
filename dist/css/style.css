@@ -3146,12 +3146,25 @@ body {
   display: block;
 }
 
+.menu-dekstop:hover {
+  display: block;
+}
+
+.menu-dekstop:hover .menu-dekstop-second {
+  display: inline-block;
+}
+
+.btnClick:hover ~ .menu-dekstop {
+  display: block;
+}
+
 .dots {
   position: relative;
   bottom: 3px;
   border-bottom: 1px solid;
   border-bottom-style: dotted;
   border-color: #d6e3f2;
+  z-index: 2;
 }
 
 .dots-clear {
@@ -3159,51 +3172,13 @@ body {
   z-index: 1;
   background: #ffffff;
   display: inline-block;
-  bottom: -3px;
   padding-right: 5px;
+  top: 2px;
 }
 
-<<<<<<< HEAD
 .checkbox {
   position: relative;
 }
-=======
-.pages {
-  padding-top: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-bottom: 60px;
-}
-
-.pages h2 {
-  margin-bottom: 20px;
-}
-
-.pages a {
-  color: #398aea;
-  margin-bottom: 10px;
-  -webkit-transition: 0.3s ease;
-  -o-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-.pages a:hover {
-  color: #647b98;
-}
-
-@media (max-width: 1337px) {
-  .catalog-item-description {
-    border-right: 0;
-  }
->>>>>>> 41eca908f6d8b44974c936b82cdd3e1de71eed94
 
 .checkbox-input {
   display: none;

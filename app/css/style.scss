@@ -965,7 +965,6 @@ body {
     text-transform: uppercase;
     color: #ffffff;
   }
-<<<<<<< HEAD
   // &-pay {
   //   display: inline-block;
   //   vertical-align: top;
@@ -977,18 +976,6 @@ body {
   //     font-size: 13px;
   //   }
   // }
-=======
-  &-pay {
-    display: inline-block;
-    vertical-align: top;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 35px;
-    &-first_price {
-      font-size: 13px;
-    }
-  }
->>>>>>> 41eca908f6d8b44974c936b82cdd3e1de71eed94
   &-description {
     display: inline-block;
     width: 26%;
@@ -1505,14 +1492,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-<<<<<<< HEAD
     // padding: 24px 10px 24px 20px;
     // height: 70px;
     padding-top: 20px;
     padding-bottom: 20px;
-=======
-    height: 70px;
->>>>>>> 41eca908f6d8b44974c936b82cdd3e1de71eed94
     padding-right: 10px;
     padding-left: 20px;
     margin-bottom: 40px;
@@ -1569,7 +1552,6 @@ body {
 }
 // end news-page.html
 
-<<<<<<< HEAD
 // УДАЛИТЬ!
 
 // .pages {
@@ -1624,9 +1606,6 @@ body {
 
 // END catalog-list2.html
 // Menu dekstop
-=======
-// Menu desktop
->>>>>>> 41eca908f6d8b44974c936b82cdd3e1de71eed94
 .container-menu {
   display: none;
   position: absolute;
@@ -1784,7 +1763,6 @@ body {
   display: block;
 }
 
-<<<<<<< HEAD
 .menu-dekstop:hover {
   display: block;
 }
@@ -1796,25 +1774,22 @@ body {
   display: block;
 }
 
-=======
-// dots
->>>>>>> 41eca908f6d8b44974c936b82cdd3e1de71eed94
 .dots {
   position: relative;
   bottom: 3px;
   border-bottom: 1px solid;
   border-bottom-style: dotted;
   border-color: #d6e3f2;
+  z-index: 2;
   &-clear {
     position: relative;
     z-index: 1;
     background: #ffffff;
     display: inline-block;
-    bottom: -3px;
     padding-right: 5px;
+    top: 2px;
   }
 }
-<<<<<<< HEAD
 .checkbox {
   position: relative;
   &-input {
@@ -1862,25 +1837,6 @@ body {
       top: 0;
       left: 0;
       z-index: 2;
-=======
-
-// Pages
-.pages {
-  padding-top: 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 60px;
-  h2 {
-    margin-bottom: 20px;
-  }
-  a {
-    color: $colorCyan;
-    margin-bottom: 10px;
-    transition: 0.3s ease;
-    &:hover {
-      color: $colorSilver;
->>>>>>> 41eca908f6d8b44974c936b82cdd3e1de71eed94
     }
   }
 }
