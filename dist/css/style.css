@@ -409,6 +409,10 @@ textarea {
   text-decoration: underline;
 }
 
+[class*=-breadcrumbs] a:hover {
+  text-decoration: none;
+}
+
 [class*=-breadcrumbs] :last-child {
   color: #95a4b8;
   text-decoration: none;
@@ -1956,6 +1960,8 @@ body {
 }
 
 .filter-title {
+  -moz-text-align-last: left;
+  text-align-last: left;
   font-weight: 700;
   padding-bottom: 15px;
 }
@@ -3160,24 +3166,6 @@ body {
   display: block;
 }
 
-.dots {
-  position: relative;
-  bottom: 3px;
-  border-bottom: 1px solid;
-  border-bottom-style: dotted;
-  border-color: #d6e3f2;
-  z-index: 2;
-}
-
-.dots-clear {
-  position: relative;
-  z-index: 1;
-  background: #ffffff;
-  display: inline-block;
-  padding-right: 5px;
-  top: 2px;
-}
-
 .checkbox {
   position: relative;
 }
@@ -3484,6 +3472,12 @@ body {
 
   .contact-info-details-adress {
     left: 0;
+  }
+}
+
+@media (max-width: 1070px) {
+  .catalog-description-price {
+    font-size: 1.75rem;
   }
 }
 

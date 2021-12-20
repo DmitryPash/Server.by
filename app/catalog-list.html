@@ -18,7 +18,6 @@
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <script src="js/filter.js"></script>
 </head>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,14 +34,6 @@
 <body>
   <div class="wrapper" id="wrapper">
     @@include('inc-header.html')
-    <div class="pages">
-      <h2>Страницы</h2>
-      <a href="./page-product.html">page-product</a>
-      <a href="./catalogList.html">cataloglist</a>
-      <a href="./news-list.html">news-list</a>
-      <a href="./contact.html">contact</a>
-      <a href="./news-page.html">news-page</a>
-    </div>
     <div class="middle" id="middle">
       <div class="container">
         <div class="page-breadcrumbs">
@@ -99,12 +90,20 @@
                 <div class="filter-title">Тип</div>
                 <ul>
                   <li>
-                    <input type="checkbox" class="filter-checkbox" />
-                    <span class="filter-span">Игровой</span>
+                    <div class="checkbox">
+                      <input class = "checkbox-input" type="checkbox" id = "checkbox_5">
+                      <label class = "checkbox-label" for="checkbox_5">Игровой</label>
+                    </div>
+                    <!-- <input type="checkbox" class="filter-checkbox" />
+                    <span class="filter-span">Игровой</span> -->
                   </li>
                   <li>
-                    <input type="checkbox" class="filter-checkbox" />
-                    <span class="filter-span">Классический</span>
+                    <div class="checkbox">
+                      <input class = "checkbox-input" type="checkbox" id = "checkbox_6">
+                      <label class = "checkbox-label" for="checkbox_6">Классический</label>
+                    </div>
+                    <!-- <input type="checkbox" class="filter-checkbox" />
+                    <span class="filter-span">Классический</span> -->
                   </li>
                 </ul>
               </div>
@@ -112,12 +111,20 @@
                 <div class="filter-title">Диагональ экрана</div>
                 <ul>
                   <li>
-                    <input type="checkbox" class="filter-checkbox" />
-                    <span class="filter-span">15.6</span>
+                    <div class="checkbox">
+                      <input class = "checkbox-input" type="checkbox" id = "checkbox_7">
+                      <label class = "checkbox-label" for="checkbox_7">15.6</label>
+                    </div>
+                    <!-- <input type="checkbox" class="filter-checkbox" />
+                    <span class="filter-span">15.6</span> -->
                   </li>
                   <li>
-                    <input type="checkbox" class="filter-checkbox" />
-                    <span class="filter-span">17.3</span>
+                    <div class="checkbox">
+                      <input class = "checkbox-input" type="checkbox" id = "checkbox_8">
+                      <label class = "checkbox-label" for="checkbox_8">17.3</label>
+                    </div>
+                    <!-- <input type="checkbox" class="filter-checkbox" />
+                    <span class="filter-span">17.3</span> -->
                   </li>
                 </ul>
               </div>
@@ -1235,6 +1242,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="./js/main.js"></script>
+  <script src="./js/filter.js"></script>
 </body>
 
 </html>

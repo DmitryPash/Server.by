@@ -78,7 +78,11 @@
   }
   // Footer
 }
-
+@media (max-width: 1070px) {
+  .catalog-description-price {
+    font-size: rem(28px);
+  }
+}
 @media (max-width: 992px) {
   //Global
   .middle {

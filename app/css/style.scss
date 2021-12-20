@@ -681,6 +681,7 @@ body {
   background-color: $colorWhite;
   margin-bottom: 45px;
   &-title {
+    text-align-last: left;
     font-weight: 700;
     padding-bottom: 15px;
     &-h2 {
@@ -1773,22 +1774,20 @@ body {
   display: block;
 }
 
-.dots {
-  position: relative;
-  bottom: 3px;
-  border-bottom: 1px solid;
-  border-bottom-style: dotted;
-  border-color: #d6e3f2;
-  z-index: 2;
-  &-clear {
-    position: relative;
-    z-index: 1;
-    background: #ffffff;
-    display: inline-block;
-    padding-right: 5px;
-    top: 2px;
-  }
-}
+// .dots {
+//   position: relative;
+//   bottom: 3px;
+//   border-bottom: 1px dotted #d6e3f2;
+//   z-index: 2;
+//   &-clear {
+//     position: relative;
+//     z-index: 1;
+//     background: #ffffff;
+//     display: inline-block;
+//     padding-right: 5px;
+//     top: 2px;
+//   }
+// }
 .checkbox {
   position: relative;
   &-input {
