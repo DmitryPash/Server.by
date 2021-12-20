@@ -18,7 +18,6 @@
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <script src="js/filter.js"></script>
 </head>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,14 +34,6 @@
 <body>
   <div class="wrapper" id="wrapper">
     @@include('inc-header.html')
-    <div class="pages">
-      <h2>Страницы</h2>
-      <a href="./page-product.html">page-product</a>
-      <a href="./catalogList.html">cataloglist</a>
-      <a href="./news-list.html">news-list</a>
-      <a href="./contact.html">contact</a>
-      <a href="./news-page.html">news-page</a>
-    </div>
     <div class="middle" id="middle">
       <div class="container">
         <div class="page-breadcrumbs">
@@ -62,27 +53,35 @@
               <div class="filter-price">
                 <div class="filter-title">Цена, бел.руб.</div>
                 <input class="filter-price-from" placeholder="от" />
-                <img src="./images/icons/line.png" alt="alt" class="filter-price-line" />
+                <div class ="filter-price-line"> </div>
                 <input class="filter-price-to" placeholder="до" />
               </div>
               <div class="filter-producer">
                 <div class="filter-title">Производители</div>
                 <ul>
                   <li>
-                    <input type="checkbox" class="filter-checkbox" />
-                    <span class="filter-span">Acer</span>
+                    <div class="checkbox">
+                      <input class = "checkbox-input" type="checkbox" id = "checkbox_1">
+                      <label class = "checkbox-label" for="checkbox_1">Acer</label>
+                    </div>
                   </li>
                   <li>
-                    <input type="checkbox" class="filter-checkbox" />
-                    <span class="filter-span">Asus</span>
+                    <div class="checkbox">
+                      <input class = "checkbox-input" type="checkbox" id = "checkbox_2">
+                      <label class = "checkbox-label" for="checkbox_2">Asus</label>
+                    </div>
                   </li>
                   <li>
-                    <input type="checkbox" class="filter-checkbox" />
-                    <span class="filter-span">HP</span>
+                    <div class="checkbox">
+                      <input class = "checkbox-input" type="checkbox" id = "checkbox_3">
+                      <label class = "checkbox-label" for="checkbox_3">HP</label>
+                    </div>
                   </li>
                   <li>
-                    <input type="checkbox" class="filter-checkbox" />
-                    <span class="filter-span">Lenovo</span>
+                    <div class="checkbox">
+                      <input class = "checkbox-input" type="checkbox" id = "checkbox_4">
+                      <label class = "checkbox-label" for="checkbox_4">Lenovo</label>
+                    </div>
                   </li>
                 </ul>
                 <a href="#" class="filter-producer-more">Показать всех (еще 5)</a>
@@ -91,12 +90,20 @@
                 <div class="filter-title">Тип</div>
                 <ul>
                   <li>
-                    <input type="checkbox" class="filter-checkbox" />
-                    <span class="filter-span">Игровой</span>
+                    <div class="checkbox">
+                      <input class = "checkbox-input" type="checkbox" id = "checkbox_5">
+                      <label class = "checkbox-label" for="checkbox_5">Игровой</label>
+                    </div>
+                    <!-- <input type="checkbox" class="filter-checkbox" />
+                    <span class="filter-span">Игровой</span> -->
                   </li>
                   <li>
-                    <input type="checkbox" class="filter-checkbox" />
-                    <span class="filter-span">Классический</span>
+                    <div class="checkbox">
+                      <input class = "checkbox-input" type="checkbox" id = "checkbox_6">
+                      <label class = "checkbox-label" for="checkbox_6">Классический</label>
+                    </div>
+                    <!-- <input type="checkbox" class="filter-checkbox" />
+                    <span class="filter-span">Классический</span> -->
                   </li>
                 </ul>
               </div>
@@ -104,12 +111,20 @@
                 <div class="filter-title">Диагональ экрана</div>
                 <ul>
                   <li>
-                    <input type="checkbox" class="filter-checkbox" />
-                    <span class="filter-span">15.6</span>
+                    <div class="checkbox">
+                      <input class = "checkbox-input" type="checkbox" id = "checkbox_7">
+                      <label class = "checkbox-label" for="checkbox_7">15.6</label>
+                    </div>
+                    <!-- <input type="checkbox" class="filter-checkbox" />
+                    <span class="filter-span">15.6</span> -->
                   </li>
                   <li>
-                    <input type="checkbox" class="filter-checkbox" />
-                    <span class="filter-span">17.3</span>
+                    <div class="checkbox">
+                      <input class = "checkbox-input" type="checkbox" id = "checkbox_8">
+                      <label class = "checkbox-label" for="checkbox_8">17.3</label>
+                    </div>
+                    <!-- <input type="checkbox" class="filter-checkbox" />
+                    <span class="filter-span">17.3</span> -->
                   </li>
                 </ul>
               </div>
@@ -133,25 +148,31 @@
             </div>
           </div>
           <div class="col-filter-78 col-md-12">
-            <div class="catalog">
-              <div class="catalog-marker">ХИТ ПРОДАЖ</div>
+            <div class="catalog">             
               <div class="catalog-item">
+                <div class="catalog-marker">ХИТ ПРОДАЖ</div>
                 <div class="catalog-item-img">
-                  <img src="./images/rog strix.png" alt="alt" />
+                  <a href="#">
+                    <img src="./images/rog strix.png" alt="alt" />
+                  </a> 
                   <div class="catalog-item-features">
-                    <img src="./images/icons/Сравнение.png" alt="alt" />
-                    <a href="#" class="catalog-item-features-compare">В сравнение</a>
-                    <img src="./images/icons/like.png" alt="alt" />
-                    <a href="#" class="catalog-item-features-compare">В избранное</a>
+                   
+                    <a href="#" class="catalog-item-features-compare">
+                      <img src="./images/icons/Сравнение.png" alt="alt" />
+                      В сравнение</a>
+                   
+                    <a href="#" class="catalog-item-features-compare">
+                      <img src="./images/icons/like.png" alt="alt" />
+                      В избранное</a>
                   </div>
                 </div>
                 <div class="catalog-item-description">
-                  <div class="catalog-item-description-title">
+                  <a href ="#" class="catalog-item-description-title">
                     Lenovo IdeaPad L340-15API 81LW0086RK
-                  </div>
+                  </a>
                   <div class="catalog-item-description-articule">
-                    <div class="articule">КОД ТОВАРА: QD0095719</div>
-                    <div class="in_stock">
+                    <div class="catalog-item-description-number">КОД ТОВАРА: QD0095719</div>
+                    <div class="catalog-item-description-in_stock">
                       <img src="./images/icons/accept.png" alt="alt" />
                       В НАЛИЧИИ
                     </div>
@@ -160,36 +181,41 @@
                     <tbody>
                       <tr>
                         <td>
-                          Диагональ/разрешение
-                          <span class="dots"></span>
+                          <div class="dots">
+                            <div class="dots-clear">Диагональ/разрешение</div>
+                          </div>                                           
                         </td>
                         <td>17.3"/1920x1080 пикс.</td>
                       </tr>
                       <tr>
                         <td>
-                          Процессор
-                          <span class="dots"></span>
+                          <div class="dots">
+                            <div class="dots-clear">Процессор</div>
+                          </div>
                         </td>
                         <td>AMD Ryzen 9 5900HX 3.3 ГГц</td>
                       </tr>
                       <tr>
-                        <td>
-                          Оперативная память (RAM)
-                          <spna class="dots"></spna>
+                        <td>             
+                          <div class="dots">
+                            <div class="dots-clear">Оперативная память (RAM)</div>
+                          </div>
                         </td>
                         <td>16 ГБ</td>
                       </tr>
                       <tr>
-                        <td>
-                          Графический контроллер
-                          <span class="dots"></span>
+                        <td>                      
+                          <div class="dots">
+                            <div class="dots-clear">Графический контроллер</div>
+                          </div>
                         </td>
                         <td>GeForce RTX 3060 6GB</td>
                       </tr>
                       <tr>
-                        <td>
-                          Объем SSD
-                          <span class="dots"></span>
+                        <td>      
+                          <div class="dots">
+                            <div class="dots-clear">Объем SSD</div>
+                          </div>
                         </td>
                         <td>512 ГБ</td>
                       </tr>
@@ -233,25 +259,31 @@
                 </div>
               </div>
             </div>
-            <div class="catalog">
-              <div class="catalog-marker green">НОВИНКА</div>
+            <div class="catalog">             
               <div class="catalog-item">
+                <div class="catalog-marker green">новинки</div>
                 <div class="catalog-item-img">
-                  <img src="./images/rog strix.png" alt="alt" />
+                  <a href="#">
+                    <img src="./images/rog strix.png" alt="alt" />
+                  </a> 
                   <div class="catalog-item-features">
-                    <img src="./images/icons/Сравнение.png" alt="alt" />
-                    <a href="#" class="catalog-item-features-compare">В сравнение</a>
-                    <img src="./images/icons/like.png" alt="alt" />
-                    <a href="#" class="catalog-item-features-compare">В избранное</a>
+                   
+                    <a href="#" class="catalog-item-features-compare">
+                      <img src="./images/icons/Сравнение.png" alt="alt" />
+                      В сравнение</a>
+                   
+                    <a href="#" class="catalog-item-features-compare">
+                      <img src="./images/icons/like.png" alt="alt" />
+                      В избранное</a>
                   </div>
                 </div>
                 <div class="catalog-item-description">
-                  <div class="catalog-item-description-title">
+                  <a href ="#" class="catalog-item-description-title">
                     Lenovo IdeaPad L340-15API 81LW0086RK
-                  </div>
+                  </a>
                   <div class="catalog-item-description-articule">
-                    <div class="articule">КОД ТОВАРА: QD0095719</div>
-                    <div class="in_stock">
+                    <div class="catalog-item-description-number">КОД ТОВАРА: QD0095719</div>
+                    <div class="catalog-item-description-in_stock">
                       <img src="./images/icons/accept.png" alt="alt" />
                       В НАЛИЧИИ
                     </div>
@@ -260,36 +292,41 @@
                     <tbody>
                       <tr>
                         <td>
-                          Диагональ/разрешение
-                          <span class="dots"></span>
+                          <div class="dots">
+                            <div class="dots-clear">Диагональ/разрешение</div>
+                          </div>                                           
                         </td>
                         <td>17.3"/1920x1080 пикс.</td>
                       </tr>
                       <tr>
                         <td>
-                          Процессор
-                          <span class="dots"></span>
+                          <div class="dots">
+                            <div class="dots-clear">Процессор</div>
+                          </div>
                         </td>
                         <td>AMD Ryzen 9 5900HX 3.3 ГГц</td>
                       </tr>
                       <tr>
-                        <td>
-                          Оперативная память (RAM)
-                          <spna class="dots"></spna>
+                        <td>             
+                          <div class="dots">
+                            <div class="dots-clear">Оперативная память (RAM)</div>
+                          </div>
                         </td>
                         <td>16 ГБ</td>
                       </tr>
                       <tr>
-                        <td>
-                          Графический контроллер
-                          <span class="dots"></span>
+                        <td>                      
+                          <div class="dots">
+                            <div class="dots-clear">Графический контроллер</div>
+                          </div>
                         </td>
                         <td>GeForce RTX 3060 6GB</td>
                       </tr>
                       <tr>
-                        <td>
-                          Объем SSD
-                          <span class="dots"></span>
+                        <td>      
+                          <div class="dots">
+                            <div class="dots-clear">Объем SSD</div>
+                          </div>
                         </td>
                         <td>512 ГБ</td>
                       </tr>
@@ -333,25 +370,31 @@
                 </div>
               </div>
             </div>
-            <div class="catalog">
-              <div class="catalog-marker">ХИТ ПРОДАЖ</div>
+            <div class="catalog">             
               <div class="catalog-item">
+                <div class="catalog-marker">ХИТ ПРОДАЖ</div>
                 <div class="catalog-item-img">
-                  <img src="./images/rog strix.png" alt="alt" />
+                  <a href="#">
+                    <img src="./images/rog strix.png" alt="alt" />
+                  </a> 
                   <div class="catalog-item-features">
-                    <img src="./images/icons/Сравнение.png" alt="alt" />
-                    <a href="#" class="catalog-item-features-compare">В сравнение</a>
-                    <img src="./images/icons/like.png" alt="alt" />
-                    <a href="#" class="catalog-item-features-compare">В избранное</a>
+                   
+                    <a href="#" class="catalog-item-features-compare">
+                      <img src="./images/icons/Сравнение.png" alt="alt" />
+                      В сравнение</a>
+                   
+                    <a href="#" class="catalog-item-features-compare">
+                      <img src="./images/icons/like.png" alt="alt" />
+                      В избранное</a>
                   </div>
                 </div>
                 <div class="catalog-item-description">
-                  <div class="catalog-item-description-title">
+                  <a href ="#" class="catalog-item-description-title">
                     Lenovo IdeaPad L340-15API 81LW0086RK
-                  </div>
+                  </a>
                   <div class="catalog-item-description-articule">
-                    <div class="articule">КОД ТОВАРА: QD0095719</div>
-                    <div class="in_stock">
+                    <div class="catalog-item-description-number">КОД ТОВАРА: QD0095719</div>
+                    <div class="catalog-item-description-in_stock">
                       <img src="./images/icons/accept.png" alt="alt" />
                       В НАЛИЧИИ
                     </div>
@@ -360,36 +403,41 @@
                     <tbody>
                       <tr>
                         <td>
-                          Диагональ/разрешение
-                          <span class="dots"></span>
+                          <div class="dots">
+                            <div class="dots-clear">Диагональ/разрешение</div>
+                          </div>                                           
                         </td>
                         <td>17.3"/1920x1080 пикс.</td>
                       </tr>
                       <tr>
                         <td>
-                          Процессор
-                          <span class="dots"></span>
+                          <div class="dots">
+                            <div class="dots-clear">Процессор</div>
+                          </div>
                         </td>
                         <td>AMD Ryzen 9 5900HX 3.3 ГГц</td>
                       </tr>
                       <tr>
-                        <td>
-                          Оперативная память (RAM)
-                          <spna class="dots"></spna>
+                        <td>             
+                          <div class="dots">
+                            <div class="dots-clear">Оперативная память (RAM)</div>
+                          </div>
                         </td>
                         <td>16 ГБ</td>
                       </tr>
                       <tr>
-                        <td>
-                          Графический контроллер
-                          <span class="dots"></span>
+                        <td>                      
+                          <div class="dots">
+                            <div class="dots-clear">Графический контроллер</div>
+                          </div>
                         </td>
                         <td>GeForce RTX 3060 6GB</td>
                       </tr>
                       <tr>
-                        <td>
-                          Объем SSD
-                          <span class="dots"></span>
+                        <td>      
+                          <div class="dots">
+                            <div class="dots-clear">Объем SSD</div>
+                          </div>
                         </td>
                         <td>512 ГБ</td>
                       </tr>
@@ -433,25 +481,31 @@
                 </div>
               </div>
             </div>
-            <div class="catalog">
-              <div class="catalog-marker">ХИТ ПРОДАЖ</div>
+            <div class="catalog">             
               <div class="catalog-item">
+                <div class="catalog-marker">ХИТ ПРОДАЖ</div>
                 <div class="catalog-item-img">
-                  <img src="./images/rog strix.png" alt="alt" />
+                  <a href="#">
+                    <img src="./images/rog strix.png" alt="alt" />
+                  </a> 
                   <div class="catalog-item-features">
-                    <img src="./images/icons/Сравнение.png" alt="alt" />
-                    <a href="#" class="catalog-item-features-compare">В сравнение</a>
-                    <img src="./images/icons/like.png" alt="alt" />
-                    <a href="#" class="catalog-item-features-compare">В избранное</a>
+                   
+                    <a href="#" class="catalog-item-features-compare">
+                      <img src="./images/icons/Сравнение.png" alt="alt" />
+                      В сравнение</a>
+                   
+                    <a href="#" class="catalog-item-features-compare">
+                      <img src="./images/icons/like.png" alt="alt" />
+                      В избранное</a>
                   </div>
                 </div>
                 <div class="catalog-item-description">
-                  <div class="catalog-item-description-title">
+                  <a href ="#" class="catalog-item-description-title">
                     Lenovo IdeaPad L340-15API 81LW0086RK
-                  </div>
+                  </a>
                   <div class="catalog-item-description-articule">
-                    <div class="articule">КОД ТОВАРА: QD0095719</div>
-                    <div class="in_stock">
+                    <div class="catalog-item-description-number">КОД ТОВАРА: QD0095719</div>
+                    <div class="catalog-item-description-in_stock">
                       <img src="./images/icons/accept.png" alt="alt" />
                       В НАЛИЧИИ
                     </div>
@@ -460,36 +514,41 @@
                     <tbody>
                       <tr>
                         <td>
-                          Диагональ/разрешение
-                          <span class="dots"></span>
+                          <div class="dots">
+                            <div class="dots-clear">Диагональ/разрешение</div>
+                          </div>                                           
                         </td>
                         <td>17.3"/1920x1080 пикс.</td>
                       </tr>
                       <tr>
                         <td>
-                          Процессор
-                          <span class="dots"></span>
+                          <div class="dots">
+                            <div class="dots-clear">Процессор</div>
+                          </div>
                         </td>
                         <td>AMD Ryzen 9 5900HX 3.3 ГГц</td>
                       </tr>
                       <tr>
-                        <td>
-                          Оперативная память (RAM)
-                          <spna class="dots"></spna>
+                        <td>             
+                          <div class="dots">
+                            <div class="dots-clear">Оперативная память (RAM)</div>
+                          </div>
                         </td>
                         <td>16 ГБ</td>
                       </tr>
                       <tr>
-                        <td>
-                          Графический контроллер
-                          <span class="dots"></span>
+                        <td>                      
+                          <div class="dots">
+                            <div class="dots-clear">Графический контроллер</div>
+                          </div>
                         </td>
                         <td>GeForce RTX 3060 6GB</td>
                       </tr>
                       <tr>
-                        <td>
-                          Объем SSD
-                          <span class="dots"></span>
+                        <td>      
+                          <div class="dots">
+                            <div class="dots-clear">Объем SSD</div>
+                          </div>
                         </td>
                         <td>512 ГБ</td>
                       </tr>
@@ -533,25 +592,31 @@
                 </div>
               </div>
             </div>
-            <div class="catalog">
-              <div class="catalog-marker">ХИТ ПРОДАЖ</div>
+            <div class="catalog">             
               <div class="catalog-item">
+                <div class="catalog-marker">ХИТ ПРОДАЖ</div>
                 <div class="catalog-item-img">
-                  <img src="./images/rog strix.png" alt="alt" />
+                  <a href="#">
+                    <img src="./images/rog strix.png" alt="alt" />
+                  </a> 
                   <div class="catalog-item-features">
-                    <img src="./images/icons/Сравнение.png" alt="alt" />
-                    <a href="#" class="catalog-item-features-compare">В сравнение</a>
-                    <img src="./images/icons/like.png" alt="alt" />
-                    <a href="#" class="catalog-item-features-compare">В избранное</a>
+                   
+                    <a href="#" class="catalog-item-features-compare">
+                      <img src="./images/icons/Сравнение.png" alt="alt" />
+                      В сравнение</a>
+                   
+                    <a href="#" class="catalog-item-features-compare">
+                      <img src="./images/icons/like.png" alt="alt" />
+                      В избранное</a>
                   </div>
                 </div>
                 <div class="catalog-item-description">
-                  <div class="catalog-item-description-title">
+                  <a href ="#" class="catalog-item-description-title">
                     Lenovo IdeaPad L340-15API 81LW0086RK
-                  </div>
+                  </a>
                   <div class="catalog-item-description-articule">
-                    <div class="articule">КОД ТОВАРА: QD0095719</div>
-                    <div class="in_stock">
+                    <div class="catalog-item-description-number">КОД ТОВАРА: QD0095719</div>
+                    <div class="catalog-item-description-in_stock">
                       <img src="./images/icons/accept.png" alt="alt" />
                       В НАЛИЧИИ
                     </div>
@@ -560,36 +625,41 @@
                     <tbody>
                       <tr>
                         <td>
-                          Диагональ/разрешение
-                          <span class="dots"></span>
+                          <div class="dots">
+                            <div class="dots-clear">Диагональ/разрешение</div>
+                          </div>                                           
                         </td>
                         <td>17.3"/1920x1080 пикс.</td>
                       </tr>
                       <tr>
                         <td>
-                          Процессор
-                          <span class="dots"></span>
+                          <div class="dots">
+                            <div class="dots-clear">Процессор</div>
+                          </div>
                         </td>
                         <td>AMD Ryzen 9 5900HX 3.3 ГГц</td>
                       </tr>
                       <tr>
-                        <td>
-                          Оперативная память (RAM)
-                          <spna class="dots"></spna>
+                        <td>             
+                          <div class="dots">
+                            <div class="dots-clear">Оперативная память (RAM)</div>
+                          </div>
                         </td>
                         <td>16 ГБ</td>
                       </tr>
                       <tr>
-                        <td>
-                          Графический контроллер
-                          <span class="dots"></span>
+                        <td>                      
+                          <div class="dots">
+                            <div class="dots-clear">Графический контроллер</div>
+                          </div>
                         </td>
                         <td>GeForce RTX 3060 6GB</td>
                       </tr>
                       <tr>
-                        <td>
-                          Объем SSD
-                          <span class="dots"></span>
+                        <td>      
+                          <div class="dots">
+                            <div class="dots-clear">Объем SSD</div>
+                          </div>
                         </td>
                         <td>512 ГБ</td>
                       </tr>
@@ -633,25 +703,31 @@
                 </div>
               </div>
             </div>
-            <div class="catalog">
-              <div class="catalog-marker">ХИТ ПРОДАЖ</div>
+            <div class="catalog">             
               <div class="catalog-item">
+                <div class="catalog-marker">ХИТ ПРОДАЖ</div>
                 <div class="catalog-item-img">
-                  <img src="./images/rog strix.png" alt="alt" />
+                  <a href="#">
+                    <img src="./images/rog strix.png" alt="alt" />
+                  </a> 
                   <div class="catalog-item-features">
-                    <img src="./images/icons/Сравнение.png" alt="alt" />
-                    <a href="#" class="catalog-item-features-compare">В сравнение</a>
-                    <img src="./images/icons/like.png" alt="alt" />
-                    <a href="#" class="catalog-item-features-compare">В избранное</a>
+                   
+                    <a href="#" class="catalog-item-features-compare">
+                      <img src="./images/icons/Сравнение.png" alt="alt" />
+                      В сравнение</a>
+                   
+                    <a href="#" class="catalog-item-features-compare">
+                      <img src="./images/icons/like.png" alt="alt" />
+                      В избранное</a>
                   </div>
                 </div>
                 <div class="catalog-item-description">
-                  <div class="catalog-item-description-title">
+                  <a href ="#" class="catalog-item-description-title">
                     Lenovo IdeaPad L340-15API 81LW0086RK
-                  </div>
+                  </a>
                   <div class="catalog-item-description-articule">
-                    <div class="articule">КОД ТОВАРА: QD0095719</div>
-                    <div class="in_stock">
+                    <div class="catalog-item-description-number">КОД ТОВАРА: QD0095719</div>
+                    <div class="catalog-item-description-in_stock">
                       <img src="./images/icons/accept.png" alt="alt" />
                       В НАЛИЧИИ
                     </div>
@@ -660,36 +736,41 @@
                     <tbody>
                       <tr>
                         <td>
-                          Диагональ/разрешение
-                          <span class="dots"></span>
+                          <div class="dots">
+                            <div class="dots-clear">Диагональ/разрешение</div>
+                          </div>                                           
                         </td>
                         <td>17.3"/1920x1080 пикс.</td>
                       </tr>
                       <tr>
                         <td>
-                          Процессор
-                          <span class="dots"></span>
+                          <div class="dots">
+                            <div class="dots-clear">Процессор</div>
+                          </div>
                         </td>
                         <td>AMD Ryzen 9 5900HX 3.3 ГГц</td>
                       </tr>
                       <tr>
-                        <td>
-                          Оперативная память (RAM)
-                          <spna class="dots"></spna>
+                        <td>             
+                          <div class="dots">
+                            <div class="dots-clear">Оперативная память (RAM)</div>
+                          </div>
                         </td>
                         <td>16 ГБ</td>
                       </tr>
                       <tr>
-                        <td>
-                          Графический контроллер
-                          <span class="dots"></span>
+                        <td>                      
+                          <div class="dots">
+                            <div class="dots-clear">Графический контроллер</div>
+                          </div>
                         </td>
                         <td>GeForce RTX 3060 6GB</td>
                       </tr>
                       <tr>
-                        <td>
-                          Объем SSD
-                          <span class="dots"></span>
+                        <td>      
+                          <div class="dots">
+                            <div class="dots-clear">Объем SSD</div>
+                          </div>
                         </td>
                         <td>512 ГБ</td>
                       </tr>
@@ -733,25 +814,31 @@
                 </div>
               </div>
             </div>
-            <div class="catalog">
-              <div class="catalog-marker">ХИТ ПРОДАЖ</div>
+            <div class="catalog">             
               <div class="catalog-item">
+                <div class="catalog-marker">ХИТ ПРОДАЖ</div>
                 <div class="catalog-item-img">
-                  <img src="./images/rog strix.png" alt="alt" />
+                  <a href="#">
+                    <img src="./images/rog strix.png" alt="alt" />
+                  </a> 
                   <div class="catalog-item-features">
-                    <img src="./images/icons/Сравнение.png" alt="alt" />
-                    <a href="#" class="catalog-item-features-compare">В сравнение</a>
-                    <img src="./images/icons/like.png" alt="alt" />
-                    <a href="#" class="catalog-item-features-compare">В избранное</a>
+                   
+                    <a href="#" class="catalog-item-features-compare">
+                      <img src="./images/icons/Сравнение.png" alt="alt" />
+                      В сравнение</a>
+                   
+                    <a href="#" class="catalog-item-features-compare">
+                      <img src="./images/icons/like.png" alt="alt" />
+                      В избранное</a>
                   </div>
                 </div>
                 <div class="catalog-item-description">
-                  <div class="catalog-item-description-title">
+                  <a href ="#" class="catalog-item-description-title">
                     Lenovo IdeaPad L340-15API 81LW0086RK
-                  </div>
+                  </a>
                   <div class="catalog-item-description-articule">
-                    <div class="articule">КОД ТОВАРА: QD0095719</div>
-                    <div class="in_stock">
+                    <div class="catalog-item-description-number">КОД ТОВАРА: QD0095719</div>
+                    <div class="catalog-item-description-in_stock">
                       <img src="./images/icons/accept.png" alt="alt" />
                       В НАЛИЧИИ
                     </div>
@@ -760,136 +847,41 @@
                     <tbody>
                       <tr>
                         <td>
-                          Диагональ/разрешение
-                          <span class="dots"></span>
+                          <div class="dots">
+                            <div class="dots-clear">Диагональ/разрешение</div>
+                          </div>                                           
                         </td>
                         <td>17.3"/1920x1080 пикс.</td>
                       </tr>
                       <tr>
                         <td>
-                          Процессор
-                          <span class="dots"></span>
+                          <div class="dots">
+                            <div class="dots-clear">Процессор</div>
+                          </div>
                         </td>
                         <td>AMD Ryzen 9 5900HX 3.3 ГГц</td>
                       </tr>
                       <tr>
-                        <td>
-                          Оперативная память (RAM)
-                          <spna class="dots"></spna>
+                        <td>             
+                          <div class="dots">
+                            <div class="dots-clear">Оперативная память (RAM)</div>
+                          </div>
                         </td>
                         <td>16 ГБ</td>
                       </tr>
                       <tr>
-                        <td>
-                          Графический контроллер
-                          <span class="dots"></span>
+                        <td>                      
+                          <div class="dots">
+                            <div class="dots-clear">Графический контроллер</div>
+                          </div>
                         </td>
                         <td>GeForce RTX 3060 6GB</td>
                       </tr>
                       <tr>
-                        <td>
-                          Объем SSD
-                          <span class="dots"></span>
-                        </td>
-                        <td>512 ГБ</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="catalog-description">
-                  <div class="catalog-description-first_price">
-                    <div class="catalog-description-title cyan">
-                      С КАРТОЙ «СЕРВЕР»
-                      <span class="help"><i class="far fa-question-circle"></i></span>
-                    </div>
-                    <div class="catalog-description-price cyan">
-                      2 480.00 <span>РУБ.</span>
-                    </div>
-                  </div>
-                  <div class="catalog-description-second_price">
-                    <div class="catalog-description-title">
-                      С КАРТОЙ «СЕРВЕР»
-                      <span class="help"><i class="far fa-question-circle"></i></span>
-                    </div>
-                    <div class="catalog-description-price">
-                      2 480.00 <span>РУБ.</span>
-                    </div>
-                  </div>
-
-                  <div class="catalog-description-btns">
-                    <a href="#" class="catalog-description-btn ui-btn">
-                      <div href="#" class="product-description-img">
-                        <img src="./images/icons/cart-btn.svg" alt="alt" />
-                      </div>
-                      В корзину
-                    </a>
-                    <a href="#" class="catalog-description-compare">
-                      <img src="./images/icons/mob-compare.png" alt="alt" />
-                    </a>
-                    <a href="#" class="catalog-description-favorite">
-                      <img src="./images/icons/mob-like.png" alt="alt" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="catalog">
-              <div class="catalog-marker">ХИТ ПРОДАЖ</div>
-              <div class="catalog-item">
-                <div class="catalog-item-img">
-                  <img src="./images/rog strix.png" alt="alt" />
-                  <div class="catalog-item-features">
-                    <img src="./images/icons/Сравнение.png" alt="alt" />
-                    <a href="#" class="catalog-item-features-compare">В сравнение</a>
-                    <img src="./images/icons/like.png" alt="alt" />
-                    <a href="#" class="catalog-item-features-compare">В избранное</a>
-                  </div>
-                </div>
-                <div class="catalog-item-description">
-                  <div class="catalog-item-description-title">
-                    Lenovo IdeaPad L340-15API 81LW0086RK
-                  </div>
-                  <div class="catalog-item-description-articule">
-                    <div class="articule">КОД ТОВАРА: QD0095719</div>
-                    <div class="in_stock">
-                      <img src="./images/icons/accept.png" alt="alt" />
-                      В НАЛИЧИИ
-                    </div>
-                  </div>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <td>
-                          Диагональ/разрешение
-                          <span class="dots"></span>
-                        </td>
-                        <td>17.3"/1920x1080 пикс.</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Процессор
-                          <span class="dots"></span>
-                        </td>
-                        <td>AMD Ryzen 9 5900HX 3.3 ГГц</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Оперативная память (RAM)
-                          <spna class="dots"></spna>
-                        </td>
-                        <td>16 ГБ</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Графический контроллер
-                          <span class="dots"></span>
-                        </td>
-                        <td>GeForce RTX 3060 6GB</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Объем SSD
-                          <span class="dots"></span>
+                        <td>      
+                          <div class="dots">
+                            <div class="dots-clear">Объем SSD</div>
+                          </div>
                         </td>
                         <td>512 ГБ</td>
                       </tr>
@@ -943,106 +935,197 @@
               <img src="./images/icons/Pay-cards.png" alt="alt" />
             </div>
           </div>
-          <div class="sale">
-            <div class="sale-img">
-              <picture>
-                <source media="(max-width: 399px)" srcset="./images/icons/sale50.svg" />
-                <source media="(max-width: 799px)" srcset="./images/examples/sale-banner.png" />
-                <img src="./images/examples/sale-banner.png" alt="alt" />
-              </picture>
+          
+        </div>
+        <div class="sale">
+          <div class="sale-img">
+            <picture>
+              <source media="(max-width: 399px)" srcset="./images/icons/sale50.svg" />
+              <source media="(max-width: 799px)" srcset="./images/examples/sale-banner.png" />
+              <img src="./images/examples/sale-banner.png" alt="alt" />
+            </picture>
+          </div>
+        </div>
+        <div class="hits">
+          <div class="hits-header">
+            <div class="row space-between">
+              <div class="hits-title">
+                ХИТЫ <span class="span-blue">ПРОДАЖ</span>
+              </div>
+              <div class="hits-arrows">
+                <div class="row">
+                  <div class="hits-arrow slider-hits-left">
+                    <i class="fas fa-arrow-left"></i>
+                  </div>
+                  <div class="hits-arrow slider-hits-right">
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="hits">
-            <div class="hits-header">
-              <div class="row space-between">
-                <div class="hits-title">
-                  ХИТЫ <span class="span-blue">ПРОДАЖ</span>
-                </div>
-                <div class="hits-arrows">
-                  <div class="row">
-                    <div class="hits-arrow slider-hits-left">
-                      <i class="fas fa-arrow-left"></i>
+          <div class="hits-slider">
+            <div class="slider-item-cards">
+              <div class="slider-item-card">
+                <div class="ui-card-product">
+                  <div class="ui-card-product-img">
+                    <a href="#">
+                      <img src="./images/examples/cards-mouse-1.png" alt="alt" />
+                    </a>
+                  </div>
+                  <div class="ui-card-product-text">
+                    <a href="#" class="ui-card-product-title">Игровая мышь HIPER GMUS-2000</a>
+                    <div class="ui-card-product-articule">
+                      Код: QD0095719
                     </div>
-                    <div class="hits-arrow slider-hits-right">
-                      <i class="fas fa-arrow-right"></i>
+                  </div>
+                  <div class="ui-card-product-price">
+                    <div class="row valign-center">
+                      <div class="ui-card-product-sale">
+                        340.00 <span class="card-price-units">руб.</span>
+                      </div>
+                      <div class="ui-card-product-normal">
+                        340.00 <span class="card-price-units">руб.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui-card-btns">
+                    <div class="flex valign-center space-between">
+                      <div class="ui-btn">
+                        <div class="flex justify-center valign-center">
+                          <div class="ui-btn-img">
+                            <img src="./images/icons/ui-cart-logo.png" alt="alt" />
+                          </div>
+                          <div class="ui-btn-text">в корзину</div>
+                        </div>
+                      </div>
+                      <a href="#" class="ui-btn-favorite">
+                        <img src="./images/icons/heart.png" alt="alt" />
+                      </a>
+                      <a href="#" class="ui-btn-compare">
+                        <img src="./images/icons/equ.png" alt="alt" />
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="hits-slider">
-              <div class="slider-item-cards">
-                <div class="slider-item-card">
-                  <div class="ui-card-product">
-                    <div class="ui-card-product-img">
-                      <a href="#">
-                        <img src="./images/examples/cards-mouse-1.png" alt="alt" />
-                      </a>
+            <div class="slider-item-cards">
+              <div class="slider-item-card">
+                <div class="ui-card-product">
+                  <div class="ui-card-product-img">
+                    <div class="ui-card-product-hits">ХИТ ПРОДАЖ</div>
+                    <a href="#">
+                      <img src="./images/examples/dekstop 2.png" alt="alt" />
+                    </a>
+                  </div>
+                  <div class="ui-card-product-text">
+                    <a href="#" class="ui-card-product-title">Ноутбук Huawei MateBook D 15 BoB-WAI9 8+256GB Space
+                      Grey</a>
+                    <div class="ui-card-product-articule">
+                      Код: QD0095719
                     </div>
-                    <div class="ui-card-product-text">
-                      <a href="#" class="ui-card-product-title">Игровая мышь HIPER GMUS-2000</a>
-                      <div class="ui-card-product-articule">
-                        Код: QD0095719
+                  </div>
+                  <div class="ui-card-product-price">
+                    <div class="row valign-center">
+                      <div class="ui-card-product-sale">
+                        2 185.00 <span class="card-price-units">руб.</span>
                       </div>
-                    </div>
-                    <div class="ui-card-product-price">
-                      <div class="row valign-center">
-                        <div class="ui-card-product-sale">
-                          340.00 <span class="card-price-units">руб.</span>
-                        </div>
-                        <div class="ui-card-product-normal">
-                          340.00 <span class="card-price-units">руб.</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ui-card-btns">
-                      <div class="flex valign-center space-between">
-                        <div class="ui-btn">
-                          <div class="flex justify-center valign-center">
-                            <div class="ui-btn-img">
-                              <img src="./images/icons/ui-cart-logo.png" alt="alt" />
-                            </div>
-                            <div class="ui-btn-text">в корзину</div>
-                          </div>
-                        </div>
-                        <a href="#" class="ui-btn-favorite">
-                          <img src="./images/icons/heart.png" alt="alt" />
-                        </a>
-                        <a href="#" class="ui-btn-compare">
-                          <img src="./images/icons/equ.png" alt="alt" />
-                        </a>
+                      <div class="ui-card-product-normal">
+                        2 185.00 <span class="card-price-units">руб.</span>
                       </div>
                     </div>
                   </div>
+                  <div class="ui-card-btns flex valign-center space-between">
+                    <div class="ui-btn">
+                      <div class="flex justify-center valign-center">
+                        <div class="ui-btn-img">
+                          <img src="./images/icons/ui-cart-logo.png" alt="alt" />
+                        </div>
+                        <div class="ui-btn-text">в корзину</div>
+                      </div>
+                    </div>
+                    <a href="#" class="ui-btn-favorite">
+                      <img src="./images/icons/heart.png" alt="alt" />
+                    </a>
+                    <a href="#" class="ui-btn-compare">
+                      <img src="./images/icons/equ.png" alt="alt" />
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div class="slider-item-cards">
-                <div class="slider-item-card">
-                  <div class="ui-card-product">
-                    <div class="ui-card-product-img">
-                      <div class="ui-card-product-hits">ХИТ ПРОДАЖ</div>
-                      <a href="#">
-                        <img src="./images/examples/dekstop 2.png" alt="alt" />
-                      </a>
+            </div>
+            <div class="slider-item-cards">
+              <div class="slider-item-card">
+                <div class="ui-card-product">
+                  <div class="ui-card-product-img">
+                    <a href="#">
+                      <img src="./images/examples/printer 3.png" alt="alt" />
+                    </a>
+                  </div>
+                  <div class="ui-card-product-text">
+                    <a href="#" class="ui-card-product-title">Ноутбук Huawei MateBook D 15 BoB-WAI9 8+256GB Space
+                      Silver Grey
+                    </a>
+                    <div class="ui-card-product-articule">
+                      Код: QD0095719
                     </div>
-                    <div class="ui-card-product-text">
-                      <a href="#" class="ui-card-product-title">Ноутбук Huawei MateBook D 15 BoB-WAI9 8+256GB Space
-                        Grey</a>
-                      <div class="ui-card-product-articule">
-                        Код: QD0095719
+                  </div>
+                  <div class="ui-card-product-price">
+                    <div class="row valign-center">
+                      <div class="ui-card-product-sale">
+                        340.00 <span class="card-price-units">руб.</span>
+                      </div>
+                      <div class="ui-card-product-normal">
+                        2 420.00 <span class="card-price-units">руб.</span>
                       </div>
                     </div>
-                    <div class="ui-card-product-price">
-                      <div class="row valign-center">
-                        <div class="ui-card-product-sale">
-                          2 185.00 <span class="card-price-units">руб.</span>
+                  </div>
+                  <div class="ui-card-btns flex valign-center space-between">
+                    <div class="ui-btn">
+                      <div class="flex justify-center valign-center">
+                        <div class="ui-btn-img">
+                          <img src="./images/icons/ui-cart-logo.png" alt="alt" />
                         </div>
-                        <div class="ui-card-product-normal">
-                          2 185.00 <span class="card-price-units">руб.</span>
-                        </div>
+                        <div class="ui-btn-text">в корзину</div>
                       </div>
                     </div>
-                    <div class="ui-card-btns flex valign-center space-between">
+                    <a href="#" class="ui-btn-favorite">
+                      <img src="./images/icons/heart.png" alt="alt" />
+                    </a>
+                    <a href="#" class="ui-btn-compare">
+                      <img src="./images/icons/equ.png" alt="alt" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider-item-cards">
+              <div class="slider-item-card">
+                <div class="ui-card-product">
+                  <div class="ui-card-product-img">
+                    <a href="#">
+                      <img src="./images/examples/cards-mouse-1.png" alt="alt" />
+                    </a>
+                  </div>
+                  <div class="ui-card-product-text">
+                    <a href="#" class="ui-card-product-title">Игровая мышь HIPER GMUS-2000</a>
+                    <div class="ui-card-product-articule">
+                      Код: QD0095719
+                    </div>
+                  </div>
+                  <div class="ui-card-product-price">
+                    <div class="row valign-center">
+                      <div class="ui-card-product-sale">
+                        340.00 <span class="card-price-units">руб.</span>
+                      </div>
+                      <div class="ui-card-product-normal">
+                        340.00 <span class="card-price-units">руб.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui-card-btns">
+                    <div class="flex valign-center space-between">
                       <div class="ui-btn">
                         <div class="flex justify-center valign-center">
                           <div class="ui-btn-img">
@@ -1061,180 +1144,90 @@
                   </div>
                 </div>
               </div>
-              <div class="slider-item-cards">
-                <div class="slider-item-card">
-                  <div class="ui-card-product">
-                    <div class="ui-card-product-img">
-                      <a href="#">
-                        <img src="./images/examples/printer 3.png" alt="alt" />
-                      </a>
-                    </div>
-                    <div class="ui-card-product-text">
-                      <a href="#" class="ui-card-product-title">Ноутбук Huawei MateBook D 15 BoB-WAI9 8+256GB Space
-                        Silver Grey
-                      </a>
-                      <div class="ui-card-product-articule">
-                        Код: QD0095719
-                      </div>
-                    </div>
-                    <div class="ui-card-product-price">
-                      <div class="row valign-center">
-                        <div class="ui-card-product-sale">
-                          340.00 <span class="card-price-units">руб.</span>
-                        </div>
-                        <div class="ui-card-product-normal">
-                          2 420.00 <span class="card-price-units">руб.</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ui-card-btns flex valign-center space-between">
-                      <div class="ui-btn">
-                        <div class="flex justify-center valign-center">
-                          <div class="ui-btn-img">
-                            <img src="./images/icons/ui-cart-logo.png" alt="alt" />
-                          </div>
-                          <div class="ui-btn-text">в корзину</div>
-                        </div>
-                      </div>
-                      <a href="#" class="ui-btn-favorite">
-                        <img src="./images/icons/heart.png" alt="alt" />
-                      </a>
-                      <a href="#" class="ui-btn-compare">
-                        <img src="./images/icons/equ.png" alt="alt" />
-                      </a>
+            </div>
+            <div class="slider-item-cards">
+              <div class="slider-item-card">
+                <div class="ui-card-product">
+                  <div class="ui-card-product-img">
+                    <a href="#">
+                      <img src="./images/examples/mouse 4.png" alt="alt" />
+                    </a>
+                  </div>
+                  <div class="ui-card-product-text">
+                    <a href="#" class="ui-card-product-title">Мышь беспроводная Logitech M185 Swift Grey
+                      (910-002238)</a>
+                    <div class="ui-card-product-articule">
+                      Код: QD0095719
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="slider-item-cards">
-                <div class="slider-item-card">
-                  <div class="ui-card-product">
-                    <div class="ui-card-product-img">
-                      <a href="#">
-                        <img src="./images/examples/cards-mouse-1.png" alt="alt" />
-                      </a>
-                    </div>
-                    <div class="ui-card-product-text">
-                      <a href="#" class="ui-card-product-title">Игровая мышь HIPER GMUS-2000</a>
-                      <div class="ui-card-product-articule">
-                        Код: QD0095719
+                  <div class="ui-card-product-price">
+                    <div class="row valign-center">
+                      <div class="ui-card-product-sale">
+                        94.00 <span class="card-price-units">руб.</span>
                       </div>
-                    </div>
-                    <div class="ui-card-product-price">
-                      <div class="row valign-center">
-                        <div class="ui-card-product-sale">
-                          340.00 <span class="card-price-units">руб.</span>
-                        </div>
-                        <div class="ui-card-product-normal">
-                          340.00 <span class="card-price-units">руб.</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ui-card-btns">
-                      <div class="flex valign-center space-between">
-                        <div class="ui-btn">
-                          <div class="flex justify-center valign-center">
-                            <div class="ui-btn-img">
-                              <img src="./images/icons/ui-cart-logo.png" alt="alt" />
-                            </div>
-                            <div class="ui-btn-text">в корзину</div>
-                          </div>
-                        </div>
-                        <a href="#" class="ui-btn-favorite">
-                          <img src="./images/icons/heart.png" alt="alt" />
-                        </a>
-                        <a href="#" class="ui-btn-compare">
-                          <img src="./images/icons/equ.png" alt="alt" />
-                        </a>
+                      <div class="ui-card-product-normal">
+                        340.00 <span class="card-price-units">руб.</span>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="slider-item-cards">
-                <div class="slider-item-card">
-                  <div class="ui-card-product">
-                    <div class="ui-card-product-img">
-                      <a href="#">
-                        <img src="./images/examples/mouse 4.png" alt="alt" />
-                      </a>
-                    </div>
-                    <div class="ui-card-product-text">
-                      <a href="#" class="ui-card-product-title">Мышь беспроводная Logitech M185 Swift Grey
-                        (910-002238)</a>
-                      <div class="ui-card-product-articule">
-                        Код: QD0095719
+                  <div class="ui-card-btns flex valign-center space-between">
+                    <div class="ui-btn">
+                      <div class="flex justify-center valign-center">
+                        <div class="ui-btn-img">
+                          <img src="./images/icons/ui-cart-logo.png" alt="alt" />
+                        </div>
+                        <div class="ui-btn-text">в корзину</div>
                       </div>
                     </div>
-                    <div class="ui-card-product-price">
-                      <div class="row valign-center">
-                        <div class="ui-card-product-sale">
-                          94.00 <span class="card-price-units">руб.</span>
-                        </div>
-                        <div class="ui-card-product-normal">
-                          340.00 <span class="card-price-units">руб.</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ui-card-btns flex valign-center space-between">
-                      <div class="ui-btn">
-                        <div class="flex justify-center valign-center">
-                          <div class="ui-btn-img">
-                            <img src="./images/icons/ui-cart-logo.png" alt="alt" />
-                          </div>
-                          <div class="ui-btn-text">в корзину</div>
-                        </div>
-                      </div>
-                      <a href="#" class="ui-btn-favorite">
-                        <img src="./images/icons/heart.png" alt="alt" />
-                      </a>
-                      <a href="#" class="ui-btn-compare">
-                        <img src="./images/icons/equ.png" alt="alt" />
-                      </a>
-                    </div>
+                    <a href="#" class="ui-btn-favorite">
+                      <img src="./images/icons/heart.png" alt="alt" />
+                    </a>
+                    <a href="#" class="ui-btn-compare">
+                      <img src="./images/icons/equ.png" alt="alt" />
+                    </a>
                   </div>
                 </div>
               </div>
-              <div class="slider-item-cards">
-                <div class="slider-item-card">
-                  <div class="ui-card-product">
-                    <div class="ui-card-product-img">
-                      <a href="#">
-                        <img src="./images/examples/headphones 5.png" alt="alt" />
-                      </a>
+            </div>
+            <div class="slider-item-cards">
+              <div class="slider-item-card">
+                <div class="ui-card-product">
+                  <div class="ui-card-product-img">
+                    <a href="#">
+                      <img src="./images/examples/headphones 5.png" alt="alt" />
+                    </a>
+                  </div>
+                  <div class="ui-card-product-text">
+                    <a href="#" class="ui-card-product-title">Компьютерная гарнитура Sven AP-545MV</a>
+                    <div class="ui-card-product-articule">
+                      Код: QD0095719
                     </div>
-                    <div class="ui-card-product-text">
-                      <a href="#" class="ui-card-product-title">Компьютерная гарнитура Sven AP-545MV</a>
-                      <div class="ui-card-product-articule">
-                        Код: QD0095719
+                  </div>
+                  <div class="ui-card-product-price">
+                    <div class="row valign-center">
+                      <div class="ui-card-product-sale">
+                        243.20 <span class="card-price-units">руб.</span>
+                      </div>
+                      <div class="ui-card-product-normal">
+                        340.00 <span class="card-price-units">руб.</span>
                       </div>
                     </div>
-                    <div class="ui-card-product-price">
-                      <div class="row valign-center">
-                        <div class="ui-card-product-sale">
-                          243.20 <span class="card-price-units">руб.</span>
+                  </div>
+                  <div class="ui-card-btns flex valign-center space-between">
+                    <div class="ui-btn">
+                      <div class="flex justify-center valign-center">
+                        <div class="ui-btn-img">
+                          <img src="./images/icons/ui-cart-logo.png" alt="alt" />
                         </div>
-                        <div class="ui-card-product-normal">
-                          340.00 <span class="card-price-units">руб.</span>
-                        </div>
+                        <div class="ui-btn-text">в корзину</div>
                       </div>
                     </div>
-                    <div class="ui-card-btns flex valign-center space-between">
-                      <div class="ui-btn">
-                        <div class="flex justify-center valign-center">
-                          <div class="ui-btn-img">
-                            <img src="./images/icons/ui-cart-logo.png" alt="alt" />
-                          </div>
-                          <div class="ui-btn-text">в корзину</div>
-                        </div>
-                      </div>
-                      <a href="#" class="ui-btn-favorite">
-                        <img src="./images/icons/heart.png" alt="alt" />
-                      </a>
-                      <a href="#" class="ui-btn-compare">
-                        <img src="./images/icons/equ.png" alt="alt" />
-                      </a>
-                    </div>
+                    <a href="#" class="ui-btn-favorite">
+                      <img src="./images/icons/heart.png" alt="alt" />
+                    </a>
+                    <a href="#" class="ui-btn-compare">
+                      <img src="./images/icons/equ.png" alt="alt" />
+                    </a>
                   </div>
                 </div>
               </div>
@@ -1249,6 +1242,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="./js/main.js"></script>
+  <script src="./js/filter.js"></script>
 </body>
 
 </html>
