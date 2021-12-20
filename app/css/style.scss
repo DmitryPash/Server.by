@@ -109,18 +109,17 @@ body {
   display: inline-block;
   cursor: pointer;
   position: relative;
-  &:hover {
-    content: attr(data-title);
-    position: absolute;
-    left: 74px;
-    right: 0px;
-    bottom: 14px;
-    z-index: 1;
+}
 
-    color: black;
-    text-align: center;
-    font-size: 11px;
-  }
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -15px;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+[data-tooltip]:hover::after {
+  opacity: 1;
 }
 // Main
 .middle {
