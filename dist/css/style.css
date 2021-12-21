@@ -1345,6 +1345,9 @@ body {
   opacity: 0;
   border: none;
   position: absolute;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
   top: 50%;
   z-index: 5;
   font-size: 0;
@@ -1361,9 +1364,9 @@ body {
 .banner-slider .slick-prev {
   left: 0;
   background: url(../images/icons/arrow-blue-slider.png) no-repeat;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+  -webkit-transform: translate(0, -50%) rotate(180deg);
+  -ms-transform: translate(0, -50%) rotate(180deg);
+  transform: translate(0, -50%) rotate(180deg);
   background-size: 20px 20px;
   background-position: center;
   background-color: rgba(255, 255, 255, 0.9);
