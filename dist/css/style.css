@@ -1102,7 +1102,8 @@ input:focus:-ms-input-placeholder {
   height: 100%;
   -webkit-box-align: end;
   -ms-flex-align: end;
-  align-items: flex-end;=
+  align-items: flex-end;
+}
 
 .footer-middle-messengers a {
   padding-right: 25px;
@@ -3306,37 +3307,6 @@ body {
   font-weight: 800;
 }
 
-
-.error {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.error-text {
-  margin-bottom: 45px;
-}
-
-.error-btn {
-  width: 290px;
-  height: 58px;
-  line-height: 58px;
-  text-transform: uppercase;
-  font-size: 1.125rem;
-  font-weight: 600;
-  background: #398aea;
-  margin-bottom: 40px;
-}
-
-.error-btn:hover {
-  background: #2c75fc;
 .ya-share2 ul li a {
   padding-right: 0;
   background-color: initial;
@@ -3364,7 +3334,6 @@ body {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-
 }
 
 @media (max-width: 1330px) {
