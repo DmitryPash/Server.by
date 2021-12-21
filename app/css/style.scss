@@ -1876,6 +1876,32 @@ body {
   right: 23px;
   font-weight: 800;
 }
+
+
+// Page 404.html
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-text {
+    margin-bottom: 45px;
+  }
+  &-btn {
+    width: 290px;
+    height: 58px;
+    line-height: 58px;
+    text-transform: uppercase;
+    font-size: rem(18px);
+    font-weight: 600;
+    background: #398aea;
+    margin-bottom: 40px;
+    &:hover {
+      background: #2c75fc;
+    }
+  }
+}
+
 .ya-share2 {
   ul li a {
     // color: black;
@@ -1903,3 +1929,4 @@ body {
   transform: translate(-50%, -50%);
   // background-color: initial !important;
 }
+
