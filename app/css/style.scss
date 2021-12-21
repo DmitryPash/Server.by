@@ -1504,6 +1504,11 @@ body {
     margin-bottom: 40px;
     background-color: $colorWhite;
     &-social {
+      display: flex;
+      align-items: center;
+      span {
+        padding-right: 10px;
+      }
     }
     &-data {
       flex: 0 0 39.5%;
@@ -1519,7 +1524,7 @@ body {
     span {
       display: inline-block;
       vertical-align: super;
-      padding-right: 20px;
+      // padding-right: 20px;
       color: #6d829f;
       font-size: rem(13px);
     }
@@ -1869,4 +1874,31 @@ body {
   top: 7px;
   right: 23px;
   font-weight: 800;
+}
+.ya-share2 {
+  ul li a {
+    // color: black;
+    padding-right: 0;
+    background-color: initial;
+  }
+}
+.ya-share2 {
+  display: inline-block;
+}
+.ya-share2__badge {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background-color: #fdc300 !important;
+}
+.ya-share2__link {
+  height: 24px;
+  // background-color: initial !important;
+}
+.ya-share2__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // background-color: initial !important;
 }
