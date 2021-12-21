@@ -299,7 +299,7 @@
       padding-bottom: 30px;
     }
     &-btn {
-      flex: 0 0 80%;
+      width: calc(100% - 60px);
       font-size: rem(11px);
       height: 48px;
       line-height: 48px;
@@ -468,6 +468,9 @@
         padding-right: 8px;
         padding-left: 8px;
         text-align: center;
+        img {
+          padding-bottom: 0;
+        }
       }
       &-description {
         width: 100%;
@@ -476,12 +479,19 @@
         padding-bottom: 0;
         padding-right: 8px;
         padding-left: 8px;
+        &-articule {
+          padding-bottom: 10px;
+        }
       }
     }
     &-description {
       width: 100%;
+      padding-top: 10px;
       padding-right: 10px;
       padding-left: 10px;
+      &-price {
+        padding-bottom: 0;
+      }
       &-first_price {
         display: inline-block;
         padding-right: 10px;
@@ -662,6 +672,9 @@
   .catalog {
     &-item {
       &-description {
+        table tbody tr td {
+          font-size: rem(11px);
+        }
         table tbody tr td:nth-child(2) {
           font-weight: 600;
         }

@@ -1,216 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Server.by</title>
+    <meta name="keywords" content="Server.by" />
+    <meta name="description" content="Server.by" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
 
-<head>
-  <meta charset="utf-8" />
-  <title>Server.by</title>
-  <meta name="keywords" content="Server.by" />
-  <meta name="description" content="Server.by" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="format-detection" content="telephone=no" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-  <div class="wrapper" id="wrapper">
-    @@include('inc-header.html')
-    <div class="middle" id="middle">
-      <div class="container">
-        <div class="page-breadcrumbs">
-          <a href="#">Главная</a><i>/</i> <a href="#">Новости</a><i>/</i>
-        </div>
-        <div class="row">
-          <div class="col-filter-22 col-md-12">
-            <div class="info">
-              <div class="info-block">
-                <div class="info-title">О компании</div>
-                <ul>
-                  <li><a href="#">О нас</a></li>
-                  <li><a href="#">Контакты</a></li>
-                </ul>
-              </div>
-              <div class="info-block">
-                <div class="info-title">Доставка и оплата</div>
-                <ul>
-                  <li><a href="#">График доставки</a></li>
-                  <li><a href="#">Оплата банковскими карточками</a></li>
-                  <li><a href="#">Безналичный расчет</a></li>
-                  <li><a href="#">Покупка в кредит</a></li>
-                  <li><a href="#">Договор</a></li>
-                </ul>
-              </div>
-              <div class="info-block">
-                <div class="info-title">Сервисное обслуживание</div>
-                <ul>
-                  <li><a href="#">Гарантия</a></li>
-                  <li><a href="#">Не гарантийный ремонт</a></li>
-                </ul>
-              </div>
-              <div class="info-block">
-                <div class="info-title">Полезно знать</div>
-                <ul>
-                  <li><a href="#">Статьи</a></li>
-                  <li><a href="#">Новости</a></li>
-                  <li><a href="#">Обзоры и тесты</a></li>
-                </ul>
-              </div>
-              <div class="info-block">
-                <div class="info-title">Помощь покупателю</div>
-                <ul>
-                  <li><a href="#">Как купить</a></li>
-                  <li><a href="#">Программа лояльности</a></li>
-                  <li><a href="#">Система скидок</a></li>
-                </ul>
+  <body>
+    <div class="wrapper" id="wrapper">
+      @@include('inc-header.html')
+      <div class="middle" id="middle">
+        <div class="container">
+          <div class="page-breadcrumbs">
+            <a href="#">Главная</a><i>/</i> <a href="#">Новости</a><i>/</i
+            ><a href="#">Новость</a>
+          </div>
+          <div class="row">
+            <div class="col-filter-22 col-md-12">
+              <div class="info">
+                <div class="info-block">
+                  <div class="info-title">О компании</div>
+                  <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                  </ul>
+                </div>
+                <div class="info-block">
+                  <div class="info-title">Доставка и оплата</div>
+                  <ul>
+                    <li><a href="#">График доставки</a></li>
+                    <li><a href="#">Оплата банковскими карточками</a></li>
+                    <li><a href="#">Безналичный расчет</a></li>
+                    <li><a href="#">Покупка в кредит</a></li>
+                    <li><a href="#">Договор</a></li>
+                  </ul>
+                </div>
+                <div class="info-block">
+                  <div class="info-title">Сервисное обслуживание</div>
+                  <ul>
+                    <li><a href="#">Гарантия</a></li>
+                    <li><a href="#">Не гарантийный ремонт</a></li>
+                  </ul>
+                </div>
+                <div class="info-block">
+                  <div class="info-title">Полезно знать</div>
+                  <ul>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Обзоры и тесты</a></li>
+                  </ul>
+                </div>
+                <div class="info-block">
+                  <div class="info-title">Помощь покупателю</div>
+                  <ul>
+                    <li><a href="#">Как купить</a></li>
+                    <li><a href="#">Программа лояльности</a></li>
+                    <li><a href="#">Система скидок</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-filter-78 col-md-12">
-            <article class="article">
-              <header>
-                <h1 class="article-title-h1">
-                  Самый умный: в России появился ноутбук Huawei MateBook 14 с
-                  мощным процессором AMD
-                </h1>
-                <div class="article-bar">
-                  <div class="article-bar-data">
-                    Опубликовано : 13 ноября 2021
+            <div class="col-filter-78 col-md-12">
+              <article class="article">
+                <header>
+                  <h1 class="article-title-h1">
+                    Самый умный: в России появился ноутбук Huawei MateBook 14 с
+                    мощным процессором AMD
+                  </h1>
+                  <div class="article-bar">
+                    <div class="article-bar-data">
+                      Опубликовано : 13 ноября 2021
+                    </div>
+                    <div class="article-bar-social">
+                      <span>Поделиться :</span>
+                      <div
+                        class="ya-share2"
+                        data-curtain
+                        data-shape="round"
+                        data-color-scheme="whiteblack"
+                        data-services="vkontakte,facebook,telegram"
+                      ></div>
+                    </div>
                   </div>
-                  <div class="article-bar-social">
-                    <span>Поделиться :</span>
-                    <a href="#"><img src="./images/icons/fb-mob.png" alt="alt" /></a>
-                    <a href="#"><img src="./images/icons/vk-mob.png" alt="alt" /></a>
-                    <a href="#"><img src="./images/icons/tg-mob.png" alt="alt" /></a>
-                  </div>
+                </header>
+                <h4>
+                  Новый ноутбук Huawei удивит большим экраном, стильным дизайном
+                  и производительностью процессора AMD
+                </h4>
+                <img src="./images/computer-gf506e8c24_1920 2.png" alt="alt" />
+                <p>
+                  Бренд Huawei отметил пятилетие серии MateBook премьерой
+                  различных устройств: от инновационных флагманов до
+                  универсальных помощников. К последним относится и ноутбук
+                  MateBook 14 с мощным процессором AMD и экраном с эффектом
+                  полного погружения. Предзаказ стартовал в России. Устройство
+                  обладает всеми качествами, которые пользователи ценят в
+                  ноутбуках: легкий вес, бесшумное охлаждение,
+                  сообразительность, стильный дизайн и способность к длительной
+                  работе без подзарядки.
+                </p>
+                <p>
+                  В России предзаказ на ноутбук Huawei MateBook 14 уже стартовал
+                  и продлится до 25 ноября. Среди технических преимуществ
+                  гаджета необходимо упомянуть безрамочный 2K-экран Fullview,
+                  обеспечивающий эффект полного погружения. Соотношение размера
+                  дисплея к поверхности крышки составляет 90% (толщина рамки
+                  менее 5 мм), что позволяет забыть о границах экрана.
+                </p>
+                <p>
+                  Производитель обещает стопроцентную точность цветопередачи
+                  sRGB, а также высокие яркость, контрастность и разрешение для
+                  впечатляющего просмотра видео, фотографий и любых других
+                  изображений. При этом экран имеет сертифицированную систему
+                  защиты зрения, гарантирующую комфорт и безопасность
+                  использования MateBook 14. Качественную картинку дополняет
+                  объемный звук – два мощных динамика и четыре аудиорежима для
+                  большего удовольствия от просмотра фильмов или прослушивания
+                  музыки даже без дополнительной акустики.
+                </p>
+                <img src="./images/laptop-gdb6cba08c_1920 1.png" alt="alt" />
+                <p>
+                  Еще одним весомым преимуществом является процессор AMD RyzenTM
+                  5 5500U с графикой Radeon Graphics. Это производительное и
+                  энергоэффективное решение, разработанное специально для
+                  ноутбуков и обеспечивающее быструю работу практически любых
+                  приложений, вплоть до «тяжеловесов».
+                </p>
+                <p>
+                  Шесть ядер нового процессора AMD 5-го поколения способны
+                  работать на частоте до 4.0 ГГц, делая ноутбук комфортным
+                  инструментом для выполнения самых разных задач: от проведения
+                  рабочих видеоконференций до просмотра фильмов в высоком
+                  разрешении или отдыха за видеоиграми. Помимо мощного
+                  процессора, гаджет оснащен большим запасом оперативной памяти
+                  – 16 Гб DDR4 3200 МГц, а также быстрым и бесшумным накопителем
+                  SSD.
+                </p>
+                <p>
+                  При подключении к электрической сети гаджет можно перевести в
+                  режим высокой производительности, нажав клавиши FN+P.
+                  Повторное нажатие возвращает MateBook 14 в стандартный режим.
+                </p>
+                <p>
+                  Чтобы ноутбук не перегревался, устройство оснастили системой
+                  охлаждения Huawei Shark Fin, которая работает бесшумно и
+                  поддерживает оптимальную температуру даже при высокой нагрузке
+                  системы. По сравнению с предыдущим поколением устройств
+                  инженерам компании удалось добиться увеличения эффективности
+                  рассеивания воздуха на 50%.
+                </p>
+              </article>
+              <div class="installments news-page-installments">
+                <div class="installments-img">
+                  <img src="./images/icons/data-pay.png" alt="alt" />
                 </div>
-              </header>
-              <h4>
-                Новый ноутбук Huawei удивит большим экраном, стильным дизайном
-                и производительностью процессора AMD
-              </h4>
-              <img src="./images/computer-gf506e8c24_1920 2.png" alt="alt" />
-              <p>
-                Бренд Huawei отметил пятилетие серии MateBook премьерой
-                различных устройств: от инновационных флагманов до
-                универсальных помощников. К последним относится и ноутбук
-                MateBook 14 с мощным процессором AMD и экраном с эффектом
-                полного погружения. Предзаказ стартовал в России. Устройство
-                обладает всеми качествами, которые пользователи ценят в
-                ноутбуках: легкий вес, бесшумное охлаждение,
-                сообразительность, стильный дизайн и способность к длительной
-                работе без подзарядки.
-              </p>
-              <p>
-                В России предзаказ на ноутбук Huawei MateBook 14 уже стартовал
-                и продлится до 25 ноября. Среди технических преимуществ
-                гаджета необходимо упомянуть безрамочный 2K-экран Fullview,
-                обеспечивающий эффект полного погружения. Соотношение размера
-                дисплея к поверхности крышки составляет 90% (толщина рамки
-                менее 5 мм), что позволяет забыть о границах экрана.
-              </p>
-              <p>
-                Производитель обещает стопроцентную точность цветопередачи
-                sRGB, а также высокие яркость, контрастность и разрешение для
-                впечатляющего просмотра видео, фотографий и любых других
-                изображений. При этом экран имеет сертифицированную систему
-                защиты зрения, гарантирующую комфорт и безопасность
-                использования MateBook 14. Качественную картинку дополняет
-                объемный звук – два мощных динамика и четыре аудиорежима для
-                большего удовольствия от просмотра фильмов или прослушивания
-                музыки даже без дополнительной акустики.
-              </p>
-              <img src="./images/laptop-gdb6cba08c_1920 1.png" alt="alt" />
-              <p>
-                Еще одним весомым преимуществом является процессор AMD RyzenTM
-                5 5500U с графикой Radeon Graphics. Это производительное и
-                энергоэффективное решение, разработанное специально для
-                ноутбуков и обеспечивающее быструю работу практически любых
-                приложений, вплоть до «тяжеловесов».
-              </p>
-              <p>
-                Шесть ядер нового процессора AMD 5-го поколения способны
-                работать на частоте до 4.0 ГГц, делая ноутбук комфортным
-                инструментом для выполнения самых разных задач: от проведения
-                рабочих видеоконференций до просмотра фильмов в высоком
-                разрешении или отдыха за видеоиграми. Помимо мощного
-                процессора, гаджет оснащен большим запасом оперативной памяти
-                – 16 Гб DDR4 3200 МГц, а также быстрым и бесшумным накопителем
-                SSD.
-              </p>
-              <p>
-                При подключении к электрической сети гаджет можно перевести в
-                режим высокой производительности, нажав клавиши FN+P.
-                Повторное нажатие возвращает MateBook 14 в стандартный режим.
-              </p>
-              <p>
-                Чтобы ноутбук не перегревался, устройство оснастили системой
-                охлаждения Huawei Shark Fin, которая работает бесшумно и
-                поддерживает оптимальную температуру даже при высокой нагрузке
-                системы. По сравнению с предыдущим поколением устройств
-                инженерам компании удалось добиться увеличения эффективности
-                рассеивания воздуха на 50%.
-              </p>
-            </article>
-            <div class="installments news-page-installments">
+
+                <a href="#" class="installments-info">В кредит до 8 месяцев</a>
+                <a href="#" class="installments-info"
+                  >В рассрочку до 12 месяцев</a
+                >
+
+                <a href="#" class="installments-more">Узнать больше</a>
+                <img src="./images/icons/Pay-cards.png" alt="alt" />
+
+                <div class="installments news-list-installments">
+                  <div class="installments-img">
+                    <img src="./images/icons/data-pay.png" alt="alt" />
+                  </div>
+                  <a href="#" class="installments-info"
+                    >В кредит до 8 месяцев</a
+                  >
+                  <a href="#" class="installments-info"
+                    >В рассрочку до 12 месяцев</a
+                  >
+                  <a href="#" class="installments-more">Узнать больше</a>
+                  <img src="./images/icons/Pay-cards.png" alt="alt" />
+                </div>
+              </div>
+            </div>
+            <div class="installments news-list-installments-mob">
               <div class="installments-img">
                 <img src="./images/icons/data-pay.png" alt="alt" />
               </div>
 
               <a href="#" class="installments-info">В кредит до 8 месяцев</a>
-              <a href="#" class="installments-info">В рассрочку до 12 месяцев</a>
+              <a href="#" class="installments-info"
+                >В рассрочку до 12 месяцев</a
+              >
 
               <a href="#" class="installments-more">Узнать больше</a>
               <img src="./images/icons/Pay-cards.png" alt="alt" />
-
-              <div class="installments news-list-installments">
-                <div class="installments-img">
-                  <img src="./images/icons/data-pay.png" alt="alt" />
-                </div>
-                <a href="#" class="installments-info">В кредит до 8 месяцев</a>
-                <a href="#" class="installments-info">В рассрочку до 12 месяцев</a>
-                <a href="#" class="installments-more">Узнать больше</a>
-                <img src="./images/icons/Pay-cards.png" alt="alt" />
+            </div>
+            <div class="sale">
+              <div class="sale-img">
+                <picture>
+                  <source
+                    media="(max-width: 399px)"
+                    srcset="./images/icons/sale50.svg"
+                  />
+                  <source
+                    media="(max-width: 799px)"
+                    srcset="./images/examples/sale-banner.png"
+                  />
+                  <img src="./images/examples/sale-banner.png" alt="alt" />
+                </picture>
               </div>
             </div>
+            @@include('inc-footer.html')
           </div>
-          <div class="installments news-list-installments-mob">
-            <div class="installments-img">
-              <img src="./images/icons/data-pay.png" alt="alt" />
-            </div>
-
-            <a href="#" class="installments-info">В кредит до 8 месяцев</a>
-            <a href="#" class="installments-info">В рассрочку до 12 месяцев</a>
-
-            <a href="#" class="installments-more">Узнать больше</a>
-            <img src="./images/icons/Pay-cards.png" alt="alt" />
-          </div>
-          <div class="sale">
-            <div class="sale-img">
-              <picture>
-                <source media="(max-width: 399px)" srcset="./images/icons/sale50.svg" />
-                <source media="(max-width: 799px)" srcset="./images/examples/sale-banner.png" />
-                <img src="./images/examples/sale-banner.png" alt="alt" />
-              </picture>
-            </div>
-          </div>
-          @@include('inc-footer.html')
         </div>
       </div>
     </div>
-  </div>
-  @@include('mobile-nav.html')
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="./js/main.js"></script>
-</body>
-
+    @@include('mobile-nav.html')
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/main.js"></script>
+    <script src="https://yastatic.net/share2/share.js"></script>
+  </body>
 </html>
