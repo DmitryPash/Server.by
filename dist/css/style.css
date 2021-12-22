@@ -2922,6 +2922,19 @@ body {
   background-color: #f4f9ff;
 }
 
+.article-bar-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.article-bar-social span {
+  padding-right: 10px;
+}
+
 .article-bar-data {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 39.5%;
@@ -2940,7 +2953,6 @@ body {
 .article-bar span {
   display: inline-block;
   vertical-align: super;
-  padding-right: 20px;
   color: #6d829f;
   font-size: 0.8125rem;
 }
@@ -3295,36 +3307,33 @@ body {
   font-weight: 800;
 }
 
-.error {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+.ya-share2 ul li a {
+  padding-right: 0;
+  background-color: initial;
 }
 
-.error-text {
-  margin-bottom: 45px;
+.ya-share2 {
+  display: inline-block;
 }
 
-.error-btn {
-  width: 290px;
-  height: 58px;
-  line-height: 58px;
-  text-transform: uppercase;
-  font-size: 1.125rem;
-  font-weight: 600;
-  background: #398aea;
-  margin-bottom: 40px;
+.ya-share2__badge {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background-color: #fdc300 !important;
 }
 
-.error-btn:hover {
-  background: #2c75fc;
+.ya-share2__link {
+  height: 24px;
+}
+
+.ya-share2__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 @media (max-width: 1330px) {
@@ -3951,9 +3960,7 @@ body {
   }
 
   .filter-btn {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 80%;
-    flex: 0 0 80%;
+    width: calc(100% - 60px);
     font-size: 0.6875rem;
     height: 48px;
     line-height: 48px;
@@ -4242,6 +4249,10 @@ body {
     text-align: center;
   }
 
+  .catalog-item-img img {
+    padding-bottom: 0;
+  }
+
   .catalog-item-description {
     width: 100%;
     border-right: none;
@@ -4251,10 +4262,19 @@ body {
     padding-left: 8px;
   }
 
+  .catalog-item-description-articule {
+    padding-bottom: 10px;
+  }
+
   .catalog-description {
     width: 100%;
+    padding-top: 10px;
     padding-right: 10px;
     padding-left: 10px;
+  }
+
+  .catalog-description-price {
+    padding-bottom: 0;
   }
 
   .catalog-description-first_price {
@@ -4618,6 +4638,10 @@ body {
 }
 
 @media (max-width: 430px) {
+  .catalog-item-description table tbody tr td {
+    font-size: 0.6875rem;
+  }
+
   .catalog-item-description table tbody tr td:nth-child(2) {
     font-weight: 600;
   }
