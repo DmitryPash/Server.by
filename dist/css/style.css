@@ -2082,12 +2082,6 @@ body {
   border-bottom: 1px solid #e5edf7;
 }
 
-.filter-checkbox {
-  width: 24px;
-  height: 24px;
-  margin-right: 9px;
-}
-
 .filter-span {
   display: inline-block;
   vertical-align: super;
@@ -2144,6 +2138,61 @@ body {
 .filter ul li {
   padding-bottom: 10px;
   text-align: left;
+}
+
+.checkbox {
+  position: relative;
+}
+
+.checkbox-input {
+  display: none;
+}
+
+.checkbox-input:checked + .checkbox-label::before {
+  background-color: #398aea;
+}
+
+.checkbox-input:checked + .checkbox-label::after {
+  opacity: 1;
+}
+
+.checkbox-label {
+  display: inline-block;
+  vertical-align: sub;
+  padding-left: 38px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.checkbox-label::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #E5EDF7;
+  background-color: #ffffff;
+  border-radius: 3px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.checkbox-label::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("../images/icons/ch.svg") no-repeat;
+  background-size: 15px 23px;
+  background-position: center;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
 .installments {
