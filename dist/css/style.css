@@ -3155,10 +3155,6 @@ body {
   transform: rotate(90deg);
 }
 
-.menu-link:hover {
-  color: #647b98;
-}
-
 .menu-link:hover img {
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
@@ -3195,6 +3191,16 @@ body {
 
 .menu-desktop > li:hover .menu-desktop-ul {
   display: block;
+}
+
+.menu-desktop > li:hover .menu-link img {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.menu-desktop > li:hover .menu-link {
+  color: #647b98;
 }
 
 .dots {

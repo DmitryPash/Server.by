@@ -1717,14 +1717,13 @@ body {
     top: 18px;
     transform: rotate(90deg);
   }
-  &:hover {
-    color: #647b98;
-  }
+
 }
 
 .menu-link:hover img {
   transform: rotate(-90deg);
 }
+
 
 .menu-banner {
   display: block;
@@ -1750,20 +1749,20 @@ body {
   display: block;
 }
 
-// .menu-desktop > li:hover .menu-desktop-second {
-//   display: flex;
-// }
-
-// .menu-desktop:hover {
-//   display: block;
-// }
-// .menu-desktop li:hover {
-//   background: black;
-// }
-
 .menu-desktop > li:hover .menu-desktop-ul {
   display: block;
+  
 }
+.menu-desktop > li:hover .menu-link img {
+  transform: rotate(-90deg);
+}
+.menu-desktop > li:hover .menu-link {
+ color: #647b98;;
+}
+
+
+
+
 
 // dots
 .dots {
