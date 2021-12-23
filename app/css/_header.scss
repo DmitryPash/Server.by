@@ -200,13 +200,60 @@ $html-font-size: 16px;
         img {
           max-height: 36px;
         }
-        &:hover {
-          border-bottom: 1px solid #b3c0ce;
-        }
         &-img {
           display: inline-block;
           position: relative;
           height: 36px;
+          width: 36px;
+          transition: .3s ease;
+        }
+        .services-user {
+          background-image: url(../images/icons/user-header.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          &:hover {
+            background: url(../images/icons/login-hover.svg);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+          }
+        }
+        .services-equ {
+          background-image: url(../images/icons/equ-header.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          &:hover {
+            background: url(../images/icons/equ-header-blue.svg);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+          }
+        }
+        .services-heart {
+          background-image: url(../images/icons/heart-header.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          &:hover {
+            background: url(../images/icons/nav-heart-blue.svg);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+          }
+        }
+        .services-cart {
+          background-image: url(../images/icons/cart-header.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          &:hover {
+            background: url(../images/icons/blue-cart.svg);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+          }
         }
         &-text {
           font-size: rem(11px);
