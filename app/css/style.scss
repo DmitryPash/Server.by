@@ -1944,12 +1944,48 @@ body {
 }
 .ya-share2__link {
   height: 24px;
-  // background-color: initial !important;
 }
 .ya-share2__icon {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  // background-color: initial !important;
+  transform: translate(-50%, -50%); 
 }
+
+// 404.html
+.error{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &-title{
+    font-size: rem(36px);
+    font-weight: 600;
+    
+  }
+  &-text{
+    font-size: rem(18px);
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 45px;
+    text-align: center;
+  }
+  &-btn{
+    
+    font-weight: 600;
+    font-size: rem(18px);
+    line-height: 58px;
+    height: 58px;
+    width: 290px;
+    background: #398AEA; 
+    letter-spacing: 0.05em;
+    margin-bottom: 40px;
+    transition: 0.3s ease;
+    &:hover{
+    
+      background: $colorBlue;
+      
+    }
+  }
+}
+

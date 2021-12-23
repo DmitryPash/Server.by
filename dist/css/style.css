@@ -893,7 +893,7 @@ input:focus:-ms-input-placeholder {
   background-size: cover;
 }
 
-.header .main-menu-services .services-user:hover {
+.header .main-menu-services:hover .services-user {
   background: url(../images/icons/login-hover.svg);
   background-size: cover;
   background-position: center center;
@@ -907,7 +907,7 @@ input:focus:-ms-input-placeholder {
   background-size: cover;
 }
 
-.header .main-menu-services .services-equ:hover {
+.header .main-menu-services:hover .services-equ {
   background: url(../images/icons/equ-header-blue.svg);
   background-size: cover;
   background-position: center center;
@@ -921,7 +921,7 @@ input:focus:-ms-input-placeholder {
   background-size: cover;
 }
 
-.header .main-menu-services .services-heart:hover {
+.header .main-menu-services:hover .services-heart {
   background: url(../images/icons/nav-heart-blue.svg);
   background-size: cover;
   background-position: center center;
@@ -935,7 +935,7 @@ input:focus:-ms-input-placeholder {
   background-size: cover;
 }
 
-.header .main-menu-services .services-cart:hover {
+.header .main-menu-services:hover .services-cart {
   background: url(../images/icons/blue-cart.svg);
   background-size: cover;
   background-position: center center;
@@ -3448,6 +3448,53 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.error-title {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.error-text {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.error-btn {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 58px;
+  height: 58px;
+  width: 290px;
+  background: #398AEA;
+  letter-spacing: 0.05em;
+  margin-bottom: 40px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.error-btn:hover {
+  background: #2963cb;
+}
+
 @media (max-width: 1330px) {
   .col-l-1 {
     -ms-flex: 0 0 8.33333%;
@@ -5027,5 +5074,14 @@ body {
 
   .product {
     margin-bottom: 40px;
+  }
+
+  .error-title {
+    font-size: 1.25rem;
+  }
+
+  .error-text,
+  .error-btn {
+    font-size: 0.8125rem;
   }
 }
