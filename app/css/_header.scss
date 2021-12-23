@@ -208,56 +208,60 @@ $html-font-size: 16px;
           transition: .3s ease;
         }
         .services-user {
-          background-image: url(../images/icons/user-header.svg);
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-          &:hover {
-            background: url(../images/icons/login-hover.svg);
-            background-size: cover;
-            background-position: center center;
+            background-image: url(../images/icons/user-header.svg);
+            background-position: center;
             background-repeat: no-repeat;
-          }
+            background-size: cover;
+        }
+        
+        &:hover .services-user {
+          background: url(../images/icons/login-hover.svg);
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat;
         }
         .services-equ {
           background-image: url(../images/icons/equ-header.svg);
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
-          &:hover {
-            background: url(../images/icons/equ-header-blue.svg);
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-          }
         }
+        &:hover .services-equ {
+          background: url(../images/icons/equ-header-blue.svg);
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat;
+        }
+        
         .services-heart {
           background-image: url(../images/icons/heart-header.svg);
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
-          &:hover {
-            background: url(../images/icons/nav-heart-blue.svg);
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-          }
         }
+        &:hover .services-heart {
+          background: url(../images/icons/nav-heart-blue.svg);
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat;
+        }
+        
         .services-cart {
           background-image: url(../images/icons/cart-header.svg);
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
-          &:hover {
-            background: url(../images/icons/blue-cart.svg);
+        }
+        &:hover .services-cart {
+          background: url(../images/icons/blue-cart.svg);
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
-          }
         }
         &-text {
           font-size: rem(11px);
         }
+
       }
     }
     &-mobile-tel {
@@ -345,3 +349,6 @@ $html-font-size: 16px;
     transform: rotate(45deg);
   }
 }
+
+
+
