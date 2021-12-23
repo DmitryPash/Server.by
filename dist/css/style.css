@@ -2225,7 +2225,7 @@ body {
   display: block;
   width: 24px;
   height: 24px;
-  border: 1px solid #E5EDF7;
+  border: 1px solid #e5edf7;
   background-color: #ffffff;
   border-radius: 3px;
   cursor: pointer;
@@ -3483,7 +3483,7 @@ body {
   line-height: 58px;
   height: 58px;
   width: 290px;
-  background: #398AEA;
+  background: #398aea;
   letter-spacing: 0.05em;
   margin-bottom: 40px;
   -webkit-transition: 0.3s ease;
@@ -3493,6 +3493,40 @@ body {
 
 .error-btn:hover {
   background: #2963cb;
+}
+
+.page-info h1 {
+  padding-bottom: 40px;
+}
+
+.page-info p {
+  font-size: 0.875rem;
+}
+
+.page-info span {
+  font-weight: 600;
+}
+
+p:nth-of-type(1) {
+  padding-bottom: 15px;
+  font-weight: 600;
+}
+
+p:nth-of-type(2) {
+  padding-bottom: 30px;
+}
+
+p:nth-of-type(3) {
+  padding-bottom: 15px;
+  font-weight: 600;
+}
+
+p:nth-of-type(4) {
+  padding-bottom: 20px;
+}
+
+p:nth-of-type(5) {
+  padding-bottom: 40px;
 }
 
 @media (max-width: 1330px) {
