@@ -876,14 +876,70 @@ input:focus:-ms-input-placeholder {
   max-height: 36px;
 }
 
-.header .main-menu-services:hover {
-  border-bottom: 1px solid #b3c0ce;
-}
-
 .header .main-menu-services-img {
   display: inline-block;
   position: relative;
   height: 36px;
+  width: 36px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.header .main-menu-services .services-user {
+  background-image: url(../images/icons/user-header.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header .main-menu-services .services-user:hover {
+  background: url(../images/icons/login-hover.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.header .main-menu-services .services-equ {
+  background-image: url(../images/icons/equ-header.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header .main-menu-services .services-equ:hover {
+  background: url(../images/icons/equ-header-blue.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.header .main-menu-services .services-heart {
+  background-image: url(../images/icons/heart-header.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header .main-menu-services .services-heart:hover {
+  background: url(../images/icons/nav-heart-blue.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.header .main-menu-services .services-cart {
+  background-image: url(../images/icons/cart-header.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header .main-menu-services .services-cart:hover {
+  background: url(../images/icons/blue-cart.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .header .main-menu-services-text {
@@ -2699,14 +2755,14 @@ body {
 }
 
 .mobile-nav-menu-services .heart-mob {
-  background: url(../images/icons/heart-header.png);
+  background: url(../images/icons/heart-header.svg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 .mobile-nav-menu-services .heart-mob:hover {
-  background: url(../images/icons/heart-header.svg);
+  background: url(../images/icons/nav-heart-blue.svg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
