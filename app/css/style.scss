@@ -945,11 +945,12 @@ body {
       &-compare {
         display: flex;
         align-items: center;
-        padding-right: 10px;
+        padding-right: 13px;
         font-weight: 600;
         font-size: 11px;
         line-height: 13px;
         color: #6d829f;
+        white-space: nowrap;
         &:hover {
           text-decoration: underline;
         }
