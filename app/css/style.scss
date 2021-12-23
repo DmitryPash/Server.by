@@ -824,7 +824,6 @@ body {
   }
 }
 
-
 .checkbox {
   position: relative;
   &-input {
@@ -847,7 +846,7 @@ body {
       display: block;
       width: 24px;
       height: 24px;
-      border: 1px solid #E5EDF7;
+      border: 1px solid #e5edf7;
       background-color: #ffffff;
       border-radius: 3px;
       cursor: pointer;
@@ -1768,13 +1767,11 @@ body {
     top: 18px;
     transform: rotate(90deg);
   }
-
 }
 
 .menu-link:hover img {
   transform: rotate(-90deg);
 }
-
 
 .menu-banner {
   display: block;
@@ -1802,18 +1799,13 @@ body {
 
 .menu-desktop > li:hover .menu-desktop-ul {
   display: block;
-  
 }
 .menu-desktop > li:hover .menu-link img {
   transform: rotate(-90deg);
 }
 .menu-desktop > li:hover .menu-link {
- color: #647b98;;
+  color: #647b98;
 }
-
-
-
-
 
 // dots
 .dots {
@@ -1949,43 +1941,66 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
 }
 
 // 404.html
-.error{
+.error {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  &-title{
+  &-title {
     font-size: rem(36px);
     font-weight: 600;
-    
   }
-  &-text{
+  &-text {
     font-size: rem(18px);
     font-weight: 500;
     color: #000000;
     margin-bottom: 45px;
     text-align: center;
   }
-  &-btn{
-    
+  &-btn {
     font-weight: 600;
     font-size: rem(18px);
     line-height: 58px;
     height: 58px;
     width: 290px;
-    background: #398AEA; 
+    background: #398aea;
     letter-spacing: 0.05em;
     margin-bottom: 40px;
     transition: 0.3s ease;
-    &:hover{
-    
+    &:hover {
       background: $colorBlue;
-      
     }
   }
 }
-
+.page-info {
+  h1 {
+    padding-bottom: 40px;
+  }
+  p {
+    font-size: rem(14px);
+  }
+  span {
+    font-weight: 600;
+  }
+}
+p:nth-of-type(1) {
+  padding-bottom: 15px;
+  font-weight: 600;
+}
+p:nth-of-type(2) {
+  padding-bottom: 30px;
+}
+p:nth-of-type(3) {
+  padding-bottom: 15px;
+  font-weight: 600;
+}
+p:nth-of-type(4) {
+  padding-bottom: 20px;
+}
+p:nth-of-type(5) {
+  padding-bottom: 40px;
+}
