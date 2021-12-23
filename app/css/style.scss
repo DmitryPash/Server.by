@@ -1317,12 +1317,12 @@ body {
         }
       }
       .heart-mob {
-        background: url(../images/icons/heart-header.png);
+        background: url(../images/icons/heart-header.svg);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
         &:hover {
-          background: url(../images/icons/heart-header.svg);
+          background: url(../images/icons/nav-heart-blue.svg);
           background-size: cover;
           background-position: center center;
           background-repeat: no-repeat;
