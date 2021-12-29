@@ -952,11 +952,12 @@ body {
       &-compare {
         display: flex;
         align-items: center;
-        padding-right: 10px;
+        padding-right: 13px;
         font-weight: 600;
         font-size: 11px;
         line-height: 13px;
         color: #6d829f;
+        white-space: nowrap;
         &:hover {
           text-decoration: underline;
         }
@@ -1983,6 +1984,7 @@ body {
   }
 }
 
+
 // product-compare.html
 
 main {
@@ -2166,4 +2168,32 @@ section {
   &:hover span {
     background-color: $colorCyan;
   }
+
+.page-info {
+  h1 {
+    padding-bottom: 40px;
+  }
+  p {
+    font-size: rem(14px);
+  }
+  span {
+    font-weight: 600;
+  }
+}
+p:nth-of-type(1) {
+  padding-bottom: 15px;
+  font-weight: 600;
+}
+p:nth-of-type(2) {
+  padding-bottom: 30px;
+}
+p:nth-of-type(3) {
+  padding-bottom: 15px;
+  font-weight: 600;
+}
+p:nth-of-type(4) {
+  padding-bottom: 20px;
+}
+p:nth-of-type(5) {
+  padding-bottom: 40px;
 }

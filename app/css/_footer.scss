@@ -279,7 +279,7 @@ $html-font-size: 16px;
             top: 39%;
             margin-left: 15px;
             transform: translate(-50%, -50%);
-            content: url("../images/icons/toggle-down.png");
+            content: url("../images/icons/toggle-down.svg");
             width: 20px;
             height: 20px;
           }
@@ -289,7 +289,7 @@ $html-font-size: 16px;
   }
 
   .footer-top-toggle.open .title-after::after {
-    content: url("../images/icons/toggle-up.png");
+    content: url("../images/icons/toggle-up.svg");
   }
   .footer-top-toggle.open ul {
     display: block;

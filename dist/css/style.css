@@ -2363,11 +2363,12 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-right: 10px;
+  padding-right: 13px;
   font-weight: 600;
   font-size: 11px;
   line-height: 13px;
   color: #6d829f;
+  white-space: nowrap;
 }
 
 .catalog-item-features-compare:hover {
@@ -3513,6 +3514,7 @@ body {
   background: #2963cb;
 }
 
+
 main {
   overflow-x: hidden;
   display: -webkit-box;
@@ -3736,6 +3738,40 @@ section {
 
 .catalog-toggle:hover span {
   background-color: #398aea;
+
+.page-info h1 {
+  padding-bottom: 40px;
+}
+
+.page-info p {
+  font-size: 0.875rem;
+}
+
+.page-info span {
+  font-weight: 600;
+}
+
+p:nth-of-type(1) {
+  padding-bottom: 15px;
+  font-weight: 600;
+}
+
+p:nth-of-type(2) {
+  padding-bottom: 30px;
+}
+
+p:nth-of-type(3) {
+  padding-bottom: 15px;
+  font-weight: 600;
+}
+
+p:nth-of-type(4) {
+  padding-bottom: 20px;
+}
+
+p:nth-of-type(5) {
+  padding-bottom: 40px;
+
 }
 
 @media (max-width: 1330px) {
@@ -5029,13 +5065,13 @@ section {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    content: url("../images/icons/toggle-down.png");
+    content: url("../images/icons/toggle-down.svg");
     width: 20px;
     height: 20px;
   }
 
   .footer-top-toggle.open .title-after::after {
-    content: url("../images/icons/toggle-up.png");
+    content: url("../images/icons/toggle-up.svg");
   }
 
   .footer-top-toggle.open ul {
