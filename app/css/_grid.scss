@@ -53,6 +53,11 @@
   padding-right: 8px;
 }
 
+.clear {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .col-product-53 {
   -ms-flex: 0 0 53.382352%;
   flex: 0 0 53.382352%;
@@ -83,6 +88,12 @@
   -ms-flex: 0 0 26%;
   flex: 0 0 26%;
   max-width: 26%;
+}
+
+.col-find-search {
+  -ms-flex: 0 0 21.9%;
+  flex: 0 0 21.9%;
+  max-width: 21.9%;
 }
 
 /*  12-column */
