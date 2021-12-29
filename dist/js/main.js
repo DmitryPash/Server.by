@@ -96,3 +96,25 @@ menu.forEach((element) => {
     element.classList.toggle("open");
   });
 });
+
+// Scroll slider
+const scrollContainer = document.querySelector("main");
+scrollContainer.addEventListener("wheel", (evt) => {
+  evt.preventDefault();
+  scrollContainer.scrollLeft += evt.deltaY;
+});
+
+$(document).ready(function () {
+  $(".compare-slider").slick({
+    slidesToShow: 3,
+    infinite: false,
+    prevArrow: ".slider-offer-left",
+    nextArrow: ".slider-offer-right",
+    // variableWidth: true,
+  });
+});
+const scrollCompare = document.querySelector(".compare-slider");
+scrollCompare.addEventListener("wheel", (evt) => {
+  evt.preventDefault();
+  scrollCompare.scrollLeft += evt.deltaY;
+});
