@@ -952,12 +952,11 @@ body {
       &-compare {
         display: flex;
         align-items: center;
-        padding-right: 13px;
+        padding-right: 10px;
         font-weight: 600;
         font-size: 11px;
         line-height: 13px;
         color: #6d829f;
-        white-space: nowrap;
         &:hover {
           text-decoration: underline;
         }
@@ -986,8 +985,7 @@ body {
       padding-left: 30px;
       padding-right: 30px;
       border-right: 1px solid #d6e3f2;
-      &-in_stock {
-      }
+
       &-title {
         font-weight: bold;
         font-size: 18px;
@@ -1377,14 +1375,6 @@ body {
   padding-bottom: 20px;
   margin-bottom: 30px;
   background-color: $colorWhite;
-}
-
-.info {
-  &-title {
-    padding-bottom: 15px;
-    font-size: rem(16px);
-    font-weight: 700;
-  }
   ul li {
     padding-bottom: 10px;
     color: #6d829f;
@@ -1392,6 +1382,14 @@ body {
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+
+.info {
+  &-title {
+    padding-bottom: 15px;
+    font-size: rem(16px);
+    font-weight: 700;
   }
 }
 .news {
@@ -1818,8 +1816,8 @@ body {
 .dots {
   position: relative;
   bottom: 3px;
-  // border-bottom: 1px solid;
-  // border-bottom-style: dotted;
+  border-bottom: 1px solid;
+  border-bottom-style: dotted;
   border-color: #d6e3f2;
   &-clear {
     position: relative;
@@ -1830,20 +1828,20 @@ body {
     padding-right: 5px;
   }
 
-  // .dots {
-  //   position: relative;
-  //   bottom: 3px;
-  //   border-bottom: 1px dotted #d6e3f2;
-  //   z-index: 2;
-  //   &-clear {
-  //     position: relative;
-  //     z-index: 1;
-  //     background: #ffffff;
-  //     display: inline-block;
-  //     padding-right: 5px;
-  //     top: 2px;
-  //   }
-  // }
+  .dots {
+    position: relative;
+    bottom: 3px;
+    border-bottom: 1px dotted #d6e3f2;
+    z-index: 2;
+    &-clear {
+      position: relative;
+      z-index: 1;
+      background: #ffffff;
+      display: inline-block;
+      padding-right: 5px;
+      top: 2px;
+    }
+  }
   .checkbox {
     position: relative;
     &-input {
@@ -1984,7 +1982,6 @@ body {
   }
 }
 
-
 // product-compare.html
 
 main {
@@ -2069,14 +2066,14 @@ section {
   &-cards {
     width: 100%;
     margin-bottom: 40px;
-    border-bottom: 1px solid #d6e3f2;
-    border-right: 1px solid #d6e3f2;
+    // border-bottom: 1px solid #d6e3f2;
+    // border-right: 1px solid #d6e3f2;
     padding-right: 8px;
     padding-left: 8px;
   }
   .ui-card-product {
     width: 100%;
-    border-bottom: none;
+    border-right: 1px solid #d6e3f2;
   }
 }
 
@@ -2168,32 +2165,211 @@ section {
   &:hover span {
     background-color: $colorCyan;
   }
+}
 
-.page-info {
-  h1 {
-    padding-bottom: 40px;
+// order-history.html
+.history {
+  &-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
   }
-  p {
+  table {
+    border-collapse: collapse;
+    width: 100%;
     font-size: rem(14px);
   }
-  span {
+
+  td,
+  th {
+    text-align: left;
+    padding: 15px 30px;
+  }
+  th {
     font-weight: 600;
+    color: $colorCyan;
+  }
+  td {
+    vertical-align: top;
+  }
+
+  tr:nth-child(odd) {
+    background-color: $colorWhite;
+  }
+  .cyantext {
+    color: $colorCyan;
+    text-decoration: underline;
+  }
+
+  .info-block {
+    ul li:last-child {
+      position: relative;
+      transition: 0.3s ease;
+      &:hover {
+        left: 20px;
+      }
+      &:hover .toggle-product {
+        display: block;
+      }
+    }
+    li:hover {
+      font-weight: 600;
+      text-decoration: none;
+    }
+    li a {
+      font-size: rem(14px);
+      color: $colorSilver;
+    }
+    .toggle-product {
+      display: none;
+      left: -19px;
+      bottom: 45%;
+    }
   }
 }
-p:nth-of-type(1) {
-  padding-bottom: 15px;
+
+// account.html
+.account {
+  .info-block {
+    ul li:last-child {
+      position: relative;
+      transition: 0.3s ease;
+      &:hover {
+        left: 20px;
+      }
+      &:hover .toggle-product {
+        display: block;
+      }
+    }
+    li:hover {
+      font-weight: 600;
+      text-decoration: none;
+    }
+    li a {
+      font-size: rem(14px);
+      color: $colorSilver;
+    }
+    .toggle-product {
+      display: none;
+      left: -19px;
+      bottom: 45%;
+    }
+  }
+}
+.account-date {
+  margin-bottom: 50px;
+}
+
+.account-date-title {
   font-weight: 600;
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 30px;
 }
-p:nth-of-type(2) {
-  padding-bottom: 30px;
+
+.account-date-input-title {
+  margin-bottom: 7px;
+  font-size: 12px;
+  line-height: 15px;
 }
-p:nth-of-type(3) {
-  padding-bottom: 15px;
-  font-weight: 600;
+
+.account-date-input-form {
+  margin-right: 30px;
+  margin-bottom: 20px;
 }
-p:nth-of-type(4) {
-  padding-bottom: 20px;
+
+.account-date-input-content {
+  padding: 17px 18px 18px 20px;
+  width: 100%;
+
+  &::-webkit-input-placeholder {
+    color: #a8c0dd;
+  }
 }
-p:nth-of-type(5) {
-  padding-bottom: 40px;
+
+.account-password {
+  margin-bottom: 60px;
 }
+
+.account-btn {
+  width: 308px;
+  height: 54px;
+  line-height: 54px;
+  margin-bottom: 60px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  transition: 0.3s ease;
+
+  &:hover {
+    background: #ffffff;
+    color: #398aea;
+    border: 1px solid #398aea;
+  }
+}
+
+/* default styling. Nothing to do with freexing first row and column */
+
+// table {
+//   border-collapse: collapse;
+// }
+// td,
+// th {
+//   border: 1px solid;
+//   padding: 10px;
+//   min-width: 100%;
+//   background: white;
+//   text-align: left;
+// }
+// .table-container {
+//   position: relative;
+//   max-height: 670px;
+//   width: 500px;
+//   overflow-x: auto;
+//   overflow-y: hidden;
+// }
+
+// thead th {
+//   position: -webkit-sticky;
+//   position: sticky;
+//   top: 0;
+//   z-index: 2;
+//   background: hsl(20, 50%, 70%);
+// }
+
+// thead th:first-child {
+//   left: 0;
+//   z-index: 3;
+// }
+
+// tfoot {
+//   position: -webkit-sticky;
+//   bottom: 0;
+//   z-index: 2;
+// }
+
+// tfoot td {
+//   position: sticky;
+//   bottom: 0;
+//   z-index: 2;
+//   background: hsl(20, 50%, 70%);
+// }
+
+// tfoot td:first-child {
+//   z-index: 3;
+// }
+
+// tbody {
+//   overflow: scroll;
+//   height: 200px;
+// }
+
+// /* MAKE LEFT COLUMN FIXEZ */
+// tr > :first-child {
+//   position: -webkit-sticky;
+//   position: sticky;
+//   background: hsl(180, 50%, 70%);
+//   left: 0;
+// }
+// /* don't do this */
+// tr > :first-child {
+//   box-shadow: inset 0px 1px black;
+// }
