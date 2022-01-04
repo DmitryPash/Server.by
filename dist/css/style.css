@@ -61,6 +61,10 @@
   padding-right: 0px;
 }
 
+.borderfix {
+  margin: -0.5px;
+}
+
 .col-product-53 {
   -ms-flex: 0 0 53.382352%;
   -webkit-box-flex: 0;
@@ -108,6 +112,13 @@
   -webkit-box-flex: 0;
   flex: 0 0 21.9%;
   max-width: 21.9%;
+}
+
+.col-account-input {
+  -ms-flex: 0 0 33.33%;
+  -webkit-box-flex: 0;
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
 }
 
 /*  12-column */
@@ -2363,12 +2374,11 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-right: 13px;
+  padding-right: 10px;
   font-weight: 600;
   font-size: 11px;
   line-height: 13px;
   color: #6d829f;
-  white-space: nowrap;
 }
 
 .catalog-item-features-compare:hover {
@@ -2833,20 +2843,20 @@ body {
   background-color: #f4f9ff;
 }
 
-.info-title {
-  padding-bottom: 15px;
-  font-size: 1rem;
-  font-weight: 700;
-}
-
-.info ul li {
+.info-block ul li {
   padding-bottom: 10px;
   color: #6d829f;
   font-size: 0.8125rem;
 }
 
-.info ul li:hover {
+.info-block ul li:hover {
   text-decoration: underline;
+}
+
+.info-title {
+  padding-bottom: 15px;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .news-card {
@@ -3330,6 +3340,8 @@ body {
 .dots {
   position: relative;
   bottom: 3px;
+  border-bottom: 1px solid;
+  border-bottom-style: dotted;
   border-color: #d6e3f2;
 }
 
@@ -3340,6 +3352,22 @@ body {
   display: inline-block;
   bottom: -3px;
   padding-right: 5px;
+}
+
+.dots .dots {
+  position: relative;
+  bottom: 3px;
+  border-bottom: 1px dotted #d6e3f2;
+  z-index: 2;
+}
+
+.dots .dots-clear {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  display: inline-block;
+  padding-right: 5px;
+  top: 2px;
 }
 
 .dots .checkbox {
@@ -3514,7 +3542,6 @@ body {
   background: #2963cb;
 }
 
-
 main {
   overflow-x: hidden;
   display: -webkit-box;
@@ -3625,15 +3652,13 @@ section {
 .search-prod-cards {
   width: 100%;
   margin-bottom: 40px;
-  border-bottom: 1px solid #d6e3f2;
-  border-right: 1px solid #d6e3f2;
   padding-right: 8px;
   padding-left: 8px;
 }
 
 .search-prod .ui-card-product {
   width: 100%;
-  border-bottom: none;
+  border-right: 1px solid #d6e3f2;
 }
 
 .favourites {
@@ -3738,41 +3763,159 @@ section {
 
 .catalog-toggle:hover span {
   background-color: #398aea;
-
-.page-info h1 {
-  padding-bottom: 40px;
 }
 
-.page-info p {
+.history-table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.history table {
+  border-collapse: collapse;
+  width: 100%;
   font-size: 0.875rem;
 }
 
-.page-info span {
+.history td,
+.history th {
+  text-align: left;
+  padding: 15px 30px;
+}
+
+.history th {
   font-weight: 600;
+  color: #398aea;
 }
 
-p:nth-of-type(1) {
-  padding-bottom: 15px;
+.history td {
+  vertical-align: top;
+}
+
+.history tr:nth-child(odd) {
+  background-color: #f4f9ff;
+}
+
+.history .cyantext {
+  color: #398aea;
+  text-decoration: underline;
+}
+
+.history .info-block ul li:last-child {
+  position: relative;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.history .info-block ul li:last-child:hover {
+  left: 20px;
+}
+
+.history .info-block ul li:last-child:hover .toggle-product {
+  display: block;
+}
+
+.history .info-block li:hover {
   font-weight: 600;
+  text-decoration: none;
 }
 
-p:nth-of-type(2) {
-  padding-bottom: 30px;
+.history .info-block li a {
+  font-size: 0.875rem;
+  color: #647b98;
 }
 
-p:nth-of-type(3) {
-  padding-bottom: 15px;
+.history .info-block .toggle-product {
+  display: none;
+  left: -19px;
+  bottom: 45%;
+}
+
+.account .info-block ul li:last-child {
+  position: relative;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.account .info-block ul li:last-child:hover {
+  left: 20px;
+}
+
+.account .info-block ul li:last-child:hover .toggle-product {
+  display: block;
+}
+
+.account .info-block li:hover {
   font-weight: 600;
+  text-decoration: none;
 }
 
-p:nth-of-type(4) {
-  padding-bottom: 20px;
+.account .info-block li a {
+  font-size: 0.875rem;
+  color: #647b98;
 }
 
-p:nth-of-type(5) {
-  padding-bottom: 40px;
-
+.account .info-block .toggle-product {
+  display: none;
+  left: -19px;
+  bottom: 45%;
 }
+
+.account-date {
+  margin-bottom: 50px;
+}
+
+.account-date-title {
+  font-weight: 600;
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.account-date-input-title {
+  margin-bottom: 7px;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.account-date-input-form {
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.account-date-input-content {
+  padding: 17px 18px 18px 20px;
+  width: 100%;
+}
+
+.account-date-input-content::-webkit-input-placeholder {
+  color: #a8c0dd;
+}
+
+.account-password {
+  margin-bottom: 60px;
+}
+
+.account-btn {
+  width: 308px;
+  height: 54px;
+  line-height: 54px;
+  margin-bottom: 60px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.account-btn:hover {
+  background: #ffffff;
+  color: #398aea;
+  border: 1px solid #398aea;
+}
+
+/* default styling. Nothing to do with freexing first row and column */
 
 @media (max-width: 1330px) {
   .col-l-1 {
