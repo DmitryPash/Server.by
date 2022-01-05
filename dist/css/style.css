@@ -3915,7 +3915,89 @@ section {
   border: 1px solid #398aea;
 }
 
+.cart {
+  margin-bottom: 80px;
+}
+
+.cart-item {
+  width: 100%;
+}
+
+.order {
+  border: 1px solid #d6e3f2;
+  margin-bottom: 20px;
+}
+
+.order .catalog-marker {
+  top: 0;
+  margin: 0;
+  padding: 3px 6px;
+  height: initial;
+  line-height: initial;
+  font-size: 0.4375rem;
+}
+
+.order-item {
+  position: relative;
+  width: 100%;
+  height: 117px;
+}
+
+.order-item-info {
+  padding-left: 20px;
+}
+
+.order-item-img {
+  display: inline-block;
+  height: 95px;
+  margin-right: 20px;
+}
+
+.order-item-img a {
+  display: inline-block;
+}
+
+.order-item-img img {
+  max-height: 95px;
+}
+
+.order-item-description {
+  display: inline-block;
+}
+
+.order-item-price {
+  display: inline-block;
+  padding: 0px 30px 0px 40px;
+  height: 100%;
+}
+
+.order-item-price-num {
+  display: inline-block;
+  color: #398aea;
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-right: 40px;
+}
+
+.order-item-price-num span {
+  font-size: 0.5625rem;
+  font-weight: 600;
+}
+
+.order-item-price button {
+  margin-right: 40px;
+}
+
 /* default styling. Nothing to do with freexing first row and column */
+
+.white-popup-block {
+  color: #ffffff;
+}
+
+.popup-modal-dismiss {
+  font-size: 2.25rem;
+  color: red;
+}
 
 @media (max-width: 1330px) {
   .col-l-1 {
