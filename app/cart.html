@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="utf-8" />
+   <title>Server.by</title>
+   <meta name="keywords" content="Server.by" />
+   <meta name="description" content="Server.by" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="format-detection" content="telephone=no" />
+
+
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet" />
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+   <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+   <div class="wrapper" id="wrapper">
+      @@include('inc-header.html')
+      <div class="middle" id="middle">
+         <div class="container">
+            <div class="page-breadcrumbs">
+               <a href="#">Главная</a><i>/</i> <a href="#">Корзина товаров</a><i>/</i> <a href="#">Оформление заказа</a>
+            </div>
+            <div class="middle-title-h1">Оформление заказа</div>
+            <div class="cart">
+               <div class="row">
+                  <div class="col-filter-78">
+                     <div class="order">
+                        <div class="order-item flex valign-center space-between">
+                           <div class="catalog-marker green">НОВИНКА</div>
+                           <div class="order-item-info flex valign-center">
+                              <div class="order-item-img">
+                                 <a href="#">
+                                    <img src="./images/icons/cart-item-1.png" alt="alt" />
+                                 </a>
+                              </div>
+                              <div class="order-item-description">
+                                 <a href="#" class="order-item-description-title">
+                                    Lenovo IdeaPad L340-15API 81LW0086RK
+                                 </a>
+                                 <div class="order-item-description-articule">
+                                    <div class="catalog-item-description-number">КОД ТОВАРА: QD0095719</div>
+                                    <div class="catalog-item-description-in_stock">
+                                       <img src="./images/icons/accept.png" alt="alt" />
+                                       В НАЛИЧИИ
+                                    </div>
+                                 </div>
+
+                              </div>
+                           </div>
+                           <div class="order-item-price">
+                              <div class="order-item-price-num">3 810.60 <span>РУБ.</span></div>
+                              <button>+1212-</button>
+                              <div class="order-item-price-num">3 810.60 <span>РУБ.</span></div>
+                           </div>
+                           <div class="catalog-toggle"><span></span></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-filter-22">22</div>
+               </div>
+            </div>
+            <div class="sale">
+               <a href="#" class="sale-img">
+                  <picture>
+                     <source media="(max-width: 399px)" srcset="./images/icons/sale50.svg" />
+                     <source media="(max-width: 799px)" srcset="./images/examples/sale-banner.png" />
+                     <img src="./images/examples/sale-banner.png" alt="alt" />
+                  </picture>
+               </a>
+            </div>
+
+         </div>
+
+
+
+         @@include('inc-footer.html')
+      </div>
+      @@include('mobile-nav.html')
+      @@include('inc-script.html')
+</body>
+
+</html>
