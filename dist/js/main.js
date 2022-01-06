@@ -116,7 +116,9 @@ $(function () {
 
 // registration
 $(function () {
-  $(".registration-modal").magnificPopup({});
+  $(".registration-modal").magnificPopup({
+    type: "ajax",
+  });
   $(document).on("click", ".popup-modal-dismiss", function (e) {
     e.preventDefault();
     $.magnificPopup.close();

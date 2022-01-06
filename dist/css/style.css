@@ -3929,7 +3929,8 @@ section {
 }
 
 .order .catalog-marker {
-  top: 0;
+  top: 10px;
+  left: 20px;
   margin: 0;
   padding: 3px 6px;
   height: initial;
@@ -3965,10 +3966,36 @@ section {
   display: inline-block;
 }
 
-.order-item-price {
+.order-item-description-title {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.order-item-description-number {
   display: inline-block;
+  font-size: 0.5625rem;
+  color: #6d829f;
+  margin-right: 16px;
+}
+
+.order-item-description-in_stock {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.5625rem;
+  line-height: 13px;
+  text-transform: uppercase;
+  color: #37ab00;
+}
+
+.order-item-description-in_stock img {
+  padding-right: 5px;
+}
+
+.order-item-price {
   padding: 0px 30px 0px 40px;
   height: 100%;
+  border-left: 1px solid #d6e3f2;
 }
 
 .order-item-price-num {
@@ -3988,12 +4015,96 @@ section {
   margin-right: 40px;
 }
 
+.pricecheck {
+  padding: 39px 30px 28px 30px;
+  -webkit-box-shadow: 0px 4px 20px #d6e3f2;
+  box-shadow: 0px 4px 20px #d6e3f2;
+  border-radius: 4px;
+}
+
+.pricecheck-pay {
+  border-bottom: 1px solid #d6e3f2;
+  padding-bottom: 30px;
+  margin-bottom: 28px;
+}
+
+.pricecheck-pay-cart {
+  font-size: 0.6875rem;
+  margin-bottom: 16px;
+}
+
+.pricecheck-pay-cart-amount {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.pricecheck-pay-item {
+  font-size: 0.6875rem;
+  margin-bottom: 16px;
+}
+
+.pricecheck-pay-item-amount {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #398aea;
+}
+
+.pricecheck-pay-del {
+  font-size: 0.6875rem;
+}
+
+.pricecheck-pay-del-amount {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.pricecheck-amount {
+  margin-bottom: 37px;
+}
+
+.pricecheck-amount-title {
+  font-size: 0.875rem;
+  color: #000000;
+  margin-bottom: 4px;
+}
+
+.pricecheck-amount-total {
+  color: #398aea;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.pricecheck-amount-total span {
+  font-size: 0.6875rem;
+  font-weight: 600;
+}
+
+.pricecheck-amount-sale {
+  font-size: 0.6875rem;
+  color: #647b98;
+}
+
+.pricecheck-amount-sale span {
+  color: #398aea;
+}
+
+.pricecheck-btn {
+  height: 52px;
+  line-height: 52px;
+  font-size: 0.875rem;
+}
+
+.pricecheck-btn:hover {
+  background: #398aea;
+}
+
 /* default styling. Nothing to do with freexing first row and column */
 
 .popup-container {
   position: relative;
   width: 100%;
-  max-width: 308px;
+  max-width: 324px;
   margin: 0 auto;
   padding-left: 8px;
   padding-right: 8px;
@@ -4032,6 +4143,10 @@ section {
 
 .popup-login-subtitle a:hover {
   border-bottom: 1px solid #ffffff00;
+}
+
+.popup-login-input {
+  margin-bottom: 40px;
 }
 
 .popup-login-email-title {
@@ -4136,6 +4251,10 @@ section {
   background: #398aea;
 }
 
+.popup-registration-form {
+  margin-bottom: 23px;
+}
+
 .popup-registration .checkbox {
   margin-bottom: 40px;
 }
@@ -4151,10 +4270,6 @@ section {
 
 .popup-registration .checkbox label a:hover {
   border-bottom: 1px solid #398aea;
-}
-
-.popup-registration .popup-form {
-  margin-bottom: 20px;
 }
 
 .popup-registration .checkbox-label::after {
@@ -4264,6 +4379,10 @@ section {
   background: #398aea;
 }
 
+.popup-recovery-form {
+  margin-bottom: 48px;
+}
+
 .popup-recoverySuccess {
   background-color: #ffffff;
   margin: 0 auto;
@@ -4313,16 +4432,24 @@ section {
 
 .popup-form {
   width: 100%;
-  margin-bottom: 40px;
 }
 
-.popup-form input {
+.popup-form-title {
+  font-size: 0.75rem;
+  margin-bottom: 7px;
+}
+
+.popup-form-input {
   width: 100%;
-  height: 58px;
+  height: 52px;
   padding: 0 20px;
   line-height: 58px;
   border: 1px solid #e5edf7;
   border-radius: 4px;
+}
+
+.popup-form-input:focus {
+  border-color: #398aea;
 }
 
 .popup-modal-dismiss {

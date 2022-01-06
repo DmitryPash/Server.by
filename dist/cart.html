@@ -1111,17 +1111,13 @@
       <div class="popup-login-subtitle">
         Войдите или <a href="#registration-modal" class="registration-modal">зарегистрируйтесь</a>
       </div>
-      <div class="popup-login-email">
-        <div class="popup-login-email-title">Ваш email</div>
-        <div class="popup-form">
-          <form action=""><input type="text"></form>
-        </div>
-      </div>
-      <div class="popup-login-password">
-        <div class="popup-login-password-title">Пароль</div>
-        <div class="popup-form">
-          <form action=""><input type="text"></form>
-        </div>
+      <div class="popup-form popup-login-form">
+        <form action="">
+          <div class="popup-form-title">Ваш email</div>
+          <input type="text" class="popup-form-input popup-login-input">
+          <div class="popup-form-title">Пароль</div>
+          <input type="text" class="popup-form-input popup-login-input">
+        </form>
       </div>
       <a href="#" class="popup-login-button ui-btn">
         Войти
@@ -1143,11 +1139,11 @@
       <div class="popup-registration-subtitle">
         Уже есть аккаунт? <a href="#signin-modal" class="signin-modal">Войти на сайт</a>
       </div>
-      <div class="popup-registration-email">
-        <div class="popup-registration-email-title">Ваш email</div>
-        <div class="popup-form">
-          <form action=""><input type="text"></form>
-        </div>
+      <div class="popup-form popup-registration-form">
+        <form action="">
+          <div class="popup-form-title">Ваш email</div>
+          <input type="text" class="popup-form-input">
+        </form>
       </div>
       <div class="checkbox">
         <input class="checkbox-input" type="checkbox" id="checkbox_1">
@@ -1192,11 +1188,11 @@
       <div class="popup-recovery-subtitle">
         Введите свой email и мы отправим на него ссылку для смены пароля
       </div>
-      <div class="popup-recovery-email">
-        <div class="popup-recovery-email-title">Ваш email</div>
-        <div class="popup-form">
-          <form action=""><input type="text"></form>
-        </div>
+      <div class="popup-form popup-recovery-form">
+        <form action="">
+          <div class="popup-form-title">Ваш email</div>
+          <input type="text" class="popup-form-input">
+        </form>
       </div>
       <a href="#recoverySuccess-modal" class="popup-recovery-button ui-btn">
         получить ссылку
@@ -1254,11 +1250,11 @@
                               </div>
                               <div class="order-item-description">
                                  <a href="#" class="order-item-description-title">
-                                    Lenovo IdeaPad L340-15API 81LW0086RK
+                                    Acer Aspire 3 A315-22-44UQ NX.HE8EU.00Z
                                  </a>
                                  <div class="order-item-description-articule">
-                                    <div class="catalog-item-description-number">КОД ТОВАРА: QD0095719</div>
-                                    <div class="catalog-item-description-in_stock">
+                                    <div class="order-item-description-number">КОД ТОВАРА: QD0095719</div>
+                                    <div class="order-item-description-in_stock">
                                        <img src="./images/icons/accept.png" alt="alt" />
                                        В НАЛИЧИИ
                                     </div>
@@ -1266,7 +1262,7 @@
 
                               </div>
                            </div>
-                           <div class="order-item-price">
+                           <div class="order-item-price flex valign-center">
                               <div class="order-item-price-num">3 810.60 <span>РУБ.</span></div>
                               <button>+1212-</button>
                               <div class="order-item-price-num">3 810.60 <span>РУБ.</span></div>
@@ -1275,7 +1271,35 @@
                         </div>
                      </div>
                   </div>
-                  <div class="col-filter-22">22</div>
+                  <div class="col-filter-22">
+                     <div class="pricecheck">
+                        <div class="pricecheck-pay">
+                           <div class="pricecheck-pay-cart">
+                              Товаров в корзине: <span class="pricecheck-pay-cart-amount">2</span>
+                           </div>
+                           <div class="pricecheck-pay-item">
+                              Стоимость товаров: <span class="pricecheck-pay-item-amount">12 030, 03 руб.</span>
+                           </div>
+                           <div class="pricecheck-pay-del">
+                              Стоимость доставки: <span class="pricecheck-pay-del-amount">0, 00 руб.</span>
+                           </div>
+                        </div>
+                        <div class="pricecheck-amount">
+                           <div class="pricecheck-amount-title">
+                              Общая стоимость:
+                           </div>
+                           <div class="pricecheck-amount-total">
+                              12 030.00* <span>РУБ.</span>
+                           </div>
+                           <div class="pricecheck-amount-sale">
+                              <span>*</span> Цена со скидкой
+                           </div>
+                        </div>
+                        <a href="#" class="pricecheck-btn ui-btn">
+                           оформить заказ
+                        </a>
+                     </div>
+                  </div>
                </div>
             </div>
             <div class="sale">
