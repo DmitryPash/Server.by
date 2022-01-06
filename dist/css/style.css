@@ -4282,7 +4282,6 @@ section {
 }
 
 .mfp-close-btn-in .mfp-close {
-  background-image: url(../images/icons/popup-cross.svg);
   background: #398aea;
   border-radius: 50%;
   color: #ffffff;
@@ -5743,6 +5742,17 @@ section {
     -webkit-box-flex: 0;
     flex: 0 0 100%;
     max-width: 100%;
+  }
+
+  .mfp-close {
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+  }
+
+  .mfp-close-btn-in .mfp-close {
+    top: -15px;
+    right: -10px;
   }
 
   .hits {

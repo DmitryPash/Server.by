@@ -711,6 +711,16 @@
   }
 }
 @media (max-width: 400px) {
+  .mfp-close {
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+  }
+  .mfp-close-btn-in .mfp-close {
+    top: -15px;
+    right: -10px;
+  }
+
   .hits {
     margin-right: -15px;
   }
@@ -838,15 +848,13 @@
   .product {
     margin-bottom: 40px;
   }
-  .error-title{
+  .error-title {
     font-size: rem(20px);
   }
-  .error-text, .error-btn{
+  .error-text,
+  .error-btn {
     font-size: rem(13px);
-    
   }
-  
 
   // Footer
 }
-
