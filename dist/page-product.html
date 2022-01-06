@@ -1064,7 +1064,7 @@
         </div>
         <div class="col-menu col-lg-3">
           <div class="main-menu space-between">
-            <a href="#" class="main-menu-services">
+            <a href="#signin-modal" class="main-menu-services">
               <div class="main-menu-services-img services-user">
                 <!-- <img src="./images/icons/user-header.svg" alt="alt" /> -->
               </div>
@@ -1099,15 +1099,135 @@
       </div>
     </div>
   </div>
-  <a class="popup-modal" href="#test-modal">Open modal</a>
+  <!-- <a class="popup-modal" href="">Open modal</a> -->
 
-  <div id="test-modal" class="white-popup-block mfp-hide">
-    <h1>Modal dialog</h1>
-    <p>You won't be able to dismiss this by usual means (escape or
-      click button), but you can close it programatically based on
-      user choices or actions.</p>
-    <p><a class="popup-modal-dismiss" href="#">Крестик</a></p>
+  <div id="signin-modal" class="popup-login mfp-hide">
+    <div class="popup-bg-top"></div>
+    <div class="popup-container">
+      <div class="popup-login-title">
+        Вход на сайт
+      </div>
+      <div class="popup-login-subtitle">
+        Войдите или <a href="#registration-modal" class="registration-modal">зарегистрируйтесь</a>
+      </div>
+      <div class="popup-login-email">
+        <div class="popup-login-email-title">Ваш email</div>
+        <div class="popup-form">
+          <form action=""><input type="text"></form>
+        </div>
+      </div>
+      <div class="popup-login-password">
+        <div class="popup-login-password-title">Пароль</div>
+        <div class="popup-form">
+          <form action=""><input type="text"></form>
+        </div>
+      </div>
+      <a href="#" class="popup-login-button ui-btn">
+        Войти
+      </a>
+      <div class="popup-login-footer">
+        Забыли пароль? <a href="#recovery-modal" class="recovery-modal">Восстановить</a>
+      </div>
+    </div>
+    <p><a class="popup-modal-dismiss" href="#"></a></p>
+    <div class="popup-bg-bottom"></div>
   </div>
+
+  <div id="registration-modal" class="popup-registration mfp-hide">
+    <div class="popup-bg-top"></div>
+    <div class="popup-container">
+      <div class="popup-registration-title">
+        Регистрация
+      </div>
+      <div class="popup-registration-subtitle">
+        Уже есть аккаунт? <a href="#signin-modal" class="signin-modal">Войти на сайт</a>
+      </div>
+      <div class="popup-registration-email">
+        <div class="popup-registration-email-title">Ваш email</div>
+        <div class="popup-form">
+          <form action=""><input type="text"></form>
+        </div>
+      </div>
+      <div class="checkbox">
+        <input class="checkbox-input" type="checkbox" id="checkbox_1">
+        <label class="checkbox-label" for="checkbox_1">Я согласен с условиями <a href="#">Пользовательского
+            соглашения</a></label>
+      </div>
+      <a href="#registrationSuccess-modal" class="popup-registration-button ui-btn">
+        зарегистрироваться
+      </a>
+    </div>
+    <p><a class="popup-modal-dismiss" href="#"></a></p>
+    <div class="popup-bg-bottom"></div>
+  </div>
+
+  <div id="registrationSuccess-modal" class="popup-registrationSuccess mfp-hide">
+    <div class="popup-bg-top"></div>
+    <div class="popup-container">
+      <div class="popup-registrationSuccess-title">
+        Поздравляем!
+      </div>
+      <div class="popup-registrationSuccess-subtitle">
+        Вы успешно зарегистрированы!
+      </div>
+      <div class="popup-registrationSuccess-text">
+        Мы отправили вам на почту письмо с паролем для входа на сайт
+      </div>
+      <a href="#signin-modal" class="popup-registrationSuccess-button ui-btn signin-modal">
+        Войти на сайт
+      </a>
+    </div>
+    <p><a class="popup-modal-dismiss" href="#"></a></p>
+    <div class="popup-bg-bottom"></div>
+  </div>
+
+  <div id="recovery-modal" class="popup-recovery mfp-hide">
+    <div class="popup-bg-top"></div>
+    <div class="popup-recovery-title">
+      Восстановление пароля
+    </div>
+    <div class="popup-container">
+
+      <div class="popup-recovery-subtitle">
+        Введите свой email и мы отправим на него ссылку для смены пароля
+      </div>
+      <div class="popup-recovery-email">
+        <div class="popup-recovery-email-title">Ваш email</div>
+        <div class="popup-form">
+          <form action=""><input type="text"></form>
+        </div>
+      </div>
+      <a href="#recoverySuccess-modal" class="popup-recovery-button ui-btn">
+        получить ссылку
+      </a>
+      <div class="popup-login-footer">
+        Я вспомнил пароль! <a href="#signin-modal" class="signin-modal">Войти на сайт</a>
+      </div>
+    </div>
+    <p><a class="popup-modal-dismiss" href="#"></a></p>
+    <div class="popup-bg-bottom"></div>
+  </div>
+
+  <div id="recoverySuccess-modal" class="popup-recoverySuccess mfp-hide">
+    <div class="popup-bg-top"></div>
+    <div class="popup-container">
+      <div class="popup-recoverySuccess-title">
+        Поздравляем!
+      </div>
+      <div class="popup-recoverySuccess-subtitle">
+        Ссылка для смены пароля успешно отправлена
+      </div>
+      <div class="popup-recoverySuccess-text">
+        Проверьте, пожалуйста, вашу почту.
+      </div>
+      <a href="#signin-modal" class="popup-recoverySuccess-button ui-btn signin-modal">
+        Войти на сайт
+      </a>
+    </div>
+    <p><a class="popup-modal-dismiss" href="#"></a></p>
+    <div class="popup-bg-bottom"></div>
+  </div>
+
   <div class="burger burgerclick"></div>
   <a href="tel:12345678" class="main-mobile-tel active-display left-phone">
     <img src="./images/icons/viber (1) 2.svg" alt="alt" />
@@ -1917,7 +2037,7 @@
       </div>
       <div class="mobile-nav-menu-services-text">Поиск</div>
    </a>
-   <a href="#" class="mobile-nav-menu-services">
+   <a href="#signin-modal" class="mobile-nav-menu-services">
       <div class="mobile-nav-menu-services-img user-mob">
       </div>
       <div class="mobile-nav-menu-services-text">Войти</div>
