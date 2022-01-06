@@ -2467,6 +2467,10 @@ section {
     a {
       color: $colorCyan;
       border-bottom: 1px solid #398aea;
+      transition: 0.3s ease;
+      &:hover {
+        border-bottom: 1px solid #ffffff00;
+      }
     }
   }
   &-email {
@@ -2493,6 +2497,9 @@ section {
     letter-spacing: 0.05em;
     margin: 0 auto;
     margin-bottom: 40px;
+    &:hover {
+      background: #398aea;
+    }
   }
   &-footer {
     font-size: rem(14px);
@@ -2502,6 +2509,10 @@ section {
     a {
       color: $colorCyan;
       border-bottom: 1px solid #398aea;
+      transition: 0.3s ease;
+      &:hover {
+        border-bottom: 1px solid #ffffff00;
+      }
     }
   }
 }
@@ -2526,6 +2537,10 @@ section {
     a {
       color: $colorCyan;
       border-bottom: 1px solid #398aea;
+      transition: 0.3s ease;
+      &:hover {
+        border-bottom: 1px solid #ffffff00;
+      }
     }
   }
   &-email {
@@ -2545,6 +2560,9 @@ section {
     letter-spacing: 0.05em;
     margin: 0 auto;
     margin-bottom: 40px;
+    &:hover {
+      background: #398aea;
+    }
   }
   .checkbox {
     margin-bottom: 40px;
@@ -2603,6 +2621,9 @@ section {
     letter-spacing: 0.05em;
     margin: 0 auto;
     margin-bottom: 40px;
+    &:hover {
+      background: #398aea;
+    }
   }
 }
 
@@ -2626,6 +2647,10 @@ section {
     a {
       color: $colorCyan;
       border-bottom: 1px solid #398aea;
+      transition: 0.3s ease;
+      &:hover {
+        border-bottom: 1px solid #ffffff00;
+      }
     }
   }
   &-email {
@@ -2645,6 +2670,9 @@ section {
     letter-spacing: 0.05em;
     margin: 0 auto;
     margin-bottom: 40px;
+    &:hover {
+      background: #398aea;
+    }
   }
 }
 
@@ -2684,6 +2712,10 @@ section {
     letter-spacing: 0.05em;
     margin: 0 auto;
     margin-bottom: 40px;
+
+    &:hover {
+      background: #398aea;
+    }
   }
 }
 

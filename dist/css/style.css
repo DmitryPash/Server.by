@@ -4025,6 +4025,13 @@ section {
 .popup-login-subtitle a {
   color: #398aea;
   border-bottom: 1px solid #398aea;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.popup-login-subtitle a:hover {
+  border-bottom: 1px solid #ffffff00;
 }
 
 .popup-login-email-title {
@@ -4051,6 +4058,10 @@ section {
   margin-bottom: 40px;
 }
 
+.popup-login-button:hover {
+  background: #398aea;
+}
+
 .popup-login-footer {
   font-size: 0.875rem;
   font-weight: 400;
@@ -4060,6 +4071,13 @@ section {
 .popup-login-footer a {
   color: #398aea;
   border-bottom: 1px solid #398aea;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.popup-login-footer a:hover {
+  border-bottom: 1px solid #ffffff00;
 }
 
 .popup-registration {
@@ -4087,6 +4105,13 @@ section {
 .popup-registration-subtitle a {
   color: #398aea;
   border-bottom: 1px solid #398aea;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.popup-registration-subtitle a:hover {
+  border-bottom: 1px solid #ffffff00;
 }
 
 .popup-registration-email-title {
@@ -4105,6 +4130,10 @@ section {
   letter-spacing: 0.05em;
   margin: 0 auto;
   margin-bottom: 40px;
+}
+
+.popup-registration-button:hover {
+  background: #398aea;
 }
 
 .popup-registration .checkbox {
@@ -4175,6 +4204,10 @@ section {
   margin-bottom: 40px;
 }
 
+.popup-registrationSuccess-button:hover {
+  background: #398aea;
+}
+
 .popup-recovery {
   background-color: #ffffff;
   margin: 0 auto;
@@ -4200,6 +4233,13 @@ section {
 .popup-recovery-subtitle a {
   color: #398aea;
   border-bottom: 1px solid #398aea;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.popup-recovery-subtitle a:hover {
+  border-bottom: 1px solid #ffffff00;
 }
 
 .popup-recovery-email-title {
@@ -4218,6 +4258,10 @@ section {
   letter-spacing: 0.05em;
   margin: 0 auto;
   margin-bottom: 40px;
+}
+
+.popup-recovery-button:hover {
+  background: #398aea;
 }
 
 .popup-recoverySuccess {
@@ -4261,6 +4305,10 @@ section {
   letter-spacing: 0.05em;
   margin: 0 auto;
   margin-bottom: 40px;
+}
+
+.popup-recoverySuccess-button:hover {
+  background: #398aea;
 }
 
 .popup-form {
