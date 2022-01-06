@@ -1122,17 +1122,13 @@
       <div class="popup-login-subtitle">
         Войдите или <a href="#registration-modal" class="registration-modal">зарегистрируйтесь</a>
       </div>
-      <div class="popup-login-email">
-        <div class="popup-login-email-title">Ваш email</div>
-        <div class="popup-form">
-          <form action=""><input type="text"></form>
-        </div>
-      </div>
-      <div class="popup-login-password">
-        <div class="popup-login-password-title">Пароль</div>
-        <div class="popup-form">
-          <form action=""><input type="text"></form>
-        </div>
+      <div class="popup-form popup-login-form">
+        <form action="">
+          <div class="popup-form-title">Ваш email</div>
+          <input type="text" class="popup-form-input popup-login-input">
+          <div class="popup-form-title">Пароль</div>
+          <input type="text" class="popup-form-input popup-login-input">
+        </form>
       </div>
       <a href="#" class="popup-login-button ui-btn">
         Войти
@@ -1154,11 +1150,11 @@
       <div class="popup-registration-subtitle">
         Уже есть аккаунт? <a href="#signin-modal" class="signin-modal">Войти на сайт</a>
       </div>
-      <div class="popup-registration-email">
-        <div class="popup-registration-email-title">Ваш email</div>
-        <div class="popup-form">
-          <form action=""><input type="text"></form>
-        </div>
+      <div class="popup-form popup-registration-form">
+        <form action="">
+          <div class="popup-form-title">Ваш email</div>
+          <input type="text" class="popup-form-input">
+        </form>
       </div>
       <div class="checkbox">
         <input class="checkbox-input" type="checkbox" id="checkbox_1">
@@ -1203,11 +1199,11 @@
       <div class="popup-recovery-subtitle">
         Введите свой email и мы отправим на него ссылку для смены пароля
       </div>
-      <div class="popup-recovery-email">
-        <div class="popup-recovery-email-title">Ваш email</div>
-        <div class="popup-form">
-          <form action=""><input type="text"></form>
-        </div>
+      <div class="popup-form popup-recovery-form">
+        <form action="">
+          <div class="popup-form-title">Ваш email</div>
+          <input type="text" class="popup-form-input">
+        </form>
       </div>
       <a href="#recoverySuccess-modal" class="popup-recovery-button ui-btn">
         получить ссылку

@@ -1111,17 +1111,13 @@
       <div class="popup-login-subtitle">
         Войдите или <a href="#registration-modal" class="registration-modal">зарегистрируйтесь</a>
       </div>
-      <div class="popup-login-email">
-        <div class="popup-login-email-title">Ваш email</div>
-        <div class="popup-form">
-          <form action=""><input type="text"></form>
-        </div>
-      </div>
-      <div class="popup-login-password">
-        <div class="popup-login-password-title">Пароль</div>
-        <div class="popup-form">
-          <form action=""><input type="text"></form>
-        </div>
+      <div class="popup-form popup-login-form">
+        <form action="">
+          <div class="popup-form-title">Ваш email</div>
+          <input type="text" class="popup-form-input popup-login-input">
+          <div class="popup-form-title">Пароль</div>
+          <input type="text" class="popup-form-input popup-login-input">
+        </form>
       </div>
       <a href="#" class="popup-login-button ui-btn">
         Войти
@@ -1143,11 +1139,11 @@
       <div class="popup-registration-subtitle">
         Уже есть аккаунт? <a href="#signin-modal" class="signin-modal">Войти на сайт</a>
       </div>
-      <div class="popup-registration-email">
-        <div class="popup-registration-email-title">Ваш email</div>
-        <div class="popup-form">
-          <form action=""><input type="text"></form>
-        </div>
+      <div class="popup-form popup-registration-form">
+        <form action="">
+          <div class="popup-form-title">Ваш email</div>
+          <input type="text" class="popup-form-input">
+        </form>
       </div>
       <div class="checkbox">
         <input class="checkbox-input" type="checkbox" id="checkbox_1">
@@ -1192,11 +1188,11 @@
       <div class="popup-recovery-subtitle">
         Введите свой email и мы отправим на него ссылку для смены пароля
       </div>
-      <div class="popup-recovery-email">
-        <div class="popup-recovery-email-title">Ваш email</div>
-        <div class="popup-form">
-          <form action=""><input type="text"></form>
-        </div>
+      <div class="popup-form popup-recovery-form">
+        <form action="">
+          <div class="popup-form-title">Ваш email</div>
+          <input type="text" class="popup-form-input">
+        </form>
       </div>
       <a href="#recoverySuccess-modal" class="popup-recovery-button ui-btn">
         получить ссылку
@@ -1248,8 +1244,17 @@
                <a href="./page-product.html">Страница продукта</a>
                <a href="./catalog-list.html">Каталог</a>
                <a href="./news-list.html">Новости</a>
-               <a href="./contact.html">КОнтакты</a>
+               <a href="./contact.html">Контакты</a>
                <a href="./news-page.html">Страница новости</a>
+
+               <a href="./404.html">404</a>
+               <a href="./account.html">Аккаунт</a>
+               <a href="./catalog-list2.html">Каталог товаров</a>
+               <a href="./favourites.html">Избранное</a>
+               <a href="./order-history.html">История заказов</a>
+               <a href="./search.html">Страница поиска</a>
+
+               <!-- <a href="./product-compare.html">Сравнение товаров</a> -->
 
             </div>
          </div>
@@ -1444,12 +1449,7 @@
   </div>
 </footer>
 
-
-
-
    </div>
-
-
    <div class="mobile-nav  space-between valign-center">
    <a href="javascript:void(0)" class="mobile-nav-menu-services">
       <div class="mobile-nav-menu-services-img catalog-mob">
@@ -1480,9 +1480,6 @@
    </a>
 
 </div>
-
-
-
    </div>
 
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

@@ -2318,7 +2318,8 @@ section {
   border: 1px solid #d6e3f2;
   margin-bottom: 20px;
   .catalog-marker {
-    top: 0;
+    top: 10px;
+    left: 20px;
     margin: 0;
     padding: 3px 6px;
     height: initial;
@@ -2345,11 +2346,33 @@ section {
     }
     &-description {
       display: inline-block;
+      &-title {
+        font-size: rem(14px);
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+      &-number {
+        display: inline-block;
+        font-size: rem(9px);
+        color: #6d829f;
+        margin-right: 16px;
+      }
+      &-in_stock {
+        img {
+          padding-right: 5px;
+        }
+        display: inline-block;
+        font-weight: 600;
+        font-size: rem(9px);
+        line-height: 13px;
+        text-transform: uppercase;
+        color: #37ab00;
+      }
     }
     &-price {
-      display: inline-block;
       padding: 0px 30px 0px 40px;
       height: 100%;
+      border-left: 1px solid #d6e3f2;
       &-num {
         display: inline-block;
         color: #398aea;
@@ -2364,6 +2387,74 @@ section {
       button {
         margin-right: 40px;
       }
+    }
+  }
+}
+.pricecheck {
+  padding: 39px 30px 28px 30px;
+  box-shadow: 0px 4px 20px #d6e3f2;
+  border-radius: 4px;
+  &-pay {
+    border-bottom: 1px solid #d6e3f2;
+    padding-bottom: 30px;
+    margin-bottom: 28px;
+    &-cart {
+      font-size: rem(11px);
+      margin-bottom: 16px;
+      &-amount {
+        font-size: rem(14px);
+        font-weight: 700;
+      }
+    }
+    &-item {
+      font-size: rem(11px);
+      margin-bottom: 16px;
+      &-amount {
+        font-size: rem(14px);
+        font-weight: 700;
+        color: $colorCyan;
+      }
+    }
+    &-del {
+      font-size: rem(11px);
+
+      &-amount {
+        font-size: rem(14px);
+        font-weight: 700;
+      }
+    }
+  }
+  &-amount {
+    margin-bottom: 37px;
+    &-title {
+      font-size: rem(14px);
+      color: #000000;
+      margin-bottom: 4px;
+    }
+    &-total {
+      color: $colorCyan;
+      font-size: rem(32px);
+      font-weight: 700;
+      margin-bottom: 14px;
+      span {
+        font-size: rem(11px);
+        font-weight: 600;
+      }
+    }
+    &-sale {
+      font-size: rem(11px);
+      color: $colorSilver;
+      span {
+        color: $colorCyan;
+      }
+    }
+  }
+  &-btn {
+    height: 52px;
+    line-height: 52px;
+    font-size: rem(14px);
+    &:hover {
+      background: $colorCyan;
     }
   }
 }
@@ -2440,7 +2531,7 @@ section {
 .popup-container {
   position: relative;
   width: 100%;
-  max-width: 308px;
+  max-width: 324px;
   margin: 0 auto;
   padding-left: 8px;
   padding-right: 8px;
@@ -2472,6 +2563,11 @@ section {
         border-bottom: 1px solid #ffffff00;
       }
     }
+  }
+  &-input {
+    margin-bottom: 40px;
+  }
+  &-form {
   }
   &-email {
     &-title {
@@ -2564,6 +2660,9 @@ section {
       background: #398aea;
     }
   }
+  &-form {
+    margin-bottom: 23px;
+  }
   .checkbox {
     margin-bottom: 40px;
     label {
@@ -2576,9 +2675,6 @@ section {
         }
       }
     }
-  }
-  .popup-form {
-    margin-bottom: 20px;
   }
   .checkbox-label::after {
     background-position: 6px 1px;
@@ -2674,6 +2770,9 @@ section {
       background: #398aea;
     }
   }
+  &-form {
+    margin-bottom: 48px;
+  }
 }
 
 .popup-recoverySuccess {
@@ -2721,14 +2820,20 @@ section {
 
 .popup-form {
   width: 100%;
-  margin-bottom: 40px;
-  input {
+  &-title {
+    font-size: rem(12px);
+    margin-bottom: 7px;
+  }
+  &-input {
     width: 100%;
-    height: 58px;
+    height: 52px;
     padding: 0 20px;
     line-height: 58px;
     border: 1px solid #e5edf7;
     border-radius: 4px;
+    &:focus {
+      border-color: $colorCyan;
+    }
   }
 }
 
@@ -2737,7 +2842,6 @@ section {
 }
 
 .mfp-close-btn-in .mfp-close {
-  // background-image: url(../images/icons/popup-cross.svg);
   background: #398aea;
   border-radius: 50%;
   color: #ffffff;
