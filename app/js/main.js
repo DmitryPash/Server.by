@@ -99,12 +99,58 @@ menu.forEach((element) => {
 
 // popup
 $(function () {
-  $(".popup-modal").magnificPopup({
-    type: "inline",
-    preloader: false,
-    focus: "#username",
-    modal: true,
+  $(".main-menu-services").magnificPopup({});
+  $(document).on("click", ".popup-modal-dismiss", function (e) {
+    e.preventDefault();
+    $.magnificPopup.close();
   });
+});
+// mobile nav to sign in
+$(function () {
+  $(".mobile-nav-menu-services").magnificPopup({});
+  $(document).on("click", ".popup-modal-dismiss", function (e) {
+    e.preventDefault();
+    $.magnificPopup.close();
+  });
+});
+
+// registration
+$(function () {
+  $(".registration-modal").magnificPopup({});
+  $(document).on("click", ".popup-modal-dismiss", function (e) {
+    e.preventDefault();
+    $.magnificPopup.close();
+  });
+});
+
+// registration to sign in
+
+$(function () {
+  $(".signin-modal").magnificPopup({});
+  $(document).on("click", ".popup-modal-dismiss", function (e) {
+    e.preventDefault();
+    $.magnificPopup.close();
+  });
+});
+// registration to registrationSuccess
+$(function () {
+  $(".popup-registration-button").magnificPopup({});
+  $(document).on("click", ".popup-modal-dismiss", function (e) {
+    e.preventDefault();
+    $.magnificPopup.close();
+  });
+});
+// signin to recovery
+$(function () {
+  $(".recovery-modal").magnificPopup({});
+  $(document).on("click", ".popup-modal-dismiss", function (e) {
+    e.preventDefault();
+    $.magnificPopup.close();
+  });
+});
+// recovery to recoverySuccess
+$(function () {
+  $(".popup-recovery-button").magnificPopup({});
   $(document).on("click", ".popup-modal-dismiss", function (e) {
     e.preventDefault();
     $.magnificPopup.close();
