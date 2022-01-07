@@ -1,503 +1,433 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-
-<head>
-   <meta charset="utf-8" />
-   <title>Server.by</title>
-   <meta name="keywords" content="Server.by" />
-   <meta name="description" content="Server.by" />
-   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-   <meta name="viewport" content="width=device-width, initial-scale=1" />
-   <meta name="format-detection" content="telephone=no" />
-   <link rel="shortcut icon" href="./images/icons/logo-brauser-transparent.png" type="image/png">
-   <link rel="preconnect" href="https://fonts.googleapis.com" />
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-   <link
+  <head>
+    <meta charset="utf-8" />
+    <title>Server.by</title>
+    <meta name="keywords" content="Server.by" />
+    <meta name="description" content="Server.by" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <link
+      rel="shortcut icon"
+      href="./images/icons/logo-brauser-transparent.png"
+      type="image/png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-      rel="stylesheet" />
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet" />
-   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.css">
-   <link rel="stylesheet" href="css/style.css" />
-</head>
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-   <div class="wrapper" id="wrapper">
+  <body>
+    <div class="wrapper" id="wrapper">
       @@include('inc-header.html')
       <div class="middle" id="middle">
-         <div class="container">
-            <!-- <button class="left">left</button>
-            <button class="right">right</button>
-            <main>
-               <section>
-                  <div class="services-cards-item">
-                     <a href="#" class="services-cards-item-img">
-                        <img src="./images/services-item-home.png" alt="alt">
-                     </a>
-                     <div class="services-cards-item-title">
-                        1111111111111111
-                     </div>
-                     <div class="services-cards-item-txt">
-                        Экспертиза отдельных конструкций, обмерные работы, определение прочности, расчет несущей
-                        способности
-                        и т.д.
-                     </div>
-                     <a href="#" class="services-cards-item-link">
-                        Подробнее
-                        <div class="arrow-link">
-                           <img src="./images/icons/arrow (Stroke).svg" alt="alt">
-                        </div>
-                     </a>
-                  </div>
-               </section>
-               <section>
-                  <div class="services-cards-item">
-                     <a href="#" class="services-cards-item-img">
-                        <img src="./images/services-item 2.svg" alt="alt">
-                     </a>
-                     <div class="services-cards-item-title">
-                        22222222222222
-                     </div>
-                     <div class="services-cards-item-txt">
-                        Исследование системы отопления, вентиляции
-                        и кондиционирования, а также оценка энергоэффективности здания
-                     </div>
-                     <a href="#" class="services-cards-item-link">
-                        Подробнее
-                        <div class="arrow-link">
-                           <img src="./images/icons/arrow (Stroke).svg" alt="alt">
-                        </div>
-                     </a>
-                  </div>
-               </section>
-               <section>
-                  <div class="services-cards-item">
-                     <a href="#" class="services-cards-item-img">
-                        <img src="./images/services-item-paper.png" alt="alt">
-                     </a>
-                     <div class="services-cards-item-title">
-                        3333333333333333
-                     </div>
-                     <div class="services-cards-item-txt">
-                        Цветная телевизионная съемка внутренней поверхности любых протяженных объектов
-                        до 250 метров
-                     </div>
-                     <a href="#" class="services-cards-item-link">
-                        Подробнее
-                        <div class="arrow-link">
-                           <img src="./images/icons/arrow (Stroke).svg" alt="alt">
-                        </div>
-                     </a>
-                  </div>
-               </section>
-               <section>
-                  <div class="services-cards-item">
-                     <a href="#" class="services-cards-item-img">
-                        <img src="./images/services-item-man.png" alt="alt">
-                     </a>
-                     <div class="services-cards-item-title">
-                        444444444444444444
-                     </div>
-                     <div class="services-cards-item-txt">
-                        Построение чертежей при помощи лазера, который с точностью до микрона определяет
-                        расположение объектов в пространстве
-                     </div>
-                     <a href="#" class="services-cards-item-link">
-                        Подробнее
-                        <div class="arrow-link">
-                           <img src="./images/icons/arrow (Stroke).svg" alt="alt">
-                        </div>
-                     </a>
-                  </div>
-               </section>
-            </main> -->
-
-            <div class="table-container">
-               <div class="table-horizontal-container">
-                  <table class="unfixed-table">
-                     <thead>
-                        <tr>
-                           <th>Header</th>
-                           <th>1</th>
-                           <th>2</th>
-                           <th>3</th>
-                           <th>4</th>
-                           <th>5</th>
-                           <th>6</th>
-                           <th>7</th>
-                        </tr>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <th>Column 1</th>
-                           <td>Column 2</td>
-                           <td>Column 3</td>
-                           <td>Column 4</td>
-                           <td>Column 5</td>
-                           <td>Column 6</td>
-                           <td>Column 7</td>
-                           <td>Column 8</td>
-                        </tr>
-                        <tr>
-                           <th>Column one</th>
-                           <td>Column two</td>
-                           <td>Column three</td>
-                           <td>Column four</td>
-                           <td>Column firve</td>
-                           <td>Column six</td>
-                           <td>Column seven</td>
-                           <td>Column eight</td>
-                        </tr>
-                        <tr>
-                           <td>Column one</td>
-                           <td>Column two</td>
-                           <td>Column three</td>
-                           <td>Column four</td>
-                           <td>Column firve</td>
-                           <td>Column six</td>
-                           <td>Column seven</td>
-                           <td>Column eight</td>
-                        </tr>
-                        <tr>
-                           <td>Column one</td>
-                           <td>Column two</td>
-                           <td>Column three</td>
-                           <td>Column four</td>
-                           <td>Column firve</td>
-                           <td>Column six</td>
-                           <td>Column seven</td>
-                           <td>Column eight</td>
-                        </tr>
-                        <tr>
-                           <td>Column one</td>
-                           <td>Column two</td>
-                           <td>Column three</td>
-                           <td>Column four</td>
-                           <td>Column firve</td>
-                           <td>Column six</td>
-                           <td>Column seven</td>
-                           <td>Column eight</td>
-                        </tr>
-                        <tr>
-                           <td>Column one</td>
-                           <td>Column two</td>
-                           <td>Column three</td>
-                           <td>Column four</td>
-                           <td>Column firve</td>
-                           <td>Column six</td>
-                           <td>Column seven</td>
-                           <td>Column eight</td>
-                        </tr>
-                        <tr>
-                           <td>Column one</td>
-                           <td>Column two</td>
-                           <td>Column three</td>
-                           <td>Column four</td>
-                           <td>Column firve</td>
-                           <td>Column six</td>
-                           <td>Column seven</td>
-                           <td>Column eight</td>
-                        </tr>
-                        <tr>
-                           <td>Column one</td>
-                           <td>Column two</td>
-                           <td>Column three</td>
-                           <td>Column four</td>
-                           <td>Column firve</td>
-                           <td>Column six</td>
-                           <td>Column seven</td>
-                           <td>Column eight</td>
-                        </tr>
-                        <tr>
-                           <td>Column one</td>
-                           <td>Column two</td>
-                           <td>Column three</td>
-                           <td>Column four</td>
-                           <td>Column firve</td>
-                           <td>Column six</td>
-                           <td>Column seven</td>
-                           <td>Column eight</td>
-                        </tr>
-                        <tr>
-                           <td>Column one</td>
-                           <td>Column two</td>
-                           <td>Column three</td>
-                           <td>Column four</td>
-                           <td>Column firve</td>
-                           <td>Column six</td>
-                           <td>Column seven</td>
-                           <td>Column eight</td>
-                        </tr>
-                        <tr>
-                           <td>Column one</td>
-                           <td>Column two</td>
-                           <td>Column three</td>
-                           <td>Column four</td>
-                           <td>Column firve</td>
-                           <td>Column six</td>
-                           <td>Column seven</td>
-                           <td>Column eight</td>
-                        </tr>
-                        <tr>
-                           <td>Column one</td>
-                           <td>Column two</td>
-                           <td>Column three</td>
-                           <td>Column four</td>
-                           <td>Column firve</td>
-                           <td>Column six</td>
-                           <td>Column seven</td>
-                           <td>Column eight</td>
-                        </tr>
-                        <tr>
-                           <td>Column one</td>
-                           <td>Column two</td>
-                           <td>Column three</td>
-                           <td>Column four</td>
-                           <td>Column firve</td>
-                           <td>Column six</td>
-                           <td>Column seven</td>
-                           <td>Column eight</td>
-                        </tr>
-                        <tr>
-                           <td>Column one</td>
-                           <td>Column two</td>
-                           <td>Column three</td>
-                           <td>Column four</td>
-                           <td>Column firve</td>
-                           <td>Column six</td>
-                           <td>Column seven</td>
-                           <td>Column eight</td>
-                        </tr>
-                        <tr>
-                           <td>Column one</td>
-                           <td>Column two</td>
-                           <td>Column three</td>
-                           <td>Column four</td>
-                           <td>Column firve</td>
-                           <td>Column six</td>
-                           <td>Column seven</td>
-                           <td>Column eight</td>
-                        </tr>
-                        <tr>
-                           <td>Column one</td>
-                           <td>Column two</td>
-                           <td>Column three</td>
-                           <td>Column four</td>
-                           <td>Column firve</td>
-                           <td>Column six</td>
-                           <td>Column seven</td>
-                           <td>Column eight</td>
-                        </tr>
-                        <tr>
-                           <td>Column one</td>
-                           <td>Column two</td>
-                           <td>Column three</td>
-                           <td>Column four</td>
-                           <td>Column firve</td>
-                           <td>Column six</td>
-                           <td>Column seven</td>
-                           <td>Column eight</td>
-                        </tr>
-                        <tr>
-                           <td>Column one</td>
-                           <td>Column two</td>
-                           <td>Column three</td>
-                           <td>Column four</td>
-                           <td>Column firve</td>
-                           <td>Column six</td>
-                           <td>Column seven</td>
-                           <td>Column eight</td>
-                        </tr>
-                        <tr>
-                           <td>Column one</td>
-                           <td>Column two</td>
-                           <td>Column three</td>
-                           <td>Column four</td>
-                           <td>Column firve</td>
-                           <td>Column six</td>
-                           <td>Column seven</td>
-                           <td>Column eight</td>
-                        </tr>
-                        <tr>
-                           <td>Column one</td>
-                           <td>Column two</td>
-                           <td>Column three</td>
-                           <td>Column four</td>
-                           <td>Column firve</td>
-                           <td>Column six</td>
-                           <td>Column seven</td>
-                           <td>Column eight</td>
-                        </tr>
-                        <tr>
-                           <td>Column one</td>
-                           <td>Column two</td>
-                           <td>Column three</td>
-                           <td>Column four</td>
-                           <td>Column firve</td>
-                           <td>Column six</td>
-                           <td>Column seven</td>
-                           <td>Column eight</td>
-                        </tr>
-                        <tr>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                        </tr>
-                        <tr>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                        </tr>
-                        <tr>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                        </tr>
-                        <tr>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                        </tr>
-                        <tr>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                        </tr>
-                        <tr>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                        </tr>
-                        <tr>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                        </tr>
-                        <tr>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                        </tr>
-                        <tr>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                        </tr>
-                        <tr>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                        </tr>
-                        <tr>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                        </tr>
-                        <tr>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                        </tr>
-                        <tr>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                        </tr>
-                        <tr>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                        </tr>
-                        <tr>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                           <td>Column</td>
-                        </tr>
-                     </tbody>
-                  </table>
-               </div>
+        <div class="container">
+          <div class="table-container">
+            <div class="table-horizontal-container">
+              <table class="unfixed-table">
+                <thead>
+                  <tr>
+                    <th>Header</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>7</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>Column 1</th>
+                    <td>Column 2</td>
+                    <td>Column 3</td>
+                    <td>Column 4</td>
+                    <td>Column 5</td>
+                    <td>Column 6</td>
+                    <td>Column 7</td>
+                    <td>Column 8</td>
+                  </tr>
+                  <tr>
+                    <th>Column one</th>
+                    <td>Column two</td>
+                    <td>Column three</td>
+                    <td>Column four</td>
+                    <td>Column firve</td>
+                    <td>Column six</td>
+                    <td>Column seven</td>
+                    <td>Column eight</td>
+                  </tr>
+                  <tr>
+                    <td>Column one</td>
+                    <td>Column two</td>
+                    <td>Column three</td>
+                    <td>Column four</td>
+                    <td>Column firve</td>
+                    <td>Column six</td>
+                    <td>Column seven</td>
+                    <td>Column eight</td>
+                  </tr>
+                  <tr>
+                    <td>Column one</td>
+                    <td>Column two</td>
+                    <td>Column three</td>
+                    <td>Column four</td>
+                    <td>Column firve</td>
+                    <td>Column six</td>
+                    <td>Column seven</td>
+                    <td>Column eight</td>
+                  </tr>
+                  <tr>
+                    <td>Column one</td>
+                    <td>Column two</td>
+                    <td>Column three</td>
+                    <td>Column four</td>
+                    <td>Column firve</td>
+                    <td>Column six</td>
+                    <td>Column seven</td>
+                    <td>Column eight</td>
+                  </tr>
+                  <tr>
+                    <td>Column one</td>
+                    <td>Column two</td>
+                    <td>Column three</td>
+                    <td>Column four</td>
+                    <td>Column firve</td>
+                    <td>Column six</td>
+                    <td>Column seven</td>
+                    <td>Column eight</td>
+                  </tr>
+                  <tr>
+                    <td>Column one</td>
+                    <td>Column two</td>
+                    <td>Column three</td>
+                    <td>Column four</td>
+                    <td>Column firve</td>
+                    <td>Column six</td>
+                    <td>Column seven</td>
+                    <td>Column eight</td>
+                  </tr>
+                  <tr>
+                    <td>Column one</td>
+                    <td>Column two</td>
+                    <td>Column three</td>
+                    <td>Column four</td>
+                    <td>Column firve</td>
+                    <td>Column six</td>
+                    <td>Column seven</td>
+                    <td>Column eight</td>
+                  </tr>
+                  <tr>
+                    <td>Column one</td>
+                    <td>Column two</td>
+                    <td>Column three</td>
+                    <td>Column four</td>
+                    <td>Column firve</td>
+                    <td>Column six</td>
+                    <td>Column seven</td>
+                    <td>Column eight</td>
+                  </tr>
+                  <tr>
+                    <td>Column one</td>
+                    <td>Column two</td>
+                    <td>Column three</td>
+                    <td>Column four</td>
+                    <td>Column firve</td>
+                    <td>Column six</td>
+                    <td>Column seven</td>
+                    <td>Column eight</td>
+                  </tr>
+                  <tr>
+                    <td>Column one</td>
+                    <td>Column two</td>
+                    <td>Column three</td>
+                    <td>Column four</td>
+                    <td>Column firve</td>
+                    <td>Column six</td>
+                    <td>Column seven</td>
+                    <td>Column eight</td>
+                  </tr>
+                  <tr>
+                    <td>Column one</td>
+                    <td>Column two</td>
+                    <td>Column three</td>
+                    <td>Column four</td>
+                    <td>Column firve</td>
+                    <td>Column six</td>
+                    <td>Column seven</td>
+                    <td>Column eight</td>
+                  </tr>
+                  <tr>
+                    <td>Column one</td>
+                    <td>Column two</td>
+                    <td>Column three</td>
+                    <td>Column four</td>
+                    <td>Column firve</td>
+                    <td>Column six</td>
+                    <td>Column seven</td>
+                    <td>Column eight</td>
+                  </tr>
+                  <tr>
+                    <td>Column one</td>
+                    <td>Column two</td>
+                    <td>Column three</td>
+                    <td>Column four</td>
+                    <td>Column firve</td>
+                    <td>Column six</td>
+                    <td>Column seven</td>
+                    <td>Column eight</td>
+                  </tr>
+                  <tr>
+                    <td>Column one</td>
+                    <td>Column two</td>
+                    <td>Column three</td>
+                    <td>Column four</td>
+                    <td>Column firve</td>
+                    <td>Column six</td>
+                    <td>Column seven</td>
+                    <td>Column eight</td>
+                  </tr>
+                  <tr>
+                    <td>Column one</td>
+                    <td>Column two</td>
+                    <td>Column three</td>
+                    <td>Column four</td>
+                    <td>Column firve</td>
+                    <td>Column six</td>
+                    <td>Column seven</td>
+                    <td>Column eight</td>
+                  </tr>
+                  <tr>
+                    <td>Column one</td>
+                    <td>Column two</td>
+                    <td>Column three</td>
+                    <td>Column four</td>
+                    <td>Column firve</td>
+                    <td>Column six</td>
+                    <td>Column seven</td>
+                    <td>Column eight</td>
+                  </tr>
+                  <tr>
+                    <td>Column one</td>
+                    <td>Column two</td>
+                    <td>Column three</td>
+                    <td>Column four</td>
+                    <td>Column firve</td>
+                    <td>Column six</td>
+                    <td>Column seven</td>
+                    <td>Column eight</td>
+                  </tr>
+                  <tr>
+                    <td>Column one</td>
+                    <td>Column two</td>
+                    <td>Column three</td>
+                    <td>Column four</td>
+                    <td>Column firve</td>
+                    <td>Column six</td>
+                    <td>Column seven</td>
+                    <td>Column eight</td>
+                  </tr>
+                  <tr>
+                    <td>Column one</td>
+                    <td>Column two</td>
+                    <td>Column three</td>
+                    <td>Column four</td>
+                    <td>Column firve</td>
+                    <td>Column six</td>
+                    <td>Column seven</td>
+                    <td>Column eight</td>
+                  </tr>
+                  <tr>
+                    <td>Column one</td>
+                    <td>Column two</td>
+                    <td>Column three</td>
+                    <td>Column four</td>
+                    <td>Column firve</td>
+                    <td>Column six</td>
+                    <td>Column seven</td>
+                    <td>Column eight</td>
+                  </tr>
+                  <tr>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                  </tr>
+                  <tr>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                  </tr>
+                  <tr>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                  </tr>
+                  <tr>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                  </tr>
+                  <tr>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                  </tr>
+                  <tr>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                  </tr>
+                  <tr>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                  </tr>
+                  <tr>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                  </tr>
+                  <tr>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                  </tr>
+                  <tr>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                  </tr>
+                  <tr>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                  </tr>
+                  <tr>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                  </tr>
+                  <tr>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                  </tr>
+                  <tr>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                  </tr>
+                  <tr>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                    <td>Column</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
+          </div>
 
-
-            <!-- <div class="offer">
+          <!-- <div class="offer">
                <div class="offer-header">
                   <div class="row space-between">
                      <div class="offer-title">
@@ -775,12 +705,10 @@
                   </div>
                </div>
             </div> -->
-         </div>
+        </div>
       </div>
       @@include('inc-footer.html')
-   </div>
-   @@include('mobile-nav.html')
-   @@include('inc-script.html')
-</body>
-
+    </div>
+    @@include('mobile-nav.html') @@include('inc-script.html')
+  </body>
 </html>
