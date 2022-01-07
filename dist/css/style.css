@@ -2505,6 +2505,11 @@ body {
   background-color: #37ab00;
 }
 
+.yellow {
+  background-color: #ffeb37;
+  color: #000000;
+}
+
 .catalog-item-description-number {
   display: inline-block;
   padding-right: 10px;
@@ -3924,8 +3929,7 @@ section {
 }
 
 .order {
-  border: 1px solid #d6e3f2;
-  margin-bottom: 20px;
+  margin-bottom: 98px;
 }
 
 .order .catalog-marker {
@@ -3942,6 +3946,9 @@ section {
   position: relative;
   width: 100%;
   height: 117px;
+  border: 1px solid #d6e3f2;
+  margin-bottom: 20px;
+  border-radius: 4px;
 }
 
 .order-item-info {
@@ -3995,6 +4002,7 @@ section {
 .order-item-price {
   padding: 0px 30px 0px 40px;
   height: 100%;
+  width: 503px;
   border-left: 1px solid #d6e3f2;
 }
 
@@ -4013,6 +4021,169 @@ section {
 
 .order-item-price button {
   margin-right: 40px;
+}
+
+.steps-description {
+  margin-bottom: 45px;
+}
+
+.steps-description .description-card {
+  position: relative;
+  width: min(692px, 100%);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.steps-description .description-card-text {
+  font-size: 0.875rem;
+}
+
+.steps-description .description-card-text-title {
+  display: inline-block;
+}
+
+.steps-description .description-card-text-price {
+  display: inline-block;
+  color: #6d829f;
+}
+
+.steps-description .description-card-text-del {
+  display: inline-block;
+}
+
+.steps-description .description-card-text-day {
+  display: inline-block;
+}
+
+.steps-description .description-card-text-link:hover {
+  text-decoration: none;
+}
+
+.steps-description .description-card-text-links {
+  margin-bottom: 10px;
+}
+
+.steps-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 48px;
+}
+
+.steps-title span {
+  text-transform: uppercase;
+  color: #398aea;
+}
+
+.steps-one {
+  margin-bottom: 79px;
+}
+
+.steps-one-title {
+  font-size: 1.125rem;
+  margin-bottom: 73px;
+}
+
+.steps-one-link {
+  color: #398aea;
+  border-bottom: 1px solid #398aea;
+  -webkit-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.steps-one-link:hover {
+  border-bottom: 1px solid #ffffff00;
+}
+
+.steps-one-forms-title {
+  font-size: 0.75rem;
+  margin-bottom: 7px;
+}
+
+.steps-one-forms-input {
+  width: 100%;
+  height: 52px;
+  padding: 0px 20px;
+  border-radius: 4px;
+  border: 1px solid #e5edf7;
+}
+
+.steps-one-forms-input:focus {
+  border: 1px solid #398aea;
+}
+
+.steps-one-forms-input::-webkit-input-placeholder {
+  color: #a8c0dd;
+}
+
+.steps-one-forms-input::-moz-placeholder {
+  color: #a8c0dd;
+}
+
+.steps-one-forms-input:-ms-input-placeholder {
+  color: #a8c0dd;
+}
+
+.steps-one-forms-input::-ms-input-placeholder {
+  color: #a8c0dd;
+}
+
+.steps-one-forms-input::placeholder {
+  color: #a8c0dd;
+}
+
+.steps-two-title {
+  font-weight: 700;
+  font-size: 0.875rem;
+  margin-bottom: 25px;
+}
+
+.steps-two-forms-title {
+  font-size: 0.75rem;
+  margin-bottom: 7px;
+}
+
+.steps-two-forms-input {
+  width: 100%;
+  height: 52px;
+  padding: 0px 20px;
+  border-radius: 4px;
+  border: 1px solid #e5edf7;
+  margin-bottom: 30px;
+}
+
+.steps-two-forms-input:focus {
+  border: 1px solid #398aea;
+}
+
+.steps-two-forms-input::-webkit-input-placeholder {
+  color: #a8c0dd;
+}
+
+.steps-two-forms-input::-moz-placeholder {
+  color: #a8c0dd;
+}
+
+.steps-two-forms-input:-ms-input-placeholder {
+  color: #a8c0dd;
+}
+
+.steps-two-forms-input::-ms-input-placeholder {
+  color: #a8c0dd;
+}
+
+.steps-two-forms-input::placeholder {
+  color: #a8c0dd;
+}
+
+.steps-two-forms-textarea {
+  width: 100%;
+  height: 120px;
+  padding: 0px 20px;
+  border-radius: 4px;
+  border: 1px solid #e5edf7;
+  margin-bottom: 30px;
+  resize: none;
 }
 
 .pricecheck {
@@ -4097,6 +4268,31 @@ section {
 
 .pricecheck-btn:hover {
   background: #398aea;
+}
+
+.round {
+  position: absolute;
+  border: 1px solid #398aea;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  top: 24px;
+  right: 32px;
+  cursor: pointer;
+}
+
+.roundclick {
+  display: none;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #398aea;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 
 /* default styling. Nothing to do with freexing first row and column */
@@ -4488,6 +4684,14 @@ section {
   height: 207px;
   right: 0px;
   bottom: 0px;
+}
+
+.border {
+  border: 1px solid #398aea;
+}
+
+.circleblue {
+  display: block;
 }
 
 @media (max-width: 1330px) {
