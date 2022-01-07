@@ -1079,6 +1079,10 @@ body {
 .green {
   background-color: #37ab00;
 }
+.yellow {
+  background-color: #ffeb37;
+  color: #000000;
+}
 
 .catalog-item-description-number {
   display: inline-block;
@@ -1868,7 +1872,6 @@ body {
         background-color: #ffffff;
         border-radius: 3px;
         cursor: pointer;
-
         position: absolute;
         top: 0;
         left: 0;
@@ -2334,10 +2337,10 @@ section {
 }
 
 .order {
-  border: 1px solid #d6e3f2;
-  margin-bottom: 20px;
+  margin-bottom: 98px;
   .catalog-marker {
-    top: 0;
+    top: 10px;
+    left: 20px;
     margin: 0;
     padding: 3px 6px;
     height: initial;
@@ -2348,6 +2351,9 @@ section {
     position: relative;
     width: 100%;
     height: 117px;
+    border: 1px solid #d6e3f2;
+    margin-bottom: 20px;
+    border-radius: 4px;
     &-info {
       padding-left: 20px;
     }
@@ -2364,11 +2370,34 @@ section {
     }
     &-description {
       display: inline-block;
+      &-title {
+        font-size: rem(14px);
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+      &-number {
+        display: inline-block;
+        font-size: rem(9px);
+        color: #6d829f;
+        margin-right: 16px;
+      }
+      &-in_stock {
+        img {
+          padding-right: 5px;
+        }
+        display: inline-block;
+        font-weight: 600;
+        font-size: rem(9px);
+        line-height: 13px;
+        text-transform: uppercase;
+        color: #37ab00;
+      }
     }
     &-price {
-      display: inline-block;
       padding: 0px 30px 0px 40px;
       height: 100%;
+      width: 503px;
+      border-left: 1px solid #d6e3f2;
       &-num {
         display: inline-block;
         color: #398aea;
@@ -2386,6 +2415,244 @@ section {
     }
   }
 }
+.steps {
+  &-description {
+    margin-bottom: 45px;
+    .description-card {
+      position: relative;
+      width: min(692px, 100%);
+      border-radius: 4px;
+      cursor: pointer;
+      &-text {
+        font-size: rem(14px);
+        &-title {
+          display: inline-block;
+        }
+        &-price {
+          display: inline-block;
+          color: #6d829f;
+        }
+        &-del {
+          display: inline-block;
+        }
+        &-day {
+          display: inline-block;
+        }
+        &-link {
+          &:hover {
+            text-decoration: none;
+          }
+        }
+        &-links {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  &-title {
+    font-size: rem(24px);
+    font-weight: 600;
+    margin-bottom: 48px;
+    span {
+      text-transform: uppercase;
+      color: $colorCyan;
+    }
+  }
+  &-one {
+    margin-bottom: 79px;
+    &-title {
+      font-size: rem(18px);
+      margin-bottom: 73px;
+    }
+    &-link {
+      color: $colorCyan;
+      border-bottom: 1px solid $colorCyan;
+      transition: 0.2s ease;
+      &:hover {
+        border-bottom: 1px solid #ffffff00;
+      }
+    }
+    &-forms {
+      &-title {
+        font-size: rem(12px);
+        margin-bottom: 7px;
+      }
+      &-input {
+        width: 100%;
+        height: 52px;
+        padding: 0px 20px;
+        border-radius: 4px;
+        border: 1px solid #e5edf7;
+        &:focus {
+          border: 1px solid $colorCyan;
+        }
+        &::placeholder {
+          color: #a8c0dd;
+        }
+      }
+    }
+  }
+  &-two {
+    &-title {
+      font-weight: 700;
+      font-size: rem(14px);
+      margin-bottom: 25px;
+    }
+    &-forms {
+      &-title {
+        font-size: rem(12px);
+        margin-bottom: 7px;
+      }
+      &-input {
+        width: 100%;
+        height: 52px;
+        padding: 0px 20px;
+        border-radius: 4px;
+        border: 1px solid #e5edf7;
+        margin-bottom: 30px;
+        &:focus {
+          border: 1px solid $colorCyan;
+        }
+        &::placeholder {
+          color: #a8c0dd;
+        }
+      }
+      &-textarea {
+        width: 100%;
+        height: 120px;
+        padding: 0px 20px;
+        border-radius: 4px;
+        border: 1px solid #e5edf7;
+        margin-bottom: 30px;
+        resize: none;
+      }
+    }
+  }
+}
+
+.pricecheck {
+  padding: 39px 30px 28px 30px;
+  box-shadow: 0px 4px 20px #d6e3f2;
+  border-radius: 4px;
+  &-pay {
+    border-bottom: 1px solid #d6e3f2;
+    padding-bottom: 30px;
+    margin-bottom: 28px;
+    &-cart {
+      font-size: rem(11px);
+      margin-bottom: 16px;
+      &-amount {
+        font-size: rem(14px);
+        font-weight: 700;
+      }
+    }
+    &-item {
+      font-size: rem(11px);
+      margin-bottom: 16px;
+      &-amount {
+        font-size: rem(14px);
+        font-weight: 700;
+        color: $colorCyan;
+      }
+    }
+    &-del {
+      font-size: rem(11px);
+
+      &-amount {
+        font-size: rem(14px);
+        font-weight: 700;
+      }
+    }
+  }
+  &-amount {
+    margin-bottom: 37px;
+    &-title {
+      font-size: rem(14px);
+      color: #000000;
+      margin-bottom: 4px;
+    }
+    &-total {
+      color: $colorCyan;
+      font-size: rem(32px);
+      font-weight: 700;
+      margin-bottom: 14px;
+      span {
+        font-size: rem(11px);
+        font-weight: 600;
+      }
+    }
+    &-sale {
+      font-size: rem(11px);
+      color: $colorSilver;
+      span {
+        color: $colorCyan;
+      }
+    }
+  }
+  &-btn {
+    height: 52px;
+    line-height: 52px;
+    font-size: rem(14px);
+    &:hover {
+      background: $colorCyan;
+    }
+  }
+}
+
+.round {
+  position: absolute;
+  border: 1px solid $colorCyan;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  top: 24px;
+  right: 32px;
+  cursor: pointer;
+}
+.roundclick {
+  display: none;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: $colorCyan;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+// .round label {
+//   background-color: #fff;
+//   border: 1px solid #398aea;
+//   border-radius: 50%;
+//   cursor: pointer;
+//   height: 24px;
+//   left: 0;
+//   position: absolute;
+//   top: 0;
+//   width: 24px;
+// }
+
+// .round label:after {
+//   background-color: #398aea;
+//   content: "";
+//   height: 16px;
+//   opacity: 0;
+//   position: absolute;
+//   top: 50%;
+//   width: 16px;
+//   transform: translate(-50%, -50%);
+//   border-radius: 50%;
+//   left: 50%;
+// }
+
+// .round input[type="checkbox"] {
+//   visibility: hidden;
+// }
+
+// .round input[type="checkbox"]:checked + label:after {
+//   opacity: 1;
+// }
 
 /* default styling. Nothing to do with freexing first row and column */
 
@@ -2459,7 +2726,7 @@ section {
 .popup-container {
   position: relative;
   width: 100%;
-  max-width: 308px;
+  max-width: 324px;
   margin: 0 auto;
   padding-left: 8px;
   padding-right: 8px;
@@ -2491,6 +2758,11 @@ section {
         border-bottom: 1px solid #ffffff00;
       }
     }
+  }
+  &-input {
+    margin-bottom: 40px;
+  }
+  &-form {
   }
   &-email {
     &-title {
@@ -2583,6 +2855,9 @@ section {
       background: #398aea;
     }
   }
+  &-form {
+    margin-bottom: 23px;
+  }
   .checkbox {
     margin-bottom: 40px;
     label {
@@ -2595,9 +2870,6 @@ section {
         }
       }
     }
-  }
-  .popup-form {
-    margin-bottom: 20px;
   }
   .checkbox-label::after {
     background-position: 6px 1px;
@@ -2693,6 +2965,9 @@ section {
       background: #398aea;
     }
   }
+  &-form {
+    margin-bottom: 48px;
+  }
 }
 
 .popup-recoverySuccess {
@@ -2740,14 +3015,20 @@ section {
 
 .popup-form {
   width: 100%;
-  margin-bottom: 40px;
-  input {
+  &-title {
+    font-size: rem(12px);
+    margin-bottom: 7px;
+  }
+  &-input {
     width: 100%;
-    height: 58px;
+    height: 52px;
     padding: 0 20px;
     line-height: 58px;
     border: 1px solid #e5edf7;
     border-radius: 4px;
+    &:focus {
+      border-color: $colorCyan;
+    }
   }
 }
 
@@ -2756,7 +3037,6 @@ section {
 }
 
 .mfp-close-btn-in .mfp-close {
-  // background-image: url(../images/icons/popup-cross.svg);
   background: #398aea;
   border-radius: 50%;
   color: #ffffff;
@@ -2788,4 +3068,12 @@ section {
   height: 207px;
   right: 0px;
   bottom: 0px;
+}
+
+// Class for js function
+.border {
+  border: 1px solid $colorCyan;
+}
+.circleblue {
+  display: block;
 }

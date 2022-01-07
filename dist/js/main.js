@@ -97,6 +97,31 @@ menu.forEach((element) => {
   });
 });
 
+// change border color
+
+let circleBlue = document.querySelectorAll(".roundclick");
+let descriptionCardBorder = document.querySelectorAll(
+  ".description-card-border"
+);
+descriptionCardBorder.forEach((element) => {
+  element.addEventListener("click", () => {
+    clear();
+    element.classList.add("border");
+    // circleBlue.forEach((element) => {
+    //   element.addEventListener("click", () => {
+    //     clear();
+    //     element.classList.add("circleblue");
+    //   });
+    // });
+  });
+});
+
+const clear = () => {
+  descriptionCardBorder.forEach((element) => {
+    element.classList.remove("border");
+  });
+};
+
 // popup
 $(function () {
   $(".main-menu-services").magnificPopup({});
@@ -116,7 +141,9 @@ $(function () {
 
 // registration
 $(function () {
-  $(".registration-modal").magnificPopup({});
+  $(".registration-modal").magnificPopup({
+    type: "ajax",
+  });
   $(document).on("click", ".popup-modal-dismiss", function (e) {
     e.preventDefault();
     $.magnificPopup.close();
