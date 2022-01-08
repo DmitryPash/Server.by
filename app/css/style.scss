@@ -2208,20 +2208,20 @@ section {
     ul li:last-child {
       position: relative;
       transition: 0.3s ease;
-      &:hover {
-        left: 20px;
-      }
+
       &:hover .toggle-product {
         display: block;
       }
     }
     li:hover {
-      font-weight: 600;
-      text-decoration: none;
+      text-decoration: underline;
     }
     li a {
       font-size: rem(14px);
       color: $colorSilver;
+      img {
+        margin-right: 4px;
+      }
     }
     .toggle-product {
       display: none;
@@ -2234,18 +2234,35 @@ section {
 // account.html
 .account {
   .info-block {
+    ul li {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
     ul li:last-child {
       position: relative;
       transition: 0.3s ease;
+      padding-bottom: 0;
+      padding-left: 15px;
+
+      a {
+        img {
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translate(0, -50%);
+          // margin-right: 4px;
+        }
+      }
       &:hover {
-        left: 20px;
+        // left: 20px;
       }
       &:hover .toggle-product {
         display: block;
       }
     }
     li:hover {
-      font-weight: 600;
       text-decoration: none;
     }
     li a {
@@ -2277,6 +2294,7 @@ section {
 }
 
 .account-date-input-form {
+  width: 100%;
   margin-right: 30px;
   margin-bottom: 20px;
 }
@@ -2291,6 +2309,7 @@ section {
 }
 
 .account-password {
+  margin-top: 50px;
   margin-bottom: 60px;
 }
 

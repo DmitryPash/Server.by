@@ -3813,22 +3813,21 @@ section {
   transition: 0.3s ease;
 }
 
-.history .info-block ul li:last-child:hover {
-  left: 20px;
-}
-
 .history .info-block ul li:last-child:hover .toggle-product {
   display: block;
 }
 
 .history .info-block li:hover {
-  font-weight: 600;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .history .info-block li a {
   font-size: 0.875rem;
   color: #647b98;
+}
+
+.history .info-block li a img {
+  margin-right: 4px;
 }
 
 .history .info-block .toggle-product {
@@ -3837,15 +3836,26 @@ section {
   bottom: 45%;
 }
 
+.account .info-block ul li:hover {
+  text-decoration: underline;
+}
+
 .account .info-block ul li:last-child {
   position: relative;
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
+  padding-bottom: 0;
+  padding-left: 15px;
 }
 
-.account .info-block ul li:last-child:hover {
-  left: 20px;
+.account .info-block ul li:last-child a img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 
 .account .info-block ul li:last-child:hover .toggle-product {
@@ -3853,7 +3863,6 @@ section {
 }
 
 .account .info-block li:hover {
-  font-weight: 600;
   text-decoration: none;
 }
 
@@ -3886,6 +3895,7 @@ section {
 }
 
 .account-date-input-form {
+  width: 100%;
   margin-right: 30px;
   margin-bottom: 20px;
 }
@@ -3900,6 +3910,7 @@ section {
 }
 
 .account-password {
+  margin-top: 50px;
   margin-bottom: 60px;
 }
 
