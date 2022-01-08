@@ -4713,11 +4713,11 @@ section {
 }
 
 .table table {
-  width: 200%;
+  width: 100%;
 }
 
 .table table td {
-  width: 25%;
+  width: 12.5%;
   background-color: white;
 }
 
