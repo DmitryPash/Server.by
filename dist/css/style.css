@@ -4047,6 +4047,7 @@ section {
 
 .steps-description .description-card-text {
   font-size: 0.875rem;
+  padding-right: 57px;
 }
 
 .steps-description .description-card-text-title {
@@ -4190,11 +4191,36 @@ section {
 .steps-two-forms-textarea {
   width: 100%;
   height: 120px;
-  padding: 0px 20px;
+  padding: 17px 20px;
   border-radius: 4px;
   border: 1px solid #e5edf7;
   margin-bottom: 30px;
   resize: none;
+}
+
+.steps-two-forms-textarea::-webkit-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: #a8c0dd;
+}
+
+.steps-two-forms-textarea::-moz-placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: #a8c0dd;
+}
+
+.steps-two-forms-textarea:-ms-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: #a8c0dd;
+}
+
+.steps-two-forms-textarea::-ms-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: #a8c0dd;
+}
+
+.steps-two-forms-textarea::placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: #a8c0dd;
 }
 
 .pricecheck {

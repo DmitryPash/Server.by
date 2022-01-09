@@ -2425,6 +2425,7 @@ section {
       cursor: pointer;
       &-text {
         font-size: rem(14px);
+        padding-right: 57px;
         &-title {
           display: inline-block;
         }
@@ -2520,11 +2521,15 @@ section {
       &-textarea {
         width: 100%;
         height: 120px;
-        padding: 0px 20px;
+        padding: 17px 20px;
         border-radius: 4px;
         border: 1px solid #e5edf7;
         margin-bottom: 30px;
         resize: none;
+        &::placeholder {
+          font-family: "Montserrat", sans-serif;
+          color: #a8c0dd;
+        }
       }
     }
   }
