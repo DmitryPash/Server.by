@@ -4047,6 +4047,7 @@ section {
 
 .steps-description .description-card-text {
   font-size: 0.875rem;
+  padding-right: 57px;
 }
 
 .steps-description .description-card-text-title {
@@ -4190,11 +4191,36 @@ section {
 .steps-two-forms-textarea {
   width: 100%;
   height: 120px;
-  padding: 0px 20px;
+  padding: 17px 20px;
   border-radius: 4px;
   border: 1px solid #e5edf7;
   margin-bottom: 30px;
   resize: none;
+}
+
+.steps-two-forms-textarea::-webkit-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: #a8c0dd;
+}
+
+.steps-two-forms-textarea::-moz-placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: #a8c0dd;
+}
+
+.steps-two-forms-textarea:-ms-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: #a8c0dd;
+}
+
+.steps-two-forms-textarea::-ms-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: #a8c0dd;
+}
+
+.steps-two-forms-textarea::placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: #a8c0dd;
 }
 
 .pricecheck {
@@ -4293,7 +4319,8 @@ section {
 }
 
 .roundclick {
-  display: none;
+  display: block;
+  opacity: 0;
   position: absolute;
   width: 16px;
   height: 16px;
@@ -4701,8 +4728,36 @@ section {
   border: 1px solid #398aea;
 }
 
-.circleblue {
-  display: block;
+.border .roundclick {
+  opacity: 1;
+}
+
+.table {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.table table {
+  width: 100%;
+}
+
+.table table td {
+  width: 12.5%;
+  background-color: white;
+}
+
+.table-absolute {
+  position: absolute;
+  color: red;
+}
+
+.table-absolute tr td {
+  visibility: hidden;
+}
+
+.table-absolute tr td:first-child {
+  visibility: visible;
 }
 
 @media (max-width: 1330px) {

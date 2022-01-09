@@ -2425,6 +2425,7 @@ section {
       cursor: pointer;
       &-text {
         font-size: rem(14px);
+        padding-right: 57px;
         &-title {
           display: inline-block;
         }
@@ -2520,11 +2521,15 @@ section {
       &-textarea {
         width: 100%;
         height: 120px;
-        padding: 0px 20px;
+        padding: 17px 20px;
         border-radius: 4px;
         border: 1px solid #e5edf7;
         margin-bottom: 30px;
         resize: none;
+        &::placeholder {
+          font-family: "Montserrat", sans-serif;
+          color: #a8c0dd;
+        }
       }
     }
   }
@@ -2610,7 +2615,8 @@ section {
   cursor: pointer;
 }
 .roundclick {
-  display: none;
+  display: block;
+  opacity: 0;
   position: absolute;
   width: 16px;
   height: 16px;
@@ -3073,7 +3079,30 @@ section {
 // Class for js function
 .border {
   border: 1px solid $colorCyan;
+  .roundclick {
+    opacity: 1;
+  }
 }
-.circleblue {
-  display: block;
+.table {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  table {
+    width: 100%;
+    td {
+      width: 12.5%;
+      background-color: white;
+    }
+  }
+
+  &-absolute {
+    position: absolute;
+    color: red;
+    tr td {
+      visibility: hidden;
+      &:first-child {
+        visibility: visible;
+      }
+    }
+  }
 }
