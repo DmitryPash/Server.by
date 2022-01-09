@@ -22,16 +22,31 @@ $html-font-size: 16px;
   @return #{stripUnit($pxValue) / stripUnit($html-font-size)}rem;
 }
 
+.col-logo {
+  -ms-flex: 0 0 22.68%;
+  flex: 0 0 22.68%;
+  max-width: 22.68%;
+}
+.col-search {
+  -ms-flex: 0 0 48.49%;
+  flex: 0 0 51.49%;
+  max-width: 51.49%;
+}
+
+.col-menu {
+  -ms-flex: 0 0 29.83%;
+  flex: 0 0 21.83%;
+  max-width: 21.83%;
+}
+
 .header {
   background-color: #f4f9ff;
-  &-menu {
-    padding: 18px 0px;
+  margin-bottom: 60px;
+
+  .menu {
+    padding: 18px 0px 19px 0px;
     &-btn {
-      cursor: pointer;
-      width: 100%;
-      &:hover {
-        background: #398aea;
-      }
+      width: 196px;
       &-icon {
         position: absolute;
         transform: translate(-50%, -50%);
@@ -45,51 +60,54 @@ $html-font-size: 16px;
         left: 85%;
       }
     }
-    &-burger {
-      display: none;
-    }
     &-list {
       line-height: rem(25px);
-      ul li {
-        display: inline-block;
+      ul {
+        display: flex;
+        width: 100%;
         font-size: rem(14px);
         position: relative;
-        a {
-          margin-right: 20px;
-          color: $colorSilver;
-          font-weight: 500;
-          transition: 0.3s ease;
-          &:hover {
-            color: $colorBlack;
+        li {
+          a {
+            margin-right: 30px;
+            color: $colorSilver;
+            font-weight: 500;
+            transition: 0.3s ease;
+            &:hover {
+              color: $colorBlack;
+            }
           }
         }
-        .header-menu-list-sale {
+
+        .menu-list-sale {
           position: absolute;
           transform: translate(-50%, -50%);
-          top: 0%;
-          right: 0%;
+          top: 24%;
+          right: 1%;
         }
       }
     }
     &-time {
-      text-align: right;
-
+      display: inline-block;
       &-work {
+        display: inline-block;
         text-align: center;
         font-size: rem(11px);
-        padding-left: 15px;
-        padding-right: 15px;
+        margin-right: 28px;
         .time-work-bold {
           font-weight: 700;
         }
       }
       &-tel {
+        display: inline-block;
         font-size: rem(14px);
         font-weight: 600;
-        padding-left: 15px;
-        padding-right: 15px;
         .time-tel-big {
-          font-size: rem(24px);
+          font-size: rem(26px);
+          margin-right: 4px;
+          &:hover {
+            border-bottom: 1px solid black;
+          }
         }
         .time-tel-top {
           position: relative;
@@ -99,17 +117,25 @@ $html-font-size: 16px;
       }
     }
   }
-  &-nav {
+
+  .main {
     position: relative;
-    z-index: 999;
+    z-index: 998;
     background-color: #ffffff;
     box-shadow: 0px 4px 20px #d6e3f2;
     padding: 24px 0px;
+
     &-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 84px;
+      img {
+        max-height: 84px;
+      }
     }
     &-search {
       position: relative;
-      margin-left: 5%;
       &-input {
         border: none;
         border: 1px solid #d6e3f2;
@@ -122,13 +148,13 @@ $html-font-size: 16px;
         font-size: rem(22px);
         color: $colorBlack;
       }
-
       ::placeholder {
         font-size: rem(15px);
         font-weight: 300;
         color: #a8c0dd;
       }
       &-btn {
+        border: none;
         position: absolute;
         text-align: center;
         line-height: 60px;
@@ -136,27 +162,193 @@ $html-font-size: 16px;
         height: 100%;
         width: 60px;
         right: 0%;
+        &:hover {
+          background: $colorCyan;
+        }
+      }
+      &-form {
+        position: relative;
+      }
+      &-catalog {
+        display: none;
+        max-height: calc(100vh - 162px);
+        overflow-y: auto;
+        a {
+          display: block;
+        }
+        &-title {
+          color: $colorSilver;
+          font-size: rem(14px);
+          font-weight: 600;
+          padding-bottom: 15px;
+        }
+        &-nav {
+          font-weight: 400;
+          font-size: rem(14px);
+          color: #000000;
+          margin-bottom: 10px;
+        }
       }
     }
     &-menu {
-      text-align: center;
+      white-space: nowrap;
+      display: flex;
       &-services {
-        color: $colorSilver;
-        font-size: rem(11px);
-        transition: 0.2s ease;
-        cursor: pointer;
-        &:hover {
-          color: $colorBlack;
-          font-weight: 600;
+        display: inline-block;
+        text-align: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0);
+        img {
+          max-height: 36px;
         }
-        .menu-services-img {
-          height: 40px;
-          margin-bottom: 5px;
-          img {
-            max-height: 40px;
-          }
+        &-img {
+          display: inline-block;
+          position: relative;
+          height: 36px;
+          width: 36px;
+          transition: .3s ease;
         }
+        .services-user {
+            background-image: url(../images/icons/user-header.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        &:hover .services-user {
+          background: url(../images/icons/login-hover.svg);
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat;
+        }
+        .services-equ {
+          background-image: url(../images/icons/equ-header.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        &:hover .services-equ {
+          background: url(../images/icons/equ-header-blue.svg);
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat;
+        }
+        
+        .services-heart {
+          background-image: url(../images/icons/heart-header.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        &:hover .services-heart {
+          background: url(../images/icons/nav-heart-blue.svg);
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat;
+        }
+        
+        .services-cart {
+          background-image: url(../images/icons/cart-header.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        &:hover .services-cart {
+          background: url(../images/icons/blue-cart.svg);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        &-text {
+          font-size: rem(11px);
+        }
+
+      }
+    }
+    &-mobile-tel {
+      display: none;
+      text-align: center;
+      img {
+        max-width: 20px;
       }
     }
   }
 }
+.clear {
+  border: none;
+}
+.cart-counter {
+  position: absolute;
+  background-color: #fdc300;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  top: -9px;
+  right: -12px;
+
+  font-size: rem(11px);
+  font-weight: 800;
+  color: #172542;
+  line-height: 20px;
+}
+
+.burger {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  content: "";
+  width: 30px;
+  height: 2.4px;
+  top: 45px;
+  left: 19px;
+
+  background: #d6e3f2;
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+  &::before,
+  &::after {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 2.4px;
+    background: #d6e3f2;
+    content: "";
+  }
+  &::before {
+    top: -10px;
+  }
+  &::after {
+    bottom: -10px;
+  }
+}
+
+.burger {
+  &::before {
+    transition-property: top, transform;
+  }
+  &::after {
+    transition-property: bottom, transform;
+  }
+}
+
+.burger.active {
+  background: none;
+  left: calc(100% - 50px);
+
+  &::before {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+  &::after {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+}
+
+
+

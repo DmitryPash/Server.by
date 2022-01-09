@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+
+<head>
+   <meta charset="utf-8" />
+   <title>Server.by</title>
+   <meta name="keywords" content="Server.by" />
+   <meta name="description" content="Server.by" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="format-detection" content="telephone=no" />
+   <link rel="shortcut icon" href="./images/icons/logo-brauser-transparent.png" type="image/png">
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet" />
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet" />
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.css">
+   <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+   <div class="wrapper" id="wrapper">
+      @@include('inc-header.html')
+      <div class="middle" id="middle">
+         <div class="container">
+            <div class="page-breadcrumbs">
+               <a href="#">Главная</a><i>/</i> <a href="#">Личный кабинет</a><i>/</i> <a href="#">История заказов</a>
+            </div>
+            <div class="middle-title-h1">История заказов</div>
+            <div class="history">
+               <div class="row">
+                  <div class="col-filter-22 col-md-12">
+                     <div class="info-block">
+                        <div class="info-title">Личный кабинет</div>
+                        <ul>
+                           <li><a href="#">Личные данные</a></li>
+                           <li><a href="#" class="bolt">История заказов</a></li>
+                           <li><a href="#">Избранное</a></li>
+                           <li>
+                              <a href="#">
+                                 <img src="./images/icons/Крестик для иконки.svg" alt="alt">Выйти
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-filter-78 col-md-12">
+                     <div class="history-table">
+                        <table>
+                           <tr>
+                              <th>Дата заказа</th>
+                              <th>Номер заказа</th>
+                              <th>Товары</th>
+                              <th>Сумма, руб.</th>
+                              <th>Статус</th>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <div>05.11.2021</div>
+                                 <div>в 17:42</div>
+                              </td>
+                              <td class="cyantext">051121-4
+                              </td>
+                              <td>Ноутбук Lenovo IdeaPad PX7200 Gaming
+                              </td>
+                              <td>1 825,00</td>
+                              <td>Оплачен
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <div>03.11.2021
+                                 </div>
+                                 <div>в 10:16</div>
+                              </td>
+                              <td class="cyantext">031121-4
+
+                              </td>
+                              <td>Ноутбук Macbook Air M1 8gb
+                              </td>
+                              <td>6 314,00</td>
+                              <td>Доставлен
+                              </td>
+                           </tr>
+                        </table>
+                     </div>
+
+                  </div>
+
+               </div>
+            </div>
+            <div class="sale">
+               <a href="#" class="sale-img">
+                  <picture>
+                     <source media="(max-width: 399px)" srcset="./images/icons/sale50.svg" />
+                     <source media="(max-width: 799px)" srcset="./images/examples/sale-banner.png" />
+                     <img src="./images/examples/sale-banner.png" alt="alt" />
+                  </picture>
+               </a>
+            </div>
+
+         </div>
+
+
+
+         @@include('inc-footer.html')
+      </div>
+      @@include('mobile-nav.html')
+      @@include('inc-script.html')
+</body>
+
+</html>

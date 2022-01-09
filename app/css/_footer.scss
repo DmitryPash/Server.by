@@ -24,24 +24,49 @@ $html-font-size: 16px;
 
 .footer {
   background-color: $colorWhite;
-  &-info {
+  &-top {
     padding-top: 65px;
     padding-bottom: 55px;
-    border-bottom: 1px solid #dae7f9;
+
+    // border-bottom: 1px solid #dae7f9;
+
     &-title {
       color: $colorSilver;
       padding-bottom: 45px;
+      font-weight: 600;
+    }
+    ul {
+      padding-bottom: 20px;
     }
     ul li {
       padding-bottom: 15px;
     }
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
-  &-pay {
+  &-toggle {
+    &-title {
+      color: $colorSilver;
+      padding-bottom: 45px;
+      &-ul {
+        .li {
+          padding-bottom: 15px;
+        }
+      }
+    }
+  }
+  &-middle {
     padding-top: 50px;
     padding-bottom: 50px;
     border-bottom: 1px solid #dae7f9;
+    border-top: 1px solid #dae7f9;
     &-icons {
       a {
+        display: inline-block;
+        vertical-align: middle;
         padding-right: 7px;
       }
     }
@@ -86,22 +111,43 @@ $html-font-size: 16px;
     }
     &-contacts {
       display: inline-block;
+      a {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
     &-messengers {
       padding-left: 40px;
       display: flex;
       height: 100%;
       align-items: flex-end;
-      justify-content: space-between;
 
-      //   a {
-      //     padding-right: 15px;
-      //   }
+      a {
+        padding-right: 25px;
+      }
     }
   }
-  &-logo {
+  &-bottom {
     padding-top: 35px;
-
+    margin-bottom: 45px;
+    &-farba {
+      display: block;
+      font-size: rem(13px);
+      white-space: nowrap;
+      a {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      img {
+        display: inline-block;
+        position: relative;
+        bottom: -5px;
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+    }
     &-txt:first-child {
       padding-top: 22px;
       padding-bottom: 15px;
@@ -120,25 +166,30 @@ $html-font-size: 16px;
 
       a {
         color: #398aea;
-        :hover {
-          color: #398aea;
+        &:hover {
+          text-decoration: underline;
         }
       }
     }
     &-img {
       font-size: rem(13px);
+      padding-left: 15px;
       img {
         padding-bottom: 15px;
       }
     }
     &-button {
-      width: 270px;
+      width: 100%;
       height: 48px;
       padding: 15px 30px;
       line-height: 50px;
       font-size: rem(11px);
       color: #398aea;
       border: 1px solid #d6e3f2;
+      text-transform: uppercase;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
       &:hover {
         color: $colorWhite;
         background-color: #398aea;
@@ -148,5 +199,99 @@ $html-font-size: 16px;
     &-manufacturer {
       text-align: right;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    &-middle {
+      &-adress {
+        display: block;
+        padding-bottom: 15px;
+      }
+      &-schedule {
+        display: block;
+        padding-bottom: 15px;
+      }
+      &-contacts {
+        display: block;
+      }
+      &-messengers {
+        padding-top: 30px;
+        padding-left: 0;
+      }
+      &-icons {
+        padding-bottom: 40px;
+      }
+    }
+    &-bottom {
+      margin-bottom: 30px;
+      &-manufacturer {
+        padding-top: 30px;
+        text-align: center;
+        img {
+          // margin: 0 auto;
+          // display: block;
+          padding-top: 30px;
+        }
+      }
+      &-img {
+        img {
+          display: block;
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1330px) {
+  .footer-middle-messengers {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 890px) {
+  .footer-middle-messengers {
+    padding-left: 0;
+  }
+}
+@media (max-width: 576px) {
+  .footer {
+    &-middle {
+      padding-left: 15px;
+    }
+    &-top {
+      &-toggle {
+        ul {
+          margin: 0;
+          display: none;
+        }
+      }
+      &-title {
+        position: relative;
+        cursor: pointer;
+        padding-bottom: 15px;
+        .title-after {
+          display: inline-block;
+          position: relative;
+          &::after {
+            position: absolute;
+            top: 39%;
+            margin-left: 15px;
+            transform: translate(-50%, -50%);
+            content: url("../images/icons/toggle-down.svg");
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-top-toggle.open .title-after::after {
+    content: url("../images/icons/toggle-up.svg");
+  }
+  .footer-top-toggle.open ul {
+    display: block;
   }
 }

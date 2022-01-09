@@ -35,12 +35,6 @@ img {
   height: auto;
 }
 
-[class*="-p"] {
-  font-family: $ffMontserrat;
-  font-weight: 400;
-  font-size: rem(15px);
-  color: $colorBlack;
-}
 p,
 .p {
   font-family: $ffMontserrat;
@@ -129,6 +123,10 @@ li {
 button {
   cursor: pointer;
 }
+input,
+textarea {
+  outline: none;
+}
 
 .span-blue {
   color: $colorCyan;
@@ -137,6 +135,7 @@ button {
 .ui-btn {
   display: inline-block;
   position: relative;
+  width: 100%;
   height: 36px;
   line-height: 36px;
   background: $colorGradient;
@@ -147,28 +146,35 @@ button {
   text-transform: uppercase;
   cursor: pointer;
   border-radius: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 // Breadcrumbs example
 [class*="-breadcrumbs"] {
-  text-align: center;
-  margin-top: 25px;
+  text-align: start;
   a {
-    font-size: rem(14px);
-    font-weight: 600;
-    color: #fff;
+    font-size: rem(13px);
+    font-weight: 400;
+    color: $colorSilver;
     display: inline-block;
-    opacity: 0.4;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
   }
   :last-child {
-    opacity: 1;
+    color: #95a4b8;
+    text-decoration: none;
     i {
       display: none;
     }
   }
   i {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 10px;
   }
 }
 
@@ -176,13 +182,14 @@ button {
 .ui-card-product {
   padding: 20px;
   border: 1px solid #d6e3f2;
-  transition: 0.3s ease;
-  &:hover {
-    border: 1px solid $colorCyan;
-  }
+  width: 274px;
+  border-right: 0px;
+
   .ui-btn {
     background: $colorBlue;
-    width: 124px;
+    width: calc(100% - 72px);
+    transition: 0.3s ease;
+    padding: 0px 5px;
     &-img {
       height: 20px;
       img {
@@ -193,6 +200,9 @@ button {
     &-text {
       padding: 0px 5px;
     }
+    &:hover {
+      background: #2c75fc;
+    }
   }
   &-img {
     position: relative;
@@ -201,6 +211,7 @@ button {
     text-align: center;
     img {
       max-height: 212px;
+      margin: 0 auto;
     }
   }
   &-hits {
@@ -220,6 +231,9 @@ button {
     font-size: rem(15px);
     margin-bottom: 10px;
     cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   &-articule {
     font-weight: 300;
@@ -243,6 +257,7 @@ button {
     font-size: rem(16px);
     font-weight: 400;
     text-decoration: line-through;
+    margin-left: 10px;
   }
   .card-price-units {
     font-size: rem(10px);
@@ -252,8 +267,9 @@ button {
 .ui-card-btns {
   .ui-btn-img {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
   }
   .ui-btn-text {
     display: inline-block;
@@ -261,14 +277,22 @@ button {
   .ui-btn-favorite,
   .ui-btn-compare {
     position: relative;
-    padding: 18px;
+    // padding: 18px;
+    width: 36px;
+    height: 36px;
+    line-height: 34px;
     border: 1px solid #d6e3f2;
     border-radius: 4px;
+    margin-left: 5px;
+    transition: 0.3s ease;
     img {
       position: absolute;
       transform: translate(-50%, -50%);
       top: 50%;
       left: 50%;
+    }
+    &:hover {
+      border: 1px solid $colorBlue;
     }
   }
 }
