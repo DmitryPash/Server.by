@@ -107,18 +107,14 @@ descriptionCardBorder.forEach((element) => {
   element.addEventListener("click", () => {
     clear();
     element.classList.add("border");
-    // circleBlue.forEach((element) => {
-    //   element.addEventListener("click", () => {
-    //     clear();
-    //     element.classList.add("circleblue");
-    //   });
-    // });
+    // element.querySelector(".roundclick").classList.add("circleblue");!!!
   });
 });
 
 const clear = () => {
   descriptionCardBorder.forEach((element) => {
     element.classList.remove("border");
+    // element.querySelector(".roundclick").classList.remove("circleblue");!!!
   });
 };
 
@@ -183,3 +179,8 @@ $(function () {
     $.magnificPopup.close();
   });
 });
+
+let btnScrol = document.getElementById("scrol-left");
+btnScrol.onclick = () => {
+  document.querySelector(".table-main").style.marginLeft = "-50%";
+};
