@@ -98,12 +98,25 @@ menu.forEach((element) => {
 });
 
 // change border color
+// add circle and border for step 2
+let stepTwo = document.querySelectorAll(".stepTwo");
+stepTwo.forEach((element) => {
+  element.addEventListener("click", () => {
+    clearr();
+    element.classList.add("border");
+    // element.querySelector(".roundclick").classList.add("circleblue");!!!
+  });
+});
 
-let circleBlue = document.querySelectorAll(".roundclick");
-let descriptionCardBorder = document.querySelectorAll(
-  ".description-card-border"
-);
-descriptionCardBorder.forEach((element) => {
+const clearr = () => {
+  stepTwo.forEach((element) => {
+    element.classList.remove("border");
+    // element.querySelector(".roundclick").classList.remove("circleblue");!!!
+  });
+};
+// add circle and border for step 3
+let stepThree = document.querySelectorAll(".stepThree");
+stepThree.forEach((element) => {
   element.addEventListener("click", () => {
     clear();
     element.classList.add("border");
@@ -112,7 +125,7 @@ descriptionCardBorder.forEach((element) => {
 });
 
 const clear = () => {
-  descriptionCardBorder.forEach((element) => {
+  stepThree.forEach((element) => {
     element.classList.remove("border");
     // element.querySelector(".roundclick").classList.remove("circleblue");!!!
   });
@@ -184,19 +197,16 @@ let btnScrol = document.getElementById("scrol-left");
 btnScrol.onclick = () => {
   document.querySelector(".table-main").style.marginLeft = "-50%";
 };
-<<<<<<< HEAD
 
-$("#formvalidation").validate({
-  rules: {
-    email: {
-      required: true,
-      email: true,
-    },
-    password: {
-      required: true,
-      minlength: 8,
-    },
-  },
-});
-=======
->>>>>>> main
+// $("#formvalidation").validate({
+//   rules: {
+//     email: {
+//       required: true,
+//       email: true,
+//     },
+//     password: {
+//       required: true,
+//       minlength: 8,
+//     },
+//   },
+// });
