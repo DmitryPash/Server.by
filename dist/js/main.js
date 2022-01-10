@@ -184,3 +184,5 @@ let btnScrol = document.getElementById("scrol-left");
 btnScrol.onclick = () => {
   document.querySelector(".table-main").style.marginLeft = "-50%";
 };
+
+
