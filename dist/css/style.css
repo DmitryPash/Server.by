@@ -3987,6 +3987,10 @@ section {
   font-weight: 700;
 }
 
+.order-item-description-title:hover {
+  text-decoration: underline;
+}
+
 .order-item-description-number {
   display: inline-block;
   font-size: 0.5625rem;
@@ -4011,16 +4015,18 @@ section {
   width: 100%;
   height: 100%;
   border-left: 1px solid #d6e3f2;
-  padding: 27px 0px;
+  padding: 10px 0px;
 }
 
 .order-item-price-num {
   display: inline-block;
   color: #398aea;
   font-weight: 700;
-  line-height: 10px;
+  line-height: 16px;
   font-size: 1.125rem;
-  margin-right: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
+  word-break: break-word;
 }
 
 .order-item-price-num span {
@@ -4113,6 +4119,8 @@ section {
   padding: 0px 20px;
   border-radius: 4px;
   border: 1px solid #e5edf7;
+  margin-bottom: 20px;
+  color: #191919;
 }
 
 .steps-one-forms-input:focus {
@@ -4141,7 +4149,7 @@ section {
 
 .steps-two {
   margin-bottom: 49px;
-  width: min(692px, 100%);
+  width: min(1170px, 100%);
 }
 
 .steps-two-title {
@@ -4225,7 +4233,7 @@ section {
 
 .steps-three {
   margin-bottom: 220px;
-  width: min(692px, 100%);
+  width: min(1170px, 100%);
 }
 
 .pricecheck {
@@ -4410,6 +4418,7 @@ section {
   letter-spacing: 0.05em;
   margin: 0 auto;
   margin-bottom: 40px;
+  border: none;
 }
 
 .popup-login-button:hover {
@@ -4484,6 +4493,7 @@ section {
   letter-spacing: 0.05em;
   margin: 0 auto;
   margin-bottom: 40px;
+  border: none;
 }
 
 .popup-registration-button:hover {
@@ -4556,6 +4566,7 @@ section {
   letter-spacing: 0.05em;
   margin: 0 auto;
   margin-bottom: 40px;
+  border: none;
 }
 
 .popup-registrationSuccess-button:hover {
@@ -4612,6 +4623,7 @@ section {
   letter-spacing: 0.05em;
   margin: 0 auto;
   margin-bottom: 40px;
+  border: none;
 }
 
 .popup-recovery-button:hover {
@@ -4663,6 +4675,7 @@ section {
   letter-spacing: 0.05em;
   margin: 0 auto;
   margin-bottom: 40px;
+  border: none;
 }
 
 .popup-recoverySuccess-button:hover {
@@ -4780,7 +4793,8 @@ section {
   width: 102px;
   border: 1px solid #eaf1f8;
   border-radius: 4px;
-  margin-right: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .item-add-button input {
