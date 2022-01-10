@@ -64,13 +64,14 @@
                               </div>
                               <div class="col-6 col-sm-12">
                                  <div class="order-item-price flex valign-center justify-center">
-                                    <div class="order-item-price-num">3 810.60 <span>РУБ.</span></div>
-                                    <div class="item-add-button">
-                                       <button class="btn-minus"></button>
-                                       <input type="text" class="input" />
-                                       <button class="btn-plus"></button>
+                                    <div class="order-item-price-num fixprice" data-price="3810.60"><span>РУБ.</span>
                                     </div>
-                                    <div class="order-item-price-num">3 810.60 <span>РУБ.</span></div>
+                                    <div class="item-add-button">
+                                       <button class="btn-minus multiplyminus"></button>
+                                       <input type="text" class="input" />
+                                       <button class="btn-plus multiplyplus"></button>
+                                    </div>
+                                    <div class="order-item-price-num multiplyprice"><span>РУБ.</span></div>
                                  </div>
                               </div>
                            </div>
@@ -116,8 +117,6 @@
                                  </div>
                               </div>
                            </div>
-
-
                            <div class="catalog-toggle"><span></span></div>
                         </div>
                      </div>
@@ -127,19 +126,21 @@
                               <span>шаг 1 </span>- Личные данные
                            </div>
                            <div class="steps-one-title">Если вы уже зарегистрированы, пожалуйста, <a
-                                 href="#signin-modal" class="steps-one-link">авторизуйтесь</a>.</div>
+                                 class="steps-one-link mfp-link" href="javascript:void(0)"
+                                 data-href="./signin-model.html">авторизуйтесь</a>.</div>
                            <div class="steps-one-forms">
                               <form action="">
                                  <div class="row">
-                                    <div class="col-4">
+                                    <div class="col-4 col-sm-6 col-us-12">
                                        <div class="steps-one-forms-title">Ваши имя и фамилия</div>
                                        <input type="text" class="steps-one-forms-input" placeholder="Иван Иванов">
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-4 col-sm-6 col-us-12">
                                        <div class="steps-one-forms-title">Номер телефона</div>
-                                       <input type="text" class="steps-one-forms-input" placeholder="+ххх(хх)ххх-хх-хх">
+                                       <input type="text" class="steps-one-forms-input" id="imask-input"
+                                          placeholder="+ххх(хх)ххх-хх-хх">
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-4 col-sm-12 col-us-12">
                                        <div class="steps-one-forms-title">Ваш email</div>
                                        <input type="text" class="steps-one-forms-input" placeholder="example@yandex.ru">
                                     </div>
@@ -344,7 +345,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="col-filter-22 col-lg-4 col-md-6 col-xs-12">
+                  <div class="col-filter-22 col-lg-12 col-md-12 col-xs-12">
                      <div class="pricecheck">
                         <div class="pricecheck-pay">
                            <div class="pricecheck-pay-cart">
