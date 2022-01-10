@@ -2374,6 +2374,9 @@ section {
         font-size: rem(14px);
         text-transform: uppercase;
         font-weight: 700;
+        &:hover {
+          text-decoration: underline;
+        }
       }
       &-number {
         display: inline-block;
@@ -2397,14 +2400,16 @@ section {
       width: 100%;
       height: 100%;
       border-left: 1px solid #d6e3f2;
-      padding: 27px 0px;
+      padding: 10px 0px;
       &-num {
         display: inline-block;
         color: #398aea;
         font-weight: 700;
-        line-height: 10px;
+        line-height: 16px;
         font-size: rem(18px);
-        margin-right: 40px;
+        margin-right: 20px;
+        margin-left: 20px;
+        word-break: break-word;
         span {
           font-size: rem(9px);
           font-weight: 600;
@@ -2483,6 +2488,8 @@ section {
         padding: 0px 20px;
         border-radius: 4px;
         border: 1px solid #e5edf7;
+        margin-bottom: 20px;
+        color: $colorBlack;
         &:focus {
           border: 1px solid $colorCyan;
         }
@@ -2494,7 +2501,7 @@ section {
   }
   &-two {
     margin-bottom: 49px;
-    width: min(692px, 100%);
+    width: min(1170px, 100%);
     &-title {
       font-weight: 700;
       font-size: rem(14px);
@@ -2536,7 +2543,7 @@ section {
   }
   &-three {
     margin-bottom: 220px;
-    width: min(692px, 100%);
+    width: min(1170px, 100%);
   }
 }
 
@@ -2799,6 +2806,7 @@ section {
     letter-spacing: 0.05em;
     margin: 0 auto;
     margin-bottom: 40px;
+    border: none;
     &:hover {
       background: #398aea;
     }
@@ -2862,6 +2870,7 @@ section {
     letter-spacing: 0.05em;
     margin: 0 auto;
     margin-bottom: 40px;
+    border: none;
     &:hover {
       background: #398aea;
     }
@@ -2923,6 +2932,7 @@ section {
     letter-spacing: 0.05em;
     margin: 0 auto;
     margin-bottom: 40px;
+    border: none;
     &:hover {
       background: #398aea;
     }
@@ -2972,6 +2982,7 @@ section {
     letter-spacing: 0.05em;
     margin: 0 auto;
     margin-bottom: 40px;
+    border: none;
     &:hover {
       background: #398aea;
     }
@@ -3017,6 +3028,7 @@ section {
     letter-spacing: 0.05em;
     margin: 0 auto;
     margin-bottom: 40px;
+    border: none;
 
     &:hover {
       background: #398aea;
@@ -3121,7 +3133,8 @@ section {
   width: 102px;
   border: 1px solid #eaf1f8;
   border-radius: 4px;
-  margin-right: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 .item-add-button input {
   width: 50%;

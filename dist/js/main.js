@@ -1,3 +1,17 @@
+jQuery.extend(jQuery.validator.messages, {
+  required: "Обязательное поле",
+  email: "Некорректный email адрес",
+  url: "Некорректный URL",
+  number: "Некорректный номер",
+  digits: "Это поле поддерживает только числа",
+  equalTo: "Поля не совпадают",
+  maxlength: jQuery.validator.format("Максимальная длина поля {0} символа(ов)"),
+  minlength: jQuery.validator.format("Минимальная длина поля {0} символа(ов)"),
+  require_from_group: jQuery.validator.format(
+    "Отметьте миниммум {0} из этих полей"
+  ),
+});
+
 $(document).ready(function () {
   // Click event
   $(".burgerclick").click(function () {
@@ -13,6 +27,13 @@ $(document).ready(function () {
     e.stopPropagation();
     e.preventDefault();
   });
+  // table
+
+  const tableclone = $(".compare-table")
+    .wrap('<div class="compare-table-clone" />')
+    .clone();
+  $(".compare-table-wrap").append(tableclone);
+
   // mobile-nav Search
   $(document).ready(function () {
     $(".mobile-nav-search").click(function () {
@@ -120,93 +141,54 @@ stepThree.forEach((element) => {
   element.addEventListener("click", () => {
     clear();
     element.classList.add("border");
-    // element.querySelector(".roundclick").classList.add("circleblue");!!!
   });
 });
 
 const clear = () => {
   stepThree.forEach((element) => {
     element.classList.remove("border");
-    // element.querySelector(".roundclick").classList.remove("circleblue");!!!
   });
 };
 
-// popup
-$(function () {
-  $(".main-menu-services").magnificPopup({});
-  $(document).on("click", ".popup-modal-dismiss", function (e) {
-    e.preventDefault();
-    $.magnificPopup.close();
-  });
-});
-// mobile nav to sign in
-$(function () {
-  $(".mobile-nav-menu-services").magnificPopup({});
-  $(document).on("click", ".popup-modal-dismiss", function (e) {
-    e.preventDefault();
-    $.magnificPopup.close();
-  });
-});
+//инициализация MFP popup для форм
 
-// registration
-$(function () {
-  $(".registration-modal").magnificPopup({
+$(document).on("click", ".mfp-link", function () {
+  var a = $(this);
+  $.magnificPopup.open({
+    items: { src: a.attr("data-href") },
     type: "ajax",
+    overflowY: "scroll",
+    removalDelay: 800,
+    mainClass: "my-mfp-zoom-in",
+    ajax: {
+      tError: "Error. Not valid url",
+    },
   });
-  $(document).on("click", ".popup-modal-dismiss", function (e) {
-    e.preventDefault();
-    $.magnificPopup.close();
-  });
+  return false;
 });
 
-// registration to sign in
-
-$(function () {
-  $(".signin-modal").magnificPopup({});
-  $(document).on("click", ".popup-modal-dismiss", function (e) {
-    e.preventDefault();
-    $.magnificPopup.close();
-  });
-});
-// registration to registrationSuccess
-$(function () {
-  $(".popup-registration-button").magnificPopup({});
-  $(document).on("click", ".popup-modal-dismiss", function (e) {
-    e.preventDefault();
-    $.magnificPopup.close();
-  });
-});
-// signin to recovery
-$(function () {
-  $(".recovery-modal").magnificPopup({});
-  $(document).on("click", ".popup-modal-dismiss", function (e) {
-    e.preventDefault();
-    $.magnificPopup.close();
-  });
-});
-// recovery to recoverySuccess
-$(function () {
-  $(".popup-recovery-button").magnificPopup({});
-  $(document).on("click", ".popup-modal-dismiss", function (e) {
-    e.preventDefault();
-    $.magnificPopup.close();
-  });
-});
-
-let btnScrol = document.getElementById("scrol-left");
-btnScrol.onclick = () => {
-  document.querySelector(".table-main").style.marginLeft = "-50%";
+// Imask for input
+var element = document.getElementById("imask-input");
+var maskOptions = {
+  mask: "+{375}(00)000-00-00",
+  lazy: false,
 };
+var mask = IMask(element, maskOptions);
 
-// $("#formvalidation").validate({
-//   rules: {
-//     email: {
-//       required: true,
-//       email: true,
-//     },
-//     password: {
-//       required: true,
-//       minlength: 8,
-//     },
-//   },
+// ЧТО?
+
+// var article = document.querySelectorAll(".fixprice");
+// let pricenum = document.querySelectorAll(".multiplyprice");
+
+// console.log(typeof article.dataset.price);
+
+// const multiplyplus = document.querySelectorAll(".multiplyplus");
+// const orderitem = document.querySelectorAll(".order-item-price");
+// orderitem.forEach((element) => {
+//   let pricezxc = element.querySelector(".fixprice");
+//   let elementzxc = element.querySelector(".multiplyplus");
+//   elementzxc.addEventListener("click", () => {
+//     pricezxc.dataset.price + "zxc";
+//     pricenum.innerHTML = `${article.dataset.price} <span>РУБ.</span>`;
+//   });
 // });
