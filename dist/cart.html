@@ -1384,7 +1384,7 @@
             <div class="middle-title-h1">Оформление заказа</div>
             <div class="cart">
                <div class="row">
-                  <div class="col-filter-78">
+                  <div class="col-filter-78 col-lg-12">
                      <div class="order">
                         <div class="order-item flex valign-center space-between">
                            <div class="catalog-marker green">НОВИНКА</div>
@@ -1408,9 +1408,13 @@
 
                               </div>
                            </div>
-                           <div class="order-item-price flex valign-center">
+                           <div class="order-item-price flex valign-center space-between">
                               <div class="order-item-price-num">3 810.60 <span>РУБ.</span></div>
-                              <button>+1212-</button>
+                              <div class="item-add-button">
+                                 <button class="btn-minus"></button>
+                                 <input type="text" class="input" />
+                                 <button class="btn-plus"></button>
+                              </div>
                               <div class="order-item-price-num">3 810.60 <span>РУБ.</span></div>
                            </div>
                            <div class="catalog-toggle"><span></span></div>
@@ -1531,33 +1535,33 @@
                               </div>
                            </div>
                            <div class="steps-two-title">Адрес доставки</div>
-                           <div class="steps-two-form">
+                           <form class="steps-two-form">
                               <div class="row">
-                                 <div class="col-5">
+                                 <div class="col-6">
                                     <div class="steps-two-forms-title">Улица, дом, корпус</div>
                                     <input type="text" class="steps-two-forms-input" placeholder="Пр-т Речицкий, 124">
                                  </div>
-                                 <div class="col-1">
+                                 <div class="col-2">
                                     <div class="steps-two-forms-title">Подъезд</div>
                                     <input type="text" class="steps-two-forms-input" placeholder="2">
                                  </div>
-                                 <div class="col-1">
+                                 <div class="col-2">
                                     <div class="steps-two-forms-title">Этаж</div>
                                     <input type="text" class="steps-two-forms-input" placeholder="2">
                                  </div>
-                                 <div class="col-1">
+                                 <div class="col-2">
                                     <div class="steps-two-forms-title">Квартира</div>
                                     <input type="text" class="steps-two-forms-input" placeholder="18">
                                  </div>
-                                 <div class="col-8">
+                                 <div class="col-12">
                                     <div class="steps-two-forms-title">Дополнительный комментарий</div>
                                     <textarea class="steps-two-forms-textarea" rows="4" cols="50"
                                        placeholder="Код от домофона, время доставки и т.д."></textarea>
                                  </div>
                               </div>
-                           </div>
+                              </fo>
 
-                           <!-- <div class="description-card flex valign-center">
+                              <!-- <div class="description-card flex valign-center">
                               <div class="description-card-img">
                                  <img src="./images/icons/icons8-shield-100-1.svg" alt="alt">
                               </div>
@@ -1677,15 +1681,10 @@
                                  </div>
                               </div>
                            </div>
-                           <div class="item-add-button">
-                              <button class="btn-minus"></button>
-                              <input type="text" class="input" />
-                              <button class="btn-plus"></button>
-                            </div>
                         </div>
                      </div>
                   </div>
-                  <div class="col-filter-22">
+                  <div class="col-filter-22 col-lg-4 col-md-6 col-xl-8 col-xs-12">
                      <div class="pricecheck">
                         <div class="pricecheck-pay">
                            <div class="pricecheck-pay-cart">
