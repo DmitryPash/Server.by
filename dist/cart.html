@@ -1215,27 +1215,13 @@
           >зарегистрируйтесь</a
         >
       </div>
-<<<<<<< HEAD
-      <div class="popup-login-email">
-        <div class="popup-login-email-title">Ваш email</div>
-        <div class="popup-form">
-          <form action=""><input type="text" /></form>
-        </div>
-      </div>
-      <div class="popup-login-password">
-        <div class="popup-login-password-title">Пароль</div>
-        <div class="popup-form">
-          <form action=""><input type="text" /></form>
-        </div>
-=======
       <div class="popup-form popup-login-form">
         <form action="">
           <div class="popup-form-title">Ваш email</div>
-          <input type="text" class="popup-form-input popup-login-input">
+          <input type="text" class="popup-form-input popup-login-input" />
           <div class="popup-form-title">Пароль</div>
-          <input type="text" class="popup-form-input popup-login-input">
+          <input type="text" class="popup-form-input popup-login-input" />
         </form>
->>>>>>> 8e223af97d5c911b33e75115df0dbac3d7d60869
       </div>
       <a href="#" class="popup-login-button ui-btn"> Войти </a>
       <div class="popup-login-footer">
@@ -1255,38 +1241,26 @@
         Уже есть аккаунт?
         <a href="#signin-modal" class="signin-modal">Войти на сайт</a>
       </div>
-<<<<<<< HEAD
-      <div class="popup-registration-email">
-        <div class="popup-registration-email-title">Ваш email</div>
-        <div class="popup-form">
-          <form action=""><input type="text" /></form>
-        </div>
-      </div>
-      <div class="checkbox">
-        <input class="checkbox-input" type="checkbox" id="checkbox_1" />
-        <label class="checkbox-label" for="checkbox_1"
-          >Я согласен с условиями
-          <a href="#">Пользовательского соглашения</a></label
-        >
-=======
       <div class="popup-form popup-registration-form">
         <form action="">
           <div class="popup-form-title">Ваш email</div>
-          <input type="text" class="popup-form-input">
+          <input type="text" class="popup-form-input" />
+          <div class="checkbox">
+            <input class="checkbox-input" type="checkbox" id="checkbox_11" />
+            <label class="checkbox-label" for="checkbox_11"
+              >Я согласен с условиями
+              <a href="#">Пользовательского соглашения</a></label
+            >
+          </div>
+          <button
+            style="border: none"
+            href="#registrationSuccess-modal"
+            class="popup-registration-button ui-btn"
+          >
+            зарегистрироваться
+          </button>
         </form>
       </div>
-      <div class="checkbox">
-        <input class="checkbox-input" type="checkbox" id="checkbox_11">
-        <label class="checkbox-label" for="checkbox_11">Я согласен с условиями <a href="#">Пользовательского
-            соглашения</a></label>
->>>>>>> 8e223af97d5c911b33e75115df0dbac3d7d60869
-      </div>
-      <a
-        href="#registrationSuccess-modal"
-        class="popup-registration-button ui-btn"
-      >
-        зарегистрироваться
-      </a>
     </div>
     <p><a class="popup-modal-dismiss" href="#"></a></p>
     <div class="popup-bg-bottom"></div>
@@ -1323,19 +1297,11 @@
       <div class="popup-recovery-subtitle">
         Введите свой email и мы отправим на него ссылку для смены пароля
       </div>
-<<<<<<< HEAD
-      <div class="popup-recovery-email">
-        <div class="popup-recovery-email-title">Ваш email</div>
-        <div class="popup-form">
-          <form action=""><input type="text" /></form>
-        </div>
-=======
       <div class="popup-form popup-recovery-form">
         <form action="">
           <div class="popup-form-title">Ваш email</div>
-          <input type="text" class="popup-form-input">
+          <input type="text" class="popup-form-input" />
         </form>
->>>>>>> 8e223af97d5c911b33e75115df0dbac3d7d60869
       </div>
       <a href="#recoverySuccess-modal" class="popup-recovery-button ui-btn">
         получить ссылку
@@ -1384,7 +1350,7 @@
             <div class="middle-title-h1">Оформление заказа</div>
             <div class="cart">
                <div class="row">
-                  <div class="col-filter-78">
+                  <div class="col-filter-78 col-lg-12">
                      <div class="order">
                         <div class="order-item flex valign-center space-between">
                            <div class="catalog-marker green">НОВИНКА</div>
@@ -1408,9 +1374,13 @@
 
                               </div>
                            </div>
-                           <div class="order-item-price flex valign-center">
+                           <div class="order-item-price flex valign-center space-between">
                               <div class="order-item-price-num">3 810.60 <span>РУБ.</span></div>
-                              <button>+1212-</button>
+                              <div class="item-add-button">
+                                 <button class="btn-minus"></button>
+                                 <input type="text" class="input" />
+                                 <button class="btn-plus"></button>
+                              </div>
                               <div class="order-item-price-num">3 810.60 <span>РУБ.</span></div>
                            </div>
                            <div class="catalog-toggle"><span></span></div>
@@ -1531,33 +1501,33 @@
                               </div>
                            </div>
                            <div class="steps-two-title">Адрес доставки</div>
-                           <div class="steps-two-form">
+                           <form class="steps-two-form">
                               <div class="row">
-                                 <div class="col-5">
+                                 <div class="col-6">
                                     <div class="steps-two-forms-title">Улица, дом, корпус</div>
                                     <input type="text" class="steps-two-forms-input" placeholder="Пр-т Речицкий, 124">
                                  </div>
-                                 <div class="col-1">
+                                 <div class="col-2">
                                     <div class="steps-two-forms-title">Подъезд</div>
                                     <input type="text" class="steps-two-forms-input" placeholder="2">
                                  </div>
-                                 <div class="col-1">
+                                 <div class="col-2">
                                     <div class="steps-two-forms-title">Этаж</div>
                                     <input type="text" class="steps-two-forms-input" placeholder="2">
                                  </div>
-                                 <div class="col-1">
+                                 <div class="col-2">
                                     <div class="steps-two-forms-title">Квартира</div>
                                     <input type="text" class="steps-two-forms-input" placeholder="18">
                                  </div>
-                                 <div class="col-8">
+                                 <div class="col-12">
                                     <div class="steps-two-forms-title">Дополнительный комментарий</div>
                                     <textarea class="steps-two-forms-textarea" rows="4" cols="50"
                                        placeholder="Код от домофона, время доставки и т.д."></textarea>
                                  </div>
                               </div>
-                           </div>
+                              </fo>
 
-                           <!-- <div class="description-card flex valign-center">
+                              <!-- <div class="description-card flex valign-center">
                               <div class="description-card-img">
                                  <img src="./images/icons/icons8-shield-100-1.svg" alt="alt">
                               </div>
@@ -1677,15 +1647,10 @@
                                  </div>
                               </div>
                            </div>
-                           <div class="item-add-button">
-                              <button class="btn-minus"></button>
-                              <input type="text" class="input" />
-                              <button class="btn-plus"></button>
-                            </div>
                         </div>
                      </div>
                   </div>
-                  <div class="col-filter-22">
+                  <div class="col-filter-22 col-lg-4 col-md-6 col-xl-8 col-xs-12">
                      <div class="pricecheck">
                         <div class="pricecheck-pay">
                            <div class="pricecheck-pay-cart">
@@ -1802,27 +1767,14 @@
       <div class="row">
         <div class="col-4 col-l-4 col-lg-4 col-md-4 col-sm-12">
           <div class="footer-middle-icons">
-            <a href="#"
-              ><img src="./images/icons/payment_bepaid 1.png" alt="#"
-            /></a>
-            <a href="#"
-              ><img src="./images/icons/payment_bank 1.png" alt="#"
-            /></a>
-            <a href="#"
-              ><img src="./images/icons/payment-erip 1.png" alt="#"
-            /></a>
-            <a href="#"
-              ><img src="./images/icons/MasterCard_Logo (1) 1.png" alt="#"
-            /></a>
+            <a href="#"><img src="./images/icons/payment_bepaid 1.png" alt="#" /></a>
+            <a href="#"><img src="./images/icons/payment_bank 1.png" alt="#" /></a>
+            <a href="#"><img src="./images/icons/payment-erip 1.png" alt="#" /></a>
+            <a href="#"><img src="./images/icons/MasterCard_Logo (1) 1.png" alt="#" /></a>
             <a href="#"><img src="./images/icons/Group.png" alt="#" /></a>
-            <a href="#"
-              ><img src="./images/icons/webpay_logo 1.png" alt="#"
-            /></a>
+            <a href="#"><img src="./images/icons/webpay_logo 1.png" alt="#" /></a>
             <a href="#">
-              <img
-                src="./images/icons/logotip-belkart-v-odnom-tsvete 1.png"
-                alt="#"
-            /></a>
+              <img src="./images/icons/logotip-belkart-v-odnom-tsvete 1.png" alt="#" /></a>
           </div>
         </div>
         <div class="col-6 col-l-6 col-lg-5 col-md-5 col-sm-12">
@@ -1883,9 +1835,7 @@
       <div class="row">
         <div class="col-3 col-l-3 col-lg-3 col-md-3 col-sm-12">
           <div class="footer-bottom-img">
-            <a href="#"
-              ><img src="./images/icons/Logo-header.png" alt="alt"
-            /></a>
+            <a href="#"><img src="./images/icons/Logo-header.png" alt="alt" /></a>
             © ЧТУП “Домашний компьютер”, 2021
           </div>
         </div>
@@ -1919,7 +1869,6 @@
     </div>
   </div>
 </footer>
-
       </div>
       <div class="mobile-nav  space-between valign-center">
    <a href="javascript:void(0)" class="mobile-nav-menu-services">
