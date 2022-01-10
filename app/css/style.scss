@@ -3034,6 +3034,7 @@ section {
     width: 100%;
     height: 52px;
     padding: 0 20px;
+    margin-bottom: 50px;
     line-height: 58px;
     border: 1px solid #e5edf7;
     border-radius: 4px;
@@ -3099,7 +3100,6 @@ section {
       background-color: white;
     }
   }
-
   &-absolute {
     position: absolute;
     color: red;
