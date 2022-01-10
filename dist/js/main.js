@@ -184,6 +184,7 @@ let btnScrol = document.getElementById("scrol-left");
 btnScrol.onclick = () => {
   document.querySelector(".table-main").style.marginLeft = "-50%";
 };
+<<<<<<< HEAD
 
 $("#formvalidation").validate({
   rules: {
@@ -197,3 +198,5 @@ $("#formvalidation").validate({
     },
   },
 });
+=======
+>>>>>>> main

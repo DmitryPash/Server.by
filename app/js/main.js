@@ -185,15 +185,15 @@ btnScrol.onclick = () => {
   document.querySelector(".table-main").style.marginLeft = "-50%";
 };
 
-$("#formvalidation").validate({
-  rules: {
-    email: {
-      required: true,
-      email: true,
-    },
-    password: {
-      required: true,
-      minlength: 8,
-    },
-  },
-});
+// $("#formvalidation").validate({
+//   rules: {
+//     email: {
+//       required: true,
+//       email: true,
+//     },
+//     password: {
+//       required: true,
+//       minlength: 8,
+//     },
+//   },
+// });
