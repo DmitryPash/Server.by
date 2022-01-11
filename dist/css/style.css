@@ -593,6 +593,19 @@ textarea {
   border: 1px solid #2963cb;
 }
 
+.ui-input {
+  width: 100%;
+  height: 52px;
+  padding: 0px 20px;
+  border: 1px solid #e5edf7;
+  border-radius: 4px;
+  margin-top: 7px;
+}
+
+.ui-input::-webkit-input-placeholder {
+  color: #a8c0dd;
+}
+
 input::-webkit-input-placeholder {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease;
@@ -3191,12 +3204,12 @@ body {
   position: absolute;
   height: 505px;
   min-height: 100%;
-  overflow-y: auto;
   padding-left: 63px;
   top: 0;
   left: 300px;
   right: 0;
   font-size: 0;
+  padding-bottom: 535px;
 }
 
 .menu-desktop-second {
@@ -3205,6 +3218,8 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  max-height: 400px;
+  overflow-y: auto;
 }
 
 .menu-desktop-second > li {
@@ -3212,7 +3227,7 @@ body {
   -ms-flex: 0 0 33.33%;
   flex: 0 0 33.33%;
   max-width: 33.33%;
-  padding: 0px 15px 0px;
+  padding-right: 30px;
   margin: 0;
   vertical-align: top;
 }
@@ -3301,15 +3316,15 @@ body {
 }
 
 .menu-banner {
+  position: absolute;
   display: block;
-  width: 100%;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  width: 948px;
+  left: 63px;
+  bottom: 0;
 }
 
 .menu-banner img {
-  margin: 0 auto;
+  width: 100%;
   display: block;
 }
 
@@ -3547,26 +3562,85 @@ body {
   background: #2963cb;
 }
 
-main {
-  overflow-x: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.compare-table {
+  margin-bottom: 50px;
 }
 
-section {
-  min-width: 50vw;
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 4ch;
+.fl-table {
+  display: block;
+  width: 100%;
+}
+
+.table-wrapper:before {
+  content: "Scroll horizontally >";
+  display: block;
+  text-align: right;
+  font-size: 11px;
+  color: white;
+  padding: 0 0 10px;
+}
+
+.fl-table thead,
+.fl-table tbody,
+.fl-table thead th {
+  display: block;
+}
+
+.fl-table thead th:last-child {
+  border-bottom: none;
+}
+
+.fl-table thead {
+  float: left;
+}
+
+.fl-table tbody {
+  width: auto;
+  position: relative;
+  overflow-x: auto;
+}
+
+.fl-table td,
+.fl-table th {
+  padding: 20px 0.625em 0.625em 0.625em;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-x: auto;
+  font-size: 13px;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+.fl-table thead th {
+  text-align: left;
+  border-bottom: 1px solid #f7f7f9;
+}
+
+.fl-table tbody tr {
+  display: table-cell;
+}
+
+.fl-table tbody tr:nth-child(odd) {
+  background: none;
+}
+
+.fl-table tr:nth-child(even) {
+  background: transparent;
+}
+
+.fl-table tr td:nth-child(odd) {
+  background: #f8f8f8;
+  border-right: 1px solid #e6e4e4;
+}
+
+.fl-table tr td:nth-child(even) {
+  border-right: 1px solid #e6e4e4;
+}
+
+.fl-table tbody td {
+  display: block;
+  text-align: center;
 }
 
 .search-cat {
@@ -3840,11 +3914,11 @@ section {
   bottom: 45%;
 }
 
-.account .info-block ul li:hover {
+.info-block ul li:hover {
   text-decoration: underline;
 }
 
-.account .info-block ul li:last-child {
+.info-block ul li:last-child {
   position: relative;
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
@@ -3853,7 +3927,12 @@ section {
   padding-left: 15px;
 }
 
-.account .info-block ul li:last-child a img {
+.info-block ul li:last-child a {
+  font-size: 0.875rem;
+  color: #647b98;
+}
+
+.info-block ul li:last-child a img {
   position: absolute;
   left: 0;
   top: 50%;
@@ -3862,23 +3941,23 @@ section {
   transform: translate(0, -50%);
 }
 
-.account .info-block ul li:last-child:hover .toggle-product {
+.info-block ul li:last-child:hover .toggle-product {
   display: block;
 }
 
-.account .info-block li:hover {
+.info-block li:hover {
   text-decoration: none;
 }
 
-.account .info-block li a {
-  font-size: 0.875rem;
-  color: #647b98;
-}
-
-.account .info-block .toggle-product {
+.info-block .toggle-product {
   display: none;
   left: -19px;
   bottom: 45%;
+}
+
+.info-block-link {
+  font-size: 0.875rem;
+  color: #647b98;
 }
 
 .account-date {
@@ -4880,6 +4959,10 @@ section {
 :focus {
   outline: 0;
   outline-offset: 0;
+}
+
+.active {
+  font-weight: 600;
 }
 
 @media (max-width: 1330px) {
