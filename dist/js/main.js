@@ -151,7 +151,6 @@ const clear = () => {
 };
 
 //инициализация MFP popup для форм
-
 $(document).on("click", ".mfp-link", function () {
   var a = $(this);
   $.magnificPopup.open({
@@ -192,3 +191,47 @@ var mask = IMask(element, maskOptions);
 //     pricenum.innerHTML = `${article.dataset.price} <span>РУБ.</span>`;
 //   });
 // });
+jQuery.validator.addMethod(
+  "lettersonly",
+  function (value, element) {
+    return this.optional(element) || /^[a-zA-ZА-Яа-я\s]+$/i.test(value);
+  },
+  "Только буквы"
+);
+
+jQuery.validator.addMethod(
+  "telephone",
+  function (value, element) {
+    return (
+      this.optional(element) ||
+      /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){6,14}(\s*)?$/i.test(value)
+    );
+  },
+  "Некорректный формат"
+);
+
+$("#accountDate").validate({
+  rules: {
+    email: {
+      required: true,
+      email: true,
+    },
+    telefon: {
+      required: true,
+      telephone: true,
+    },
+    name: {
+      required: true,
+      lettersonly: true,
+    },
+    password: {
+      required: true,
+      minlength: 8,
+    },
+    retry_password: {
+      required: true,
+      minlength: 8,
+      equalTo: $(".input-password"),
+    },
+  },
+});

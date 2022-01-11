@@ -1,25 +1,36 @@
 <div id="recovery-modal" class="popup-recovery">
-   <div class="popup-bg-top"></div>
-   <div class="popup-recovery-title">Восстановление пароля</div>
-   <div class="popup-container">
-      <div class="popup-recovery-subtitle">
-         Введите свой email и мы отправим на него ссылку для смены пароля
-      </div>
-      <div class="popup-form popup-recovery-form">
-         <form action="">
-            <div class="popup-form-title">Ваш email</div>
-            <input type="text" class="popup-form-input" />
-         </form>
-      </div>
-      <a href="javascript:void(0)" data-href="./recoverySuccess-modal.html"
-         class="popup-recovery-button ui-btn mfp-link">
-         получить ссылку
-      </a>
-      <div class="popup-login-footer">
-         Я вспомнил пароль!
-         <a href="javascript:void(0)" data-href="./signin-model.html" class="signin-modal mfp-link">Войти на сайт</a>
-      </div>
-   </div>
-   <p><a class="popup-modal-dismiss" href="#"></a></p>
-   <div class="popup-bg-bottom"></div>
+  <div class="popup-bg-top"></div>
+  <div class="popup-recovery-title">Восстановление пароля</div>
+  <div class="popup-container">
+    <div class="popup-recovery-subtitle">
+      Введите свой email и мы отправим на него ссылку для смены пароля
+    </div>
+    <div class="popup-form popup-recovery-form">
+      <form action="" id="recovery-form">
+        <label for="email" class="popup-form-title">Ваш email</label>
+        <input type="text" name="email" class="popup-form-input ui-input" />
+        <button type="submit" data-href="./recoverySuccess-modal.html" class="popup-recovery-button ui-btn mfp-link">
+          получить ссылку
+        </button>
+      </form>
+    </div>
+
+    <div class="popup-login-footer">
+      Я вспомнил пароль!
+      <a href="javascript:void(0)" data-href="./signin-model.html" class="signin-modal mfp-link">Войти на сайт</a>
+    </div>
+  </div>
+  <p><a class="popup-modal-dismiss" href="#"></a></p>
+  <div class="popup-bg-bottom"></div>
 </div>
+
+<script>
+  $("#recovery-form").validate({
+    rules: {
+      email: {
+        required: true,
+        email: true,
+      },
+    },
+  });
+</script>
