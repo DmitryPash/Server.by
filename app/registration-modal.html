@@ -1,28 +1,50 @@
 <div id="registration-modal" class="popup-registration">
-   <div class="popup-bg-top"></div>
-   <div class="popup-container">
-      <div class="popup-registration-title">Регистрация</div>
-      <div class="popup-registration-subtitle">
-         Уже есть аккаунт?
-         <a href="javascript:void(0)" data-href="./signin-model.html" class="signin-modal mfp-link">Войти на сайт</a>
-      </div>
-      <div class="popup-form popup-registration-form">
-         <form action="" id="form">
-            <div class="popup-form-title">Ваш email</div>
-            <input type="text" name="email" class="popup-form-input" />
-            <div class="checkbox">
-               <input class="checkbox-input" type="checkbox" id="checkbox_11" />
-               <label class="checkbox-label" for="checkbox_11">Я согласен с условиями
-                  <a href="#">Пользовательского соглашения</a></label>
-            </div>
-            <button type="submit" class="popup-registration-button ui-btn mfp-link" href="javascript:void(0)"
-               data-href="./registrationSuccess-modal.html">
-               зарегистрироваться
-            </button>
-            <!-- href="#registrationSuccess-modal" -->
-         </form>
-      </div>
-   </div>
-   <p><a class="popup-modal-dismiss" href="#"></a></p>
-   <div class="popup-bg-bottom"></div>
+  <div class="popup-bg-top"></div>
+  <div class="popup-container">
+    <div class="popup-registration-title">Регистрация</div>
+    <div class="popup-registration-subtitle">
+      Уже есть аккаунт?
+      <a
+        href="javascript:void(0)"
+        data-href="./signin-model.html"
+        class="signin-modal mfp-link"
+        >Войти на сайт</a
+      >
+    </div>
+    <div class="popup-form popup-registration-form">
+      <form action="" id="registration-form">
+        <div class="popup-form-title">Ваш email</div>
+        <input type="text" name="email" class="popup-form-input" />
+        <div class="checkbox">
+          <input class="checkbox-input" type="checkbox" id="checkbox_11" />
+          <label class="checkbox-label" for="checkbox_11"
+            >Я согласен с условиями
+            <a href="#">Пользовательского соглашения</a></label
+          >
+        </div>
+        <button
+          type="submit"
+          class="popup-registration-button ui-btn mfp-link"
+          href="javascript:void(0)"
+          data-href="./registrationSuccess-modal.html"
+        >
+          зарегистрироваться
+        </button>
+        <!-- href="#registrationSuccess-modal" -->
+      </form>
+    </div>
+  </div>
+  <p><a class="popup-modal-dismiss" href="#"></a></p>
+  <div class="popup-bg-bottom"></div>
 </div>
+
+<script>
+  $("#registration-form").validate({
+    rules: {
+      email: {
+        required: true,
+        email: true,
+      },
+    },
+  });
+</script>
