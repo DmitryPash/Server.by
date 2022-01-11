@@ -1370,11 +1370,9 @@ body {
   position: relative;
 }
 
-
 .text-center {
   text-align: center;
 }
-
 
 .account-data-input-form label {
   -webkit-box-align: baseline;
