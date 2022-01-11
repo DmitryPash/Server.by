@@ -41,21 +41,20 @@
   </div>
   <p><a class="popup-modal-dismiss" href="#"></a></p>
   <div class="popup-bg-bottom"></div>
+  <script>
+    $(document).ready(function () {
+      $("#formvalidation").validate({
+        rules: {
+          email: {
+            required: true,
+            email: true,
+          },
+          password: {
+            required: true,
+            minlength: 8,
+          },
+        },
+      });
+    });
+  </script>
 </div>
-<script>
-  $("#formvalidation").validate({
-    rules: {
-      email: {
-        required: true,
-        email: true,
-      },
-      password: {
-        required: true,
-        minlength: 8,
-      },
-    },
-  });
-</script>
-<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js
-"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

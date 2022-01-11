@@ -24,27 +24,26 @@
         </div>
         <button
           type="submit"
-          class="popup-registration-button ui-btn mfp-link"
-          href="javascript:void(0)"
-          data-href="./registrationSuccess-modal.html"
+          class="popup-registration-button ui-btn"
+          href="#registrationSuccess-modal"
         >
           зарегистрироваться
         </button>
-        <!-- href="#registrationSuccess-modal" -->
       </form>
     </div>
   </div>
   <p><a class="popup-modal-dismiss" href="#"></a></p>
   <div class="popup-bg-bottom"></div>
+  <script>
+    $(document).ready(function () {
+      $("#registration-form").validate({
+        rules: {
+          email: {
+            required: true,
+            email: true,
+          },
+        },
+      });
+    });
+  </script>
 </div>
-
-<script>
-  $("#registration-form").validate({
-    rules: {
-      email: {
-        required: true,
-        email: true,
-      },
-    },
-  });
-</script>

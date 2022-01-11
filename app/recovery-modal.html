@@ -8,11 +8,11 @@
     <div class="popup-form popup-recovery-form">
       <form action="" id="recovery-form">
         <div class="popup-form-title">Ваш email</div>
-        <input type="text" class="popup-form-input" />
+        <input type="text" class="popup-form-input" name="email" />
         <button
           type="submit"
           data-href="./recoverySuccess-modal.html"
-          class="popup-recovery-button ui-btn mfp-link"
+          class="popup-recovery-button ui-btn"
         >
           получить ссылку
         </button>
@@ -31,15 +31,16 @@
   </div>
   <p><a class="popup-modal-dismiss" href="#"></a></p>
   <div class="popup-bg-bottom"></div>
+  <script>
+    $(document).ready(function () {
+      $("#recovery-form").validate({
+        rules: {
+          email: {
+            required: true,
+            email: true,
+          },
+        },
+      });
+    });
+  </script>
 </div>
-
-<script>
-  $("#recovery-form").validate({
-    rules: {
-      email: {
-        required: true,
-        email: true,
-      },
-    },
-  });
-</script>
