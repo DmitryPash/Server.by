@@ -7,9 +7,13 @@
     </div>
     <div class="popup-form popup-recovery-form">
       <form action="" id="recovery-form">
-        <label for="email" class="popup-form-title">Ваш email</label>
-        <input type="text" name="email" class="popup-form-input ui-input" />
-        <button type="submit" data-href="./recoverySuccess-modal.html" class="popup-recovery-button ui-btn mfp-link">
+        <div class="popup-form-title">Ваш email</div>
+        <input type="text" class="popup-form-input" name="email" />
+        <button
+          type="submit"
+          data-href="./recoverySuccess-modal.html"
+          class="popup-recovery-button ui-btn"
+        >
           получить ссылку
         </button>
       </form>
@@ -17,20 +21,26 @@
 
     <div class="popup-login-footer">
       Я вспомнил пароль!
-      <a href="javascript:void(0)" data-href="./signin-model.html" class="signin-modal mfp-link">Войти на сайт</a>
+      <a
+        href="javascript:void(0)"
+        data-href="./signin-model.html"
+        class="signin-modal mfp-link"
+        >Войти на сайт</a
+      >
     </div>
   </div>
   <p><a class="popup-modal-dismiss" href="#"></a></p>
   <div class="popup-bg-bottom"></div>
+  <script>
+    $(document).ready(function () {
+      $("#recovery-form").validate({
+        rules: {
+          email: {
+            required: true,
+            email: true,
+          },
+        },
+      });
+    });
+  </script>
 </div>
-
-<script>
-  $("#recovery-form").validate({
-    rules: {
-      email: {
-        required: true,
-        email: true,
-      },
-    },
-  });
-</script>
