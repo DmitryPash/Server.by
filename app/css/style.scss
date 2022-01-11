@@ -107,11 +107,14 @@ body {
 
 .help {
   display: inline-block;
-  cursor: pointer;
+
   position: relative;
 }
-
+.text-center {
+  text-align: center;
+}
 .account-data-input-form label {
+
   align-items: baseline;
   padding-top: 5px;
 }
@@ -695,6 +698,29 @@ body {
 .filter {
   background-color: $colorWhite;
   margin-bottom: 45px;
+  &-filters {
+    text-align: left;
+  }
+  &-block {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    border-bottom: 1px solid #e5edf7;
+    &:last-child {
+      border: none;
+    }
+    &-more {
+      margin-left: -20px;
+      padding-top: 10px;
+      font-size: rem(12px);
+      line-height: rem(15px);
+      color: $colorCyan;
+      border-bottom: 1px dashed $colorCyan;
+      &:hover {
+        border-bottom: none;
+      }
+    }
+  }
   &-title {
     text-align-last: left;
     font-weight: 700;
@@ -755,7 +781,8 @@ body {
     }
     &-line {
       display: inline-block;
-      width: 24px;
+      vertical-align: middle;
+      width: 16px;
       border-top: 1px solid black;
       margin-right: 5px;
       margin-left: 5px;
@@ -765,6 +792,7 @@ body {
       width: calc(50% - 24px);
       height: 40px;
       padding-left: 10px;
+      border: 1px solid #e5edf7;
     }
   }
   &-producer {
@@ -773,17 +801,6 @@ body {
     padding-bottom: 40px;
     padding-left: 20px;
     border-bottom: 1px solid #e5edf7;
-
-    &-more {
-      margin-left: -20px;
-      font-size: rem(12px);
-      line-height: rem(15px);
-      color: $colorCyan;
-      border-bottom: 1px dashed $colorCyan;
-      &:hover {
-        border-bottom: none;
-      }
-    }
   }
   &-type {
     padding-top: 20px;
@@ -839,6 +856,7 @@ body {
 
 .checkbox {
   position: relative;
+  margin-bottom: 10px;
   &-input {
     display: none;
     &:checked + .checkbox-label::before {
@@ -940,15 +958,41 @@ body {
   }
 }
 .catalog {
-  // position: relative;
-  border: 1px solid #d6e3f2;
-  margin-bottom: 20px;
   &-item {
     display: inline-block;
     position: relative;
     width: 100%;
-    // padding-left: 30px;
-    // border-right: 1px solid #d6e3f2;
+    border: 1px solid #d6e3f2;
+    margin-bottom: 20px;
+    &-title {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      text-transform: uppercase;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    &-articule {
+      padding-bottom: 35px;
+    }
+    &-number {
+      display: inline-block;
+      font-size: rem(9px);
+      color: #6d829f;
+      margin-right: 16px;
+    }
+    &-in_stock {
+      img {
+        padding-right: 5px;
+      }
+      display: inline-block;
+      font-weight: 600;
+      font-size: rem(9px);
+      line-height: 13px;
+      text-transform: uppercase;
+      color: #37ab00;
+    }
     &-features {
       display: flex;
       align-items: center;
@@ -958,11 +1002,12 @@ body {
       &-compare {
         display: flex;
         align-items: center;
-        padding-right: 10px;
+        padding-right: 15px;
         font-weight: 600;
         font-size: 11px;
         line-height: 13px;
         color: #6d829f;
+        white-space: nowrap;
         &:hover {
           text-decoration: underline;
         }
@@ -978,7 +1023,7 @@ body {
       padding-bottom: 40px;
       padding-left: 30px;
       img {
-        padding-top: 10px;
+        padding-top: 8px;
         padding-bottom: 10px;
       }
     }
@@ -992,19 +1037,6 @@ body {
       padding-right: 30px;
       border-right: 1px solid #d6e3f2;
 
-      &-title {
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 22px;
-        text-transform: uppercase;
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-      &-articule {
-        padding-bottom: 35px;
-      }
-
       table tbody tr td {
         position: relative;
         vertical-align: top;
@@ -1017,8 +1049,8 @@ body {
   }
   &-marker {
     position: absolute;
-    margin-top: 15px;
-    margin-left: 15px;
+    top: 15px;
+    left: 15px;
     height: 24px;
     line-height: 24px;
     font-weight: 600;
@@ -1040,7 +1072,7 @@ body {
   //     font-size: 13px;
   //   }
   // }
-  &-description {
+  &-info {
     display: inline-block;
     width: 26%;
     vertical-align: top;
@@ -1082,7 +1114,7 @@ body {
     }
   }
 }
-.green {
+.catalog-marker-green {
   background-color: #37ab00;
 }
 .yellow {
@@ -1457,6 +1489,11 @@ body {
     width: 100%;
     padding-bottom: 100px;
     margin: 0 auto;
+    &-btn {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
     a {
       display: inline-block;
       text-align: center;
@@ -2246,6 +2283,7 @@ body {
   margin-bottom: 280px;
   &-table {
     display: block;
+    margin-bottom: 300px;
     overflow-x: auto;
     white-space: nowrap;
     &-col {

@@ -91,7 +91,7 @@
   // Footer
 }
 @media (max-width: 1070px) {
-  .catalog-description-price {
+  .catalog-info-price {
     font-size: rem(28px);
   }
 }
@@ -499,7 +499,7 @@
         }
       }
     }
-    &-description {
+    &-info {
       width: 100%;
       padding-top: 10px;
       padding-right: 10px;
@@ -689,7 +689,7 @@
         }
       }
     }
-    &-description {
+    &-info {
       &-title {
         font-size: rem(9px);
       }
