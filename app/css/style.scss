@@ -111,6 +111,10 @@ body {
   position: relative;
 }
 
+.account-date-input-form label {
+  align-items: baseline;
+  padding-top: 5px;
+}
 [data-tooltip]::after {
   content: attr(data-tooltip);
   position: absolute;
@@ -2390,11 +2394,11 @@ body {
   line-height: 54px;
   margin-bottom: 60px;
   border: 1px solid rgba(0, 0, 0, 0);
-  transition: 0.3s ease;
+  // transition: 0.3s ease;
 
   &:hover {
-    background: #ffffff;
-    color: #398aea;
+    background: #398aea;
+    color: #ffffff;
     border: 1px solid #398aea;
   }
 }
