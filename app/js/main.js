@@ -216,7 +216,7 @@ $("#accountDate").validate({
       required: true,
       email: true,
     },
-    telefon: {
+    phone: {
       required: true,
       telephone: true,
     },
@@ -228,7 +228,7 @@ $("#accountDate").validate({
       required: true,
       minlength: 8,
     },
-    retry_password: {
+    reppassword: {
       required: true,
       minlength: 8,
       equalTo: $(".input-password"),
