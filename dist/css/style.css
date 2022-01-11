@@ -3808,6 +3808,10 @@ section {
   background-color: #f4f9ff;
 }
 
+.history tr:last-child {
+  color: #a6a6a6;
+}
+
 .history .cyantext {
   color: #398aea;
   text-decoration: underline;
@@ -3910,6 +3914,8 @@ section {
 .account-date-input-content {
   padding: 17px 18px 18px 20px;
   width: 100%;
+  border: 1px solid #e5edf7;
+  border-radius: 4px;
 }
 
 .account-date-input-content::-webkit-input-placeholder {

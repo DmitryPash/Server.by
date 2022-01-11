@@ -2203,6 +2203,9 @@ section {
   tr:nth-child(odd) {
     background-color: $colorWhite;
   }
+  tr:last-child {
+    color: #a6a6a6;
+  }
   .cyantext {
     color: $colorCyan;
     text-decoration: underline;
@@ -2306,6 +2309,8 @@ section {
 .account-date-input-content {
   padding: 17px 18px 18px 20px;
   width: 100%;
+  border: 1px solid #e5edf7;
+  border-radius: 4px;
 
   &::-webkit-input-placeholder {
     color: #a8c0dd;
