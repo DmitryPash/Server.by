@@ -55,34 +55,38 @@
                      <div class="account-date">
                         <div class="account-date-title">Общие данные</div>
                         <div class="account-date-input">
-                           <form action="">
+                           <form action="" id ="accountDate">
                               <div class="row">
                                  <div class="col-account-input col-lg-4 col-sm-6 col-xs-12">
                                     <div class="account-date-input-form">
-                                       <div class="account-date-input-title">Ваш email</div>
-
-                                       <input placeholder="example@yandex.ru" class="account-date-input-content"
-                                          type="text">
-
+                                       <div class="account-date-input-title">Ваши имя и фамилия</div>
+                                       <input placeholder="Иван Иванов" class="account-date-input-content" type="text"
+                                       name="name">
+                                       
                                     </div>
                                  </div>
                                  <div class="col-account-input col-lg-4 col-sm-6 col-xs-12">
                                     <div class="account-date-input-form">
-                                       <div class="account-date-input-title"> Ваше имя </div>
-
-                                       <input placeholder="Иван" class="account-date-input-content" type="text">
+                                       <div class="account-date-input-title"> Номер телефона </div>
+                                       <input id="imask-input" placeholder="+ххх(хх)ххх-хх-хх"
+                                       class="account-date-input-content" type="text"
+                                       name="telefon">
+                                       
 
                                     </div>
                                  </div>
                                  <div class="col-account-input col-lg-4 col-sm-6 col-xs-12">
                                     <div class="account-date-input-form">
                                        <div class="account-date-input-title"> Ваша фамилия</div>
-
-                                       <input placeholder="Иванов" class="account-date-input-content" type="text">
+                                       <input 
+                                       name="email"
+                                       placeholder="example@yandex.ru"
+                                        class="account-date-input-content"
+                                          type="text">
 
                                     </div>
                                  </div>
-                                 <div class="col-account-input col-lg-4 col-sm-6 col-xs-12">
+                                 <!-- <div class="col-account-input col-lg-4 col-sm-6 col-xs-12">
                                     <div class="account-date-input-form">
                                        <div class="account-date-input-title"> Номер телефона</div>
 
@@ -90,7 +94,7 @@
                                           class="account-date-input-content" type="text">
 
                                     </div>
-                                 </div>
+                                 </div> -->
                               </div>
                               <div class="account-password">
                                  <div class="account-date-title">Смена пароля</div>
@@ -100,18 +104,18 @@
                                           <div class="account-date-input-form">
                                              <div class="account-date-input-title">Новый пароль</div>
 
-                                             <input placeholder="********" class="account-date-input-content"
-                                                type="text">
+                                             <input placeholder="********" class="account-date-input-content input-password"
+                                                type="text"
+                                                name="password">
 
                                           </div>
                                        </div>
                                        <div class="col-account-input col-lg-4 col-sm-6 col-xs-12">
                                           <div class="account-date-input-form">
                                              <div class="account-date-input-title"> Повторите пароль</div>
-
                                              <input placeholder="********" class="account-date-input-content"
-                                                type="text">
-
+                                                type="text"
+                                                name ="retry_password">
                                           </div>
                                        </div>
                                     </div>
