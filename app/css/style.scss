@@ -113,7 +113,8 @@ body {
 .text-center {
   text-align: center;
 }
-.account-date-input-form label {
+.account-data-input-form label {
+
   align-items: baseline;
   padding-top: 5px;
 }
@@ -346,6 +347,8 @@ body {
   margin-bottom: 48px;
   overflow: hidden;
   white-space: nowrap;
+  color: #6d829f;
+  font-size: rem(13px);
 }
 .title {
   margin-bottom: 39px;
@@ -1719,21 +1722,25 @@ body {
     position: absolute;
     height: 505px;
     min-height: 100%;
-    overflow-y: auto;
+    // overflow-y: auto;
     padding-left: 63px;
     top: 0;
     left: 300px;
     right: 0;
     font-size: 0;
+    padding-bottom: 535px;
   }
   &-second {
     display: flex;
     flex-wrap: wrap;
+    max-height: 400px;
+    overflow-y: auto;
 
     & > li {
       flex: 0 0 33.33%;
       max-width: 33.33%;
-      padding: 0px 15px 0px;
+      // padding: 0px 15px 0px;
+      padding-right: 30px;
       margin: 0;
       vertical-align: top;
     }
@@ -1823,11 +1830,15 @@ body {
 }
 
 .menu-banner {
+  position: absolute;
   display: block;
-  width: 100%;
-  justify-content: center;
+  // width: 100%;
+  width: 948px;
+  left: 63px;
+  bottom: 0;
+
   img {
-    margin: 0 auto;
+    width: 100%;
     display: block;
   }
 }
@@ -2027,20 +2038,77 @@ body {
 
 // product-compare.html
 
-main {
-  overflow-x: hidden;
-  display: flex;
+.compare-table {
+  margin-bottom: 50px;
 }
+// TETETETET
 
-section {
-  min-width: 50vw;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 4ch;
+.fl-table {
+  display: block;
+  width: 100%;
 }
+.table-wrapper:before {
+  content: "Scroll horizontally >";
+  display: block;
+  text-align: right;
+  font-size: 11px;
+  color: white;
+  padding: 0 0 10px;
+}
+.fl-table thead,
+.fl-table tbody,
+.fl-table thead th {
+  display: block;
+}
+.fl-table thead th:last-child {
+  border-bottom: none;
+}
+.fl-table thead {
+  float: left;
+}
+.fl-table tbody {
+  width: auto;
+  position: relative;
+  overflow-x: auto;
+}
+.fl-table td,
+.fl-table th {
+  padding: 20px 0.625em 0.625em 0.625em;
+  // height: 60px;
+  // width: 120px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  overflow-x: auto;
+  // overflow-y: auto;
 
+  font-size: 13px;
+  text-overflow: ellipsis;
+}
+.fl-table thead th {
+  text-align: left;
+  border-bottom: 1px solid #f7f7f9;
+}
+.fl-table tbody tr {
+  display: table-cell;
+}
+.fl-table tbody tr:nth-child(odd) {
+  background: none;
+}
+.fl-table tr:nth-child(even) {
+  background: transparent;
+}
+.fl-table tr td:nth-child(odd) {
+  background: #f8f8f8;
+  border-right: 1px solid #e6e4e4;
+}
+.fl-table tr td:nth-child(even) {
+  border-right: 1px solid #e6e4e4;
+}
+.fl-table tbody td {
+  display: block;
+  text-align: center;
+}
+// TETETETE
 // search.html
 
 .search-cat {
@@ -2212,29 +2280,32 @@ section {
 
 // order-history.html
 .history {
+  margin-bottom: 280px;
   &-table {
     display: block;
     margin-bottom: 300px;
     overflow-x: auto;
     white-space: nowrap;
+    &-col {
+      vertical-align: top;
+      width: 20%;
+      min-width: 100px;
+      text-align: left;
+      padding: 15px 30px;
+    }
+    &-head {
+      text-align: left;
+      padding: 15px 30px;
+      font-weight: 600;
+      color: $colorCyan;
+      width: 20%;
+      min-width: 100px;
+    }
   }
   table {
     border-collapse: collapse;
     width: 100%;
     font-size: rem(14px);
-  }
-
-  td,
-  th {
-    text-align: left;
-    padding: 15px 30px;
-  }
-  th {
-    font-weight: 600;
-    color: $colorCyan;
-  }
-  td {
-    vertical-align: top;
   }
 
   tr:nth-child(odd) {
@@ -2276,74 +2347,75 @@ section {
 }
 
 // account.html
-.account {
-  .info-block {
-    ul li {
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-
-    ul li:last-child {
-      position: relative;
-      transition: 0.3s ease;
-      padding-bottom: 0;
-      padding-left: 15px;
-
-      a {
-        img {
-          position: absolute;
-          left: 0;
-          top: 50%;
-          transform: translate(0, -50%);
-          // margin-right: 4px;
-        }
-      }
-      &:hover {
-        // left: 20px;
-      }
-      &:hover .toggle-product {
-        display: block;
-      }
-    }
-    li:hover {
-      text-decoration: none;
-    }
-    li a {
-      font-size: rem(14px);
-      color: $colorSilver;
-    }
-    .toggle-product {
-      display: none;
-      left: -19px;
-      bottom: 45%;
+// .account {
+// }
+.info-block {
+  ul li {
+    &:hover {
+      text-decoration: underline;
     }
   }
+  ul li:last-child {
+    position: relative;
+    transition: 0.3s ease;
+    padding-bottom: 0;
+    padding-left: 15px;
+
+    a {
+      font-size: rem(14px);
+      color: $colorSilver;
+      img {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        // margin-right: 4px;
+      }
+    }
+    &:hover {
+      // left: 20px;
+    }
+    &:hover .toggle-product {
+      display: block;
+    }
+  }
+  li:hover {
+    text-decoration: none;
+  }
+  .toggle-product {
+    display: none;
+    left: -19px;
+    bottom: 45%;
+  }
 }
-.account-date {
+.info-block-link {
+  font-size: rem(14px);
+  color: $colorSilver;
+}
+.account-data {
   margin-bottom: 50px;
 }
 
-.account-date-title {
+.account-data-title {
   font-weight: 600;
   font-size: 24px;
   color: #000000;
   margin-bottom: 30px;
 }
 
-.account-date-input-title {
+.account-data-input-title {
   margin-bottom: 7px;
   font-size: 12px;
   line-height: 15px;
 }
 
-.account-date-input-form {
+.account-data-input-form {
   width: 100%;
   margin-right: 30px;
   margin-bottom: 20px;
 }
 
-.account-date-input-content {
+.account-data-input-content {
   padding: 17px 18px 18px 20px;
   width: 100%;
   border: 1px solid #e5edf7;
@@ -2826,8 +2898,7 @@ section {
   &-input {
     margin-bottom: 40px;
   }
-  &-form {
-  }
+
   &-email {
     &-title {
       font-size: rem(12px);
@@ -3089,13 +3160,7 @@ section {
     margin-bottom: 7px;
   }
   &-input {
-    width: 100%;
-    height: 52px;
-    padding: 0 20px;
     margin-bottom: 50px;
-    line-height: 58px;
-    border: 1px solid #e5edf7;
-    border-radius: 4px;
     &:focus {
       border-color: $colorCyan;
     }
@@ -3251,4 +3316,8 @@ section {
 :focus {
   outline: 0;
   outline-offset: 0;
+}
+
+.active {
+  font-weight: 600;
 }
