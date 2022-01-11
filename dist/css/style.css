@@ -1371,7 +1371,7 @@ body {
   position: relative;
 }
 
-.account-date-input-form label {
+.account-data-input-form label {
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
@@ -1660,6 +1660,8 @@ body {
   margin-bottom: 48px;
   overflow: hidden;
   white-space: nowrap;
+  color: #6d829f;
+  font-size: 0.8125rem;
 }
 
 .title {
@@ -3851,31 +3853,37 @@ body {
   background-color: #398aea;
 }
 
+.history {
+  margin-bottom: 280px;
+}
+
 .history-table {
   display: block;
   overflow-x: auto;
   white-space: nowrap;
 }
 
-.history table {
-  border-collapse: collapse;
-  width: 100%;
-  font-size: 0.875rem;
-}
-
-.history td,
-.history th {
+.history-table-col {
+  vertical-align: top;
+  width: 20%;
+  min-width: 100px;
   text-align: left;
   padding: 15px 30px;
 }
 
-.history th {
+.history-table-head {
+  text-align: left;
+  padding: 15px 30px;
   font-weight: 600;
   color: #398aea;
+  width: 20%;
+  min-width: 100px;
 }
 
-.history td {
-  vertical-align: top;
+.history table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.875rem;
 }
 
 .history tr:nth-child(odd) {
@@ -3967,37 +3975,37 @@ body {
   color: #647b98;
 }
 
-.account-date {
+.account-data {
   margin-bottom: 50px;
 }
 
-.account-date-title {
+.account-data-title {
   font-weight: 600;
   font-size: 24px;
   color: #000000;
   margin-bottom: 30px;
 }
 
-.account-date-input-title {
+.account-data-input-title {
   margin-bottom: 7px;
   font-size: 12px;
   line-height: 15px;
 }
 
-.account-date-input-form {
+.account-data-input-form {
   width: 100%;
   margin-right: 30px;
   margin-bottom: 20px;
 }
 
-.account-date-input-content {
+.account-data-input-content {
   padding: 17px 18px 18px 20px;
   width: 100%;
   border: 1px solid #e5edf7;
   border-radius: 4px;
 }
 
-.account-date-input-content::-webkit-input-placeholder {
+.account-data-input-content::-webkit-input-placeholder {
   color: #a8c0dd;
 }
 
@@ -4781,13 +4789,7 @@ body {
 }
 
 .popup-form-input {
-  width: 100%;
-  height: 52px;
-  padding: 0 20px;
   margin-bottom: 50px;
-  line-height: 58px;
-  border: 1px solid #e5edf7;
-  border-radius: 4px;
 }
 
 .popup-form-input:focus {
@@ -5753,6 +5755,11 @@ body {
     display: none;
   }
 
+  .history-table-col,
+  .history-table-head {
+    padding: 10px 20px;
+  }
+
   .footer {
     padding-bottom: 64px;
   }
@@ -6601,5 +6608,10 @@ body {
     width: 90px;
     height: 30px;
     margin: 0px 5px;
+  }
+
+  .history-table-col,
+  .history-table-head {
+    padding: 5px 13px;
   }
 }
