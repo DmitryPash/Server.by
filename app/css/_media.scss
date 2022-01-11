@@ -428,10 +428,11 @@
   .links {
     display: none;
   }
-  // cart.html
-  // .order-item-info {
-  //   justify-content: center;
-  // }
+
+  .history-table-col,
+  .history-table-head {
+    padding: 10px 20px;
+  }
   // Footer
   .footer {
     padding-bottom: 64px;
@@ -873,6 +874,11 @@
     width: 90px;
     height: 30px;
     margin: 0px 5px;
+  }
+  // yable
+  .history-table-col,
+  .history-table-head {
+    padding: 5px 13px;
   }
 
   // Footer
