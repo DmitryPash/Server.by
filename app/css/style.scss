@@ -111,7 +111,7 @@ body {
   position: relative;
 }
 
-.account-date-input-form label {
+.account-data-input-form label {
   align-items: baseline;
   padding-top: 5px;
 }
@@ -344,6 +344,8 @@ body {
   margin-bottom: 48px;
   overflow: hidden;
   white-space: nowrap;
+  color: #6d829f;
+  font-size: rem(13px);
 }
 .title {
   margin-bottom: 39px;
@@ -2241,28 +2243,31 @@ body {
 
 // order-history.html
 .history {
+  margin-bottom: 280px;
   &-table {
     display: block;
     overflow-x: auto;
     white-space: nowrap;
+    &-col {
+      vertical-align: top;
+      width: 20%;
+      min-width: 100px;
+      text-align: left;
+      padding: 15px 30px;
+    }
+    &-head {
+      text-align: left;
+      padding: 15px 30px;
+      font-weight: 600;
+      color: $colorCyan;
+      width: 20%;
+      min-width: 100px;
+    }
   }
   table {
     border-collapse: collapse;
     width: 100%;
     font-size: rem(14px);
-  }
-
-  td,
-  th {
-    text-align: left;
-    padding: 15px 30px;
-  }
-  th {
-    font-weight: 600;
-    color: $colorCyan;
-  }
-  td {
-    vertical-align: top;
   }
 
   tr:nth-child(odd) {
@@ -2349,30 +2354,30 @@ body {
   font-size: rem(14px);
   color: $colorSilver;
 }
-.account-date {
+.account-data {
   margin-bottom: 50px;
 }
 
-.account-date-title {
+.account-data-title {
   font-weight: 600;
   font-size: 24px;
   color: #000000;
   margin-bottom: 30px;
 }
 
-.account-date-input-title {
+.account-data-input-title {
   margin-bottom: 7px;
   font-size: 12px;
   line-height: 15px;
 }
 
-.account-date-input-form {
+.account-data-input-form {
   width: 100%;
   margin-right: 30px;
   margin-bottom: 20px;
 }
 
-.account-date-input-content {
+.account-data-input-content {
   padding: 17px 18px 18px 20px;
   width: 100%;
   border: 1px solid #e5edf7;
@@ -2855,8 +2860,7 @@ body {
   &-input {
     margin-bottom: 40px;
   }
-  &-form {
-  }
+
   &-email {
     &-title {
       font-size: rem(12px);
@@ -3118,13 +3122,7 @@ body {
     margin-bottom: 7px;
   }
   &-input {
-    width: 100%;
-    height: 52px;
-    padding: 0 20px;
     margin-bottom: 50px;
-    line-height: 58px;
-    border: 1px solid #e5edf7;
-    border-radius: 4px;
     &:focus {
       border-color: $colorCyan;
     }

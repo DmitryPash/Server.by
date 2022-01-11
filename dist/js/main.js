@@ -151,7 +151,6 @@ const clear = () => {
 };
 
 //инициализация MFP popup для форм
-
 $(document).on("click", ".mfp-link", function () {
   var a = $(this);
   $.magnificPopup.open({
