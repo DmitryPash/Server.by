@@ -2447,6 +2447,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -3797,10 +3798,6 @@ body {
   margin-bottom: 80px;
 }
 
-.favourites .catalog-item {
-  border: none;
-}
-
 .favourites-info .info-block li {
   margin-bottom: 15px;
   font-size: 14px;
@@ -3832,7 +3829,7 @@ body {
   height: 12px;
   background-color: #398aea;
   border-radius: 50%;
-  left: 10%;
+  left: 7%;
   bottom: 30%;
 }
 
@@ -4826,6 +4823,19 @@ body {
 
 .popup-form {
   width: 100%;
+  position: relative;
+}
+
+.popup-form #password-error {
+  position: absolute;
+  bottom: 75px;
+  color: #ff6666;
+}
+
+.popup-form #email-error {
+  position: absolute;
+  top: 80px;
+  color: #ff6666;
 }
 
 .popup-form-title {
@@ -5014,6 +5024,10 @@ body {
 
 .active {
   font-weight: 600;
+}
+
+.error {
+  font-size: 0.75rem;
 }
 
 @media (max-width: 1330px) {

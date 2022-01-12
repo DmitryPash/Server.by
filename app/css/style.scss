@@ -1001,6 +1001,7 @@ body {
       }
       &-compare {
         display: flex;
+        position: relative;
         align-items: center;
         padding-right: 15px;
         font-weight: 600;
@@ -2191,9 +2192,6 @@ body {
 // favourites.html
 .favourites {
   margin-bottom: 80px;
-  .catalog-item {
-    border: none;
-  }
 }
 
 .favourites-info .info-block {
@@ -2225,7 +2223,7 @@ body {
   height: 12px;
   background-color: $colorCyan;
   border-radius: 50%;
-  left: 10%;
+  left: 7%;
   bottom: 30%;
   &::after {
     content: "";
@@ -3155,6 +3153,18 @@ body {
 
 .popup-form {
   width: 100%;
+  position: relative;
+  #password-error {
+  position: absolute;
+  bottom: 75px;
+  color: #ff6666;
+}
+
+#email-error {
+  position: absolute;
+  top: 80px;
+  color: #ff6666;
+}
   &-title {
     font-size: rem(12px);
     margin-bottom: 7px;
@@ -3321,3 +3331,9 @@ body {
 .active {
   font-weight: 600;
 }
+
+.error {
+  font-size: rem(12px);
+}
+
+
