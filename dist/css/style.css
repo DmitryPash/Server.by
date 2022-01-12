@@ -1795,10 +1795,15 @@ body {
 .product-description-img {
   display: inline-block;
   position: relative;
+  vertical-align: middle;
   width: 25px;
   height: 25px;
-  top: 15%;
-  left: -6%;
+  margin-right: 13px;
+  bottom: 2px;
+}
+
+.product-description-img img {
+  vertical-align: top;
 }
 
 .product-description .product-description-compare,
@@ -5405,6 +5410,12 @@ body {
     max-width: 100%;
   }
 
+  .order {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
   .hits-slider {
     margin-right: -15px;
   }
@@ -5831,6 +5842,10 @@ body {
   .history-table-col,
   .history-table-head {
     padding: 10px 20px;
+  }
+
+  .history-table {
+    margin-bottom: 50px;
   }
 
   .footer {

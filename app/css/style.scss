@@ -454,10 +454,14 @@ body {
     &-img {
       display: inline-block;
       position: relative;
+      vertical-align: middle;
       width: 25px;
       height: 25px;
-      top: 15%;
-      left: -6%;
+      margin-right: 13px;
+      bottom: 2px;
+        img  {
+          vertical-align: top;
+        }
     }
     .product-description-compare,
     .product-description-favorite {
