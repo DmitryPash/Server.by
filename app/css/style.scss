@@ -436,24 +436,8 @@ body {
     }
     &-price {
       margin-bottom: 30px;
-      .price-block {
-        display: inline-block;
-        margin-right: 58px;
-        &-title {
-          position: relative;
-          font-size: rem(11px);
-          font-weight: 600;
-        }
-        &-cena {
-          font-size: rem(32px);
-          font-weight: 700;
-          span {
-            font-size: rem(11px);
-            font-weight: 600;
-          }
-        }
       }
-    }
+      
     &-btns {
       margin-bottom: 50px;
     }
@@ -567,6 +551,23 @@ body {
           overflow: hidden;
         }
       }
+    }
+  }
+}
+.price-block {
+  display: inline-block;
+  margin-right: 58px;
+  &-title {
+    position: relative;
+    font-size: rem(11px);
+    font-weight: 600;
+  }
+  &-cena {
+    font-size: rem(32px);
+    font-weight: 700;
+    span {
+      font-size: rem(11px);
+      font-weight: 600;
     }
   }
 }

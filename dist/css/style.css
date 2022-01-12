@@ -1777,27 +1777,6 @@ body {
   margin-bottom: 30px;
 }
 
-.product-description-price .price-block {
-  display: inline-block;
-  margin-right: 58px;
-}
-
-.product-description-price .price-block-title {
-  position: relative;
-  font-size: 0.6875rem;
-  font-weight: 600;
-}
-
-.product-description-price .price-block-cena {
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-.product-description-price .price-block-cena span {
-  font-size: 0.6875rem;
-  font-weight: 600;
-}
-
 .product-description-btns {
   margin-bottom: 50px;
 }
@@ -1933,6 +1912,27 @@ body {
   padding: 8px 0px;
   padding-right: 5px;
   overflow: hidden;
+}
+
+.price-block {
+  display: inline-block;
+  margin-right: 58px;
+}
+
+.price-block-title {
+  position: relative;
+  font-size: 0.6875rem;
+  font-weight: 600;
+}
+
+.price-block-cena {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.price-block-cena span {
+  font-size: 0.6875rem;
+  font-weight: 600;
 }
 
 .description {
