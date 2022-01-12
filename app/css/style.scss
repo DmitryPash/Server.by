@@ -435,24 +435,8 @@ body {
     }
     &-price {
       margin-bottom: 30px;
-      .price-block {
-        display: inline-block;
-        margin-right: 58px;
-        &-title {
-          position: relative;
-          font-size: rem(11px);
-          font-weight: 600;
-        }
-        &-cena {
-          font-size: rem(32px);
-          font-weight: 700;
-          span {
-            font-size: rem(11px);
-            font-weight: 600;
-          }
-        }
       }
-    }
+      
     &-btns {
       margin-bottom: 50px;
     }
@@ -469,10 +453,14 @@ body {
     &-img {
       display: inline-block;
       position: relative;
+      vertical-align: middle;
       width: 25px;
       height: 25px;
-      top: 15%;
-      left: -6%;
+      margin-right: 13px;
+      bottom: 2px;
+        img  {
+          vertical-align: top;
+        }
     }
     .product-description-compare,
     .product-description-favorite {
@@ -566,6 +554,23 @@ body {
           overflow: hidden;
         }
       }
+    }
+  }
+}
+.price-block {
+  display: inline-block;
+  margin-right: 58px;
+  &-title {
+    position: relative;
+    font-size: rem(11px);
+    font-weight: 600;
+  }
+  &-cena {
+    font-size: rem(32px);
+    font-weight: 700;
+    span {
+      font-size: rem(11px);
+      font-weight: 600;
     }
   }
 }
@@ -1016,6 +1021,7 @@ body {
       }
       &-compare {
         display: flex;
+        position: relative;
         align-items: center;
         padding-right: 15px;
         font-weight: 600;
@@ -1823,6 +1829,35 @@ body {
   border-radius: 4px;
 }
 
+.menu-desktop-second::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 33.3%,
+    #d6e3f2 33.3%,
+    #d6e3f2 66.6%,
+    rgba(255, 255, 255, 0) 66.6%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+.menu-desktop-second::-webkit-scrollbar-thumb {
+  width: 8px;
+  height: 5px;
+  background: linear-gradient(
+    104.95deg,
+    #398aea 6.14%,
+    #39a3ea 28.14%,
+    #39c0ea 46.71%,
+    #39c0ea 65.29%,
+    #27a6dd 82.4%,
+    #398aea 100%
+  );
+  border-radius: 4px;
+}
+
+
 .menu-link {
   display: block;
   position: relative;
@@ -2206,9 +2241,6 @@ body {
 // favourites.html
 .favourites {
   margin-bottom: 80px;
-  .catalog-item {
-    border: none;
-  }
 }
 
 .favourites-info .info-block {
@@ -2240,7 +2272,7 @@ body {
   height: 12px;
   background-color: $colorCyan;
   border-radius: 50%;
-  left: 10%;
+  left: 7%;
   bottom: 30%;
   &::after {
     content: "";
@@ -3171,6 +3203,18 @@ body {
 
 .popup-form {
   width: 100%;
+  position: relative;
+  #password-error {
+  position: absolute;
+  bottom: 75px;
+  color: #ff6666;
+}
+
+#email-error {
+  position: absolute;
+  top: 80px;
+  color: #ff6666;
+}
   &-title {
     font-size: rem(12px);
     margin-bottom: 7px;
@@ -3337,3 +3381,9 @@ body {
 .active {
   font-weight: 600;
 }
+
+.error {
+  font-size: rem(12px);
+}
+
+
