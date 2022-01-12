@@ -210,7 +210,7 @@ jQuery.validator.addMethod(
   "Некорректный формат"
 );
 
-$("#accountDate").validate({
+$("#accountData").validate({
   rules: {
     email: {
       required: true,

@@ -1066,7 +1066,7 @@
         <div class="col-menu col-lg-3">
           <div class="main-menu space-between">
             <!-- <a href="#signin-modal" class="main-menu-services" data-href="#zxc"> -->
-            <a class="main-menu-services mfp-link" href="javascript:void(0)" data-href="./signin-model.html">
+            <a class="main-menu-services mfp-link" href="javascript:void(0)" data-href="./popups/signin-model.html">
               <div class="main-menu-services-img services-user"></div>
               <div class="main-menu-services-text">Войти</div>
             </a>
@@ -1142,19 +1142,18 @@
                               </div>
                               <div class="col-6 col-sm-12">
                                  <div class="order-item-price flex valign-center justify-center">
-                                    <div class="order-item-price-num fixprice" data-price="3810.60"><span>РУБ.</span>
+                                    <div class="order-item-price-num fixprice" data-price="3810.60">
+                                       3 810.60 <span>РУБ.</span>
                                     </div>
                                     <div class="item-add-button">
                                        <button class="btn-minus multiplyminus"></button>
                                        <input type="text" class="input" />
                                        <button class="btn-plus multiplyplus"></button>
                                     </div>
-                                    <div class="order-item-price-num multiplyprice"><span>РУБ.</span></div>
+                                    <div class="order-item-price-num multiplyprice">3 810.60 <span>РУБ.</span></div>
                                  </div>
                               </div>
                            </div>
-
-
                            <div class="catalog-toggle"><span></span></div>
                         </div>
                         <div class="order-item">
@@ -1205,22 +1204,22 @@
                            </div>
                            <div class="steps-one-title">Если вы уже зарегистрированы, пожалуйста, <a
                                  class="steps-one-link mfp-link" href="javascript:void(0)"
-                                 data-href="./signin-model.html">авторизуйтесь</a>.</div>
+                                 data-href="./popups/signin-model.html">авторизуйтесь</a>.</div>
                            <div class="steps-one-forms">
-                              <form action="">
+                              <form action="" id="accountData">
                                  <div class="row">
                                     <div class="col-4 col-sm-6 col-us-12">
-                                       <div class="steps-one-forms-title">Ваши имя и фамилия</div>
-                                       <input type="text" class="steps-one-forms-input" placeholder="Иван Иванов">
+                                       <label for="name" class="steps-one-forms-title">Ваши имя и фамилия</label>
+                                       <input type="text" name="name" class="ui-input" placeholder="Иван Иванов">
                                     </div>
                                     <div class="col-4 col-sm-6 col-us-12">
-                                       <div class="steps-one-forms-title">Номер телефона</div>
-                                       <input type="text" class="steps-one-forms-input" id="imask-input"
+                                       <label for="telephone" class="steps-one-forms-title">Номер телефона</label>
+                                       <input name="telephone" type="text" class="ui-input" id="imask-input"
                                           placeholder="+ххх(хх)ххх-хх-хх">
                                     </div>
                                     <div class="col-4 col-sm-12 col-us-12">
-                                       <div class="steps-one-forms-title">Ваш email</div>
-                                       <input type="text" class="steps-one-forms-input" placeholder="example@yandex.ru">
+                                       <label for="email" class="steps-one-forms-title">Ваш email</label>
+                                       <input name="email" type="text" class="ui-input" placeholder="example@yandex.ru">
                                     </div>
                                  </div>
 
@@ -1254,8 +1253,6 @@
                                     <a href="#" class="description-card-text-link">Узнать больше</a>
                                  </div>
                                  <div class="round">
-                                    <!-- <input type="checkbox" id="checkbox" />
-                                    <label for="checkbox" class="labelForBorder"></label> -->
                                     <div class="roundclick"></div>
                                  </div>
                               </div>
@@ -1289,24 +1286,28 @@
                            <form class="steps-two-form">
                               <div class="row">
                                  <div class="col-6 col-xs-12">
-                                    <div class="steps-two-forms-title">Улица, дом, корпус</div>
-                                    <input type="text" class="steps-two-forms-input" placeholder="Пр-т Речицкий, 124">
+                                    <label for="house" class="steps-two-forms-title">Улица, дом, корпус</label>
+                                    <input name="house" type="text" class="steps-two-forms-input ui-input"
+                                       placeholder="Пр-т Речицкий, 124">
                                  </div>
                                  <div class="col-2 col-xs-4">
-                                    <div class="steps-two-forms-title">Подъезд</div>
-                                    <input type="text" class="steps-two-forms-input" placeholder="2">
+                                    <label for="entrance" class="steps-two-forms-title">Подъезд</label>
+                                    <input name="entrance" type="text" class="steps-two-forms-input ui-input"
+                                       placeholder="2">
                                  </div>
                                  <div class="col-2 col-xs-4">
-                                    <div class="steps-two-forms-title">Этаж</div>
-                                    <input type="text" class="steps-two-forms-input" placeholder="2">
+                                    <label for="floor" class="steps-two-forms-title">Этаж</label>
+                                    <input name="floot" type="text" class="steps-two-forms-input ui-input"
+                                       placeholder="2">
                                  </div>
                                  <div class="col-2 col-xs-4">
-                                    <div class="steps-two-forms-title">Квартира</div>
-                                    <input type="text" class="steps-two-forms-input" placeholder="18">
+                                    <label for="appartment" class="steps-two-forms-title">Квартира</label>
+                                    <input name="appartment" type="text" class="steps-two-forms-input ui-input"
+                                       placeholder="18">
                                  </div>
                                  <div class="col-12">
-                                    <div class="steps-two-forms-title">Дополнительный комментарий</div>
-                                    <textarea class="steps-two-forms-textarea" rows="4" cols="50"
+                                    <label for="text" class="steps-two-forms-title">Дополнительный комментарий</label>
+                                    <textarea name="text" class="steps-two-forms-textarea" rows="4" cols="50"
                                        placeholder="Код от домофона, время доставки и т.д."></textarea>
                                  </div>
                               </div>
@@ -1351,8 +1352,6 @@
                                     </div>
                                  </div>
                                  <div class="round">
-                                    <!-- <input type="checkbox" id="checkbox" />
-                                    <label for="checkbox" class="labelForBorder"></label> -->
                                     <div class="roundclick"></div>
                                  </div>
                               </div>
@@ -1410,9 +1409,7 @@
 
                                           Вам будет отправлен счет/договор на указанный e-mail. Цена по безналичному
                                           расчету может отличаться от цены на сайте.</div>
-
                                     </div>
-
 
                                  </div>
                                  <div class="round">
@@ -1420,6 +1417,9 @@
                                  </div>
                               </div>
                            </div>
+                           <div class="steps-two-forms-title">Реквизиты компании<span class="alert">*</span></div>
+                           <textarea class="steps-two-forms-textarea" rows="4" cols="50"
+                              placeholder="ФИО руководителя, основание, юридически и почтовый адрес, УНП, расчетный счет и др."></textarea>
                         </div>
                      </div>
                   </div>
@@ -1656,7 +1656,7 @@
       </div>
       <div class="mobile-nav-menu-services-text">Поиск</div>
    </a>
-   <a href="javascript:void(0)" data-href="./signin-model.html" class="mobile-nav-menu-services mfp-link">
+   <a href="javascript:void(0)" data-href="./popups/signin-model.html" class="mobile-nav-menu-services mfp-link">
       <div class="mobile-nav-menu-services-img user-mob">
       </div>
       <div class="mobile-nav-menu-services-text">Войти</div>
