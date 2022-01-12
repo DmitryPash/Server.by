@@ -37,52 +37,54 @@
             <div class="favourites">
                <div class="row">
                   <div class="col-filter-22 col-md-12">
-                     <div class="favourites-info">
-                        <div class="info-block">
-                           <div class="info-title">Личный кабинет</div>
-                           <ul>
-                              <li><a href="#">Личные данные</a></li>
-                              <li><a href="#">История заказов</a></li>
-                              <li><a href="#">Избранное</a></li>
-                              <li><a href="#">Выйти</a></li>
-                           </ul>
-                        </div>
+                     <div class="info-block">
+                        <div class="info-title">Личный кабинет</div>
+                        <ul>
+                           <li><a href="#" class="info-block-link ">Личные данные</a></li>
+                           <li><a href="#" class="info-block-link">История заказов</a></li>
+                           <li><a href="#" class="info-block-link active">Избранное</a></li>
+                           <li>
+                              <a href="#">
+                                 <img src="./images/icons/Крестик для иконки.svg" alt="alt">Выйти
+                              </a>
+                           </li>
+                        </ul>
                      </div>
-
                   </div>
                   <div class="col-filter-78 col-md-12">
                      <div class="catalog">
-                        <div class="catalog-item">
-                           <div class="catalog-marker">ХИТ ПРОДАЖ</div>
+                        <div class="catalog-item ">
+                           <div class="catalog-marker catalog-marker-green">ХИТ ПРОДАЖ</div>
                            <div class="catalog-item-img">
                               <a href="#">
-                                 <img src="./images/rog strix.png" alt="alt" />
+                                 <a href="#"><img src="./images/rog strix.png" alt="alt" /></a>
                               </a>
                               <div class="catalog-item-features">
-
                                  <a href="#" class="catalog-item-features-compare">
-                                    <img src="./images/icons/Сравнение.png" alt="alt" />
+                                    <img src="./images/icons/Сравнение.svg" alt="alt" />
                                     В сравнение</a>
 
-                                 <a href="#" class="catalog-item-features-compare favourites-like">
+                                 <a href="#" class="catalog-item-features-compare">
                                     <div class="toggle-product"><span></span></div>
-                                    <img src="./images/icons/heart.svg" alt="alt">
-                                    Убрать
+                                    <img src="./images/icons/like.svg" alt="alt" />
+                                    В избранное
                                  </a>
                               </div>
                            </div>
                            <div class="catalog-item-description">
-                              <a href="#" class="catalog-item-description-title">
+                              <a href="#" class="catalog-item-title">
                                  Lenovo IdeaPad L340-15API 81LW0086RK
                               </a>
-                              <div class="catalog-item-description-articule">
-                                 <div class="catalog-item-description-number">КОД ТОВАРА: QD0095719</div>
-                                 <div class="catalog-item-description-in_stock">
-                                    <img src="./images/icons/accept.png" alt="alt" />
+                              <div class="catalog-item-articule">
+                                 <div class="catalog-item-number">
+                                    КОД ТОВАРА: QD0095719
+                                 </div>
+                                 <div class="catalog-item-in_stock">
+                                    <img src="./images/icons/accept.svg" alt="alt" />
                                     В НАЛИЧИИ
                                  </div>
                               </div>
-                              <table>
+                              <table class="catalog-item-table">
                                  <tbody>
                                     <tr>
                                        <td>
@@ -103,7 +105,9 @@
                                     <tr>
                                        <td>
                                           <div class="dots">
-                                             <div class="dots-clear">Оперативная память (RAM)</div>
+                                             <div class="dots-clear">
+                                                Оперативная память (RAM)
+                                             </div>
                                           </div>
                                        </td>
                                        <td>16 ГБ</td>
@@ -111,7 +115,9 @@
                                     <tr>
                                        <td>
                                           <div class="dots">
-                                             <div class="dots-clear">Графический контроллер</div>
+                                             <div class="dots-clear">
+                                                Графический контроллер
+                                             </div>
                                           </div>
                                        </td>
                                        <td>GeForce RTX 3060 6GB</td>
@@ -127,39 +133,38 @@
                                  </tbody>
                               </table>
                            </div>
-                           <div class="catalog-description">
-
-                              <div class="catalog-description-first_price">
-                                 <div class="catalog-description-title cyan">
+                           <div class="catalog-info">
+                              <div class="catalog-info-first_price">
+                                 <div class="catalog-info-title cyan">
                                     С КАРТОЙ «СЕРВЕР»
-                                    <span class="help"><i class="far fa-question-circle"></i></span>
+                                    <a href="#" class="help cyan"><i class="far fa-question-circle"></i></a>
                                  </div>
-                                 <div class="catalog-description-price cyan">
+                                 <div class="catalog-info-price cyan">
                                     2 480.00 <span>РУБ.</span>
                                  </div>
                               </div>
-                              <div class="catalog-description-second_price">
-                                 <div class="catalog-description-title">
+                              <div class="catalog-info-second_price">
+                                 <div class="catalog-info-title">
                                     С КАРТОЙ «СЕРВЕР»
-                                    <span class="help"><i class="far fa-question-circle"></i></span>
+                                    <a href="#" class="help"><i class="far fa-question-circle"></i></a>
                                  </div>
-                                 <div class="catalog-description-price">
+                                 <div class="catalog-info-price">
                                     2 480.00 <span>РУБ.</span>
                                  </div>
                               </div>
 
-                              <div class="catalog-description-btns">
-                                 <a href="#" class="catalog-description-btn ui-btn">
+                              <div class="catalog-info-btns">
+                                 <a href="#" class="catalog-info-btn ui-btn">
                                     <div href="#" class="product-description-img">
                                        <img src="./images/icons/cart-btn.svg" alt="alt" />
                                     </div>
                                     В корзину
                                  </a>
-                                 <a href="#" class="catalog-description-compare">
-                                    <img src="./images/icons/mob-compare.png" alt="alt" />
+                                 <a href="#" class="catalog-info-compare">
+                                    <img src="./images/icons/mob-compare.svg" alt="alt" />
                                  </a>
-                                 <a href="#" class="catalog-description-favorite">
-                                    <img src="./images/icons/mob-like.png" alt="alt" />
+                                 <a href="#" class="catalog-info-favorite">
+                                    <img src="./images/icons/mob-like.svg" alt="alt" />
                                  </a>
                               </div>
                            </div>
@@ -167,37 +172,38 @@
                         </div>
                      </div>
                      <div class="catalog">
-                        <div class="catalog-item">
-                           <div class="catalog-marker green">новинка</div>
+                        <div class="catalog-item ">
+                           <div class="catalog-marker catalog-marker-green">ХИТ ПРОДАЖ</div>
                            <div class="catalog-item-img">
                               <a href="#">
-                                 <img src="./images/rog strix.png" alt="alt" />
+                                 <a href="#"><img src="./images/rog strix.png" alt="alt" /></a>
                               </a>
                               <div class="catalog-item-features">
-
                                  <a href="#" class="catalog-item-features-compare">
-                                    <img src="./images/icons/Сравнение.png" alt="alt" />
+                                    <img src="./images/icons/Сравнение.svg" alt="alt" />
                                     В сравнение</a>
 
-                                 <a href="#" class="catalog-item-features-compare favourites-like">
+                                 <a href="#" class="catalog-item-features-compare">
                                     <div class="toggle-product"><span></span></div>
-                                    <img src="./images/icons/heart.svg" alt="alt">
-                                    Убрать
+                                    <img src="./images/icons/like.svg" alt="alt" />
+                                    В избранное
                                  </a>
                               </div>
                            </div>
                            <div class="catalog-item-description">
-                              <a href="#" class="catalog-item-description-title">
-                                 Acer Aspire 3 A315-22-44UQ NX.HE8EU.00Z
+                              <a href="#" class="catalog-item-title">
+                                 Lenovo IdeaPad L340-15API 81LW0086RK
                               </a>
-                              <div class="catalog-item-description-articule">
-                                 <div class="catalog-item-description-number">КОД ТОВАРА: QD0095719</div>
-                                 <div class="catalog-item-description-in_stock">
-                                    <img src="./images/icons/accept.png" alt="alt" />
+                              <div class="catalog-item-articule">
+                                 <div class="catalog-item-number">
+                                    КОД ТОВАРА: QD0095719
+                                 </div>
+                                 <div class="catalog-item-in_stock">
+                                    <img src="./images/icons/accept.svg" alt="alt" />
                                     В НАЛИЧИИ
                                  </div>
                               </div>
-                              <table>
+                              <table class="catalog-item-table">
                                  <tbody>
                                     <tr>
                                        <td>
@@ -218,7 +224,9 @@
                                     <tr>
                                        <td>
                                           <div class="dots">
-                                             <div class="dots-clear">Оперативная память (RAM)</div>
+                                             <div class="dots-clear">
+                                                Оперативная память (RAM)
+                                             </div>
                                           </div>
                                        </td>
                                        <td>16 ГБ</td>
@@ -226,7 +234,9 @@
                                     <tr>
                                        <td>
                                           <div class="dots">
-                                             <div class="dots-clear">Графический контроллер</div>
+                                             <div class="dots-clear">
+                                                Графический контроллер
+                                             </div>
                                           </div>
                                        </td>
                                        <td>GeForce RTX 3060 6GB</td>
@@ -242,39 +252,38 @@
                                  </tbody>
                               </table>
                            </div>
-                           <div class="catalog-description">
-
-                              <div class="catalog-description-first_price">
-                                 <div class="catalog-description-title cyan">
+                           <div class="catalog-info">
+                              <div class="catalog-info-first_price">
+                                 <div class="catalog-info-title cyan">
                                     С КАРТОЙ «СЕРВЕР»
-                                    <span class="help"><i class="far fa-question-circle"></i></span>
+                                    <a href="#" class="help cyan"><i class="far fa-question-circle"></i></a>
                                  </div>
-                                 <div class="catalog-description-price cyan">
-                                    3 514.00 <span>РУБ.</span>
+                                 <div class="catalog-info-price cyan">
+                                    2 480.00 <span>РУБ.</span>
                                  </div>
                               </div>
-                              <div class="catalog-description-second_price">
-                                 <div class="catalog-description-title">
+                              <div class="catalog-info-second_price">
+                                 <div class="catalog-info-title">
                                     С КАРТОЙ «СЕРВЕР»
-                                    <span class="help"><i class="far fa-question-circle"></i></span>
+                                    <a href="#" class="help"><i class="far fa-question-circle"></i></a>
                                  </div>
-                                 <div class="catalog-description-price">
-                                    3 810.60 <span>РУБ.</span>
+                                 <div class="catalog-info-price">
+                                    2 480.00 <span>РУБ.</span>
                                  </div>
                               </div>
 
-                              <div class="catalog-description-btns">
-                                 <a href="#" class="catalog-description-btn ui-btn">
+                              <div class="catalog-info-btns">
+                                 <a href="#" class="catalog-info-btn ui-btn">
                                     <div href="#" class="product-description-img">
                                        <img src="./images/icons/cart-btn.svg" alt="alt" />
                                     </div>
                                     В корзину
                                  </a>
-                                 <a href="#" class="catalog-description-compare">
-                                    <img src="./images/icons/mob-compare.png" alt="alt" />
+                                 <a href="#" class="catalog-info-compare">
+                                    <img src="./images/icons/mob-compare.svg" alt="alt" />
                                  </a>
-                                 <a href="#" class="catalog-description-favorite">
-                                    <img src="./images/icons/mob-like.png" alt="alt" />
+                                 <a href="#" class="catalog-info-favorite">
+                                    <img src="./images/icons/mob-like.svg" alt="alt" />
                                  </a>
                               </div>
                            </div>
@@ -282,37 +291,38 @@
                         </div>
                      </div>
                      <div class="catalog">
-                        <div class="catalog-item">
-                           <div class="catalog-marker">ХИТ ПРОДАЖ</div>
+                        <div class="catalog-item ">
+                           <div class="catalog-marker catalog-marker-green">ХИТ ПРОДАЖ</div>
                            <div class="catalog-item-img">
                               <a href="#">
-                                 <img src="./images/rog strix.png" alt="alt" />
+                                 <a href="#"><img src="./images/rog strix.png" alt="alt" /></a>
                               </a>
                               <div class="catalog-item-features">
-
                                  <a href="#" class="catalog-item-features-compare">
-                                    <img src="./images/icons/Сравнение.png" alt="alt" />
+                                    <img src="./images/icons/Сравнение.svg" alt="alt" />
                                     В сравнение</a>
 
-                                 <a href="#" class="catalog-item-features-compare favourites-like">
+                                 <a href="#" class="catalog-item-features-compare">
                                     <div class="toggle-product"><span></span></div>
-                                    <img src="./images/icons/heart.svg" alt="alt">
-                                    Убрать
+                                    <img src="./images/icons/like.svg" alt="alt" />
+                                    В избранное
                                  </a>
                               </div>
                            </div>
                            <div class="catalog-item-description">
-                              <a href="#" class="catalog-item-description-title">
-                                 HP 240 G7 175S1EA
+                              <a href="#" class="catalog-item-title">
+                                 Lenovo IdeaPad L340-15API 81LW0086RK
                               </a>
-                              <div class="catalog-item-description-articule">
-                                 <div class="catalog-item-description-number">КОД ТОВАРА: QD0095719</div>
-                                 <div class="catalog-item-description-in_stock">
-                                    <img src="./images/icons/accept.png" alt="alt" />
+                              <div class="catalog-item-articule">
+                                 <div class="catalog-item-number">
+                                    КОД ТОВАРА: QD0095719
+                                 </div>
+                                 <div class="catalog-item-in_stock">
+                                    <img src="./images/icons/accept.svg" alt="alt" />
                                     В НАЛИЧИИ
                                  </div>
                               </div>
-                              <table>
+                              <table class="catalog-item-table">
                                  <tbody>
                                     <tr>
                                        <td>
@@ -333,7 +343,9 @@
                                     <tr>
                                        <td>
                                           <div class="dots">
-                                             <div class="dots-clear">Оперативная память (RAM)</div>
+                                             <div class="dots-clear">
+                                                Оперативная память (RAM)
+                                             </div>
                                           </div>
                                        </td>
                                        <td>16 ГБ</td>
@@ -341,7 +353,9 @@
                                     <tr>
                                        <td>
                                           <div class="dots">
-                                             <div class="dots-clear">Графический контроллер</div>
+                                             <div class="dots-clear">
+                                                Графический контроллер
+                                             </div>
                                           </div>
                                        </td>
                                        <td>GeForce RTX 3060 6GB</td>
@@ -357,39 +371,38 @@
                                  </tbody>
                               </table>
                            </div>
-                           <div class="catalog-description">
-
-                              <div class="catalog-description-first_price">
-                                 <div class="catalog-description-title cyan">
+                           <div class="catalog-info">
+                              <div class="catalog-info-first_price">
+                                 <div class="catalog-info-title cyan">
                                     С КАРТОЙ «СЕРВЕР»
-                                    <span class="help"><i class="far fa-question-circle"></i></span>
+                                    <a href="#" class="help cyan"><i class="far fa-question-circle"></i></a>
                                  </div>
-                                 <div class="catalog-description-price cyan">
+                                 <div class="catalog-info-price cyan">
                                     2 480.00 <span>РУБ.</span>
                                  </div>
                               </div>
-                              <div class="catalog-description-second_price">
-                                 <div class="catalog-description-title">
+                              <div class="catalog-info-second_price">
+                                 <div class="catalog-info-title">
                                     С КАРТОЙ «СЕРВЕР»
-                                    <span class="help"><i class="far fa-question-circle"></i></span>
+                                    <a href="#" class="help"><i class="far fa-question-circle"></i></a>
                                  </div>
-                                 <div class="catalog-description-price">
+                                 <div class="catalog-info-price">
                                     2 480.00 <span>РУБ.</span>
                                  </div>
                               </div>
 
-                              <div class="catalog-description-btns">
-                                 <a href="#" class="catalog-description-btn ui-btn">
+                              <div class="catalog-info-btns">
+                                 <a href="#" class="catalog-info-btn ui-btn">
                                     <div href="#" class="product-description-img">
                                        <img src="./images/icons/cart-btn.svg" alt="alt" />
                                     </div>
                                     В корзину
                                  </a>
-                                 <a href="#" class="catalog-description-compare">
-                                    <img src="./images/icons/mob-compare.png" alt="alt" />
+                                 <a href="#" class="catalog-info-compare">
+                                    <img src="./images/icons/mob-compare.svg" alt="alt" />
                                  </a>
-                                 <a href="#" class="catalog-description-favorite">
-                                    <img src="./images/icons/mob-like.png" alt="alt" />
+                                 <a href="#" class="catalog-info-favorite">
+                                    <img src="./images/icons/mob-like.svg" alt="alt" />
                                  </a>
                               </div>
                            </div>
@@ -397,37 +410,38 @@
                         </div>
                      </div>
                      <div class="catalog">
-                        <div class="catalog-item">
-                           <div class="catalog-marker">ХИТ ПРОДАЖ</div>
+                        <div class="catalog-item ">
+                           <div class="catalog-marker catalog-marker-green">ХИТ ПРОДАЖ</div>
                            <div class="catalog-item-img">
                               <a href="#">
-                                 <img src="./images/rog strix.png" alt="alt" />
+                                 <a href="#"><img src="./images/rog strix.png" alt="alt" /></a>
                               </a>
                               <div class="catalog-item-features">
-
                                  <a href="#" class="catalog-item-features-compare">
-                                    <img src="./images/icons/Сравнение.png" alt="alt" />
+                                    <img src="./images/icons/Сравнение.svg" alt="alt" />
                                     В сравнение</a>
 
-                                 <a href="#" class="catalog-item-features-compare favourites-like">
+                                 <a href="#" class="catalog-item-features-compare">
                                     <div class="toggle-product"><span></span></div>
-                                    <img src="./images/icons/heart.svg" alt="alt">
-                                    Убрать
+                                    <img src="./images/icons/like.svg" alt="alt" />
+                                    В избранное
                                  </a>
                               </div>
                            </div>
                            <div class="catalog-item-description">
-                              <a href="#" class="catalog-item-description-title">
-                                 HP 240 G7 175S1EA
+                              <a href="#" class="catalog-item-title">
+                                 Lenovo IdeaPad L340-15API 81LW0086RK
                               </a>
-                              <div class="catalog-item-description-articule">
-                                 <div class="catalog-item-description-number">КОД ТОВАРА: QD0095719</div>
-                                 <div class="catalog-item-description-in_stock">
-                                    <img src="./images/icons/accept.png" alt="alt" />
+                              <div class="catalog-item-articule">
+                                 <div class="catalog-item-number">
+                                    КОД ТОВАРА: QD0095719
+                                 </div>
+                                 <div class="catalog-item-in_stock">
+                                    <img src="./images/icons/accept.svg" alt="alt" />
                                     В НАЛИЧИИ
                                  </div>
                               </div>
-                              <table>
+                              <table class="catalog-item-table">
                                  <tbody>
                                     <tr>
                                        <td>
@@ -448,7 +462,9 @@
                                     <tr>
                                        <td>
                                           <div class="dots">
-                                             <div class="dots-clear">Оперативная память (RAM)</div>
+                                             <div class="dots-clear">
+                                                Оперативная память (RAM)
+                                             </div>
                                           </div>
                                        </td>
                                        <td>16 ГБ</td>
@@ -456,7 +472,9 @@
                                     <tr>
                                        <td>
                                           <div class="dots">
-                                             <div class="dots-clear">Графический контроллер</div>
+                                             <div class="dots-clear">
+                                                Графический контроллер
+                                             </div>
                                           </div>
                                        </td>
                                        <td>GeForce RTX 3060 6GB</td>
@@ -472,45 +490,45 @@
                                  </tbody>
                               </table>
                            </div>
-                           <div class="catalog-description">
-
-                              <div class="catalog-description-first_price">
-                                 <div class="catalog-description-title cyan">
+                           <div class="catalog-info">
+                              <div class="catalog-info-first_price">
+                                 <div class="catalog-info-title cyan">
                                     С КАРТОЙ «СЕРВЕР»
-                                    <span class="help"><i class="far fa-question-circle"></i></span>
+                                    <a href="#" class="help cyan"><i class="far fa-question-circle"></i></a>
                                  </div>
-                                 <div class="catalog-description-price cyan">
-                                    2 950.00 <span>РУБ.</span>
+                                 <div class="catalog-info-price cyan">
+                                    2 480.00 <span>РУБ.</span>
                                  </div>
                               </div>
-                              <div class="catalog-description-second_price">
-                                 <div class="catalog-description-title">
+                              <div class="catalog-info-second_price">
+                                 <div class="catalog-info-title">
                                     С КАРТОЙ «СЕРВЕР»
-                                    <span class="help"><i class="far fa-question-circle"></i></span>
+                                    <a href="#" class="help"><i class="far fa-question-circle"></i></a>
                                  </div>
-                                 <div class="catalog-description-price">
-                                    3 240.00 <span>РУБ.</span>
+                                 <div class="catalog-info-price">
+                                    2 480.00 <span>РУБ.</span>
                                  </div>
                               </div>
 
-                              <div class="catalog-description-btns">
-                                 <a href="#" class="catalog-description-btn ui-btn">
+                              <div class="catalog-info-btns">
+                                 <a href="#" class="catalog-info-btn ui-btn">
                                     <div href="#" class="product-description-img">
                                        <img src="./images/icons/cart-btn.svg" alt="alt" />
                                     </div>
                                     В корзину
                                  </a>
-                                 <a href="#" class="catalog-description-compare">
-                                    <img src="./images/icons/mob-compare.png" alt="alt" />
+                                 <a href="#" class="catalog-info-compare">
+                                    <img src="./images/icons/mob-compare.svg" alt="alt" />
                                  </a>
-                                 <a href="#" class="catalog-description-favorite">
-                                    <img src="./images/icons/mob-like.png" alt="alt" />
+                                 <a href="#" class="catalog-info-favorite">
+                                    <img src="./images/icons/mob-like.svg" alt="alt" />
                                  </a>
                               </div>
                            </div>
                            <div class="catalog-toggle"><span></span></div>
                         </div>
                      </div>
+
                   </div>
 
                </div>
