@@ -599,7 +599,6 @@ textarea {
   padding: 0px 20px;
   border: 1px solid #e5edf7;
   border-radius: 4px;
-  margin-top: 7px;
 }
 
 .ui-input::-webkit-input-placeholder {
@@ -1374,7 +1373,7 @@ body {
   text-align: center;
 }
 
-.account-data-input-form label:nth-of-type(2) {
+.ui-field label:nth-of-type(2) {
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
@@ -3017,7 +3016,6 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
-  padding-bottom: 100px;
   margin: 0 auto;
 }
 
@@ -3120,11 +3118,15 @@ body {
   border-radius: 4px;
   font-size: 0.6875rem;
   color: #ffffff;
-  background-color: #398aea;
+  background-color: #2963cb;
 }
 
 .news-pagination img {
   cursor: pointer;
+}
+
+.pagination {
+  margin-bottom: 100px;
 }
 
 .article img {
@@ -3819,7 +3821,7 @@ body {
 
 .search-prod-cards {
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
   padding-right: 8px;
   padding-left: 8px;
 }
@@ -4063,13 +4065,14 @@ body {
   margin-bottom: 30px;
 }
 
-.account-data-input-title {
+.ui-field-title {
+  display: inline-block;
   margin-bottom: 7px;
   font-size: 12px;
   line-height: 15px;
 }
 
-.account-data-input-form {
+.ui-field {
   width: 100%;
   margin-right: 30px;
   margin-bottom: 20px;
@@ -5065,7 +5068,7 @@ body {
 }
 
 .alert {
-  color: #C70529;
+  color: #c70529;
 }
 
 @media (max-width: 1330px) {
