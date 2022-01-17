@@ -979,6 +979,7 @@ body {
   }
 }
 .catalog {
+  margin-bottom: 20px;
   &-item {
     display: inline-block;
     position: relative;
@@ -1457,6 +1458,7 @@ body {
   }
 }
 .news {
+  margin-bottom: 40px;
   &-card {
     display: flex;
     margin-bottom: 30px;
@@ -2371,7 +2373,6 @@ body {
     ul li:last-child {
       position: relative;
       transition: 0.3s ease;
-
       &:hover .toggle-product {
         display: block;
       }
@@ -2397,6 +2398,14 @@ body {
 // account.html
 // .account {
 // }
+.info-block-exit {
+  ul li:last-child {
+    padding-left: 15px;
+    a {
+      color: $colorSilver;
+    }
+  }
+}
 .info-block {
   ul li {
     &:hover {
@@ -2407,11 +2416,10 @@ body {
     position: relative;
     transition: 0.3s ease;
     padding-bottom: 0;
-    padding-left: 15px;
-
+    // padding-left: 15px;
     a {
       font-size: rem(14px);
-      color: $colorSilver;
+      // color: $colorSilver;
       img {
         position: absolute;
         left: 0;

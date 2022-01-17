@@ -2407,6 +2407,10 @@ body {
   margin-left: auto;
 }
 
+.catalog {
+  margin-bottom: 20px;
+}
+
 .catalog-item {
   display: inline-block;
   position: relative;
@@ -2945,6 +2949,10 @@ body {
   padding-bottom: 15px;
   font-size: 1rem;
   font-weight: 700;
+}
+
+.news {
+  margin-bottom: 40px;
 }
 
 .news-card {
@@ -4008,6 +4016,14 @@ body {
   bottom: 45%;
 }
 
+.info-block-exit ul li:last-child {
+  padding-left: 15px;
+}
+
+.info-block-exit ul li:last-child a {
+  color: #647b98;
+}
+
 .info-block ul li:hover {
   text-decoration: underline;
 }
@@ -4018,12 +4034,10 @@ body {
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
   padding-bottom: 0;
-  padding-left: 15px;
 }
 
 .info-block ul li:last-child a {
   font-size: 0.875rem;
-  color: #647b98;
 }
 
 .info-block ul li:last-child a img {
