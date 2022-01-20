@@ -7,7 +7,7 @@ input.forEach((element) => {
   };
 });
 input.forEach((element) => {
-  element.value = 0;
+  element.value = 1;
 });
 plus = (input) => {
   return () => {
@@ -16,7 +16,7 @@ plus = (input) => {
 };
 minus = (input) => {
   return () => {
-    input.value > 0 ? input.value-- : false;
+    input.value > 1 ? input.value-- : false;
   };
 };
 
@@ -27,3 +27,31 @@ inputBtns.forEach((element) => {
   minusBtn.addEventListener("click", minus(inputForm));
   plusBtn.addEventListener("click", plus(inputForm));
 });
+
+let block = document.querySelectorAll(".order-item-price");
+let calcPrice = document.querySelector(".qwe");
+let buttonPlus = document.querySelector(".zxc");
+// console.log(calcPrice.dataset.price);
+block.forEach((element) => {
+  element.querySelector(
+    ".qwe"
+  ).innerHTML = `${calcPrice.dataset.price} <span>РУБ.</span>`;
+});
+
+buttonPlus.onclick = () => {
+  let num = Number(calcPrice.dataset.price);
+  let inputValueBtn = document.querySelector(".input");
+  num = num * inputValueBtn.value;
+  let str = String(num);
+  calcPrice.innerHTML = `${str} <span>РУБ.</span>`;
+};
+// block.forEach((element) => {
+//   element.querySelector(".zxc").addEventListener("click", () => {
+//     let calcPrice = document.querySelector(".qwe");
+//     let num = Number(calcPrice.dataset.price);
+//     let inputValueBtn = document.querySelector(".input");
+//     num = num * inputValueBtn.value;
+//     let str = String(num);
+//     calcPrice.innerHTML = `${str} <span>РУБ.</span>`;
+//   });
+// });
