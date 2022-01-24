@@ -95,12 +95,43 @@
     font-size: rem(28px);
   }
 }
+@media (max-width: 1010px) {
+  .calculator-table {
+    .calculator-table-bottom {
+      td {
+        // &:nth-of-type(3) {
+        //   width: 20%;
+        // }
+        &:nth-of-type(2) {
+          font-size: 10px;
+        }
+        padding-left: 15px;
+        font-size: 14px;
+        span {
+          font-size: 8px;
+        }
+        td:nth-of-type(2) {
+          font-size: 8px;
+        }
+      }
+    }
+    .calculator-table-top {
+      th {
+        padding-left: 15px;
+      }
+    }
+  }
+}
 @media (max-width: 992px) {
   //Global
   .order {
     order: 2;
   }
-
+  .calculator-table {
+    table {
+      margin-bottom: 20px;
+    }
+  }
   .hits-slider {
     margin-right: -15px;
   }

@@ -120,11 +120,7 @@ body {
   display: flex;
   color: #ff6666;
 }
-// .ui-field label:nth-of-type(2) {
-//   align-items: baseline;
-//   padding-top: 5px;
-//   color: #ff6666;
-// }
+
 [data-tooltip]::after {
   content: attr(data-tooltip);
   position: absolute;
@@ -2963,7 +2959,7 @@ body {
     }
   }
   &-input {
-    // margin-bottom: 40px;
+    margin-bottom: 40px;
   }
 
   &-email {
@@ -3219,24 +3215,21 @@ body {
     }
   }
 }
-
 .popup-form {
   width: 100%;
   position: relative;
-  span {
-    margin-bottom: 40px;
-  }
-  // #password-error {
-  //   position: absolute;
-  //   bottom: 70px;
-  //   color: #ff6666;
-  // }
 
-  // #email-error {
-  //   position: absolute;
-  //   top: 80px;
-  //   color: #ff6666;
-  // }
+  span:nth-of-type(1) {
+    position: absolute;
+    bottom: 70px;
+    color: #ff6666;
+  }
+
+  span:nth-of-type(2) {
+    position: absolute;
+    top: 80px;
+    color: #ff6666;
+  }
   &-title {
     font-size: rem(12px);
     margin-bottom: 7px;
@@ -3248,11 +3241,23 @@ body {
     }
   }
 }
+// ??????????????????????
+// класс error вешается и на инпут
+.popup-registration-form {
+  position: relative;
+  span:nth-of-type(1) {
+    position: absolute;
+    bottom: 150px;
+    color: #ff6666;
+  }
+}
 
 .popup-modal-dismiss {
   background: black;
 }
-
+.mfp-content {
+  margin-top: 20px;
+}
 .mfp-close-btn-in .mfp-close {
   background: #398aea;
   border-radius: 50%;
@@ -3424,7 +3429,7 @@ body {
   line-height: 40px;
   width: 80px;
   height: 40px;
-  border: 1px solid #d6e3f2;
+  border: 2px solid #d6e3f2;
   color: #647b98;
   font-size: 12px;
   cursor: pointer;
@@ -3439,7 +3444,7 @@ body {
   line-height: 40px;
   width: 80px;
   height: 40px;
-  border: 1px solid #d6e3f2;
+  border: 2px solid #d6e3f2;
   color: #647b98;
   // white-space: nowrap;
   // overflow: hidden;
@@ -3455,6 +3460,7 @@ body {
   display: none;
 }
 .calculator {
+  margin-top: 20px;
   background-color: #ffffff;
   margin: 0 auto;
   width: min(1058px, 100%);
@@ -3464,6 +3470,11 @@ body {
   padding-right: 65px;
   padding-bottom: 70px;
   &-table {
+    border-top: 1px solid #d6e3f2;
+    padding-top: 10px;
+    &-bottom {
+      height: 60px;
+    }
     tr th {
       padding-left: 20px;
       padding-bottom: 10px;
@@ -3473,23 +3484,21 @@ body {
     tr td {
       vertical-align: inherit;
       padding-left: 20px;
-
       font-weight: 600;
-      font-size: 18px;
+      font-size: rem(18px);
+      span {
+        font-size: rem(10px);
+      }
     }
-    tr:nth-of-type(2) {
-      padding-top: 17px;
-      padding-bottom: 17px;
-      // padding-right: 50px;
-      // border-right: 1px solid #d6e3f2;
-    }
+
     tr td:nth-of-type(1) {
       padding-right: 50px;
       border-right: 1px solid #d6e3f2;
     }
+    tr td:nth-of-type(3) {
+    }
     tr td:nth-of-type(2) {
-      // font-weight: 600;
-      font-size: 12px;
+      font-size: rem(12px);
     }
     table td {
       border-top: 0.5px solid #398aea;
@@ -3507,7 +3516,7 @@ body {
   &-instalment {
     &-title {
       margin-bottom: 25px;
-      font-size: 18px;
+      font-size: rem(18px);
       font-weight: 600;
       span {
         padding-left: 5px;
@@ -3518,7 +3527,7 @@ body {
     &-btn {
       display: inline-block;
       margin-right: 12px;
-      font-size: 12px;
+      font-size: rem(12px);
       margin-bottom: 8px;
     }
     &-btns {
@@ -3533,7 +3542,7 @@ body {
       display: inline-block;
       margin-bottom: 10px;
       margin-left: 8px;
-      font-size: 10px;
+      font-size: rem(10px);
       color: #647b98;
     }
     input {
@@ -3543,7 +3552,7 @@ body {
     }
     label {
       margin-right: 47px;
-      font-size: 18px;
+      font-size: rem(18px);
       color: #647b98;
       border-bottom: 3px dotted #647b98;
     }
@@ -3559,11 +3568,11 @@ body {
     }
     &-title {
       margin-bottom: 25px;
-      font-size: 18px;
+      font-size: rem(18px);
       font-weight: 600;
       span {
         padding-left: 5px;
-        font-size: 12px;
+        font-size: rem(12px);
         color: #647b98;
       }
     }
@@ -3572,7 +3581,7 @@ body {
   &-title {
     padding-bottom: 25px;
     font-weight: 700;
-    font-size: 24px;
+    font-size: rem(24px);
   }
   &-alert {
     display: flex;
@@ -3608,7 +3617,7 @@ body {
     &-title {
       word-wrap: normal;
       padding-bottom: 4px;
-      font-size: 14px;
+      font-size: rem(14px);
       font-weight: 700;
       &:hover {
         text-decoration: underline;
@@ -3622,7 +3631,7 @@ body {
     }
     &-price {
       font-weight: 600;
-      font-size: 18px;
+      font-size: rem(18px);
       span {
         font-size: 10px;
       }
@@ -3632,7 +3641,7 @@ body {
       left: 20px;
       top: 15px;
       background-color: #37ab00;
-      font-size: 7px;
+      font-size: rem(7px);
       padding: 3px 6px;
       color: #ffffff;
     }
@@ -3646,6 +3655,7 @@ body {
     &-credit {
       // display: inline-block;
       // vertical-align: top;
+      padding-right: 10px;
       display: flex;
       padding-top: 30px;
       height: 100%;
@@ -3664,18 +3674,15 @@ body {
       display: inline-block;
       font-weight: 600;
       font-size: 0.5625rem;
-      line-height: 13px;
+      line-height: rem(13px);
       text-transform: uppercase;
       color: #37ab00;
     }
+
     &-cena {
-      // display: inline-block;
-      // vertical-align: top;
-      // max-width: 25%;
       margin-right: 20px;
-      font-size: 14px;
+      font-size: rem(14px);
       &:nth-of-type(3) {
-        // max-width: 30%;
         margin-right: 0;
       }
       span {
@@ -3701,7 +3708,7 @@ body {
   }
   &-btn {
     height: 60px;
-    line-height: 60px;
+    line-height: rem(60px);
   }
   &-mob {
     &-img {
@@ -3730,10 +3737,10 @@ body {
       color: #6d829f;
     }
     &-price {
-      font-size: 16px;
+      font-size: rem(16px);
       font-weight: 600;
       span {
-        font-size: 9px;
+        font-size: rem(9px);
         text-transform: uppercase;
       }
     }
@@ -3785,8 +3792,6 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      flex: 0 0 33.33333%;
-      align-items: center;
     }
     &-loan {
       font-weight: 700;
@@ -3796,10 +3801,10 @@ body {
     }
     &-cena {
       font-weight: 700;
-      font-size: 13px;
+      font-size: rem(13px);
       span {
         font-weight: 400;
-        font-size: 9px;
+        font-size: rem(9px);
       }
     }
     &-table {
@@ -3843,7 +3848,7 @@ body {
   &-txt {
     display: inline-block;
     padding-right: 32px;
-    font-size: 10px;
+    font-size: rem(10px);
     color: #647b98;
   }
 }
@@ -3855,7 +3860,7 @@ body {
   max-width: 119px;
 }
 .calculator-info-txt:nth-of-type(2) {
-  font-size: 14px;
+  font-size: rem(14px);
 }
 .calculator-buttons label:nth-of-type(3) {
   margin-right: 0;
