@@ -211,6 +211,7 @@ jQuery.validator.addMethod(
 );
 
 $("#accountData").validate({
+  errorElement: "span",
   rules: {
     email: {
       required: true,
