@@ -100,7 +100,7 @@
   .order {
     order: 2;
   }
-  
+
   .hits-slider {
     margin-right: -15px;
   }
@@ -446,6 +446,17 @@
     padding-bottom: 64px;
   }
 }
+@media (max-width: 877px) {
+  .calculator-alert {
+    align-items: flex-start;
+  }
+  .calculator-alert-img {
+    top: 2px;
+  }
+  .calculator-alert-img {
+    // display: inline-block;
+  }
+}
 @media (max-width: 838px) {
   .catalog-description-price {
     font-size: rem(28px);
@@ -578,6 +589,26 @@
   .order-item-price {
     border-top: 1px solid #d6e3f2;
     border-left: none;
+  }
+
+  .hide {
+    display: none;
+  }
+  .flex {
+    display: flex;
+  }
+  .show {
+    display: block;
+  }
+  .calculator {
+    width: min(1058px, 100%);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+    &-alert {
+      margin-bottom: 30px;
+    }
   }
   // Footer
 }
