@@ -2,7 +2,7 @@
   <div class="calculator-title">Кредитный калькулятор</div>
   <div class="calculator-alert">
     <div class="calculator-alert-img">
-      <img src="../images/icons/!.svg" alt="alt" />
+      <img src="./images/icons/!.svg" alt="alt" />
     </div>
     <div class="calculator-alert-txt">
       Расчёт является приблизительным! Окончательные условия уточняйте у
@@ -51,7 +51,7 @@
   </div>
   <div class="calculator-vue" id ="app">
     <div class="calculator-buttons hide">
-      <input name="contact" type="radio" id="radio1" />
+      <input name="contact" type="radio" id="radio1" checked />
       <label for="radio1">Кредит от банка</label>
       <input name="contact" type="radio" id="radio2" />
       <label for="radio2">Рассрочка</label>
@@ -65,7 +65,7 @@
       </div>
       <div class="calculator-loan-btns">
         <div class="calculator-loan-btn">
-          <input name="credit" type="radio" id="loan1" />
+          <input name="credit" type="radio" id="loan1" checked/>
           <label for="loan1">6 мес</label>
         </div>
         <div class="calculator-loan-btn">
@@ -100,40 +100,40 @@
       </div>
       <div class="calculator-instalment-btns">
         <div class="calculator-instalment-btn">
-          <input name="credit" type="radio" id="instalment1" />
+          <input name="credit1" type="radio" id="instalment1" checked/>
           <label for="instalment1">Без взноса</label>
         </div>
         <div class="calculator-instalment-btn">
-          <input name="credit" type="radio" id="instalment2" />
+          <input name="credit1" type="radio" id="instalment2" />
           <label for="instalment2">10%</label>
         </div>
         <div class="calculator-instalment-btn">
-          <input name="credit" type="radio" id="instalment3" />
+          <input name="credit1" type="radio" id="instalment3" />
           <label for="instalment3">20%</label>
         </div>
         <div class="calculator-instalment-btn">
-          <input name="credit" type="radio" id="instalment4" />
+          <input name="credit1" type="radio" id="instalment4" />
           <label for="instalment4">30%</label>
         </div>
         <div class="calculator-instalment-btn">
-          <input name="credit" type="radio" id="instalment5" />
+          <input name="credit1" type="radio" id="instalment5" />
           <label for="instalment5">40%</label>
         </div>
         <div class="calculator-instalment-btn">
-          <input name="credit" type="radio" id="instalment6" />
+          <input name="credit1" type="radio" id="instalment6" />
           <label for="instalment6">50%</label>
         </div>
         <div class="calculator-instalment-btn">
-          <input name="credit" type="radio" id="instalment7" />
+          <input name="credit1" type="radio" id="instalment7" />
           <label for="instalment7">60%</label>
         </div>
       </div>
     </div>
   </div>
-  <div class="calculator-line hide"></div>
+  <!-- <div class="calculator-line hide"></div> -->
   <div class="calculator-bar hide">
     <div class="row">
-      <div class="col-calculator-74">
+      <div class="col-calculator-74 col-md-12">
         <div class="calculator-table">
           <table
             cellpadding="0"
@@ -159,35 +159,9 @@
               </tr>
             </tbody>
           </table>
-          <!-- <table
-            cellpadding="0"
-            cellspacing="0"
-            width="100%"
-            style="border: 2px"
-            rules="none"
-          >
-            <thead>
-              <tr>
-                <th>Тип услуги</th>
-                <th>Первый взнос</th>
-                <th>Макс. платеж, в месяц</th>
-                <th>Всего переплата</th>
-                <th>Итого</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Кредит</td>
-                <td>Без взноса</td>
-                <td>2 240.20 <span>РУБ.</span></td>
-                <td>3 432.38 <span>РУБ.</span></td>
-                <td>12 819.00 <span>РУБ.</span></td>
-              </tr>
-            </tbody>
-          </table> -->
         </div>
       </div>
-      <div class="col-calculator-26">
+      <div class="col-calculator-26 flex valign-end">
         <a href = "#" class="calculator-btn ui-btn">оформить заказ</a>
       </div>
     </div>

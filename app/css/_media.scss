@@ -97,8 +97,14 @@
 }
 @media (max-width: 1010px) {
   .calculator-table {
-    .calculator-table-top {
+    .calculator-table-bottom {
       td {
+        // &:nth-of-type(3) {
+        //   width: 20%;
+        // }
+        &:nth-of-type(2) {
+          font-size: 10px;
+        }
         padding-left: 15px;
         font-size: 14px;
         span {
@@ -109,7 +115,7 @@
         }
       }
     }
-    .calculator-table-bottom {
+    .calculator-table-top {
       th {
         padding-left: 15px;
       }
@@ -121,7 +127,11 @@
   .order {
     order: 2;
   }
-
+  .calculator-table {
+    table {
+      margin-bottom: 20px;
+    }
+  }
   .hits-slider {
     margin-right: -15px;
   }
