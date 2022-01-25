@@ -3426,7 +3426,7 @@ body {
 .calculator-loan-btn label {
   display: inline-block;
   text-align: center;
-  line-height: 40px;
+  line-height: 36px;
   width: 80px;
   height: 40px;
   border: 2px solid #d6e3f2;
@@ -3441,7 +3441,7 @@ body {
 .calculator-instalment-btn label {
   display: inline-block;
   text-align: center;
-  line-height: 40px;
+  line-height: 36px;
   width: 80px;
   height: 40px;
   border: 2px solid #d6e3f2;
@@ -3492,10 +3492,19 @@ body {
     }
 
     tr td:nth-of-type(1) {
+      position: relative;
       padding-right: 50px;
-      border-right: 1px solid #d6e3f2;
-    }
-    tr td:nth-of-type(3) {
+      // border-right: 1px solid #d6e3f2;
+      &::before {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        content: "";
+        height: 24px;
+        width: 1px;
+        background-color: #d6e3f2;
+        // background-color: black;
+      }
     }
     tr td:nth-of-type(2) {
       font-size: rem(12px);
@@ -3709,6 +3718,9 @@ body {
   &-btn {
     height: 60px;
     line-height: rem(60px);
+    &:hover {
+      background: #398aea;
+    }
   }
   &-mob {
     &-img {

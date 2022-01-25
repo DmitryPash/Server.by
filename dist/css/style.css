@@ -5140,7 +5140,7 @@ body {
 .calculator-loan-btn label {
   display: inline-block;
   text-align: center;
-  line-height: 40px;
+  line-height: 36px;
   width: 80px;
   height: 40px;
   border: 2px solid #d6e3f2;
@@ -5157,7 +5157,7 @@ body {
 .calculator-instalment-btn label {
   display: inline-block;
   text-align: center;
-  line-height: 40px;
+  line-height: 36px;
   width: 80px;
   height: 40px;
   border: 2px solid #d6e3f2;
@@ -5215,8 +5215,18 @@ body {
 }
 
 .calculator-table tr td:nth-of-type(1) {
+  position: relative;
   padding-right: 50px;
-  border-right: 1px solid #d6e3f2;
+}
+
+.calculator-table tr td:nth-of-type(1)::before {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  content: "";
+  height: 24px;
+  width: 1px;
+  background-color: #d6e3f2;
 }
 
 .calculator-table tr td:nth-of-type(2) {
@@ -5476,6 +5486,10 @@ body {
 .calculator-btn {
   height: 60px;
   line-height: 3.75rem;
+}
+
+.calculator-btn:hover {
+  background: #398aea;
 }
 
 .calculator-mob-img {
@@ -5960,25 +5974,8 @@ body {
 }
 
 @media (max-width: 1010px) {
-  .calculator-table .calculator-table-bottom td {
-    padding-left: 15px;
-    font-size: 14px;
-  }
-
-  .calculator-table .calculator-table-bottom td:nth-of-type(2) {
-    font-size: 10px;
-  }
-
-  .calculator-table .calculator-table-bottom td span {
-    font-size: 8px;
-  }
-
-  .calculator-table .calculator-table-bottom td td:nth-of-type(2) {
-    font-size: 8px;
-  }
-
-  .calculator-table .calculator-table-top th {
-    padding-left: 15px;
+  .calculator-table .calculator-table-bottom td:nth-of-type(1) {
+    padding-right: 40px;
   }
 }
 
