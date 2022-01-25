@@ -49,86 +49,106 @@
       </div>
     </div>
   </div>
-  <div class="calculator-vue" id ="app">
+  <div class="calculator-vue" id="app">
     <div class="calculator-buttons hide">
-      <input name="contact" type="radio" id="radio1" checked />
+      <input
+        name="contact"
+        type="radio"
+        id="radio1"
+        v-on:click="firstElement = true, secondElement= false,thirdElement = false"
+        checked
+      />
       <label for="radio1">Кредит от банка</label>
-      <input name="contact" type="radio" id="radio2" />
+      <input
+        name="contact"
+        type="radio"
+        id="radio2"
+        v-on:click="firstElement = false, secondElement = true, thirdElement = false"
+      />
       <label for="radio2">Рассрочка</label>
-      <input name="contact" type="radio" id="radio3" />
+      <input
+        name="contact"
+        type="radio"
+        id="radio3"
+        v-on:click="firstElement = false, secondElement = false, thirdElement = true"
+      />
       <label for="radio3">Карты рассрочек</label>
       <div class="calculator-buttons-txt">Халва, Черепаха, Магнит и другие</div>
     </div>
-    <div class="calculator-loan hide" v-show = "firstRadio">
-      <div class="calculator-loan-title">
-        Срок кредитования,<span>кол-во месяцев</span>
+    <div class="calculator-vue-creditBank" v-if="firstElement">
+      <div class="calculator-loan hide">
+        <div class="calculator-loan-title">
+          Срок кредитования,<span>кол-во месяцев</span>
+        </div>
+        <div class="calculator-loan-btns">
+          <div class="calculator-loan-btn">
+            <input name="credit" type="radio" id="loan1" checked />
+            <label for="loan1">6 мес</label>
+          </div>
+          <div class="calculator-loan-btn">
+            <input name="credit" type="radio" id="loan2" />
+            <label for="loan2">12 мес</label>
+          </div>
+          <div class="calculator-loan-btn">
+            <input name="credit" type="radio" id="loan3" />
+            <label for="loan3">15 мес</label>
+          </div>
+          <div class="calculator-loan-btn">
+            <input name="credit" type="radio" id="loan4" />
+            <label for="loan4">18 мес</label>
+          </div>
+          <div class="calculator-loan-btn">
+            <input name="credit" type="radio" id="loan5" />
+            <label for="loan5">24 мес</label>
+          </div>
+          <div class="calculator-loan-btn">
+            <input name="credit" type="radio" id="loan6" />
+            <label for="loan6">36 мес</label>
+          </div>
+          <div class="calculator-loan-btn">
+            <input name="credit" type="radio" id="loan7" />
+            <label for="loan7">48 мес</label>
+          </div>
+        </div>
       </div>
-      <div class="calculator-loan-btns">
-        <div class="calculator-loan-btn">
-          <input name="credit" type="radio" id="loan1" checked/>
-          <label for="loan1">6 мес</label>
+      <div class="calculator-instalment hide">
+        <div class="calculator-instalment-title">
+          Первый взнос,<span>процент от стоимости товара</span>
         </div>
-        <div class="calculator-loan-btn">
-          <input name="credit" type="radio" id="loan2" />
-          <label for="loan2">12 мес</label>
-        </div>
-        <div class="calculator-loan-btn">
-          <input name="credit" type="radio" id="loan3" />
-          <label for="loan3">15 мес</label>
-        </div>
-        <div class="calculator-loan-btn">
-          <input name="credit" type="radio" id="loan4" />
-          <label for="loan4">18 мес</label>
-        </div>
-        <div class="calculator-loan-btn">
-          <input name="credit" type="radio" id="loan5" />
-          <label for="loan5">24 мес</label>
-        </div>
-        <div class="calculator-loan-btn">
-          <input name="credit" type="radio" id="loan6" />
-          <label for="loan6">36 мес</label>
-        </div>
-        <div class="calculator-loan-btn">
-          <input name="credit" type="radio" id="loan7" />
-          <label for="loan7">48 мес</label>
+        <div class="calculator-instalment-btns">
+          <div class="calculator-instalment-btn">
+            <input name="credit1" type="radio" id="instalment1" checked />
+            <label for="instalment1">Без взноса</label>
+          </div>
+          <div class="calculator-instalment-btn">
+            <input name="credit1" type="radio" id="instalment2" />
+            <label for="instalment2">10%</label>
+          </div>
+          <div class="calculator-instalment-btn">
+            <input name="credit1" type="radio" id="instalment3" />
+            <label for="instalment3">20%</label>
+          </div>
+          <div class="calculator-instalment-btn">
+            <input name="credit1" type="radio" id="instalment4" />
+            <label for="instalment4">30%</label>
+          </div>
+          <div class="calculator-instalment-btn">
+            <input name="credit1" type="radio" id="instalment5" />
+            <label for="instalment5">40%</label>
+          </div>
+          <div class="calculator-instalment-btn">
+            <input name="credit1" type="radio" id="instalment6" />
+            <label for="instalment6">50%</label>
+          </div>
+          <div class="calculator-instalment-btn">
+            <input name="credit1" type="radio" id="instalment7" />
+            <label for="instalment7">60%</label>
+          </div>
         </div>
       </div>
     </div>
-    <div class="calculator-instalment hide" v-show = "secondRadio">
-      <div class="calculator-instalment-title">
-        Первый взнос,<span>процент от стоимости товара</span>
-      </div>
-      <div class="calculator-instalment-btns">
-        <div class="calculator-instalment-btn">
-          <input name="credit1" type="radio" id="instalment1" checked/>
-          <label for="instalment1">Без взноса</label>
-        </div>
-        <div class="calculator-instalment-btn">
-          <input name="credit1" type="radio" id="instalment2" />
-          <label for="instalment2">10%</label>
-        </div>
-        <div class="calculator-instalment-btn">
-          <input name="credit1" type="radio" id="instalment3" />
-          <label for="instalment3">20%</label>
-        </div>
-        <div class="calculator-instalment-btn">
-          <input name="credit1" type="radio" id="instalment4" />
-          <label for="instalment4">30%</label>
-        </div>
-        <div class="calculator-instalment-btn">
-          <input name="credit1" type="radio" id="instalment5" />
-          <label for="instalment5">40%</label>
-        </div>
-        <div class="calculator-instalment-btn">
-          <input name="credit1" type="radio" id="instalment6" />
-          <label for="instalment6">50%</label>
-        </div>
-        <div class="calculator-instalment-btn">
-          <input name="credit1" type="radio" id="instalment7" />
-          <label for="instalment7">60%</label>
-        </div>
-      </div>
-    </div>
+    <div class="calcultaor-vue-installment" v-if="secondElemet">2</div>
+    <div class="calculayri-vue-cards" v-if="therdElement">3</div>
   </div>
   <!-- <div class="calculator-line hide"></div> -->
   <div class="calculator-bar hide">
@@ -143,14 +163,14 @@
             rules="none"
           >
             <tbody>
-              <tr class ="calculator-table-top">
+              <tr class="calculator-table-top">
                 <th>Типы услуг</th>
                 <th>Первый взнос</th>
                 <th>Макс. платеж, в месяц</th>
                 <th>Всего переплата</th>
                 <th>Итого</th>
               </tr>
-              <tr class ='calculator-table-bottom'>
+              <tr class="calculator-table-bottom">
                 <td>Кредит</td>
                 <td>Без взноса</td>
                 <td>2 240.20 <span>РУБ.</span></td>
@@ -162,7 +182,7 @@
         </div>
       </div>
       <div class="col-calculator-26 flex valign-end">
-        <a href = "#" class="calculator-btn ui-btn">оформить заказ</a>
+        <a href="#" class="calculator-btn ui-btn">оформить заказ</a>
       </div>
     </div>
   </div>
@@ -234,16 +254,14 @@
       </a>
     </form>
   </div>
+  <script>
+    new Vue({
+      el: "#app",
+      data: {
+        firstElement: true,
+        secondElement: false,
+        thirdElement: false,
+      },
+    });
+  </script>
 </div>
-<script>
-  new Vue({
-         el: '#app',
-         
-          firstRadio:true,
-          secondRadio:false
-            
-         
-      });
-
-   </script>
-</script>
