@@ -989,6 +989,11 @@ body {
     width: 100%;
     border: 1px solid #d6e3f2;
     margin-bottom: 20px;
+    &-icon-croce {
+      position: absolute;
+      bottom: 0;
+      left: 7px;
+    }
     &-title {
       font-weight: bold;
       font-size: 18px;
