@@ -3400,6 +3400,10 @@ body {
   color: #5298ec;
   border-bottom: none;
 }
+.calculator-vue-info input[type="radio"]:checked + label {
+  color: #398aea;
+  border: 2px solid #398aea;
+}
 .calculator-loan-btn input {
   display: none;
 }
@@ -3436,6 +3440,10 @@ body {
   color: #398aea;
   border: 2px solid #398aea;
 }
+.calculator-vue-cards input[type="radio"]:checked + label {
+  color: #398aea;
+  border: 2px solid #398aea;
+}
 .calculator-instalment-btn input {
   display: none;
 }
@@ -3455,6 +3463,9 @@ body {
     &-bottom {
       height: 60px;
     }
+    table {
+    }
+
     tr th {
       padding-left: 20px;
       padding-bottom: 10px;
@@ -3474,7 +3485,7 @@ body {
     tr td:nth-of-type(1) {
       position: relative;
       padding-right: 50px;
-      // border-right: 1px solid #d6e3f2;
+
       &::before {
         display: inline-block;
         position: absolute;
@@ -3483,11 +3494,14 @@ body {
         height: 24px;
         width: 1px;
         background-color: #d6e3f2;
-        // background-color: black;
       }
     }
     tr td:nth-of-type(2) {
       font-size: rem(12px);
+    }
+    tr ~ tr > td {
+      // border-top: 1px solid #398aea;
+      // border-bottom: 1px solid #398aea;
     }
     table td {
       border-top: 0.5px solid #398aea;
@@ -3829,6 +3843,79 @@ body {
       &:hover {
         text-decoration: none;
       }
+    }
+  }
+  &-vue {
+    &-info {
+      display: inline-block;
+      input {
+        display: none;
+      }
+    }
+    &-input {
+      display: inline-block;
+      width: 80px;
+      height: 40px;
+      font-size: rem(12px);
+      line-height: 38px;
+      color: #398aea;
+      text-align: center;
+      border: 2px solid #d6e3f2;
+      margin-left: 12px;
+      cursor: pointer;
+    }
+    &-installment {
+      margin-bottom: 200px;
+    }
+    &-cards {
+      margin-bottom: 65px;
+    }
+    &-para {
+      font-size: rem(12px);
+      color: #647b98;
+      text-align: right;
+    }
+    &-title {
+      margin-bottom: 5px;
+      font-weight: 600;
+      font-size: rem(16px);
+    }
+    &-txt {
+      color: #647b98;
+      font-size: rem(12px);
+      span {
+        font-weight: 600;
+      }
+    }
+    &-card {
+      display: flex;
+      padding-top: 17px;
+      padding-bottom: 17px;
+      padding-left: 12px;
+      margin-bottom: 12px;
+      border-radius: 4px;
+      border: 1px solid #d6e3f2;
+    }
+    &-img {
+      display: inline-block;
+      margin-right: 12px;
+      img {
+        max-height: 46px;
+      }
+    }
+    &-description {
+      display: inline-block;
+      vertical-align: top;
+    }
+    .col-calculator-vue[class*="col-"] {
+      width: 100%;
+      padding-left: 3px;
+      padding-right: 3px;
+    }
+    .col-calculator-cards[class*="col-"] {
+      width: 100%;
+      padding-left: 22px;
+      padding-right: 22px;
     }
   }
 }
