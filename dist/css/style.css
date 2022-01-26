@@ -5157,6 +5157,11 @@ body {
   border-bottom: none;
 }
 
+.calculator-vue-info input[type=radio]:checked + label {
+  color: #398aea;
+  border: 2px solid #398aea;
+}
+
 .calculator-loan-btn input {
   display: none;
 }
@@ -5195,6 +5200,11 @@ body {
   border: 2px solid #398aea;
 }
 
+.calculator-vue-cards input[type=radio]:checked + label {
+  color: #398aea;
+  border: 2px solid #398aea;
+}
+
 .calculator-instalment-btn input {
   display: none;
 }
@@ -5218,6 +5228,11 @@ body {
 
 .calculator-table-bottom {
   height: 60px;
+}
+
+.calculator-table-top {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 
 .calculator-table tr th {
@@ -5685,6 +5700,94 @@ body {
   text-decoration: none;
 }
 
+.calculator-vue-info {
+  display: inline-block;
+}
+
+.calculator-vue-info input {
+  display: none;
+}
+
+.calculator-vue-input {
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  font-size: 0.75rem;
+  line-height: 38px;
+  color: #398aea;
+  text-align: center;
+  border: 2px solid #d6e3f2;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+.calculator-vue-installment {
+  margin-bottom: 200px;
+}
+
+.calculator-vue-cards {
+  margin-bottom: 65px;
+}
+
+.calculator-vue-para {
+  font-size: 0.75rem;
+  color: #647b98;
+  text-align: right;
+}
+
+.calculator-vue-title {
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.calculator-vue-txt {
+  color: #647b98;
+  font-size: 0.75rem;
+}
+
+.calculator-vue-txt span {
+  font-weight: 600;
+}
+
+.calculator-vue-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 12px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  border: 1px solid #d6e3f2;
+}
+
+.calculator-vue-img {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.calculator-vue-img img {
+  max-height: 46px;
+}
+
+.calculator-vue-description {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.calculator-vue .col-calculator-vue[class*=col-] {
+  width: 100%;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.calculator-vue .col-calculator-cards[class*=col-] {
+  width: 100%;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
 .calculator-line {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5723,7 +5826,7 @@ body {
 
 .features-wrap {
   position: relative;
-  border-right: 1px solid #D6E3F2;
+  border-right: 1px solid #d6e3f2;
 }
 
 .features-arrows {
@@ -5768,7 +5871,7 @@ body {
 
 .features tr th {
   padding: 0;
-  border: 1px solid #D6E3F2;
+  border: 1px solid #d6e3f2;
 }
 
 .features tr th:first-child {
@@ -5785,7 +5888,7 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   color: #333333;
-  border-right: 1px solid #D6E3F2;
+  border-right: 1px solid #d6e3f2;
   line-height: 1.4;
 }
 

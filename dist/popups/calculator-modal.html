@@ -63,19 +63,19 @@
         name="contact"
         type="radio"
         id="radio2"
-        v-on:click="firstElement = false, secondElement = true, thirdElement = false"
+        v-on:click="secondElement = true, firstElement = false,  thirdElement = false"
       />
       <label for="radio2">Рассрочка</label>
       <input
         name="contact"
         type="radio"
         id="radio3"
-        v-on:click="firstElement = false, secondElement = false, thirdElement = true"
+        v-on:click="thirdElement = true,firstElement = false, secondElement = false"
       />
       <label for="radio3">Карты рассрочек</label>
       <div class="calculator-buttons-txt">Халва, Черепаха, Магнит и другие</div>
     </div>
-    <div class="calculator-vue-creditBank" v-if="firstElement">
+    <div class="calculator-vue-creditBank" v-show="firstElement">
       <div class="calculator-loan hide">
         <div class="calculator-loan-title">
           Срок кредитования,<span>кол-во месяцев</span>
@@ -147,21 +147,111 @@
         </div>
       </div>
     </div>
-    <div class="calcultaor-vue-installment" v-if="secondElemet">2</div>
-    <div class="calculayri-vue-cards" v-if="therdElement">3</div>
+    <div class="calculator-vue-installment" v-show="secondElement">
+      <div class="row">
+        <div class="col-4 col-calculator-cards">
+          <div class="calculator-vue-info">
+            <div class="calculator-vue-description">
+              <div class="calculator-vue-title">Срок рассрочки,</div>
+              <div class="calculator-vue-para">кол-во месяцев</div>
+            </div>
+            <input id = "inputCredit1" type = "radio"  checked></input>
+            <label for="inputCredit1" class="calculator-vue-input">3 мес</label>
+          </div>
+        </div>
+        <div class="col-4 col-calculator-cards">
+          <div class="calculator-vue-info">
+            <div class="calculator-vue-description">
+              <div class="calculator-vue-title">Первый взнос,</div>
+              <div class="calculator-vue-para">% от стоимости товара</div>
+            </div>
+            <input id = "inputCredit1" type = "radio"  checked></input>
+            <label for="inputCredit1" class="calculator-vue-input">Без взноса</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="calculator-vue-cards" v-show="thirdElement">
+      <div class="row">
+        <div class="col-3 col-calculator-vue">
+          <div class="calculator-vue-card">
+            <div class="calculator-vue-img">
+              <img src="../images/examples/halva 1.png" alt="alt" />
+              <!-- 2 точки -->
+            </div>
+            <div class="calculator-vue-description">
+              <div class="calculator-vue-title">Халва</div>
+              <div class="calculator-vue-txt">
+                Рассрочка: <span>3 мес</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 col-calculator-vue">
+          <div class="calculator-vue-card">
+            <div class="calculator-vue-img">
+              <img src="../images/examples/magnit-card.png" alt="alt" />
+              <!-- 2 точки -->
+            </div>
+            <div class="calculator-vue-description">
+              <div class="calculator-vue-title">Магнит</div>
+              <div class="calculator-vue-txt">
+                Рассрочка: <span>3 мес</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 col-calculator-vue">
+          <div class="calculator-vue-card">
+            <div class="calculator-vue-img">
+              <img src="../images/examples/fun-card3.png" alt="alt" />
+              <!-- 2 точки -->
+            </div>
+            <div class="calculator-vue-description">
+              <div class="calculator-vue-title">Карта Покупок</div>
+              <div class="calculator-vue-txt">
+                Рассрочка: <span>3 мес</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 col-calculator-vue">
+          <div class="calculator-vue-card">
+            <div class="calculator-vue-img">
+              <img src="../images/examples/fun-card3.png" alt="alt" />
+              <!-- 2 точки -->
+            </div>
+            <div class="calculator-vue-description">
+              <div class="calculator-vue-title">Смарт Карта</div>
+              <div class="calculator-vue-txt">
+                Рассрочка: <span>3 мес</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 col-calculator-vue">
+          <div class="calculator-vue-card">
+            <div class="calculator-vue-img">
+              <img src="../images/examples/tortle-card.png" alt="alt" />
+              <!-- 2 точки -->
+            </div>
+            <div class="calculator-vue-description">
+              <div class="calculator-vue-title">Черепаха</div>
+              <div class="calculator-vue-txt">
+                Рассрочка: <span>8 мес</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <!-- <div class="calculator-line hide"></div> -->
+
   <div class="calculator-bar hide">
     <div class="row">
       <div class="col-calculator-74 col-md-12">
         <div class="calculator-table">
-          <table
-            cellpadding="0"
-            cellspacing="0"
-            width="100%"
-            style="border: 2px; text-align: left"
-            rules="none"
-          >
+          <table cellpadding="0" cellspacing="0" width="100%" rules="none">
             <tbody>
               <tr class="calculator-table-top">
                 <th>Типы услуг</th>
