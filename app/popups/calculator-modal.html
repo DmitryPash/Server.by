@@ -2,133 +2,158 @@
   <div class="calculator-title">Кредитный калькулятор</div>
   <div class="calculator-alert">
     <div class="calculator-alert-img">
-      <img src="../images/icons/!.svg" alt="alt" />
+      <img src="./images/icons/!.svg" alt="alt" />
     </div>
-    Расчёт является приблизительным! Окончательные условия уточняйте у
-    менежеров!
+    <div class="calculator-alert-txt">
+      Расчёт является приблизительным! Окончательные условия уточняйте у
+      менежеров!
+    </div>
   </div>
-  <div class="calculator-item">
-    <div class="calculator-item-info">
-      <div class="calculator-item-marker">НОВИНКА</div>
-      <div class="calculator-item-img">
-        <a href="#"> <img src="./images/icons/cart-item-1.png" alt="alt" /></a>
-      </div>
-      <div class="calculator-item-description">
-        <a href="#" class="calculator-item-title">
-          Acer Aspire 3 A315-22-44UQ NX.HE8EU.00Z
-        </a>
-        <div class="calculator-item-article">
-          <div class="calculator-item-number">КОД ТОВАРА: SJ0065478</div>
-          <div class="calculator-item-in-stock">
-            <img src="./images/icons/accept.png" alt="alt" />
-            В НАЛИЧИИ
+  <div class="calculator-item hide">
+    <div class="row">
+      <div class="col-7">
+        <div class="calculator-item-info">
+          <div class="calculator-item-marker">НОВИНКА</div>
+          <div class="calculator-item-img">
+            <a href="#">
+              <img src="./images/icons/cart-item-1.png" alt="alt"
+            /></a>
+          </div>
+          <div class="calculator-item-description">
+            <a href="#" class="calculator-item-title">
+              Acer Aspire 3 A315-22-44UQ NX.HE8EU.00Z
+            </a>
+            <div class="calculator-item-article">
+              <div class="calculator-item-number">КОД ТОВАРА: SJ0065478</div>
+              <div class="calculator-item-in-stock">
+                <img src="./images/icons/accept.png" alt="alt" />
+                В НАЛИЧИИ
+              </div>
+            </div>
+            <div class="calculator-item-price">3 810.60 <span>РУБ.</span></div>
           </div>
         </div>
-        <div class="calculator-item-price">3 810.60 <span>РУБ.</span></div>
       </div>
-    </div>
-    <div class="calculator-item-credit">
-      <div class="calculator-item-icon">
-        <img src="../images/icons/item-icon.svg" alt="alt" />
-      </div>
-      <div class="calculator-item-cena">
-        В кредит от <span>50.20</span> руб.
-      </div>
-      <div class="calculator-item-cena">
-        В рассрочку от <span>132.20</span> руб.
-      </div>
-    </div>
-  </div>
-  <div class="calculator-buttons">
-    <input name="contact" type="radio" id="radio1" />
-    <label for="radio1">Кредит от банка</label>
-    <input name="contact" type="radio" id="radio2" />
-    <label for="radio2">Рассрочка</label>
-    <input name="contact" type="radio" id="radio3" />
-    <label for="radio3">Карты рассрочек</label>
-    <div class="calculator-buttons-txt">Халва, Черепаха, Магнит и другие</div>
-  </div>
-  <div class="calculator-loan">
-    <div class="calculator-loan-title">
-      Срок кредитования,<span>кол-во месяцев</span>
-    </div>
-    <div class="calculator-loan-btns">
-      <div class="calculator-loan-btn">
-        <input name="credit" type="radio" id="loan1" />
-        <label for="loan1">6 мес</label>
-      </div>
-      <div class="calculator-loan-btn">
-        <input name="credit" type="radio" id="loan2" />
-        <label for="loan2">12 мес</label>
-      </div>
-      <div class="calculator-loan-btn">
-        <input name="credit" type="radio" id="loan3" />
-        <label for="loan3">15 мес</label>
-      </div>
-      <div class="calculator-loan-btn">
-        <input name="credit" type="radio" id="loan4" />
-        <label for="loan4">18 мес</label>
-      </div>
-      <div class="calculator-loan-btn">
-        <input name="credit" type="radio" id="loan5" />
-        <label for="loan5">24 мес</label>
-      </div>
-      <div class="calculator-loan-btn">
-        <input name="credit" type="radio" id="loan6" />
-        <label for="loan6">36 мес</label>
-      </div>
-      <div class="calculator-loan-btn">
-        <input name="credit" type="radio" id="loan7" />
-        <label for="loan7">48 мес</label>
+      <div class="col-5">
+        <div class="calculator-item-credit">
+          <div class="calculator-item-icon">
+            <img src="./images/icons/item-icon.svg" alt="alt" />
+          </div>
+          <div class="calculator-item-cena">
+            В кредит от <span>50.20</span> руб.
+          </div>
+          <div class="calculator-item-cena">
+            В рассрочку от <span>132.20</span> руб.
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="calculator-instalment">
-    <div class="calculator-instalment-title">
-      Первый взнос,<span>процент от стоимости товара</span>
+  <div class="calculator-vue" id="app">
+    <div class="calculator-buttons hide">
+      <input
+        name="contact"
+        type="radio"
+        id="radio1"
+        v-on:click="firstElement = true, secondElement= false,thirdElement = false"
+        checked
+      />
+      <label for="radio1">Кредит от банка</label>
+      <input
+        name="contact"
+        type="radio"
+        id="radio2"
+        v-on:click="firstElement = false, secondElement = true, thirdElement = false"
+      />
+      <label for="radio2">Рассрочка</label>
+      <input
+        name="contact"
+        type="radio"
+        id="radio3"
+        v-on:click="firstElement = false, secondElement = false, thirdElement = true"
+      />
+      <label for="radio3">Карты рассрочек</label>
+      <div class="calculator-buttons-txt">Халва, Черепаха, Магнит и другие</div>
     </div>
-    <div class="calculator-instalment-btns">
-      <div class="calculator-instalment-btn">
-        <input name="credit" type="radio" id="instalment1" />
-        <label for="instalment1">Без взноса</label>
+    <div class="calculator-vue-creditBank" v-if="firstElement">
+      <div class="calculator-loan hide">
+        <div class="calculator-loan-title">
+          Срок кредитования,<span>кол-во месяцев</span>
+        </div>
+        <div class="calculator-loan-btns">
+          <div class="calculator-loan-btn">
+            <input name="credit" type="radio" id="loan1" checked />
+            <label for="loan1">6 мес</label>
+          </div>
+          <div class="calculator-loan-btn">
+            <input name="credit" type="radio" id="loan2" />
+            <label for="loan2">12 мес</label>
+          </div>
+          <div class="calculator-loan-btn">
+            <input name="credit" type="radio" id="loan3" />
+            <label for="loan3">15 мес</label>
+          </div>
+          <div class="calculator-loan-btn">
+            <input name="credit" type="radio" id="loan4" />
+            <label for="loan4">18 мес</label>
+          </div>
+          <div class="calculator-loan-btn">
+            <input name="credit" type="radio" id="loan5" />
+            <label for="loan5">24 мес</label>
+          </div>
+          <div class="calculator-loan-btn">
+            <input name="credit" type="radio" id="loan6" />
+            <label for="loan6">36 мес</label>
+          </div>
+          <div class="calculator-loan-btn">
+            <input name="credit" type="radio" id="loan7" />
+            <label for="loan7">48 мес</label>
+          </div>
+        </div>
       </div>
-      <div class="calculator-instalment-btn">
-        <input name="credit" type="radio" id="instalment2" />
-        <label for="instalment2">10%</label>
-      </div>
-      <div class="calculator-instalment-btn">
-        <input name="credit" type="radio" id="instalment3" />
-        <label for="instalment3">20%</label>
-      </div>
-      <div class="calculator-instalment-btn">
-        <input name="credit" type="radio" id="instalment4" />
-        <label for="instalment4">30%</label>
-      </div>
-      <div class="calculator-instalment-btn">
-        <input name="credit" type="radio" id="instalment5" />
-        <label for="instalment5">40%</label>
-      </div>
-      <div class="calculator-instalment-btn">
-        <input name="credit" type="radio" id="instalment6" />
-        <label for="instalment6">50%</label>
-      </div>
-      <div class="calculator-instalment-btn">
-        <input name="credit" type="radio" id="instalment7" />
-        <label for="instalment7">60%</label>
+      <div class="calculator-instalment hide">
+        <div class="calculator-instalment-title">
+          Первый взнос,<span>процент от стоимости товара</span>
+        </div>
+        <div class="calculator-instalment-btns">
+          <div class="calculator-instalment-btn">
+            <input name="credit1" type="radio" id="instalment1" checked />
+            <label for="instalment1">Без взноса</label>
+          </div>
+          <div class="calculator-instalment-btn">
+            <input name="credit1" type="radio" id="instalment2" />
+            <label for="instalment2">10%</label>
+          </div>
+          <div class="calculator-instalment-btn">
+            <input name="credit1" type="radio" id="instalment3" />
+            <label for="instalment3">20%</label>
+          </div>
+          <div class="calculator-instalment-btn">
+            <input name="credit1" type="radio" id="instalment4" />
+            <label for="instalment4">30%</label>
+          </div>
+          <div class="calculator-instalment-btn">
+            <input name="credit1" type="radio" id="instalment5" />
+            <label for="instalment5">40%</label>
+          </div>
+          <div class="calculator-instalment-btn">
+            <input name="credit1" type="radio" id="instalment6" />
+            <label for="instalment6">50%</label>
+          </div>
+          <div class="calculator-instalment-btn">
+            <input name="credit1" type="radio" id="instalment7" />
+            <label for="instalment7">60%</label>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="calcultaor-vue-installment" v-if="secondElemet">2</div>
+    <div class="calculayri-vue-cards" v-if="therdElement">3</div>
   </div>
-  <div class="calculator-line">
-    <!-- <div class="calculator-line-txt">Тип услуги</div>
-      <div class="calculator-line-txt">Первый взнос</div>
-      <div class="calculator-line-txt">Макс. платеж,
-        в месяц</div>
-      <div class="calculator-line-txt">Всего переплата</div>
-      <div class="calculator-line-txt">Итого</div> -->
-  </div>
-  <div class="calculator-bar">
+  <!-- <div class="calculator-line hide"></div> -->
+  <div class="calculator-bar hide">
     <div class="row">
-      <div class="col-xl-7">
+      <div class="col-calculator-74 col-md-12">
         <div class="calculator-table">
           <table
             cellpadding="0"
@@ -138,14 +163,14 @@
             rules="none"
           >
             <tbody>
-              <tr>
+              <tr class="calculator-table-top">
                 <th>Типы услуг</th>
                 <th>Первый взнос</th>
                 <th>Макс. платеж, в месяц</th>
                 <th>Всего переплата</th>
                 <th>Итого</th>
               </tr>
-              <tr>
+              <tr class="calculator-table-bottom">
                 <td>Кредит</td>
                 <td>Без взноса</td>
                 <td>2 240.20 <span>РУБ.</span></td>
@@ -154,37 +179,89 @@
               </tr>
             </tbody>
           </table>
-          <!-- <table
-            cellpadding="0"
-            cellspacing="0"
-            width="100%"
-            style="border: 2px"
-            rules="none"
-          >
-            <thead>
-              <tr>
-                <th>Тип услуги</th>
-                <th>Первый взнос</th>
-                <th>Макс. платеж, в месяц</th>
-                <th>Всего переплата</th>
-                <th>Итого</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Кредит</td>
-                <td>Без взноса</td>
-                <td>2 240.20 <span>РУБ.</span></td>
-                <td>3 432.38 <span>РУБ.</span></td>
-                <td>12 819.00 <span>РУБ.</span></td>
-              </tr>
-            </tbody>
-          </table> -->
         </div>
       </div>
-      <div class="col-xl-3">
-        <div class="calculator-btn ui-btn">оформить заказ</div>
+      <div class="col-calculator-26 flex valign-end">
+        <a href="#" class="calculator-btn ui-btn">оформить заказ</a>
       </div>
     </div>
   </div>
+  <div class="calculator-mob-article flex">
+    <div class="calculator-mob-img">
+      <a href="#"> <img src="./images/icons/cart-item-1.png" alt="alt" /></a>
+    </div>
+    <div class="calculator-mob-description">
+      <a href="#" class="calculator-mob-title">
+        Acer Aspire 3 A315-22-44UQ NX.HE8EU.00Z
+      </a>
+      <div class="calculator-mob-number">Код товара: SJ0065478</div>
+      <div class="calculator-mob-price">3 810.60 <span>РУБ.</span></div>
+    </div>
+  </div>
+  <div class="calculator-mob-form show">
+    <form action="">
+      <div class="calculator-mob-step">
+        шаг-1 - <span>Выберите тип услуги</span>
+      </div>
+      <div class="calculator-mob-select">
+        <select>
+          <option selected disabled>Выберите героя</option>
+          <option value="Кредит">Кредит</option>
+        </select>
+      </div>
+      <div class="calculator-mob-step">
+        шаг-1 - <span>Выберите тип услуги</span>
+      </div>
+      <div class="calculator-mob-select">
+        <select>
+          <option selected disabled>Выберите героя</option>
+          <option value="Кредит">Кредит</option>
+        </select>
+      </div>
+      <div class="calculator-mob-step">
+        шаг-1 - <span>Выберите тип услуги</span>
+      </div>
+      <div class="calculator-mob-select">
+        <select>
+          <option selected disabled>Выберите героя</option>
+          <option value="Кредит">Кредит</option>
+        </select>
+      </div>
+      <div class="calculator-mob-box">
+        <div class="calculator-mob-credit">
+          <div class="calculator-mob-loan">кредит</div>
+          <div class="calculator-mob-cena">12 164.00 <span>РУБ.</span></div>
+        </div>
+        <div class="calculator-mob-table">
+          <div class="calculator-mob-info">
+            <div class="calculator-mob-txt">Первый взнос</div>
+            <div class="calculator-mob-cena">164.28 <span>РУБ.</span></div>
+          </div>
+          <div class="calculator-mob-info">
+            <div class="calculator-mob-txt">Макс. платеж, в месяц</div>
+            <div class="calculator-mob-cena">164.28 <span>РУБ.</span></div>
+          </div>
+          <div class="calculator-mob-info">
+            <div class="calculator-mob-txt">Всего переплата</div>
+            <div class="calculator-mob-cena">164.28 <span>РУБ.</span></div>
+          </div>
+        </div>
+      </div>
+      <button class="calculator-mob-btn ui-btn">оформить заказ</button>
+      <a href="#" class="calculator-mob-close">
+        <img src="./images/icons/Крестик для иконки.svg" alt="alt" />
+        Закрыть калькулятор
+      </a>
+    </form>
+  </div>
+  <script>
+    new Vue({
+      el: "#app",
+      data: {
+        firstElement: true,
+        secondElement: false,
+        thirdElement: false,
+      },
+    });
+  </script>
 </div>
