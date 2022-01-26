@@ -29,10 +29,15 @@ $(document).ready(function () {
   });
   // table
 
-  const tableclone = $(".compare-table")
-    .wrap('<div class="compare-table-clone" />')
+  // const tableclone = $(".compare-table")
+  //   .wrap('<div class="compare-table-clone" />')
+  //   .clone();
+  // $(".compare-table-wrap").append(tableclone);
+
+  const tableclone = $(".features")
+    .wrap('<div class="features-clone" />')
     .clone();
-  $(".compare-table-wrap").append(tableclone);
+  $(".features-wrap").append(tableclone);
 
   // mobile-nav Search
   $(document).ready(function () {
