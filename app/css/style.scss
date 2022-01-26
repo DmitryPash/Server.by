@@ -2136,6 +2136,7 @@ body {
 .sub-title {
   padding: 48px 25px 27px 25px;
 }
+
 // tetetet
 .fl-table {
   display: block;
@@ -3864,6 +3865,29 @@ body {
 .ui-input {
   color: #191919;
 }
+.features-wrap {
+  position:relative;
+  border-right: 1px solid #D6E3F2;
+}
+.features-arrows {
+  position: absolute;
+    top: 0;
+    left: 143px;
+}
+.features-clone {
+  .features {
+    width: 274px;
+    overflow-x: clip;
+    position: absolute;
+    z-index: 2;
+    & tbody tr td:first-child {
+      border-right: 1px solid #d6e3f2;
+    }
+     tr th:first-child {
+       border-top: 1px solid #ffffff;
+     }
+  }
+}
 
 .features {
   display: block;
@@ -3877,21 +3901,16 @@ body {
     font-weight: 600;
     font-size: rem(14px);
     line-height: 17px;
-    // border-left: none;
-    // border-top: none;
-    // border-bottom: none;
   }
   tr td {
     text-align: center;
   }
   tr th {
     padding: 0;
-    border: 1px solid #dddddd;
+    border: 1px solid #D6E3F2;
   }
   tr th:first-child {
     vertical-align: bottom;
-
-    // padding: 0;
     padding-bottom: 30px;
     border-left: none;
     border-top: none;
@@ -3900,7 +3919,7 @@ body {
 
 .features-box {
   // max-width: 250px;
-  width: 20%;
+  // width: 20%;
   font-size: 0.9em;
   font-weight: normal;
   padding-left: 25px;
@@ -3908,11 +3927,14 @@ body {
   padding-bottom: 10px;
   // padding-right: 25px;
   color: #333333;
-  border-right: 1px solid #dddddd;
+  border-right: 1px solid #D6E3F2;
   line-height: 1.4;
+  &-differences {
+    width: 273px;
+  }
   &-item {
     position: relative;
-    width: 100%;
+    width: 273px;
     border: none;
     padding-left: 20px;
     padding-right: 20px;
@@ -3934,6 +3956,9 @@ body {
 .features-bgcolor {
   background-color: #f4f9ff;
 }
+.features-bgwhite {
+  background: #ffffff;
+}
 .features__cell--shaded {
   background: #f4f9ff;
 }
@@ -3952,7 +3977,7 @@ body {
   }
 }
 .features-title {
-  padding-top: 50px;
+  padding-top: 35px;
   padding-bottom: 25px;
   padding-left: 25px;
 }
