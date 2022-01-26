@@ -296,6 +296,45 @@ textarea {
     }
   }
 }
+
+// Crose 
+.ui-croce {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 11px;
+  right: 11px;
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    width: 16px;
+    height: 2px;
+    transform: rotate(45deg);
+    background: #D6E3F2;
+  }
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    width: 16px;
+    height: 2px;
+    transform: rotate(-45deg);
+    background: #D6E3F2;
+  }
+  &:hover {
+    &::before {
+      background: $colorCyan;
+    }
+    &::after {
+      background: $colorCyan;
+    }
+  }
+}
 // Input
 
 .ui-input {
