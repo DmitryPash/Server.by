@@ -28,30 +28,19 @@ inputBtns.forEach((element) => {
   plusBtn.addEventListener("click", plus(inputForm));
 });
 
-let block = document.querySelectorAll(".order-item-price");
-let calcPrice = document.querySelector(".qwe");
-let buttonPlus = document.querySelector(".zxc");
-// console.log(calcPrice.dataset.price);
-block.forEach((element) => {
-  element.querySelector(
-    ".qwe"
-  ).innerHTML = `${calcPrice.dataset.price} <span>РУБ.</span>`;
+$(document).on("click", ".btn-plus", function () {
+  var parent = $(this).closest(".order-item");
+  var input = +parent.find(".input").val();
+  var perItem = +parent.find(".target-value").attr("data-price");
+  var price = parent.find(".target-value");
+  var total = (input * perItem).toFixed(2);
+  price.html(total + `<span>РУБ.</span>`);
 });
-
-buttonPlus.onclick = () => {
-  let num = Number(calcPrice.dataset.price);
-  let inputValueBtn = document.querySelector(".input");
-  num = num * inputValueBtn.value;
-  let str = String(num);
-  calcPrice.innerHTML = `${str} <span>РУБ.</span>`;
-};
-// block.forEach((element) => {
-//   element.querySelector(".zxc").addEventListener("click", () => {
-//     let calcPrice = document.querySelector(".qwe");
-//     let num = Number(calcPrice.dataset.price);
-//     let inputValueBtn = document.querySelector(".input");
-//     num = num * inputValueBtn.value;
-//     let str = String(num);
-//     calcPrice.innerHTML = `${str} <span>РУБ.</span>`;
-//   });
-// });
+$(document).on("click", ".btn-minus", function () {
+  var parent = $(this).closest(".order-item");
+  var input = +parent.find(".input").val();
+  var perItem = +parent.find(".target-value").attr("data-price");
+  var price = parent.find(".target-value");
+  var total = (input * perItem).toFixed(2);
+  price.html(total + `<span>РУБ.</span>`);
+});

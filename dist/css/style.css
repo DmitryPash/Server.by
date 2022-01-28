@@ -4268,6 +4268,7 @@ body {
 
 .order-item-price-num {
   display: inline-block;
+  width: calc(50% - 52px);
   color: #398aea;
   font-weight: 700;
   line-height: 16px;
@@ -4275,6 +4276,11 @@ body {
   margin-right: 20px;
   margin-left: 20px;
   word-break: break-word;
+  text-align: left;
+}
+
+.order-item-price-num:nth-of-type(1) {
+  text-align: right;
 }
 
 .order-item-price-num span {
@@ -5062,7 +5068,7 @@ body {
 }
 
 .item-add-button input {
-  width: 50%;
+  width: 38px;
   height: 100%;
   font-weight: 700;
   text-align: center;
@@ -5191,7 +5197,7 @@ body {
   height: 40px;
   border: 2px solid #d6e3f2;
   color: #647b98;
-  font-size: 12px;
+  font-size: 0.75rem;
   cursor: pointer;
 }
 
@@ -5200,9 +5206,17 @@ body {
   border: 2px solid #398aea;
 }
 
+.calculator-vue-cards input {
+  display: none;
+}
+
 .calculator-vue-cards input[type=radio]:checked + label {
   color: #398aea;
   border: 2px solid #398aea;
+}
+
+.calculator-vue-cards input[type=radio]:checked + label .calculator-vue-txt span {
+  color: #398aea;
 }
 
 .calculator-instalment-btn input {
@@ -5230,9 +5244,9 @@ body {
   height: 60px;
 }
 
-.calculator-table-top {
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+.calculator-table table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
 .calculator-table tr th {
@@ -5273,16 +5287,16 @@ body {
 }
 
 .calculator-table table td {
-  border-top: 0.5px solid #398aea;
-  border-bottom: 0.5px solid #398aea;
+  border-top: 2px solid #398aea;
+  border-bottom: 2px solid #398aea;
 }
 
 .calculator-table table td:first-child {
-  border-left: 0.5px solid #398aea;
+  border-left: 2px solid #398aea;
 }
 
 .calculator-table table td:last-child {
-  border-right: 0.5px solid #398aea;
+  border-right: 2px solid #398aea;
 }
 
 .calculator-instalment-title {
@@ -5701,7 +5715,13 @@ body {
 }
 
 .calculator-vue-info {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 35px;
 }
 
 .calculator-vue-info input {
@@ -5722,7 +5742,14 @@ body {
 }
 
 .calculator-vue-installment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 200px;
+}
+
+.calculator-vue-btn label {
+  margin-right: 10px;
 }
 
 .calculator-vue-cards {
@@ -5754,6 +5781,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: calc(100% - 12px);
   padding-top: 17px;
   padding-bottom: 17px;
   padding-left: 12px;

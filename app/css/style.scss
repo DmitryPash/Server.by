@@ -2570,6 +2570,7 @@ body {
       padding: 10px 0px;
       &-num {
         display: inline-block;
+        width: calc(50% - 52px);
         color: #398aea;
         font-weight: 700;
         line-height: 16px;
@@ -2577,6 +2578,10 @@ body {
         margin-right: 20px;
         margin-left: 20px;
         word-break: break-word;
+        text-align: left;
+        &:nth-of-type(1) {
+          text-align: right;
+        }
         span {
           font-size: rem(9px);
           font-weight: 600;
@@ -3321,7 +3326,7 @@ body {
   margin-left: 20px;
 }
 .item-add-button input {
-  width: 50%;
+  width: 38px;
   height: 100%;
   font-weight: 700;
   text-align: center;
@@ -3439,17 +3444,26 @@ body {
   // white-space: nowrap;
   // overflow: hidden;
   // text-overflow: ellipsis;
-  font-size: 12px;
+  font-size: rem(12px);
   cursor: pointer;
 }
 .calculator-instalment-btn input[type="radio"]:checked + label {
   color: #398aea;
   border: 2px solid #398aea;
 }
+.calculator-vue-cards input {
+  display: none;
+}
 .calculator-vue-cards input[type="radio"]:checked + label {
   color: #398aea;
   border: 2px solid #398aea;
+  .calculator-vue-txt {
+    span {
+      color: #398aea;
+    }
+  }
 }
+
 .calculator-instalment-btn input {
   display: none;
 }
@@ -3470,10 +3484,13 @@ body {
       height: 60px;
     }
     &-top {
-      border-left: 1px solid black;
-      border-right: 1px solid black;
+      // border-left: 1px solid black;
+      // border-right: 1px solid black;
     }
-
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
     tr th {
       padding-left: 20px;
       padding-bottom: 10px;
@@ -3509,16 +3526,16 @@ body {
     }
 
     table td {
-      border-top: 0.5px solid #398aea;
-      border-bottom: 0.5px solid #398aea;
+      border-top: 2px solid #398aea;
+      border-bottom: 2px solid #398aea;
     }
 
     table td:first-child {
-      border-left: 0.5px solid #398aea;
+      border-left: 2px solid #398aea;
     }
 
     table td:last-child {
-      border-right: 0.5px solid #398aea;
+      border-right: 2px solid #398aea;
     }
   }
   &-instalment {
@@ -3852,7 +3869,9 @@ body {
   }
   &-vue {
     &-info {
-      display: inline-block;
+      display: flex;
+      align-items: center;
+      margin-right: 35px;
       input {
         display: none;
       }
@@ -3870,7 +3889,13 @@ body {
       cursor: pointer;
     }
     &-installment {
+      display: flex;
       margin-bottom: 200px;
+    }
+    &-btn {
+      label {
+        margin-right: 10px;
+      }
     }
     &-cards {
       margin-bottom: 65px;
@@ -3894,6 +3919,7 @@ body {
     }
     &-card {
       display: flex;
+      min-height: calc(100% - 12px);
       padding-top: 17px;
       padding-bottom: 17px;
       padding-left: 12px;
