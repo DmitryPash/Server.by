@@ -127,12 +127,16 @@ $(document).ready(function () {
 });
 
 
-let compare = document.querySelectorAll(".features-box-differences");
-compare.forEach((element) => {
-  element.addEventListener("click", () => {
-   element.classList.toggle("open");
-  });
-});
+let compare = document.querySelector(".features-box-differences");
+compare.onclick = () => {
+  let bggreen = document.querySelectorAll('.features-box');
+  bggreen.forEach((element) => {
+    element.classList.toggle("bggreen");
+  })
+} 
+
+
+
 
 // drop for footer top
 
