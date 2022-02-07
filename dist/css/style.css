@@ -5864,6 +5864,10 @@ body {
   border-top: 1px solid #ffffff;
 }
 
+.features::-webkit-scrollbar {
+  width: 0;
+}
+
 .features {
   display: block;
   overflow-x: auto;
@@ -6001,6 +6005,10 @@ body {
 
 .features-box-functions:hover {
   text-decoration: underline;
+}
+
+.bggreen {
+  background-color: #D8FFCE;
 }
 
 @media (max-width: 1330px) {

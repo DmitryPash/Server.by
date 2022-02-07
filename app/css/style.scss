@@ -121,6 +121,7 @@ body {
   color: #ff6666;
 }
 
+
 [data-tooltip]::after {
   content: attr(data-tooltip);
   position: absolute;
@@ -4001,14 +4002,14 @@ body {
     }
   }
 }
-
+.features::-webkit-scrollbar { width: 0; } 
 .features {
   display: block;
   overflow-x: auto;
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 100px;
-
+  
   tbody tr td:first-child {
     text-align: left;
     font-weight: 600;
@@ -4134,4 +4135,10 @@ body {
   &:hover {
     text-decoration: underline;
   }
+}
+
+
+
+.bggreen {
+  background-color: #D8FFCE;
 }
