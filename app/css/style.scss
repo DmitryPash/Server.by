@@ -3732,7 +3732,7 @@ body {
     }
   }
   &-btn {
-    height: 60px;
+    height: 62px;
     line-height: rem(60px);
     &:hover {
       background: #398aea;
@@ -3869,9 +3869,7 @@ body {
   }
   &-vue {
     &-info {
-      display: flex;
-      align-items: center;
-      margin-right: 35px;
+      margin-bottom: 35px;
       input {
         display: none;
       }
@@ -3885,30 +3883,29 @@ body {
       color: #398aea;
       text-align: center;
       border: 2px solid #d6e3f2;
-      margin-left: 12px;
       cursor: pointer;
     }
     &-installment {
-      display: flex;
-      margin-bottom: 200px;
+      // display: flex;
+      // margin-bottom: 200px;
     }
     &-btn {
-      label {
-        margin-right: 10px;
-      }
+      display: inline-block;
+      margin-right: 12px;
+      margin-bottom: 8px;
     }
     &-cards {
       margin-bottom: 65px;
     }
-    &-para {
-      font-size: rem(12px);
-      color: #647b98;
-      text-align: right;
-    }
+
     &-title {
       margin-bottom: 5px;
       font-weight: 600;
-      font-size: rem(16px);
+      font-size: 1.125rem;
+      span {
+        font-size: 0.75rem;
+        color: #647b98;
+      }
     }
     &-txt {
       color: #647b98;
@@ -3935,8 +3932,7 @@ body {
       }
     }
     &-description {
-      display: inline-block;
-      vertical-align: top;
+      margin-bottom: 25px;
     }
     .col-calculator-vue[class*="col-"] {
       width: 100%;

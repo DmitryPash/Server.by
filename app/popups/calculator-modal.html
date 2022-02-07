@@ -125,13 +125,15 @@
         </div>
       </div>
       <div
-        class="calculator-vue-installment"
+        class="calculator-vue-installment hide"
         v-if="activeTab === 'installment'"
       >
         <div class="calculator-vue-info">
           <div class="calculator-vue-description">
-            <div class="calculator-vue-title">Срок рассрочки,</div>
-            <div class="calculator-vue-para">кол-во месяцев</div>
+            <div class="calculator-vue-title">
+              Срок рассрочки, <span>кол-во месяцев</span>
+            </div>
+            <div class="calculator-vue-para"></div>
           </div>
           <div
             class="calculator-vue-btn"
@@ -152,8 +154,9 @@
         </div>
         <div class="calculator-vue-info">
           <div class="calculator-vue-description">
-            <div class="calculator-vue-title">Первый взнос,</div>
-            <div class="calculator-vue-para">% от стоимости товара</div>
+            <div class="calculator-vue-title">
+              Первый взнос,<span> % от стоимости товара</span>
+            </div>
           </div>
           <div
             class="calculator-vue-btn"
@@ -305,7 +308,7 @@
     new Vue({
       el: "#app",
       data: {
-        contributionMounths: [1, 2],
+        contributionMounths: [1, 2, 4, 10],
         installmentMonths: [3, 6, 10],
         installments: [
           ["Приват банк", 3, "../images/examples/halva 1.png"],

@@ -5537,7 +5537,7 @@ body {
 }
 
 .calculator-btn {
-  height: 60px;
+  height: 62px;
   line-height: 3.75rem;
 }
 
@@ -5715,13 +5715,7 @@ body {
 }
 
 .calculator-vue-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-right: 35px;
+  margin-bottom: 35px;
 }
 
 .calculator-vue-info input {
@@ -5737,35 +5731,28 @@ body {
   color: #398aea;
   text-align: center;
   border: 2px solid #d6e3f2;
-  margin-left: 12px;
   cursor: pointer;
 }
 
-.calculator-vue-installment {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 200px;
-}
-
-.calculator-vue-btn label {
-  margin-right: 10px;
+.calculator-vue-btn {
+  display: inline-block;
+  margin-right: 12px;
+  margin-bottom: 8px;
 }
 
 .calculator-vue-cards {
   margin-bottom: 65px;
 }
 
-.calculator-vue-para {
-  font-size: 0.75rem;
-  color: #647b98;
-  text-align: right;
-}
-
 .calculator-vue-title {
   margin-bottom: 5px;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.125rem;
+}
+
+.calculator-vue-title span {
+  font-size: 0.75rem;
+  color: #647b98;
 }
 
 .calculator-vue-txt {
@@ -5800,8 +5787,7 @@ body {
 }
 
 .calculator-vue-description {
-  display: inline-block;
-  vertical-align: top;
+  margin-bottom: 25px;
 }
 
 .calculator-vue .col-calculator-vue[class*=col-] {
