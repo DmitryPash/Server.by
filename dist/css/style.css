@@ -5878,6 +5878,10 @@ body {
   border-top: 1px solid #ffffff;
 }
 
+.features::-webkit-scrollbar {
+  width: 0;
+}
+
 .features {
   display: block;
   overflow-x: auto;

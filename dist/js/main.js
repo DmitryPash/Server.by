@@ -27,13 +27,24 @@ $(document).ready(function () {
     e.stopPropagation();
     e.preventDefault();
   });
-  // table
+  // table scroll
+  $(function() {
+    $('.slider-offer-left').click(function(event) {
+      event.preventDefault();
+      $('.features').animate({
+        scrollLeft: "-=278px"
+      }, "slow");
+    });
+  
+     $('.slider-offer-right').click(function(event) {
+      event.preventDefault();
+      $('.features').animate({
+       scrollLeft: "+=278px"
+      }, "slow");
+    });
+  });
 
-  // const tableclone = $(".compare-table")
-  //   .wrap('<div class="compare-table-clone" />')
-  //   .clone();
-  // $(".compare-table-wrap").append(tableclone);
-
+// clone table
   const tableclone = $(".features")
     .wrap('<div class="features-clone" />')
     .clone();
@@ -114,6 +125,15 @@ $(document).ready(function () {
     ],
   });
 });
+
+
+let compare = document.querySelectorAll(".features-box-differences");
+compare.forEach((element) => {
+  element.addEventListener("click", () => {
+   element.classList.toggle("open");
+  });
+});
+
 // drop for footer top
 
 let menu = document.querySelectorAll(".footer-top-toggle");
@@ -130,14 +150,12 @@ stepTwo.forEach((element) => {
   element.addEventListener("click", () => {
     clearr();
     element.classList.add("border");
-    // element.querySelector(".roundclick").classList.add("circleblue");!!!
   });
 });
 
 const clearr = () => {
   stepTwo.forEach((element) => {
     element.classList.remove("border");
-    // element.querySelector(".roundclick").classList.remove("circleblue");!!!
   });
 };
 // add circle and border for step 3
@@ -179,23 +197,7 @@ var maskOptions = {
 };
 var mask = IMask(element, maskOptions);
 
-// ЧТО?
 
-// var article = document.querySelectorAll(".fixprice");
-// let pricenum = document.querySelectorAll(".multiplyprice");
-
-// console.log(typeof article.dataset.price);
-
-// const multiplyplus = document.querySelectorAll(".multiplyplus");
-// const orderitem = document.querySelectorAll(".order-item-price");
-// orderitem.forEach((element) => {
-//   let pricezxc = element.querySelector(".fixprice");
-//   let elementzxc = element.querySelector(".multiplyplus");
-//   elementzxc.addEventListener("click", () => {
-//     pricezxc.dataset.price + "zxc";
-//     pricenum.innerHTML = `${article.dataset.price} <span>РУБ.</span>`;
-//   });
-// });
 jQuery.validator.addMethod(
   "lettersonly",
   function (value, element) {
@@ -245,9 +247,3 @@ $("#accountData").validate({
 
 // table scroll 
 
-// var item = document.getElementById("features-wrap");
-
-//   window.addEventListener("wheel", function (e) {
-//     if (e.deltaY > 0) item.scrollLeft += 100;
-//     else item.scrollLeft -= 100;
-//   });

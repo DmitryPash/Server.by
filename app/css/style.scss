@@ -4005,14 +4005,14 @@ body {
     }
   }
 }
-
+.features::-webkit-scrollbar { width: 0; } 
 .features {
   display: block;
   overflow-x: auto;
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 100px;
-
+  
   tbody tr td:first-child {
     text-align: left;
     font-weight: 600;
