@@ -1354,6 +1354,21 @@ input:focus:-ms-input-placeholder {
   text-align: right;
 }
 
+.mfp-close-btn-in .calculator .mfp-close {
+  display: none;
+  background: transparent;
+  border-radius: 0;
+  color: blue;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 0;
+  background-image: url(../images/icons/cross-calculator.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5244,6 +5259,10 @@ body {
   height: 60px;
 }
 
+.calculator-table-top th {
+  font-weight: 400;
+}
+
 .calculator-table table {
   width: 100%;
   border-collapse: collapse;
@@ -5538,6 +5557,7 @@ body {
 
 .calculator-btn {
   height: 62px;
+  font-size: 0.875rem;
   line-height: 3.75rem;
 }
 
@@ -7152,6 +7172,10 @@ body {
   .footer-bottom-img img {
     display: block;
     width: 45%;
+  }
+
+  .mfp-close-btn-in .calculator .mfp-close {
+    display: inline-block;
   }
 }
 

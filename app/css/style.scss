@@ -3,6 +3,7 @@
 @import "media";
 @import "header";
 @import "footer";
+@import "calculator";
 
 $ffMontserrat: "Montserrat", sans-serif;
 $colorBlack: #191919;
@@ -3485,8 +3486,9 @@ body {
       height: 60px;
     }
     &-top {
-      // border-left: 1px solid black;
-      // border-right: 1px solid black;
+      th {
+        font-weight: 400;
+      }
     }
     table {
       width: 100%;
@@ -3734,6 +3736,7 @@ body {
   }
   &-btn {
     height: 62px;
+    font-size: rem(14);
     line-height: rem(60px);
     &:hover {
       background: #398aea;

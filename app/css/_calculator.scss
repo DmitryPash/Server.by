@@ -1,0 +1,25 @@
+.calculator {
+  
+}
+
+
+// Крестик для закрытия попапа
+.mfp-close-btn-in .calculator {
+    .mfp-close {
+        display: none;
+        background: transparent; 
+        border-radius: 0; 
+        color: blue;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        font-size: 0;
+        background-image: url(../images/icons/cross-calculator.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 1;
+        @media(max-width:768px) {
+            display: inline-block;
+        }
+    }
+}

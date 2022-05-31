@@ -32,7 +32,7 @@
                 </div>
               </div>
               <div class="calculator-item-price">
-                3 810.60 <span>РУБ.</span>
+                {{calculatorItemPrice}} <span>РУБ.</span>
               </div>
             </div>
           </div>
@@ -80,6 +80,7 @@
           Халва, Черепаха, Магнит и другие
         </div>
       </div>
+      <!-- Таб 1 -->
       <div class="calculator-vue-creditBank" v-if="activeTab === 'credit'">
         <div class="calculator-loan hide">
           <div class="calculator-loan-title">
@@ -117,17 +118,15 @@
                 type="radio"
                 :id="'percent' + percent"
                 :checked="index===0"
-                @change="changeTerm(percent)"
+                @change="changePercents(percent)"
               />
-              <label :for="'percent' + percent">{{percent}}</label>
+              <label :for="'percent' + percent">{{percent + '%'}}</label>
             </div>
           </div>
         </div>
       </div>
-      <div
-        class="calculator-vue-installment hide"
-        v-if="activeTab === 'installment'"
-      >
+      <!-- Таб 2 -->
+      <div class="calculator-vue-installment hide" v-if="activeTab === 'installment'">
         <div class="calculator-vue-info">
           <div class="calculator-vue-description">
             <div class="calculator-vue-title">
@@ -138,7 +137,7 @@
           <div
             class="calculator-vue-btn"
             v-for="(installment,index) in installmentMonths"
-            :key="contribution"
+            :key="index"
           >
             <input
               name="installment"
@@ -160,44 +159,45 @@
           </div>
           <div
             class="calculator-vue-btn"
-            v-for="(contribution,index) in contributionMounths"
-            :key="contribution"
+            v-for="(percent,index) in contributionMounths"
+            :key="percent"
           >
             <input
               name="contribution"
               type="radio"
               :id="'contribution' + index"
               :checked="index===0"
-              @change="changeTerm(contribution)"
+              @change="changePercents(percent)"
             />
             <label :for="'contribution' + index" class="calculator-vue-input"
-              >{{contribution}}</label
+              >{{percent}}</label
             >
           </div>
         </div>
       </div>
+      <!-- Таб 3 -->
       <div class="calculator-vue-cards" v-if="activeTab === 'cards'">
         <div class="row">
           <div
             class="col-3 col-calculator-vue"
-            v-for="(installment,index) in installments"
-            :key="installment"
+            v-for="(percent,index) in installments"
+            :key="index"
           >
             <input
               name="cart"
               type="radio"
               :id="'installment' + index"
               :checked="index===0"
-              @change="changeTerm(installment)"
+              @change="changePercents(percent)"
             />
             <label :for="'installment' + index" class="calculator-vue-card">
               <div class="calculator-vue-img">
-                <img v-bind:src="installment[2]" alt="alt" />
+                <img v-bind:src="percent[2]" alt="alt" />
               </div>
               <div class="calculator-vue-description">
-                <div class="calculator-vue-title">{{installment[0]}}</div>
+                <div class="calculator-vue-title">{{percent[0]}}</div>
                 <div class="calculator-vue-txt">
-                  Рассрочка: <span>{{installment[1]}} мес</span>
+                  Рассрочка: <span>{{percent[1]}} мес</span>
                 </div>
               </div>
             </label>
@@ -220,11 +220,16 @@
                   <th>Итого</th>
                 </tr>
                 <tr class="calculator-table-bottom">
-                  <td>Кредит</td>
-                  <td>Без взноса</td>
+                  <td v-if="activeTab === 'credit'">Кредит</td>
+                  <td v-if="activeTab === 'installment'">Рассрочка</td>
+                  <td v-if="activeTab === 'cards'">Карта 
+                    рассрочки</td>
+                  <!--   cena/100 * percent  -->
+                  <td>{{calculatorItemPrice / 100 * resultPercents}} <span>РУБ.</span></td>
                   <td>{{2000 * currentTerm}} <span>РУБ.</span></td>
-                  <td>3 432.38 <span>РУБ.</span></td>
-                  <td>12 819.00 <span>РУБ.</span></td>
+                  <td>{{resultTerms}}<span>РУБ.</span></td>
+                  <td> сумма всех трех полей <span>РУБ.</span></td>
+                  <!-- Делать ли эту конструкцию через if для каждого таба? -->
                 </tr>
               </tbody>
             </table>
@@ -244,59 +249,80 @@
           Acer Aspire 3 A315-22-44UQ NX.HE8EU.00Z
         </a>
         <div class="calculator-mob-number">Код товара: SJ0065478</div>
-        <div class="calculator-mob-price">3 810.60 <span>РУБ.</span></div>
+        <div class="calculator-mob-price">{{calculatorItemPrice}}<span>РУБ.</span></div>
       </div>
     </div>
+    <!-- Адаптив блок -->
     <div class="calculator-mob-form show">
       <form action="">
         <div class="calculator-mob-step">
           шаг-1 - <span>Выберите тип услуги</span>
         </div>
         <div class="calculator-mob-select">
-          <select>
-            <option selected disabled>Выберите героя</option>
-            <option value="Кредит">Кредит</option>
+          <select @change="changeCredit(e)" v-model="Credit">
+            <option selected value="seceltedChoose">Выбрать</option>
+            <option value="Credit">Кредит</option>
+            <option value="Credit_R">Рассрочка</option>
           </select>
         </div>
-        <div class="calculator-mob-step">
-          шаг-1 - <span>Выберите тип услуги</span>
-        </div>
-        <div class="calculator-mob-select">
-          <select>
-            <option selected disabled>Выберите героя</option>
-            <option value="Кредит">Кредит</option>
-          </select>
-        </div>
-        <div class="calculator-mob-step">
-          шаг-1 - <span>Выберите тип услуги</span>
-        </div>
-        <div class="calculator-mob-select">
-          <select>
-            <option selected disabled>Выберите героя</option>
-            <option value="Кредит">Кредит</option>
-          </select>
-        </div>
-        <div class="calculator-mob-box">
-          <div class="calculator-mob-credit">
-            <div class="calculator-mob-loan">кредит</div>
-            <div class="calculator-mob-cena">12 164.00 <span>РУБ.</span></div>
+        <!-- Шаг 2 -->
+        <template v-if="Credit !== 'seceltedChoose'">
+          <div class="calculator-mob-step">
+            шаг-2 - <span>Выберите срок кредитования</span>
           </div>
-          <div class="calculator-mob-table">
-            <div class="calculator-mob-info">
-              <div class="calculator-mob-txt">Первый взнос</div>
-              <div class="calculator-mob-cena">164.28 <span>РУБ.</span></div>
+          <div class="calculator-mob-select">
+            <select>
+              <option selected dibled>Выбрать</option>
+              <option v-for="t in terms" :key="t" v-if="Credit == 'Credit'" @change="choosePrise(t)">
+                {{t + " " + 'мес'}}
+                
+              </option>
+              <option v-for="cnt in installmentMonths" :key="cnt" v-if="Credit == 'Credit_R'">
+                {{cnt + " " + 'мес'}}
+              </option>
+            </select>
+        
+          </div>
+          <!-- Шаг 3 -->
+          <div class="calculator-mob-step">
+            шаг-3 - <span>Выберите первый взнос</span>
+          </div>
+          <div class="calculator-mob-select">
+            <select>
+              <option selected disabled>Выбрать</option>
+              <option v-for='p in percents' :key="p" v-if="Credit == 'Credit'">
+                {{p}}
+              </option>
+              <option v-for='cnm in contributionMounths' :key="cnm" v-if="Credit == 'Credit_R'">
+                {{cnm}}
+              </option>
+            </select>
+          </div>
+          <!-- Расчет -->
+          <div class="calculator-mob-box">
+            <div class="calculator-mob-credit">
+              <div class="calculator-mob-loan" v-if="Credit == 'Credit'">{{creditText}}</div>
+              <div class="calculator-mob-loan" v-if="Credit == 'Credit_R'">{{creditTextR}}</div>
+              <div class="calculator-mob-cena">12 164.00 <span>РУБ.</span></div>
             </div>
-            <div class="calculator-mob-info">
-              <div class="calculator-mob-txt">Макс. платеж, в месяц</div>
-              <div class="calculator-mob-cena">164.28 <span>РУБ.</span></div>
-            </div>
-            <div class="calculator-mob-info">
-              <div class="calculator-mob-txt">Всего переплата</div>
-              <div class="calculator-mob-cena">164.28 <span>РУБ.</span></div>
+            <div class="calculator-mob-table">
+              <div class="calculator-mob-info">
+                <div class="calculator-mob-txt">Первый взнос</div>
+                <div class="calculator-mob-cena">{{calculatorItemPrice}}<span>РУБ.</span></div>
+              </div>
+              <div class="calculator-mob-info">
+                <div class="calculator-mob-txt">Макс. платеж, в месяц</div>
+                <div class="calculator-mob-cena">164.28 <span>РУБ.</span></div>
+              </div>
+              <div class="calculator-mob-info">
+                <div class="calculator-mob-txt">Всего переплата</div>
+                <div class="calculator-mob-cena">164.28 <span>РУБ.</span></div>
+              </div>
             </div>
           </div>
-        </div>
-        <button class="calculator-mob-btn ui-btn">оформить заказ</button>
+          <button class="calculator-mob-btn ui-btn">оформить заказ</button>
+        </template>
+        <!-- End -->
         <a href="#" class="calculator-mob-close">
           <img src="./images/icons/Крестик для иконки.svg" alt="alt" />
           Закрыть калькулятор
@@ -308,8 +334,7 @@
     new Vue({
       el: "#app",
       data: {
-        contributionMounths: [1, 2, 4, 10],
-        installmentMonths: [3, 6, 10],
+    
         installments: [
           ["Приват банк", 3, "../images/examples/halva 1.png"],
           ["Приват банк", 1, "../images/examples/halva 1.png"],
@@ -322,14 +347,42 @@
         firstElement: true,
         secondElement: false,
         thirdElement: false,
+        resultTerms:null,
+        resultPercents:null,
+        calculatorItemPrice: 1000,
+        // Кредит
         terms: [6, 10, 12, 15, 18, 24, 36, 48],
-        percents: ["Без взноса", "10%", "20%", "30%", "40%", "50%", "60%"],
+        percents: [0, 10, 20, 30, 40, 50, 60],
+        // Рассрочка
+        contributionMounths: [0,1,2,3],
+        installmentMonths: [3,2,3,4],
+        // Vars
+        key: '',
+        Credit: "seceltedChoose",
+        creditText: 'Кредит',
+        creditTextR: 'Рассрочка',
+        selected: '',
+        // selectedValue: 1,
+       
       },
       methods: {
         changeTerm(term) {
-          this.currentTerm = term;
-          console.log(this.currentTerm);
+          this.resultTerms = term;
+          console.log(this.resultTerms);
         },
+        changePercents(percent) {
+          this.resultPercents = percent;
+          console.log(this.resultPercents);
+        },
+      
+     
+        choosePrise(t) {
+          this.resultTerms = t;
+          console.log(this.resultTerms);
+        },
+       
+
+
         changeTab(tab) {
           this.activeTab = tab;
         },

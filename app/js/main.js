@@ -128,12 +128,15 @@ $(document).ready(function () {
 
 
 let compare = document.querySelector(".features-box-differences");
-compare.onclick = () => {
-  let bggreen = document.querySelectorAll('.features-box');
-  bggreen.forEach((element) => {
-    element.classList.toggle("bggreen");
-  })
-} 
+if(compare) {
+  compare.onclick = () => {
+    let bggreen = document.querySelectorAll('.features-box');
+    bggreen.forEach((element) => {
+      element.classList.toggle("bggreen");
+    })
+  } 
+  
+}
 
 
 
