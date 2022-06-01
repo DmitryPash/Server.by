@@ -1,5 +1,19 @@
 <div class="calculator">
   <div id="app">
+<!-- Test attr -->
+<br><br><hr><br>
+<div class="test-attr">
+  <!-- <button @click="callFunction" item-price="22">Click Me</button> -->
+  <div class="priceTest" ref="itemPrice" item-price="22">
+    {{calculatorItemPrice}} - item price
+  </div>
+  <input type="hidden" ref="termsArr" terms-value="6, 10, 12, 15, 18, 24, 36, 48">
+  <input type="hidden" ref="percentsArr" percents-value="0, 10, 20, 30, 40, 50, 60">
+  {{terms}}
+  {{percents}}
+</div>  
+<br><hr><br><br>
+<!--  -->
     <div class="calculator-title">Кредитный калькулятор</div>
     <div class="calculator-alert">
       <div class="calculator-alert-img">
@@ -28,11 +42,11 @@
                 <div class="calculator-item-number">КОД ТОВАРА: SJ0065478</div>
                 <div class="calculator-item-in-stock">
                   <img src="./images/icons/accept.png" alt="alt" />
-                  В НАЛИЧИИ
+                  В НАЛИЧИИ 
                 </div>
               </div>
               <div class="calculator-item-price">
-                {{calculatorItemPrice}} <span>РУБ.</span>
+                {{calculatorItemPrice}}<span>РУБ.</span>
               </div>
             </div>
           </div>
@@ -236,7 +250,7 @@
           </div>
         </div>
         <div class="col-calculator-26 flex valign-end">
-          <a href="#" class="calculator-btn ui-btn">оформить заказ</a>
+          <a href="#" class="calculator-btn ui-btn" @click="setData">оформить заказ</a>
         </div>
       </div>
     </div>
@@ -323,18 +337,22 @@
           <button class="calculator-mob-btn ui-btn">оформить заказ</button>
         </template>
         <!-- End -->
-        <a href="#" class="calculator-mob-close">
+        <a href="#" class="calculator-mob-close mfp-close">
           <img src="./images/icons/Крестик для иконки.svg" alt="alt" />
           Закрыть калькулятор
         </a>
       </form>
     </div>
+   
   </div>
   <script>
+
+
     new Vue({
       el: "#app",
       data: {
-    
+
+        pr: null,
         installments: [
           ["Приват банк", 3, "../images/examples/halva 1.png"],
           ["Приват банк", 1, "../images/examples/halva 1.png"],
@@ -349,10 +367,10 @@
         thirdElement: false,
         resultTerms:null,
         resultPercents:null,
-        calculatorItemPrice: 1000,
+        calculatorItemPrice: null,
         // Кредит
-        terms: [6, 10, 12, 15, 18, 24, 36, 48],
-        percents: [0, 10, 20, 30, 40, 50, 60],
+        terms: [],
+        percents: [],
         // Рассрочка
         contributionMounths: [0,1,2,3],
         installmentMonths: [3,2,3,4],
@@ -362,9 +380,12 @@
         creditText: 'Кредит',
         creditTextR: 'Рассрочка',
         selected: '',
-        // selectedValue: 1,
-       
+
+
+        getData: [],
+        
       },
+     
       methods: {
         changeTerm(term) {
           this.resultTerms = term;
@@ -381,7 +402,30 @@
           console.log(this.resultTerms);
         },
        
+        setData(){
+            this.getData.push(this.resultTerms)
+            // if(this.getData.length === 2) {
+            //   this.getData.splice(this.getData.indexOf(this.resultTerms), 1)
+            // }
+            this.getData.push(this.resultPercents)
+         
 
+            const dataContact = JSON.stringify(this.getData)
+            console.log(dataContact)
+
+            // Отправляем данные 
+                // fetch(" ", {
+                //       method: "POST",
+                //       body: JSON.stringify(str),
+                //       headers: {
+                //         "Content-type": "application/json; charset=UTF-8",
+                //       },
+                //     })
+                //       .then((response) => response.json())
+                //       .then((data) => {
+                //         console.log(data)
+                //     })
+        },
 
         changeTab(tab) {
           this.activeTab = tab;
@@ -389,7 +433,26 @@
       },
       mounted() {
         this.currentTerm = this.terms[0];
+        this.calculatorItemPrice = this.$refs.itemPrice.getAttribute('item-price');
+        // Кредит
+        this.terms = this.$refs.termsArr.getAttribute('terms-value');
+        let TermsSplit =  this.terms.split(',').map(function(item){
+          return parseInt(item, 10);
+        });
+        this.terms = TermsSplit;
+        console.log(TermsSplit + 'termssplit')
+        console.log(this.terms)
+        // Рассрочка
+        this.percents = this.$refs.percentsArr.getAttribute('percents-value');
+        let PercentsSplit = this.percents.split(',').map(function(item) {
+          return parseInt(item, 10);
+        })
+        this.percents = PercentsSplit
       },
+
+
+
+
     });
   </script>
 </div>
