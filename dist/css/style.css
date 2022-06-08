@@ -5227,7 +5227,7 @@ body {
 
 .calculator-vue-cards input[type=radio]:checked + label {
   color: #398aea;
-  border: 2px solid #398aea;
+  border: 1px solid #398aea;
 }
 
 .calculator-vue-cards input[type=radio]:checked + label .calculator-vue-txt span {
@@ -5788,10 +5788,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 12px;
   min-height: calc(100% - 12px);
-  padding-top: 17px;
-  padding-bottom: 17px;
-  padding-left: 12px;
+  padding: 17px 12px;
   margin-bottom: 12px;
   border-radius: 4px;
   border: 1px solid #d6e3f2;
@@ -5799,15 +5798,10 @@ body {
 
 .calculator-vue-img {
   display: inline-block;
-  margin-right: 12px;
 }
 
 .calculator-vue-img img {
   max-height: 46px;
-}
-
-.calculator-vue-description {
-  margin-bottom: 25px;
 }
 
 .calculator-vue .col-calculator-vue[class*=col-] {
