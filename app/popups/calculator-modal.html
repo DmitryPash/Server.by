@@ -422,7 +422,7 @@
         resultTerms:null,
 
         // Первый взнос
-        resultPercents:0,
+        resultPercents: null,
 
         // Цена товара
         calculatorItemPrice: null,
@@ -542,7 +542,6 @@
 
 
         calcTotal: function () {
-          // console.log(this.activeTab)
             if(this.activeTab === 'cards') {
              return this.calculatorItemPrice
             } else if (this.activeTab === 'installment') {
@@ -592,7 +591,7 @@
 
         // Кредит
         this.termJson =  JSON.parse(this.$refs.app.dataset.terms || []);
-        this.resultTerms = this.termJson[0].term
+        this.resultTerms = this.termJson[0].term 
         // Первый взнос
         this.percents = this.$refs.app.dataset.percents;
        
@@ -600,8 +599,8 @@
           return parseInt(item, 10);
         })
         this.percents = PercentsSplit
-        // ????????????????????????????????????????????????? поставь 0 и будет -> infinity
-        this.percent = this.percents[1]
+        this.percent = this.percents[0]
+        // this.percent = ((((this.calculatorItemPrice - this.result.resultFirstPay) *  this.calcMouthPercent) + (this.calculatorItemPrice - this.result.resultFirstPay)) / this.resultTerms)
        
         // Рассрочка 
           // Срок рассрочки
@@ -616,14 +615,24 @@
         // Карты рассрочек
         this.installments = JSON.parse("[" + this.$refs.app.dataset.installments + "]")  
         
-        this.resultPercents = this.installments[0][1]
-        console.log(this.installments[0][1])
 
-        
+        if(this.activeTab === 'installment') {
+          this.resultPercents = this.installments[0][1]
+        } else {
+          this.resultPercents  = this.percents[0]
+        }
+      
+        console.log(this.resultPercents)
+        console.log(this.percent)
+        console.log(this.resultTerms)
+        console.log(this.percents)
+        console.log(this.percentJson)
+        console.log(this.resultPercents)
+        console.log(this.calculatorItemPrice)
       },
 
    
-
+     
 
     });
     })
