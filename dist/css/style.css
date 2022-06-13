@@ -1354,13 +1354,31 @@ input:focus:-ms-input-placeholder {
   text-align: right;
 }
 
+.calculator .selectedField {
+  border: 2px solid #398AEA;
+  color: #398AEA;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  background: url(../images/icons/mob-select-blue.svg) no-repeat right;
+  background-position: right 10px center;
+}
+
+.calculator .selectedField option {
+  color: #647b98;
+  font-weight: 400;
+}
+
+.calculator .calculatorMobBoxSelected {
+  border: 2px solid #398AEA;
+}
+
 .mfp-close-btn-in .calculator .mfp-close {
   background: transparent;
   border-radius: 0;
   color: blue;
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 11px;
+  right: 11px;
   font-size: 0;
   background-image: url(../images/icons/cross-calculator.svg);
   background-repeat: no-repeat;
@@ -5394,7 +5412,7 @@ body {
 }
 
 .calculator-title {
-  padding-bottom: 25px;
+  margin-bottom: 25px;
   font-weight: 700;
   font-size: 1.5rem;
 }
@@ -5406,7 +5424,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .calculator-alert-txt {
@@ -5442,7 +5460,7 @@ body {
 .calculator-item-description {
   display: inline-block;
   vertical-align: top;
-  padding-left: 8px;
+  padding-right: 10px;
 }
 
 .calculator-item-title {
@@ -5487,6 +5505,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 20px;
   padding-top: 30px;
   padding-bottom: 25px;
   padding-left: 20px;
@@ -5523,8 +5542,8 @@ body {
 }
 
 .calculator-item-cena {
-  margin-right: 20px;
-  font-size: 0.875rem;
+  margin-right: 30px;
+  font-size: 0.5625rem;
 }
 
 .calculator-item-cena:nth-of-type(3) {
@@ -5532,8 +5551,8 @@ body {
 }
 
 .calculator-item-cena span {
-  font-size: 1.125rem;
-  font-weight: 600;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 .calculator-item-icon {
@@ -5577,22 +5596,26 @@ body {
   margin-bottom: 30px;
   border-top: 1px solid #d6e3f2;
   border-bottom: 1px solid #d6e3f2;
+  gap: 12px;
 }
 
 .calculator-mob-description {
   display: inline-block;
   vertical-align: top;
-  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .calculator-mob-title {
+  display: inline-block;
   font-weight: 600;
   font-size: 0.8125rem;
+  margin-bottom: 5px;
 }
 
 .calculator-mob-number {
   font-size: 0.6875rem;
   color: #6d829f;
+  margin-bottom: 8px;
 }
 
 .calculator-mob-price {
@@ -5635,6 +5658,7 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  border-radius: 4px;
 }
 
 .calculator-mob-form {
@@ -7170,6 +7194,8 @@ body {
 
   .mfp-close-btn-in .calculator .mfp-close {
     display: inline-block;
+    top: 0px;
+    right: 0px;
   }
 }
 

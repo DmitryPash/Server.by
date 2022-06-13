@@ -1,5 +1,22 @@
 .calculator {
-  
+
+  .selectedField {
+    border: 2px solid #398AEA;
+    color: #398AEA;
+    font-weight: 600;
+    font-size: rem(13px);
+    background: url(../images/icons/mob-select-blue.svg) no-repeat right;
+    background-position: right 10px center;
+    option {
+      color: #647b98;
+      font-weight: 400;
+    }
+
+  }
+  .calculatorMobBoxSelected {
+    border: 2px solid #398AEA;
+  }
+
 }
 
 
@@ -10,8 +27,8 @@
         border-radius: 0; 
         color: blue;
         position: absolute;
-        top: 0px;
-        right: 0px;
+        top: 11px;
+        right: 11px;
         font-size: 0;
         background-image: url(../images/icons/cross-calculator.svg);
         background-repeat: no-repeat;
@@ -19,6 +36,8 @@
         opacity: 1;
         @media(max-width:768px) {
             display: inline-block;
+            top: 0px;
+            right: 0px;
         }
     }
 }

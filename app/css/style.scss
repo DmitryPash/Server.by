@@ -3607,14 +3607,14 @@ body {
   }
 
   &-title {
-    padding-bottom: 25px;
+    margin-bottom: 25px;
     font-weight: 700;
     font-size: rem(24px);
   }
   &-alert {
     display: flex;
     align-items: center;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
     &-txt {
       font-size: rem(12);
       display: inline-block;
@@ -3641,7 +3641,7 @@ body {
     &-description {
       display: inline-block;
       vertical-align: top;
-      padding-left: 8px;
+      padding-right: 10px;
     }
     &-title {
       word-wrap: normal;
@@ -3676,6 +3676,7 @@ body {
     }
     &-info {
       display: flex;
+      gap: 20px;
       padding-top: 30px;
       padding-bottom: 25px;
       padding-left: 20px;
@@ -3709,14 +3710,14 @@ body {
     }
 
     &-cena {
-      margin-right: 20px;
-      font-size: rem(14px);
+      margin-right: 30px;
+      font-size: rem(9px);
       &:nth-of-type(3) {
         margin-right: 0;
       }
       span {
-        font-size: rem(18px);
-        font-weight: 600;
+        font-size: rem(20px);
+        font-weight: 700;
       }
     }
     &-icon {
@@ -3755,19 +3756,23 @@ body {
       margin-bottom: 30px;
       border-top: 1px solid #d6e3f2;
       border-bottom: 1px solid #d6e3f2;
+      gap: 12px;
     }
     &-description {
       display: inline-block;
       vertical-align: top;
-      padding-left: 10px;
+      padding-right: 10px;
     }
     &-title {
+      display: inline-block;
       font-weight: 600;
       font-size: rem(13px);
+      margin-bottom: 5px;
     }
     &-number {
       font-size: rem(11px);
       color: #6d829f;
+      margin-bottom: 8px;
     }
     &-price {
       font-size: rem(16px);
@@ -3801,6 +3806,8 @@ body {
         background: url(../images/icons/mob-select.svg) no-repeat right;
         background-position: right 10px center;
         appearance: none;
+        border-radius: 4px;
+        
       }
     }
     &-form {

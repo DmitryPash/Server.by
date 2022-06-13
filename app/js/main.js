@@ -252,5 +252,3 @@ $("#accountData").validate({
 });
 
 
-// table scroll 
-

@@ -1,28 +1,8 @@
 <div class="calculator">
   <div id="app" ref="app" data-price="1000" data-terms='[{"term":3, "percent":25.9},{"term":6, "percent":25.9},{"term":10, "percent":25.9},{"term":12, "percent":30.9},{"term":18, "percent":30.9},{"term":24, "percent":30.9},{"term":36, "percent":30.9},{"term":48, "percent":30.9}]' data-percents="0, 10, 20, 30, 40, 50, 60" data-percentsr="3, 4, 5, 6" data-installments='["Карта Черепаха", 8, "./images/examples/tortle-card.png"], ["Карта Халва", 2, "./images/examples/halva 1.png"], ["Карта покупок", 3, "./images/examples/fun-card3.png"], ["Карта FUN", 3, "./images/examples/fun-card3.png"], ["Карта Магнит", 3, "./images/examples/magnit-card.png"]'>
-<!-- Test attr -->
 
-<!-- <div class="test-attr">
-  <br><br><hr><br>
-  <div class="priceTest">
-    Цена товара - {{calculatorItemPrice}} 
-   </div>
-  Скрое кредитования - {{terms}}
-  <br>
-  Первый взнос(кредит) - {{percents}}
-  <br>
-  installments - {{installments[0]}}
-  <br><hr><br><br>
-  </div>   -->
-
-
-
-
-<!-- Начальное слово "Без взноса" -> сделать проверку  -->
-<!-- Формула подсчета -> нужна формула -->
 <!-- Проверить отправку на бэк -->
-
-<!-- Сумма займа * Процентная ставка / 365 (366) дней * Количество дней пользования займом; 2. -->
+<!-- Начальное значение в кредите -->
   
 
 <!--  -->
@@ -69,10 +49,10 @@
               <img src="./images/icons/item-icon.svg" alt="alt" />
             </div>
             <div class="calculator-item-cena">
-              В кредит от <span>50.20</span> руб.
+              В кредит <br> от <span>50.20</span> руб.
             </div>
             <div class="calculator-item-cena">
-              В рассрочку от <span>132.20</span> руб.
+              В рассрочку <br> от <span>132.20</span> руб.
             </div>
           </div>
         </div>
@@ -302,12 +282,13 @@
         <div class="calculator-mob-step">
           шаг-1 - <span>Выберите тип услуги</span>
         </div>
-        <div class="calculator-mob-select">
-          <!-- <select @change="changeCredit(e)" v-model="Credit"> -->
-          <select v-model="Credit">
-            <option selected value="seceltedChoose">Выбрать</option>
+        <div class="calculator-mob-select" >
+          <!-- <select @change="changeCredit($event)" v-model="Credit"> -->
+          <select ref="popupselect" v-model="Credit" @change="changeCredit($event)">
+            <option selected disabled value="seceltedChoose">Выбрать</option>
             <option value="Credit">Кредит</option>
             <option value="Credit_R">Рассрочка</option>
+            <option value="Credit_C">Карты рассрочек</option>
           </select>
         </div>
         <!-- Шаг 2 -->
@@ -317,21 +298,27 @@
           </div>
           <div class="calculator-mob-select">
             <select  v-if="Credit == 'Credit'" @change="choosePrise($event)">
-              <option selected dibled>Выбрать</option>
+              <option selected disabled value="seceltedChoose">Выбрать</option>
               <option v-for="term in termJson" :value="term.term" :data-percent="term.percent"  :key="term.term" >
-
                 {{term.term + " " + 'мес'}}
-                
               </option>           
             </select>
-            <select v-if="Credit == 'Credit_R'" @change="chooseRasrochka($event)">
-              <option selected dibled>Выбрать</option>
+         <!-- Рассрочки -->
+            <select v-if="Credit == 'Credit_R'" @change="changePercents(percent)">
+              <option selected disabled value="seceltedChoose">Выбрать</option>
               <option v-for="cnt in percentJson" :value="cnt"  :key="cnt" >
                 {{cnt + " " + 'мес'}}
-              </option>
-            
+              </option>            
             </select>
-            
+            <!-- Карты рассрочек -->
+            <select v-if="Credit == 'Credit_C'" @change="changePercentsMob($event)">
+              <option selected disabled value="seceltedChoose">Выбрать</option>
+              <option  v-for="(percent,index) in installments" :value="percent[1]"
+              :key="index"  >
+                {{percent[1] + " " + 'мес'}}
+              </option>            
+            </select>
+
           </div>
           <!-- Шаг 3 -->
           <div class="calculator-mob-step">
@@ -339,19 +326,28 @@
           </div>
           <div class="calculator-mob-select">
             <select @change="choosePercent($event)">
-              <option selected disabled>Выбрать</option>
+              <option selected disabled value="seceltedChoose">Выбрать</option>
               <template v-if="Credit == 'Credit'">
                 <option v-for="(percent,index) in percents"
                 :key="percent" :value="percent" >
                   {{percent}}
+                 
                 </option>
               </template>
               <template v-if="Credit == 'Credit_R'">
-                <option v-for='cnm in contributionMounths' :key="cnm" >
-                  {{cnm}}
+                <option v-for='cnm in contributionMounths' :key="cnm">
+                  {{cnm}} 
+                 
                 </option>
               </template>
-             
+
+              <template v-if="Credit == 'Credit_C'">
+                <option v-for='cnm in contributionMounths' :key="cnm">
+                  {{cnm}} 
+                 
+                </option>
+              </template>
+              
             </select>
           </div>
           <!-- Расчет -->
@@ -359,22 +355,26 @@
             <div class="calculator-mob-credit">
               <div class="calculator-mob-loan" v-if="Credit == 'Credit'">{{creditText}}</div>
               <div class="calculator-mob-loan" v-if="Credit == 'Credit_R'">{{creditTextR}}</div>
+              <div class="calculator-mob-loan" v-if="Credit == 'Credit_C'">{{creditTextR}}</div>
 
               <div class="calculator-mob-cena" v-if="Credit == 'Credit'">{{calcTotal()}}<span>РУБ.</span></div>
               <div class="calculator-mob-cena" v-if="Credit == 'Credit_R'">{{calculatorItemPrice}}<span>РУБ.</span></div>
+              <div class="calculator-mob-cena" v-if="Credit == 'Credit_C'">{{calculatorItemPrice}}<span>РУБ.</span></div>
 
             </div>
             <div class="calculator-mob-table">
               <div class="calculator-mob-info">
                 <div class="calculator-mob-txt">Первый взнос</div>
-                <div class="calculator-mob-cena" v-if="Credit == 'Credit'">{{calcFirstPay()}}<span>РУБ.</span></div>
-                <div class="calculator-mob-cena" v-if="Credit == 'Credit_R'">{{calcFirstPay()}}<span>РУБ.</span></div>
+                <div class="calculator-mob-cena" v-if="Credit == 'Credit'">{{calcFirstPay()}}</div>
+                <div class="calculator-mob-cena" v-if="Credit == 'Credit_R'">{{calcFirstPay()}}</div>
+                <div class="calculator-mob-cena" v-if="Credit == 'Credit_C'">{{calcFirstPay()}}</div>
                 <div class="calculator-mob-cena" v-if="activeTab === 'cards'">Без взноса<span>РУБ.</span></div>
               </div>
               <div class="calculator-mob-info">
                 <div class="calculator-mob-txt">Платеж в месяц</div>
                 <div class="calculator-mob-cena" v-if="Credit == 'Credit'">{{calcMouth()}}<span>РУБ.</span></div>
                 <div class="calculator-mob-cena"v-if="Credit == 'Credit_R'">{{calcMouth()}}<span>РУБ.</span></div>
+                <div class="calculator-mob-cena"v-if="Credit == 'Credit_C'">{{calcMouth()}}<span>РУБ.</span></div>
                 <div class="calculator-mob-cena" v-if="activeTab === 'cards'">Без взноса<span>РУБ.</span></div>
 
               </div>
@@ -382,6 +382,7 @@
                 <div class="calculator-mob-txt">Всего переплата</div>
                 <div class="calculator-mob-cena" v-if="Credit == 'Credit'">{{calcOverPay()}}<span>РУБ.</span></div>
                 <div class="calculator-mob-cena"v-if="Credit == 'Credit_R'">{{calcOverPay()}}<span>РУБ.</span></div>
+                <div class="calculator-mob-cena"v-if="Credit == 'Credit_C'">{{calcOverPay()}}<span>РУБ.</span></div>
                 <div class="calculator-mob-cena" v-if="activeTab === 'cards'">Без взноса<span>РУБ.</span></div>
 
               </div>
@@ -401,6 +402,7 @@
   <script>
 
     $( document ).ready(function() {
+ 
 
       $(document).on('click', '.calculator-mob-close', function() {
         $.magnificPopup.close();
@@ -410,6 +412,7 @@
       new Vue({
       el: "#app",
       data: {
+        
         // Карты рассрочек
         installments: [],
 
@@ -423,6 +426,7 @@
 
         // Первый взнос
         resultPercents: null,
+        // resultPercentCard: null,
 
         // Цена товара
         calculatorItemPrice: null,
@@ -445,6 +449,7 @@
         Credit: "seceltedChoose",
         creditText: 'Кредит',
         creditTextR: 'Рассрочка',
+
         
         // Сумарные переменные 
         calcMouthPercent: null,
@@ -478,6 +483,19 @@
           }else {
             this.resultPercents = percent[1];
           }
+          
+          let etargetOption = event.target.options[event.target.options.selectedIndex].value
+          if(etargetOption === 'seceltedChoose') {
+            event.target.classList.remove('selectedField')
+          }else{
+            event.target.classList.add('selectedField')
+          }
+          
+          this.checkSelect()
+        },
+        changePercentsMob(percent) {
+          this.resultPercents = percent;
+          console.log(percent)
         },
       
         choosePrise(event) {
@@ -485,16 +503,63 @@
           this.percent = event.target.options[event.target.options.selectedIndex].getAttribute('data-percent');
           console.log(this.resultTerms);
           console.log(this.percent);
+          let etargetOption = event.target.options[event.target.options.selectedIndex].value
+          if(etargetOption === 'seceltedChoose') {
+            event.target.classList.remove('selectedField')
+          }else{
+            event.target.classList.add('selectedField')
+          }
+          this.checkSelect()
         },
         
+        changePercentsMob(event) {
+          this.resultTerms = event.target.options[event.target.options.selectedIndex].value;
+       
+
+          let etargetOption = event.target.options[event.target.options.selectedIndex].value
+          if(etargetOption === 'seceltedChoose') {
+            event.target.classList.remove('selectedField')
+          }else{
+            event.target.classList.add('selectedField')
+          }
+          this.checkSelect()
+        },
+
         choosePercent(event) {
          this.resultPercents = event.target.value
+         let etargetOption = event.target.options[event.target.options.selectedIndex].value
+          if(etargetOption === 'seceltedChoose') {
+            event.target.classList.remove('selectedField')
+          }else{
+            event.target.classList.add('selectedField')
+          }
+          this.checkSelect()
         },
 
         chooseRasrochka(event) {
           this.resultTerms = event.target.value
+          let etargetOption = event.target.options[event.target.options.selectedIndex].value
+          if(etargetOption === 'seceltedChoose') {
+            event.target.classList.remove('selectedField')
+          }else{
+            event.target.classList.add('selectedField')
+          }
+          this.checkSelect()
         },
 
+
+ 
+        checkSelect() {
+          let classExist = document.querySelectorAll('.selectedField'),
+              calculatorMobBox = document.querySelector('.calculator-mob-box');
+          console.log(classExist.length)
+          if(classExist.length === 3) {
+            calculatorMobBox.classList.add('calculatorMobBoxSelected')
+          } else {
+            calculatorMobBox.classList.remove('calculatorMobBoxSelected')
+          }
+        },
+       
 
         setData(){
             this.getData.push(this.resultTerms)
@@ -519,15 +584,31 @@
 
         changeTab(tab) {
           this.activeTab = tab;
-         
+          if(this.activeTab === 'cards') {
+            this.resultPercents = this.installments[0][1]
+          }
         },
 
+        changeCredit(event) {
+          let etargetOption = event.target.options[event.target.options.selectedIndex].value
+          if(etargetOption === 'seceltedChoose') {
+            event.target.classList.remove('selectedField')
+          }else{
+            event.target.classList.add('selectedField')
+          }
+        },
+
+
+        // let event = new Event("click");
+        // elem.dispatchEvent(event);
+        
+   
 
         //  Формула рассчета -  ((цена - первый взнос) * (ежемес.процент / 12 * кол-месц) / 100) + (цена - первый взнос) = итого
         calcFirstPay: function () {
           // Переменная первого взноса
           this.result.resultFirstPay = (this.calculatorItemPrice / 100 * this.resultPercents);
-          if(this.activeTab === 'cards' || this.activeTab === 'installment' || this.Credit === 'Credit_R') {
+          if(this.activeTab === 'cards' || this.activeTab === 'installment' || this.Credit === 'Credit_R' || this.Credit === 'Credit_C') {
              return 'Без взноса'
             } else if (this.Credit === 'Credit') {
               return  `${this.result.resultFirstPay.toFixed(2)} РУБ`
@@ -542,27 +623,29 @@
 
 
         calcTotal: function () {
+          // Переменная процент выбраного месяца
+          this.calcMouthPercent = (this.percent / 12 * this.resultTerms) / 100;
             if(this.activeTab === 'cards') {
              return this.calculatorItemPrice
-            } else if (this.activeTab === 'installment') {
+            return  this.result.resultTotal.toFixed(2)
+            } else if (this.activeTab === 'installment' || this.Credit == 'Credit_C') {
               return this.calculatorItemPrice
             } else if (this.Credit === 'Credit') {
-                this.calcMouthPercent = (this.percent / 12 * this.resultTerms) / 100;
                 this.result.resultTotal = (((this.calculatorItemPrice - this.result.resultFirstPay) *  this.calcMouthPercent) + (this.calculatorItemPrice - this.result.resultFirstPay));
                 return  this.result.resultTotal.toFixed(2)
             }else {
-              // Переменная процент выбраного месяца
-                this.calcMouthPercent = (this.percent / 12 * this.resultTerms) / 100;
                 this.result.resultTotal = (((this.calculatorItemPrice - this.result.resultFirstPay) *  this.calcMouthPercent) + (this.calculatorItemPrice - this.result.resultFirstPay));
                 return  this.result.resultTotal.toFixed(2)
             }
+
           },
 
 
-          calcMouth: function() {
+        calcMouth: function() {
             if(this.activeTab === 'cards') {
+              
               return (this.calculatorItemPrice / this.resultPercents).toFixed(2)
-            } else if (this.activeTab === 'installment' || this.Credit === 'Credit_R') {
+            } else if (this.activeTab === 'installment' || this.Credit === 'Credit_R' || this.Credit === 'Credit_C') {
               return (this.calculatorItemPrice / this.resultTerms).toFixed(2)
             } else { 
               this.result.resultMauth = ((((this.calculatorItemPrice - this.result.resultFirstPay) *  this.calcMouthPercent) + (this.calculatorItemPrice - this.result.resultFirstPay)) / this.resultTerms)
@@ -571,8 +654,8 @@
           },
 
 
-          calcOverPay: function() {
-            if(this.Credit === 'Credit_R')  {
+        calcOverPay: function() {
+            if(this.Credit === 'Credit_R' || this.Credit === 'Credit_C')  {
              return this.result.resultOverPay = 0
             } else {
               this.result.resultOverPay = ((this.calculatorItemPrice / 100 * this.resultPercents + (((this.calculatorItemPrice - this.result.resultFirstPay) *  this.calcMouthPercent) + (this.calculatorItemPrice - this.result.resultFirstPay))) - this.calculatorItemPrice)
@@ -587,11 +670,12 @@
         this.currentTerm = this.terms[0];
         
         this.calculatorItemPrice = Number(this.$refs.app.dataset.price);
-         
+     
 
         // Кредит
         this.termJson =  JSON.parse(this.$refs.app.dataset.terms || []);
         this.resultTerms = this.termJson[0].term 
+        
         // Первый взнос
         this.percents = this.$refs.app.dataset.percents;
        
@@ -600,7 +684,7 @@
         })
         this.percents = PercentsSplit
         this.percent = this.percents[0]
-        // this.percent = ((((this.calculatorItemPrice - this.result.resultFirstPay) *  this.calcMouthPercent) + (this.calculatorItemPrice - this.result.resultFirstPay)) / this.resultTerms)
+      
        
         // Рассрочка 
           // Срок рассрочки
@@ -622,13 +706,20 @@
           this.resultPercents  = this.percents[0]
         }
       
-        console.log(this.resultPercents)
-        console.log(this.percent)
-        console.log(this.resultTerms)
-        console.log(this.percents)
-        console.log(this.percentJson)
-        console.log(this.resultPercents)
-        console.log(this.calculatorItemPrice)
+
+
+
+
+        this.changeTerm(this.termJson[0].term, this.termJson[0].percent)
+        
+
+
+
+
+       
+        // jQuery('.calculator select').styler();
+
+
       },
 
    
