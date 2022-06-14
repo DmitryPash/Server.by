@@ -373,18 +373,18 @@
               </div>
               <div class="calculator-mob-info">
                 <div class="calculator-mob-txt">Платеж в месяц</div>
-                <div class="calculator-mob-cena" v-if="Credit == 'Credit'">{{calcMouth()}}<span>РУБ.</span></div>
-                <div class="calculator-mob-cena"v-if="Credit == 'Credit_R'">{{calcMouth()}}<span>РУБ.</span></div>
-                <div class="calculator-mob-cena"v-if="Credit == 'Credit_C'">{{calcMouth()}}<span>РУБ.</span></div>
-                <div class="calculator-mob-cena" v-if="activeTab === 'cards'">Без взноса<span>РУБ.</span></div>
+                <div class="calculator-mob-cena" v-if="Credit == 'Credit'">{{calcMouth()}}<span> РУБ.</span></div>
+                <div class="calculator-mob-cena"v-if="Credit == 'Credit_R'">{{calcMouth()}}<span> РУБ.</span></div>
+                <div class="calculator-mob-cena"v-if="Credit == 'Credit_C'">{{calcMouth()}}<span> РУБ.</span></div>
+                <div class="calculator-mob-cena" v-if="activeTab === 'cards'">Без взноса<span> РУБ.</span></div>
 
               </div>
               <div class="calculator-mob-info">
                 <div class="calculator-mob-txt">Всего переплата</div>
-                <div class="calculator-mob-cena" v-if="Credit == 'Credit'">{{calcOverPay()}}<span>РУБ.</span></div>
-                <div class="calculator-mob-cena"v-if="Credit == 'Credit_R'">{{calcOverPay()}}<span>РУБ.</span></div>
-                <div class="calculator-mob-cena"v-if="Credit == 'Credit_C'">{{calcOverPay()}}<span>РУБ.</span></div>
-                <div class="calculator-mob-cena" v-if="activeTab === 'cards'">Без взноса<span>РУБ.</span></div>
+                <div class="calculator-mob-cena" v-if="Credit == 'Credit'">{{calcOverPay()}}<span> РУБ.</span></div>
+                <div class="calculator-mob-cena"v-if="Credit == 'Credit_R'">{{calcOverPay()}}<span> РУБ.</span></div>
+                <div class="calculator-mob-cena"v-if="Credit == 'Credit_C'">{{calcOverPay()}}<span> РУБ.</span></div>
+                <div class="calculator-mob-cena" v-if="activeTab === 'cards'">Без взноса<span> РУБ.</span></div>
 
               </div>
             </div>
@@ -602,7 +602,8 @@
           if(this.activeTab === 'cards' || this.activeTab === 'installment' || this.Credit === 'Credit_R' || this.Credit === 'Credit_C') {
              return 'Без взноса'
             } else if (this.Credit === 'Credit') {
-              return  `${this.result.resultFirstPay.toFixed(2)} <span> РУБ</span>`
+              
+              return  `${this.result.resultFirstPay.toFixed(2)} РУБ`
             } 
 
             if(this.result.resultFirstPay >= 1) { 
