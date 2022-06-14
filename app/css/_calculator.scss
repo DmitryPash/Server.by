@@ -18,8 +18,73 @@
   }
 
 }
+// Кастомный чекбокс
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.custom-checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  position: relative;
+}
+.custom-checkbox+label::before {
+  content: '';
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  border: 1px solid #D6E3F2;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.custom-checkbox+label::after {
+  content: '';
+  opacity: 0;
+  display: inline-block;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 19px;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-radius: 50%;
+  background: #0b76ef;
+}
+.custom-checkbox:checked+label::before {
+  border-color: #0b76ef;
+}
+.custom-checkbox:checked+label::after {
+  opacity: 1;
+}
+/* стили при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+  border-color: #b3d7ff;
+}
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.custom-checkbox:not(:disabled):active+label::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+.custom-checkbox:disabled+label::before {
+  background-color: #e9ecef;
+}
 
-
+.border-radio {
+  border-bottom: 3px dotted #647b98;
+}
+.custom-checkbox:checked+label > .border-radio {
+  border-bottom: 3px solid transparent;
+}
 // Крестик для закрытия попапа
 .mfp-close-btn-in .calculator {
     .mfp-close {

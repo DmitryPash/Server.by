@@ -187,7 +187,7 @@ $(document).on("click", ".mfp-link", function () {
     items: { src: a.attr("data-href") },
     type: "ajax",
     overflowY: "scroll",
-    removalDelay: 800,
+    removalDelay: 0,
     mainClass: "my-mfp-zoom-in",
     ajax: {
       tError: "Error. Not valid url",
@@ -198,11 +198,14 @@ $(document).on("click", ".mfp-link", function () {
 
 // Imask for input
 var element = document.getElementById("imask-input");
-var maskOptions = {
-  mask: "+{375}(00)000-00-00",
-  lazy: false,
-};
-var mask = IMask(element, maskOptions);
+if (element) {
+  var maskOptions = {
+    mask: "+{375}(00)000-00-00",
+    lazy: false,
+  };
+  var mask = IMask(element, maskOptions);
+}
+
 
 
 jQuery.validator.addMethod(

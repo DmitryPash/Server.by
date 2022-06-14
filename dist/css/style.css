@@ -1354,38 +1354,6 @@ input:focus:-ms-input-placeholder {
   text-align: right;
 }
 
-.calculator .selectedField {
-  border: 2px solid #398AEA;
-  color: #398AEA;
-  font-weight: 600;
-  font-size: 0.8125rem;
-  background: url(../images/icons/mob-select-blue.svg) no-repeat right;
-  background-position: right 10px center;
-}
-
-.calculator .selectedField option {
-  color: #647b98;
-  font-weight: 400;
-}
-
-.calculator .calculatorMobBoxSelected {
-  border: 2px solid #398AEA;
-}
-
-.mfp-close-btn-in .calculator .mfp-close {
-  background: transparent;
-  border-radius: 0;
-  color: blue;
-  position: absolute;
-  top: 11px;
-  right: 11px;
-  font-size: 0;
-  background-image: url(../images/icons/cross-calculator.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 1;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -2857,6 +2825,7 @@ body {
 .contact-about-form-type {
   width: 100%;
   height: 40px;
+  padding: 0px 10px;
   border: 1px solid #e5edf7;
   border-radius: 4px;
 }
@@ -2868,6 +2837,7 @@ body {
 .contact-about-form-textarea {
   width: 100%;
   height: 51px;
+  padding: 5px 10px;
   resize: none;
   border: 1px solid #e5edf7;
   border-radius: 4px;
@@ -5007,8 +4977,8 @@ body {
   background: black;
 }
 
-.mfp-content {
-  margin-top: 20px;
+.popup-wrap {
+  margin: 20px auto;
 }
 
 .mfp-close-btn-in .mfp-close {
@@ -5256,10 +5226,9 @@ body {
 }
 
 .calculator {
-  margin-top: 20px;
   background-color: #ffffff;
-  margin: 0 auto;
-  width: min(1058px, 100%);
+  width: 100%;
+  max-width: 1058px;
   position: relative;
   padding-top: 65px;
   padding-left: 65px;
@@ -5386,7 +5355,6 @@ body {
   margin-right: 47px;
   font-size: 1.125rem;
   color: #647b98;
-  border-bottom: 3px dotted #647b98;
 }
 
 .calculator-loan-btn {
@@ -6047,6 +6015,131 @@ body {
 
 .bggreen {
   background-color: #D8FFCE;
+}
+
+.calculator .selectedField {
+  border: 2px solid #398AEA;
+  color: #398AEA;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  background: url(../images/icons/mob-select-blue.svg) no-repeat right;
+  background-position: right 10px center;
+}
+
+.calculator .selectedField option {
+  color: #647b98;
+  font-weight: 400;
+}
+
+.calculator .calculatorMobBoxSelected {
+  border: 2px solid #398AEA;
+}
+
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox + label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+}
+
+.custom-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  border: 1px solid #D6E3F2;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.custom-checkbox + label::after {
+  content: "";
+  opacity: 0;
+  display: inline-block;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 19px;
+  width: 32px;
+  height: 32px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  border-radius: 50%;
+  background: #0b76ef;
+}
+
+.custom-checkbox:checked + label::before {
+  border-color: #0b76ef;
+}
+
+.custom-checkbox:checked + label::after {
+  opacity: 1;
+}
+
+/* стили при наведении курсора на checkbox */
+
+.custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
+  border-color: #b3d7ff;
+}
+
+/* стили для активного состояния чекбокса (при нажатии на него) */
+
+.custom-checkbox:not(:disabled):active + label::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+
+.custom-checkbox:disabled + label::before {
+  background-color: #e9ecef;
+}
+
+.border-radio {
+  border-bottom: 3px dotted #647b98;
+}
+
+.custom-checkbox:checked + label > .border-radio {
+  border-bottom: 3px solid transparent;
+}
+
+.mfp-close-btn-in .calculator .mfp-close {
+  background: transparent;
+  border-radius: 0;
+  color: blue;
+  position: absolute;
+  top: 11px;
+  right: 11px;
+  font-size: 0;
+  background-image: url(../images/icons/cross-calculator.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
 }
 
 @media (max-width: 1330px) {

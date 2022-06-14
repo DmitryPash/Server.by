@@ -3,7 +3,7 @@
 @import "media";
 @import "header";
 @import "footer";
-@import "calculator";
+
 
 $ffMontserrat: "Montserrat", sans-serif;
 $colorBlack: #191919;
@@ -1279,6 +1279,7 @@ body {
       &-type {
         width: 100%;
         height: 40px;
+        padding: 0px 10px;
         border: 1px solid #e5edf7;
         border-radius: 4px;
       }
@@ -1288,6 +1289,7 @@ body {
       &-textarea {
         width: 100%;
         height: 51px;
+        padding: 5px 10px;
         resize: none;
         border: 1px solid #e5edf7;
         border-radius: 4px;
@@ -3248,8 +3250,8 @@ body {
 .popup-modal-dismiss {
   background: black;
 }
-.mfp-content {
-  margin-top: 20px;
+.popup-wrap {
+  margin: 20px auto;
 }
 .mfp-close-btn-in .mfp-close {
   background: #398aea;
@@ -3470,10 +3472,9 @@ body {
   display: none;
 }
 .calculator {
-  margin-top: 20px;
   background-color: #ffffff;
-  margin: 0 auto;
-  width: min(1058px, 100%);
+  width: 100%;
+  max-width: 1058px;
   position: relative;
   padding-top: 65px;
   padding-left: 65px;
@@ -3582,7 +3583,7 @@ body {
       margin-right: 47px;
       font-size: rem(18px);
       color: #647b98;
-      border-bottom: 3px dotted #647b98;
+      // border-bottom: 3px dotted #647b98;
     }
   }
   &-loan {
@@ -4151,3 +4152,6 @@ body {
 .bggreen {
   background-color: #D8FFCE;
 }
+
+
+@import "calculator";
