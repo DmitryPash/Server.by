@@ -484,15 +484,17 @@
           }else {
             this.resultPercents = percent[1];
           }
-
-          let etargetOption = event.target.options[event.target.options.selectedIndex].value
-          if(etargetOption === 'seceltedChoose') {
-            event.target.classList.remove('selectedField')
-          }else{
-            event.target.classList.add('selectedField')
+          if (window.matchMedia("(max-width: 768)").matches) {
+            let etargetOption = event.target.options[event.target.options.selectedIndex].value
+              if(etargetOption === 'seceltedChoose') {
+                event.target.classList.remove('selectedField')
+              }else{
+                event.target.classList.add('selectedField')
+              }
+              
+              this.checkSelect()
           }
-          
-          this.checkSelect()
+        
         },
 
         choosePercents(event) {
