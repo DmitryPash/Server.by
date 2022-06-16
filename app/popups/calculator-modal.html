@@ -80,10 +80,12 @@
           id="radio3"
           v-on:click="changeTab('cards')"
         />
-        <label for="radio3"><span class="border-radio">Карты рассрочек</span></label>
-        <div class="calculator-buttons-txt">
-          Халва, Черепаха, Магнит и другие
-        </div>
+        <label for="radio3"><span class="border-radio">Карты рассрочек</span>
+          <div class="calculator-buttons-txt">
+            Халва, Черепаха, Магнит и другие
+          </div>
+        </label>
+
       </div>
       <!-- Таб 1 -->
       <div class="calculator-vue-creditBank" v-if="activeTab === 'credit'">
