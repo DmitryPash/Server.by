@@ -5214,7 +5214,7 @@ body {
 
 .calculator-vue-cards input[type=radio]:checked + label {
   color: #398aea;
-  border: 1px solid #398aea;
+  border: 2px solid #398aea;
 }
 
 .calculator-vue-cards input[type=radio]:checked + label .calculator-vue-txt span {
@@ -6065,10 +6065,9 @@ body {
   -webkit-box-flex: 0;
   -ms-flex-positive: 0;
   flex-grow: 0;
-  border: 1px solid #adb5bd;
   border-radius: 50%;
   margin-right: 0.5em;
-  border: 1px solid #D6E3F2;
+  border: 2px solid #D6E3F2;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
@@ -6083,7 +6082,7 @@ body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   top: 50%;
-  left: 19px;
+  left: 20px;
   width: 32px;
   height: 32px;
   -ms-flex-negative: 0;

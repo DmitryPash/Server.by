@@ -1,11 +1,7 @@
 <div class="calculator popup-wrap">
-  <div id="app" ref="app" data-price="1000" data-credits='[{"term":3, "percent":25.9},{"term":6, "percent":25.9},{"term":10, "percent":25.9},{"term":12, "percent":30.9},{"term":18, "percent":30.9},{"term":24, "percent":30.9},{"term":36, "percent":30.9},{"term":48, "percent":30.9}]' data-firstpay="0, 10, 20, 30, 40, 50, 60" data-rasrochka="3, 4, 5, 6" data-installments='["Карта Черепаха", 8, "./images/examples/tortle-card.png"], ["Карта Халва", 2, "./images/examples/halva 1.png"], ["Карта покупок", 3, "./images/examples/fun-card3.png"], ["Карта FUN", 3, "./images/examples/fun-card3.png"], ["Карта Магнит", 3, "./images/examples/magnit-card.png"]'>
+  <div id="app" ref="app" data-price="1000" data-credits='[{"term":3, "percent":25.9},{"term":6, "percent":25.9},{"term":10, "percent":25.9},{"term":12, "percent":30.9},{"term":18, "percent":30.9},{"term":24, "percent":30.9},{"term":36, "percent":30.9},{"term":48, "percent":30.9}]' data-firstpay="0, 10, 20, 30, 40, 50, 60" data-rasrochka="3, 4, 5, 6"
+  data-installments='[{"title":"Карта Черепаха", "term":8, "img": "./images/examples/tortle-card.png"},{"title":"Карта Халва", "term":2, "img": "./images/examples/halva 1.png"},{"title":"Карта покупок", "term":3, "img": "./images/examples/fun-card3.png"},{"title":"Карта FUN", "term":3, "img": "./images/examples/fun-card3.png"},{"title":"Карта Магнит", "term":3, "img": "./images/examples/magnit-card.png"}]'>
 
-<!-- Проверить отправку на бэк -->
-<!-- Начальное значение в кредите -->
-
-
-<!--  -->
     <div class="calculator-title">Кредитный калькулятор</div>
     <div class="calculator-alert">
       <div class="calculator-alert-img">
@@ -60,15 +56,6 @@
     </div>
     <div class="calculator-vue">
       <div class="calculator-buttons hide">
-        <!-- <input type="radio" class="custom-checkbox" id="happy" name="contact" value="yes" v-on:click="changeTab('credit')" checked>
-        <label for="contact">Кредит от банка</label>
-        <input type="radio" class="custom-checkbox" id="happy1" name="happy" value="yes">
-        <label for="happy1">Рассрочка</label>
-        <input type="radio" class="custom-checkbox" id="happy2" name="happy" value="yes">
-        <label for="happy2">Карты рассрочек</label>
- -->
-
-
         <input
         class="custom-checkbox"
           name="contact"
@@ -85,7 +72,6 @@
           id="radio2"
           v-on:click="changeTab('installment')"
         />
-
         <label for="radio2"><span class="border-radio">Рассрочка</span></label>
         <input
         class="custom-checkbox"
@@ -165,7 +151,7 @@
               :checked="index===0"
               @change="changeTerm(installment, 0)"
             />
-            <label :for="'installment' + index" class="calculator-vue-input"
+            <label :for="'installment' + index " class="calculator-vue-input"
               >{{installment}} мес</label
             >
           </div>
@@ -205,18 +191,18 @@
             <input
               name="cart"
               type="radio"
-              :id="'installment' + index"
+              :id="'cart' + index"
               :checked="index===0"
-              @change="changePercents(percent)"
+              @change="changePercents(percent.term)"
             />
-            <label :for="'installment' + index" class="calculator-vue-card valign-center">
+            <label :for="'cart' + index" class="calculator-vue-card valign-center">
               <div class="calculator-vue-img">
-                <img v-bind:src="percent[2]" alt="alt" />
+                <img v-bind:src="percent.img" alt="alt" />
               </div>
               <div class="calculator-vue-description">
-                <div class="calculator-vue-title">{{percent[0]}}</div>
+                <div class="calculator-vue-title">{{percent.title}}</div>
                 <div class="calculator-vue-txt">
-                  Рассрочка: <span>{{percent[1]}} мес</span>
+                  Рассрочка: <span>{{percent.term}} мес</span>
                 </div>
               </div>
             </label>
@@ -224,7 +210,6 @@
         </div>
       </div>
     </div>
-
     <div class="calculator-bar hide">
       <div class="row">
         <div class="col-calculator-74 col-md-12">
@@ -242,23 +227,15 @@
                   <!-- Тип услуг -->
                   <td v-if="activeTab === 'credit'">Кредит</td>
                   <td v-if="activeTab === 'installment'">Рассрочка</td>
-                  <td v-if="activeTab === 'cards'">Карта
-                    рассрочки</td>
-
+                  <td v-if="activeTab === 'cards'">Карта рассрочки</td>
                   <!-- Первый взнос -->
-                  <!-- Сделать проверку в выч.св или метод -->
                   <td v-html="calcFirstPay()"></td>
-
                   <!-- Платеж в мес. -->
                   <td>{{calcMouth()}} <span>РУБ.</span></td>
-
                   <!-- Всего переплата -->
                   <td>{{calcOverPay()}}<span>РУБ.</span></td>
-
-                   <!-- Итого -->
-                   <!-- Сумма займа * Процентная ставка / 365 (366) дней * Количество дней пользования займом; 2. -->
-                    <td>{{calcTotal()}}<span>РУБ.</span></td>
-
+                  <!-- Итого -->
+                  <td>{{calcTotal()}}<span>РУБ.</span></td>
                 </tr>
               </tbody>
             </table>
@@ -288,7 +265,6 @@
           шаг-1 - <span>Выберите тип услуги</span>
         </div>
         <div class="calculator-mob-select" >
-          <!-- <select @change="changeCredit($event)" v-model="Credit"> -->
           <select ref="popupselect" v-model="Credit" @change="changeCredit($event)">
             <option selected disabled value="seceltedChoose">Выбрать</option>
             <option value="Credit">Кредит</option>
@@ -309,7 +285,6 @@
               </option>
             </select>
          <!-- Рассрочки -->
-            <!-- <select v-if="Credit == 'Credit_R'" @change="changePercents(percent)"> -->
             <select v-if="Credit == 'Credit_R'" @change="choosePercents($event)">
               <option selected disabled value="seceltedChoose">Выбрать</option>
               <option v-for="cnt in percentJson" :value="cnt"  :key="cnt" >
@@ -319,9 +294,9 @@
             <!-- Карты рассрочек -->
             <select v-if="Credit == 'Credit_C'" @change="changePercentsMob($event)">
               <option selected disabled value="seceltedChoose">Выбрать</option>
-              <option  v-for="(percent,index) in installments" :value="percent[1]"
+              <option  v-for="(percent,index) in installments" :value="percent.term"
               :key="index"  >
-                {{percent[0] + ' - ' + percent[1] + " " + 'мес'}}
+                {{percent.title + ' - ' + percent.term + " " + 'мес'}}
               </option>
             </select>
 
@@ -395,17 +370,13 @@
   <script>
 
     $( document ).ready(function() {
-
-
       $(document).on('click', '.calculator-mob-close', function() {
         $.magnificPopup.close();
       })
 
-
       new Vue({
       el: "#app",
       data: {
-
         // Карты рассрочек
         installments: [],
 
@@ -453,7 +424,6 @@
           resultTotal: null,
         },
 
-
         // Back
         getData: {
           type: 'type',
@@ -475,7 +445,6 @@
         },
 
         changePercents(percent) {
-
           if(percent[1] === undefined) {
             this.resultPercents = percent;
           }else {
@@ -488,10 +457,8 @@
               }else{
                 event.target.classList.add('selectedField')
               }
-
               this.checkSelect()
           }
-
         },
 
         choosePercents(event) {
@@ -530,8 +497,6 @@
           this.checkSelect()
         },
 
-
-
         checkSelect() {
           let etargetOption = event.target.options[event.target.options.selectedIndex].value
           if(etargetOption) {
@@ -552,34 +517,17 @@
 
         },
 
-
         setData(){
-    //           firstPayTotal: 'zxc',
-    //           mouthTotal: 'zxc',
-    //           overpayTotal: 'zxc',
-    //           total: 'zxc',
-
-
             this.getData.type = this.activeTab
             this.getData.term = this.resultTerms
             this.getData.firstpay = this.resultPercents
-            console.log(this.getData.type)
-            console.log(this.getData.term)
-            console.log(this.getData.firstpay)
-
-            console.log('----------------')
-
             this.getData.firstPayTotal = this.calcFirstPay()
             this.getData.mouthTotal = +this.calcMouth()
             this.getData.overpayTotal = +this.calcOverPay()
             this.getData.total = +this.calcTotal()
-            console.log(this.getData.firstPayTotal)
-            console.log(this.getData.mouthTotal)
-            console.log(this.getData.overpayTotal)
-            console.log(this.getData.total)
-
 
             const dataContact = JSON.stringify(this.getData)
+            console.log(this.getData)
             // Отправляем данные
                 // fetch(" ", {
                 //       method: "POST",
@@ -598,7 +546,11 @@
           this.activeTab = tab;
           this.resultTerms = this.termJson[0].term
           if(this.activeTab === 'cards') {
-            this.resultPercents = this.installments[0][1]
+            this.resultPercents = this.installments[0].term
+          }
+          else if(this.activeTab === 'credit') {
+            this.changeTerm(this.termJson[0].term, this.termJson[0].percent)
+            this.resultPercents = this.percents[0]
           }
         },
 
@@ -610,8 +562,6 @@
             event.target.classList.add('selectedField')
           }
         },
-
-
 
         //  Формула рассчета -  ((цена - первый взнос) * (ежемес.процент / 12 * кол-месц) / 100) + (цена - первый взнос) = итого
         calcFirstPay: function () {
@@ -631,13 +581,11 @@
               }
           },
 
-
         calcTotal: function () {
           // Переменная процент выбраного месяца
           this.calcMouthPercent = (this.percent / 12 * this.resultTerms) / 100;
             if(this.activeTab === 'cards' || this.activeTab === 'installment' || this.Credit == 'Credit_R' || this.Credit == 'Credit_C') {
              return this.calculatorItemPrice
-            //  return  this.result.resultTotal.toFixed(2)
             } else if (this.Credit === 'Credit') {
                 this.result.resultTotal = (((this.calculatorItemPrice - this.result.resultFirstPay) *  this.calcMouthPercent) + (this.calculatorItemPrice - this.result.resultFirstPay));
                 return  this.result.resultTotal.toFixed(2)
@@ -647,7 +595,6 @@
             }
 
           },
-
 
         calcMouth: function() {
             if(this.activeTab === 'cards') {
@@ -661,7 +608,6 @@
             }
           },
 
-
         calcOverPay: function() {
             if(this.Credit === 'Credit_R' || this.Credit === 'Credit_C' || this.activeTab === 'cards' || this.activeTab === 'installment')  {
              return this.result.resultOverPay = 0
@@ -672,21 +618,15 @@
 
 
           },
-
-
-
       },
 
 
       mounted() {
 
-
         this.currentTerm = this.terms[0];
-
         this.calculatorItemPrice = Number(this.$refs.app.dataset.price);
 
-
-        // // Кредит
+        // Кредит
         this.termJson =  JSON.parse(this.$refs.app.dataset.credits || []);
         this.resultTerms = this.termJson[0].term
 
@@ -699,35 +639,24 @@
         this.percents = PercentsSplit
         this.percent = this.percents[0]
 
-
-        // Рассрочка
-          // Срок рассрочки
+        // Срок рассрочки
         this.percentJson = this.$refs.app.dataset.rasrochka;
         let percentJsonSplit = this.percentJson.split(', ').map(function(it) {
           return parseInt(it,10)
         })
         this.percentJson = percentJsonSplit
 
-
-
         // Карты рассрочек
-        this.installments = JSON.parse("[" + this.$refs.app.dataset.installments + "]")
-
-
+        this.installments = JSON.parse(this.$refs.app.dataset.installments || [] )
         if(this.activeTab === 'installment') {
-          this.resultPercents = this.installments[0][1]
+          this.resultPercents = this.installments[0].term
         } else {
           this.resultPercents  = this.percents[0]
         }
 
-
-
-
         // Установка начальных значений для кредита
         this.changeTerm(this.termJson[0].term, this.termJson[0].percent)
 
-
-      // console.log(this.termJson[this.termJson.length - 1].term)
       },
 
 
