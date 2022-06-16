@@ -149,11 +149,11 @@
             <input
               name="installment"
               type="radio"
-              :id="'installment' + index"
+              :id="'installment' + installment"
               :checked="index===0"
               @change="changeTerm(installment, 0)"
             />
-            <label :for="'installment' + index " class="calculator-vue-input"
+            <label :for="'installment' + installment " class="calculator-vue-input"
               >{{installment}} мес</label
             >
           </div>
@@ -430,9 +430,7 @@
         getData: {
           type: 'type',
           term: 'term',
-          firstPay: 'firstPay',
 
-          firstPayTotal: null,
           mouthTotal: null,
           overpayTotal: null,
           total: null,
@@ -522,8 +520,6 @@
         setData(){
             this.getData.type = this.activeTab
             this.getData.term = this.resultTerms
-            this.getData.firstpay = this.resultPercents
-            this.getData.firstPayTotal = this.calcFirstPay()
             this.getData.mouthTotal = +this.calcMouth()
             this.getData.overpayTotal = +this.calcOverPay()
             this.getData.total = +this.calcTotal()
@@ -545,8 +541,10 @@
         },
 
         changeTab(tab) {
+          console.log(tab)
           this.activeTab = tab;
           this.resultTerms = this.termJson[0].term
+
           if(this.activeTab === 'cards') {
             this.resultPercents = this.installments[0].term
           }
@@ -554,6 +552,7 @@
             this.changeTerm(this.termJson[0].term, this.termJson[0].percent)
             this.resultPercents = this.percents[0]
           }
+
         },
 
         changeCredit(event) {
@@ -633,17 +632,16 @@
         this.resultTerms = this.termJson[0].term
 
         // Первый взнос
-        this.percents = this.$refs.app.dataset.firstpay;
-
-        let PercentsSplit = this.percents.split(',').map(function(item) {
+        let percentRef = this.$refs.app.dataset.firstpay;
+        let PercentsSplit = percentRef.split(',').map(function(item) {
           return parseInt(item, 10);
         })
         this.percents = PercentsSplit
         this.percent = this.percents[0]
 
         // Срок рассрочки
-        this.percentJson = this.$refs.app.dataset.rasrochka;
-        let percentJsonSplit = this.percentJson.split(', ').map(function(it) {
+        let percentJsonRef = this.$refs.app.dataset.rasrochka;
+        let percentJsonSplit = percentJsonRef.split(', ').map(function(it) {
           return parseInt(it,10)
         })
         this.percentJson = percentJsonSplit

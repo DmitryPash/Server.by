@@ -5214,7 +5214,8 @@ body {
 
 .calculator-vue-cards input[type=radio]:checked + label {
   color: #398aea;
-  border: 2px solid #398aea;
+  -webkit-box-shadow: 0 0 0 2px #398aea;
+  box-shadow: 0 0 0 2px #398aea;
 }
 
 .calculator-vue-cards input[type=radio]:checked + label .calculator-vue-txt span {
