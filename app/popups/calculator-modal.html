@@ -342,17 +342,14 @@
               <div class="calculator-mob-info">
                 <div class="calculator-mob-txt">Первый взнос</div>
                 <div class="calculator-mob-cena" v-html="calcFirstPay()"></div>
-                <div class="calculator-mob-cena" v-if="activeTab === 'cards'">Без взноса<span> РУБ.</span></div>
               </div>
               <div class="calculator-mob-info">
                 <div class="calculator-mob-txt">Платеж в месяц</div>
                 <div class="calculator-mob-cena">{{calcMouth()}}<span> РУБ.</span></div>
-                <div class="calculator-mob-cena" v-if="activeTab === 'cards'">Без взноса<span> РУБ.</span></div>
               </div>
               <div class="calculator-mob-info">
                 <div class="calculator-mob-txt">Всего переплата</div>
                 <div class="calculator-mob-cena">{{calcOverPay()}}<span> РУБ.</span></div>
-                <div class="calculator-mob-cena" v-if="activeTab === 'cards'">Без взноса<span> РУБ.</span></div>
               </div>
             </div>
           </div>
