@@ -133,7 +133,7 @@
         </div>
       </div>
       <!-- Таб 2 -->
-      <div class="calculator-vue-installment hide" v-if="activeTab === 'installment'">
+      <div class="calculator-vue-installment hide" v-if="activeTab === 'installment'" :key="keyIns">
         <div class="calculator-vue-info">
           <div class="calculator-vue-description">
             <div class="calculator-vue-title">
@@ -150,7 +150,7 @@
               name="installment"
               type="radio"
               :id="'installment' + installment"
-              :checked="index===0"
+              :checked="index === 0"
               @change="changeTerm(installment, 0)"
             />
             <label :for="'installment' + installment " class="calculator-vue-input"
@@ -183,7 +183,7 @@
         </div>
       </div>
       <!-- Таб 3 -->
-      <div class="calculator-vue-cards hide" v-if="activeTab === 'cards'">
+      <div class="calculator-vue-cards hide" v-if="activeTab === 'cards'" :key="keyCards">
         <div class="row">
           <div
             class="col-3 col-calculator-vue"
@@ -194,7 +194,7 @@
               name="cart"
               type="radio"
               :id="'cart' + index"
-              :checked="index===0"
+              :checked="index === 0"
               @change="changePercents(percent.term)"
             />
             <label :for="'cart' + index" class="calculator-vue-card valign-center">
@@ -332,11 +332,9 @@
           <div class="calculator-mob-box">
             <div class="calculator-mob-credit">
               <div class="calculator-mob-loan" v-if="Credit == 'Credit'">{{creditText}}</div>
-              <div class="calculator-mob-loan" v-if="Credit == 'Credit_R'">{{creditTextR}}</div>
-              <div class="calculator-mob-loan" v-if="Credit == 'Credit_C'">{{creditTextR}}</div>
+              <div class="calculator-mob-loan" v-if="Credit !== 'Credit'">{{creditTextR}}</div>
 
-              <div class="calculator-mob-cena" v-if="Credit == 'Credit'">{{calcTotal()}}<span> РУБ.</span></div>
-              <div class="calculator-mob-cena" v-if="Credit == 'Credit_R' ">{{calcTotal()}}<span> РУБ.</span></div>
+              <div class="calculator-mob-cena" v-if="Credit !== 'Credit_C' ">{{calcTotal()}}<span> РУБ.</span></div>
               <div class="calculator-mob-cena" v-if="Credit == 'Credit_C'">{{calculatorItemPrice}}<span> РУБ.</span></div>
 
             </div>
@@ -436,12 +434,15 @@
           total: null,
         },
 
+        keyIns: 0,
+        keyCards: 0
+
       },
 
       methods: {
         changeTerm(term, percent) {
           this.resultTerms = term;
-          this.percent = percent
+          this.percent = percent;
         },
 
         changePercents(percent) {
@@ -450,6 +451,7 @@
           }else {
             this.resultPercents = percent[1];
           }
+
           if (window.matchMedia("(max-width: 768)").matches) {
             let etargetOption = event.target.options[event.target.options.selectedIndex].value
               if(etargetOption === 'seceltedChoose') {
@@ -541,17 +543,20 @@
         },
 
         changeTab(tab) {
-          console.log(tab)
           this.activeTab = tab;
-          this.resultTerms = this.termJson[0].term
 
           if(this.activeTab === 'cards') {
             this.resultPercents = this.installments[0].term
+            this.keyCards++
           }
           else if(this.activeTab === 'credit') {
             this.changeTerm(this.termJson[0].term, this.termJson[0].percent)
             this.resultPercents = this.percents[0]
+          } else {
+            this.resultTerms = this.percentJson[0]
+            this.keyIns++
           }
+
 
         },
 
