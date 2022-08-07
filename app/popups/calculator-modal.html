@@ -626,6 +626,14 @@
 
       mounted() {
 
+
+        var car = { name: 'BMW' };
+var moto = car;
+moto.name = 'Suzuki';
+
+console.log(car.name);
+
+
         this.currentTerm = this.terms[0];
         this.calculatorItemPrice = Number(this.$refs.app.dataset.price);
 

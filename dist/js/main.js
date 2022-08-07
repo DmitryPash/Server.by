@@ -28,23 +28,29 @@ $(document).ready(function () {
     e.preventDefault();
   });
   // table scroll
-  $(function() {
-    $('.slider-offer-left').click(function(event) {
+  $(function () {
+    $(".slider-offer-left").click(function (event) {
       event.preventDefault();
-      $('.features').animate({
-        scrollLeft: "-=278px"
-      }, "slow");
+      $(".features").animate(
+        {
+          scrollLeft: "-=278px",
+        },
+        "slow"
+      );
     });
-  
-     $('.slider-offer-right').click(function(event) {
+
+    $(".slider-offer-right").click(function (event) {
       event.preventDefault();
-      $('.features').animate({
-       scrollLeft: "+=278px"
-      }, "slow");
+      $(".features").animate(
+        {
+          scrollLeft: "+=278px",
+        },
+        "slow"
+      );
     });
   });
 
-// clone table
+  // clone table
   const tableclone = $(".features")
     .wrap('<div class="features-clone" />')
     .clone();
@@ -126,20 +132,15 @@ $(document).ready(function () {
   });
 });
 
-
 let compare = document.querySelector(".features-box-differences");
-if(compare) {
+if (compare) {
   compare.onclick = () => {
-    let bggreen = document.querySelectorAll('.features-box');
+    let bggreen = document.querySelectorAll(".features-box");
     bggreen.forEach((element) => {
       element.classList.toggle("bggreen");
-    })
-  } 
-  
+    });
+  };
 }
-
-
-
 
 // drop for footer top
 
@@ -206,8 +207,6 @@ if (element) {
   var mask = IMask(element, maskOptions);
 }
 
-
-
 jQuery.validator.addMethod(
   "lettersonly",
   function (value, element) {
@@ -254,4 +253,6 @@ $("#accountData").validate({
   },
 });
 
+//
 
+console.log(JSON.parse(null));

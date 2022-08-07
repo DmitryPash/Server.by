@@ -4,7 +4,6 @@
 @import "header";
 @import "footer";
 
-
 $ffMontserrat: "Montserrat", sans-serif;
 $colorBlack: #191919;
 $colorSilver: #647b98;
@@ -121,7 +120,6 @@ body {
   display: flex;
   color: #ff6666;
 }
-
 
 [data-tooltip]::after {
   content: attr(data-tooltip);
@@ -3460,7 +3458,7 @@ body {
 }
 .calculator-vue-cards input[type="radio"]:checked + label {
   color: #398aea;
-  box-shadow:inset 0 0 0 2px  #398aea;
+  box-shadow: inset 0 0 0 2px #398aea;
   .calculator-vue-txt {
     span {
       color: #398aea;
@@ -3808,7 +3806,6 @@ body {
         background-position: right 10px center;
         appearance: none;
         border-radius: 4px;
-
       }
     }
     &-form {
@@ -4010,7 +4007,9 @@ body {
     }
   }
 }
-.features::-webkit-scrollbar { width: 0; }
+.features::-webkit-scrollbar {
+  width: 0;
+}
 .features {
   display: block;
   overflow-x: auto;
@@ -4145,11 +4144,125 @@ body {
   }
 }
 
-
-
 .bggreen {
-  background-color: #D8FFCE;
+  background-color: #d8ffce;
 }
 
+// Стили для изменения вида стр catalog-list2
+@media (min-width: 992px) {
+  .catalog-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .catalog-item-column {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 30px 18px 20px 18px;
+    margin-bottom: 0;
+    margin: -0.5px;
+    @media (max-width: 1300px) {
+      flex: 0 0 33%;
+      max-width: 33%;
+    }
+    .catalog-item-features {
+      display: none;
+    }
+    .catalog-item-title {
+      font-size: rem(15);
+    }
+    .catalog-info {
+      width: 100%;
+      flex-wrap: wrap;
+      display: flex;
+      padding: 0;
+    }
+    .product-description-img {
+      margin-right: 5px;
+    }
+    .catalog-info-first_price {
+    }
+    .catalog-info-second_price {
+    }
+    .catalog-info-title {
+      font-size: rem(9);
+    }
+    .catalog-info-price {
+      font-size: rem(20);
+      line-height: 1;
+    }
+    .catalog-info-btns {
+      flex: 0 0 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+    .catalog-info-btn {
+      display: inline-block;
+      width: calc(100% - 104px);
+      height: 40px;
+      line-height: 40px;
+      font-size: 0.6875rem;
+    }
+    .catalog-info-compare {
+      display: inline-block;
+      position: relative;
+      margin-left: 14px;
+      width: 40px;
+      height: 40px;
+      border: 1px solid #d6e3f2;
+      border-radius: 3.07692px;
+      img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+    }
+    .catalog-info-favorite {
+      display: inline-block;
+      position: relative;
+      margin-left: 14px;
+      width: 40px;
+      height: 40px;
+      border: 1px solid #d6e3f2;
+      border-radius: 3.07692px;
+      img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+    }
+    .catalog-item-table {
+      display: none;
+    }
+    .catalog-item-img {
+      width: 100%;
+      padding: 0;
+      text-align: center;
+      img {
+        padding-bottom: 0;
+      }
+    }
+    .catalog-item-description {
+      width: 100%;
+      border-right: none;
+      padding: 0;
+      .catalog-item-articule {
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
 
 @import "calculator";
