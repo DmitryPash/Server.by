@@ -4148,8 +4148,14 @@ body {
   background-color: #d8ffce;
 }
 
+@media (max-width: 992px) {
+  .catalog-item-features {
+    flex-wrap: wrap;
+  }
+}
+
 // Стили для изменения вида стр catalog-list2
-@media (min-width: 992px) {
+@media (min-width: 576px) {
   .catalog-flex {
     display: flex;
     flex-wrap: wrap;
@@ -4163,6 +4169,10 @@ body {
     @media (max-width: 1300px) {
       flex: 0 0 33%;
       max-width: 33%;
+    }
+    @media (max-width: 992px) {
+      flex: 0 0 50%;
+      max-width: 50%;
     }
     .catalog-item-features {
       display: none;
@@ -4262,6 +4272,29 @@ body {
         padding-bottom: 10px;
       }
     }
+  }
+}
+.filter-bar-btn-active {
+  display: none;
+}
+.filter-active-img {
+  .filter-bar-btn-nonactive {
+    display: none;
+  }
+  .filter-bar-btn-active {
+    display: inline-block;
+  }
+}
+
+.filter-bar-btn-row-active {
+  display: inline-block;
+}
+.filter-active-img-row {
+  .filter-bar-btn-row-active {
+    display: none;
+  }
+  .filter-bar-btn-row-nonactive {
+    display: inline-block;
   }
 }
 

@@ -6018,6 +6018,30 @@ body {
   background-color: #d8ffce;
 }
 
+.filter-bar-btn-active {
+  display: none;
+}
+
+.filter-active-img .filter-bar-btn-nonactive {
+  display: none;
+}
+
+.filter-active-img .filter-bar-btn-active {
+  display: inline-block;
+}
+
+.filter-bar-btn-row-active {
+  display: inline-block;
+}
+
+.filter-active-img-row .filter-bar-btn-row-active {
+  display: none;
+}
+
+.filter-active-img-row .filter-bar-btn-row-nonactive {
+  display: inline-block;
+}
+
 .calculator .selectedField {
   border: 2px solid #398AEA;
   color: #398AEA;
@@ -6142,7 +6166,7 @@ body {
   opacity: 1;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 576px) {
   .catalog-flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6916,66 +6940,6 @@ body {
     display: none;
   }
 
-  .filter-btns {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    padding-bottom: 30px;
-  }
-
-  .filter-btn {
-    width: calc(100% - 60px);
-    font-size: 0.6875rem;
-    height: 48px;
-    line-height: 48px;
-    text-align: center;
-    border: 1px solid #d6e3f2;
-    color: #398aea;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-
-  .filter-btn:hover {
-    background-color: #398aea;
-    color: #ffffff;
-  }
-
-  .filter-btn-rectangle {
-    display: inline-block;
-    position: relative;
-    width: 48px;
-    height: 48px;
-    border: 1px solid #d6e3f2;
-    border-radius: 4px;
-    margin-left: 10px;
-  }
-
-  .filter-btn-rectangle:hover {
-    background-color: #398aea;
-    color: #ffffff;
-  }
-
-  .filter-btn-rectangle img {
-    position: absolute;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-  }
-
-  .filter-bottom-show {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 77%;
-    flex: 0 0 77%;
-  }
-
   .categories-cards {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -7062,14 +7026,6 @@ body {
     margin-bottom: 40px;
   }
 
-  .filter {
-    display: none;
-  }
-
-  .filter-bar {
-    display: none;
-  }
-
   .installments-catalog-list {
     display: none;
   }
@@ -7089,6 +7045,15 @@ body {
 
   .footer {
     padding-bottom: 64px;
+  }
+
+  .catalog-item-img {
+    width: 22%;
+  }
+
+  .catalog-item-features {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
 
@@ -7527,6 +7492,77 @@ body {
     -webkit-box-flex: 0;
     flex: 0 0 100%;
     max-width: 100%;
+  }
+
+  .filter-btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    padding-bottom: 30px;
+  }
+
+  .filter-btn {
+    width: calc(100% - 60px);
+    font-size: 0.6875rem;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    border: 1px solid #d6e3f2;
+    color: #398aea;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .filter-btn:hover {
+    background-color: #398aea;
+    color: #ffffff;
+  }
+
+  .filter-btn-rectangle {
+    display: inline-block;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #d6e3f2;
+    border-radius: 4px;
+    margin-left: 10px;
+    color: transparent;
+    background-image: url(../images/icons/rectangle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .filter-btn-rectangle:hover {
+    border: 1px solid #398aea;
+  }
+
+  .filter-btn-rectangle img {
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+
+  .filter-bottom-show {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 77%;
+    flex: 0 0 77%;
+  }
+
+  .filter {
+    display: none;
+  }
+
+  .filter-bar {
+    display: none;
   }
 
   .banner-img {
@@ -7987,11 +8023,20 @@ body {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1300px) {
+@media (min-width: 576px) and (max-width: 1300px) {
   .catalog-item-column {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 33%;
     flex: 0 0 33%;
     max-width: 33%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .catalog-item-column {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 }
