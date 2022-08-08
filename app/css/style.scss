@@ -4189,10 +4189,7 @@ body {
     .product-description-img {
       margin-right: 5px;
     }
-    .catalog-info-first_price {
-    }
-    .catalog-info-second_price {
-    }
+
     .catalog-info-title {
       font-size: rem(9);
     }
@@ -4298,4 +4295,9 @@ body {
   }
 }
 
+.filter {
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
 @import "calculator";

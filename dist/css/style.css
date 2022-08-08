@@ -7055,6 +7055,10 @@ body {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
+
+  .filter {
+    display: none;
+  }
 }
 
 @media (max-width: 890px) {
