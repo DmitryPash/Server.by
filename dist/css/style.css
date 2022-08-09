@@ -2213,6 +2213,11 @@ body {
   margin-left: -4px;
 }
 
+.filter-bar-wrap {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .filter-bar-btn {
   display: inline-block;
   position: relative;
@@ -6042,6 +6047,26 @@ body {
   display: inline-block;
 }
 
+.filter-bar-btn-row {
+  background-image: url(../images/icons/icon-row.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.filter-active-img-row {
+  background-image: url(../images/icons/filter-bar\ 1.png);
+}
+
+.filter-bar-btn-column {
+  background-image: url(../images/icons/filter-bar\ 2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.filter-active-img {
+  background-image: url(../images/icons/icon-squad.png);
+}
+
 .calculator .selectedField {
   border: 2px solid #398AEA;
   color: #398AEA;
@@ -6667,6 +6692,88 @@ body {
     -webkit-box-flex: 0;
     flex: 0 0 100%;
     max-width: 100%;
+  }
+
+  .filter-btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    padding-bottom: 30px;
+    padding-right: 105px;
+  }
+
+  .filter-btn {
+    width: calc(100% - 60px);
+    font-size: 0.6875rem;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    border: 1px solid #d6e3f2;
+    color: #398aea;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .filter-btn:hover {
+    background-color: #398aea;
+    color: #ffffff;
+  }
+
+  .filter-btn-rectangle {
+    display: inline-block;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #d6e3f2;
+    border-radius: 4px;
+    margin-left: 10px;
+    color: transparent;
+    background-image: url(../images/icons/rectangle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .filter-btn-rectangle:hover {
+    border: 1px solid #398aea;
+  }
+
+  .filter-btn-rectangle img {
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+
+  .filter-bottom-show {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 77%;
+    flex: 0 0 77%;
+  }
+
+  .filter-bar {
+    position: relative;
+  }
+
+  .filter-bar-text {
+    display: none;
+  }
+
+  .filter-bar-sort {
+    display: none;
+  }
+
+  .filter-bar-wrap {
+    position: absolute;
+    right: 0;
+    top: 2px;
   }
 
   .order {
@@ -7498,75 +7605,12 @@ body {
     max-width: 100%;
   }
 
-  .filter-btns {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    padding-bottom: 30px;
-  }
-
-  .filter-btn {
-    width: calc(100% - 60px);
-    font-size: 0.6875rem;
-    height: 48px;
-    line-height: 48px;
-    text-align: center;
-    border: 1px solid #d6e3f2;
-    color: #398aea;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-
-  .filter-btn:hover {
-    background-color: #398aea;
-    color: #ffffff;
-  }
-
-  .filter-btn-rectangle {
-    display: inline-block;
-    position: relative;
-    width: 48px;
-    height: 48px;
-    border: 1px solid #d6e3f2;
-    border-radius: 4px;
-    margin-left: 10px;
-    color: transparent;
-    background-image: url(../images/icons/rectangle.png);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .filter-btn-rectangle:hover {
-    border: 1px solid #398aea;
-  }
-
-  .filter-btn-rectangle img {
-    position: absolute;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-  }
-
-  .filter-bottom-show {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 77%;
-    flex: 0 0 77%;
-  }
-
-  .filter {
-    display: none;
-  }
-
   .filter-bar {
     display: none;
+  }
+
+  .filter-btns {
+    padding-right: 0;
   }
 
   .banner-img {

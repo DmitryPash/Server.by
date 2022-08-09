@@ -749,6 +749,10 @@ body {
     &-btn:last-child {
       margin-left: -4px;
     }
+    &-wrap {
+      display: inline-block;
+      vertical-align: middle;
+    }
     &-btn {
       display: inline-block;
       position: relative;
@@ -4299,5 +4303,22 @@ body {
   @media (max-width: 992px) {
     display: none;
   }
+}
+// Изменения картинок
+.filter-bar-btn-row {
+  background-image: url(../images/icons/icon-row.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.filter-active-img-row {
+  background-image: url(../images/icons/filter-bar\ 1.png);
+}
+.filter-bar-btn-column {
+  background-image: url(../images/icons/filter-bar\ 2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.filter-active-img {
+  background-image: url(../images/icons/icon-squad.png);
 }
 @import "calculator";

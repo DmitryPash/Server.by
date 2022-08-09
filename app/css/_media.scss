@@ -107,6 +107,73 @@
   }
 }
 @media (max-width: 992px) {
+  .filter {
+    &-btns {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-bottom: 30px;
+      padding-right: 105px;
+    }
+    &-btn {
+      width: calc(100% - 60px);
+      font-size: rem(11px);
+      height: 48px;
+      line-height: 48px;
+      text-align: center;
+      border: 1px solid #d6e3f2;
+      color: $colorCyan;
+      font-weight: 600;
+      text-transform: uppercase;
+      &:hover {
+        background-color: $colorCyan;
+        color: #ffffff;
+      }
+      &-rectangle {
+        display: inline-block;
+        position: relative;
+        width: 48px;
+        height: 48px;
+        border: 1px solid #d6e3f2;
+        border-radius: 4px;
+        margin-left: 10px;
+        color: transparent;
+        background-image: url(../images/icons/rectangle.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        &:hover {
+          border: 1px solid #398aea;
+        }
+        img {
+          position: absolute;
+          transform: translate(-50%, -50%);
+          top: 50%;
+          left: 50%;
+        }
+      }
+    }
+    &-bottom {
+      &-show {
+        flex: 0 0 77%;
+      }
+    }
+  }
+  .filter-bar {
+    position: relative;
+    &-text {
+      display: none;
+    }
+    &-sort {
+      display: none;
+    }
+    &-wrap {
+      position: absolute;
+      right: 0;
+      top: 2px;
+    }
+  }
+  // Headaer
+
   //Global
   .order {
     order: 2;
@@ -601,62 +668,11 @@
 
 @media (max-width: 576px) {
   //Global
-  .filter {
-    &-btns {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      padding-bottom: 30px;
-    }
-    &-btn {
-      width: calc(100% - 60px);
-      font-size: rem(11px);
-      height: 48px;
-      line-height: 48px;
-      text-align: center;
-      border: 1px solid #d6e3f2;
-      color: $colorCyan;
-      font-weight: 600;
-      text-transform: uppercase;
-      &:hover {
-        background-color: $colorCyan;
-        color: #ffffff;
-      }
-      &-rectangle {
-        display: inline-block;
-        position: relative;
-        width: 48px;
-        height: 48px;
-        border: 1px solid #d6e3f2;
-        border-radius: 4px;
-        margin-left: 10px;
-        color: transparent;
-        background-image: url(../images/icons/rectangle.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        &:hover {
-          border: 1px solid #398aea;
-        }
-        img {
-          position: absolute;
-          transform: translate(-50%, -50%);
-          top: 50%;
-          left: 50%;
-        }
-      }
-    }
-    &-bottom {
-      &-show {
-        flex: 0 0 77%;
-      }
-    }
-  }
-  // Headaer
-  .filter {
+  .filter-bar {
     display: none;
-    &-bar {
-      display: none;
-    }
+  }
+  .filter-btns {
+    padding-right: 0;
   }
   // Main
   .banner-img {
