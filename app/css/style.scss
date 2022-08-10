@@ -1624,9 +1624,6 @@ body {
     }
   }
 }
-.pagination {
-  margin-bottom: 100px;
-}
 
 // end news list
 // start news-page.html
@@ -4275,6 +4272,9 @@ body {
       }
     }
   }
+}
+.filter-items-wrap {
+  margin-bottom: 100px;
 }
 .filter-bar-btn-active {
   display: none;

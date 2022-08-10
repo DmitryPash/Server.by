@@ -3223,10 +3223,6 @@ body {
   cursor: pointer;
 }
 
-.pagination {
-  margin-bottom: 100px;
-}
-
 .article img {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -6022,6 +6018,10 @@ body {
 
 .bggreen {
   background-color: #d8ffce;
+}
+
+.filter-items-wrap {
+  margin-bottom: 100px;
 }
 
 .filter-bar-btn-active {
